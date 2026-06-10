@@ -67,7 +67,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-6 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex flex-col">
-            <span className="text-2xl font-black tracking-tighter text-black">JUNYANG HEADWEAR</span>
+            <span className="text-2xl font-black tracking-tighter text-black">SlUNYANG HEADWEAR</span>
             <span className="text-[9px] text-gray-500 font-bold uppercase tracking-widest leading-none">Baoding Junyang Import & Export</span>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
@@ -266,7 +266,7 @@ export default function Home() {
       <footer className="bg-black text-gray-500 py-16 px-4 border-t border-gray-900">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
-            <span className="text-xl font-black tracking-tighter text-white">JUNYANG HEADWEAR</span>
+            <span className="text-xl font-black tracking-tighter text-white">SlUNYANG HEADWEAR</span>
             <p className="text-sm mt-3 leading-relaxed">
               Baoding Junyang Import And Export Trade Co., Ltd. is a premium custom hat manufacturer specializing in OEM/ODM embroidery baseball caps, beanies, and trucker hats since 2014.
             </p>
