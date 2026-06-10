@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
 export const metadata: Metadata = {
   title: "BD Hats | Premium Custom Hat Manufacturer & B2B Wholesale Supplier",
   description: "Global OEM/ODM hat factory specializing in high-quality custom embroidery baseball caps, beanies, bucket hats, and trucker hats. Low MOQ, fast global shipping.",
@@ -22,7 +23,12 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
 };
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -34,7 +40,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   };
   return (
     <html lang="en" className="scroll-smooth">
-      <head><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /></head>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
+}
