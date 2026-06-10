@@ -64,3 +64,4 @@ export default function RootLayout({
       <body className="antialiased">{children}</body>
     </html>
   );
+}
