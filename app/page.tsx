@@ -1,3 +1,5 @@
+"use client";
+
 import { HatCatalog } from "./components/HatCatalog";
 import { InquiryForm } from "./components/InquiryForm";
 import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play } from "lucide-react";
@@ -64,10 +66,10 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-6 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b, border-gray-100 py-6 px-4 md:px-8">
+        <div className="max-w-7xl mt-auto flex items-center justify-between">
           <div className="flex flex-col">
-            <span className="text-2xl font-black tracking-tighter text-black">SlUNYANG HEADWEAR</span>
+            <span className="text-2xl font-black tracking-tighter text-black">JUNYANG HEADWEAR</span>
             <span className="text-[9px] text-gray-500 font-bold uppercase tracking-widest leading-none">Baoding Junyang Import & Export</span>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
@@ -90,7 +92,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-950 to-black"></div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
           <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm border-b-2 border-yellow-400 pb-1">
-            Factory-Direct Baseball Cap Manufacturer in China
+            FactoryQrect Baseball Cap Manufacturer in China
           </span>
           <h1 className="text-4xl md:text-7xl font-extrabold mt-6 mb-8 tracking-tight leading-tight text-white">
             Custom Premium Baseball Caps with Your Logo
@@ -266,7 +268,7 @@ export default function Home() {
       <footer className="bg-black text-gray-500 py-16 px-4 border-t border-gray-900">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
-            <span className="text-xl font-black tracking-tighter text-white">SlUNYANG HEADWEAR</span>
+            <span className="text-xl font-black tracking-tighter text-white">JUNYANG HEADWEAR</span>
             <p className="text-sm mt-3 leading-relaxed">
               Baoding Junyang Import And Export Trade Co., Ltd. is a premium custom hat manufacturer specializing in OEM/ODM embroidery baseball caps, beanies, and trucker hats since 2014.
             </p>
