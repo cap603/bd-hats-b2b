@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    CACHE_BUST: "2026-06-10-v5",
+    CACHE_BUST: "2026-06-10-v6",
   },
   images: {
     remotePatterns: [

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { HatCatalog } from "./components/HatCatalog";
 import { InquiryForm } from "./components/InquiryForm";
 import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play } from "lucide-react";
@@ -24,6 +25,7 @@ const FAQS = [
 ];
 
 export default function Home() {
+  const [isPlaying, setIsPlaying] = useState(false);
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -175,22 +177,33 @@ export default function Home() {
                 <Play size={16} /> Request Factory Video Tour
               </button>
             </div>
-            {/* Visual Factory Placeholder */}
-            <div className="relative rounded-3xl overflow-hidden aspect-video lg:aspect-square bg-gray-900 shadow-2xl group cursor-pointer" onClick={handleWhatsAppMain}>
-              <img 
-                src="https://images.unsplash.com/photo-1556011504-f58c4033b93f?auto=format&fit=crop&q=80&w=1200" 
-                alt="Baoding Junyang Hat Factory Floor" 
-                className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700" 
-              />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <div className="bg-white text-black h-16 w-16 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition">
-                  <Play size={24} className="ml-1 text-black" fill="currentColor" />
+            {/* Visual Factory Video Player */}
+            <div className="relative rounded-3xl overflow-hidden aspect-video lg:aspect-square bg-gray-900 shadow-2xl group">
+              {isPlaying ? (
+                <video 
+                  src="https://github.com/cap603/bd-hats-b2b/releases/download/v1.0.0/factory-video.mp4"
+                  controls
+                  autoPlay
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="relative w-full h-full cursor-pointer" onClick={() => setIsPlaying(true)}>
+                  <img 
+                    src="https://images.unsplash.com/photo-1556011504-f58c4033b93f?auto=format&fit=crop&q=80&w=1200" 
+                    alt="Baoding Junyang Hat Factory Floor" 
+                    className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700" 
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <div className="bg-white text-black h-16 w-16 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition">
+                      <Play size={24} className="ml-1 text-black" fill="currentColor" />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-6 left-6 right-6 text-white bg-gradient-to-t from-black/80 to-transparent p-4 rounded-xl">
+                    <p className="font-bold text-base">Watch Production Reel (2026)</p>
+                    <p className="text-xs text-gray-300">Japanese embroidery machines & professional hand-sewing.</p>
+                  </div>
                 </div>
-              </div>
-              <div className="absolute bottom-6 left-6 right-6 text-white bg-gradient-to-t from-black/80 to-transparent p-4 rounded-xl">
-                <p className="font-bold text-base">Watch Production Reel (2026)</p>
-                <p className="text-xs text-gray-300">Japanese embroidery machines & professional hand-sewing.</p>
-              </div>
+              )}
             </div>
           </div>
         </div>
