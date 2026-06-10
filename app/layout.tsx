@@ -6,13 +6,22 @@ export const metadata: Metadata = {
   description: "Global OEM/ODM hat factory specializing in high-quality custom embroidery baseball caps, beanies, bucket hats, and trucker hats. Low MOQ, fast global shipping.",
   keywords: "wholesale hats, custom hat manufacturer, china hat factory, bulk baseball caps, custom embroidery hats, cap wholesale, OEM hat supplier",
   metadataBase: new URL("https://b2b.bdjunyang.com"),
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "BD Hats | Custom Hat Manufacturer & B2B Wholesale",
     description: "Get premium custom hats directly from the manufacturer. Specializing in custom embroidery, low MOQ, and bulk wholesale.",
     url: "https://b2b.bdjunyang.com",
     siteName: "BD Hats",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "BD Hats Wholesale" }],
+    images: [
+      {
+        url: "/og-image.jpg", // We can add an OG image later
+        width: 1200,
+        height: 630,
+        alt: "BD Hats Wholesale",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
@@ -29,6 +38,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Organization JSON-LD for AI & Google Search
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -36,14 +46,21 @@ export default function RootLayout({
     "url": "https://b2b.bdjunyang.com",
     "logo": "https://b2b.bdjunyang.com/logo.png",
     "description": "Premium custom hat manufacturer and B2B wholesale supplier specializing in embroidery and customized headwear.",
-    "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "email": "sales@bdjunyang.com" }
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "sales@bdjunyang.com"
+    }
   };
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="antialiased">{children}</body>
     </html>
   );
-}
