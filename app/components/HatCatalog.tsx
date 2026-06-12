@@ -3,45 +3,45 @@ import { ShoppingBag, MessageCircle, ShieldCheck, Zap, Globe, Cpu } from "lucide
 const HATS = [
   { 
     id: 1, 
-    name: "Classic 6-Panel Structured Cap", 
-    desc: "Our best-selling profile. Structured heavy cotton twill with durable buckram backing. Perfect for high-end streetwear and premium corporate branding.",
-    price: "Factory Price: $1.20 - $2.50", 
-    img: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&q=80&w=800" 
+    name: "Two-Tone 3D Embroidery A-Frame Cap", 
+    desc: "Structured 5-panel design with high-density 3D embroidery. Contrast visor and crown for a striking street aesthetic. Durable and comfortable. Featuring high-build embroidery.",
+    price: "Factory Price: $2.90 - $3.90 (MOQ: 50)", 
+    img: "https://sc01.alicdn.com/kf/H4faf483cc337458cbb9d161826e041f2u.png" 
   },
   { 
     id: 2, 
-    name: "Unstructured Vintage Dad Hat", 
-    desc: "100% garment-washed cotton for a soft, worn-in feel. Low-profile, unstructured crown with an adjustable antique brass buckle closure.",
-    price: "Factory Price: $0.95 - $1.80", 
-    img: "https://images.unsplash.com/photo-1576871337622-98d48d1cf027?auto=format&fit=crop&q=80&w=800" 
+    name: "Gold Edition 3D Script 5-Panel", 
+    desc: "Luxury gold script embroidery on premium cream cotton. Part of our exclusive high-profile designer series. Perfect for premium fashion drops.",
+    price: "Factory Price: $2.80 - $3.90 (MOQ: 50)", 
+    img: "https://sc01.alicdn.com/kf/Hfcc96f3c12f44b44b219dd0f120e1a6dy.png" 
   },
   { 
     id: 3, 
-    name: "Premium 3D Puff Embroidery Cap", 
-    desc: "Make your logo stand out. Heavyweight acrylic-wool blend with high-build 3D puff embroidery. Outstanding durability and luxury touch.",
-    price: "Factory Price: $1.50 - $2.90", 
-    img: "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?auto=format&fit=crop&q=80&w=800" 
+    name: "Vintage Washed Cotton Dad Hat Series", 
+    desc: "100% garment-washed cotton with customized 3D embroidery logos. Antique brass buckle closure for a classic premium feel. Authentic vintage look.",
+    price: "Factory Price: $3.20 - $4.50 (MOQ: 50)", 
+    img: "https://sc01.alicdn.com/kf/H47594c6deca245f0829415dd9ab0201cb.jpg" 
   },
   { 
     id: 4, 
-    name: "Flat-Brim Streetwear Snapback", 
-    desc: "The timeless urban icon. Structured 6-panel with a stiff flat visor, green undervisor, and classic adjustable plastic snapback closure.",
-    price: "Factory Price: $1.30 - $2.60", 
-    img: "https://images.unsplash.com/photo-1589831377283-33cb1cc6bd5d?auto=format&fit=crop&q=80&w=800" 
+    name: "Custom Fashion Mesh Trucker Hat", 
+    desc: "Premium foam front with high-breathability mesh back. Features custom script embroidery and multi-color racing stripes on the side for an active look.",
+    price: "Factory Price: $1.90 - $2.90 (MOQ: 50)", 
+    img: "https://sc01.alicdn.com/kf/H90c2155da629468fa925eb0464b06457e.jpg" 
   },
   { 
     id: 5, 
-    name: "Classic Mesh Trucker Hat", 
-    desc: "Premium polyester foam front with high-density polyester mesh back. Highly breathable, perfect for summer promotional giveaways and outdoor brands.",
-    price: "Factory Price: $0.85 - $1.60", 
-    img: "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&q=80&w=800" 
+    name: "Outdoor Tech Wing Series Cap", 
+    desc: "Vibrant royal blue cotton with 3D puff embroidery and iconic wing side patch. Designed for energetic lifestyle and high-end activewear brands.",
+    price: "Factory Price: $2.80 - $3.90 (MOQ: 50)", 
+    img: "https://sc01.alicdn.com/kf/He08acde3cf354ef99014af1a5b4f5c2bf.png" 
   },
   { 
     id: 6, 
-    name: "Private Label Customization Finishes", 
-    desc: "Go beyond the shell. Customize inside seam tapes with printed brand logos, add woven tags on sweatbands, or laser-engrave metal buckles.",
-    price: "Factory Custom Service", 
-    img: "https://images.unsplash.com/photo-1556011504-f58c4033b93f?auto=format&fit=crop&q=80&w=800" 
+    name: "Premium Multi-Tone 5-Panel (BQM1546)", 
+    desc: "A-frame high-profile crown with premium cotton twill. Featuring outline embroidery and multi-tone visors. The industry standard for custom caps.",
+    price: "Factory Price: $2.80 - $3.90 (MOQ: 50)", 
+    img: "https://sc01.alicdn.com/kf/H1edd649a1887488f91f1ed75174dce806.png" 
   },
 ];
 
