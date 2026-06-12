@@ -1,9 +1,33 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HatCatalog } from "./components/HatCatalog";
 import { InquiryForm } from "./components/InquiryForm";
-import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play } from "lucide-react";
+import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight } from "lucide-react";
+
+const BANNERS = [
+  {
+    image: "https://sc02.alicdn.com/kf/A08f3026e946b4a238d225173ff266ad8N.png",
+    title: "World-Class Hat Manufacturing",
+    sub: "100+ Japanese embroidery machines. 200+ skilled artisans. Factory-direct wholesale from China.",
+    cta: "Get Factory Pricing",
+    link: "whatsapp"
+  },
+  {
+    image: "https://sc02.alicdn.com/kf/Ab257aa93655344cdb3405b61cb0622bfS.png",
+    title: "One-Stop Premium Customization",
+    sub: "Unlimited options: Premium fabrics, custom colors, 3D puff embroidery, and tailored hat profiles.",
+    cta: "Start Customizing",
+    link: "#inquiry"
+  },
+  {
+    image: "https://sc02.alicdn.com/kf/Af4c92eab3b8f4bd68fcb467865c9d3512.png",
+    title: "Your Vision, Any Style",
+    sub: "From 5-Panel & 6-Panel caps to Truckers, Dad Hats, Beanies, and Bucket Hats. All custom built.",
+    cta: "Request Samples",
+    link: "#inquiry"
+  }
+];
 
 const FAQS = [
   {
@@ -26,6 +50,18 @@ const FAQS = [
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [currentBanner, setCurrentBanner] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentBanner((prev) => (prev + 1) % BANNERS.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const nextBanner = () => setCurrentBanner((prev) => (prev + 1) % BANNERS.length);
+  const prevBanner = () => setCurrentBanner((prev) => (prev - 1 + BANNERS.length) % BANNERS.length);
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -97,33 +133,64 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative py-24 md:py-36 bg-gray-950 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-950 to-black"></div>
-        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
-          <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm border-b-2 border-yellow-400 pb-1">
-            FactoryQrect Baseball Cap Manufacturer in China
-          </span>
-          <h1 className="text-4xl md:text-7xl font-extrabold mt-6 mb-8 tracking-tight leading-tight text-white">
-            Custom Premium Baseball Caps with Your Logo
-          </h1>
-          <p className="text-lg md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-            High-end 5-Panel & 6-Panel caps. Premium fabrics (heavy cotton twill, organic cotton, corduroy). Standard-setting 3D embroidery & custom branding elements.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
-            <button 
-              onClick={handleWhatsAppMain}
-              className="bg-green-500 text-white font-bold px-8 py-4 rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2 text-base shadow-lg shadow-green-500/25"
-            >
-              <MessageCircle size={20} /> Get Factory Pricing
-            </button>
-            <a 
-              href="#inquiry" 
-              className="bg-white text-black font-bold px-8 py-4 rounded-full hover:bg-gray-100 transition flex items-center justify-center text-base"
-            >
-              Request Free Samples
-            </a>
+      {/* Hero Section (Carousel) */}
+      <section className="relative h-[500px] md:h-[700px] bg-gray-950 text-white overflow-hidden">
+        {BANNERS.map((banner, index) => (
+          <div 
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentBanner ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+          >
+            <div className="absolute inset-0 bg-black/50 z-10"></div>
+            <img 
+              src={banner.image} 
+              alt={banner.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
+              <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm border-b-2 border-yellow-400 pb-1 mb-6">
+                Direct-to-Factory B2B Solutions
+              </span>
+              <h1 className="text-4xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight max-w-5xl">
+                {banner.title}
+              </h1>
+              <p className="text-lg md:text-2xl text-gray-200 mb-12 max-w-3xl font-light leading-relaxed">
+                {banner.sub}
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4 w-full max-w-md">
+                <button 
+                  onClick={banner.link === 'whatsapp' ? handleWhatsAppMain : () => window.location.hash = banner.link}
+                  className="bg-green-500 text-white font-bold px-10 py-5 rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2 text-lg shadow-lg"
+                >
+                  {banner.link === 'whatsapp' && <MessageCircle size={24} />} {banner.cta}
+                </button>
+              </div>
+            </div>
           </div>
+        ))}
+
+        {/* Carousel Controls */}
+        <button 
+          onClick={prevBanner}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition text-white"
+        >
+          <ChevronLeft size={32} />
+        </button>
+        <button 
+          onClick={nextBanner}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition text-white"
+        >
+          <ChevronRight size={32} />
+        </button>
+
+        {/* Carousel Indicators */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3">
+          {BANNERS.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentBanner(index)}
+              className={`h-1.5 transition-all duration-300 rounded-full ${index === currentBanner ? 'w-8 bg-yellow-400' : 'w-3 bg-white/30'}`}
+            ></button>
+          ))}
         </div>
       </section>
 
@@ -346,14 +413,21 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black mb-16 text-center tracking-tight">Frequently Asked Questions</h2>
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">Common Questions</h2>
+            <p className="text-gray-500 text-lg">Everything you need to know about our factory custom process.</p>
+          </div>
           <div className="space-y-6">
             {FAQS.map((faq, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-                <h3 className="text-xl font-bold mb-3 text-black">{faq.q}</h3>
-                <p className="text-gray-600 leading-relaxed text-base">{faq.a}</p>
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <h3 className="font-bold text-lg mb-3 flex gap-3">
+                  <span className="text-yellow-500 font-black">Q:</span> {faq.q}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed flex gap-3">
+                  <span className="text-gray-400 font-black">A:</span> {faq.a}
+                </p>
               </div>
             ))}
           </div>
@@ -361,11 +435,11 @@ export default function Home() {
       </section>
 
       {/* Inquiry Section */}
-      <section id="inquiry" className="py-24 bg-white px-4 scroll-mt-20">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">Request Factory Quote</h2>
-            <p className="text-gray-600 max-w-xl mx-auto text-base">Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote and design mockup within 12 hours.</p>
+      <section id="inquiry" className="py-24 px-4 bg-white scroll-mt-20">
+        <div className="max-w-4xl mx-auto bg-gray-50 rounded-[2rem] p-8 md:p-16 shadow-inner border border-gray-100">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-black uppercase">Request Factory Quote</h2>
+            <p className="text-gray-500 text-lg max-w-lg mx-auto leading-relaxed">Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote and design mockup within 12 hours.</p>
           </div>
           <InquiryForm />
         </div>
@@ -404,9 +478,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-xs flex flex-col md:flex-row justify-between gap-4">
+        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
           <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
-          <p>Powered by Accio & Vercel. Global B2B Headwear Solutions.</p>
         </div>
       </footer>
     </main>
