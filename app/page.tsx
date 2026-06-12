@@ -68,11 +68,18 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b, border-gray-100 py-6 px-4 md:px-8">
-        <div className="max-w-7xl mt-auto flex items-center justify-between">
-          <div className="flex flex-col">
-            <span className="text-2xl font-black tracking-tighter text-black">JUNYANG HEADWEAR</span>
-            <span className="text-[9px] text-gray-500 font-bold uppercase tracking-widest leading-none">Baoding Junyang Import & Export</span>
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <img 
+              src="https://sc01.alicdn.com/kf/H4287949d1c4d4ce8901c58aebf06e795L.png" 
+              alt="JUNYANG Logo" 
+              className="h-12 w-auto object-contain bg-black rounded"
+            />
+            <div className="hidden lg:flex flex-col">
+              <span className="text-xl font-black tracking-tighter text-black">JUNYANG</span>
+              <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none">Baoding Junyang Import & Export</span>
+            </div>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
             <a href="#advantages" className="hover:text-black transition">Advantages</a>
@@ -368,7 +375,11 @@ export default function Home() {
       <footer className="bg-black text-gray-500 py-16 px-4 border-t border-gray-900">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
-            <span className="text-xl font-black tracking-tighter text-white">JUNYANG HEADWEAR</span>
+            <img 
+              src="https://sc01.alicdn.com/kf/H4287949d1c4d4ce8901c58aebf06e795L.png" 
+              alt="JUNYANG Logo" 
+              className="h-16 w-auto object-contain mb-4"
+            />
             <p className="text-sm mt-3 leading-relaxed">
               Baoding Junyang Import And Export Trade Co., Ltd. is a premium custom hat manufacturer specializing in OEM/ODM embroidery baseball caps, beanies, and trucker hats since 2014.
             </p>
@@ -387,7 +398,7 @@ export default function Home() {
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li className="text-gray-400">WhatsApp: +86 15933930830</li>
-                <li className="text-gray-400">Email: sales@bdjunyang.com</li>
+                <li className="text-gray-400">Email: admin@bdjunyang.com</li>
                 <li className="text-gray-400">Office: Baoding, Hebei, China</li>
               </ul>
             </div>

@@ -1,13 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    CACHE_BUST: "2026-06-10-v7",
+    CACHE_BUST: "2026-06-10-v8",
   },
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'sc01.alicdn.com',
       },
     ],
   },

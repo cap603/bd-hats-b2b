@@ -44,12 +44,12 @@ export default function RootLayout({
     "@type": "Organization",
     "name": "BD Hats",
     "url": "https://b2b.bdjunyang.com",
-    "logo": "https://b2b.bdjunyang.com/logo.png",
+    "logo": "https://sc01.alicdn.com/kf/H4287949d1c4d4ce8901c58aebf06e795L.png",
     "description": "Premium custom hat manufacturer and B2B wholesale supplier specializing in embroidery and customized headwear.",
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "sales",
-      "email": "sales@bdjunyang.com"
+      "email": "admin@bdjunyang.com"
     }
   };
 
