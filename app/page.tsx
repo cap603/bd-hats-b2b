@@ -77,6 +77,7 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
             <a href="#advantages" className="hover:text-black transition">Advantages</a>
             <a href="#factory" className="hover:text-black transition">Our Factory</a>
+            <a href="#qc" className="hover:text-black transition">Quality Control</a>
             <a href="#catalog" className="hover:text-black transition">Baseball Caps</a>
             <a href="#inquiry" className="hover:text-black transition">Inquiry</a>
           </nav>
@@ -116,6 +117,26 @@ export default function Home() {
               Request Free Samples
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Free 3D Mockup CTA Section */}
+      <section className="bg-yellow-400 py-12 px-4 border-b-4 border-black">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="max-w-2xl">
+            <h2 className="text-2xl md:text-4xl font-black text-black tracking-tight leading-tight">
+              Ready to See Your Brand on Our Caps?
+            </h2>
+            <p className="text-black/80 font-bold mt-2 text-lg">
+              Get a professional 3D digital mockup within 24 hours — Free of charge.
+            </p>
+          </div>
+          <a 
+            href="#inquiry" 
+            className="bg-black text-white font-bold px-10 py-5 rounded-full hover:bg-gray-900 transition flex items-center gap-3 text-lg shadow-xl shadow-black/20"
+          >
+            <Cpu size={24} /> Start Free 3D Design
+          </a>
         </div>
       </section>
 
@@ -246,6 +267,72 @@ export default function Home() {
               <span className="absolute -top-6 left-8 text-5xl font-black text-gray-800">04</span>
               <h3 className="text-lg font-bold mb-3 mt-4">Bulk & Quality Updates</h3>
               <p className="text-gray-400 text-sm leading-relaxed">We manufacture bulk orders and send regular progress media updates. 100% inspected before shipping.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* QC Protocol Section */}
+      <section id="qc" className="py-24 bg-white scroll-mt-20 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="lg:w-1/2">
+              <span className="text-xs font-black uppercase tracking-widest text-gray-500">Rigid Quality Assurance</span>
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-8">Our 5-Stage Strict QC Protocol</h2>
+              <div className="space-y-8">
+                <div className="flex gap-6">
+                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">01</div>
+                  <div>
+                    <h4 className="font-bold text-lg text-black">Raw Material Verification</h4>
+                    <p className="text-gray-600 text-sm mt-1">Every roll of heavy cotton twill, organic canvas, and embroidery thread is checked for color consistency and tensile strength before cutting.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">02</div>
+                  <div>
+                    <h4 className="font-bold text-lg text-black">Embroidery Precision Check</h4>
+                    <p className="text-gray-600 text-sm mt-1">Real-time monitoring of 3D puff embroidery height and stitch density. We immediately reject any piece with frayed edges or misaligned logos.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">03</div>
+                  <div>
+                    <h4 className="font-bold text-lg text-black">Stitching Integrity Audit</h4>
+                    <p className="text-gray-600 text-sm mt-1">Focus on crown structure and seam tape. We ensure internal sweatbands are aligned to within 1mm for maximum comfort and durability.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">04</div>
+                  <div>
+                    <h4 className="font-bold text-lg text-black">Final Piece-by-Piece QC</h4>
+                    <p className="text-gray-600 text-sm mt-1">Every single cap undergoes a final manual inspection, thread trimming, and high-pressure steam ironing before reaching the packing line.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">05</div>
+                  <div>
+                    <h4 className="font-bold text-lg text-black">Export Packing & Label Audit</h4>
+                    <p className="text-gray-600 text-sm mt-1">Final count verification against the packing list and shipping label audit to ensure 100% accuracy in international logistics.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/2 relative">
+              <div className="absolute -right-24 -top-24 w-96 h-96 bg-yellow-400 rounded-full blur-3xl opacity-20"></div>
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&q=80&w=800" 
+                  alt="Quality Control Inspection" 
+                  className="w-full h-auto"
+                />
+                <div className="absolute top-8 left-8 bg-white/90 backdrop-blur shadow-lg p-4 rounded-xl border border-gray-100">
+                  <div className="flex items-center gap-2 mb-1">
+                    <div className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">Live Status</span>
+                  </div>
+                  <p className="text-black font-bold text-sm">AQL 2.5 Passed</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
