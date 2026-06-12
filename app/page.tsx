@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     q: "Do you manufacture hats based on custom designs (OEM/ODM)?",
-    a: "Yes. Baoding Junyang is a full-service OEM/ODM manufacturer. We can construct caps from your sketches, spec sheets, or reverse-engineer physical original samples."
+    a: "Yes. Baoding Junyang is a full-service OEM/ODM factory. We can construct caps from your sketches, spec sheets, or reverse-engineer physical original samples."
   },
   {
     q: "What is your standard production lead time?",
@@ -72,13 +72,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <img 
-              src="https://sc01.alicdn.com/kf/H4287949d1c4d4ce8901c58aebf06e795L.png" 
+              src="https://sc02.alicdn.com/kf/Ad5c7f327f09b427483b682ba515d0d5ed.png" 
               alt="JUNYANG Logo" 
-              className="h-12 w-auto object-contain bg-black rounded"
+              className="h-12 w-auto object-contain"
             />
             <div className="hidden lg:flex flex-col">
               <span className="text-xl font-black tracking-tighter text-black">JUNYANG</span>
-              <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none">Baoding Junyang Import & Export</span>
+              <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none">Baoding Junyang Hat Factory</span>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
@@ -376,12 +376,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
             <img 
-              src="https://sc01.alicdn.com/kf/H4287949d1c4d4ce8901c58aebf06e795L.png" 
+              src="https://sc02.alicdn.com/kf/Ad5c7f327f09b427483b682ba515d0d5ed.png" 
               alt="JUNYANG Logo" 
               className="h-16 w-auto object-contain mb-4"
             />
             <p className="text-sm mt-3 leading-relaxed">
-              Baoding Junyang Import And Export Trade Co., Ltd. is a premium custom hat manufacturer specializing in OEM/ODM embroidery baseball caps, beanies, and trucker hats since 2014.
+              Baoding Junyang Hat Manufacturing Co., Ltd. is a premium custom hat factory specializing in OEM/ODM embroidery baseball caps, beanies, and trucker hats since 2014.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-12">
@@ -405,7 +405,7 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-xs flex flex-col md:flex-row justify-between gap-4">
-          <p>© 2026 Baoding Junyang Import And Export Trade Co., Ltd. All rights reserved.</p>
+          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
           <p>Powered by Accio & Vercel. Global B2B Headwear Solutions.</p>
         </div>
       </footer>
