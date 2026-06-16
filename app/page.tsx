@@ -32,7 +32,7 @@ const BANNERS = [
 const FAQS = [
   {
     q: "What is your Minimum Order Quantity (MOQ) for custom baseball caps?",
-    a: "Our standard MOQ is 100 pieces per style/color. We also accommodate smaller test orders for initial brand startups and custom embroidery trials."
+    a: "Our standard MOQ is 50 pieces per style/color. We also accommodate smaller test orders for initial brand startups and custom embroidery trials."
   },
   {
     q: "Can I get a sample before bulk production?",
@@ -195,13 +195,13 @@ export default function Home() {
       </section>
 
       {/* Free 3D Mockup CTA Section */}
-      <section className="bg-yellow-400 py-12 px-4 border-b-4 border-black">
+      <section className="bg-amber-500 py-12 px-4 border-b-4 border-black">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-2xl md:text-4xl font-black text-black tracking-tight leading-tight">
+            <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight leading-tight">
               Ready to See Your Brand on Our Caps?
             </h2>
-            <p className="text-black/80 font-bold mt-2 text-lg">
+            <p className="text-white font-bold mt-2 text-lg">
               Get a professional 3D digital mockup within 24 hours — Free of charge.
             </p>
           </div>
@@ -222,8 +222,8 @@ export default function Home() {
             <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Production Experience</p>
           </div>
           <div className="p-4">
-            <p className="text-4xl md:text-5xl font-black text-black mb-1">Low MOQ</p>
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Flexible Orders Starting from 2 Pcs</p>
+            <p className="text-4xl md:text-5xl font-black text-black mb-1">50 Pcs</p>
+            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Low MOQ Starting from 50 Pcs</p>
           </div>
           <div className="p-4 flex flex-col items-center justify-center">
             <img src="https://sc02.alicdn.com/kf/S550f2425a6104c99a815a513ca0c5e7fG.png" alt="SGS Verified" className="h-12 w-auto mb-2 opacity-80" />
@@ -241,9 +241,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12 opacity-60 grayscale hover:grayscale-0 transition duration-500">
            <div className="flex flex-col items-center">
               <span className="text-[10px] font-black uppercase tracking-widest mb-3">Compliance Standards</span>
-              <div className="flex gap-8">
+              <div className="flex items-center gap-8">
                  <span className="font-black text-xl italic text-gray-400">REACH</span>
-                 <span className="font-black text-xl italic text-gray-400">CE MARK</span>
+                 <div className="bg-black text-white px-4 py-2 rounded-lg flex items-center gap-2 transform -rotate-2">
+                    <span className="font-black text-2xl italic">CE</span>
+                    <span className="text-[8px] font-bold uppercase leading-tight">Certified<br/>Product</span>
+                 </div>
                  <span className="font-black text-xl italic text-gray-400">RoHS</span>
               </div>
            </div>
