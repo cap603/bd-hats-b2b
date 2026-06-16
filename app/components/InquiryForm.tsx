@@ -32,6 +32,23 @@ export function InquiryForm() {
         </div>
       </div>
       <div>
+         <label className="block text-sm font-medium text-gray-700 mb-3">Service Interest (Select all that apply)</label>
+         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <label className="flex items-center gap-2 text-sm cursor-pointer p-3 border rounded-lg hover:bg-gray-50 transition">
+               <input type="checkbox" className="accent-black" /> 3D Digital Mockup
+            </label>
+            <label className="flex items-center gap-2 text-sm cursor-pointer p-3 border rounded-lg hover:bg-gray-50 transition">
+               <input type="checkbox" className="accent-black" /> Physical Sample
+            </label>
+            <label className="flex items-center gap-2 text-sm cursor-pointer p-3 border rounded-lg hover:bg-gray-50 transition">
+               <input type="checkbox" className="accent-black" /> Bulk Production
+            </label>
+            <label className="flex items-center gap-2 text-sm cursor-pointer p-3 border rounded-lg hover:bg-gray-50 transition">
+               <input type="checkbox" className="accent-black" /> Small Test Order
+            </label>
+         </div>
+      </div>
+      <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">Upload Logo / Artwork (Optional)</label>
         <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-black transition">
           <div className="space-y-1 text-center">
