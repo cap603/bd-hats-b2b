@@ -218,21 +218,43 @@ export default function Home() {
       <section id="advantages" className="bg-white py-16 border-b border-gray-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="p-4">
-            <p className="text-4xl md:text-5xl font-black text-black mb-1">12+ Years</p>
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Experience (Est. 2014)</p>
+            <p className="text-4xl md:text-5xl font-black text-black mb-1">20+ Years</p>
+            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Production Experience</p>
           </div>
           <div className="p-4">
-            <p className="text-4xl md:text-5xl font-black text-black mb-1">100 Pcs</p>
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Low MOQ to Start</p>
+            <p className="text-4xl md:text-5xl font-black text-black mb-1">Low MOQ</p>
+            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Flexible Orders Starting from 2 Pcs</p>
           </div>
-          <div className="p-4">
-            <p className="text-4xl md:text-5xl font-black text-black mb-1">100+</p>
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Japanese Embroidery Machines</p>
+          <div className="p-4 flex flex-col items-center justify-center">
+            <img src="https://sc02.alicdn.com/kf/S550f2425a6104c99a815a513ca0c5e7fG.png" alt="SGS Verified" className="h-12 w-auto mb-2 opacity-80" />
+            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">SGS Verified Factory</p>
           </div>
           <div className="p-4">
             <p className="text-4xl md:text-5xl font-black text-black mb-1">24 Hour</p>
             <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Free 3D Mockup Output</p>
           </div>
+        </div>
+      </section>
+
+      {/* Global Markets & Compliance */}
+      <section className="bg-gray-50 py-12 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+           <div className="flex flex-col items-center">
+              <span className="text-[10px] font-black uppercase tracking-widest mb-3">Compliance Standards</span>
+              <div className="flex gap-8">
+                 <span className="font-black text-xl italic text-gray-400">REACH</span>
+                 <span className="font-black text-xl italic text-gray-400">CE MARK</span>
+                 <span className="font-black text-xl italic text-gray-400">RoHS</span>
+              </div>
+           </div>
+           <div className="h-8 w-px bg-gray-300 hidden md:block"></div>
+           <div className="flex flex-col items-center">
+              <span className="text-[10px] font-black uppercase tracking-widest mb-3">Main Markets</span>
+              <div className="flex gap-8">
+                 <span className="font-bold text-sm tracking-tight">NORTH AMERICA (70%)</span>
+                 <span className="font-bold text-sm tracking-tight">WESTERN EUROPE (25%)</span>
+              </div>
+           </div>
         </div>
       </section>
 
