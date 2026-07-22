@@ -200,6 +200,14 @@ export default function Home() {
             ></button>
           ))}
         </div>
+
+        {/* Hero Data Pills */}
+        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30 flex gap-2 md:gap-3 flex-wrap justify-center px-4">
+          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">MOQ 50 Pcs</span>
+          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">7-Day Samples</span>
+          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">70% North America</span>
+          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-yellow-400 text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">Free 3D Mockup</span>
+        </div>
       </section>
 
       {/* Free 3D Mockup CTA Section */}
@@ -556,7 +564,8 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li><a href="#advantages" className="hover:text-white">Advantages</a></li>
                 <li><a href="#factory" className="hover:text-white">Our Factory</a></li>
-                <li><a href="#catalog" className="hover:text-white">Baseball Caps</a></li>
+                <li><a href="#catalog" className="hover:text-white">Products</a></li>
+                <li><a href="/about" className="hover:text-white">About</a></li>
                 <li><a href="#inquiry" className="hover:text-white">Request Quote</a></li>
               </ul>
             </div>
