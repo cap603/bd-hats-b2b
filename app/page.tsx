@@ -291,7 +291,7 @@ export default function Home() {
                 </div>
               </div>
               <button 
-                onClick={handleWhatsAppMain}
+                onClick={() => handleWhatsApp("factory-section")}
                 className="bg-black hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full transition flex items-center gap-2 text-sm uppercase tracking-wider"
               >
                 <Play size={16} /> Request Factory Video Tour
@@ -324,6 +324,65 @@ export default function Home() {
                   </div>
                 </div>
               )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted By / Social Proof Section */}
+      <section className="py-24 px-4 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto text-center">
+          <span className="text-xs font-black uppercase tracking-widest text-gray-500">Trusted by Global Brands</span>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-4">Why Brands Choose BD Hats</h2>
+          <p className="text-gray-500 max-w-xl mx-auto text-lg font-light mb-16">
+            We are the factory behind hundreds of streetwear, corporate, and lifestyle brands worldwide.
+          </p>
+
+          {/* Trust Indicators Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                icon: "🏭",
+                stat: "300+",
+                label: "Brands Served Worldwide",
+                desc: "From US streetwear startups to European corporate uniform programs."
+              },
+              {
+                icon: "🧢",
+                stat: "5M+",
+                label: "Caps Produced Annually",
+                desc: "Industrial-scale capacity with consistent premium quality."
+              },
+              {
+                icon: "⭐",
+                stat: "98%",
+                label: "Client Retention Rate",
+                desc: "Our quality and service bring brands back season after season."
+              }
+            ].map((item, i) => (
+              <div key={i} className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <p className="text-4xl font-black text-black mb-2">{item.stat}</p>
+                <p className="font-bold text-gray-800 mb-2">{item.label}</p>
+                <p className="text-gray-500 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Certifications Row */}
+          <div className="flex flex-wrap items-center justify-center gap-8 py-8 border-t border-gray-100">
+            <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
+              <img src="https://sc02.alicdn.com/kf/S550f2425a6104c99a815a513ca0c5e7fG.png" alt="SGS" className="h-8 w-auto" />
+              <span className="text-sm font-bold">SGS Verified Supplier</span>
+            </div>
+            <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
+              <span className="text-sm font-bold">Alibaba Gold Supplier</span>
+            </div>
+            <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
+              <span className="text-sm font-bold">CE · REACH · RoHS Certified</span>
+            </div>
+            <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
+              <span className="text-sm font-bold">AQL 2.5 Quality Standard</span>
             </div>
           </div>
         </div>

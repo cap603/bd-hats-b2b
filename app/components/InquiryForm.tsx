@@ -23,12 +23,22 @@ export function InquiryForm() {
     <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-xl shadow-sm border">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
-          <input required type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" />
+          <label className="block text-sm font-medium text-gray-700 mb-1">Company Name *</label>
+          <input required type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder="Your Company Ltd." />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-          <input required type="email" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" />
+          <label className="block text-sm font-medium text-gray-700 mb-1">Contact Person</label>
+          <input type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder="John Doe" />
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+          <input required type="email" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder="you@company.com" />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Phone / WhatsApp *</label>
+          <input required type="tel" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder="+1 234 567 8900" />
         </div>
       </div>
       <div>

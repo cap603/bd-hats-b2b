@@ -5,7 +5,11 @@ import { HATS } from "../lib/products";
 export function HatCatalog() {
   const handleWhatsAppClick = (e: React.MouseEvent, hatName: string) => {
     e.preventDefault();
-    const text = encodeURIComponent(`Hi Baoding Junyang! I would like to get a quote and free mockup for the "${hatName}".`);
+    e.stopPropagation();
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "whatsapp_click", { event_category: "engagement", event_label: `product-${hatName}` });
+    }
+    const text = encodeURIComponent(`Hi Baoding Junyang! I'm interested in the "${hatName}". Can I get a quote & free 3D mockup?`);
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
 
