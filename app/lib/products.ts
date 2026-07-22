@@ -1,18 +1,29 @@
 export interface Product {
-  id: number;
+  id: number | string;
   name: string;
   desc: string;
   fullDesc: string;
   price: string;
   moq: number;
   img: string;
+  images?: string[];
+  category?: string;
   specs: {
     material: string;
     style: string;
     logo: string;
     closure: string;
     panels: string;
+    [key: string]: string;
   };
+  customization?: {
+    title: string;
+    options: string[];
+  };
+  faqs?: {
+    q: string;
+    a: string;
+  }[];
 }
 
 export const HATS: Product[] = [
@@ -24,92 +35,239 @@ export const HATS: Product[] = [
     price: "$2.90 - $3.90", 
     moq: 50,
     img: "https://sc01.alicdn.com/kf/H4faf483cc337458cbb9d161826e041f2u.png",
+    category: "Baseball Caps",
     specs: {
       material: "Premium Cotton Twill",
       style: "A-Frame Structured",
       logo: "3D Puff Embroidery (Front)",
       closure: "Plastic Snapback / Brass Buckle",
       panels: "5-Panel"
-    }
+    },
+    customization: {
+      title: "Our Customization Capabilities",
+      options: [
+        "Free 3D Mockup within 12 hours",
+        "Multiple Embroidery Types (3D, Flat, Chenille)",
+        "Custom Internal Seam Tape & Sweatband Labels",
+        "Wide Range of Fabric Colors in Stock"
+      ]
+    },
+    faqs: [
+      { q: "What's the lead time for custom samples?", a: "Sample production typically takes 7 business days." },
+      { q: "Can I customize the inner labels?", a: "Yes, we offer woven labels, printed care labels, and custom hang tags for all bulk orders." }
+    ]
   },
   { 
-    id: 2, 
-    name: "Gold Edition 3D Script 5-Panel", 
-    desc: "Luxury gold script embroidery on premium cream cotton. Part of our exclusive high-profile designer series.",
-    fullDesc: "Crafted for high-end fashion labels, this Gold Edition cap features metallic-thread gold script embroidery. The cream cotton base is treated for a soft touch yet maintains its rigid structure. It's the ideal choice for brands targeting a luxury or designer market segment.",
-    price: "$2.80 - $3.90", 
+    id: "1601670043022", 
+    name: "Custom 3D Embroidered 5 Panel Gorras", 
+    desc: "Top performing factory-direct 5-panel cap featuring high-definition 3D embroidered logos. Professional sports quality.",
+    fullDesc: "Our most viewed product on Alibaba.com. This 5-panel cap is built with premium 108*56 heavy cotton twill, designed specifically for brands requiring intricate 3D puff embroidery. The front panel provides a large canvas for bold branding without seam interference.",
+    price: "$0.98 - $2.48", 
     moq: 50,
-    img: "https://sc01.alicdn.com/kf/Hfcc96f3c12f44b44b219dd0f120e1a6dy.png",
+    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    category: "Baseball Caps",
     specs: {
-      material: "High-Density Brushed Cotton",
-      style: "High-Profile Designer",
-      logo: "Metallic Gold Script Embroidery",
-      closure: "Premium Metal Buckle",
-      panels: "5-Panel"
-    }
-  },
-  { 
-    id: 3, 
-    name: "Vintage Washed Cotton Dad Hat Series", 
-    desc: "100% garment-washed cotton with customized 3D embroidery logos. Antique brass buckle closure.",
-    fullDesc: "Our vintage series uses a specialized heavy washing process to achieve an authentic 'lived-in' look. Despite the soft feel, the construction is rugged with reinforced seams. The low-profile crown and curved brim offer the classic 'Dad Hat' fit that remains a top-seller in US and European markets.",
-    price: "$3.20 - $4.50", 
-    moq: 50,
-    img: "https://sc01.alicdn.com/kf/H47594c6deca245f0829415dd9ab0201cb.jpg",
-    specs: {
-      material: "100% Washed Cotton",
-      style: "Unstructured Dad Hat",
+      material: "100% Cotton Twill (108*56)",
+      style: "Structured 5-Panel",
       logo: "Custom 3D / Flat Embroidery",
+      closure: "Adjustable Snapback / Buckle",
+      panels: "5-Panel"
+    },
+    customization: {
+      title: "Full OEM/ODM Support",
+      options: [
+        "Any Color from Pantone TPX Chart",
+        "High-Height 3D Embroidery Technology",
+        "Custom Logo Printing on Internal Sweatband",
+        "Bespoke Packaging & Hangtags"
+      ]
+    },
+    faqs: [
+      { q: "Do you have stock colors?", a: "Yes, we maintain over 50 colors of cotton twill in stock for fast turnaround." },
+      { q: "Is the price negotiable for large volumes?", a: "Absolutely. For orders over 1,000 units, we offer significant volume discounts." }
+    ]
+  },
+  { 
+    id: "1601021501358", 
+    name: "Vintage Acid Wash 6 Panel Dad Hat", 
+    desc: "Premium vintage aesthetic with heavy acid washing and antique metal hardware. Timeless style for lifestyle brands.",
+    fullDesc: "The #2 best-seller in our Alibaba store. This cap undergoes a rigorous washing and treatment process to achieve its unique distressed look. Ideal for brands looking for a high-end vintage or streetwear vibe. Features a soft, unstructured crown for the ultimate 'Dad Hat' fit.",
+    price: "$2.00 - $3.80", 
+    moq: 50,
+    img: "https://sc04.alicdn.com/kf/H668617812983428383861298c92a5F.jpg",
+    category: "Vintage Series",
+    specs: {
+      material: "Heavy Acid-Washed Cotton",
+      style: "Unstructured Low-Profile",
+      logo: "Vintage Flat Embroidery / Patch",
       closure: "Antique Brass Slide Buckle",
+      panels: "6-Panel"
+    },
+    customization: {
+      title: "Vintage Specialization",
+      options: [
+        "Custom Distressing & Fraying Levels",
+        "Antique Metal Finishes (Brass, Nickel, Silver)",
+        "Leather Patch Integration",
+        "Washed-look Embroidery Thread"
+      ]
+    },
+    faqs: [
+      { q: "Does the washing affect the logo?", a: "We typically embroider after the wash for crisp detail, or before for a more weathered look depending on your brand preference." }
+    ]
+  },
+  { 
+    id: "1601394359156", 
+    name: "Luxury Designer Soft Printed Slides", 
+    desc: "Expanding our B2B range into premium footwear. High-comfort PVC/EVA slides with custom logo printing for lifestyle brands.",
+    fullDesc: "A high-conversion item for our brand partners expanding into leisurewear. These slides feature a soft, contoured footbed and a durable PVC strap. We use high-grade UV printing or embossed molding for logos, ensuring your branding stays vibrant even with heavy use.",
+    price: "$1.50 - $3.50", 
+    moq: 50,
+    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg", // Placeholder for slides
+    category: "Footwear",
+    specs: {
+      material: "PVC Strap + EVA Sole",
+      style: "Flat House / Outdoor Slides",
+      logo: "Silk Screen / Embossed / UV Print",
+      closure: "Slip-on",
+      panels: "N/A"
+    },
+    customization: {
+      title: "Footwear Customization",
+      options: [
+        "Custom Molded Outsole Logos",
+        "All-over Printed Straps",
+        "Eco-friendly EVA Material Options",
+        "Custom Shoebox & Dustbag Packaging"
+      ]
+    }
+  },
+  { 
+    id: "1601709883793", 
+    name: "Outdoor Performance 5 Panel Cap", 
+    desc: "Lightweight, breathable, and adjustable. Designed for active outdoor lifestyles and professional sportswear brands.",
+    fullDesc: "Engineered for high performance. This cap uses lightweight cotton-nylon blends for superior moisture management. The 5-panel construction ensures a sleek, streamlined look while providing maximum comfort during physical activity.",
+    price: "$0.98 - $2.48", 
+    moq: 50,
+    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    category: "Sports & Active",
+    specs: {
+      material: "Breathable Tech Cotton",
+      style: "Active Curve Brim",
+      logo: "Reflective / Flat Embroidery",
+      closure: "Elastic / Toggle System",
+      panels: "5-Panel"
+    },
+    customization: {
+      title: "Performance Features",
+      options: [
+        "Moisture-wicking Sweatband Technology",
+        "UPF 50+ Sun Protection Fabric",
+        "Reflective Printing for Visibility",
+        "Laser-cut Ventilation Eyelets"
+      ]
+    }
+  },
+  { 
+    id: "1601674075270", 
+    name: "Structured Multi-Color Baseball Cap", 
+    desc: "Classic high-profile structured cap available in over 30 vibrant colors. The workhorse of promotional and retail hat programs.",
+    fullDesc: "A high-stability cap that maintains its shape. Built with heavy-duty buckram front panels, this cap is the industry standard for durability and classic fit. Perfect for corporate programs or brands requiring a consistent, high-impact retail presence.",
+    price: "$1.00 - $3.00", 
+    moq: 50,
+    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    category: "Baseball Caps",
+    specs: {
+      material: "Heavy Duty Cotton Twill",
+      style: "Structured High-Profile",
+      logo: "3D Puff / Flat / Patch",
+      closure: "Plastic Snapback",
       panels: "6-Panel"
     }
   },
   { 
-    id: 4, 
-    name: "Custom Fashion Mesh Trucker Hat", 
-    desc: "Premium foam front with high-breathability mesh back. Features custom script embroidery and racing stripes.",
-    fullDesc: "Designed for performance and style, our Trucker series combines a structured foam front with high-quality nylon mesh. The multi-tone racing stripes on the side are customizable, and the wide front panel is perfect for large, detailed embroidery or screen-printed designs.",
-    price: "$1.90 - $2.90", 
+    id: "1601394414202", 
+    name: "Fashion Summer Casual PVC Slides", 
+    desc: "Lightweight casual flip-flops and slides. Durable PVC construction with custom color matching.",
+    fullDesc: "Durable and stylish. These fashion slides are a favorite for summer beachwear collections. The anti-slip outsole provides safety and comfort, while the wide strap is ideal for large-scale logo application.",
+    price: "$0.80 - $2.00", 
     moq: 50,
-    img: "https://sc01.alicdn.com/kf/H90c2155da629468fa925eb0464b06457e.jpg",
+    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg", // Placeholder
+    category: "Footwear",
     specs: {
-      material: "Polyester Foam + Nylon Mesh",
-      style: "Curved Brim Trucker",
-      logo: "Flat Embroidery / Screen Print",
-      closure: "7-Hole Plastic Snapback",
+      material: "High-Grade PVC",
+      style: "Summer Flip Flop / Slide",
+      logo: "Injection Molded / Print",
+      closure: "Slip-on",
+      panels: "N/A"
+    }
+  },
+  { 
+    id: "1601440937602", 
+    name: "Ladies Plain Blank Cotton Sports Cap", 
+    desc: "Specifically tailored profile for a feminine fit. Soft, breathable cotton for comfort and style.",
+    fullDesc: "Designed with a smaller circumference and slightly shorter brim to provide a perfect fit for women's head shapes. This cap is a top choice for athleisure and boutique female fashion brands.",
+    price: "$0.50 - $1.50", 
+    moq: 50,
+    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    category: "Baseball Caps",
+    specs: {
+      material: "Fine Cotton Twill",
+      style: "Feminine Profile Curve Brim",
+      logo: "Small-detail Embroidery",
+      closure: "Fabric Strap with Metal Slide",
+      panels: "6-Panel"
+    }
+  },
+  { 
+    id: "1601393727183", 
+    name: "New Design PVC Outdoor Slides", 
+    desc: "Modern outdoor leisure slides with ergonomic footbed. High durability for versatile use.",
+    fullDesc: "Featuring our newest sole design for 2026. These slides offer better arch support and a more modern silhouette. Custom branding can be applied via high-definition laser engraving or multi-color silk printing.",
+    price: "$1.20 - $2.80", 
+    moq: 50,
+    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg", // Placeholder
+    category: "Footwear",
+    specs: {
+      material: "Durable PVC / TPU",
+      style: "Ergonomic Outdoor Slide",
+      logo: "Laser Engraved / Print",
+      closure: "Slip-on",
+      panels: "N/A"
+    }
+  },
+  { 
+    id: "1601796700808", 
+    name: "Personalised Two-Tone A-Frame Cap", 
+    desc: "High-impact two-tone contrast styling. A-frame construction for a bold, stand-out brand presence.",
+    fullDesc: "Contrast visor and panels for maximum visual appeal. The A-frame crown provides a unique profile that's highly popular in the Australian and US streetwear markets. 100% customizable from colors to stitching thread.",
+    price: "$2.20 - $4.00", 
+    moq: 50,
+    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    category: "Baseball Caps",
+    specs: {
+      material: "Premium Cotton Canvas",
+      style: "Two-Tone A-Frame",
+      logo: "Custom 3D / Flat / Applique",
+      closure: "Snapback",
       panels: "5-Panel"
     }
   },
   { 
-    id: 5, 
-    name: "Outdoor Tech Wing Series Cap", 
-    desc: "Vibrant royal blue cotton with 3D puff embroidery and iconic wing side patch. For activewear brands.",
-    fullDesc: "This tech-inspired cap features a moisture-wicking internal sweatband and heavy-duty cotton twill exterior. The side wing patch is a unique branding element that we can customize with your own symbols. Highly durable construction for outdoor and active lifestyles.",
-    price: "$2.80 - $3.90", 
+    id: "1601198883417", 
+    name: "Breathable Custom Embroidered 6 Panel", 
+    desc: "Engineered for ventilation. A professional sports-grade 6-panel cap with high stitch-count embroidery.",
+    fullDesc: "This cap features reinforced ventilation eyelets and a lightweight mesh-lined crown. Designed for heavy use in sports and outdoor events, it maintains a crisp, professional look while keeping the wearer cool.",
+    price: "$1.50 - $3.20", 
     moq: 50,
-    img: "https://sc01.alicdn.com/kf/He08acde3cf354ef99014af1a5b4f5c2bf.png",
+    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    category: "Baseball Caps",
     specs: {
-      material: "Heavy Duty Cotton Twill",
-      style: "Active Performance Cap",
-      logo: "3D Puff (Front) + Applique (Side)",
-      closure: "Elastic Flex-fit / Snapback",
-      panels: "5-Panel"
+      material: "Breathable Cotton Mix",
+      style: "Structured Sports Profile",
+      logo: "High-Density Embroidery",
+      closure: "Metal Buckle",
+      panels: "6-Panel"
     }
-  },
-  { 
-    id: 6, 
-    name: "Premium Multi-Tone 5-Panel (BQM1546)", 
-    desc: "A-frame high-profile crown with premium cotton twill. Featuring outline embroidery and multi-tone visors.",
-    fullDesc: "The BQM1546 is our flagship model, trusted by hundreds of global brands. It features a perfect 5-panel symmetry, a high-profile crown for a modern look, and a rigid brim. The multi-tone color options are virtually endless, allowing for precise brand matching.",
-    price: "$2.80 - $3.90", 
-    moq: 50,
-    img: "https://sc01.alicdn.com/kf/H1edd649a1887488f91f1ed75174dce806.png",
-    specs: {
-      material: "Premium Cotton Twill",
-      style: "A-Frame High-Profile",
-      logo: "Outline / 3D Embroidery",
-      closure: "Premium Snapback",
-      panels: "5-Panel"
-    }
-  },
+  }
 ];
