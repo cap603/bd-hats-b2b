@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import { HatCatalog } from "./components/HatCatalog";
@@ -75,8 +75,16 @@ export default function Home() {
     }))
   };
 
-  const handleWhatsAppMain = () => {
-    const text = encodeURIComponent("Hi Baoding Junyang! I would like to get a catalog and free mockup for custom baseball caps.");
+  const trackWhatsApp = (source: string) => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "whatsapp_click", { event_category: "engagement", event_label: source });
+    }
+  };
+
+  const handleWhatsApp = (source: string, customText?: string) => {
+    const defaultText = "Hi Baoding Junyang! I would like to get a catalog and free mockup for custom baseball caps.";
+    const text = encodeURIComponent(customText || defaultText);
+    trackWhatsApp(source);
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
 
@@ -91,7 +99,7 @@ export default function Home() {
       {/* Floating WhatsApp Widget */}
       <div className="fixed bottom-8 right-8 z-50">
         <button 
-          onClick={handleWhatsAppMain}
+          onClick={() => handleWhatsApp("floating-widget")}
           className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition duration-300 text-sm md:text-base animate-bounce"
         >
           <MessageCircle size={20} /> Chat with a Specialist
@@ -125,7 +133,7 @@ export default function Home() {
             <a href="#inquiry" className="hover:text-black transition">Inquiry</a>
           </nav>
           <button 
-            onClick={handleWhatsAppMain}
+            onClick={() => handleWhatsApp("header")}
             className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm flex items-center gap-2 transition"
           >
             <MessageCircle size={16} /> WhatsApp Quote
@@ -158,7 +166,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4 w-full max-w-md">
                 <button 
-                  onClick={banner.link === 'whatsapp' ? handleWhatsAppMain : () => window.location.hash = banner.link}
+                  onClick={banner.link === 'whatsapp' ? () => handleWhatsApp("hero-banner") : () => window.location.hash = banner.link}
                   className="bg-green-500 text-white font-bold px-10 py-5 rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2 text-lg shadow-lg"
                 >
                   {banner.link === 'whatsapp' && <MessageCircle size={24} />} {banner.cta}
@@ -568,4 +576,6 @@ export default function Home() {
       </footer>
     </main>
   );
+}
+
 }
