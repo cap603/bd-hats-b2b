@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    CACHE_BUST: "2026-06-10-v16",
+    CACHE_BUST: "2026-07-23-v17",
   },
   images: {
     remotePatterns: [
@@ -16,6 +16,14 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'sc02.alicdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'sc04.alicdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 's.alicdn.com',
       },
     ],
   },

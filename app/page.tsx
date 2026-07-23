@@ -90,7 +90,15 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white font-sans text-gray-900 selection:bg-black selection:text-white">
-      {/* FAQ Schema */}
+      {/* JSON-LD Schemas */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -566,6 +574,27 @@ export default function Home() {
                 <li><a href="#factory" className="hover:text-white">Our Factory</a></li>
                 <li><a href="#catalog" className="hover:text-white">Products</a></li>
                 <li><a href="/about" className="hover:text-white">About</a></li>
+                <li><a href="#inquiry" className="hover:text-white">Request Quote</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
+              <ul className="space-y-2 text-sm">
+                <li className="text-gray-400">WhatsApp: +86 15933930830</li>
+                <li className="text-gray-400">Email: admin@bdjunyang.com</li>
+                <li className="text-gray-400">Office: Baoding, Hebei, China</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
+          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  );
+}
+></li>
                 <li><a href="#inquiry" className="hover:text-white">Request Quote</a></li>
               </ul>
             </div>
