@@ -123,7 +123,7 @@ export const HATS: Product[] = [
     fullDesc: "A high-conversion item for our brand partners expanding into leisurewear. These slides feature a soft, contoured footbed and a durable PVC strap. We use high-grade UV printing or embossed molding for logos, ensuring your branding stays vibrant even with heavy use.",
     price: "$1.50 - $3.50", 
     moq: 50,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg", // Placeholder for slides
+    img: "https://s.alicdn.com/@sc04/kf/H615099c9958f44d5a189693d3d4f0f8eu.jpg",
     category: "Footwear",
     specs: {
       material: "PVC Strap + EVA Sole",
@@ -149,7 +149,7 @@ export const HATS: Product[] = [
     fullDesc: "Engineered for high performance. This cap uses lightweight cotton-nylon blends for superior moisture management. The 5-panel construction ensures a sleek, streamlined look while providing maximum comfort during physical activity.",
     price: "$0.98 - $2.48", 
     moq: 50,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    img: "https://s.alicdn.com/@sc04/kf/H491f2ecb113c48148e0b4e7fd119c9ceQ.jpg",
     category: "Sports & Active",
     specs: {
       material: "Breathable Tech Cotton",
@@ -175,7 +175,7 @@ export const HATS: Product[] = [
     fullDesc: "A high-stability cap that maintains its shape. Built with heavy-duty buckram front panels, this cap is the industry standard for durability and classic fit. Perfect for corporate programs or brands requiring a consistent, high-impact retail presence.",
     price: "$1.00 - $3.00", 
     moq: 50,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    img: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png",
     category: "Baseball Caps",
     specs: {
       material: "Heavy Duty Cotton Twill",
@@ -192,7 +192,7 @@ export const HATS: Product[] = [
     fullDesc: "Durable and stylish. These fashion slides are a favorite for summer beachwear collections. The anti-slip outsole provides safety and comfort, while the wide strap is ideal for large-scale logo application.",
     price: "$0.80 - $2.00", 
     moq: 50,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg", // Placeholder
+    img: "https://s.alicdn.com/@sc04/kf/H8dfbfd9c164e49f8b0c76ed53f7287ac2.jpg",
     category: "Footwear",
     specs: {
       material: "High-Grade PVC",
@@ -209,7 +209,7 @@ export const HATS: Product[] = [
     fullDesc: "Designed with a smaller circumference and slightly shorter brim to provide a perfect fit for women's head shapes. This cap is a top choice for athleisure and boutique female fashion brands.",
     price: "$0.50 - $1.50", 
     moq: 50,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    img: "https://s.alicdn.com/@sc04/kf/Hd4865fa5783c4a5da8fd17a2fd64f703G.png",
     category: "Baseball Caps",
     specs: {
       material: "Fine Cotton Twill",
@@ -226,7 +226,7 @@ export const HATS: Product[] = [
     fullDesc: "Featuring our newest sole design for 2026. These slides offer better arch support and a more modern silhouette. Custom branding can be applied via high-definition laser engraving or multi-color silk printing.",
     price: "$1.20 - $2.80", 
     moq: 50,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg", // Placeholder
+    img: "https://s.alicdn.com/@sc04/kf/H971b331a3e044d629c847fda0322c59dn.jpg",
     category: "Footwear",
     specs: {
       material: "Durable PVC / TPU",
@@ -243,7 +243,7 @@ export const HATS: Product[] = [
     fullDesc: "Contrast visor and panels for maximum visual appeal. The A-frame crown provides a unique profile that's highly popular in the Australian and US streetwear markets. 100% customizable from colors to stitching thread.",
     price: "$2.20 - $4.00", 
     moq: 50,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    img: "https://s.alicdn.com/@sc04/kf/H5a0171373c2b42a6a0083b82f6e7c57da.jpg",
     category: "Baseball Caps",
     specs: {
       material: "Premium Cotton Canvas",
@@ -260,7 +260,7 @@ export const HATS: Product[] = [
     fullDesc: "This cap features reinforced ventilation eyelets and a lightweight mesh-lined crown. Designed for heavy use in sports and outdoor events, it maintains a crisp, professional look while keeping the wearer cool.",
     price: "$1.50 - $3.20", 
     moq: 50,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    img: "https://s.alicdn.com/@sc04/kf/Hefa4838aa05548fc9893878e057a8bees.png",
     category: "Baseball Caps",
     specs: {
       material: "Breathable Cotton Mix",
