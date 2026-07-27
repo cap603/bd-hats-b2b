@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "BD Hats | Premium Custom Hat Factory & B2B Wholesale",
     template: "%s | BD Hats",
   },
-  description: "Get premium custom hats directly from the factory. OEM/ODM since 2014. Custom embroidery, low MOQ 50pcs, free 3D mockup, 7-day samples. SGS verified factory in Baoding, China.",
+  description: "Get premium custom hats directly from the factory. OEM/ODM since 2014. Custom embroidery, MOQ 200pcs, free 3D mockup, 7-day samples. SGS verified factory in Baoding, China.",
   keywords: ["wholesale hats", "custom hat factory", "china hat manufacturer", "bulk baseball caps", "custom embroidery hats", "cap wholesale", "OEM hat supplier", "custom snapback", "dad hat factory", "trucker hat wholesale"],
   authors: [{ name: "Baoding Junyang Hat Manufacturing Co., Ltd." }],
   creator: "Baoding Junyang",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://b2b.bdjunyang.com",
     siteName: "BD Hats Factory",
-    title: "BD Hats | Premium Custom Hat Factory — Factory Direct, Low MOQ",
-    description: "Premium custom hats directly from the factory since 2014. Custom embroidery, low MOQ 50pcs, free 3D mockup, 7-day samples, shipped globally.",
+    title: "BD Hats | Premium Custom Hat Factory — Factory Direct, MOQ 200pcs",
+    description: "Premium custom hats directly from the factory since 2014. Custom embroidery, MOQ 200pcs, free 3D mockup, 7-day samples, shipped globally.",
     images: [
       {
         url: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "BD Hats | Premium Custom Hat Factory",
-    description: "Factory-direct custom hats since 2014. Low MOQ 50pcs · Free 3D Mockup · 7-Day Samples · Global Shipping.",
+    description: "Factory-direct custom hats since 2014. MOQ 200pcs · Free 3D Mockup · 7-Day Samples · Global Shipping.",
     images: ["https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png"],
   },
   verification: {

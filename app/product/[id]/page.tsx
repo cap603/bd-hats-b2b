@@ -153,7 +153,7 @@ export default function ProductDetail() {
                {[
                  { icon: ShieldCheck, label: "AQL 2.5", sub: "QC Standard" },
                  { icon: Zap, label: "15 Days", sub: "Production" },
-                 { icon: Package, label: "50 Pcs", sub: "Low MOQ" },
+                 { icon: Package, label: "200 Pcs", sub: "MOQ" },
                  { icon: Truck, label: "Global", sub: "Express Air" }
                ].map((item, i) => (
                  <div key={i} className="bg-gray-50 p-4 rounded-2xl border border-gray-100 flex flex-col items-center text-center">

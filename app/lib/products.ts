@@ -33,7 +33,7 @@ export const HATS: Product[] = [
     desc: "Structured 5-panel design with high-density 3D embroidery. Contrast visor and crown for a striking street aesthetic.",
     fullDesc: "This premium A-Frame cap represents the pinnacle of street fashion manufacturing. Utilizing high-density foam for the front panel, it provides a perfectly structured profile that never collapses. The contrast visor adds a bold visual pop, making it a favorite for streetwear brands globally.",
     price: "$2.90 - $3.90", 
-    moq: 50,
+    moq: 200,
     img: "https://sc01.alicdn.com/kf/H4faf483cc337458cbb9d161826e041f2u.png",
     category: "Baseball Caps",
     specs: {
@@ -63,7 +63,7 @@ export const HATS: Product[] = [
     desc: "Top performing factory-direct 5-panel cap featuring high-definition 3D embroidered logos. Professional sports quality.",
     fullDesc: "Our most viewed product on Alibaba.com. This 5-panel cap is built with premium 108*56 heavy cotton twill, designed specifically for brands requiring intricate 3D puff embroidery. The front panel provides a large canvas for bold branding without seam interference.",
     price: "$0.98 - $2.48", 
-    moq: 50,
+    moq: 200,
     img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
     category: "Baseball Caps",
     specs: {
@@ -93,7 +93,7 @@ export const HATS: Product[] = [
     desc: "Premium vintage aesthetic with heavy acid washing and antique metal hardware. Timeless style for lifestyle brands.",
     fullDesc: "The #2 best-seller in our Alibaba store. This cap undergoes a rigorous washing and treatment process to achieve its unique distressed look. Ideal for brands looking for a high-end vintage or streetwear vibe. Features a soft, unstructured crown for the ultimate 'Dad Hat' fit.",
     price: "$2.00 - $3.80", 
-    moq: 50,
+    moq: 200,
     img: "https://sc04.alicdn.com/kf/H668617812983428383861298c92a5F.jpg",
     category: "Vintage Series",
     specs: {
@@ -122,7 +122,7 @@ export const HATS: Product[] = [
     desc: "Expanding our B2B range into premium footwear. High-comfort PVC/EVA slides with custom logo printing for lifestyle brands.",
     fullDesc: "A high-conversion item for our brand partners expanding into leisurewear. These slides feature a soft, contoured footbed and a durable PVC strap. We use high-grade UV printing or embossed molding for logos, ensuring your branding stays vibrant even with heavy use.",
     price: "$1.50 - $3.50", 
-    moq: 50,
+    moq: 200,
     img: "https://s.alicdn.com/@sc04/kf/H615099c9958f44d5a189693d3d4f0f8eu.jpg",
     category: "Footwear",
     specs: {
@@ -148,7 +148,7 @@ export const HATS: Product[] = [
     desc: "Lightweight, breathable, and adjustable. Designed for active outdoor lifestyles and professional sportswear brands.",
     fullDesc: "Engineered for high performance. This cap uses lightweight cotton-nylon blends for superior moisture management. The 5-panel construction ensures a sleek, streamlined look while providing maximum comfort during physical activity.",
     price: "$0.98 - $2.48", 
-    moq: 50,
+    moq: 200,
     img: "https://s.alicdn.com/@sc04/kf/H491f2ecb113c48148e0b4e7fd119c9ceQ.jpg",
     category: "Sports & Active",
     specs: {
@@ -174,7 +174,7 @@ export const HATS: Product[] = [
     desc: "Classic high-profile structured cap available in over 30 vibrant colors. The workhorse of promotional and retail hat programs.",
     fullDesc: "A high-stability cap that maintains its shape. Built with heavy-duty buckram front panels, this cap is the industry standard for durability and classic fit. Perfect for corporate programs or brands requiring a consistent, high-impact retail presence.",
     price: "$1.00 - $3.00", 
-    moq: 50,
+    moq: 200,
     img: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png",
     category: "Baseball Caps",
     specs: {
@@ -191,7 +191,7 @@ export const HATS: Product[] = [
     desc: "Lightweight casual flip-flops and slides. Durable PVC construction with custom color matching.",
     fullDesc: "Durable and stylish. These fashion slides are a favorite for summer beachwear collections. The anti-slip outsole provides safety and comfort, while the wide strap is ideal for large-scale logo application.",
     price: "$0.80 - $2.00", 
-    moq: 50,
+    moq: 200,
     img: "https://s.alicdn.com/@sc04/kf/H8dfbfd9c164e49f8b0c76ed53f7287ac2.jpg",
     category: "Footwear",
     specs: {
@@ -208,7 +208,7 @@ export const HATS: Product[] = [
     desc: "Specifically tailored profile for a feminine fit. Soft, breathable cotton for comfort and style.",
     fullDesc: "Designed with a smaller circumference and slightly shorter brim to provide a perfect fit for women's head shapes. This cap is a top choice for athleisure and boutique female fashion brands.",
     price: "$0.50 - $1.50", 
-    moq: 50,
+    moq: 200,
     img: "https://s.alicdn.com/@sc04/kf/Hd4865fa5783c4a5da8fd17a2fd64f703G.png",
     category: "Baseball Caps",
     specs: {
@@ -225,7 +225,7 @@ export const HATS: Product[] = [
     desc: "Modern outdoor leisure slides with ergonomic footbed. High durability for versatile use.",
     fullDesc: "Featuring our newest sole design for 2026. These slides offer better arch support and a more modern silhouette. Custom branding can be applied via high-definition laser engraving or multi-color silk printing.",
     price: "$1.20 - $2.80", 
-    moq: 50,
+    moq: 200,
     img: "https://s.alicdn.com/@sc04/kf/H971b331a3e044d629c847fda0322c59dn.jpg",
     category: "Footwear",
     specs: {
@@ -242,7 +242,7 @@ export const HATS: Product[] = [
     desc: "High-impact two-tone contrast styling. A-frame construction for a bold, stand-out brand presence.",
     fullDesc: "Contrast visor and panels for maximum visual appeal. The A-frame crown provides a unique profile that's highly popular in the Australian and US streetwear markets. 100% customizable from colors to stitching thread.",
     price: "$2.20 - $4.00", 
-    moq: 50,
+    moq: 200,
     img: "https://s.alicdn.com/@sc04/kf/H5a0171373c2b42a6a0083b82f6e7c57da.jpg",
     category: "Baseball Caps",
     specs: {
@@ -259,7 +259,7 @@ export const HATS: Product[] = [
     desc: "Engineered for ventilation. A professional sports-grade 6-panel cap with high stitch-count embroidery.",
     fullDesc: "This cap features reinforced ventilation eyelets and a lightweight mesh-lined crown. Designed for heavy use in sports and outdoor events, it maintains a crisp, professional look while keeping the wearer cool.",
     price: "$1.50 - $3.20", 
-    moq: 50,
+    moq: 200,
     img: "https://s.alicdn.com/@sc04/kf/Hefa4838aa05548fc9893878e057a8bees.png",
     category: "Baseball Caps",
     specs: {

@@ -32,7 +32,7 @@ const BANNERS = [
 const FAQS = [
   {
     q: "What is your Minimum Order Quantity (MOQ) for custom baseball caps?",
-    a: "Our standard MOQ is 50 pieces per style/color. We also accommodate smaller test orders for initial brand startups and custom embroidery trials."
+    a: "Our standard MOQ is 200 pieces per style/color. We also accommodate smaller test orders for initial brand startups and custom embroidery trials."
   },
   {
     q: "Can I get a sample before bulk production?",
@@ -211,7 +211,7 @@ export default function Home() {
 
         {/* Hero Data Pills */}
         <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30 flex gap-2 md:gap-3 flex-wrap justify-center px-4">
-          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">MOQ 50 Pcs</span>
+           <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">MOQ 200 Pcs</span>
           <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">7-Day Samples</span>
           <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">70% North America</span>
           <span className="bg-white/10 backdrop-blur-md border border-white/20 text-yellow-400 text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">Free 3D Mockup</span>
@@ -246,8 +246,8 @@ export default function Home() {
             <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Production Experience</p>
           </div>
           <div className="p-4">
-            <p className="text-4xl md:text-5xl font-black text-black mb-1">50 Pcs</p>
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Low MOQ Starting from 50 Pcs</p>
+            <p className="text-4xl md:text-5xl font-black text-black mb-1">200 Pcs</p>
+            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">MOQ Starting from 200 Pcs</p>
           </div>
           <div className="p-4 flex flex-col items-center justify-center">
             <img src="https://sc02.alicdn.com/kf/S550f2425a6104c99a815a513ca0c5e7fG.png" alt="SGS Verified" className="h-12 w-auto mb-2 opacity-80" />
@@ -594,24 +594,4 @@ export default function Home() {
     </main>
   );
 }
-></li>
-                <li><a href="#inquiry" className="hover:text-white">Request Quote</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
-              <ul className="space-y-2 text-sm">
-                <li className="text-gray-400">WhatsApp: +86 15933930830</li>
-                <li className="text-gray-400">Email: admin@bdjunyang.com</li>
-                <li className="text-gray-400">Office: Baoding, Hebei, China</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
-          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
-        </div>
-      </footer>
-    </main>
-  );
-}
+

@@ -82,7 +82,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-6">Our Mission</h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            To make premium custom headwear accessible to brands of all sizes. We believe every streetwear startup, sports team, and corporate brand deserves factory-direct quality without the middleman markup. That's why we keep our MOQ at just 50 pieces — so you can test, launch, and scale without risk.
+            To make premium custom headwear accessible to brands of all sizes. We believe every streetwear startup, sports team, and corporate brand deserves factory-direct quality without the middleman markup. That's why we keep our MOQ at 200 pieces — so you can test, launch, and scale without risk.
           </p>
         </div>
       </section>
