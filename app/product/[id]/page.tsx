@@ -143,7 +143,7 @@ export default function ProductDetail() {
           {/* Left: Product Images & Quality Badges */}
           <div className="space-y-8">
             <div className="rounded-[2.5rem] overflow-hidden bg-gray-50 border border-gray-100 shadow-2xl relative group">
-              <img src={hat.img} alt={hat.name} className="w-full h-auto object-cover group-hover:scale-105 transition duration-700" />
+              <img src={hat.img} alt={hat.name} className="w-full h-auto object-cover group-hover:scale-105 transition duration-700" width="960" height="960" />
               <div className="absolute top-6 left-6 flex gap-2">
                  <span className="bg-black/80 backdrop-blur text-white text-[10px] font-black uppercase px-3 py-1.5 rounded-full">Top Seller</span>
               </div>
@@ -282,6 +282,34 @@ export default function ProductDetail() {
           </div>
         </div>
       </section>
+
+      {/* Related Products */}
+      {(() => {
+        const related = HATS.filter(h => h.id !== hat.id).slice(0, 3);
+        if (related.length === 0) return null;
+        return (
+          <section className="py-20 px-4 max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <span className="text-xs font-black uppercase tracking-widest text-gray-500">Continue Exploring</span>
+              <h2 className="text-2xl md:text-4xl font-black tracking-tight mt-2">Related Products</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {related.map((r) => (
+                <Link key={r.id} href={`/product/${r.id}`} className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                  <div className="aspect-square bg-gray-100 overflow-hidden">
+                    <img src={r.img} alt={r.name} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" width="480" height="480" loading="lazy" />
+                  </div>
+                  <div className="p-5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-yellow-600">{r.category}</span>
+                    <h3 className="font-bold text-sm text-black mt-1 mb-2 group-hover:text-yellow-600 transition line-clamp-2">{r.name}</h3>
+                    <p className="text-xs font-black text-black">FOB {r.price.split("-")[0]}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        );
+      })()}
 
       {/* Global Compliance & Trust Bar */}
       <section className="bg-gray-50 py-16 border-y border-gray-100">

@@ -62,6 +62,8 @@ export function HatCatalog() {
                 alt={`${hat.name} Wholesale Manufacturer`}
                 className="object-cover w-full h-full group-hover:scale-110 transition duration-700"
                 loading="lazy"
+                width="640"
+                height="640"
               />
               <div className="absolute top-3 left-3 flex gap-1.5">
                 {hat.category && (

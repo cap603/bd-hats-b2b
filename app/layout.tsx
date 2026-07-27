@@ -78,6 +78,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="preconnect" href="https://sc01.alicdn.com" />
+        <link rel="preconnect" href="https://sc02.alicdn.com" />
+        <link rel="preconnect" href="https://sc04.alicdn.com" />
+        <link rel="preconnect" href="https://s.alicdn.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}

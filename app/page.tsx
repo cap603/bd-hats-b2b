@@ -335,7 +335,9 @@ export default function Home() {
                   <img 
                     src="https://images.unsplash.com/photo-1556011504-f58c4033b93f?auto=format&fit=crop&q=80&w=1200" 
                     alt="Baoding Junyang Hat Factory Floor" 
-                    className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700" 
+                    className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700"
+                    width="1200"
+                    height="800" 
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <div className="bg-white text-black h-16 w-16 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition">
@@ -574,6 +576,7 @@ export default function Home() {
                 <li><a href="#factory" className="hover:text-white">Our Factory</a></li>
                 <li><a href="#catalog" className="hover:text-white">Products</a></li>
                 <li><a href="/about" className="hover:text-white">About</a></li>
+                <li><a href="/guide" className="hover:text-white">B2B Buyer's Guide</a></li>
                 <li><a href="#inquiry" className="hover:text-white">Request Quote</a></li>
               </ul>
             </div>
