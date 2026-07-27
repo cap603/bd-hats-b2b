@@ -1,20 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import type { Metadata } from "next";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: "B2B Custom Hat Manufacturing Guide | How to Source Wholesale Caps from China",
-    description: "Complete guide for B2B buyers: how to choose a custom hat factory, embroidery types explained, MOQ negotiation, quality control standards, and shipping logistics. Expert advice from a 12-year factory.",
-    openGraph: {
-      title: "Custom Hat Factory Guide for B2B Buyers | BD Hats",
-      description: "Everything you need to know before ordering custom caps from China — factory selection, embroidery types, QC, and shipping.",
-      type: "article",
-    },
-  };
-}
 
 const SECTIONS = [
   {
