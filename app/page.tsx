@@ -597,6 +597,8 @@ export default function Home() {
                 <li><a href="#catalog" className="hover:text-white">Products</a></li>
                 <li><a href="/about" className="hover:text-white">About</a></li>
                 <li><a href="/guide" className="hover:text-white">B2B Buyer's Guide</a></li>
+                <li><a href="/materials" className="hover:text-white">Materials & Fabrics</a></li>
+                <li><a href="/pricing" className="hover:text-white">Pricing & Shipping</a></li>
                 <li><a href="#inquiry" className="hover:text-white">Request Quote</a></li>
               </ul>
             </div>
