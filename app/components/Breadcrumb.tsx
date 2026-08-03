@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useT } from "../lib/i18n";
 
 export interface BreadcrumbItem {
   label: string;
@@ -10,7 +10,7 @@ export interface BreadcrumbItem {
 }
 
 export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
-  const t = useTranslations("breadcrumb");
+  const t = useT("breadcrumb");
 
   return (
     <nav aria-label="Breadcrumb" className="py-3 px-4 md:px-8 max-w-7xl mx-auto">

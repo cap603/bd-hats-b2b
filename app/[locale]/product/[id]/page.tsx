@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useTranslations } from "next-intl";
+import { useT } from "../../../lib/i18n";
 import { HATS, Product } from "../../../lib/products";
 import { 
   MessageCircle, ArrowLeft, ShieldCheck, Zap, Globe, Cpu, 
@@ -14,7 +14,7 @@ import { Breadcrumb } from "../../../components/Breadcrumb";
 import { LanguageSwitcher } from "../../../components/LanguageSwitcher";
 
 export default function ProductDetail() {
-  const t = useTranslations("product");
+  const t = useT("product");
   const { id } = useParams();
   const hat = HATS.find(h => String(h.id) === String(id));
   const [activeTab, setActiveTab] = useState("specs");

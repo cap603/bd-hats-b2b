@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
+import { I18nProvider } from "../lib/i18n";
 import { notFound } from "next/navigation";
 import { locales } from "../../i18n";
 import "../globals.css";
@@ -126,9 +126,9 @@ export default async function LocaleLayout({
         />
       </head>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <I18nProvider locale={locale} messages={messages}>
           {children}
-        </NextIntlClientProvider>
+        </I18nProvider>
         {/* —— ANALYTICS: Replace YOUR-GA4-ID with your actual Google Analytics 4 Measurement ID —— */}
         {/*
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-GA4-ID" strategy="afterInteractive" />

@@ -1,13 +1,13 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
+import { useLang, useT } from "../lib/i18n";
 import { usePathname, useRouter } from "next/navigation";
 import { Globe } from "lucide-react";
 import { useTransition } from "react";
 
 export function LanguageSwitcher() {
-  const t = useTranslations("language");
-  const locale = useLocale();
+  const t = useT("language");
+  const locale = useLang();
   const router = useRouter();
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();

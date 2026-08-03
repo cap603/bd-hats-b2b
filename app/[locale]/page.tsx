@@ -1,15 +1,15 @@
 ﻿"use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useT } from "../lib/i18n";
 import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
 import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Home() {
-  const t = useTranslations("home");
-  const n = useTranslations("nav");
+  const t = useT("home");
+  const n = useT("nav");
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentBanner, setCurrentBanner] = useState(0);
 

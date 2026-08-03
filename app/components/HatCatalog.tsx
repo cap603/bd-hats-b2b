@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useT } from "../lib/i18n";
 import { MessageCircle, ArrowRight, ArrowUpDown } from "lucide-react";
 import { HATS } from "../lib/products";
 
@@ -28,7 +28,7 @@ function getMinPrice(priceStr: string): number {
 }
 
 export function HatCatalog() {
-  const t = useTranslations("catalog");
+  const t = useT("catalog");
   const [activeCategory, setActiveCategory] = useState("All");
   const [activePanel, setActivePanel] = useState("All");
   const [sortBy, setSortBy] = useState<SortBy>("default");

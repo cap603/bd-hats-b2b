@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useT } from "../lib/i18n";
 
 export function InquiryForm() {
-  const t = useTranslations("form");
+  const t = useT("form");
   const [status, setStatus] = useState<string | null>(null);
   const [services, setServices] = useState<string[]>([]);
 
