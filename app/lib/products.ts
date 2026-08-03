@@ -1,5 +1,5 @@
 export interface Product {
-  id: number | string;
+  id: string;
   name: string;
   desc: string;
   fullDesc: string;
@@ -28,7 +28,7 @@ export interface Product {
 
 export const HATS: Product[] = [
   { 
-    id: 1, 
+    id: "two-tone-3d-embroidery-a-frame-cap", 
     name: "Two-Tone 3D Embroidery A-Frame Cap", 
     desc: "Structured 5-panel design with high-density 3D embroidery. Contrast visor and crown for a striking street aesthetic.",
     fullDesc: "This premium A-Frame cap represents the pinnacle of street fashion manufacturing. Utilizing high-density foam for the front panel, it provides a perfectly structured profile that never collapses. The contrast visor adds a bold visual pop, making it a favorite for streetwear brands globally.",
@@ -58,7 +58,7 @@ export const HATS: Product[] = [
     ]
   },
   { 
-    id: "1601670043022", 
+    id: "custom-3d-embroidered-5-panel-gorras", 
     name: "Custom 3D Embroidered 5 Panel Gorras", 
     desc: "Top performing factory-direct 5-panel cap featuring high-definition 3D embroidered logos. Professional sports quality.",
     fullDesc: "Our most viewed product on Alibaba.com. This 5-panel cap is built with premium 108*56 heavy cotton twill, designed specifically for brands requiring intricate 3D puff embroidery. The front panel provides a large canvas for bold branding without seam interference.",
@@ -88,7 +88,7 @@ export const HATS: Product[] = [
     ]
   },
   { 
-    id: "1601021501358", 
+    id: "vintage-acid-wash-6-panel-dad-hat", 
     name: "Vintage Acid Wash 6 Panel Dad Hat", 
     desc: "Premium vintage aesthetic with heavy acid washing and antique metal hardware. Timeless style for lifestyle brands.",
     fullDesc: "The #2 best-seller in our Alibaba store. This cap undergoes a rigorous washing and treatment process to achieve its unique distressed look. Ideal for brands looking for a high-end vintage or streetwear vibe. Features a soft, unstructured crown for the ultimate 'Dad Hat' fit.",
@@ -117,33 +117,7 @@ export const HATS: Product[] = [
     ]
   },
   { 
-    id: "1601394359156", 
-    name: "Luxury Designer Soft Printed Slides", 
-    desc: "Expanding our B2B range into premium footwear. High-comfort PVC/EVA slides with custom logo printing for lifestyle brands.",
-    fullDesc: "A high-conversion item for our brand partners expanding into leisurewear. These slides feature a soft, contoured footbed and a durable PVC strap. We use high-grade UV printing or embossed molding for logos, ensuring your branding stays vibrant even with heavy use.",
-    price: "$1.50 - $3.50", 
-    moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H615099c9958f44d5a189693d3d4f0f8eu.jpg",
-    category: "Footwear",
-    specs: {
-      material: "PVC Strap + EVA Sole",
-      style: "Flat House / Outdoor Slides",
-      logo: "Silk Screen / Embossed / UV Print",
-      closure: "Slip-on",
-      panels: "N/A"
-    },
-    customization: {
-      title: "Footwear Customization",
-      options: [
-        "Custom Molded Outsole Logos",
-        "All-over Printed Straps",
-        "Eco-friendly EVA Material Options",
-        "Custom Shoebox & Dustbag Packaging"
-      ]
-    }
-  },
-  { 
-    id: "1601709883793", 
+    id: "outdoor-performance-5-panel-cap", 
     name: "Outdoor Performance 5 Panel Cap", 
     desc: "Lightweight, breathable, and adjustable. Designed for active outdoor lifestyles and professional sportswear brands.",
     fullDesc: "Engineered for high performance. This cap uses lightweight cotton-nylon blends for superior moisture management. The 5-panel construction ensures a sleek, streamlined look while providing maximum comfort during physical activity.",
@@ -169,7 +143,7 @@ export const HATS: Product[] = [
     }
   },
   { 
-    id: "1601674075270", 
+    id: "structured-multi-color-baseball-cap", 
     name: "Structured Multi-Color Baseball Cap", 
     desc: "Classic high-profile structured cap available in over 30 vibrant colors. The workhorse of promotional and retail hat programs.",
     fullDesc: "A high-stability cap that maintains its shape. Built with heavy-duty buckram front panels, this cap is the industry standard for durability and classic fit. Perfect for corporate programs or brands requiring a consistent, high-impact retail presence.",
@@ -186,24 +160,7 @@ export const HATS: Product[] = [
     }
   },
   { 
-    id: "1601394414202", 
-    name: "Fashion Summer Casual PVC Slides", 
-    desc: "Lightweight casual flip-flops and slides. Durable PVC construction with custom color matching.",
-    fullDesc: "Durable and stylish. These fashion slides are a favorite for summer beachwear collections. The anti-slip outsole provides safety and comfort, while the wide strap is ideal for large-scale logo application.",
-    price: "$0.80 - $2.00", 
-    moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H8dfbfd9c164e49f8b0c76ed53f7287ac2.jpg",
-    category: "Footwear",
-    specs: {
-      material: "High-Grade PVC",
-      style: "Summer Flip Flop / Slide",
-      logo: "Injection Molded / Print",
-      closure: "Slip-on",
-      panels: "N/A"
-    }
-  },
-  { 
-    id: "1601440937602", 
+    id: "ladies-plain-blank-cotton-sports-cap", 
     name: "Ladies Plain Blank Cotton Sports Cap", 
     desc: "Specifically tailored profile for a feminine fit. Soft, breathable cotton for comfort and style.",
     fullDesc: "Designed with a smaller circumference and slightly shorter brim to provide a perfect fit for women's head shapes. This cap is a top choice for athleisure and boutique female fashion brands.",
@@ -220,24 +177,7 @@ export const HATS: Product[] = [
     }
   },
   { 
-    id: "1601393727183", 
-    name: "New Design PVC Outdoor Slides", 
-    desc: "Modern outdoor leisure slides with ergonomic footbed. High durability for versatile use.",
-    fullDesc: "Featuring our newest sole design for 2026. These slides offer better arch support and a more modern silhouette. Custom branding can be applied via high-definition laser engraving or multi-color silk printing.",
-    price: "$1.20 - $2.80", 
-    moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H971b331a3e044d629c847fda0322c59dn.jpg",
-    category: "Footwear",
-    specs: {
-      material: "Durable PVC / TPU",
-      style: "Ergonomic Outdoor Slide",
-      logo: "Laser Engraved / Print",
-      closure: "Slip-on",
-      panels: "N/A"
-    }
-  },
-  { 
-    id: "1601796700808", 
+    id: "personalised-two-tone-a-frame-cap", 
     name: "Personalised Two-Tone A-Frame Cap", 
     desc: "High-impact two-tone contrast styling. A-frame construction for a bold, stand-out brand presence.",
     fullDesc: "Contrast visor and panels for maximum visual appeal. The A-frame crown provides a unique profile that's highly popular in the Australian and US streetwear markets. 100% customizable from colors to stitching thread.",
@@ -254,7 +194,7 @@ export const HATS: Product[] = [
     }
   },
   { 
-    id: "1601198883417", 
+    id: "breathable-custom-embroidered-6-panel", 
     name: "Breathable Custom Embroidered 6 Panel", 
     desc: "Engineered for ventilation. A professional sports-grade 6-panel cap with high stitch-count embroidery.",
     fullDesc: "This cap features reinforced ventilation eyelets and a lightweight mesh-lined crown. Designed for heavy use in sports and outdoor events, it maintains a crisp, professional look while keeping the wearer cool.",

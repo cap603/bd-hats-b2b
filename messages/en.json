@@ -1,0 +1,259 @@
+{
+  "nav": {
+    "advantages": "Advantages",
+    "factory": "Our Factory",
+    "qualityControl": "Quality Control",
+    "products": "Baseball Caps",
+    "inquiry": "Inquiry",
+    "about": "About",
+    "guide": "B2B Buyer's Guide",
+    "materials": "Materials & Fabrics",
+    "pricing": "Pricing & Shipping",
+    "getQuote": "Get Quote",
+    "whatsappQuote": "WhatsApp Quote",
+    "home": "Home"
+  },
+  "home": {
+    "topBar": "China's Leading Premium Baseball Cap Manufacturer • Est. 2014",
+    "subtitle": "Baoding Junyang Hat Factory",
+    "banners": {
+      "0": {
+        "label": "Direct-to-Factory B2B Solutions",
+        "title": "World-Class Hat Manufacturing",
+        "sub": "100+ Japanese embroidery machines. 200+ skilled artisans. Factory-direct wholesale from China.",
+        "cta": "Get Factory Pricing"
+      },
+      "1": {
+        "label": "Direct-to-Factory B2B Solutions",
+        "title": "One-Stop Premium Customization",
+        "sub": "Unlimited options: Premium fabrics, custom colors, 3D puff embroidery, and tailored hat profiles.",
+        "cta": "Start Customizing"
+      },
+      "2": {
+        "label": "Direct-to-Factory B2B Solutions",
+        "title": "Your Vision, Any Style",
+        "sub": "From 5-Panel & 6-Panel caps to Truckers, Dad Hats, Beanies, and Bucket Hats. All custom built.",
+        "cta": "Request Samples"
+      }
+    },
+    "pills": {
+      "moq": "MOQ 200 Pcs",
+      "samples": "7-Day Samples",
+      "market": "70% North America",
+      "mockup": "Free 3D Mockup"
+    },
+    "mockupCta": {
+      "heading": "Ready to See Your Brand on Our Caps?",
+      "sub": "Get a professional 3D digital mockup within 24 hours — Free of charge.",
+      "button": "Start Free 3D Design"
+    },
+    "stats": {
+      "years": "20+ Years",
+      "yearsLabel": "Production Experience",
+      "moq": "200 Pcs",
+      "moqLabel": "MOQ Starting from 200 Pcs",
+      "sgs": "SGS Verified Factory",
+      "mockup": "24 Hour",
+      "mockupLabel": "Free 3D Mockup Output"
+    },
+    "compliance": {
+      "title": "Compliance Standards",
+      "certified": "Certified Product",
+      "markets": "Main Markets",
+      "na": "NORTH AMERICA (70%)",
+      "eu": "WESTERN EUROPE (25%)"
+    },
+    "factory": {
+      "label": "Unmatched Quality Control",
+      "heading": "See Your Cap Being Made — Live.",
+      "p1": "Unlike general agents, Baoding Junyang runs its own specialized production lines. We employ over 200 skilled tailors and run 100+ state-of-the-art Japanese Barudan embroidery machines.",
+      "p2Pre": "Our Transparency Policy:",
+      "p2": "We send you direct photos and video updates (fabric cutting, embroidery precision, sewing structure, final ironing) throughout your production. You are virtually inside the factory floor.",
+      "aql": "AQL 2.5 Standard",
+      "aqlDesc": "Rigid piece-by-piece inspection.",
+      "samples": "7-Day Samples",
+      "samplesDesc": "Fast physical prototype delivery.",
+      "videoCta": "Request Factory Video Tour",
+      "videoTitle": "Watch Production Reel (2026)",
+      "videoSub": "Japanese embroidery machines & professional hand-sewing."
+    },
+    "trust": {
+      "label": "Trusted by Global Brands",
+      "heading": "Why Brands Choose BD Hats",
+      "sub": "We are the factory behind hundreds of streetwear, corporate, and lifestyle brands worldwide.",
+      "brands": "300+",
+      "brandsLabel": "Brands Served Worldwide",
+      "brandsDesc": "From US streetwear startups to European corporate uniform programs.",
+      "caps": "5M+",
+      "capsLabel": "Caps Produced Annually",
+      "capsDesc": "Industrial-scale capacity with consistent premium quality.",
+      "retention": "98%",
+      "retentionLabel": "Client Retention Rate",
+      "retentionDesc": "Our quality and service bring brands back season after season.",
+      "sgsSupplier": "SGS Verified Supplier",
+      "goldSupplier": "Alibaba Gold Supplier",
+      "certifications": "CE · REACH · RoHS Certified",
+      "aqlStandard": "AQL 2.5 Quality Standard"
+    },
+    "catalog": {
+      "label": "Premium Hat Categories",
+      "heading": "Our Baseball Cap Series",
+      "sub": "Choose from our pre-developed high-converting base caps or send your own technical package for full customization."
+    },
+    "process": {
+      "label": "Step-by-step custom build",
+      "heading": "How We Work with Brands",
+      "step1Title": "Select Style & Fabric",
+      "step1Desc": "Choose structured or unstructured frames, and specify fabrics from heavy cotton to canvas or velvet.",
+      "step2Title": "Get Free 3D Mockup",
+      "step2Desc": "Submit your high-resolution logos. Our designers will deliver a 3D digital mockup within 24 hours.",
+      "step3Title": "Sample Approval",
+      "step3Desc": "We produce a physical sample and send you detailed videos/photos for final adjustment approval.",
+      "step4Title": "Bulk & Quality Updates",
+      "step4Desc": "We manufacture bulk orders and send regular progress media updates. 100% inspected before shipping."
+    },
+    "qc": {
+      "label": "Rigid Quality Assurance",
+      "heading": "Our 5-Stage Strict QC Protocol",
+      "step1Title": "Raw Material Verification",
+      "step1Desc": "Every roll of heavy cotton twill, organic canvas, and embroidery thread is checked for color consistency and tensile strength before cutting.",
+      "step2Title": "Embroidery Precision Check",
+      "step2Desc": "Real-time monitoring of 3D puff embroidery height and stitch density. We immediately reject any piece with frayed edges or misaligned logos.",
+      "step3Title": "Stitching Integrity Audit",
+      "step3Desc": "Focus on crown structure and seam tape. We ensure internal sweatbands are aligned to within 1mm for maximum comfort and durability.",
+      "step4Title": "Final Piece-by-Piece QC",
+      "step4Desc": "Every single cap undergoes a final manual inspection, thread trimming, and high-pressure steam ironing before reaching the packing line.",
+      "step5Title": "Export Packing & Label Audit",
+      "step5Desc": "Final count verification against the packing list and shipping label audit to ensure 100% accuracy in international logistics.",
+      "liveStatus": "Live Status",
+      "aqlPassed": "AQL 2.5 Passed"
+    },
+    "faq": {
+      "heading": "Common Questions",
+      "sub": "Everything you need to know about our factory custom process.",
+      "q0": "What is your Minimum Order Quantity (MOQ) for custom baseball caps?",
+      "a0": "Our standard MOQ is 200 pieces per style/color. We also accommodate smaller test orders for initial brand startups and custom embroidery trials.",
+      "q1": "Can I get a sample before bulk production?",
+      "a1": "Yes, absolutely! We provide physical pre-production samples. We can also provide free 3D digital mockups within 12 hours once you submit your artwork.",
+      "q2": "Do you manufacture hats based on custom designs (OEM/ODM)?",
+      "a2": "Yes. Baoding Junyang is a full-service OEM/ODM factory. We can construct caps from your sketches, spec sheets, or reverse-engineer physical original samples.",
+      "q3": "What is your standard production lead time?",
+      "a3": "Our sample production takes 7 days. Bulk mass production takes 15-20 days depending on the quantity and complexity. Global shipping via air takes 5-8 days."
+    },
+    "inquiry": {
+      "heading": "Request Factory Quote",
+      "sub": "Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote and design mockup within 12 hours."
+    }
+  },
+  "catalog": {
+    "filterAll": "All",
+    "filterBaseballCaps": "Baseball Caps",
+    "filterVintage": "Vintage Series",
+    "filterSports": "Sports & Active",
+    "panelLabel": "Panel:",
+    "panelAll": "All",
+    "sortDefault": "Default",
+    "sortPriceAsc": "Price: Low → High",
+    "sortPriceDesc": "Price: High → Low",
+    "moq": "MOQ: {count} Pcs",
+    "factoryDirect": "Factory Direct",
+    "viewDetails": "View Details",
+    "quote": "Quote",
+    "details": "Details",
+    "showing": "Showing {shown} of {total} products",
+    "noResults": "No products match the current filters.",
+    "resetFilters": "Reset all filters"
+  },
+  "product": {
+    "backToCatalog": "Back to Catalog",
+    "whatsappQuote": "WhatsApp Quote",
+    "topSeller": "Top Seller",
+    "aql": "AQL 2.5",
+    "aqlSub": "QC Standard",
+    "production": "15 Days",
+    "productionSub": "Production",
+    "moq": "200 Pcs",
+    "moqSub": "MOQ",
+    "shipping": "Global",
+    "shippingSub": "Express Air",
+    "unit": "/ Unit (FOB)",
+    "tabs": {
+      "specs": "Specifications",
+      "custom": "Customization",
+      "faq": "Product FAQ"
+    },
+    "getQuote": "Get Factory Quote",
+    "freeMockup": "Free 3D Mockup",
+    "orderSample": "Order Sample",
+    "related": "Continue Exploring",
+    "relatedTitle": "Related Products",
+    "trustBar": "Trusted Global Manufacturing Standards",
+    "notFound": "Product Not Found",
+    "backLink": "Back to Catalog"
+  },
+  "form": {
+    "company": "Company Name",
+    "companyPlaceholder": "Your Company Ltd.",
+    "contact": "Contact Person",
+    "contactPlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "you@company.com",
+    "phone": "Phone / WhatsApp",
+    "phonePlaceholder": "+1 234 567 8900",
+    "services": "Service Interest (Select all that apply)",
+    "mockup": "3D Digital Mockup",
+    "sample": "Physical Sample",
+    "bulk": "Bulk Production",
+    "test": "Small Test Order",
+    "upload": "Upload Logo / Artwork (Optional)",
+    "uploadHint": "Upload a file",
+    "uploadOr": "or drag and drop",
+    "uploadFormats": "PNG, JPG, PDF up to 10MB",
+    "uploadTip": "For 3D Mockup requests, please upload your vector logo (AI/EPS) or high-res PNG.",
+    "message": "Message / Requirements",
+    "messagePlaceholder": "Tell us about the styles, quantities, or specific customization (e.g. 3D Puff Embroidery, Woven Labels)...",
+    "submit": "Send Inquiry",
+    "thanks": "Thank you!",
+    "thanksMsg": "Your inquiry has been received. Our team will contact you shortly.",
+    "sendAnother": "Send another"
+  },
+  "footer": {
+    "about": "Baoding Junyang Hat Manufacturing Co., Ltd. is a premium custom hat factory specializing in OEM/ODM embroidery baseball caps, beanies, and trucker hats since 2014.",
+    "navigation": "Navigation",
+    "products": "Products",
+    "aboutLink": "About",
+    "guideLink": "B2B Buyer's Guide",
+    "materialsLink": "Materials & Fabrics",
+    "pricingLink": "Pricing & Shipping",
+    "requestQuote": "Request Quote",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp: +86 15933930830",
+    "email": "Email: admin@bdjunyang.com",
+    "office": "Office: Baoding, Hebei, China",
+    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About Our Factory",
+    "guide": "B2B Buyer's Guide",
+    "materials": "Materials & Fabrics",
+    "pricing": "Pricing & Shipping",
+    "products": "Products"
+  },
+  "meta": {
+    "homeTitle": "BD Hats | Premium Custom Hat Factory & B2B Wholesale",
+    "homeDesc": "Get premium custom hats directly from the factory. OEM/ODM since 2014. Custom embroidery, MOQ 200pcs, free 3D mockup, 7-day samples. SGS verified factory in Baoding, China.",
+    "aboutTitle": "About BD Hats | 12-Year Custom Hat Factory in Baoding, China",
+    "aboutDesc": "From a 15-person workshop to a 50,000sqm facility serving 300+ global brands. Learn about Baoding Junyang's journey, mission, team, and factory capabilities since 2014.",
+    "guideTitle": "B2B Custom Hat Manufacturing Guide | How to Source Wholesale Caps from China",
+    "guideDesc": "Complete guide for B2B buyers: how to choose a custom hat factory, embroidery types explained, MOQ negotiation, quality control standards, and shipping logistics.",
+    "materialsTitle": "Custom Hat Materials Guide | Cotton, Wool, Polyester & More | BD Hats",
+    "materialsDesc": "Complete guide to custom hat materials: cotton twill, brushed cotton, wool, polyester, nylon, canvas. Learn closure types and panel construction for your wholesale cap order.",
+    "pricingTitle": "Custom Hat Pricing, MOQ & Shipping Guide | Wholesale Cost Breakdown | BD Hats",
+    "pricingDesc": "Transparent pricing guide for custom hats: how much do custom caps cost, FOB vs CIF explained, MOQ 200pcs, air freight vs sea freight costs, sample fees, and volume discounts."
+  },
+  "language": {
+    "switchTo": "Español",
+    "label": "EN"
+  }
+}

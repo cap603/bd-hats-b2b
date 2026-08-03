@@ -1,56 +1,48 @@
 ﻿"use client";
 
 import { useState, useEffect } from "react";
-import { HatCatalog } from "./components/HatCatalog";
-import { InquiryForm } from "./components/InquiryForm";
+import { useTranslations } from "next-intl";
+import { HatCatalog } from "../components/HatCatalog";
+import { InquiryForm } from "../components/InquiryForm";
+import { LanguageSwitcher } from "../components/LanguageSwitcher";
 import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight } from "lucide-react";
 
-const BANNERS = [
-  {
-    image: "https://sc02.alicdn.com/kf/A08f3026e946b4a238d225173ff266ad8N.png",
-    title: "World-Class Hat Manufacturing",
-    sub: "100+ Japanese embroidery machines. 200+ skilled artisans. Factory-direct wholesale from China.",
-    cta: "Get Factory Pricing",
-    link: "whatsapp"
-  },
-  {
-    image: "https://sc02.alicdn.com/kf/Ab257aa93655344cdb3405b61cb0622bfS.png",
-    title: "One-Stop Premium Customization",
-    sub: "Unlimited options: Premium fabrics, custom colors, 3D puff embroidery, and tailored hat profiles.",
-    cta: "Start Customizing",
-    link: "#inquiry"
-  },
-  {
-    image: "https://sc02.alicdn.com/kf/Af4c92eab3b8f4bd68fcb467865c9d3512.png",
-    title: "Your Vision, Any Style",
-    sub: "From 5-Panel & 6-Panel caps to Truckers, Dad Hats, Beanies, and Bucket Hats. All custom built.",
-    cta: "Request Samples",
-    link: "#inquiry"
-  }
-];
-
-const FAQS = [
-  {
-    q: "What is your Minimum Order Quantity (MOQ) for custom baseball caps?",
-    a: "Our standard MOQ is 200 pieces per style/color. We also accommodate smaller test orders for initial brand startups and custom embroidery trials."
-  },
-  {
-    q: "Can I get a sample before bulk production?",
-    a: "Yes, absolutely! We provide physical pre-production samples. We can also provide free 3D digital mockups within 12 hours once you submit your artwork."
-  },
-  {
-    q: "Do you manufacture hats based on custom designs (OEM/ODM)?",
-    a: "Yes. Baoding Junyang is a full-service OEM/ODM factory. We can construct caps from your sketches, spec sheets, or reverse-engineer physical original samples."
-  },
-  {
-    q: "What is your standard production lead time?",
-    a: "Our sample production takes 7 days. Bulk mass production takes 15-20 days depending on the quantity and complexity. Global shipping via air takes 5-8 days."
-  }
-];
-
 export default function Home() {
+  const t = useTranslations("home");
+  const n = useTranslations("nav");
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentBanner, setCurrentBanner] = useState(0);
+
+  const BANNERS = [
+    {
+      image: "https://sc02.alicdn.com/kf/A08f3026e946b4a238d225173ff266ad8N.png",
+      title: t("banners.0.title"),
+      sub: t("banners.0.sub"),
+      cta: t("banners.0.cta"),
+      link: "whatsapp"
+    },
+    {
+      image: "https://sc02.alicdn.com/kf/Ab257aa93655344cdb3405b61cb0622bfS.png",
+      title: t("banners.1.title"),
+      sub: t("banners.1.sub"),
+      cta: t("banners.1.cta"),
+      link: "#inquiry?intent=bulk"
+    },
+    {
+      image: "https://sc02.alicdn.com/kf/Af4c92eab3b8f4bd68fcb467865c9d3512.png",
+      title: t("banners.2.title"),
+      sub: t("banners.2.sub"),
+      cta: t("banners.2.cta"),
+      link: "#inquiry?intent=sample"
+    }
+  ];
+
+  const FAQS = [
+    { q: t("faq.q0"), a: t("faq.a0") },
+    { q: t("faq.q1"), a: t("faq.a1") },
+    { q: t("faq.q2"), a: t("faq.a2") },
+    { q: t("faq.q3"), a: t("faq.a3") },
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -150,22 +142,23 @@ export default function Home() {
             />
             <div className="hidden lg:flex flex-col">
               <span className="text-xl font-black tracking-tighter text-black">JUNYANG</span>
-              <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none">Baoding Junyang Hat Factory</span>
+              <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none">{t("subtitle")}</span>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
-            <a href="#advantages" className="hover:text-black transition">Advantages</a>
-            <a href="#factory" className="hover:text-black transition">Our Factory</a>
-            <a href="#qc" className="hover:text-black transition">Quality Control</a>
-            <a href="#catalog" className="hover:text-black transition">Baseball Caps</a>
-            <a href="#inquiry" className="hover:text-black transition">Inquiry</a>
+            <a href="#advantages" className="hover:text-black transition">{n("advantages")}</a>
+            <a href="#factory" className="hover:text-black transition">{n("factory")}</a>
+            <a href="#qc" className="hover:text-black transition">{n("qualityControl")}</a>
+            <a href="#catalog" className="hover:text-black transition">{n("products")}</a>
+            <a href="#inquiry" className="hover:text-black transition">{n("inquiry")}</a>
           </nav>
           <button 
             onClick={() => handleWhatsApp("header")}
             className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm flex items-center gap-2 transition"
           >
-            <MessageCircle size={16} /> WhatsApp Quote
+            <MessageCircle size={16} /> {n("whatsappQuote")}
           </button>
+          <LanguageSwitcher />
         </div>
       </header>
 
@@ -184,7 +177,7 @@ export default function Home() {
             />
             <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
               <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm border-b-2 border-yellow-400 pb-1 mb-6">
-                Direct-to-Factory B2B Solutions
+                {t(`banners.${currentBanner}.label`)}
               </span>
               <h1 className="text-4xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight max-w-5xl">
                 {banner.title}
@@ -231,10 +224,10 @@ export default function Home() {
 
         {/* Hero Data Pills */}
         <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30 flex gap-2 md:gap-3 flex-wrap justify-center px-4">
-           <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">MOQ 200 Pcs</span>
-          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">7-Day Samples</span>
-          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">70% North America</span>
-          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-yellow-400 text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">Free 3D Mockup</span>
+           <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.moq")}</span>
+          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.samples")}</span>
+          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.market")}</span>
+          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-yellow-400 text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.mockup")}</span>
         </div>
       </section>
 
@@ -243,17 +236,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="max-w-2xl">
             <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight leading-tight">
-              Ready to See Your Brand on Our Caps?
+              {t("mockupCta.heading")}
             </h2>
             <p className="text-white font-bold mt-2 text-lg">
-              Get a professional 3D digital mockup within 24 hours — Free of charge.
+              {t("mockupCta.sub")}
             </p>
           </div>
           <a 
-            href="#inquiry" 
+            href="#inquiry?intent=mockup" 
             className="bg-black text-white font-bold px-10 py-5 rounded-full hover:bg-gray-900 transition flex items-center gap-3 text-lg shadow-xl shadow-black/20"
           >
-            <Cpu size={24} /> Start Free 3D Design
+            <Cpu size={24} /> {t("mockupCta.button")}
           </a>
         </div>
       </section>
@@ -262,20 +255,20 @@ export default function Home() {
       <section id="advantages" className="bg-white py-16 border-b border-gray-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="p-4">
-            <p className="text-4xl md:text-5xl font-black text-black mb-1">20+ Years</p>
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Production Experience</p>
+            <p className="text-4xl md:text-5xl font-black text-black mb-1">{t("stats.years")}</p>
+            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.yearsLabel")}</p>
           </div>
           <div className="p-4">
-            <p className="text-4xl md:text-5xl font-black text-black mb-1">200 Pcs</p>
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">MOQ Starting from 200 Pcs</p>
+            <p className="text-4xl md:text-5xl font-black text-black mb-1">{t("stats.moq")}</p>
+            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.moqLabel")}</p>
           </div>
           <div className="p-4 flex flex-col items-center justify-center">
             <img src="https://sc02.alicdn.com/kf/S550f2425a6104c99a815a513ca0c5e7fG.png" alt="SGS Verified" className="h-12 w-auto mb-2 opacity-80" />
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">SGS Verified Factory</p>
+            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.sgs")}</p>
           </div>
           <div className="p-4">
-            <p className="text-4xl md:text-5xl font-black text-black mb-1">24 Hour</p>
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">Free 3D Mockup Output</p>
+            <p className="text-4xl md:text-5xl font-black text-black mb-1">{t("stats.mockup")}</p>
+            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.mockupLabel")}</p>
           </div>
         </div>
       </section>
@@ -284,22 +277,22 @@ export default function Home() {
       <section className="bg-gray-50 py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12 opacity-60 grayscale hover:grayscale-0 transition duration-500">
            <div className="flex flex-col items-center">
-              <span className="text-[10px] font-black uppercase tracking-widest mb-3">Compliance Standards</span>
+              <span className="text-[10px] font-black uppercase tracking-widest mb-3">{t("compliance.title")}</span>
               <div className="flex items-center gap-8">
                  <span className="font-black text-xl italic text-gray-400">REACH</span>
                  <div className="bg-black text-white px-4 py-2 rounded-lg flex items-center gap-2 transform -rotate-2">
                     <span className="font-black text-2xl italic">CE</span>
-                    <span className="text-[8px] font-bold uppercase leading-tight">Certified<br/>Product</span>
+                    <span className="text-[8px] font-bold uppercase leading-tight">{t("compliance.certified")}</span>
                  </div>
                  <span className="font-black text-xl italic text-gray-400">RoHS</span>
               </div>
            </div>
            <div className="h-8 w-px bg-gray-300 hidden md:block"></div>
            <div className="flex flex-col items-center">
-              <span className="text-[10px] font-black uppercase tracking-widest mb-3">Main Markets</span>
+              <span className="text-[10px] font-black uppercase tracking-widest mb-3">{t("compliance.markets")}</span>
               <div className="flex gap-8">
-                 <span className="font-bold text-sm tracking-tight">NORTH AMERICA (70%)</span>
-                 <span className="font-bold text-sm tracking-tight">WESTERN EUROPE (25%)</span>
+                 <span className="font-bold text-sm tracking-tight">{t("compliance.na")}</span>
+                 <span className="font-bold text-sm tracking-tight">{t("compliance.eu")}</span>
               </div>
            </div>
         </div>
@@ -310,27 +303,27 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-xs font-black uppercase tracking-widest text-gray-500">Unmatched Quality Control</span>
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-6">See Your Cap Being Made — Live.</h2>
+              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{t("factory.label")}</span>
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-6">{t("factory.heading")}</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                Unlike general agents, Baoding Junyang runs its own specialized production lines. We employ over 200 skilled tailors and run 100+ state-of-the-art Japanese Barudan embroidery machines.
+                {t("factory.p1")}
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                <strong>Our Transparency Policy:</strong> We send you direct photos and video updates (fabric cutting, embroidery precision, sewing structure, final ironing) throughout your production. You are virtually inside the factory floor.
+                <strong>{t("factory.p2Pre")}</strong> {t("factory.p2")}
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="flex items-start gap-3">
                   <ShieldCheck className="text-green-500 shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-bold text-black">AQL 2.5 Standard</h4>
-                    <p className="text-xs text-gray-500">Rigid piece-by-piece inspection.</p>
+                    <h4 className="font-bold text-black">{t("factory.aql")}</h4>
+                    <p className="text-xs text-gray-500">{t("factory.aqlDesc")}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Zap className="text-green-500 shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-bold text-black">7-Day Samples</h4>
-                    <p className="text-xs text-gray-500">Fast physical prototype delivery.</p>
+                    <h4 className="font-bold text-black">{t("factory.samples")}</h4>
+                    <p className="text-xs text-gray-500">{t("factory.samplesDesc")}</p>
                   </div>
                 </div>
               </div>
@@ -338,7 +331,7 @@ export default function Home() {
                 onClick={() => handleWhatsApp("factory-section")}
                 className="bg-black hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full transition flex items-center gap-2 text-sm uppercase tracking-wider"
               >
-                <Play size={16} /> Request Factory Video Tour
+                <Play size={16} /> {t("factory.videoCta")}
               </button>
             </div>
             {/* Visual Factory Video Player */}
@@ -352,21 +345,22 @@ export default function Home() {
                 />
               ) : (
                 <div className="relative w-full h-full cursor-pointer" onClick={() => setIsPlaying(true)}>
-                  <img 
-                    src="https://images.unsplash.com/photo-1556011504-f58c4033b93f?auto=format&fit=crop&q=80&w=1200" 
-                    alt="Baoding Junyang Hat Factory Floor" 
-                    className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700"
-                    width="1200"
-                    height="800" 
-                  />
+                   {/* TODO: Replace with real factory floor photo — e.g. production line or embroidery machine close-up */}
+                   <img 
+                     src="https://images.unsplash.com/photo-1556011504-f58c4033b93f?auto=format&fit=crop&q=80&w=1200" 
+                     alt="Baoding Junyang Hat Factory Floor" 
+                     className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700"
+                     width="1200"
+                     height="800" 
+                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <div className="bg-white text-black h-16 w-16 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition">
                       <Play size={24} className="ml-1 text-black" fill="currentColor" />
                     </div>
                   </div>
                   <div className="absolute bottom-6 left-6 right-6 text-white bg-gradient-to-t from-black/80 to-transparent p-4 rounded-xl">
-                    <p className="font-bold text-base">Watch Production Reel (2026)</p>
-                    <p className="text-xs text-gray-300">Japanese embroidery machines & professional hand-sewing.</p>
+                    <p className="font-bold text-base">{t("factory.videoTitle")}</p>
+                    <p className="text-xs text-gray-300">{t("factory.videoSub")}</p>
                   </div>
                 </div>
               )}
@@ -378,10 +372,10 @@ export default function Home() {
       {/* Trusted By / Social Proof Section */}
       <section className="py-24 px-4 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto text-center">
-          <span className="text-xs font-black uppercase tracking-widest text-gray-500">Trusted by Global Brands</span>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-4">Why Brands Choose BD Hats</h2>
+          <span className="text-xs font-black uppercase tracking-widest text-gray-500">{t("trust.label")}</span>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-4">{t("trust.heading")}</h2>
           <p className="text-gray-500 max-w-xl mx-auto text-lg font-light mb-16">
-            We are the factory behind hundreds of streetwear, corporate, and lifestyle brands worldwide.
+            {t("trust.sub")}
           </p>
 
           {/* Trust Indicators Grid */}
@@ -389,21 +383,21 @@ export default function Home() {
             {[
               {
                 icon: "🏭",
-                stat: "300+",
-                label: "Brands Served Worldwide",
-                desc: "From US streetwear startups to European corporate uniform programs."
+                stat: t("trust.brands"),
+                label: t("trust.brandsLabel"),
+                desc: t("trust.brandsDesc")
               },
               {
                 icon: "🧢",
-                stat: "5M+",
-                label: "Caps Produced Annually",
-                desc: "Industrial-scale capacity with consistent premium quality."
+                stat: t("trust.caps"),
+                label: t("trust.capsLabel"),
+                desc: t("trust.capsDesc")
               },
               {
                 icon: "⭐",
-                stat: "98%",
-                label: "Client Retention Rate",
-                desc: "Our quality and service bring brands back season after season."
+                stat: t("trust.retention"),
+                label: t("trust.retentionLabel"),
+                desc: t("trust.retentionDesc")
               }
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition">
@@ -419,16 +413,16 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-8 py-8 border-t border-gray-100">
             <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
               <img src="https://sc02.alicdn.com/kf/S550f2425a6104c99a815a513ca0c5e7fG.png" alt="SGS" className="h-8 w-auto" />
-              <span className="text-sm font-bold">SGS Verified Supplier</span>
+              <span className="text-sm font-bold">{t("trust.sgsSupplier")}</span>
             </div>
             <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
-              <span className="text-sm font-bold">Alibaba Gold Supplier</span>
+              <span className="text-sm font-bold">{t("trust.goldSupplier")}</span>
             </div>
             <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
-              <span className="text-sm font-bold">CE · REACH · RoHS Certified</span>
+              <span className="text-sm font-bold">{t("trust.certifications")}</span>
             </div>
             <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
-              <span className="text-sm font-bold">AQL 2.5 Quality Standard</span>
+              <span className="text-sm font-bold">{t("trust.aqlStandard")}</span>
             </div>
           </div>
         </div>
@@ -437,9 +431,9 @@ export default function Home() {
       {/* Catalog Section */}
       <section id="catalog" className="py-24 px-4 max-w-7xl mx-auto scroll-mt-20">
         <div className="text-center mb-20">
-          <span className="text-xs font-black uppercase tracking-widest text-gray-500">Premium Hat Categories</span>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-4">Our Baseball Cap Series</h2>
-          <p className="text-gray-500 max-w-xl mx-auto text-lg font-light leading-relaxed">Choose from our pre-developed high-converting base caps or send your own technical package for full customization.</p>
+          <span className="text-xs font-black uppercase tracking-widest text-gray-500">{t("catalog.label")}</span>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-4">{t("catalog.heading")}</h2>
+          <p className="text-gray-500 max-w-xl mx-auto text-lg font-light leading-relaxed">{t("catalog.sub")}</p>
         </div>
         <HatCatalog />
       </section>
@@ -448,29 +442,29 @@ export default function Home() {
       <section className="py-24 bg-gray-950 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
-            <span className="text-xs font-bold uppercase tracking-widest text-yellow-400">Step-by-step custom build</span>
-            <h2 className="text-3xl md:text-5xl font-black mt-2">How We Work with Brands</h2>
+            <span className="text-xs font-bold uppercase tracking-widest text-yellow-400">{t("process.label")}</span>
+            <h2 className="text-3xl md:text-5xl font-black mt-2">{t("process.heading")}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative">
               <span className="absolute -top-6 left-8 text-5xl font-black text-gray-800">01</span>
-              <h3 className="text-lg font-bold mb-3 mt-4">Select Style & Fabric</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Choose structured or unstructured frames, and specify fabrics from heavy cotton to canvas or velvet.</p>
+              <h3 className="text-lg font-bold mb-3 mt-4">{t("process.step1Title")}</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">{t("process.step1Desc")}</p>
             </div>
             <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative">
               <span className="absolute -top-6 left-8 text-5xl font-black text-gray-800">02</span>
-              <h3 className="text-lg font-bold mb-3 mt-4">Get Free 3D Mockup</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Submit your high-resolution logos. Our designers will deliver a 3D digital mockup within 24 hours.</p>
+              <h3 className="text-lg font-bold mb-3 mt-4">{t("process.step2Title")}</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">{t("process.step2Desc")}</p>
             </div>
             <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative">
               <span className="absolute -top-6 left-8 text-5xl font-black text-gray-800">03</span>
-              <h3 className="text-lg font-bold mb-3 mt-4">Sample Approval</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">We produce a physical sample and send you detailed videos/photos for final adjustment approval.</p>
+              <h3 className="text-lg font-bold mb-3 mt-4">{t("process.step3Title")}</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">{t("process.step3Desc")}</p>
             </div>
             <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative">
               <span className="absolute -top-6 left-8 text-5xl font-black text-gray-800">04</span>
-              <h3 className="text-lg font-bold mb-3 mt-4">Bulk & Quality Updates</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">We manufacture bulk orders and send regular progress media updates. 100% inspected before shipping.</p>
+              <h3 className="text-lg font-bold mb-3 mt-4">{t("process.step4Title")}</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">{t("process.step4Desc")}</p>
             </div>
           </div>
         </div>
@@ -481,42 +475,42 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
-              <span className="text-xs font-black uppercase tracking-widest text-gray-500">Rigid Quality Assurance</span>
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-8">Our 5-Stage Strict QC Protocol</h2>
+              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{t("qc.label")}</span>
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-8">{t("qc.heading")}</h2>
               <div className="space-y-8">
                 <div className="flex gap-6">
                   <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">01</div>
                   <div>
-                    <h4 className="font-bold text-lg text-black">Raw Material Verification</h4>
-                    <p className="text-gray-600 text-sm mt-1">Every roll of heavy cotton twill, organic canvas, and embroidery thread is checked for color consistency and tensile strength before cutting.</p>
+                    <h4 className="font-bold text-lg text-black">{t("qc.step1Title")}</h4>
+                    <p className="text-gray-600 text-sm mt-1">{t("qc.step1Desc")}</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
                   <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">02</div>
                   <div>
-                    <h4 className="font-bold text-lg text-black">Embroidery Precision Check</h4>
-                    <p className="text-gray-600 text-sm mt-1">Real-time monitoring of 3D puff embroidery height and stitch density. We immediately reject any piece with frayed edges or misaligned logos.</p>
+                    <h4 className="font-bold text-lg text-black">{t("qc.step2Title")}</h4>
+                    <p className="text-gray-600 text-sm mt-1">{t("qc.step2Desc")}</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
                   <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">03</div>
                   <div>
-                    <h4 className="font-bold text-lg text-black">Stitching Integrity Audit</h4>
-                    <p className="text-gray-600 text-sm mt-1">Focus on crown structure and seam tape. We ensure internal sweatbands are aligned to within 1mm for maximum comfort and durability.</p>
+                    <h4 className="font-bold text-lg text-black">{t("qc.step3Title")}</h4>
+                    <p className="text-gray-600 text-sm mt-1">{t("qc.step3Desc")}</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
                   <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">04</div>
                   <div>
-                    <h4 className="font-bold text-lg text-black">Final Piece-by-Piece QC</h4>
-                    <p className="text-gray-600 text-sm mt-1">Every single cap undergoes a final manual inspection, thread trimming, and high-pressure steam ironing before reaching the packing line.</p>
+                    <h4 className="font-bold text-lg text-black">{t("qc.step4Title")}</h4>
+                    <p className="text-gray-600 text-sm mt-1">{t("qc.step4Desc")}</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
                   <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">05</div>
                   <div>
-                    <h4 className="font-bold text-lg text-black">Export Packing & Label Audit</h4>
-                    <p className="text-gray-600 text-sm mt-1">Final count verification against the packing list and shipping label audit to ensure 100% accuracy in international logistics.</p>
+                    <h4 className="font-bold text-lg text-black">{t("qc.step5Title")}</h4>
+                    <p className="text-gray-600 text-sm mt-1">{t("qc.step5Desc")}</p>
                   </div>
                 </div>
               </div>
@@ -524,17 +518,18 @@ export default function Home() {
             <div className="lg:w-1/2 relative">
               <div className="absolute -right-24 -top-24 w-96 h-96 bg-yellow-400 rounded-full blur-3xl opacity-20"></div>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&q=80&w=800" 
-                  alt="Quality Control Inspection" 
-                  className="w-full h-auto"
-                />
+                 {/* TODO: Replace with real QC inspection photo from your factory floor */}
+                 <img 
+                   src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&q=80&w=800" 
+                   alt="Quality Control Inspection" 
+                   className="w-full h-auto"
+                 />
                 <div className="absolute top-8 left-8 bg-white/90 backdrop-blur shadow-lg p-4 rounded-xl border border-gray-100">
                   <div className="flex items-center gap-2 mb-1">
                     <div className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">Live Status</span>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">{t("qc.liveStatus")}</span>
                   </div>
-                  <p className="text-black font-bold text-sm">AQL 2.5 Passed</p>
+                  <p className="text-black font-bold text-sm">{t("qc.aqlPassed")}</p>
                 </div>
               </div>
             </div>
@@ -546,8 +541,8 @@ export default function Home() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">Common Questions</h2>
-            <p className="text-gray-500 text-lg">Everything you need to know about our factory custom process.</p>
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">{t("faq.heading")}</h2>
+            <p className="text-gray-500 text-lg">{t("faq.sub")}</p>
           </div>
           <div className="space-y-6">
             {FAQS.map((faq, index) => (
@@ -568,8 +563,8 @@ export default function Home() {
       <section id="inquiry" className="py-24 px-4 bg-white scroll-mt-20">
         <div className="max-w-4xl mx-auto bg-gray-50 rounded-[2rem] p-8 md:p-16 shadow-inner border border-gray-100">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-black uppercase">Request Factory Quote</h2>
-            <p className="text-gray-500 text-lg max-w-lg mx-auto leading-relaxed">Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote and design mockup within 12 hours.</p>
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-black uppercase">{t("inquiry.heading")}</h2>
+            <p className="text-gray-500 text-lg max-w-lg mx-auto leading-relaxed">{t("inquiry.sub")}</p>
           </div>
           <InquiryForm />
         </div>
@@ -584,30 +579,28 @@ export default function Home() {
               alt="JUNYANG Logo" 
               className="h-16 w-auto object-contain mb-4"
             />
-            <p className="text-sm mt-3 leading-relaxed">
-              Baoding Junyang Hat Manufacturing Co., Ltd. is a premium custom hat factory specializing in OEM/ODM embroidery baseball caps, beanies, and trucker hats since 2014.
-            </p>
+            <p className="text-sm mt-3 leading-relaxed">{t("footer.about")}</p>
           </div>
           <div className="grid grid-cols-2 gap-12">
             <div>
-              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Navigation</h4>
+              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{t("footer.navigation")}</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#advantages" className="hover:text-white">Advantages</a></li>
-                <li><a href="#factory" className="hover:text-white">Our Factory</a></li>
-                <li><a href="#catalog" className="hover:text-white">Products</a></li>
-                <li><a href="/about" className="hover:text-white">About</a></li>
-                <li><a href="/guide" className="hover:text-white">B2B Buyer's Guide</a></li>
-                <li><a href="/materials" className="hover:text-white">Materials & Fabrics</a></li>
-                <li><a href="/pricing" className="hover:text-white">Pricing & Shipping</a></li>
-                <li><a href="#inquiry" className="hover:text-white">Request Quote</a></li>
+                <li><a href="#advantages" className="hover:text-white">{n("advantages")}</a></li>
+                <li><a href="#factory" className="hover:text-white">{n("factory")}</a></li>
+                <li><a href="#catalog" className="hover:text-white">{t("footer.products")}</a></li>
+                <li><a href="/about" className="hover:text-white">{t("footer.aboutLink")}</a></li>
+                <li><a href="/guide" className="hover:text-white">{t("footer.guideLink")}</a></li>
+                <li><a href="/materials" className="hover:text-white">{t("footer.materialsLink")}</a></li>
+                <li><a href="/pricing" className="hover:text-white">{t("footer.pricingLink")}</a></li>
+                <li><a href="#inquiry" className="hover:text-white">{t("footer.requestQuote")}</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
+              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{t("footer.contact")}</h4>
               <ul className="space-y-2 text-sm">
-                <li className="text-gray-400">WhatsApp: +86 15933930830</li>
-                <li className="text-gray-400">Email: admin@bdjunyang.com</li>
-                <li className="text-gray-400">Office: Baoding, Hebei, China</li>
+                <li className="text-gray-400">{t("footer.whatsapp")}</li>
+                <li className="text-gray-400">{t("footer.email")}</li>
+                <li className="text-gray-400">{t("footer.office")}</li>
               </ul>
             </div>
           </div>

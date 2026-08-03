@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { CheckCircle2, ArrowRight, HelpCircle } from "lucide-react";
+import { Breadcrumb } from "../../components/Breadcrumb";
 
 const FAQS = [
   {
@@ -90,6 +91,11 @@ export default function PricingPage() {
           <Link href="/#inquiry" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm">Get Quote</Link>
         </div>
       </header>
+
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Pricing & Shipping" }
+      ]} />
 
       <section className="bg-black text-white py-20 md:py-28 px-4">
         <div className="max-w-3xl mx-auto text-center">

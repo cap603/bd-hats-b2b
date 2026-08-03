@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import { Breadcrumb } from "../../components/Breadcrumb";
 
 const TIMELINE = [
   { year: "2014", title: "Founded in Baoding", desc: "Started with 15 tailors and 5 embroidery machines in a small workshop, specializing in custom baseball caps for local sportswear brands." },
@@ -50,6 +51,12 @@ export default function AboutPage() {
           </a>
         </div>
       </header>
+
+      {/* Breadcrumb */}
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "About Our Factory" }
+      ]} />
 
       {/* Hero */}
       <section className="bg-black text-white py-24 md:py-32 px-4">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { HATS } from "../../lib/products";
+import { HATS } from "../../../lib/products";
 
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
   const hat = HATS.find(h => String(h.id) === String(params.id));

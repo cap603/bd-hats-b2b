@@ -1,0 +1,259 @@
+{
+  "nav": {
+    "advantages": "Ventajas",
+    "factory": "Nuestra Fábrica",
+    "qualityControl": "Control de Calidad",
+    "products": "Gorras de Béisbol",
+    "inquiry": "Consultar",
+    "about": "Nosotros",
+    "guide": "Guía para Compradores",
+    "materials": "Materiales y Tejidos",
+    "pricing": "Precios y Envíos",
+    "getQuote": "Solicitar Cotización",
+    "whatsappQuote": "Cotizar por WhatsApp",
+    "home": "Inicio"
+  },
+  "home": {
+    "topBar": "Fabricante Líder de Gorras Personalizadas en China • Desde 2014",
+    "subtitle": "Fábrica de Gorras Baoding Junyang",
+    "banners": {
+      "0": {
+        "label": "Soluciones B2B Directo de Fábrica",
+        "title": "Fabricación de Gorras de Clase Mundial",
+        "sub": "Más de 100 máquinas de bordado japonesas. Más de 200 artesanos especializados. Venta al por mayor directo de fábrica desde China.",
+        "cta": "Obtener Precio de Fábrica"
+      },
+      "1": {
+        "label": "Soluciones B2B Directo de Fábrica",
+        "title": "Personalización Premium Integral",
+        "sub": "Opciones ilimitadas: tejidos premium, colores personalizados, bordado 3D puff y perfiles de gorra a medida.",
+        "cta": "Comenzar a Personalizar"
+      },
+      "2": {
+        "label": "Soluciones B2B Directo de Fábrica",
+        "title": "Tu Visión, Cualquier Estilo",
+        "sub": "Desde gorras de 5 y 6 paneles hasta Truckers, Dad Hats, Gorros y Bucket Hats. Todo fabricado a medida.",
+        "cta": "Solicitar Muestras"
+      }
+    },
+    "pills": {
+      "moq": "MOQ 200 Uds",
+      "samples": "Muestras en 7 Días",
+      "market": "70% Norteamérica",
+      "mockup": "Mockup 3D Gratis"
+    },
+    "mockupCta": {
+      "heading": "¿Listo para Ver Tu Marca en Nuestras Gorras?",
+      "sub": "Obtén un mockup digital 3D profesional en 24 horas — Sin costo.",
+      "button": "Comenzar Diseño 3D Gratis"
+    },
+    "stats": {
+      "years": "20+ Años",
+      "yearsLabel": "Experiencia en Producción",
+      "moq": "200 Uds",
+      "moqLabel": "MOQ desde 200 Uds",
+      "sgs": "Fábrica Verificada SGS",
+      "mockup": "24 Horas",
+      "mockupLabel": "Mockup 3D Gratis"
+    },
+    "compliance": {
+      "title": "Estándares de Cumplimiento",
+      "certified": "Producto Certificado",
+      "markets": "Mercados Principales",
+      "na": "NORTEAMÉRICA (70%)",
+      "eu": "EUROPA OCCIDENTAL (25%)"
+    },
+    "factory": {
+      "label": "Control de Calidad Inigualable",
+      "heading": "Ve Cómo se Fabrica Tu Gorra — En Vivo.",
+      "p1": "A diferencia de los intermediarios, Baoding Junyang opera sus propias líneas de producción. Empleamos a más de 200 sastres especializados y operamos más de 100 máquinas de bordado japonesas Barudan de última generación.",
+      "p2Pre": "Nuestra Política de Transparencia:",
+      "p2": "Te enviamos fotos y videos directos (corte de tela, precisión del bordado, estructura de costura, planchado final) durante toda tu producción. Estás virtualmente dentro de la fábrica.",
+      "aql": "Estándar AQL 2.5",
+      "aqlDesc": "Inspección rigurosa pieza por pieza.",
+      "samples": "Muestras en 7 Días",
+      "samplesDesc": "Entrega rápida de prototipo físico.",
+      "videoCta": "Solicitar Video Tour de Fábrica",
+      "videoTitle": "Ver Video de Producción (2026)",
+      "videoSub": "Máquinas de bordado japonesas y costura profesional a mano."
+    },
+    "trust": {
+      "label": "Confiado por Marcas Globales",
+      "heading": "Por Qué las Marcas Eligen BD Hats",
+      "sub": "Somos la fábrica detrás de cientos de marcas de streetwear, corporativas y lifestyle en todo el mundo.",
+      "brands": "300+",
+      "brandsLabel": "Marcas Atendidas",
+      "brandsDesc": "Desde startups de streetwear en EE.UU. hasta programas de uniformes corporativos europeos.",
+      "caps": "5M+",
+      "capsLabel": "Gorras Producidas Anualmente",
+      "capsDesc": "Capacidad a escala industrial con calidad premium consistente.",
+      "retention": "98%",
+      "retentionLabel": "Tasa de Retención de Clientes",
+      "retentionDesc": "Nuestra calidad y servicio hacen que las marcas vuelvan temporada tras temporada.",
+      "sgsSupplier": "Proveedor Verificado SGS",
+      "goldSupplier": "Proveedor Gold de Alibaba",
+      "certifications": "CE · REACH · RoHS Certificado",
+      "aqlStandard": "Estándar de Calidad AQL 2.5"
+    },
+    "catalog": {
+      "label": "Categorías Premium de Gorras",
+      "heading": "Nuestra Serie de Gorras de Béisbol",
+      "sub": "Elige entre nuestras gorras base de alta conversión pre-desarrolladas o envía tu propio paquete técnico para personalización completa."
+    },
+    "process": {
+      "label": "Proceso de Personalización Paso a Paso",
+      "heading": "Cómo Trabajamos con las Marcas",
+      "step1Title": "Selecciona Estilo y Tejido",
+      "step1Desc": "Elige entre estructuras rígidas o suaves, y especifica tejidos desde algodón pesado hasta lona o terciopelo.",
+      "step2Title": "Recibe Mockup 3D Gratis",
+      "step2Desc": "Envía tus logotipos en alta resolución. Nuestros diseñadores te entregarán un mockup digital 3D en 24 horas.",
+      "step3Title": "Aprobación de Muestra",
+      "step3Desc": "Producimos una muestra física y te enviamos videos y fotos detalladas para aprobación final de ajustes.",
+      "step4Title": "Producción y Actualizaciones",
+      "step4Desc": "Fabricamos el pedido al por mayor y enviamos actualizaciones periódicas con fotos y videos. 100% inspeccionado antes del envío."
+    },
+    "qc": {
+      "label": "Garantía de Calidad Rigurosa",
+      "heading": "Nuestro Estricto Protocolo QC de 5 Etapas",
+      "step1Title": "Verificación de Materia Prima",
+      "step1Desc": "Cada rollo de sarga de algodón pesado, lona orgánica e hilo de bordado se verifica por consistencia de color y resistencia a la tracción antes del corte.",
+      "step2Title": "Control de Precisión de Bordado",
+      "step2Desc": "Monitoreo en tiempo real de la altura del bordado 3D puff y densidad de puntada. Rechazamos inmediatamente cualquier pieza con bordes deshilachados o logotipos desalineados.",
+      "step3Title": "Auditoría de Integridad de Costura",
+      "step3Desc": "Enfoque en la estructura de la corona y cinta de costura. Las bandas de sudor internas se alinean con precisión de 1mm para máxima comodidad y durabilidad.",
+      "step4Title": "QC Final Pieza por Pieza",
+      "step4Desc": "Cada gorra pasa por una inspección manual final, recorte de hilos y planchado a vapor de alta presión antes de llegar a la línea de empaque.",
+      "step5Title": "Auditoría de Empaque y Etiquetado",
+      "step5Desc": "Verificación final del conteo contra la lista de empaque y auditoría de etiquetas de envío para garantizar 100% de precisión en logística internacional.",
+      "liveStatus": "Estado en Vivo",
+      "aqlPassed": "AQL 2.5 Aprobado"
+    },
+    "faq": {
+      "heading": "Preguntas Frecuentes",
+      "sub": "Todo lo que necesitas saber sobre nuestro proceso de fabricación personalizada.",
+      "q0": "¿Cuál es su Cantidad Mínima de Pedido (MOQ) para gorras de béisbol personalizadas?",
+      "a0": "Nuestro MOQ estándar es de 200 piezas por estilo/color. También aceptamos pedidos de prueba más pequeños para startups de marca y pruebas de bordado personalizado.",
+      "q1": "¿Puedo obtener una muestra antes de la producción en masa?",
+      "a1": "¡Sí, por supuesto! Proporcionamos muestras físicas de pre-producción. También podemos ofrecer mockups digitales 3D gratuitos en 12 horas una vez que envíes tu diseño.",
+      "q2": "¿Fabrican gorras basadas en diseños personalizados (OEM/ODM)?",
+      "a2": "Sí. Baoding Junyang es una fábrica de servicio completo OEM/ODM. Podemos construir gorras a partir de tus bocetos, hojas de especificaciones o replicar muestras físicas originales.",
+      "q3": "¿Cuál es su tiempo de producción estándar?",
+      "a3": "Nuestra producción de muestras toma 7 días. La producción en masa toma de 15 a 20 días según la cantidad y complejidad. El envío global por vía aérea toma de 5 a 8 días."
+    },
+    "inquiry": {
+      "heading": "Solicitar Cotización de Fábrica",
+      "sub": "Envíanos los requisitos de tus gorras (estilos, logotipos, cantidades). Nuestros especialistas B2B te entregarán tu cotización y mockup de diseño en 12 horas."
+    }
+  },
+  "catalog": {
+    "filterAll": "Todos",
+    "filterBaseballCaps": "Gorras de Béisbol",
+    "filterVintage": "Serie Vintage",
+    "filterSports": "Deportivas",
+    "panelLabel": "Panel:",
+    "panelAll": "Todos",
+    "sortDefault": "Predeterminado",
+    "sortPriceAsc": "Precio: Menor → Mayor",
+    "sortPriceDesc": "Precio: Mayor → Menor",
+    "moq": "MOQ: {count} Uds",
+    "factoryDirect": "Directo de Fábrica",
+    "viewDetails": "Ver Detalles",
+    "quote": "Cotizar",
+    "details": "Detalles",
+    "showing": "Mostrando {shown} de {total} productos",
+    "noResults": "Ningún producto coincide con los filtros.",
+    "resetFilters": "Restablecer filtros"
+  },
+  "product": {
+    "backToCatalog": "Volver al Catálogo",
+    "whatsappQuote": "Cotizar por WhatsApp",
+    "topSeller": "Más Vendido",
+    "aql": "AQL 2.5",
+    "aqlSub": "Estándar QC",
+    "production": "15 Días",
+    "productionSub": "Producción",
+    "moq": "200 Uds",
+    "moqSub": "MOQ",
+    "shipping": "Global",
+    "shippingSub": "Envío Exprés",
+    "unit": "/ Unidad (FOB)",
+    "tabs": {
+      "specs": "Especificaciones",
+      "custom": "Personalización",
+      "faq": "FAQ del Producto"
+    },
+    "getQuote": "Solicitar Cotización",
+    "freeMockup": "Mockup 3D Gratis",
+    "orderSample": "Pedir Muestra",
+    "related": "Seguir Explorando",
+    "relatedTitle": "Productos Relacionados",
+    "trustBar": "Estándares Globales de Fabricación",
+    "notFound": "Producto No Encontrado",
+    "backLink": "Volver al Catálogo"
+  },
+  "form": {
+    "company": "Nombre de la Empresa",
+    "companyPlaceholder": "Tu Empresa S.L.",
+    "contact": "Persona de Contacto",
+    "contactPlaceholder": "Juan Pérez",
+    "email": "Correo Electrónico",
+    "emailPlaceholder": "tu@empresa.com",
+    "phone": "Teléfono / WhatsApp",
+    "phonePlaceholder": "+34 612 345 678",
+    "services": "Servicio de Interés (Selecciona todos los que apliquen)",
+    "mockup": "Mockup Digital 3D",
+    "sample": "Muestra Física",
+    "bulk": "Producción en Masa",
+    "test": "Pedido de Prueba",
+    "upload": "Subir Logotipo / Diseño (Opcional)",
+    "uploadHint": "Subir un archivo",
+    "uploadOr": "o arrastrar y soltar",
+    "uploadFormats": "PNG, JPG, PDF hasta 10MB",
+    "uploadTip": "Para solicitudes de Mockup 3D, por favor sube tu logotipo vectorial (AI/EPS) o PNG de alta resolución.",
+    "message": "Mensaje / Requisitos",
+    "messagePlaceholder": "Cuéntanos sobre los estilos, cantidades o personalización específica (ej. Bordado 3D Puff, Etiquetas Tejidas)...",
+    "submit": "Enviar Consulta",
+    "thanks": "¡Gracias!",
+    "thanksMsg": "Hemos recibido tu consulta. Nuestro equipo te contactará pronto.",
+    "sendAnother": "Enviar otra"
+  },
+  "footer": {
+    "about": "Baoding Junyang Hat Manufacturing Co., Ltd. es una fábrica premium de gorras personalizadas especializada en OEM/ODM de gorras de béisbol bordadas, gorros y trucker hats desde 2014.",
+    "navigation": "Navegación",
+    "products": "Productos",
+    "aboutLink": "Nosotros",
+    "guideLink": "Guía para Compradores",
+    "materialsLink": "Materiales y Tejidos",
+    "pricingLink": "Precios y Envíos",
+    "requestQuote": "Solicitar Cotización",
+    "contact": "Contacto",
+    "whatsapp": "WhatsApp: +86 15933930830",
+    "email": "Email: admin@bdjunyang.com",
+    "office": "Oficina: Baoding, Hebei, China",
+    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Todos los derechos reservados."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "about": "Nuestra Fábrica",
+    "guide": "Guía para Compradores",
+    "materials": "Materiales y Tejidos",
+    "pricing": "Precios y Envíos",
+    "products": "Productos"
+  },
+  "meta": {
+    "homeTitle": "BD Hats | Fábrica Premium de Gorras Personalizadas y Venta al por Mayor B2B",
+    "homeDesc": "Obtén gorras personalizadas premium directamente de fábrica. OEM/ODM desde 2014. Bordado personalizado, MOQ 200uds, mockup 3D gratis, muestras en 7 días. Fábrica verificada SGS en Baoding, China.",
+    "aboutTitle": "Sobre BD Hats | Fábrica de Gorras con 12 Años de Experiencia en Baoding, China",
+    "aboutDesc": "De un taller de 15 personas a una instalación de 50,000m² sirviendo a más de 300 marcas globales. Conoce la trayectoria, misión, equipo y capacidades de Baoding Junyang desde 2014.",
+    "guideTitle": "Guía B2B de Fabricación de Gorras | Cómo Comprar Gorras al por Mayor desde China",
+    "guideDesc": "Guía completa para compradores B2B: cómo elegir una fábrica de gorras, tipos de bordado, negociación de MOQ, estándares de control de calidad y logística de envío.",
+    "materialsTitle": "Guía de Materiales para Gorras | Algodón, Lana, Poliéster y Más | BD Hats",
+    "materialsDesc": "Guía completa de materiales para gorras personalizadas: sarga de algodón, algodón cepillado, lana, poliéster, nylon, lona. Aprende tipos de cierre y construcción de paneles para tu pedido al por mayor.",
+    "pricingTitle": "Guía de Precios, MOQ y Envíos | Desglose de Costos al por Mayor | BD Hats",
+    "pricingDesc": "Guía de precios transparente para gorras personalizadas: ¿cuánto cuestan las gorras?, FOB vs CIF explicado, MOQ 200uds, costos de flete aéreo vs marítimo, tarifas de muestras y descuentos por volumen."
+  },
+  "language": {
+    "switchTo": "English",
+    "label": "ES"
+  }
+}

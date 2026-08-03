@@ -3,14 +3,18 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { HATS, Product } from "../../lib/products";
+import { useTranslations } from "next-intl";
+import { HATS, Product } from "../../../lib/products";
 import { 
   MessageCircle, ArrowLeft, ShieldCheck, Zap, Globe, Cpu, 
   CheckCircle2, ChevronDown, ChevronUp, Image as ImageIcon, 
   Settings, HelpCircle, Package, Truck
 } from "lucide-react";
+import { Breadcrumb } from "../../../components/Breadcrumb";
+import { LanguageSwitcher } from "../../../components/LanguageSwitcher";
 
 export default function ProductDetail() {
+  const t = useTranslations("product");
   const { id } = useParams();
   const hat = HATS.find(h => String(h.id) === String(id));
   const [activeTab, setActiveTab] = useState("specs");
@@ -20,8 +24,8 @@ export default function ProductDetail() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Product Not Found</h1>
-          <Link href="/" className="text-black font-bold underline">Back to Catalog</Link>
+          <h1 className="text-4xl font-bold mb-4">{t("notFound")}</h1>
+          <Link href="/" className="text-black font-bold underline">{t("backLink")}</Link>
         </div>
       </div>
     );
@@ -99,7 +103,7 @@ export default function ProductDetail() {
       {/* Navigation Bar */}
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-black font-bold hover:text-gray-600 transition">
-          <ArrowLeft size={20} /> <span className="hidden sm:inline">Back to Catalog</span>
+          <ArrowLeft size={20} /> <span className="hidden sm:inline">{t("backToCatalog")}</span>
         </Link>
         <img 
           src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" 
@@ -110,9 +114,16 @@ export default function ProductDetail() {
           onClick={handleWhatsAppClick}
           className="bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 shadow-lg shadow-green-500/20 transition"
         >
-          <MessageCircle size={16} /> WhatsApp Quote
+            <MessageCircle size={16} /> {t("whatsappQuote")}
         </button>
       </nav>
+
+      {/* Breadcrumb */}
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: hat.category || "Products", href: "/#catalog" },
+        { label: hat.name }
+      ]} />
 
       <section className="max-w-7xl mx-auto py-12 md:py-20 px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -122,16 +133,16 @@ export default function ProductDetail() {
             <div className="rounded-[2.5rem] overflow-hidden bg-gray-50 border border-gray-100 shadow-2xl relative group">
               <img src={hat.img} alt={hat.name} className="w-full h-auto object-cover group-hover:scale-105 transition duration-700" width="960" height="960" />
               <div className="absolute top-6 left-6 flex gap-2">
-                 <span className="bg-black/80 backdrop-blur text-white text-[10px] font-black uppercase px-3 py-1.5 rounded-full">Top Seller</span>
+                 <span className="bg-black/80 backdrop-blur text-white text-[10px] font-black uppercase px-3 py-1.5 rounded-full">{t("topSeller")}</span>
               </div>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                {[
-                 { icon: ShieldCheck, label: "AQL 2.5", sub: "QC Standard" },
-                 { icon: Zap, label: "15 Days", sub: "Production" },
-                 { icon: Package, label: "200 Pcs", sub: "MOQ" },
-                 { icon: Truck, label: "Global", sub: "Express Air" }
+                 { icon: ShieldCheck, label: t("aql"), sub: t("aqlSub") },
+                 { icon: Zap, label: t("production"), sub: t("productionSub") },
+                 { icon: Package, label: t("moq"), sub: t("moqSub") },
+                 { icon: Truck, label: t("shipping"), sub: t("shippingSub") }
                ].map((item, i) => (
                  <div key={i} className="bg-gray-50 p-4 rounded-2xl border border-gray-100 flex flex-col items-center text-center">
                     <item.icon className="text-black mb-2" size={24} />
@@ -149,7 +160,7 @@ export default function ProductDetail() {
               <h1 className="text-4xl md:text-5xl font-black text-black leading-tight mb-4">{hat.name}</h1>
               <div className="flex items-baseline gap-3 mb-6">
                  <span className="text-3xl font-black text-black">{hat.price}</span>
-                 <span className="text-gray-400 font-bold">/ Unit (FOB)</span>
+                 <span className="text-gray-400 font-bold">{t("unit")}</span>
               </div>
               <p className="text-gray-600 text-lg leading-relaxed">{hat.fullDesc}</p>
             </div>
@@ -157,9 +168,9 @@ export default function ProductDetail() {
             {/* Tab Controls */}
             <div className="flex border-b border-gray-100 mb-8 overflow-x-auto no-scrollbar">
               {[
-                { id: "specs", label: "Specifications", icon: Cpu },
-                { id: "custom", label: "Customization", icon: Settings },
-                { id: "faq", label: "Product FAQ", icon: HelpCircle }
+                { id: "specs", label: t("tabs.specs"), icon: Cpu },
+                { id: "custom", label: t("tabs.custom"), icon: Settings },
+                { id: "faq", label: t("tabs.faq"), icon: HelpCircle }
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -244,15 +255,15 @@ export default function ProductDetail() {
                 onClick={handleWhatsAppClick}
                 className="w-full bg-green-500 hover:bg-green-600 text-white font-black py-5 rounded-2xl transition shadow-xl shadow-green-500/20 flex items-center justify-center gap-3 text-lg"
               >
-                <MessageCircle size={24} /> Get Factory Quote
+                <MessageCircle size={24} /> {t("getQuote")}
               </button>
-              <div className="grid grid-cols-2 gap-4">
-                 <Link href="/#inquiry" className="bg-black hover:bg-gray-800 text-white font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
-                   Free 3D Mockup
-                 </Link>
-                 <Link href="/#inquiry" className="bg-gray-100 hover:bg-gray-200 text-black font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
-                   Order Sample
-                 </Link>
+               <div className="grid grid-cols-2 gap-4">
+                  <Link href="/#inquiry?intent=mockup" className="bg-black hover:bg-gray-800 text-white font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
+                    {t("freeMockup")}
+                  </Link>
+                  <Link href="/#inquiry?intent=sample" className="bg-gray-100 hover:bg-gray-200 text-black font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
+                    {t("orderSample")}
+                  </Link>
               </div>
             </div>
 
@@ -267,8 +278,8 @@ export default function ProductDetail() {
         return (
           <section className="py-20 px-4 max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <span className="text-xs font-black uppercase tracking-widest text-gray-500">Continue Exploring</span>
-              <h2 className="text-2xl md:text-4xl font-black tracking-tight mt-2">Related Products</h2>
+              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{t("related")}</span>
+              <h2 className="text-2xl md:text-4xl font-black tracking-tight mt-2">{t("relatedTitle")}</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {related.map((r) => (
@@ -291,7 +302,7 @@ export default function ProductDetail() {
       {/* Global Compliance & Trust Bar */}
       <section className="bg-gray-50 py-16 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 text-center">
-           <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-10">Trusted Global Manufacturing Standards</p>
+           <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-10">{t("trustBar")}</p>
            <div className="flex flex-wrap items-center justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition duration-500">
               <span className="font-black text-2xl italic">REACH</span>
               <span className="font-black text-2xl italic">ISO 9001</span>
