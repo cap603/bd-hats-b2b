@@ -64,7 +64,7 @@ export const HATS: Product[] = [
     fullDesc: "Our most viewed product on Alibaba.com. This 5-panel cap is built with premium 108*56 heavy cotton twill, designed specifically for brands requiring intricate 3D puff embroidery. The front panel provides a large canvas for bold branding without seam interference.",
     price: "$0.98 - $2.48", 
     moq: 200,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    img: "https://sc02.alicdn.com/kf/H44ce59da0a6c475dbf8cf6a424957b3dZ.jpg",
     category: "Baseball Caps",
     specs: {
       material: "100% Cotton Twill (108*56)",
@@ -94,7 +94,7 @@ export const HATS: Product[] = [
     fullDesc: "The #2 best-seller in our Alibaba store. This cap undergoes a rigorous washing and treatment process to achieve its unique distressed look. Ideal for brands looking for a high-end vintage or streetwear vibe. Features a soft, unstructured crown for the ultimate 'Dad Hat' fit.",
     price: "$2.00 - $3.80", 
     moq: 200,
-    img: "https://sc04.alicdn.com/kf/H668617812983428383861298c92a5F.jpg",
+    img: "https://sc02.alicdn.com/kf/H38c24254fbf4436baa5bd6a77ec56e14O.jpg",
     category: "Vintage Series",
     specs: {
       material: "Heavy Acid-Washed Cotton",
