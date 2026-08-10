@@ -27,7 +27,7 @@ const FAQS = [
   },
   {
     q: "How much does a custom sample cost?",
-    a: "A physical pre-production sample typically costs $50-100 including courier shipping, depending on complexity. This fee is fully credited against your bulk order. We also offer free 3D digital mockups within 12 hours — no cost, no commitment."
+    a: "A physical pre-production sample typically costs $50-100 including courier shipping, depending on complexity. This fee is fully credited against your bulk order."
   },
   {
     q: "What is the production lead time for custom hats?",
@@ -141,7 +141,7 @@ export default function PricingPage() {
       <section className="py-20 px-4 bg-yellow-50 border-y border-yellow-100">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-4">Get Your Custom Quote — Free in 12 Hours</h2>
-          <p className="text-gray-600 text-lg mb-8">Send us your cap requirements. Our sales team will provide a detailed quotation with exact pricing, shipping costs, and a free 3D digital mockup.</p>
+          <p className="text-gray-600 text-lg mb-8">Send us your cap requirements. Our sales team will provide a detailed quotation with exact pricing and shipping costs.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/#inquiry" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition shadow-lg shadow-green-500/20">
               Request Factory Quote <ArrowRight size={20} />

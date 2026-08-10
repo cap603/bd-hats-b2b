@@ -65,8 +65,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         ? "BD Hats | Fábrica Premium de Gorras — Directo de Fábrica, MOQ 200uds"
         : "BD Hats | Premium Custom Hat Factory — Factory Direct, MOQ 200pcs",
       description: locale === "es"
-        ? "Gorras personalizadas premium directamente de fábrica desde 2014. Bordado personalizado, MOQ 200uds, mockup 3D gratis, muestras en 7 días, envíos globales."
-        : "Premium custom hats directly from the factory since 2014. Custom embroidery, MOQ 200pcs, free 3D mockup, 7-day samples, shipped globally.",
+        ? "Gorras personalizadas premium directamente de fábrica desde 2014. Bordado personalizado, MOQ 200uds, muestras en 7 días, envíos globales."
+        : "Premium custom hats directly from the factory since 2014. Custom embroidery, MOQ 200pcs, 7-day samples, shipped globally.",
       images: [
         {
           url: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png",
@@ -79,7 +79,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     twitter: {
       card: "summary_large_image",
       title: "BD Hats | Premium Custom Hat Factory",
-      description: "Factory-direct custom hats since 2014. MOQ 200pcs · Free 3D Mockup · 7-Day Samples · Global Shipping.",
+      description: "Factory-direct custom hats since 2014. MOQ 200pcs · 7-Day Samples · Global Shipping.",
       images: ["https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png"],
     },
   };

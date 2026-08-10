@@ -32,7 +32,7 @@ export default function ProductDetail() {
   }
 
   const handleWhatsAppClick = () => {
-    const text = encodeURIComponent(`Hi Baoding Junyang! I'm interested in the "${hat.name}" (Product ID: ${hat.id}). Can you provide a detailed quote and information about custom mockups?`);
+    const text = encodeURIComponent(`Hi Baoding Junyang! I'm interested in the "${hat.name}" (Product ID: ${hat.id}). Can you provide a detailed quote and production information?`);
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
 
@@ -175,20 +175,12 @@ export default function ProductDetail() {
               <p className="text-gray-600 text-lg leading-relaxed mb-6">{hat.fullDesc}</p>
 
               {/* Above-the-fold quick actions */}
-              <div className="flex flex-col sm:flex-row gap-3">
-                <button
-                  onClick={handleWhatsAppClick}
-                  className="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-4 rounded-2xl transition shadow-lg shadow-green-500/20 text-base"
-                >
-                  <MessageCircle size={20} /> {t("getQuote")}
-                </button>
-                <Link
-                  href="/#inquiry?intent=mockup"
-                  className="flex-1 inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white font-bold py-4 rounded-2xl transition text-sm uppercase tracking-widest"
-                >
-                  {t("freeMockup")}
-                </Link>
-              </div>
+              <button
+                onClick={handleWhatsAppClick}
+                className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-4 rounded-2xl transition shadow-lg shadow-green-500/20 text-base"
+              >
+                <MessageCircle size={20} /> {t("getQuote")}
+              </button>
             </div>
 
             {/* Tab Controls */}
@@ -254,7 +246,6 @@ export default function ProductDetail() {
               <div className="space-y-3 animate-in fade-in duration-500">
                 {(hat.faqs || [
                   { q: "Can I get a sample before bulk production?", a: "Yes, we produce a physical sample for your final approval. Lead time is 7 days." },
-                  { q: "Is the 3D digital mockup free?", a: "Yes, our design team provides a professional 3D mockup within 12 hours of receiving your logo." },
                   { q: "Do you ship worldwide?", a: "We ship to over 50 countries via DHL/FedEx/UPS with door-to-door delivery in 5-8 business days." }
                 ]).map((faq, i) => (
                   <div key={i} className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
@@ -283,14 +274,9 @@ export default function ProductDetail() {
               >
                 <MessageCircle size={24} /> {t("getQuote")}
               </button>
-               <div className="grid grid-cols-2 gap-4">
-                  <Link href="/#inquiry?intent=mockup" className="bg-black hover:bg-gray-800 text-white font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
-                    {t("freeMockup")}
-                  </Link>
-                  <Link href="/#inquiry?intent=sample" className="bg-gray-100 hover:bg-gray-200 text-black font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
-                    {t("orderSample")}
-                  </Link>
-              </div>
+               <Link href="/#inquiry?intent=sample" className="w-full bg-gray-100 hover:bg-gray-200 text-black font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
+                  {t("orderSample")}
+              </Link>
             </div>
 
           </div>
@@ -356,19 +342,13 @@ export default function ProductDetail() {
       </footer>
 
       {/* Mobile sticky inquiry bar */}
-      <div className="fixed bottom-0 inset-x-0 z-50 lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+      <div className="fixed bottom-0 inset-x-0 z-50 lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
         <button
           onClick={handleWhatsAppClick}
-          className="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-3.5 rounded-xl transition text-sm"
+          className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-3.5 rounded-xl transition text-sm"
         >
           <MessageCircle size={18} /> {t("getQuote")}
         </button>
-        <Link
-          href="/#inquiry?intent=mockup"
-          className="flex-1 inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white font-bold py-3.5 rounded-xl transition text-xs uppercase tracking-widest"
-        >
-          {t("freeMockup")}
-        </Link>
       </div>
       {/* Spacer so footer content is not covered by sticky bar on mobile */}
       <div className="h-20 lg:hidden" />

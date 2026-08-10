@@ -110,10 +110,7 @@ export function InquiryForm() {
       </div>
       <div>
          <label className="block text-sm font-medium text-gray-700 mb-3">{t("services")}</label>
-         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <label className="flex items-center gap-2 text-sm cursor-pointer p-3 border rounded-lg hover:bg-gray-50 transition">
-               <input type="checkbox" className="accent-black" checked={services.includes("mockup")} onChange={() => toggleService("mockup")} /> {t("mockup")}
-            </label>
+         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <label className="flex items-center gap-2 text-sm cursor-pointer p-3 border rounded-lg hover:bg-gray-50 transition">
                <input type="checkbox" className="accent-black" checked={services.includes("sample")} onChange={() => toggleService("sample")} /> {t("sample")}
             </label>

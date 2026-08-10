@@ -39,22 +39,14 @@
     "pills": {
       "moq": "MOQ 200 Pcs",
       "samples": "7-Day Samples",
-      "market": "70% North America",
-      "mockup": "Free 3D Mockup"
-    },
-    "mockupCta": {
-      "heading": "Ready to See Your Brand on Our Caps?",
-      "sub": "Get a professional 3D digital mockup within 24 hours — Free of charge.",
-      "button": "Start Free 3D Design"
+      "market": "70% North America"
     },
     "stats": {
       "years": "20+ Years",
       "yearsLabel": "Production Experience",
       "moq": "200 Pcs",
       "moqLabel": "MOQ Starting from 200 Pcs",
-      "sgs": "SGS Verified Factory",
-      "mockup": "24 Hour",
-      "mockupLabel": "Free 3D Mockup Output"
+      "sgs": "SGS Verified Factory"
     },
     "compliance": {
       "title": "Compliance Standards",
@@ -105,8 +97,8 @@
       "heading": "How We Work with Brands",
       "step1Title": "Select Style & Fabric",
       "step1Desc": "Choose structured or unstructured frames, and specify fabrics from heavy cotton to canvas or velvet.",
-      "step2Title": "Get Free 3D Mockup",
-      "step2Desc": "Submit your high-resolution logos. Our designers will deliver a 3D digital mockup within 24 hours.",
+      "step2Title": "Get Detailed Quotation",
+      "step2Desc": "Submit your requirements and artwork. Our sales team delivers a full quotation with pricing and lead time within 12 hours.",
       "step3Title": "Sample Approval",
       "step3Desc": "We produce a physical sample and send you detailed videos/photos for final adjustment approval.",
       "step4Title": "Bulk & Quality Updates",
@@ -134,7 +126,7 @@
       "q0": "What is your Minimum Order Quantity (MOQ) for custom baseball caps?",
       "a0": "Our standard MOQ is 200 pieces per style/color. We also accommodate smaller test orders for initial brand startups and custom embroidery trials.",
       "q1": "Can I get a sample before bulk production?",
-      "a1": "Yes, absolutely! We provide physical pre-production samples. We can also provide free 3D digital mockups within 12 hours once you submit your artwork.",
+      "a1": "Yes, absolutely! We provide physical pre-production samples so you can verify quality and fit before bulk production.",
       "q2": "Do you manufacture hats based on custom designs (OEM/ODM)?",
       "a2": "Yes. Baoding Junyang is a full-service OEM/ODM factory. We can construct caps from your sketches, spec sheets, or reverse-engineer physical original samples.",
       "q3": "What is your standard production lead time?",
@@ -142,7 +134,7 @@
     },
     "inquiry": {
       "heading": "Request Factory Quote",
-      "sub": "Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote and design mockup within 12 hours.",
+      "sub": "Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote within 12 hours.",
       "trustLabel": "100% Factory Direct · SGS Verified · 12 Years OEM/ODM",
       "testimonialTitle": "What Our Brand Partners Say",
       "testimonials": [
@@ -205,9 +197,8 @@
       "faq": "Product FAQ"
     },
     "getQuote": "Get Factory Quote",
-    "freeMockup": "Free 3D Mockup",
     "orderSample": "Order Sample",
-    "urgencyStrip": "Production slots for this season are filling fast — secure your line with a free 3D mockup today",
+    "urgencyStrip": "Production slots for this season are filling fast — secure your production line with a quote today",
     "related": "Continue Exploring",
     "relatedTitle": "Related Products",
     "trustBar": "Trusted Global Manufacturing Standards",
@@ -224,7 +215,6 @@
     "phone": "Phone / WhatsApp",
     "phonePlaceholder": "+1 234 567 8900",
     "services": "Service Interest (Select all that apply)",
-    "mockup": "3D Digital Mockup",
     "sample": "Physical Sample",
     "bulk": "Bulk Production",
     "test": "Small Test Order",
@@ -232,7 +222,7 @@
     "uploadHint": "Upload a file",
     "uploadOr": "or drag and drop",
     "uploadFormats": "PNG, JPG, PDF up to 10MB",
-    "uploadTip": "For 3D Mockup requests, please upload your vector logo (AI/EPS) or high-res PNG.",
+    "uploadTip": "For logo customization, please upload a high-resolution file (PNG/JPG) or vector logo (AI/EPS).",
     "message": "Message / Requirements",
     "messagePlaceholder": "Tell us about the styles, quantities, or specific customization (e.g. 3D Puff Embroidery, Woven Labels)...",
     "submit": "Send Inquiry",
@@ -265,7 +255,7 @@
   },
   "meta": {
     "homeTitle": "BD Hats | Premium Custom Hat Factory & B2B Wholesale",
-    "homeDesc": "Get premium custom hats directly from the factory. OEM/ODM since 2014. Custom embroidery, MOQ 200pcs, free 3D mockup, 7-day samples. SGS verified factory in Baoding, China.",
+    "homeDesc": "Get premium custom hats directly from the factory. OEM/ODM since 2014. Custom embroidery, MOQ 200pcs, 7-day samples. SGS verified factory in Baoding, China.",
     "aboutTitle": "About BD Hats | 12-Year Custom Hat Factory in Baoding, China",
     "aboutDesc": "From a 15-person workshop to a 50,000sqm facility serving 300+ global brands. Learn about Baoding Junyang's journey, mission, team, and factory capabilities since 2014.",
     "guideTitle": "B2B Custom Hat Manufacturing Guide | How to Source Wholesale Caps from China",
@@ -277,7 +267,7 @@
   },
   "chat": {
     "cta": "Chat with Us",
-    "tip": "Hi! Get a free quote & 3D mockup in 12 hours."
+    "tip": "Hi! Get a free quote in 12 hours."
   },
   "language": {
     "switchTo": "Español",

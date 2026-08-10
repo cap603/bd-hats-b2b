@@ -47,7 +47,7 @@ export const HATS: Product[] = [
     customization: {
       title: "Our Customization Capabilities",
       options: [
-        "Free 3D Mockup within 12 hours",
+        "Professional embroidery digitizing included",
         "Multiple Embroidery Types (3D, Flat, Chenille)",
         "Custom Internal Seam Tape & Sweatband Labels",
         "Wide Range of Fabric Colors in Stock"

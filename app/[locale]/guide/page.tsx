@@ -147,7 +147,7 @@ export default function GuidePage() {
       <section className="py-24 px-4 bg-black text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">Ready to Start Your Custom Hat Project?</h2>
-          <p className="text-gray-400 text-lg mb-8">Apply everything you've learned — get a free 3D mockup and factory quote within 12 hours.</p>
+          <p className="text-gray-400 text-lg mb-8">Apply everything you've learned — get a factory quote and production timeline within 12 hours.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/#inquiry" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition">
               Request Factory Quote <ArrowRight size={20} />

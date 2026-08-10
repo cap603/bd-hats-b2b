@@ -95,7 +95,7 @@ export default function Home() {
   };
 
   const handleWhatsApp = (source: string, customText?: string) => {
-    const defaultText = "Hi Baoding Junyang! I would like to get a catalog and free mockup for custom baseball caps.";
+    const defaultText = "Hi Baoding Junyang! I would like to get a catalog and quote for custom baseball caps.";
     const text = encodeURIComponent(customText || defaultText);
     trackWhatsApp(source);
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
@@ -228,33 +228,12 @@ export default function Home() {
            <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.moq")}</span>
           <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.samples")}</span>
           <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.market")}</span>
-          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-yellow-400 text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.mockup")}</span>
-        </div>
-      </section>
-
-      {/* Free 3D Mockup CTA Section */}
-      <section className="bg-amber-500 py-12 px-4 border-b-4 border-black">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="max-w-2xl">
-            <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight leading-tight">
-              {t("mockupCta.heading")}
-            </h2>
-            <p className="text-white font-bold mt-2 text-lg">
-              {t("mockupCta.sub")}
-            </p>
-          </div>
-          <a 
-            href="#inquiry?intent=mockup" 
-            className="bg-black text-white font-bold px-10 py-5 rounded-full hover:bg-gray-900 transition flex items-center gap-3 text-lg shadow-xl shadow-black/20"
-          >
-            <Cpu size={24} /> {t("mockupCta.button")}
-          </a>
         </div>
       </section>
 
       {/* Trust Stats Bar */}
       <section id="advantages" className="bg-white py-16 border-b border-gray-100 scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
           <div className="p-4">
             <p className="text-4xl md:text-5xl font-black text-black mb-1">{t("stats.years")}</p>
             <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.yearsLabel")}</p>
@@ -266,10 +245,6 @@ export default function Home() {
           <div className="p-4 flex flex-col items-center justify-center">
             <img src="https://sc02.alicdn.com/kf/S550f2425a6104c99a815a513ca0c5e7fG.png" alt="SGS Verified" className="h-12 w-auto mb-2 opacity-80" />
             <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.sgs")}</p>
-          </div>
-          <div className="p-4">
-            <p className="text-4xl md:text-5xl font-black text-black mb-1">{t("stats.mockup")}</p>
-            <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.mockupLabel")}</p>
           </div>
         </div>
       </section>

@@ -57,7 +57,7 @@ export function HatCatalog() {
     if (typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag("event", "whatsapp_click", { event_category: "engagement", event_label: `product-${hatName}` });
     }
-    const text = encodeURIComponent(`Hi Baoding Junyang! I'm interested in the "${hatName}". Can I get a quote & free 3D mockup?`);
+    const text = encodeURIComponent(`Hi Baoding Junyang! I'm interested in the "${hatName}". Can I get a quote?`);
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
 

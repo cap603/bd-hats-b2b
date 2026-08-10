@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     description: `${hat.desc} Price: ${hat.price} FOB. MOQ ${hat.moq}pcs. Custom ${hat.specs.material} material with ${hat.specs.logo}. Factory direct from Baoding Junyang.`,
     openGraph: {
       title: `${hat.name} | BD Hats Factory`,
-      description: `Custom wholesale ${hat.name}. ${hat.price} FOB · MOQ ${hat.moq}pcs · Free 3D Mockup`,
+      description: `Custom wholesale ${hat.name}. ${hat.price} FOB · MOQ ${hat.moq}pcs · Factory direct from Baoding Junyang.`,
       images: [hat.img],
       type: "website",
     },

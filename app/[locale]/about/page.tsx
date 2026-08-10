@@ -8,13 +8,13 @@ const TIMELINE = [
   { year: "2016", title: "First Export Order", desc: "Shipped our first container to a US streetwear brand. Expanded to 50 staff and invested in Japanese Barudan embroidery machines." },
   { year: "2018", title: "SGS & CE Certified", desc: "Achieved SGS factory verification and CE product certification. Entered European market with REACH & RoHS compliance." },
   { year: "2020", title: "50,000sqm Facility", desc: "Moved to a modern 50,000sqm factory. Installed 100+ Barudan machines. Reached 5M+ caps annual capacity." },
-  { year: "2022", title: "Alibaba Gold Supplier", desc: "Earned Alibaba Gold Supplier status. Launched 3D digital mockup service, delivering 1,000+ designs to global brands." },
+  { year: "2022", title: "Alibaba Gold Supplier", desc: "Earned Alibaba Gold Supplier status and expanded our OEM/ODM design capabilities, delivering 1,000+ custom designs to global brands." },
   { year: "2026", title: "300+ Global Brands", desc: "Now serving 300+ brands across 50+ countries. North America accounts for 70% of our production." }
 ];
 
 const TEAM = [
   { role: "Sales Director", name: "Sales Team", desc: "Your dedicated B2B specialist — fluent in English, ready to quote within 12 hours. Handles all inquiries from initial contact to final delivery.", emoji: "💼" },
-  { role: "Head of Design", name: "Design Team", desc: "Specializes in 3D embroidery digitizing and mockup rendering. Turns sketches, logos, or just an idea into a production-ready design file.", emoji: "🎨" },
+  { role: "Head of Design", name: "Design Team", desc: "Specializes in 3D embroidery digitizing and production-ready design files. Turns sketches, logos, or just an idea into a manufacturable design.", emoji: "🎨" },
   { role: "QC Manager", name: "QC Team", desc: "Leads our 5-stage AQL 2.5 inspection protocol. Every single cap is piece-by-piece checked before leaving the factory floor.", emoji: "🔍" },
   { role: "Production Manager", name: "Production Team", desc: "Oversees 200+ tailors and 100+ Japanese embroidery machines. Ensures on-time delivery without compromising quality.", emoji: "🧵" }
 ];
@@ -149,7 +149,7 @@ export default function AboutPage() {
       <section className="py-24 px-4 bg-black text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">Ready to Start Your Custom Hat Project?</h2>
-          <p className="text-gray-400 text-lg mb-8">Get a free 3D mockup and factory quote within 12 hours.</p>
+          <p className="text-gray-400 text-lg mb-8">Get a factory quote and production timeline within 12 hours.</p>
           <a
             href="/#inquiry"
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition"

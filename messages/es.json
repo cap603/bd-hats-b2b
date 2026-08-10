@@ -39,22 +39,14 @@
     "pills": {
       "moq": "MOQ 200 Uds",
       "samples": "Muestras en 7 Días",
-      "market": "70% Norteamérica",
-      "mockup": "Mockup 3D Gratis"
-    },
-    "mockupCta": {
-      "heading": "¿Listo para Ver Tu Marca en Nuestras Gorras?",
-      "sub": "Obtén un mockup digital 3D profesional en 24 horas — Sin costo.",
-      "button": "Comenzar Diseño 3D Gratis"
+      "market": "70% Norteamérica"
     },
     "stats": {
       "years": "20+ Años",
       "yearsLabel": "Experiencia en Producción",
       "moq": "200 Uds",
       "moqLabel": "MOQ desde 200 Uds",
-      "sgs": "Fábrica Verificada SGS",
-      "mockup": "24 Horas",
-      "mockupLabel": "Mockup 3D Gratis"
+      "sgs": "Fábrica Verificada SGS"
     },
     "compliance": {
       "title": "Estándares de Cumplimiento",
@@ -105,8 +97,8 @@
       "heading": "Cómo Trabajamos con las Marcas",
       "step1Title": "Selecciona Estilo y Tejido",
       "step1Desc": "Elige entre estructuras rígidas o suaves, y especifica tejidos desde algodón pesado hasta lona o terciopelo.",
-      "step2Title": "Recibe Mockup 3D Gratis",
-      "step2Desc": "Envía tus logotipos en alta resolución. Nuestros diseñadores te entregarán un mockup digital 3D en 24 horas.",
+      "step2Title": "Recibe Cotización Detallada",
+      "step2Desc": "Envía tus requisitos y diseño. Nuestro equipo comercial te entrega una cotización completa con precios y plazos en 12 horas.",
       "step3Title": "Aprobación de Muestra",
       "step3Desc": "Producimos una muestra física y te enviamos videos y fotos detalladas para aprobación final de ajustes.",
       "step4Title": "Producción y Actualizaciones",
@@ -134,7 +126,7 @@
       "q0": "¿Cuál es su Cantidad Mínima de Pedido (MOQ) para gorras de béisbol personalizadas?",
       "a0": "Nuestro MOQ estándar es de 200 piezas por estilo/color. También aceptamos pedidos de prueba más pequeños para startups de marca y pruebas de bordado personalizado.",
       "q1": "¿Puedo obtener una muestra antes de la producción en masa?",
-      "a1": "¡Sí, por supuesto! Proporcionamos muestras físicas de pre-producción. También podemos ofrecer mockups digitales 3D gratuitos en 12 horas una vez que envíes tu diseño.",
+      "a1": "¡Sí, por supuesto! Proporcionamos muestras físicas de pre-producción para que verifiques calidad y ajuste antes de la producción en masa.",
       "q2": "¿Fabrican gorras basadas en diseños personalizados (OEM/ODM)?",
       "a2": "Sí. Baoding Junyang es una fábrica de servicio completo OEM/ODM. Podemos construir gorras a partir de tus bocetos, hojas de especificaciones o replicar muestras físicas originales.",
       "q3": "¿Cuál es su tiempo de producción estándar?",
@@ -142,7 +134,7 @@
     },
     "inquiry": {
       "heading": "Solicitar Cotización de Fábrica",
-      "sub": "Envíanos los requisitos de tus gorras (estilos, logotipos, cantidades). Nuestros especialistas B2B te entregarán tu cotización y mockup de diseño en 12 horas.",
+      "sub": "Envíanos los requisitos de tus gorras (estilos, logotipos, cantidades). Nuestros especialistas B2B te entregarán tu cotización en 12 horas.",
       "trustLabel": "100% Directo de Fábrica · Verificado SGS · 12 Años OEM/ODM",
       "testimonialTitle": "Lo Que Dicen Nuestros Socios",
       "testimonials": [
@@ -205,9 +197,8 @@
       "faq": "FAQ del Producto"
     },
     "getQuote": "Solicitar Cotización",
-    "freeMockup": "Mockup 3D Gratis",
     "orderSample": "Pedir Muestra",
-    "urgencyStrip": "Los cupos de producción para esta temporada se están agotando — asegura tu línea con un mockup 3D gratis hoy",
+    "urgencyStrip": "Los cupos de producción para esta temporada se están agotando — asegura tu línea de producción con una cotización hoy",
     "related": "Seguir Explorando",
     "relatedTitle": "Productos Relacionados",
     "trustBar": "Estándares Globales de Fabricación",
@@ -224,7 +215,6 @@
     "phone": "Teléfono / WhatsApp",
     "phonePlaceholder": "+34 612 345 678",
     "services": "Servicio de Interés (Selecciona todos los que apliquen)",
-    "mockup": "Mockup Digital 3D",
     "sample": "Muestra Física",
     "bulk": "Producción en Masa",
     "test": "Pedido de Prueba",
@@ -232,7 +222,7 @@
     "uploadHint": "Subir un archivo",
     "uploadOr": "o arrastrar y soltar",
     "uploadFormats": "PNG, JPG, PDF hasta 10MB",
-    "uploadTip": "Para solicitudes de Mockup 3D, por favor sube tu logotipo vectorial (AI/EPS) o PNG de alta resolución.",
+    "uploadTip": "Para personalización de logotipos, sube un archivo de alta resolución (PNG/JPG) o logotipo vectorial (AI/EPS).",
     "message": "Mensaje / Requisitos",
     "messagePlaceholder": "Cuéntanos sobre los estilos, cantidades o personalización específica (ej. Bordado 3D Puff, Etiquetas Tejidas)...",
     "submit": "Enviar Consulta",
@@ -265,7 +255,7 @@
   },
   "meta": {
     "homeTitle": "BD Hats | Fábrica Premium de Gorras Personalizadas y Venta al por Mayor B2B",
-    "homeDesc": "Obtén gorras personalizadas premium directamente de fábrica. OEM/ODM desde 2014. Bordado personalizado, MOQ 200uds, mockup 3D gratis, muestras en 7 días. Fábrica verificada SGS en Baoding, China.",
+    "homeDesc": "Obtén gorras personalizadas premium directamente de fábrica. OEM/ODM desde 2014. Bordado personalizado, MOQ 200uds, muestras en 7 días. Fábrica verificada SGS en Baoding, China.",
     "aboutTitle": "Sobre BD Hats | Fábrica de Gorras con 12 Años de Experiencia en Baoding, China",
     "aboutDesc": "De un taller de 15 personas a una instalación de 50,000m² sirviendo a más de 300 marcas globales. Conoce la trayectoria, misión, equipo y capacidades de Baoding Junyang desde 2014.",
     "guideTitle": "Guía B2B de Fabricación de Gorras | Cómo Comprar Gorras al por Mayor desde China",
@@ -277,7 +267,7 @@
   },
   "chat": {
     "cta": "Chatea con Nosotros",
-    "tip": "¡Hola! Obtén una cotización gratis y mockup 3D en 12 horas."
+    "tip": "¡Hola! Obtén una cotización gratis en 12 horas."
   },
   "language": {
     "switchTo": "English",
