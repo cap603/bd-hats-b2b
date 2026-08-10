@@ -143,6 +143,17 @@ export function HatCatalog() {
                 height="640"
               />
               <div className="absolute top-3 left-3 flex gap-1.5 flex-wrap">
+                {hat.badge && (
+                  <span className={`text-[9px] font-black uppercase px-2.5 py-1 rounded-full tracking-wide shadow-md ${
+                    hat.badge === "bestseller"
+                      ? "bg-yellow-400 text-black"
+                      : hat.badge === "trending"
+                      ? "bg-orange-500 text-white"
+                      : "bg-blue-500 text-white"
+                  }`}>
+                    {hat.badge === "bestseller" ? t("badgeBestSeller") : hat.badge === "trending" ? t("badgeTrending") : t("badgeNew")}
+                  </span>
+                )}
                 {hat.category && (
                   <span className="bg-black/70 backdrop-blur text-white text-[9px] font-bold uppercase px-2 py-0.5 rounded-full tracking-wide">
                     {hat.category}

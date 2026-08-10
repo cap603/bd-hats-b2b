@@ -158,11 +158,37 @@ export default function ProductDetail() {
             <div className="mb-8">
               <span className="text-yellow-600 text-xs font-black uppercase tracking-widest mb-2 block">{hat.category || "Premium Headwear"}</span>
               <h1 className="text-4xl md:text-5xl font-black text-black leading-tight mb-4">{hat.name}</h1>
-              <div className="flex items-baseline gap-3 mb-6">
+              <div className="flex items-baseline gap-3 mb-4">
                  <span className="text-3xl font-black text-black">{hat.price}</span>
                  <span className="text-gray-400 font-bold">{t("unit")}</span>
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed">{hat.fullDesc}</p>
+
+              {/* Urgency strip — production slot availability */}
+              <div className="flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2.5 mb-4 animate-pulse">
+                <span className="relative flex h-2 w-2 shrink-0">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-500 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-600"></span>
+                </span>
+                <p className="text-xs font-bold text-yellow-800">{t("urgencyStrip")}</p>
+              </div>
+
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">{hat.fullDesc}</p>
+
+              {/* Above-the-fold quick actions */}
+              <div className="flex flex-col sm:flex-row gap-3">
+                <button
+                  onClick={handleWhatsAppClick}
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-4 rounded-2xl transition shadow-lg shadow-green-500/20 text-base"
+                >
+                  <MessageCircle size={20} /> {t("getQuote")}
+                </button>
+                <Link
+                  href="/#inquiry?intent=mockup"
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white font-bold py-4 rounded-2xl transition text-sm uppercase tracking-widest"
+                >
+                  {t("freeMockup")}
+                </Link>
+              </div>
             </div>
 
             {/* Tab Controls */}
@@ -328,6 +354,24 @@ export default function ProductDetail() {
             </p>
          </div>
       </footer>
+
+      {/* Mobile sticky inquiry bar */}
+      <div className="fixed bottom-0 inset-x-0 z-50 lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+        <button
+          onClick={handleWhatsAppClick}
+          className="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-3.5 rounded-xl transition text-sm"
+        >
+          <MessageCircle size={18} /> {t("getQuote")}
+        </button>
+        <Link
+          href="/#inquiry?intent=mockup"
+          className="flex-1 inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white font-bold py-3.5 rounded-xl transition text-xs uppercase tracking-widest"
+        >
+          {t("freeMockup")}
+        </Link>
+      </div>
+      {/* Spacer so footer content is not covered by sticky bar on mobile */}
+      <div className="h-20 lg:hidden" />
     </main>
   );
 }

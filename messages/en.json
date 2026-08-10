@@ -142,7 +142,26 @@
     },
     "inquiry": {
       "heading": "Request Factory Quote",
-      "sub": "Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote and design mockup within 12 hours."
+      "sub": "Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote and design mockup within 12 hours.",
+      "trustLabel": "100% Factory Direct · SGS Verified · 12 Years OEM/ODM",
+      "testimonialTitle": "What Our Brand Partners Say",
+      "testimonials": [
+        {
+          "quote": "They nailed our 3D puff embroidery on the first sample. The factory sends photo updates every step — we felt like we were inside the production line.",
+          "name": "Marcus T.",
+          "role": "Streetwear Brand Owner, USA"
+        },
+        {
+          "quote": "MOQ 200 with this quality is rare. Our first order of 2,000 caps shipped in 18 days and passed every QC check.",
+          "name": "Sophie L.",
+          "role": "Apparel Importer, Germany"
+        },
+        {
+          "quote": "Communication is instant — we negotiate everything over WhatsApp. Samples took 7 days exactly as promised.",
+          "name": "Daniel R.",
+          "role": "Retail Chain Buyer, Australia"
+        }
+      ]
     }
   },
   "catalog": {
@@ -162,7 +181,10 @@
     "details": "Details",
     "showing": "Showing {shown} of {total} products",
     "noResults": "No products match the current filters.",
-    "resetFilters": "Reset all filters"
+    "resetFilters": "Reset all filters",
+    "badgeBestSeller": "Best Seller",
+    "badgeTrending": "Trending",
+    "badgeNew": "New"
   },
   "product": {
     "backToCatalog": "Back to Catalog",
@@ -185,6 +207,7 @@
     "getQuote": "Get Factory Quote",
     "freeMockup": "Free 3D Mockup",
     "orderSample": "Order Sample",
+    "urgencyStrip": "Production slots for this season are filling fast — secure your line with a free 3D mockup today",
     "related": "Continue Exploring",
     "relatedTitle": "Related Products",
     "trustBar": "Trusted Global Manufacturing Standards",
@@ -251,6 +274,10 @@
     "materialsDesc": "Complete guide to custom hat materials: cotton twill, brushed cotton, wool, polyester, nylon, canvas. Learn closure types and panel construction for your wholesale cap order.",
     "pricingTitle": "Custom Hat Pricing, MOQ & Shipping Guide | Wholesale Cost Breakdown | BD Hats",
     "pricingDesc": "Transparent pricing guide for custom hats: how much do custom caps cost, FOB vs CIF explained, MOQ 200pcs, air freight vs sea freight costs, sample fees, and volume discounts."
+  },
+  "chat": {
+    "cta": "Chat with Us",
+    "tip": "Hi! Get a free quote & 3D mockup in 12 hours."
   },
   "language": {
     "switchTo": "Español",

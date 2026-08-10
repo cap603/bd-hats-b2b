@@ -142,7 +142,26 @@
     },
     "inquiry": {
       "heading": "Solicitar Cotización de Fábrica",
-      "sub": "Envíanos los requisitos de tus gorras (estilos, logotipos, cantidades). Nuestros especialistas B2B te entregarán tu cotización y mockup de diseño en 12 horas."
+      "sub": "Envíanos los requisitos de tus gorras (estilos, logotipos, cantidades). Nuestros especialistas B2B te entregarán tu cotización y mockup de diseño en 12 horas.",
+      "trustLabel": "100% Directo de Fábrica · Verificado SGS · 12 Años OEM/ODM",
+      "testimonialTitle": "Lo Que Dicen Nuestros Socios",
+      "testimonials": [
+        {
+          "quote": "Acertaron con nuestro bordado 3D puff en la primera muestra. La fábrica envía fotos del avance en cada etapa — nos sentimos dentro de la línea de producción.",
+          "name": "Marcus T.",
+          "role": "Dueño de Marca Streetwear, EE. UU."
+        },
+        {
+          "quote": "Un MOQ de 200 con esta calidad es raro. Nuestro primer pedido de 2.000 gorras se envió en 18 días y pasó todos los controles de calidad.",
+          "name": "Sophie L.",
+          "role": "Importadora de Ropa, Alemania"
+        },
+        {
+          "quote": "La comunicación es instantánea — negociamos todo por WhatsApp. Las muestras llegaron en 7 días, tal como prometieron.",
+          "name": "Daniel R.",
+          "role": "Comprador de Cadena Retail, Australia"
+        }
+      ]
     }
   },
   "catalog": {
@@ -161,8 +180,11 @@
     "quote": "Cotizar",
     "details": "Detalles",
     "showing": "Mostrando {shown} de {total} productos",
-    "noResults": "Ningún producto coincide con los filtros.",
-    "resetFilters": "Restablecer filtros"
+    "noResults": "Ningún producto coincide con los filtros actuales.",
+    "resetFilters": "Restablecer todos los filtros",
+    "badgeBestSeller": "Más Vendido",
+    "badgeTrending": "Tendencia",
+    "badgeNew": "Nuevo"
   },
   "product": {
     "backToCatalog": "Volver al Catálogo",
@@ -185,6 +207,7 @@
     "getQuote": "Solicitar Cotización",
     "freeMockup": "Mockup 3D Gratis",
     "orderSample": "Pedir Muestra",
+    "urgencyStrip": "Los cupos de producción para esta temporada se están agotando — asegura tu línea con un mockup 3D gratis hoy",
     "related": "Seguir Explorando",
     "relatedTitle": "Productos Relacionados",
     "trustBar": "Estándares Globales de Fabricación",
@@ -251,6 +274,10 @@
     "materialsDesc": "Guía completa de materiales para gorras personalizadas: sarga de algodón, algodón cepillado, lana, poliéster, nylon, lona. Aprende tipos de cierre y construcción de paneles para tu pedido al por mayor.",
     "pricingTitle": "Guía de Precios, MOQ y Envíos | Desglose de Costos al por Mayor | BD Hats",
     "pricingDesc": "Guía de precios transparente para gorras personalizadas: ¿cuánto cuestan las gorras?, FOB vs CIF explicado, MOQ 200uds, costos de flete aéreo vs marítimo, tarifas de muestras y descuentos por volumen."
+  },
+  "chat": {
+    "cta": "Chatea con Nosotros",
+    "tip": "¡Hola! Obtén una cotización gratis y mockup 3D en 12 horas."
   },
   "language": {
     "switchTo": "English",

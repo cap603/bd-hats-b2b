@@ -567,7 +567,38 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-black uppercase">{t("inquiry.heading")}</h2>
             <p className="text-gray-500 text-lg max-w-lg mx-auto leading-relaxed">{t("inquiry.sub")}</p>
           </div>
+
+          {/* Trust label above form */}
+          <div className="mb-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+            <span className="flex items-center gap-2 text-xs font-black text-gray-500 uppercase tracking-widest">
+              <ShieldCheck size={16} className="text-green-500" /> {t("inquiry.trustLabel")}
+            </span>
+          </div>
+
           <InquiryForm />
+
+          {/* Client testimonials below form */}
+          <div className="mt-14">
+            <h3 className="text-center text-xs font-black uppercase tracking-[0.2em] text-gray-400 mb-8">
+              {t("inquiry.testimonialTitle")}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[0, 1, 2].map((i) => (
+                <div key={i} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex flex-col">
+                  <div className="flex gap-1 text-yellow-400 mb-3" aria-hidden="true">
+                    {"★★★★★".split("").map((s, j) => <span key={j}>{s}</span>)}
+                  </div>
+                  <p className="text-sm text-gray-600 leading-relaxed flex-grow mb-4 italic">
+                    &ldquo;{t(`inquiry.testimonials.${i}.quote`)}&rdquo;
+                  </p>
+                  <div>
+                    <p className="text-sm font-black text-black">{t(`inquiry.testimonials.${i}.name`)}</p>
+                    <p className="text-xs font-bold text-gray-400">{t(`inquiry.testimonials.${i}.role`)}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
