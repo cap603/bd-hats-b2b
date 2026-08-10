@@ -65,7 +65,7 @@ export const HATS: Product[] = [
     fullDesc: "Our most viewed product on Alibaba.com. This 5-panel cap is built with premium 108*56 heavy cotton twill, designed specifically for brands requiring intricate 3D puff embroidery. The front panel provides a large canvas for bold branding without seam interference.",
     price: "$0.98 - $2.48", 
     moq: 200,
-    img: "https://sc04.alicdn.com/kf/H685718919639459397686861298c92a5D.jpg",
+    img: "https://s.alicdn.com/@sc04/kf/H29fdeb6f4619484b9c599ddf5b497ecfl/Factory-Price-100-cotton-5-Panel-Gorras.png",
     badge: "bestseller",
     category: "Baseball Caps",
     specs: {
@@ -96,7 +96,7 @@ export const HATS: Product[] = [
     fullDesc: "The #2 best-seller in our Alibaba store. This cap undergoes a rigorous washing and treatment process to achieve its unique distressed look. Ideal for brands looking for a high-end vintage or streetwear vibe. Features a soft, unstructured crown for the ultimate 'Dad Hat' fit.",
     price: "$2.00 - $3.80", 
     moq: 200,
-    img: "https://sc04.alicdn.com/kf/H668617812983428383861298c92a5F.jpg",
+    img: "https://s.alicdn.com/@sc04/kf/Hf2141a42b2ed454ca54b221bf447618dD/Wholesale-Acid-Wash-Vintage-6-Panel-Unisex.jpg",
     badge: "trending",
     category: "Vintage Series",
     specs: {
