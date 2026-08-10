@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { I18nProvider } from "../lib/i18n";
 import { notFound } from "next/navigation";
 import { locales } from "../../i18n";
+import { Analytics } from "@vercel/analytics/react";
 import "../globals.css";
 
 export const dynamic = "force-dynamic";
@@ -129,6 +130,8 @@ export default async function LocaleLayout({
         <I18nProvider locale={locale} messages={messages}>
           {children}
         </I18nProvider>
+        {/* Vercel Analytics — zero-config traffic & pageview tracking */}
+        <Analytics />
         {/* —— ANALYTICS: Replace YOUR-GA4-ID with your actual Google Analytics 4 Measurement ID —— */}
         {/*
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-GA4-ID" strategy="afterInteractive" />
