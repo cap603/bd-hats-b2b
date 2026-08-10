@@ -10,6 +10,7 @@ import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, Chevron
 export default function Home() {
   const t = useT("home");
   const n = useT("nav");
+  const ft = useT("footer");
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentBanner, setCurrentBanner] = useState(0);
 
@@ -579,28 +580,28 @@ export default function Home() {
               alt="JUNYANG Logo" 
               className="h-16 w-auto object-contain mb-4"
             />
-            <p className="text-sm mt-3 leading-relaxed">{t("footer.about")}</p>
+            <p className="text-sm mt-3 leading-relaxed">{ft("about")}</p>
           </div>
           <div className="grid grid-cols-2 gap-12">
             <div>
-              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{t("footer.navigation")}</h4>
+              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{ft("navigation")}</h4>
               <ul className="space-y-2 text-sm">
                 <li><a href="#advantages" className="hover:text-white">{n("advantages")}</a></li>
                 <li><a href="#factory" className="hover:text-white">{n("factory")}</a></li>
-                <li><a href="#catalog" className="hover:text-white">{t("footer.products")}</a></li>
-                <li><a href="/about" className="hover:text-white">{t("footer.aboutLink")}</a></li>
-                <li><a href="/guide" className="hover:text-white">{t("footer.guideLink")}</a></li>
-                <li><a href="/materials" className="hover:text-white">{t("footer.materialsLink")}</a></li>
-                <li><a href="/pricing" className="hover:text-white">{t("footer.pricingLink")}</a></li>
-                <li><a href="#inquiry" className="hover:text-white">{t("footer.requestQuote")}</a></li>
+                <li><a href="#catalog" className="hover:text-white">{ft("products")}</a></li>
+                <li><a href="/about" className="hover:text-white">{ft("aboutLink")}</a></li>
+                <li><a href="/guide" className="hover:text-white">{ft("guideLink")}</a></li>
+                <li><a href="/materials" className="hover:text-white">{ft("materialsLink")}</a></li>
+                <li><a href="/pricing" className="hover:text-white">{ft("pricingLink")}</a></li>
+                <li><a href="#inquiry" className="hover:text-white">{ft("requestQuote")}</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{t("footer.contact")}</h4>
+              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{ft("contact")}</h4>
               <ul className="space-y-2 text-sm">
-                <li className="text-gray-400">{t("footer.whatsapp")}</li>
-                <li className="text-gray-400">{t("footer.email")}</li>
-                <li className="text-gray-400">{t("footer.office")}</li>
+                <li className="text-gray-400">{ft("whatsapp")}</li>
+                <li className="text-gray-400">{ft("email")}</li>
+                <li className="text-gray-400">{ft("office")}</li>
               </ul>
             </div>
           </div>
