@@ -1,11 +1,20 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useT } from "../lib/i18n";
+
+const WHATSAPP_NUMBER = "8615933930830";
 
 export function InquiryForm() {
   const t = useT("form");
   const [status, setStatus] = useState<string | null>(null);
   const [services, setServices] = useState<string[]>([]);
+
+  const companyRef = useRef<HTMLInputElement>(null);
+  const contactRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const phoneRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -22,8 +31,48 @@ export function InquiryForm() {
     );
   };
 
+  const trackInquiry = () => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "inquiry_submit", {
+        event_category: "conversion",
+        event_label: "inquiry-form",
+        services: services.join(","),
+      });
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const company = companyRef.current?.value?.trim() || "";
+    const contact = contactRef.current?.value?.trim() || "";
+    const email = emailRef.current?.value?.trim() || "";
+    const phone = phoneRef.current?.value?.trim() || "";
+    const message = messageRef.current?.value?.trim() || "";
+    const fileName = fileRef.current?.files?.[0]?.name || "";
+
+    // Build a structured inquiry message for WhatsApp
+    const lines = [
+      "New B2B Inquiry — BD Hats Website",
+      "----------------------------------",
+      `Company: ${company}`,
+      `Contact: ${contact}`,
+      `Email: ${email}`,
+      `Phone/WhatsApp: ${phone}`,
+      `Services: ${services.join(", ") || "Not specified"}`,
+    ];
+    if (fileName) lines.push(`Attached file: ${fileName} (please request via email)`);
+    if (message) {
+      lines.push("----------------------------------");
+      lines.push(`Requirements: ${message}`);
+    }
+    const text = encodeURIComponent(lines.join("\n"));
+
+    trackInquiry();
+
+    // Send to WhatsApp (primary sales channel) — no backend needed
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
+
     setStatus("success");
   };
 
@@ -42,21 +91,21 @@ export function InquiryForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">{t("company")} *</label>
-          <input required type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("companyPlaceholder")} />
+          <input ref={companyRef} required type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("companyPlaceholder")} />
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">{t("contact")}</label>
-          <input type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("contactPlaceholder")} />
+          <input ref={contactRef} type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("contactPlaceholder")} />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">{t("email")} *</label>
-          <input required type="email" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("emailPlaceholder")} />
+          <input ref={emailRef} required type="email" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("emailPlaceholder")} />
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">{t("phone")} *</label>
-          <input required type="tel" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("phonePlaceholder")} />
+          <input ref={phoneRef} required type="tel" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("phonePlaceholder")} />
         </div>
       </div>
       <div>
@@ -86,7 +135,7 @@ export function InquiryForm() {
             <div className="flex text-sm text-gray-600">
               <label htmlFor="file-upload" className="relative cursor-pointer bg-white rounded-md font-medium text-black hover:underline focus-within:outline-none">
                 <span>{t("uploadHint")}</span>
-                <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                <input ref={fileRef} id="file-upload" name="file-upload" type="file" className="sr-only" />
               </label>
               <p className="pl-1">{t("uploadOr")}</p>
             </div>
@@ -97,9 +146,9 @@ export function InquiryForm() {
       </div>
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">{t("message")}</label>
-        <textarea required rows={4} className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("messagePlaceholder")}></textarea>
+        <textarea ref={messageRef} required rows={4} className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("messagePlaceholder")}></textarea>
       </div>
-      <button type="submit" className="w-full bg-black text-white py-3 font-semibold rounded-lg hover:bg-gray-800 transition">
+      <button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white py-3 font-semibold rounded-lg transition flex items-center justify-center gap-2">
         {t("submit")}
       </button>
     </form>
