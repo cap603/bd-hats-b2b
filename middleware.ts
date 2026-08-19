@@ -15,8 +15,21 @@ const LEGACY_PRODUCT_REDIRECTS: Record<string, string> = {
   "1601198883417": "breathable-custom-embroidered-6-panel",
 };
 
+// Canonical domain: all traffic must land on https://bdjunyang.com
+// b2b.bdjunyang.com and www.bdjunyang.com → 301 to the apex domain (preserves path & query).
+const CANONICAL_HOST = "bdjunyang.com";
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const hostname = request.nextUrl.hostname;
+
+  // Enforce canonical host (skip preview deployments like xxx.vercel.app)
+  if (hostname !== CANONICAL_HOST && hostname.endsWith("bdjunyang.com")) {
+    const url = request.nextUrl.clone();
+    url.protocol = "https";
+    url.hostname = CANONICAL_HOST;
+    return NextResponse.redirect(url, 301);
+  }
 
   // Skip static files, API, etc.
   if (
