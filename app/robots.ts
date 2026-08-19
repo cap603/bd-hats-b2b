@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://b2b.bdjunyang.com/sitemap.xml',
+    sitemap: 'https://bdjunyang.com/sitemap.xml',
   }
 }

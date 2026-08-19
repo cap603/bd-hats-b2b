@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
   return {
-    metadataBase: new URL("https://b2b.bdjunyang.com"),
+    metadataBase: new URL("https://bdjunyang.com"),
     title: {
       default: messages.meta.homeTitle,
       template: `%s | BD Hats`,
@@ -50,16 +50,16 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       },
     },
     alternates: {
-      canonical: "https://b2b.bdjunyang.com",
+      canonical: "https://bdjunyang.com",
       languages: {
-        en: "https://b2b.bdjunyang.com/en",
-        es: "https://b2b.bdjunyang.com/es",
+        en: "https://bdjunyang.com/en",
+        es: "https://bdjunyang.com/es",
       },
     },
     openGraph: {
       type: "website",
       locale: locale === "es" ? "es_ES" : "en_US",
-      url: "https://b2b.bdjunyang.com",
+      url: "https://bdjunyang.com",
       siteName: "BD Hats Factory",
       title: locale === "es"
         ? "BD Hats | Fábrica Premium de Gorras — Directo de Fábrica, MOQ 200uds"
@@ -104,7 +104,7 @@ export default async function LocaleLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
-    url: "https://b2b.bdjunyang.com",
+    url: "https://bdjunyang.com",
     logo: "https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png",
     description: "Premium custom hat factory and B2B wholesale supplier specializing in embroidery and customized headwear.",
     contactPoint: {

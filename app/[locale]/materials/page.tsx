@@ -118,7 +118,7 @@ export default function MaterialsPage() {
     "publisher": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
     "datePublished": "2026-07-31",
     "dateModified": "2026-07-31",
-    "mainEntityOfPage": "https://b2b.bdjunyang.com/materials"
+    "mainEntityOfPage": "https://bdjunyang.com/materials"
   };
 
   return (

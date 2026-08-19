@@ -3,7 +3,7 @@ import { HATS } from "./lib/products";
 import { locales } from "../i18n";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://b2b.bdjunyang.com";
+  const baseUrl = "https://bdjunyang.com";
 
   const entries: MetadataRoute.Sitemap = [];
 

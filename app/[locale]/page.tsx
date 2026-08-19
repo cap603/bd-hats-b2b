@@ -61,7 +61,7 @@ export default function Home() {
     "name": "Baoding Junyang Hat Manufacturing Co., Ltd.",
     "description": "Premium custom hat factory — OEM/ODM baseball caps, snapbacks, trucker hats, and beanies. SGS verified, 12+ years experience.",
     "image": "https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png",
-    "url": "https://b2b.bdjunyang.com",
+    "url": "https://bdjunyang.com",
     "telephone": "+86-15933930830",
     "email": "admin@bdjunyang.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Baoding", "addressRegion": "Hebei", "addressCountry": "CN" },
@@ -72,7 +72,7 @@ export default function Home() {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://b2b.bdjunyang.com" }]
+    "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bdjunyang.com" }]
   };
 
   const faqSchema = {

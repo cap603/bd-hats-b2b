@@ -59,15 +59,15 @@ export default function GuidePage() {
     "publisher": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd.", "logo": { "@type": "ImageObject", "url": "https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" } },
     "datePublished": "2026-07-27",
     "dateModified": "2026-07-27",
-    "mainEntityOfPage": "https://b2b.bdjunyang.com/guide"
+    "mainEntityOfPage": "https://bdjunyang.com/guide"
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://b2b.bdjunyang.com" },
-      { "@type": "ListItem", "position": 2, "name": "B2B Custom Hat Manufacturing Guide", "item": "https://b2b.bdjunyang.com/guide" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bdjunyang.com" },
+      { "@type": "ListItem", "position": 2, "name": "B2B Custom Hat Manufacturing Guide", "item": "https://bdjunyang.com/guide" }
     ]
   };
 

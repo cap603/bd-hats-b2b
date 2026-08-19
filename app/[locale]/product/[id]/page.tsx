@@ -73,19 +73,19 @@ export default function ProductDetail() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://b2b.bdjunyang.com"
+        "item": "https://bdjunyang.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": hat.category || "Products",
-        "item": "https://b2b.bdjunyang.com/#catalog"
+        "item": "https://bdjunyang.com/#catalog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": hat.name,
-        "item": `https://b2b.bdjunyang.com/product/${hat.id}`
+        "item": `https://bdjunyang.com/product/${hat.id}`
       }
     ]
   };
