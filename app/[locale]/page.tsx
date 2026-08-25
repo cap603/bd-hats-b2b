@@ -597,8 +597,9 @@ export default function Home() {
                 <li><a href="#catalog" className="hover:text-white">{ft("products")}</a></li>
                 <li><a href="/about" className="hover:text-white">{ft("aboutLink")}</a></li>
                 <li><a href="/guide" className="hover:text-white">{ft("guideLink")}</a></li>
-                <li><a href="/materials" className="hover:text-white">{ft("materialsLink")}</a></li>
-                <li><a href="/pricing" className="hover:text-white">{ft("pricingLink")}</a></li>
+                <li><a href="/wholesale-snapbacks" className="hover:text-white">Wholesale Snapbacks</a></li>
+                <li><a href="/custom-trucker-hats" className="hover:text-white">Custom Trucker Hats</a></li>
+                <li><a href="/oem-hat-manufacturer" className="hover:text-white">OEM Hat Manufacturing</a></li>
                 <li><a href="#inquiry" className="hover:text-white">{ft("requestQuote")}</a></li>
               </ul>
             </div>

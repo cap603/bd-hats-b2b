@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { locales } from "../../i18n";
 import { Analytics } from "@vercel/analytics/react";
 import { WhatsAppFloat } from "../components/WhatsAppFloat";
+import { IntentPopup } from "../components/IntentPopup";
 import "../globals.css";
 
 export const dynamic = "force-dynamic";
@@ -135,6 +136,8 @@ export default async function LocaleLayout({
         <Analytics />
         {/* Floating WhatsApp button — appears on every page */}
         <WhatsAppFloat />
+        {/* Intent popup — appears after 30s of browsing, once per session */}
+        <IntentPopup />
         {/* —— ANALYTICS: Replace YOUR-GA4-ID with your actual Google Analytics 4 Measurement ID —— */}
         {/*
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-GA4-ID" strategy="afterInteractive" />

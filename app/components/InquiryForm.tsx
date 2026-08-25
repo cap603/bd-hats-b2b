@@ -7,36 +7,29 @@ const WHATSAPP_NUMBER = "8615933930830";
 export function InquiryForm() {
   const t = useT("form");
   const [status, setStatus] = useState<string | null>(null);
-  const [services, setServices] = useState<string[]>([]);
+  const [prefill, setPrefill] = useState("");
 
-  const companyRef = useRef<HTMLInputElement>(null);
-  const contactRef = useRef<HTMLInputElement>(null);
+  const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
-  const phoneRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
-  const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    // Pre-fill message from URL intent (e.g. /#inquiry?intent=sample)
     const hash = window.location.hash;
     const match = hash.match(/intent=([^&]+)/);
     if (match) {
-      const intents = match[1].split(",");
-      setServices(intents.map((s: string) => decodeURIComponent(s)));
+      const intent = decodeURIComponent(match[1]);
+      if (intent === "sample") setPrefill(t("intentSample"));
+      else if (intent === "bulk") setPrefill(t("intentBulk"));
+      else if (intent === "test") setPrefill(t("intentTest"));
     }
-  }, []);
-
-  const toggleService = (key: string) => {
-    setServices(prev =>
-      prev.includes(key) ? prev.filter(s => s !== key) : [...prev, key]
-    );
-  };
+  }, [t]);
 
   const trackInquiry = () => {
     if (typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag("event", "inquiry_submit", {
         event_category: "conversion",
         event_label: "inquiry-form",
-        services: services.join(","),
       });
     }
   };
@@ -44,28 +37,18 @@ export function InquiryForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const company = companyRef.current?.value?.trim() || "";
-    const contact = contactRef.current?.value?.trim() || "";
+    const name = nameRef.current?.value?.trim() || "";
     const email = emailRef.current?.value?.trim() || "";
-    const phone = phoneRef.current?.value?.trim() || "";
     const message = messageRef.current?.value?.trim() || "";
-    const fileName = fileRef.current?.files?.[0]?.name || "";
 
-    // Build a structured inquiry message for WhatsApp
     const lines = [
       "New B2B Inquiry — BD Hats Website",
       "----------------------------------",
-      `Company: ${company}`,
-      `Contact: ${contact}`,
+      `Name: ${name}`,
       `Email: ${email}`,
-      `Phone/WhatsApp: ${phone}`,
-      `Services: ${services.join(", ") || "Not specified"}`,
+      "----------------------------------",
+      `Requirements: ${message}`,
     ];
-    if (fileName) lines.push(`Attached file: ${fileName} (please request via email)`);
-    if (message) {
-      lines.push("----------------------------------");
-      lines.push(`Requirements: ${message}`);
-    }
     const text = encodeURIComponent(lines.join("\n"));
 
     trackInquiry();
@@ -87,65 +70,21 @@ export function InquiryForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-xl shadow-sm border">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">{t("company")} *</label>
-          <input ref={companyRef} required type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("companyPlaceholder")} />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">{t("contact")}</label>
-          <input ref={contactRef} type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("contactPlaceholder")} />
-        </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">{t("email")} *</label>
-          <input ref={emailRef} required type="email" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("emailPlaceholder")} />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">{t("phone")} *</label>
-          <input ref={phoneRef} required type="tel" className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("phonePlaceholder")} />
-        </div>
+    <form onSubmit={handleSubmit} className="space-y-5 bg-white p-8 rounded-xl shadow-sm border">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">{t("name")} *</label>
+        <input ref={nameRef} required type="text" className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("namePlaceholder")} />
       </div>
       <div>
-         <label className="block text-sm font-medium text-gray-700 mb-3">{t("services")}</label>
-         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <label className="flex items-center gap-2 text-sm cursor-pointer p-3 border rounded-lg hover:bg-gray-50 transition">
-               <input type="checkbox" className="accent-black" checked={services.includes("sample")} onChange={() => toggleService("sample")} /> {t("sample")}
-            </label>
-            <label className="flex items-center gap-2 text-sm cursor-pointer p-3 border rounded-lg hover:bg-gray-50 transition">
-               <input type="checkbox" className="accent-black" checked={services.includes("bulk")} onChange={() => toggleService("bulk")} /> {t("bulk")}
-            </label>
-            <label className="flex items-center gap-2 text-sm cursor-pointer p-3 border rounded-lg hover:bg-gray-50 transition">
-               <input type="checkbox" className="accent-black" checked={services.includes("test")} onChange={() => toggleService("test")} /> {t("test")}
-            </label>
-         </div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">{t("email")} *</label>
+        <input ref={emailRef} required type="email" className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("emailPlaceholder")} />
       </div>
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">{t("upload")}</label>
-        <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-black transition">
-          <div className="space-y-1 text-center">
-            <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-              <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            <div className="flex text-sm text-gray-600">
-              <label htmlFor="file-upload" className="relative cursor-pointer bg-white rounded-md font-medium text-black hover:underline focus-within:outline-none">
-                <span>{t("uploadHint")}</span>
-                <input ref={fileRef} id="file-upload" name="file-upload" type="file" className="sr-only" />
-              </label>
-              <p className="pl-1">{t("uploadOr")}</p>
-            </div>
-            <p className="text-xs text-gray-500">{t("uploadFormats")}</p>
-          </div>
-        </div>
-        <p className="mt-2 text-xs text-gray-400 italic">{t("uploadTip")}</p>
+        <label className="block text-sm font-medium text-gray-700 mb-1">{t("message")} *</label>
+        <textarea ref={messageRef} required rows={5} defaultValue={prefill} className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("messagePlaceholder")}></textarea>
       </div>
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">{t("message")}</label>
-        <textarea ref={messageRef} required rows={4} className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("messagePlaceholder")}></textarea>
-      </div>
-      <button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white py-3 font-semibold rounded-lg transition flex items-center justify-center gap-2">
+      <p className="text-xs text-gray-400 -mt-2">{t("privacyNote")}</p>
+      <button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white py-4 font-black rounded-lg transition flex items-center justify-center gap-2 shadow-lg shadow-green-500/20">
         {t("submit")}
       </button>
     </form>
