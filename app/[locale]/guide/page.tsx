@@ -31,7 +31,7 @@ const SECTIONS = [
   {
     id: "moq-shipping",
     title: "3. Understanding MOQ, Pricing, and Shipping",
-    content: "Our standard MOQ is 200 pieces per style and color. Custom cap pricing depends on fabric material, embroidery complexity, decoration locations, and order volume. Prices typically range from $0.98 to $4.00 per cap FOB. Air express delivers in 5-8 days for samples, while sea freight takes 25-35 days for bulk orders.",
+    content: "Our standard MOQ is 200 pieces per style and color. Custom cap pricing depends on fabric material, embroidery complexity, decoration locations, and order volume. Prices typically range from $3.50 to $7.00 per cap FOB. Air express delivers in 5-8 days for samples, while sea freight takes 25-35 days for bulk orders.",
     tips: [
       "MOQ of 200 pcs is industry standard for factories with proper QC",
       "Always get a detailed quotation that breaks down per-unit cost and estimated shipping",

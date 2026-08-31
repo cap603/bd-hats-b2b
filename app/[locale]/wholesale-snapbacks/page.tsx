@@ -20,7 +20,7 @@ const FEATURES = [
   },
   {
     title: "Pricing & MOQ",
-    desc: "Wholesale snapbacks start at $0.98 FOB for standard cotton twill and range up to $3.90 for premium 3D puff programs. Standard MOQ is 200 pieces per style and color — with volume discounts at 500, 1,000 and 5,000+ tiers. Samples are produced in 7 days.",
+    desc: "Wholesale snapbacks start at $3.50 FOB for standard cotton twill and range up to $7.00 for premium 3D puff programs. Standard MOQ is 200 pieces per style and color — with volume discounts at 500, 1,000 and 5,000+ tiers. Samples are produced in 7 days.",
   }
 ];
 
@@ -76,7 +76,7 @@ export default function SnapbacksPage() {
             Flat brims, 3D puff embroidery, and buckram-structured fronts — snapbacks built for streetwear and sports brands, shipped direct from our SGS-verified factory.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm font-bold">
-            <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">From $0.98 FOB</span>
+            <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">From $3.50 FOB</span>
             <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">MOQ 200 Pcs</span>
             <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">15-Day Production</span>
             <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">AQL 2.5 QC</span>

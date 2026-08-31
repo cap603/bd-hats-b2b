@@ -20,7 +20,7 @@ const SECTIONS = [
   },
   {
     title: "Pricing & Lead Time",
-    desc: "Custom trucker hats start from $0.88 FOB for basic two-tone programs and range up to $3.20 for premium 3D puff + patch combinations. Standard MOQ is 200 pieces per style and color, with discounts from 500 pcs. Sample production takes 7 days; bulk production 15-20 days.",
+    desc: "Custom trucker hats start from $3.50 FOB for basic two-tone programs and range up to $7.00 for premium 3D puff + patch combinations. Standard MOQ is 200 pieces per style and color, with discounts from 500 pcs. Sample production takes 7 days; bulk production 15-20 days.",
   }
 ];
 
@@ -76,7 +76,7 @@ export default function TruckerPage() {
             Foam fronts, breathable mesh backs, and your logo done right — custom trucker hats for promo, beverage, and outdoor brands, made in our factory.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm font-bold">
-            <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">From $0.88 FOB</span>
+            <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">From $3.50 FOB</span>
             <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">MOQ 200 Pcs</span>
             <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">15-20 Day Production</span>
             <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">SGS Verified</span>

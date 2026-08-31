@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         : "Wholesale Snapback Hats | Custom Snapback Manufacturer",
     description:
       locale === "es"
-        ? "Gorras snapback al por mayor directo de fábrica desde China. Snapbacks personalizadas con bordado 3D puff, MOQ 200uds, $0.98-$3.90 FOB, verificadas SGS. Programa de muestras gratuitas: cotización en 12 horas."
-        : "Factory-direct wholesale snapback hats from China. Custom snapbacks with 3D puff embroidery, MOQ 200pcs, $0.98-$3.90 FOB, SGS verified. Free samples program — get your quote in 12 hours.",
+        ? "Gorras snapback al por mayor directo de fábrica desde China. Snapbacks personalizadas con bordado 3D puff, MOQ 200uds, $3.50-$7.00 FOB, verificadas SGS. Programa de muestras gratuitas: cotización en 12 horas."
+        : "Factory-direct wholesale snapback hats from China. Custom snapbacks with 3D puff embroidery, MOQ 200pcs, $3.50-$7.00 FOB, SGS verified. Free samples program — get your quote in 12 hours.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

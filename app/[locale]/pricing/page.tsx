@@ -8,7 +8,7 @@ import { useLang } from "../../lib/i18n";
 const FAQS = [
   {
     q: "How much does a custom baseball cap cost when ordering wholesale?",
-    a: "Prices range from $0.98 to $4.00 per cap FOB depending on material, embroidery complexity, decoration locations, and order quantity. Entry-level cotton twill caps start at $0.98. Premium 3D puff embroidered caps range from $2.20 to $4.00. Contact us for a detailed quote based on your specific requirements."
+    a: "Prices range from $3.50 to $7.00 per cap FOB depending on material, embroidery complexity, decoration locations, and order quantity. Entry-level cotton twill caps start at $3.50. Premium 3D puff embroidered caps range from $3.50 to $7.00. Contact us for a detailed quote based on your specific requirements."
   },
   {
     q: "What is the Minimum Order Quantity (MOQ) for custom caps?",
@@ -64,7 +64,7 @@ export default function PricingPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Custom Hat Pricing, MOQ & Shipping Guide — Complete Wholesale Cost Breakdown",
-    "description": "Transparent guide covering custom hat costs ($0.98-$4.00 FOB), MOQ requirements (200pcs), shipping methods and costs, FOB vs CIF, volume discounts, sample fees, and payment terms.",
+    "description": "Transparent guide covering custom hat costs ($3.50-$7.00 FOB), MOQ requirements (200pcs), shipping methods and costs, FOB vs CIF, volume discounts, sample fees, and payment terms.",
     "author": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
     "publisher": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
     "datePublished": "2026-07-31",
