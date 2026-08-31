@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
+import { useLang } from "../../lib/i18n";
 
 const SECTIONS = [
   {
@@ -30,6 +31,7 @@ const RELATED = [
 ];
 
 export default function TruckerPage() {
+  const lang = useLang();
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -48,17 +50,17 @@ export default function TruckerPage() {
 
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-4">
+          <Link href={`/${lang}`} className="flex items-center gap-4">
             <img src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" alt="JUNYANG" className="h-12 w-auto object-contain" />
             <span className="hidden lg:block text-xl font-black text-black">JUNYANG</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
-            <Link href="/#catalog" className="hover:text-black transition">Products</Link>
-            <Link href="/about" className="hover:text-black transition">About</Link>
-            <Link href="/guide" className="hover:text-black transition">Guide</Link>
-            <Link href="/#inquiry" className="hover:text-black transition">Inquiry</Link>
+            <Link href={`/${lang}/#catalog`} className="hover:text-black transition">Products</Link>
+            <Link href={`/${lang}/about`} className="hover:text-black transition">About</Link>
+            <Link href={`/${lang}/guide`} className="hover:text-black transition">Guide</Link>
+            <Link href={`/${lang}/#inquiry`} className="hover:text-black transition">Inquiry</Link>
           </nav>
-          <Link href="/#inquiry" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm">Get Quote</Link>
+          <Link href={`/${lang}/#inquiry`} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm">Get Quote</Link>
         </div>
       </header>
 
@@ -116,10 +118,10 @@ export default function TruckerPage() {
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">Launch Your Trucker Program</h2>
           <p className="text-gray-400 text-lg mb-8">Send us your artwork — get a factory quote within 12 hours and a physical sample in 7 days.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/#inquiry" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition">
+            <Link href={`/${lang}/#inquiry`} className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition">
               Request Factory Quote <ArrowRight size={20} />
             </Link>
-            <Link href="/#catalog" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-full text-lg transition border border-white/20">
+            <Link href={`/${lang}/#catalog`} className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-full text-lg transition border border-white/20">
               Browse Full Catalog
             </Link>
           </div>
@@ -136,10 +138,10 @@ export default function TruckerPage() {
             <div>
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Resources</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/guide" className="hover:text-white">B2B Manufacturing Guide</Link></li>
-                <li><Link href="/wholesale-snapbacks" className="hover:text-white">Wholesale Snapbacks</Link></li>
-                <li><Link href="/custom-trucker-hats" className="hover:text-white">Custom Trucker Hats</Link></li>
-                <li><Link href="/oem-hat-manufacturer" className="hover:text-white">OEM Hat Manufacturing</Link></li>
+                <li><Link href={`/${lang}/guide`} className="hover:text-white">B2B Manufacturing Guide</Link></li>
+                <li><Link href={`/${lang}/wholesale-snapbacks`} className="hover:text-white">Wholesale Snapbacks</Link></li>
+                <li><Link href={`/${lang}/custom-trucker-hats`} className="hover:text-white">Custom Trucker Hats</Link></li>
+                <li><Link href={`/${lang}/oem-hat-manufacturer`} className="hover:text-white">OEM Hat Manufacturing</Link></li>
               </ul>
             </div>
             <div>

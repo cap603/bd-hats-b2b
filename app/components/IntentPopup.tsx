@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useT } from "../lib/i18n";
+import { useT, useLang } from "../lib/i18n";
 import { X } from "lucide-react";
 
 const WHATSAPP_NUMBER = "8615933930830";
 
 export function IntentPopup() {
   const t = useT("popup");
+  const lang = useLang();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -83,7 +84,7 @@ export function IntentPopup() {
           </button>
 
           <a
-            href="/#inquiry"
+            href={`/${lang}/#inquiry`}
             onClick={close}
             className="w-full inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white font-bold py-4 rounded-2xl transition text-sm uppercase tracking-widest"
           >

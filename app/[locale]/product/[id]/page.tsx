@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useT } from "../../../lib/i18n";
+import { useT, useLang } from "../../../lib/i18n";
 import { HATS, Product } from "../../../lib/products";
 import { 
   MessageCircle, ArrowLeft, ShieldCheck, Zap, Globe, Cpu, 
@@ -15,6 +15,7 @@ import { LanguageSwitcher } from "../../../components/LanguageSwitcher";
 
 export default function ProductDetail() {
   const t = useT("product");
+  const lang = useLang();
   const { id } = useParams();
   const hat = HATS.find(h => String(h.id) === String(id));
   const [activeTab, setActiveTab] = useState("specs");
@@ -25,7 +26,7 @@ export default function ProductDetail() {
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">{t("notFound")}</h1>
-          <Link href="/" className="text-black font-bold underline">{t("backLink")}</Link>
+          <Link href={`/${lang}`} className="text-black font-bold underline">{t("backLink")}</Link>
         </div>
       </div>
     );
@@ -102,7 +103,7 @@ export default function ProductDetail() {
       />
       {/* Navigation Bar */}
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-black font-bold hover:text-gray-600 transition">
+        <Link href={`/${lang}`} className="flex items-center gap-2 text-black font-bold hover:text-gray-600 transition">
           <ArrowLeft size={20} /> <span className="hidden sm:inline">{t("backToCatalog")}</span>
         </Link>
         <img 
@@ -120,8 +121,8 @@ export default function ProductDetail() {
 
       {/* Breadcrumb */}
       <Breadcrumb items={[
-        { label: "Home", href: "/" },
-        { label: hat.category || "Products", href: "/#catalog" },
+        { label: "Home", href: `/${lang}` },
+        { label: hat.category || "Products", href: `/${lang}/#catalog` },
         { label: hat.name }
       ]} />
 
@@ -274,7 +275,7 @@ export default function ProductDetail() {
               >
                 <MessageCircle size={24} /> {t("getQuote")}
               </button>
-               <Link href="/#inquiry?intent=sample" className="w-full bg-gray-100 hover:bg-gray-200 text-black font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
+               <Link href={`/${lang}/#inquiry?intent=sample`} className="w-full bg-gray-100 hover:bg-gray-200 text-black font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
                   {t("orderSample")}
               </Link>
             </div>
@@ -295,7 +296,7 @@ export default function ProductDetail() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {related.map((r) => (
-                <Link key={r.id} href={`/product/${r.id}`} className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                <Link key={r.id} href={`/${lang}/product/${r.id}`} className="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
                   <div className="aspect-square bg-gray-100 overflow-hidden">
                     <img src={r.img} alt={r.name} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" width="480" height="480" loading="lazy" />
                   </div>

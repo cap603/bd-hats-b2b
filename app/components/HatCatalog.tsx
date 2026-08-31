@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { useT } from "../lib/i18n";
+import { useT, useLang } from "../lib/i18n";
 import { MessageCircle, ArrowRight, ArrowUpDown } from "lucide-react";
 import { HATS } from "../lib/products";
 
@@ -29,6 +29,7 @@ function getMinPrice(priceStr: string): number {
 
 export function HatCatalog() {
   const t = useT("catalog");
+  const lang = useLang();
   const [activeCategory, setActiveCategory] = useState("All");
   const [activePanel, setActivePanel] = useState("All");
   const [sortBy, setSortBy] = useState<SortBy>("default");
@@ -129,7 +130,7 @@ export function HatCatalog() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredHats.map((hat) => (
           <Link
-            href={`/product/${hat.id}`}
+            href={`/${lang}/product/${hat.id}`}
             key={hat.id}
             className="group flex flex-col justify-between border border-gray-100 bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1"
           >

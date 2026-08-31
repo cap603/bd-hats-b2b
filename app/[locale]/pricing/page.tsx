@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { CheckCircle2, ArrowRight, HelpCircle } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
+import { useLang } from "../../lib/i18n";
 
 const FAQS = [
   {
@@ -48,6 +49,7 @@ const FAQS = [
 ];
 
 export default function PricingPage() {
+  const lang = useLang();
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -77,18 +79,18 @@ export default function PricingPage() {
 
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-4">
+          <Link href={`/${lang}`} className="flex items-center gap-4">
             <img src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" alt="JUNYANG" className="h-12 w-auto object-contain" />
             <span className="hidden lg:block text-xl font-black text-black">JUNYANG</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
-            <Link href="/#catalog" className="hover:text-black transition">Products</Link>
-            <Link href="/about" className="hover:text-black transition">About</Link>
-            <Link href="/guide" className="hover:text-black transition">Guide</Link>
-            <Link href="/pricing" className="text-black border-b-2 border-black pb-1">Pricing</Link>
-            <Link href="/#inquiry" className="hover:text-black transition">Inquiry</Link>
+            <Link href={`/${lang}/#catalog`} className="hover:text-black transition">Products</Link>
+            <Link href={`/${lang}/about`} className="hover:text-black transition">About</Link>
+            <Link href={`/${lang}/guide`} className="hover:text-black transition">Guide</Link>
+            <Link href={`/${lang}/pricing`} className="text-black border-b-2 border-black pb-1">Pricing</Link>
+            <Link href={`/${lang}/#inquiry`} className="hover:text-black transition">Inquiry</Link>
           </nav>
-          <Link href="/#inquiry" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm">Get Quote</Link>
+          <Link href={`/${lang}/#inquiry`} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm">Get Quote</Link>
         </div>
       </header>
 
@@ -143,10 +145,10 @@ export default function PricingPage() {
           <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-4">Get Your Custom Quote — Free in 12 Hours</h2>
           <p className="text-gray-600 text-lg mb-8">Send us your cap requirements. Our sales team will provide a detailed quotation with exact pricing and shipping costs.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/#inquiry" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition shadow-lg shadow-green-500/20">
+            <Link href={`/${lang}/#inquiry`} className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition shadow-lg shadow-green-500/20">
               Request Factory Quote <ArrowRight size={20} />
             </Link>
-            <Link href="/#catalog" className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-bold px-8 py-4 rounded-full text-lg transition border-2 border-gray-200">
+            <Link href={`/${lang}/#catalog`} className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-bold px-8 py-4 rounded-full text-lg transition border-2 border-gray-200">
               Browse Products
             </Link>
           </div>
@@ -163,10 +165,10 @@ export default function PricingPage() {
             <div>
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Resources</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/guide" className="hover:text-white">B2B Manufacturing Guide</Link></li>
-                <li><Link href="/materials" className="hover:text-white">Materials & Fabrics Guide</Link></li>
-                <li><Link href="/pricing" className="hover:text-white">Pricing & Shipping</Link></li>
-                <li><Link href="/about" className="hover:text-white">About Our Factory</Link></li>
+                <li><Link href={`/${lang}/guide`} className="hover:text-white">B2B Manufacturing Guide</Link></li>
+                <li><Link href={`/${lang}/materials`} className="hover:text-white">Materials & Fabrics Guide</Link></li>
+                <li><Link href={`/${lang}/pricing`} className="hover:text-white">Pricing & Shipping</Link></li>
+                <li><Link href={`/${lang}/about`} className="hover:text-white">About Our Factory</Link></li>
               </ul>
             </div>
             <div>

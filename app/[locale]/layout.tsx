@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { I18nProvider } from "../lib/i18n";
 import { notFound } from "next/navigation";
 import { locales } from "../../i18n";
@@ -51,16 +52,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       },
     },
     alternates: {
-      canonical: "https://bdjunyang.com",
+      canonical: `https://bdjunyang.com/${locale}`,
       languages: {
         en: "https://bdjunyang.com/en",
         es: "https://bdjunyang.com/es",
+        "x-default": "https://bdjunyang.com/en",
       },
     },
     openGraph: {
       type: "website",
       locale: locale === "es" ? "es_ES" : "en_US",
-      url: "https://bdjunyang.com",
+      url: `https://bdjunyang.com/${locale}`,
       siteName: "BD Hats Factory",
       title: locale === "es"
         ? "BD Hats | Fábrica Premium de Gorras — Directo de Fábrica, MOQ 200uds"
@@ -138,19 +140,24 @@ export default async function LocaleLayout({
         <WhatsAppFloat />
         {/* Intent popup — appears after 30s of browsing, once per session */}
         <IntentPopup />
-        {/* —— ANALYTICS: Replace YOUR-GA4-ID with your actual Google Analytics 4 Measurement ID —— */}
-        {/*
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-GA4-ID" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {"window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YOUR-GA4-ID');"}
-        </Script>
-        */}
-        {/* —— CLARITY: Replace YOUR-CLARITY-ID with your Microsoft Clarity project ID —— */}
-        {/*
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {"(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','YOUR-CLARITY-ID');"}
-        </Script>
-        */}
+        {/* GA4 — enabled when NEXT_PUBLIC_GA4_ID is set in Vercel env */}
+        {process.env.NEXT_PUBLIC_GA4_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA4_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${process.env.NEXT_PUBLIC_GA4_ID}');`}
+            </Script>
+          </>
+        )}
+        {/* Microsoft Clarity — enabled when NEXT_PUBLIC_CLARITY_ID is set in Vercel env */}
+        {process.env.NEXT_PUBLIC_CLARITY_ID && (
+          <Script id="microsoft-clarity" strategy="afterInteractive">
+            {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','${process.env.NEXT_PUBLIC_CLARITY_ID}');`}
+          </Script>
+        )}
       </body>
     </html>
   );

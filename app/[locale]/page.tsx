@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import { useState, useEffect } from "react";
-import { useT } from "../lib/i18n";
+import { useT, useLang } from "../lib/i18n";
 import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
@@ -11,6 +11,7 @@ export default function Home() {
   const t = useT("home");
   const n = useT("nav");
   const ft = useT("footer");
+  const lang = useLang();
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentBanner, setCurrentBanner] = useState(0);
 
@@ -180,9 +181,15 @@ export default function Home() {
               <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm border-b-2 border-yellow-400 pb-1 mb-6">
                 {t(`banners.${currentBanner}.label`)}
               </span>
-              <h1 className="text-4xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight max-w-5xl">
-                {banner.title}
-              </h1>
+              {index === 0 ? (
+                <h1 className="text-4xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight max-w-5xl">
+                  {banner.title}
+                </h1>
+              ) : (
+                <h2 className="text-4xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight max-w-5xl">
+                  {banner.title}
+                </h2>
+              )}
               <p className="text-lg md:text-2xl text-gray-200 mb-12 max-w-3xl font-light leading-relaxed">
                 {banner.sub}
               </p>
@@ -595,11 +602,11 @@ export default function Home() {
                 <li><a href="#advantages" className="hover:text-white">{n("advantages")}</a></li>
                 <li><a href="#factory" className="hover:text-white">{n("factory")}</a></li>
                 <li><a href="#catalog" className="hover:text-white">{ft("products")}</a></li>
-                <li><a href="/about" className="hover:text-white">{ft("aboutLink")}</a></li>
-                <li><a href="/guide" className="hover:text-white">{ft("guideLink")}</a></li>
-                <li><a href="/wholesale-snapbacks" className="hover:text-white">Wholesale Snapbacks</a></li>
-                <li><a href="/custom-trucker-hats" className="hover:text-white">Custom Trucker Hats</a></li>
-                <li><a href="/oem-hat-manufacturer" className="hover:text-white">OEM Hat Manufacturing</a></li>
+            <li><a href={`/${lang}/about`} className="hover:text-white">{ft("aboutLink")}</a></li>
+            <li><a href={`/${lang}/guide`} className="hover:text-white">{ft("guideLink")}</a></li>
+            <li><a href={`/${lang}/wholesale-snapbacks`} className="hover:text-white">Wholesale Snapbacks</a></li>
+            <li><a href={`/${lang}/custom-trucker-hats`} className="hover:text-white">Custom Trucker Hats</a></li>
+            <li><a href={`/${lang}/oem-hat-manufacturer`} className="hover:text-white">OEM Hat Manufacturing</a></li>
                 <li><a href="#inquiry" className="hover:text-white">{ft("requestQuote")}</a></li>
               </ul>
             </div>

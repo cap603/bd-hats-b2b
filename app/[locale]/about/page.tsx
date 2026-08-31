@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
+import { useLang } from "../../lib/i18n";
 
 const TIMELINE = [
   { year: "2014", title: "Founded in Baoding", desc: "Started with 15 tailors and 5 embroidery machines in a small workshop, specializing in custom baseball caps for local sportswear brands." },
@@ -20,12 +21,13 @@ const TEAM = [
 ];
 
 export default function AboutPage() {
+  const lang = useLang();
   return (
     <main className="min-h-screen bg-white font-sans text-gray-900">
       {/* Header */}
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <a href="/" className="flex items-center gap-4">
+          <a href={`/${lang}`} className="flex items-center gap-4">
             <img
               src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png"
               alt="JUNYANG Logo"
@@ -37,14 +39,14 @@ export default function AboutPage() {
             </div>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
-            <a href="/#advantages" className="hover:text-black transition">Advantages</a>
-            <a href="/#factory" className="hover:text-black transition">Our Factory</a>
-            <a href="/#catalog" className="hover:text-black transition">Products</a>
-            <a href="/about" className="text-black border-b-2 border-black pb-1">About</a>
-            <a href="/#inquiry" className="hover:text-black transition">Inquiry</a>
+            <a href={`/${lang}/#advantages`} className="hover:text-black transition">Advantages</a>
+            <a href={`/${lang}/#factory`} className="hover:text-black transition">Our Factory</a>
+            <a href={`/${lang}/#catalog`} className="hover:text-black transition">Products</a>
+            <a href={`/${lang}/about`} className="text-black border-b-2 border-black pb-1">About</a>
+            <a href={`/${lang}/#inquiry`} className="hover:text-black transition">Inquiry</a>
           </nav>
           <a
-            href="/#inquiry"
+            href={`/${lang}/#inquiry`}
             className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm transition"
           >
             Get Quote
@@ -151,7 +153,7 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">Ready to Start Your Custom Hat Project?</h2>
           <p className="text-gray-400 text-lg mb-8">Get a factory quote and production timeline within 12 hours.</p>
           <a
-            href="/#inquiry"
+            href={`/${lang}/#inquiry`}
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition"
           >
             Request Factory Quote <ArrowRight size={20} />
@@ -176,10 +178,10 @@ export default function AboutPage() {
             <div>
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Navigation</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="/" className="hover:text-white">Home</a></li>
-                <li><a href="/about" className="hover:text-white">About</a></li>
-                <li><a href="/#catalog" className="hover:text-white">Products</a></li>
-                <li><a href="/#inquiry" className="hover:text-white">Request Quote</a></li>
+                <li><a href={`/${lang}`} className="hover:text-white">Home</a></li>
+                <li><a href={`/${lang}/about`} className="hover:text-white">About</a></li>
+                <li><a href={`/${lang}/#catalog`} className="hover:text-white">Products</a></li>
+                <li><a href={`/${lang}/#inquiry`} className="hover:text-white">Request Quote</a></li>
               </ul>
             </div>
             <div>
