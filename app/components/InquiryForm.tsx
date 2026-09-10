@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { useT } from "../lib/i18n";
+import { attributionLines } from "../lib/attribution";
 
 const WHATSAPP_NUMBER = "8615933930830";
 
@@ -48,6 +49,7 @@ export function InquiryForm() {
       `Email: ${email}`,
       "----------------------------------",
       `Requirements: ${message}`,
+      ...attributionLines(),
     ];
     const text = encodeURIComponent(lines.join("\n"));
 

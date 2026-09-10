@@ -59,6 +59,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly" as const,
         priority: 0.8,
       },
+      {
+        url: `${baseUrl}${lc}/custom-dad-hats-manufacturer`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}${lc}/wholesale-blank-caps-supplier`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}${lc}/private-label-hat-manufacturer`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}${lc}/custom-5-panel-caps-manufacturer`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      },
     );
 
     for (const product of HATS) {

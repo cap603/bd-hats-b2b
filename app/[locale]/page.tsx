@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useT, useLang } from "../lib/i18n";
+import { attributionTag } from "../lib/attribution";
 import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
@@ -97,7 +98,7 @@ export default function Home() {
 
   const handleWhatsApp = (source: string, customText?: string) => {
     const defaultText = "Hi Baoding Junyang! I would like to get a catalog and quote for custom baseball caps.";
-    const text = encodeURIComponent(customText || defaultText);
+    const text = encodeURIComponent(`${customText || defaultText}\n\n${attributionTag()}`);
     trackWhatsApp(source);
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
@@ -607,6 +608,10 @@ export default function Home() {
             <li><a href={`/${lang}/wholesale-snapbacks`} className="hover:text-white">Wholesale Snapbacks</a></li>
             <li><a href={`/${lang}/custom-trucker-hats`} className="hover:text-white">Custom Trucker Hats</a></li>
             <li><a href={`/${lang}/oem-hat-manufacturer`} className="hover:text-white">OEM Hat Manufacturing</a></li>
+            <li><a href={`/${lang}/private-label-hat-manufacturer`} className="hover:text-white">Private Label Hats</a></li>
+            <li><a href={`/${lang}/custom-dad-hats-manufacturer`} className="hover:text-white">Custom Dad Hats</a></li>
+            <li><a href={`/${lang}/custom-5-panel-caps-manufacturer`} className="hover:text-white">Custom 5-Panel Caps</a></li>
+            <li><a href={`/${lang}/wholesale-blank-caps-supplier`} className="hover:text-white">Wholesale Blank Caps</a></li>
                 <li><a href="#inquiry" className="hover:text-white">{ft("requestQuote")}</a></li>
               </ul>
             </div>

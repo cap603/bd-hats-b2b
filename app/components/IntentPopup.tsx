@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useT, useLang } from "../lib/i18n";
+import { attributionTag } from "../lib/attribution";
 import { X } from "lucide-react";
 
 const WHATSAPP_NUMBER = "8615933930830";
@@ -35,7 +36,7 @@ export function IntentPopup() {
 
   const handleWhatsApp = () => {
     const text = encodeURIComponent(
-      "Hi Baoding Junyang! I'm browsing your site and would like a quote for custom hats."
+      "Hi Baoding Junyang! I'm browsing your site and would like a quote for custom hats.\n\n" + attributionTag()
     );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
     if (typeof window !== "undefined" && (window as any).gtag) {

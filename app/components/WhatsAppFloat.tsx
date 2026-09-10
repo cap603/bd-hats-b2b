@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useT } from "../lib/i18n";
+import { attributionTag } from "../lib/attribution";
 
 const WHATSAPP_NUMBER = "8615933930830";
 
@@ -21,7 +22,7 @@ export function WhatsAppFloat() {
       (window as any).gtag("event", "whatsapp_float_click", { event_category: "engagement" });
     }
     const text = encodeURIComponent(
-      "Hi Baoding Junyang! I'm interested in your custom hats. Can we discuss a quote?"
+      "Hi Baoding Junyang! I'm interested in your custom hats. Can we discuss a quote?\n\n" + attributionTag()
     );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
   };
