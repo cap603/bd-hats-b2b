@@ -612,6 +612,10 @@ export default function Home() {
             <li><a href={`/${lang}/custom-dad-hats-manufacturer`} className="hover:text-white">Custom Dad Hats</a></li>
             <li><a href={`/${lang}/custom-5-panel-caps-manufacturer`} className="hover:text-white">Custom 5-Panel Caps</a></li>
             <li><a href={`/${lang}/wholesale-blank-caps-supplier`} className="hover:text-white">Wholesale Blank Caps</a></li>
+            <li><a href={`/${lang}/corporate-custom-hats-supplier`} className="hover:text-white">Corporate Custom Hats</a></li>
+            <li><a href={`/${lang}/bulk-custom-hats-manufacturer`} className="hover:text-white">Bulk Hat Production</a></li>
+            <li><a href={`/${lang}/custom-beanies-manufacturer`} className="hover:text-white">Custom Beanies</a></li>
+            <li><a href={`/${lang}/custom-bucket-hats-manufacturer`} className="hover:text-white">Custom Bucket Hats</a></li>
                 <li><a href="#inquiry" className="hover:text-white">{ft("requestQuote")}</a></li>
               </ul>
             </div>

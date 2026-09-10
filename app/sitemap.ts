@@ -83,6 +83,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly" as const,
         priority: 0.8,
       },
+      {
+        url: `${baseUrl}${lc}/corporate-custom-hats-supplier`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}${lc}/bulk-custom-hats-manufacturer`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}${lc}/custom-beanies-manufacturer`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}${lc}/custom-bucket-hats-manufacturer`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      },
     );
 
     for (const product of HATS) {

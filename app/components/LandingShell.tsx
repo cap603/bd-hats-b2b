@@ -18,6 +18,10 @@ export const LANDING_LINKS = [
   { href: "/custom-dad-hats-manufacturer", label: "Custom Dad Hats" },
   { href: "/custom-5-panel-caps-manufacturer", label: "Custom 5-Panel Caps" },
   { href: "/wholesale-blank-caps-supplier", label: "Wholesale Blank Caps" },
+  { href: "/corporate-custom-hats-supplier", label: "Corporate Custom Hats" },
+  { href: "/bulk-custom-hats-manufacturer", label: "Bulk Hat Production" },
+  { href: "/custom-beanies-manufacturer", label: "Custom Beanies" },
+  { href: "/custom-bucket-hats-manufacturer", label: "Custom Bucket Hats" },
   { href: "/guide", label: "B2B Buyer's Guide" },
 ];
 

@@ -5,24 +5,74 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { useLang } from "../../lib/i18n";
 
-const FEATURES = [
-  {
-    title: "Snapback Styles We Manufacture",
-    desc: "Flat-brim, curved-brim, high-profile, low-profile and mid-profile snapbacks — all in 6-panel or 5-panel construction. Our snapback range covers streetwear, sports, corporate and workwear programs, with over 30 stocked fabric colors and full Pantone color matching.",
+const CONTENT = {
+  en: {
+    hero: {
+      badge: "Wholesale Snapbacks · Factory Direct",
+      h1Pre: "Wholesale ",
+      h1Highlight: "Snapback Hats",
+      h1Post: " — Custom, From the Factory",
+      subtitle: "Flat brims, 3D puff embroidery, and buckram-structured fronts — snapbacks built for streetwear and sports brands, shipped direct from our SGS-verified factory.",
+      pills: ["From $3.50 FOB", "MOQ 200 Pcs", "15-Day Production", "AQL 2.5 QC"]
+    },
+    features: [
+      {
+        title: "Snapback Styles We Manufacture",
+        desc: "Flat-brim, curved-brim, high-profile, low-profile and mid-profile snapbacks — all in 6-panel or 5-panel construction. Our snapback range covers streetwear, sports, corporate and workwear programs, with over 30 stocked fabric colors and full Pantone color matching."
+      },
+      {
+        title: "Logo & Embroidery Options",
+        desc: "Snapbacks are the #1 canvas for bold branding. We offer high-density 3D puff embroidery, flat embroidery, chenille patches, and combination techniques. Front panel, side panels, and back embroidery all supported — with a professional digitizing service included in your order."
+      },
+      {
+        title: "Structured Front Panels",
+        desc: "A true snapback keeps its shape. We build the front two panels with heavy-duty buckram lining so your logo area stays crisp and elevated, order after order. Premium snapback hardware (plastic, metal button, or color-matched) completes the look."
+      },
+      {
+        title: "Pricing & MOQ",
+        desc: "Wholesale snapbacks start at $3.50 FOB for standard cotton twill and range up to $7.00 for premium 3D puff programs. Standard MOQ is 200 pieces per style and color — with volume discounts at 500, 1,000 and 5,000+ tiers. Samples are produced in 7 days."
+      }
+    ],
+    modelsTitle: "Popular Snapback Models",
+    ctaTitle: "Start Your Snapback Line Today",
+    ctaDesc: "Send us your requirements — get a factory quote within 12 hours and a physical sample in 7 days.",
+    ctaPrimary: "Request Factory Quote",
+    ctaSecondary: "Browse Full Catalog"
   },
-  {
-    title: "Logo & Embroidery Options",
-    desc: "Snapbacks are the #1 canvas for bold branding. We offer high-density 3D puff embroidery, flat embroidery, chenille patches, and combination techniques. Front panel, side panels, and back embroidery all supported — with a professional digitizing service included in your order.",
-  },
-  {
-    title: "Structured Front Panels",
-    desc: "A true snapback keeps its shape. We build the front two panels with heavy-duty buckram lining so your logo area stays crisp and elevated, order after order. Premium snapback hardware (plastic, metal button, or color-matched) completes the look.",
-  },
-  {
-    title: "Pricing & MOQ",
-    desc: "Wholesale snapbacks start at $3.50 FOB for standard cotton twill and range up to $7.00 for premium 3D puff programs. Standard MOQ is 200 pieces per style and color — with volume discounts at 500, 1,000 and 5,000+ tiers. Samples are produced in 7 days.",
+  es: {
+    hero: {
+      badge: "Snapbacks al por mayor · Directo de fábrica",
+      h1Pre: "",
+      h1Highlight: "Snapbacks al por mayor",
+      h1Post: " — personalizados, directo de fábrica",
+      subtitle: "Viseras planas, bordado 3D puff y frentes estructurados con buckram — snapbacks hechos para marcas de streetwear y deportivas, enviados directo de nuestra fábrica verificada por SGS.",
+      pills: ["Desde $3.50 FOB", "MOQ 200 pzs", "Producción en 15 días", "Control de calidad AQL 2.5"]
+    },
+    features: [
+      {
+        title: "Estilos de snapback que fabricamos",
+        desc: "Snapbacks de visera plana, visera curva, perfil alto, perfil bajo y perfil medio, todos en construcción de 6 o 5 paneles. Nuestra gama de snapbacks cubre programas de streetwear, deportes, corporativos y ropa de trabajo, con más de 30 colores de tela en stock e igualación completa de colores Pantone."
+      },
+      {
+        title: "Opciones de logo y bordado",
+        desc: "Los snapbacks son el lienzo número 1 para el branding audaz. Ofrecemos bordado 3D puff de alta densidad, bordado plano, parches de chenille y técnicas combinadas. Bordado en panel frontal, paneles laterales y parte trasera, con un servicio profesional de digitalizado incluido en su pedido."
+      },
+      {
+        title: "Paneles frontales estructurados",
+        desc: "Un verdadero snapback mantiene su forma. Construimos los dos paneles frontales con forro de buckram de alta resistencia para que el área de su logo se mantenga nítida y elevada, pedido tras pedido. Los herrajes premium del snapback (plástico, botón metálico o igualado al color) completan el acabado."
+      },
+      {
+        title: "Precios y MOQ",
+        desc: "Los snapbacks al por mayor comienzan en $3.50 FOB para sarga de algodón estándar y llegan hasta $7.00 para programas premium de bordado 3D puff. El MOQ estándar es de 200 piezas por estilo y color, con descuentos por volumen en niveles de 500, 1,000 y 5,000+. Las muestras se producen en 7 días."
+      }
+    ],
+    modelsTitle: "Modelos de snapback populares",
+    ctaTitle: "Inicie su línea de snapbacks hoy",
+    ctaDesc: "Envíenos sus requisitos — reciba una cotización de fábrica en 12 horas y una muestra física en 7 días.",
+    ctaPrimary: "Solicite cotización de fábrica",
+    ctaSecondary: "Ver catálogo completo"
   }
-];
+};
 
 const RELATED = [
   { href: "/product/structured-multi-color-baseball-cap", name: "Structured Multi-Color Baseball Cap", img: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png" },
@@ -32,6 +82,7 @@ const RELATED = [
 
 export default function SnapbacksPage() {
   const lang = useLang();
+  const c = CONTENT[lang === "es" ? "es" : "en"];
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -68,25 +119,24 @@ export default function SnapbacksPage() {
 
       <section className="bg-black text-white py-20 md:py-28 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm">Wholesale Snapbacks · Factory Direct</span>
+          <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm">{c.hero.badge}</span>
           <h1 className="text-3xl md:text-6xl font-extrabold mt-6 mb-6 tracking-tight leading-tight">
-            Wholesale <span className="text-yellow-400">Snapback Hats</span> — Custom, From the Factory
+            {c.hero.h1Pre}<span className="text-yellow-400">{c.hero.h1Highlight}</span>{c.hero.h1Post}
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Flat brims, 3D puff embroidery, and buckram-structured fronts — snapbacks built for streetwear and sports brands, shipped direct from our SGS-verified factory.
+            {c.hero.subtitle}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm font-bold">
-            <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">From $3.50 FOB</span>
-            <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">MOQ 200 Pcs</span>
-            <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">15-Day Production</span>
-            <span className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">AQL 2.5 QC</span>
+            {c.hero.pills.map((p, i) => (
+              <span key={i} className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">{p}</span>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto space-y-8">
-          {FEATURES.map((f, i) => (
+          {c.features.map((f, i) => (
             <div key={i} className="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100">
               <h2 className="font-black text-xl text-black mb-3">{f.title}</h2>
               <p className="text-gray-600 leading-relaxed">{f.desc}</p>
@@ -97,7 +147,7 @@ export default function SnapbacksPage() {
 
       <section className="py-16 px-4 bg-gray-50 border-y border-gray-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center text-2xl md:text-3xl font-black tracking-tight mb-10">Popular Snapback Models</h2>
+          <h2 className="text-center text-2xl md:text-3xl font-black tracking-tight mb-10">{c.modelsTitle}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {RELATED.map((p) => (
               <Link key={p.href} href={p.href} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
@@ -115,14 +165,14 @@ export default function SnapbacksPage() {
 
       <section className="py-24 px-4 bg-black text-white text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">Start Your Snapback Line Today</h2>
-          <p className="text-gray-400 text-lg mb-8">Send us your requirements — get a factory quote within 12 hours and a physical sample in 7 days.</p>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">{c.ctaTitle}</h2>
+          <p className="text-gray-400 text-lg mb-8">{c.ctaDesc}</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href={`/${lang}/#inquiry`} className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition">
-              Request Factory Quote <ArrowRight size={20} />
+              {c.ctaPrimary} <ArrowRight size={20} />
             </Link>
             <Link href={`/${lang}/#catalog`} className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-full text-lg transition border border-white/20">
-              Browse Full Catalog
+              {c.ctaSecondary}
             </Link>
           </div>
         </div>
