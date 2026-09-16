@@ -103,18 +103,50 @@ export default async function LocaleLayout({
 
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
+  // Entity graph — sameAs + stable identifiers are what AI systems use to
+  // confirm the company is a real, verifiable entity (not a content farm).
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://bdjunyang.com/#organization",
     name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+    alternateName: "BD Hats",
     url: "https://bdjunyang.com",
     logo: "https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png",
     description: "Premium custom hat factory and B2B wholesale supplier specializing in embroidery and customized headwear.",
+    foundingDate: "2014",
+    telephone: "+86-15933930830",
+    email: "admin@bdjunyang.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Baoding",
+      addressRegion: "Hebei",
+      addressCountry: "CN",
+    },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
       email: "admin@bdjunyang.com",
+      telephone: "+86-15933930830",
+      availableLanguage: ["en", "es", "zh"],
     },
+    sameAs: [
+      "https://bdjunyang.en.alibaba.com/",
+      "https://www.facebook.com/p/Baoding-Junyang-Import-And-Export-Trade-Co-Ltd-100079978783412/",
+      "https://suppliers.alibaba.com/baoding-junyang-import-and-export-trade-co-ltd_2477972385",
+    ],
+    knowsAbout: [
+      "Custom baseball caps",
+      "3D puff embroidery",
+      "OEM hat manufacturing",
+      "Wholesale snapback hats",
+      "Custom trucker hats",
+      "Custom dad hats",
+      "Custom beanies",
+      "Custom bucket hats",
+      "Private label headwear",
+      "Bulk hat production",
+    ],
   };
 
   return (
