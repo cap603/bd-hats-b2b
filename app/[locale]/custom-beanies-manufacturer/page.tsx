@@ -77,6 +77,9 @@ const CONTENT = {
         img: "https://s.alicdn.com/@sc04/kf/H379e73c6541e4b8ca551a5dcbc322440H.jpg",
         note: "Vintage wash · core yarn",
       },
+    ],
+    companionTitle: "Companion Caps for a Two-Season Line",
+    companionProducts: [
       {
         href: "/product/outdoor-performance-5-panel-cap",
         name: "Outdoor Performance 5 Panel Cap",
@@ -170,6 +173,9 @@ const CONTENT = {
         img: "https://s.alicdn.com/@sc04/kf/H379e73c6541e4b8ca551a5dcbc322440H.jpg",
         note: "Lavado vintage · hilo core",
       },
+    ],
+    companionTitle: "Gorras que combinan para una línea de dos temporadas",
+    companionProducts: [
       {
         href: "/product/outdoor-performance-5-panel-cap",
         name: "Outdoor Performance 5 Panel Cap",
@@ -283,6 +289,14 @@ export default function BeaniesPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-10 text-center">{c.productsTitle}</h2>
           <ProductLinks items={c.products} />
+
+          {/* Companion caps are cross-sell, so they sit under their own heading —
+              otherwise the section label ("Our Beanie Range") would not match
+              what the grid actually shows. */}
+          <h3 className="text-xl md:text-2xl font-black tracking-tight mt-16 mb-10 text-center">
+            {c.companionTitle}
+          </h3>
+          <ProductLinks items={c.companionProducts} />
         </div>
       </section>
     </LandingShell>
