@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { useLang } from "../../lib/i18n";
+import { COMPARISON_LINKS } from "../../components/ComparisonShell";
 
 const CONTENT = {
   en: {
@@ -180,6 +181,13 @@ export default function OemPage() {
                 <li><Link href={`/${lang}/wholesale-snapbacks`} className="hover:text-white">Wholesale Snapbacks</Link></li>
                 <li><Link href={`/${lang}/custom-trucker-hats`} className="hover:text-white">Custom Trucker Hats</Link></li>
                 <li><Link href={`/${lang}/oem-hat-manufacturer`} className="hover:text-white">OEM Hat Manufacturing</Link></li>
+                {COMPARISON_LINKS.map((l) => (
+                  <li key={l.href}>
+                    <Link href={`/${lang}${l.href}`} className="hover:text-white">
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
