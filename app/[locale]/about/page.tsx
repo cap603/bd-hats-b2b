@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { useLang } from "../../lib/i18n";
 import { NavCompareMenu } from "../../components/NavCompareMenu";
+import { NavProductsMenu } from "../../components/NavProductsMenu";
 
 const TIMELINE = [
   { year: "2014", title: "Founded in Baoding", desc: "Started with 15 tailors and 5 embroidery machines in a small workshop, specializing in custom baseball caps for local sportswear brands." },
@@ -42,7 +43,7 @@ export default function AboutPage() {
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
             <a href={`/${lang}/#advantages`} className="hover:text-black transition">Advantages</a>
             <a href={`/${lang}/#factory`} className="hover:text-black transition">Our Factory</a>
-            <a href={`/${lang}/#catalog`} className="hover:text-black transition">Products</a>
+            <NavProductsMenu />
             <a href={`/${lang}/about`} className="text-black border-b-2 border-black pb-1">About</a>
             <NavCompareMenu />
             <a href={`/${lang}/#inquiry`} className="hover:text-black transition">Inquiry</a>

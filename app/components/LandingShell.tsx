@@ -6,6 +6,7 @@ import { Breadcrumb } from "./Breadcrumb";
 import { useLang } from "../lib/i18n";
 import { COMPARISON_LINKS } from "../lib/comparison-links";
 import { NavCompareMenu } from "./NavCompareMenu";
+import { NavProductsMenu } from "./NavProductsMenu";
 
 /**
  * Shared shell for buyer-intent landing pages.
@@ -94,7 +95,7 @@ export function LandingShell({
             <span className="hidden lg:block text-xl font-black text-black">JUNYANG</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
-            <Link href={`/${lang}/#catalog`} className="hover:text-black transition">Products</Link>
+            <NavProductsMenu />
             <Link href={`/${lang}/about`} className="hover:text-black transition">About</Link>
             <Link href={`/${lang}/guide`} className="hover:text-black transition">Guide</Link>
             <NavCompareMenu />

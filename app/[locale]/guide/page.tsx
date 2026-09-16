@@ -5,6 +5,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { useLang } from "../../lib/i18n";
 import { NavCompareMenu } from "../../components/NavCompareMenu";
+import { NavProductsMenu } from "../../components/NavProductsMenu";
 
 const SECTIONS = [
   {
@@ -86,7 +87,7 @@ export default function GuidePage() {
             <span className="hidden lg:block text-xl font-black tracking-tighter text-black">JUNYANG</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
-            <Link href={`/${lang}/#catalog`} className="hover:text-black transition">Products</Link>
+            <NavProductsMenu />
             <Link href={`/${lang}/about`} className="hover:text-black transition">About</Link>
             <Link href={`/${lang}/guide`} className="text-black border-b-2 border-black pb-1">Guide</Link>
             <NavCompareMenu />

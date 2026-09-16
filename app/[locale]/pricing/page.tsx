@@ -5,6 +5,7 @@ import { CheckCircle2, ArrowRight, HelpCircle } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { useLang } from "../../lib/i18n";
 import { NavCompareMenu } from "../../components/NavCompareMenu";
+import { NavProductsMenu } from "../../components/NavProductsMenu";
 
 const FAQS = [
   {
@@ -85,7 +86,7 @@ export default function PricingPage() {
             <span className="hidden lg:block text-xl font-black text-black">JUNYANG</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
-            <Link href={`/${lang}/#catalog`} className="hover:text-black transition">Products</Link>
+            <NavProductsMenu />
             <Link href={`/${lang}/about`} className="hover:text-black transition">About</Link>
             <Link href={`/${lang}/guide`} className="hover:text-black transition">Guide</Link>
             <Link href={`/${lang}/pricing`} className="text-black border-b-2 border-black pb-1">Pricing</Link>

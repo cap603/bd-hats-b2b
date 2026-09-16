@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useT, useLang } from "../lib/i18n";
 import { attributionTag } from "../lib/attribution";
 import { NavCompareMenu } from "../components/NavCompareMenu";
+import { NavProductsMenu } from "../components/NavProductsMenu";
 import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
@@ -150,10 +151,10 @@ export default function Home() {
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
+            <NavProductsMenu />
             <a href="#advantages" className="hover:text-black transition">{n("advantages")}</a>
             <a href="#factory" className="hover:text-black transition">{n("factory")}</a>
             <a href="#qc" className="hover:text-black transition">{n("qualityControl")}</a>
-            <a href="#catalog" className="hover:text-black transition">{n("products")}</a>
             <NavCompareMenu />
             <a href="#inquiry" className="hover:text-black transition">{n("inquiry")}</a>
           </nav>
