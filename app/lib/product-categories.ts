@@ -16,14 +16,17 @@ export const PRODUCT_CATEGORIES = [
     desc: "5-panel · 6-panel · A-frame · dad hats",
   },
   {
-    href: "/custom-trucker-hats",
+    // Points straight at the product page so buyers reach a buyable cap in one
+    // click from the nav. Swap back to "/custom-trucker-hats" if the line grows
+    // into a multi-product category page.
+    href: "/product/custom-foam-front-trucker-hat",
     label: "Trucker Hat",
     desc: "Mesh back · foam front",
   },
   {
-    href: "/wholesale-snapbacks",
+    href: "/product/vintage-flat-brim-snapback-cap",
     label: "Snapback Cap",
-    desc: "Flat brim · plastic snap closure",
+    desc: "Flat brim · adjustable buckle",
   },
   {
     href: "/custom-beanies-manufacturer",
@@ -31,8 +34,8 @@ export const PRODUCT_CATEGORIES = [
     desc: "Cuffed · pom-pom · jacquard knit",
   },
   {
-    href: "/custom-bucket-hats-manufacturer",
+    href: "/product/nylon-large-brim-bucket-hat",
     label: "Bucket Hat",
-    desc: "Soft brim · cotton twill · corduroy",
+    desc: "Nylon · large brim · waterproof",
   },
 ];

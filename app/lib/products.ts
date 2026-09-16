@@ -274,5 +274,122 @@ export const HATS: Product[] = [
       { q: "What is the MOQ for the retro washed beanie?", a: "Our standard MOQ is 200 pieces per style and colour, consistent with our other headwear lines." },
       { q: "Can the wash intensity be controlled?", a: "Yes — tell us the vintage level you want and we will produce a sample for approval before bulk." }
     ]
+  },
+  {
+    id: "custom-foam-front-trucker-hat",
+    name: "Custom Foam Front 5 Panel Trucker Hat",
+    desc: "Foam-front 5-panel trucker with a breathable mesh back and rope trim. Front, brim and side panels all accept your logo.",
+    fullDesc: "A foam-front 5-panel trucker built for summer and outdoor programmes. The foam front holds its shape and takes 3D puff or flat embroidery, silk screen and heat-transfer printing without collapsing, while the mesh back keeps the cap light and breathable. Logo positions include the front panel, brim, side panels and back. Unisex 56-58cm head circumference. Custom design files are prepared in 3 days and a physical sample in 7 days.",
+    price: "Contact for factory pricing",
+    moq: 200,
+    img: "https://s.alicdn.com/@sc04/kf/H5bfd56a0758f4158b28790eaaba50679m.png_960x960q80.jpg",
+    images: [
+      "https://s.alicdn.com/@sc04/kf/H5bfd56a0758f4158b28790eaaba50679m.png_960x960q80.jpg",
+      "https://s.alicdn.com/@sc04/kf/H5b967074766f4f678becefbdc3a891b7a.png_960x960q80.jpg",
+      "https://s.alicdn.com/@sc04/kf/H983210a55abd4439b781c702cd7a9e79K.jpg_960x960q80.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hb9d05779eadf44d0992f122673013b1cq.jpg_960x960q80.jpg"
+    ],
+    badge: "new",
+    category: "Trucker Hats",
+    specs: {
+      material: "Polyester Mesh Back & Foam Front",
+      style: "Structured 5-Panel Trucker",
+      logo: "3D Puff / Flat Embroidery, Heat Transfer",
+      closure: "Adjustable — confirmed on your quotation",
+      panels: "5-Panel",
+      size: "56-58cm · Unisex"
+    },
+    customization: {
+      title: "Our Customization Capabilities",
+      options: [
+        "3D puff embroidery, flat embroidery, silk screen and heat-transfer printing",
+        "Logo placement on brim, front panel, side panels or back",
+        "Care labels available from 500 pcs",
+        "Custom design files in 3 days, physical sample in 7 days"
+      ]
+    },
+    faqs: [
+      { q: "What decoration works best on a foam front?", a: "The foam front panel carries heavy 3D puff embroidery without collapsing, and also accepts flat embroidery, silk screen and heat-transfer printing. Send your artwork and we will recommend the finishing that suits it." },
+      { q: "How long do trucker hat samples take?", a: "Custom design files are prepared in 3 days and a physical sample takes 7 days. Bulk lead time is confirmed with your quotation." }
+    ]
+  },
+  {
+    id: "vintage-flat-brim-snapback-cap",
+    name: "Vintage Flat Brim Snapback Cap",
+    desc: "6-panel flat-brim snapback in polyester with an adjustable buckle closure. Heat-transfer print or embroidery across 14 stock colours.",
+    fullDesc: "A 6-panel flat-brim snapback for streetwear, hip-hop and casual ranges. The polyester shell keeps the flat brim crisp, and the adjustable buckle closure fits a 56-60cm head. Heat-transfer printing suits full-colour graphics, while flat embroidery gives a raised logo; artwork can be placed on the front panel, brim, side panels and back. 14 stock colours are available for sampling and bulk. Custom design files are prepared in 3 days and a physical sample in 7 days.",
+    price: "Contact for factory pricing",
+    moq: 200,
+    img: "https://s.alicdn.com/@sc04/kf/H5d9801b9d2ac4d1a8283ff6a66ee28ad7.jpg_960x960q80.jpg",
+    images: [
+      "https://s.alicdn.com/@sc04/kf/H5d9801b9d2ac4d1a8283ff6a66ee28ad7.jpg_960x960q80.jpg",
+      "https://s.alicdn.com/@sc04/kf/H2970f4423d9b4a79ae0508e08cdb0cec1.png_960x960q80.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hae011aa7a8bb4c8ca5cd09439f9449b3r.jpg_960x960q80.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hfccf9b2d8c3f4663bc4e83f97857792bx.png_960x960q80.jpg"
+    ],
+    badge: "new",
+    category: "Snapback Caps",
+    specs: {
+      material: "Polyester",
+      style: "6-Panel Flat Brim Snapback",
+      logo: "Heat Transfer Print / Flat Embroidery",
+      closure: "Adjustable snapback buckle",
+      panels: "6-Panel",
+      size: "56-60cm · Unisex",
+      colour: "14 stock colours"
+    },
+    customization: {
+      title: "Our Customization Capabilities",
+      options: [
+        "Heat-transfer printing for full-colour graphics",
+        "Flat embroidery for raised logos",
+        "Logo placement on brim, front panel, side panels or back",
+        "14 stock colours for sampling and bulk"
+      ]
+    },
+    faqs: [
+      { q: "Is the closure adjustable?", a: "Yes. This snapback uses an adjustable snapback buckle and fits a 56-60cm head circumference." },
+      { q: "How many stock colours can I choose from?", a: "14 stock colours are available for both sampling and bulk orders. Tell us your target colours and we will confirm availability with your quotation." }
+    ]
+  },
+  {
+    id: "nylon-large-brim-bucket-hat",
+    name: "Nylon Large Brim Bucket Hat",
+    desc: "Waterproof nylon bucket hat with an extra-large brim for sun and rain. Adjustable 56-60cm fit, print or embroidery for brand graphics.",
+    fullDesc: "A nylon bucket hat designed for hiking, travel and outdoor programmes. The large brim shades the face and neck, and the nylon shell is waterproof and sun-protective. Head circumference options cover 56-58cm and 58-60cm plus an adjustable fit. Brand graphics can be applied by heat-transfer, digital or silk screen printing, with embroidery available on request. 7 stock colours are available for sampling and bulk. Custom design files are prepared in 3 days and a physical sample in 7 days.",
+    price: "Contact for factory pricing",
+    moq: 200,
+    img: "https://s.alicdn.com/@sc04/kf/H4d62772bbf2a4f21b12b5eb83439751dI.png_960x960q80.jpg",
+    images: [
+      "https://s.alicdn.com/@sc04/kf/H4d62772bbf2a4f21b12b5eb83439751dI.png_960x960q80.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hf0b62b5b07a54682829d0c559bdcaa344.png_960x960q80.jpg",
+      "https://s.alicdn.com/@sc04/kf/Hc30e978908ed4bbd8cc9881907a214c2q.png_960x960q80.jpg",
+      "https://s.alicdn.com/@sc04/kf/H1c29ccd3b6c94f40a8b17f0872109691s.png_960x960q80.jpg"
+    ],
+    badge: "new",
+    category: "Bucket Hats",
+    specs: {
+      material: "Nylon (waterproof)",
+      style: "Large Brim Bucket / Fisherman",
+      logo: "Heat Transfer / Digital / Silk Screen Print",
+      closure: "No closure — pull-on fit",
+      panels: "Brimmed crown",
+      size: "56-60cm · Adjustable",
+      feature: "Sun protection · Waterproof",
+      colour: "7 stock colours"
+    },
+    customization: {
+      title: "Our Customization Capabilities",
+      options: [
+        "Heat-transfer, digital and silk screen printing",
+        "Embroidery available on request",
+        "Logo placement on brim, front panel, side panels or back",
+        "7 stock colours for sampling and bulk"
+      ]
+    },
+    faqs: [
+      { q: "Is the nylon bucket hat waterproof?", a: "Yes. The nylon shell is waterproof and sun-protective, and the large brim shades the face and neck for hiking and travel use." },
+      { q: "What head sizes are available?", a: "Head circumference options cover 56-58cm and 58-60cm plus an adjustable fit. Confirm your target market sizes with your quotation." }
+    ]
   }
 ];

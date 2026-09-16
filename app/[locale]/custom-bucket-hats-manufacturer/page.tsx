@@ -61,6 +61,16 @@ const CONTENT = {
     ],
     pricingNote:
       "A single-colour cotton bucket sits at the low end. Reversible constructions, corduroy or terry fabrics, wide floppy brims and multi-position decoration move toward the top of the range. Bucket hats can be produced in the same order as caps and beanies to consolidate freight.",
+    rangeTitle: "Our Bucket Hat Range",
+    rangeNote: "Nylon · waterproof · large brim",
+    range: [
+      {
+        href: "/product/nylon-large-brim-bucket-hat",
+        name: "Nylon Large Brim Bucket Hat",
+        img: "https://s.alicdn.com/@sc04/kf/H4d62772bbf2a4f21b12b5eb83439751dI.png_960x960q80.jpg",
+        note: "Waterproof nylon · 7 stock colours",
+      },
+    ],
     productsTitle: "Order Alongside Your Bucket Hats",
     productsNote: "One shipment, several categories",
     products: [
@@ -141,6 +151,16 @@ const CONTENT = {
     ],
     pricingNote:
       "Un bucket sencillo de algodón se ubica en la parte baja del rango. Las construcciones reversibles, las telas de pana o rizo, las alas anchas y la decoración en varias posiciones llevan el precio hacia la parte alta. Los gorros bucket pueden producirse en el mismo pedido que las gorras y los gorros de punto para consolidar el flete.",
+    rangeTitle: "Nuestra línea de gorros bucket",
+    rangeNote: "Nailon · impermeable · ala ancha",
+    range: [
+      {
+        href: "/product/nylon-large-brim-bucket-hat",
+        name: "Nylon Large Brim Bucket Hat",
+        img: "https://s.alicdn.com/@sc04/kf/H4d62772bbf2a4f21b12b5eb83439751dI.png_960x960q80.jpg",
+        note: "Nailon impermeable · 7 colores en stock",
+      },
+    ],
     productsTitle: "Combina tu pedido con estos estilos",
     productsNote: "Un solo envío, varias categorías",
     products: [
@@ -251,6 +271,14 @@ export default function BucketHatsPage() {
             ))}
           </div>
           <p className="text-gray-600 text-sm leading-relaxed mt-8 max-w-3xl mx-auto text-center">{c.pricingNote}</p>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 border-b border-gray-100">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-2 text-center">{c.rangeTitle}</h2>
+          <p className="text-center text-xs font-bold uppercase tracking-wider text-gray-400 mb-10">{c.rangeNote}</p>
+          <ProductLinks items={c.range} />
         </div>
       </section>
 

@@ -78,6 +78,7 @@ const CONTENT = {
 };
 
 const RELATED = [
+  { href: "/product/vintage-flat-brim-snapback-cap", name: "Vintage Flat Brim Snapback Cap", img: "https://s.alicdn.com/@sc04/kf/H5d9801b9d2ac4d1a8283ff6a66ee28ad7.jpg_960x960q80.jpg" },
   { href: "/product/structured-multi-color-baseball-cap", name: "Structured Multi-Color Baseball Cap", img: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png" },
   { href: "/product/personalised-two-tone-a-frame-cap", name: "Personalised Two-Tone A-Frame Cap", img: "https://s.alicdn.com/@sc04/kf/H5a0171373c2b42a6a0083b82f6e7c57da.jpg" },
   { href: "/product/custom-3d-embroidered-5-panel-gorras", name: "Custom 3D Embroidered 5 Panel Gorras", img: "https://s.alicdn.com/@sc04/kf/H29fdeb6f4619484b9c599ddf5b497ecfl/Factory-Price-100-cotton-5-Panel-Gorras.png" }
@@ -150,9 +151,9 @@ export default function SnapbacksPage() {
       </section>
 
       <section className="py-16 px-4 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-center text-2xl md:text-3xl font-black tracking-tight mb-10">{c.modelsTitle}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {RELATED.map((p) => (
               <Link key={p.href} href={p.href} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
                 <div className="aspect-square bg-gray-100 overflow-hidden">

@@ -78,6 +78,7 @@ const CONTENT = {
 };
 
 const RELATED = [
+  { href: "/product/custom-foam-front-trucker-hat", name: "Custom Foam Front 5 Panel Trucker Hat", img: "https://s.alicdn.com/@sc04/kf/H5bfd56a0758f4158b28790eaaba50679m.png_960x960q80.jpg" },
   { href: "/product/breathable-custom-embroidered-6-panel", name: "Breathable Custom Embroidered 6 Panel", img: "https://s.alicdn.com/@sc04/kf/Hefa4838aa05548fc9893878e057a8bees.png" },
   { href: "/product/outdoor-performance-5-panel-cap", name: "Outdoor Performance 5 Panel Cap", img: "https://s.alicdn.com/@sc04/kf/H491f2ecb113c48148e0b4e7fd119c9ceQ.jpg" },
   { href: "/product/ladies-plain-blank-cotton-sports-cap", name: "Ladies Plain Blank Cotton Sports Cap", img: "https://s.alicdn.com/@sc04/kf/Hd4865fa5783c4a5da8fd17a2fd64f703G.png" }
@@ -150,9 +151,9 @@ export default function TruckerPage() {
       </section>
 
       <section className="py-16 px-4 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-center text-2xl md:text-3xl font-black tracking-tight mb-10">{c.rangeTitle}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {RELATED.map((p) => (
               <Link key={p.href} href={p.href} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
                 <div className="aspect-square bg-gray-100 overflow-hidden">

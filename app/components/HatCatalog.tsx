@@ -7,12 +7,24 @@ import { MessageCircle, ArrowRight, ArrowUpDown } from "lucide-react";
 import { HATS } from "../lib/products";
 import { priceLabel } from "../lib/price";
 
-const CATEGORY_KEYS = ["filterAll", "filterBaseballCaps", "filterVintage", "filterSports", "filterBeanies"] as const;
+const CATEGORY_KEYS = [
+  "filterAll",
+  "filterBaseballCaps",
+  "filterVintage",
+  "filterSports",
+  "filterTruckerHats",
+  "filterSnapbacks",
+  "filterBucketHats",
+  "filterBeanies",
+] as const;
 const CATEGORY_MAP: Record<string, string> = {
   "All": "filterAll",
   "Baseball Caps": "filterBaseballCaps",
   "Vintage Series": "filterVintage",
   "Sports & Active": "filterSports",
+  "Trucker Hats": "filterTruckerHats",
+  "Snapback Caps": "filterSnapbacks",
+  "Bucket Hats": "filterBucketHats",
   "Beanies": "filterBeanies",
 };
 const PANEL_TYPES = ["All", "5-Panel", "6-Panel"];
@@ -64,7 +76,7 @@ export function HatCatalog() {
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
 
-  const CATEGORIES = ["All", "Baseball Caps", "Vintage Series", "Sports & Active", "Beanies"];
+  const CATEGORIES = ["All", "Baseball Caps", "Vintage Series", "Sports & Active", "Trucker Hats", "Snapback Caps", "Bucket Hats", "Beanies"];
 
   return (
     <div>
