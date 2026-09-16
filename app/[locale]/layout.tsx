@@ -51,6 +51,16 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         "max-snippet": -1,
       },
     },
+    // Search-engine ownership verification (renders meta tags in <head>).
+    // Google Search Console uses the HTML-tag method because the domain's DNS
+    // is hosted at 263idc, not Cloudflare, so a DNS TXT record is not reachable
+    // from our tooling.
+    verification: {
+      google: "XmVZsIBtBeqdgk7Hmx3uynqmGi6iKkwcREBVvAcM-DY",
+      other: {
+        "msvalidate.01": "0C0819B838A5F09CD440EC95C58C945B",
+      },
+    },
     alternates: {
       canonical: `https://bdjunyang.com/${locale}`,
       languages: {
