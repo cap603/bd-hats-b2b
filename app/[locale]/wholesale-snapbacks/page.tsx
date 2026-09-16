@@ -36,7 +36,7 @@ const CONTENT = {
         desc: "Wholesale snapbacks start at $3.50 FOB for standard cotton twill and range up to $7.00 for premium 3D puff programs. Standard MOQ is 200 pieces per style and color — with volume discounts at 500, 1,000 and 5,000+ tiers. Samples are produced in 7 days."
       }
     ],
-    modelsTitle: "Popular Snapback Models",
+    modelsTitle: "Our Snapback Range",
     ctaTitle: "Start Your Snapback Line Today",
     ctaDesc: "Send us your requirements — get a factory quote within 12 hours and a physical sample in 7 days.",
     ctaPrimary: "Request Factory Quote",
@@ -69,7 +69,7 @@ const CONTENT = {
         desc: "Los snapbacks al por mayor comienzan en $3.50 FOB para sarga de algodón estándar y llegan hasta $7.00 para programas premium de bordado 3D puff. El MOQ estándar es de 200 piezas por estilo y color, con descuentos por volumen en niveles de 500, 1,000 y 5,000+. Las muestras se producen en 7 días."
       }
     ],
-    modelsTitle: "Modelos de snapback populares",
+    modelsTitle: "Nuestra línea de snapbacks",
     ctaTitle: "Inicie su línea de snapbacks hoy",
     ctaDesc: "Envíenos sus requisitos — reciba una cotización de fábrica en 12 horas y una muestra física en 7 días.",
     ctaPrimary: "Solicite cotización de fábrica",
@@ -77,11 +77,10 @@ const CONTENT = {
   }
 };
 
+// Every snapback this factory makes — keep in sync with products.ts
+// (category "Snapback Caps").
 const RELATED = [
-  { href: "/product/vintage-flat-brim-snapback-cap", name: "Vintage Flat Brim Snapback Cap", img: "https://s.alicdn.com/@sc04/kf/H5d9801b9d2ac4d1a8283ff6a66ee28ad7.jpg_960x960q80.jpg" },
-  { href: "/product/structured-multi-color-baseball-cap", name: "Structured Multi-Color Baseball Cap", img: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png" },
-  { href: "/product/personalised-two-tone-a-frame-cap", name: "Personalised Two-Tone A-Frame Cap", img: "https://s.alicdn.com/@sc04/kf/H5a0171373c2b42a6a0083b82f6e7c57da.jpg" },
-  { href: "/product/custom-3d-embroidered-5-panel-gorras", name: "Custom 3D Embroidered 5 Panel Gorras", img: "https://s.alicdn.com/@sc04/kf/H29fdeb6f4619484b9c599ddf5b497ecfl/Factory-Price-100-cotton-5-Panel-Gorras.png" }
+  { href: "/product/vintage-flat-brim-snapback-cap", name: "Vintage Flat Brim Snapback Cap", img: "https://s.alicdn.com/@sc04/kf/H5d9801b9d2ac4d1a8283ff6a66ee28ad7.jpg_960x960q80.jpg" }
 ];
 
 export default function SnapbacksPage() {
@@ -151,9 +150,9 @@ export default function SnapbacksPage() {
       </section>
 
       <section className="py-16 px-4 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-center text-2xl md:text-3xl font-black tracking-tight mb-10">{c.modelsTitle}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {RELATED.map((p) => (
               <Link key={p.href} href={p.href} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
                 <div className="aspect-square bg-gray-100 overflow-hidden">

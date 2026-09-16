@@ -14,28 +14,33 @@ export const PRODUCT_CATEGORIES = [
     href: "#catalog",
     label: "Baseball Cap",
     desc: "5-panel · 6-panel · A-frame · dad hats",
+    categories: ["Baseball Caps", "Vintage Series", "Sports & Active"],
   },
   {
-    // Points straight at the product page so buyers reach a buyable cap in one
-    // click from the nav. Swap back to "/custom-trucker-hats" if the line grows
-    // into a multi-product category page.
-    href: "/product/custom-foam-front-trucker-hat",
+    href: "/custom-trucker-hats",
     label: "Trucker Hat",
-    desc: "Mesh back · foam front",
+    desc: "Mesh back · foam or cotton front",
+    categories: ["Trucker Hats"],
   },
   {
-    href: "/product/vintage-flat-brim-snapback-cap",
+    href: "/wholesale-snapbacks",
     label: "Snapback Cap",
     desc: "Flat brim · adjustable buckle",
+    categories: ["Snapback Caps"],
   },
   {
     href: "/custom-beanies-manufacturer",
     label: "Beanie",
-    desc: "Cuffed · pom-pom · jacquard knit",
+    desc: "Cuffed · pompom · satin lined",
+    categories: ["Beanies"],
   },
   {
-    href: "/product/nylon-large-brim-bucket-hat",
+    href: "/custom-bucket-hats-manufacturer",
     label: "Bucket Hat",
     desc: "Nylon · large brim · waterproof",
+    categories: ["Bucket Hats"],
   },
-];
+] as const;
+
+/** Product links shown per category before the "View all" link takes over. */
+export const PRODUCTS_PER_NAV_CATEGORY = 5;

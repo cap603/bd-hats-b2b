@@ -10,6 +10,10 @@
     "materials": "Materials & Fabrics",
     "pricing": "Pricing & Shipping",
     "getQuote": "Get Quote",
+    "categories": "Cap categories",
+    "viewAllProducts": "View all products →",
+    "viewAllCount": "View all {count} →",
+    "stylesCount": "{count} styles",
     "whatsappQuote": "WhatsApp Quote",
     "home": "Home"
   },

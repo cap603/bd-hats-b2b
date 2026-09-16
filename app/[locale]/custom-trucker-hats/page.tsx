@@ -36,7 +36,7 @@ const CONTENT = {
         desc: "Custom trucker hats start from $3.50 FOB for basic two-tone programs and range up to $7.00 for premium 3D puff + patch combinations. Standard MOQ is 200 pieces per style and color, with discounts from 500 pcs. Sample production takes 7 days; bulk production 15-20 days."
       }
     ],
-    rangeTitle: "Browse Our Cap Range",
+    rangeTitle: "Our Trucker Hat Range",
     ctaTitle: "Launch Your Trucker Program",
     ctaDesc: "Send us your artwork — get a factory quote within 12 hours and a physical sample in 7 days.",
     ctaPrimary: "Request Factory Quote",
@@ -69,7 +69,7 @@ const CONTENT = {
         desc: "Las gorras trucker personalizadas comienzan en $3.50 FOB para programas bicolor básicos y llegan hasta $7.00 para combinaciones premium de bordado 3D puff + parche. El MOQ estándar es de 200 piezas por estilo y color, con descuentos desde 500 pzs. La producción de muestras toma 7 días; la producción en masa, 15-20 días."
       }
     ],
-    rangeTitle: "Explore nuestra gama de gorras",
+    rangeTitle: "Nuestra línea de gorras trucker",
     ctaTitle: "Lance su programa de gorras trucker",
     ctaDesc: "Envíenos su diseño — reciba una cotización de fábrica en 12 horas y una muestra física en 7 días.",
     ctaPrimary: "Solicite cotización de fábrica",
@@ -77,11 +77,12 @@ const CONTENT = {
   }
 };
 
+// Every trucker hat this factory makes — keep in sync with products.ts
+// (category "Trucker Hats").
 const RELATED = [
   { href: "/product/custom-foam-front-trucker-hat", name: "Custom Foam Front 5 Panel Trucker Hat", img: "https://s.alicdn.com/@sc04/kf/H5bfd56a0758f4158b28790eaaba50679m.png_960x960q80.jpg" },
-  { href: "/product/breathable-custom-embroidered-6-panel", name: "Breathable Custom Embroidered 6 Panel", img: "https://s.alicdn.com/@sc04/kf/Hefa4838aa05548fc9893878e057a8bees.png" },
-  { href: "/product/outdoor-performance-5-panel-cap", name: "Outdoor Performance 5 Panel Cap", img: "https://s.alicdn.com/@sc04/kf/H491f2ecb113c48148e0b4e7fd119c9ceQ.jpg" },
-  { href: "/product/ladies-plain-blank-cotton-sports-cap", name: "Ladies Plain Blank Cotton Sports Cap", img: "https://s.alicdn.com/@sc04/kf/Hd4865fa5783c4a5da8fd17a2fd64f703G.png" }
+  { href: "/product/cotton-front-5-panel-mesh-trucker-cap", name: "Cotton Front 5 Panel Mesh Trucker Cap", img: "https://s.alicdn.com/@sc04/kf/H0f32f45a07f34b37867be1d3226950a0W.jpg_960x960q80.jpg" },
+  { href: "/product/curved-brim-6-panel-mesh-trucker-cap", name: "Curved Brim 6 Panel Mesh Trucker Cap", img: "https://s.alicdn.com/@sc04/kf/H25923077c08d41518ac8e6a43f1e578bP.png_960x960q80.jpg" }
 ];
 
 export default function TruckerPage() {
@@ -151,9 +152,9 @@ export default function TruckerPage() {
       </section>
 
       <section className="py-16 px-4 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-center text-2xl md:text-3xl font-black tracking-tight mb-10">{c.rangeTitle}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {RELATED.map((p) => (
               <Link key={p.href} href={p.href} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
                 <div className="aspect-square bg-gray-100 overflow-hidden">

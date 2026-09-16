@@ -10,6 +10,10 @@
     "materials": "Materiales y Tejidos",
     "pricing": "Precios y Envíos",
     "getQuote": "Solicitar Cotización",
+    "categories": "Categorías de gorras",
+    "viewAllProducts": "Ver todos los productos →",
+    "viewAllCount": "Ver los {count} →",
+    "stylesCount": "{count} estilos",
     "whatsappQuote": "Cotizar por WhatsApp",
     "home": "Inicio"
   },

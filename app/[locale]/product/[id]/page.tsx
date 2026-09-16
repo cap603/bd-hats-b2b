@@ -294,7 +294,11 @@ export default function ProductDetail() {
 
       {/* Related Products */}
       {(() => {
-        const related = HATS.filter(h => h.id !== hat.id).slice(0, 3);
+        // Same-category first, then top up from other categories — otherwise a
+        // trucker hat page would recommend three unrelated baseball caps.
+        const sameCategory = HATS.filter(h => h.id !== hat.id && h.category === hat.category);
+        const otherCategories = HATS.filter(h => h.id !== hat.id && h.category !== hat.category);
+        const related = [...sameCategory, ...otherCategories].slice(0, 3);
         if (related.length === 0) return null;
         return (
           <section className="py-20 px-4 max-w-7xl mx-auto">
