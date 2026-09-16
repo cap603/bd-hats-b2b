@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { useLang } from "../../lib/i18n";
+import { NavCompareMenu } from "../../components/NavCompareMenu";
 
 const SECTIONS = [
   {
@@ -138,6 +139,7 @@ export default function MaterialsPage() {
             <Link href={`/${lang}/about`} className="hover:text-black transition">About</Link>
             <Link href={`/${lang}/guide`} className="hover:text-black transition">Guide</Link>
             <Link href={`/${lang}/materials`} className="text-black border-b-2 border-black pb-1">Materials</Link>
+            <NavCompareMenu />
             <Link href={`/${lang}/#inquiry`} className="hover:text-black transition">Inquiry</Link>
           </nav>
           <Link href={`/${lang}/#inquiry`} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm">Get Quote</Link>
