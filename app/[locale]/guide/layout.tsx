@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         : "B2B Custom Hat Manufacturing Guide | How to Source Wholesale Caps from China",
     description:
       locale === "es"
-        ? "Guía completa para compradores B2B: cómo elegir una fábrica de gorras, tipos de bordado, negociación de MOQ, estándares de control de calidad y logística de envío. Consejos de una fábrica con 12 años de experiencia."
-        : "Complete guide for B2B buyers: how to choose a custom hat factory, embroidery types explained, MOQ negotiation, quality control standards, and shipping logistics. Expert advice from a 12-year factory.",
+        ? "Guía completa para compradores B2B: cómo elegir una fábrica de gorras, tipos de bordado, negociación de MOQ, control de calidad y logística de envío. Consejos de una fábrica con 12 años de experiencia."
+        : "Complete guide for B2B buyers: how to choose a custom hat factory, embroidery types explained, MOQ negotiation, quality control, and shipping logistics. Expert advice from a 12-year factory.",
     alternates: { canonical, languages },
     openGraph: {
       type: "article",

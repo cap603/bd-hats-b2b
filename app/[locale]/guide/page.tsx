@@ -43,9 +43,9 @@ const SECTIONS = [
   {
     id: "quality-control",
     title: "4. Quality Control: What to Inspect Before Shipment",
-    content: "Professional quality control prevents expensive mistakes. We follow a 5-stage 100% inspection protocol: raw material verification, embroidery precision check, stitching integrity audit, final piece-by-piece QC, and packing and label audit. For large orders over $10,000, consider hiring an independent inspection company like SGS or Intertek.",
+    content: "Professional quality control prevents expensive mistakes. We check at five stages: raw material verification, embroidery precision, stitching integrity, a final check before packing, and a packing and label audit. For large orders over $10,000, consider hiring an independent inspection company like SGS or Intertek.",
     tips: [
-      "Ask for your inspection standard in writing — piece-by-piece or sampled",
+      "Ask for the QC standard in writing before bulk production",
       "Always request pre-shipment photos and videos",
       "For first-time orders, consider third-party inspection for peace of mind"
     ]

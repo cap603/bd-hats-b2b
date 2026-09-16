@@ -16,7 +16,7 @@ const CONTENT = {
       h1Highlight: "Snapback Hats",
       h1Post: " — Custom, From the Factory",
       subtitle: "Flat brims, 3D puff embroidery, and buckram-structured fronts — snapbacks built for streetwear and sports brands, shipped direct from our SGS-verified factory.",
-      pills: ["From $3.50 FOB", "MOQ 200 Pcs", "15-Day Production", "100% QC"]
+      pills: ["From $3.50 FOB", "MOQ 200 Pcs", "15-Day Production", "In-House QC"]
     },
     features: [
       {
@@ -49,7 +49,7 @@ const CONTENT = {
       h1Highlight: "Snapbacks al por mayor",
       h1Post: " — personalizados, directo de fábrica",
       subtitle: "Viseras planas, bordado 3D puff y frentes estructurados con buckram — snapbacks hechos para marcas de streetwear y deportivas, enviados directo de nuestra fábrica verificada por SGS.",
-      pills: ["Desde $3.50 FOB", "MOQ 200 pzs", "Producción en 15 días", "QC 100%"]
+      pills: ["Desde $3.50 FOB", "MOQ 200 pzs", "Producción en 15 días", "QC interno"]
     },
     features: [
       {

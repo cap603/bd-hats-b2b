@@ -12,7 +12,7 @@ const CONTENT = {
       accent: "Hats Manufacturer",
       subtitle:
         "Industrial-scale cap production: 5 million pieces a year, 100+ embroidery machines and dedicated lines — with tiered pricing that rewards volume.",
-      pills: ["5M+ Caps / Year", "100+ Machines", "100% QC", "FOB or CIF"],
+      pills: ["5M+ Caps / Year", "100+ Machines", "In-House QC", "FOB or CIF"],
     },
     featuresTitle: "Why Volume Buyers Work With Us",
     featuresIntro:
@@ -93,7 +93,7 @@ const CONTENT = {
       accent: "al por Mayor",
       subtitle:
         "Producción de gorras a escala industrial: 5 millones de unidades al año, más de 100 máquinas de bordado y líneas dedicadas, con precios escalonados que premian el volumen.",
-      pills: ["5M+ gorras al año", "Más de 100 máquinas", "QC 100%", "FOB o CIF"],
+      pills: ["5M+ gorras al año", "Más de 100 máquinas", "QC interno", "FOB o CIF"],
     },
     featuresTitle: "Por qué los grandes compradores trabajan con nosotros",
     featuresIntro:
@@ -177,7 +177,7 @@ export default function BulkHatsPage() {
     "@type": "Article",
     headline: "Bulk Custom Hats Manufacturer — Large Volume Cap Production",
     description:
-      "Large-volume custom hat production: 5M+ caps per year, 100+ embroidery machines, volume tier pricing from 500 to 10,000+ pcs, 100% QC, FOB or CIF.",
+      "Large-volume custom hat production: 5M+ caps per year, 100+ embroidery machines, volume tier pricing from 500 to 10,000+ pcs, in-house QC, FOB or CIF.",
     author: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
     publisher: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
     datePublished: "2026-09-10",

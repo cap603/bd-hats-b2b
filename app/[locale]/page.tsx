@@ -508,7 +508,7 @@ export default function Home() {
                  {/* TODO: Replace with real QC inspection photo from your factory floor */}
                  <img 
                    src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&q=80&w=800" 
-                   alt="Quality Control Inspection" 
+                   alt="Quality Control" 
                    className="w-full h-auto"
                  />
                 <div className="absolute top-8 left-8 bg-white/90 backdrop-blur shadow-lg p-4 rounded-xl border border-gray-100">
