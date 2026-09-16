@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useT, useLang } from "../../../lib/i18n";
 import { HATS, Product } from "../../../lib/products";
+import { priceLabel, priceRange, hasNumericPrice } from "../../../lib/price";
 import { 
   MessageCircle, ArrowLeft, ShieldCheck, Zap, Globe, Cpu, 
   CheckCircle2, ChevronDown, ChevronUp, Image as ImageIcon, 
@@ -55,8 +56,11 @@ export default function ProductDetail() {
     },
     "offers": {
       "@type": "AggregateOffer",
-      "lowPrice": hat.price.split("-")[0].replace("$", "").trim(),
-      "highPrice": hat.price.split("-")[1]?.replace("$", "").trim() || hat.price.split("-")[0].replace("$", "").trim(),
+      // Numeric prices are emitted only for products with a published FOB band.
+      // Quote-on-request products omit them rather than advertising a number
+      // the factory has not confirmed.
+      "lowPrice": priceRange(hat.price)?.low,
+      "highPrice": priceRange(hat.price)?.high,
       "priceCurrency": "USD",
       "offerCount": "1",
       "availability": "https://schema.org/InStock",
@@ -159,10 +163,14 @@ export default function ProductDetail() {
             <div className="mb-8">
               <span className="text-yellow-600 text-xs font-black uppercase tracking-widest mb-2 block">{hat.category || "Premium Headwear"}</span>
               <h1 className="text-4xl md:text-5xl font-black text-black leading-tight mb-4">{hat.name}</h1>
-              <div className="flex items-baseline gap-3 mb-4">
+               <div className="flex items-baseline gap-3 mb-4">
                  <span className="text-3xl font-black text-black">{hat.price}</span>
-                 <span className="text-gray-400 font-bold">{t("unit")}</span>
-              </div>
+                 {/* "/ Unit (FOB)" only reads correctly next to a numeric price.
+                     Quote-on-request products show the MOQ instead. */}
+                 <span className="text-gray-400 font-bold">
+                   {hasNumericPrice(hat.price) ? t("unit") : `MOQ ${hat.moq} pcs`}
+                 </span>
+               </div>
 
               {/* Urgency strip — production slot availability */}
               <div className="flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2.5 mb-4 animate-pulse">
@@ -303,7 +311,7 @@ export default function ProductDetail() {
                   <div className="p-5">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-yellow-600">{r.category}</span>
                     <h3 className="font-bold text-sm text-black mt-1 mb-2 group-hover:text-yellow-600 transition line-clamp-2">{r.name}</h3>
-                    <p className="text-xs font-black text-black">FOB {r.price.split("-")[0]}</p>
+                    <p className="text-xs font-black text-black">{priceLabel(r.price)}</p>
                   </div>
                 </Link>
               ))}

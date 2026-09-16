@@ -212,5 +212,67 @@ export const HATS: Product[] = [
       closure: "Metal Buckle",
       panels: "6-Panel"
     }
+  },
+  {
+    id: "custom-embroidery-knitted-beanie",
+    name: "Custom Embroidery Knitted Beanie",
+    desc: "Warm winter beanie knitted from 100% acrylic, finished with your embroidered or 3D puff logo. Unisex 56-58cm fit, 61 stock colours for bulk programs.",
+    fullDesc: "A wholesale winter beanie built for logo programs. The acrylic rib knit holds its structure through repeated wear, and the front accepts flat embroidery, 3D puff or a woven patch. Unisex 56-58cm fit, 61 stock colours with custom yarn dyeing available on request. Samples dispatch from our Baoding factory in 3-5 working days.",
+    price: "Contact for factory pricing",
+    moq: 200,
+    img: "https://s.alicdn.com/@sc04/kf/H7fafba7566ca4703a3f63a78943c98d4u.jpg",
+    badge: "new",
+    category: "Beanies",
+    specs: {
+      material: "100% Acrylic",
+      style: "Cuffed Knitted Beanie",
+      logo: "Flat Embroidery / 3D Puff / Woven Patch",
+      closure: "Stretch fit (no closure)",
+      panels: "Knitted (seamless)"
+    },
+    customization: {
+      title: "Our Customization Capabilities",
+      options: [
+        "Flat embroidery, 3D puff or chenille on the front panel",
+        "Woven patch and leather label options",
+        "Custom woven or printed inner labels",
+        "61 stock colours, custom yarn dyeing on request"
+      ]
+    },
+    faqs: [
+      { q: "What is the MOQ for custom beanies?", a: "Our standard MOQ is 200 pieces per style and colour, in line with our other headwear lines." },
+      { q: "How long do beanie samples take?", a: "Sample production runs 3-5 working days. Bulk lead time is confirmed with your quotation." }
+    ]
+  },
+  {
+    id: "retro-washed-knitted-beanie",
+    name: "Retro Washed Knitted Beanie",
+    desc: "Vintage washed-finish beanie knitted from core yarn. Soft handfeel with a faded retro tone, made for lifestyle and streetwear ranges.",
+    fullDesc: "A retro-toned knitted beanie produced from core yarn and finished with a wash treatment that softens the handfeel and gives each unit a faded colour. Built for lifestyle, streetwear and winter accessory ranges where a vintage look matters. Unisex 56-58cm fit. Decoration is applied at the factory, so graphics and labels arrive ready for retail.",
+    price: "Contact for factory pricing",
+    moq: 200,
+    img: "https://s.alicdn.com/@sc04/kf/H379e73c6541e4b8ca551a5dcbc322440H.jpg",
+    badge: "new",
+    category: "Beanies",
+    specs: {
+      material: "Core Yarn (washed finish)",
+      style: "Retro Washed Knitted Beanie",
+      logo: "Digital Print / Woven Patch",
+      closure: "Stretch fit (no closure)",
+      panels: "Knitted (seamless)"
+    },
+    customization: {
+      title: "Our Customization Capabilities",
+      options: [
+        "Retro wash treatment for a faded vintage tone",
+        "Digital print and woven patch decoration",
+        "Custom woven or printed inner labels",
+        "Colour matching to your seasonal palette"
+      ]
+    },
+    faqs: [
+      { q: "What is the MOQ for the retro washed beanie?", a: "Our standard MOQ is 200 pieces per style and colour, consistent with our other headwear lines." },
+      { q: "Can the wash intensity be controlled?", a: "Yes — tell us the vintage level you want and we will produce a sample for approval before bulk." }
+    ]
   }
 ];

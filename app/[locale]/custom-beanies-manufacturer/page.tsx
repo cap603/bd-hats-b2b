@@ -62,9 +62,21 @@ const CONTENT = {
     ],
     pricingNote:
       "Simple acrylic beanies sit at the low end; merino blends with jacquard knitting or leather patches sit at the high end. Custom yarn dyeing carries a minimum quantity per colour — ask us before designing a palette with many shades.",
-    productsTitle: "Companion Styles to a Beanie Line",
-    productsNote: "Same brand, same order",
+    productsTitle: "Our Beanie Range",
+    productsNote: "MOQ 200 pcs · factory direct",
     products: [
+      {
+        href: "/product/custom-embroidery-knitted-beanie",
+        name: "Custom Embroidery Knitted Beanie",
+        img: "https://s.alicdn.com/@sc04/kf/H7fafba7566ca4703a3f63a78943c98d4u.jpg",
+        note: "100% acrylic · 61 stock colours",
+      },
+      {
+        href: "/product/retro-washed-knitted-beanie",
+        name: "Retro Washed Knitted Beanie",
+        img: "https://s.alicdn.com/@sc04/kf/H379e73c6541e4b8ca551a5dcbc322440H.jpg",
+        note: "Vintage wash · core yarn",
+      },
       {
         href: "/product/outdoor-performance-5-panel-cap",
         name: "Outdoor Performance 5 Panel Cap",
@@ -143,9 +155,21 @@ const CONTENT = {
     ],
     pricingNote:
       "Los gorros sencillos de acrílico se ubican en la parte baja del rango; las mezclas con merino, el tejido jacquard o los parches de cuero se ubican en la parte alta. El teñido de hilo a medida exige una cantidad mínima por color: consúltanos antes de diseñar una paleta con muchos tonos.",
-    productsTitle: "Estilos que combinan con una línea de gorros",
-    productsNote: "Misma marca, mismo pedido",
+    productsTitle: "Nuestra línea de gorros",
+    productsNote: "MOQ 200 uds · directo de fábrica",
     products: [
+      {
+        href: "/product/custom-embroidery-knitted-beanie",
+        name: "Custom Embroidery Knitted Beanie",
+        img: "https://s.alicdn.com/@sc04/kf/H7fafba7566ca4703a3f63a78943c98d4u.jpg",
+        note: "100% acrílico · 61 colores en stock",
+      },
+      {
+        href: "/product/retro-washed-knitted-beanie",
+        name: "Retro Washed Knitted Beanie",
+        img: "https://s.alicdn.com/@sc04/kf/H379e73c6541e4b8ca551a5dcbc322440H.jpg",
+        note: "Lavado vintage · hilo core",
+      },
       {
         href: "/product/outdoor-performance-5-panel-cap",
         name: "Outdoor Performance 5 Panel Cap",

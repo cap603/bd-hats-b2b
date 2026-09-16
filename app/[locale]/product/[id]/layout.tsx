@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { HATS } from "../../../lib/products";
+import { priceLabel } from "../../../lib/price";
 
 export async function generateMetadata({ params }: { params: { locale: string; id: string } }): Promise<Metadata> {
   const { locale, id } = await params;
@@ -16,11 +17,11 @@ export async function generateMetadata({ params }: { params: { locale: string; i
 
   return {
     title: `${hat.name} | Custom Wholesale`,
-    description: `${hat.desc} Price: ${hat.price} FOB. MOQ ${hat.moq}pcs. Custom ${hat.specs.material} material with ${hat.specs.logo}. Factory direct from Baoding Junyang.`,
+    description: `${hat.desc} Price: ${priceLabel(hat.price)}. MOQ ${hat.moq}pcs. Custom ${hat.specs.material} material with ${hat.specs.logo}. Factory direct from Baoding Junyang.`,
     alternates: { canonical, languages },
     openGraph: {
       title: `${hat.name} | BD Hats Factory`,
-      description: `Custom wholesale ${hat.name}. ${hat.price} FOB · MOQ ${hat.moq}pcs · Factory direct from Baoding Junyang.`,
+      description: `Custom wholesale ${hat.name}. ${priceLabel(hat.price)} · MOQ ${hat.moq}pcs · Factory direct from Baoding Junyang.`,
       images: [hat.img],
       type: "website",
       url: canonical,
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: { params: { locale: string; i
     twitter: {
       card: "summary_large_image",
       title: `${hat.name} | BD Hats`,
-      description: `Factory direct ${hat.name}. ${hat.price} FOB.`,
+      description: `Factory direct ${hat.name}. ${priceLabel(hat.price)}.`,
       images: [hat.img],
     },
   };

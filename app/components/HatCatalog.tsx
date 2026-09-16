@@ -5,13 +5,15 @@ import Link from "next/link";
 import { useT, useLang } from "../lib/i18n";
 import { MessageCircle, ArrowRight, ArrowUpDown } from "lucide-react";
 import { HATS } from "../lib/products";
+import { priceLabel } from "../lib/price";
 
-const CATEGORY_KEYS = ["filterAll", "filterBaseballCaps", "filterVintage", "filterSports"] as const;
+const CATEGORY_KEYS = ["filterAll", "filterBaseballCaps", "filterVintage", "filterSports", "filterBeanies"] as const;
 const CATEGORY_MAP: Record<string, string> = {
   "All": "filterAll",
   "Baseball Caps": "filterBaseballCaps",
   "Vintage Series": "filterVintage",
   "Sports & Active": "filterSports",
+  "Beanies": "filterBeanies",
 };
 const PANEL_TYPES = ["All", "5-Panel", "6-Panel"];
 const SORT_OPTIONS = [
@@ -62,7 +64,7 @@ export function HatCatalog() {
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
 
-  const CATEGORIES = ["All", "Baseball Caps", "Vintage Series", "Sports & Active"];
+  const CATEGORIES = ["All", "Baseball Caps", "Vintage Series", "Sports & Active", "Beanies"];
 
   return (
     <div>
@@ -180,7 +182,7 @@ export function HatCatalog() {
                 <p className="text-gray-500 text-xs leading-relaxed mb-4 line-clamp-2">{hat.desc}</p>
               </div>
               <div>
-                <p className="text-base font-black text-black mb-3">FOB {hat.price.split("-")[0]}</p>
+                <p className="text-base font-black text-black mb-3">{priceLabel(hat.price)}</p>
                 <div className="flex gap-2">
                   <button
                     onClick={(e) => handleWhatsAppClick(e, hat.name)}

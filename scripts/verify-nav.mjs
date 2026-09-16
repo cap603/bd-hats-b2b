@@ -1,4 +1,4 @@
-// Verify the Compare dropdown is present (and crawlable) across ALL page types.
+// Verify both nav dropdowns (Products + Compare) across ALL page types.
 const BASE = "https://bdjunyang.com";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -14,26 +14,44 @@ const PAGES = [
   ["landing new", "/en/corporate-custom-hats-supplier"],
   ["comparison", "/en/compare/flat-embroidery-vs-3d-puff"],
   ["es landing", "/es/custom-dad-hats-manufacturer"],
-  ["product page (expect: no dropdown)", "/en/product/custom-3d-embroidered-5-panel-gorras"],
+];
+
+const CATS = ["Baseball Cap", "Trucker Hat", "Snapback Cap", "Beanie", "Bucket Hat"];
+const CMP_LINKS = [
+  "/compare/5-panel-vs-6-panel-caps",
+  "/compare/flat-embroidery-vs-3d-puff",
+  "/compare/cotton-twill-vs-brushed-cotton-vs-canvas",
+  "/compare/snapback-vs-strapback-vs-buckle",
+  "/compare/china-vs-vietnam-vs-bangladesh-hat-sourcing",
 ];
 
 console.log("Waiting 120s for deployment...");
 await sleep(120000);
 
-let withMenu = 0;
-let total = 0;
-
+let pass = 0;
 for (const [name, path] of PAGES) {
   const html = await fetch(`${BASE}${path}`).then((r) => r.text());
-  const hasPanel = html.includes("Headwear comparisons");
-  const unique = new Set((html.match(/\/compare\/[a-z0-9-]+/g) || []));
-  const expectMenu = !name.includes("product page");
-  if (expectMenu) total++;
-  const ok = expectMenu ? hasPanel && unique.size >= 5 : true;
-  if (expectMenu && ok) withMenu++;
+  const hasProductsPanel = html.includes("Cap categories");
+  const catsFound = CATS.filter((c) => html.includes(c)).length;
+  const hasComparePanel = html.includes("Headwear comparisons");
+  const cmpFound = CMP_LINKS.filter((l) => html.includes(l)).length;
+
+  const ok = hasProductsPanel && catsFound === 5 && hasComparePanel && cmpFound === 5;
+  if (ok) pass++;
   console.log(
-    `${ok ? "OK  " : "FAIL"} ${name.padEnd(34)} dropdown=${hasPanel ? "y" : "n"} uniqueCompareLinks=${unique.size}`
+    `${ok ? "OK  " : "FAIL"} ${name.padEnd(28)} products=${hasProductsPanel ? "y" : "n"}/${catsFound}of5  compare=${hasComparePanel ? "y" : "n"}/${cmpFound}of5`
   );
 }
 
-console.log(`\npages with Compare dropdown: ${withMenu}/${total}`);
+// Homepage: Products must be the FIRST nav item
+const home = await fetch(`${BASE}/en`).then((r) => r.text());
+const navStart = home.indexOf("hidden md:flex items-center gap-8");
+const nav = home.slice(navStart, navStart + 1200);
+const productsPos = nav.indexOf("Cap categories");
+const advantagesPos = nav.indexOf("Advantages");
+console.log(
+  `\nhomepage nav order: Products@${productsPos} vs Advantages@${advantagesPos} → ${
+    productsPos > -1 && productsPos < advantagesPos ? "Products IS FIRST ✅" : "order wrong ❌"
+  }`
+);
+console.log(`pages fully OK: ${pass}/${PAGES.length}`);
