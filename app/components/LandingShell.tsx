@@ -4,7 +4,8 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Breadcrumb } from "./Breadcrumb";
 import { useLang } from "../lib/i18n";
-import { COMPARISON_LINKS } from "./ComparisonShell";
+import { COMPARISON_LINKS } from "../lib/comparison-links";
+import { NavCompareMenu } from "./NavCompareMenu";
 
 /**
  * Shared shell for buyer-intent landing pages.
@@ -96,6 +97,7 @@ export function LandingShell({
             <Link href={`/${lang}/#catalog`} className="hover:text-black transition">Products</Link>
             <Link href={`/${lang}/about`} className="hover:text-black transition">About</Link>
             <Link href={`/${lang}/guide`} className="hover:text-black transition">Guide</Link>
+            <NavCompareMenu />
             <Link href={`/${lang}/#inquiry`} className="hover:text-black transition">Inquiry</Link>
           </nav>
           <Link

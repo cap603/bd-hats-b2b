@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ArrowRight, Check, Minus } from "lucide-react";
 import { Breadcrumb } from "./Breadcrumb";
 import { useLang } from "../lib/i18n";
+import { COMPARISON_LINKS } from "../lib/comparison-links";
+import { NavCompareMenu } from "./NavCompareMenu";
 
 /**
  * Shared shell for X-vs-Y comparison pages.
@@ -18,19 +20,8 @@ import { useLang } from "../lib/i18n";
  * - Every comparison page cross-links the whole comparison cluster.
  */
 
-export const COMPARISON_LINKS = [
-  { href: "/compare/5-panel-vs-6-panel-caps", label: "5-Panel vs 6-Panel Caps" },
-  { href: "/compare/flat-embroidery-vs-3d-puff", label: "Flat vs 3D Puff Embroidery" },
-  {
-    href: "/compare/cotton-twill-vs-brushed-cotton-vs-canvas",
-    label: "Cotton Twill vs Brushed Cotton vs Canvas",
-  },
-  { href: "/compare/snapback-vs-strapback-vs-buckle", label: "Snapback vs Strapback vs Buckle" },
-  {
-    href: "/compare/china-vs-vietnam-vs-bangladesh-hat-sourcing",
-    label: "China vs Vietnam vs Bangladesh",
-  },
-];
+// Re-exported so existing pages can keep importing it from this module.
+export { COMPARISON_LINKS };
 
 /** 40–60 word direct-answer block. Rendered high on the page on purpose. */
 export function QuickAnswer({ label, children }: { label: string; children: React.ReactNode }) {
@@ -192,9 +183,7 @@ export function ComparisonShell({
             <Link href={`/${lang}/guide`} className="hover:text-black transition">
               Buyer&apos;s Guide
             </Link>
-            <Link href={`/${lang}/compare/5-panel-vs-6-panel-caps`} className="hover:text-black transition">
-              Comparisons
-            </Link>
+            <NavCompareMenu />
             <Link href={`/${lang}/#inquiry`} className="hover:text-black transition">
               Inquiry
             </Link>
