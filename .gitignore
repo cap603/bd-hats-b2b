@@ -44,3 +44,6 @@ SHOPIFY_BLUEPRINT.md
 app_page_b64.txt
 next_config_b64.txt
 video.mp4
+
+# exception: IndexNow ownership key must be publicly served and committed
+!public/*.txt
