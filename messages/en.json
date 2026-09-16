@@ -61,8 +61,8 @@
       "p1": "Unlike general agents, Baoding Junyang runs its own specialized production lines. We employ over 200 skilled tailors and run 100+ state-of-the-art Japanese Barudan embroidery machines.",
       "p2Pre": "Our Transparency Policy:",
       "p2": "We send you direct photos and video updates (fabric cutting, embroidery precision, sewing structure, final ironing) throughout your production. You are virtually inside the factory floor.",
-      "aql": "100% Inspection",
-      "aqlDesc": "Rigid piece-by-piece inspection.",
+      "qcStandard": "100% Inspection",
+      "qcStandardDesc": "Rigid piece-by-piece inspection.",
       "samples": "7-Day Samples",
       "samplesDesc": "Fast physical prototype delivery.",
       "videoCta": "Request Factory Video Tour",
@@ -85,7 +85,7 @@
       "sgsSupplier": "SGS Verified Supplier",
       "goldSupplier": "Alibaba Gold Supplier",
       "certifications": "CE · REACH · RoHS Certified",
-      "aqlStandard": "100% Piece-by-Piece Inspection"
+      "qcStandard": "100% Piece-by-Piece Inspection"
     },
     "catalog": {
       "label": "Premium Hat Categories",
@@ -118,7 +118,7 @@
       "step5Title": "Export Packing & Label Audit",
       "step5Desc": "Final count verification against the packing list and shipping label audit to ensure 100% accuracy in international logistics.",
       "liveStatus": "Live Status",
-      "aqlPassed": "QC Passed"
+      "qcPassed": "QC Passed"
     },
     "faq": {
       "heading": "Common Questions",
@@ -183,8 +183,8 @@
     "backToCatalog": "Back to Catalog",
     "whatsappQuote": "WhatsApp Quote",
     "topSeller": "Top Seller",
-    "aql": "100% QC",
-    "aqlSub": "QC Standard",
+    "qc": "100% QC",
+    "qcSub": "QC Standard",
     "production": "15 Days",
     "productionSub": "Production",
     "moq": "200 Pcs",

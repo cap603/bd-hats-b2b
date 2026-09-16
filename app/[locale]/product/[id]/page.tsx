@@ -144,7 +144,7 @@ export default function ProductDetail() {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                {[
-                 { icon: ShieldCheck, label: t("aql"), sub: t("aqlSub") },
+                 { icon: ShieldCheck, label: t("qc"), sub: t("qcSub") },
                  { icon: Zap, label: t("production"), sub: t("productionSub") },
                  { icon: Package, label: t("moq"), sub: t("moqSub") },
                  { icon: Truck, label: t("shipping"), sub: t("shippingSub") }

@@ -302,8 +302,8 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <ShieldCheck className="text-green-500 shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-bold text-black">{t("factory.aql")}</h4>
-                    <p className="text-xs text-gray-500">{t("factory.aqlDesc")}</p>
+                    <h4 className="font-bold text-black">{t("factory.qcStandard")}</h4>
+                    <p className="text-xs text-gray-500">{t("factory.qcStandardDesc")}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -409,7 +409,7 @@ export default function Home() {
               <span className="text-sm font-bold">{t("trust.certifications")}</span>
             </div>
             <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
-              <span className="text-sm font-bold">{t("trust.aqlStandard")}</span>
+              <span className="text-sm font-bold">{t("trust.qcStandard")}</span>
             </div>
           </div>
         </div>
@@ -516,7 +516,7 @@ export default function Home() {
                     <div className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></div>
                     <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">{t("qc.liveStatus")}</span>
                   </div>
-                  <p className="text-black font-bold text-sm">{t("qc.aqlPassed")}</p>
+                  <p className="text-black font-bold text-sm">{t("qc.qcPassed")}</p>
                 </div>
               </div>
             </div>
