@@ -58,7 +58,7 @@ const CONTENT = {
     stats: [
       { value: "$3.50 – $7.00", label: "Per unit, FOB" },
       { value: "7 / 15-20 Days", label: "Sample / bulk" },
-      { value: "AQL 2.5", label: "5-Stage QC protocol" },
+      { value: "100%", label: "Piece-by-piece inspection" },
     ],
     pricingNote:
       "A plain 5-panel in cotton twill sits at the low end of the range. Adding heavy 3D puff embroidery, contrast panels, custom lining and retail packaging moves it toward the top. Digitising, thread colour matching and one round of sample revisions are included.",
@@ -138,7 +138,7 @@ const CONTENT = {
     stats: [
       { value: "$3.50 – $7.00", label: "Por unidad, FOB" },
       { value: "7 / 15-20 Days", label: "Muestra / producción en masa" },
-      { value: "AQL 2.5", label: "Protocolo de control de calidad de 5 etapas" },
+      { value: "100%", label: "Inspección pieza por pieza" },
     ],
     pricingNote:
       "Un 5 paneles liso en sarga de algodón queda en el rango bajo. Agregar bordado 3D puff intenso, paneles contrastantes, forro personalizado y empaque retail lo lleva hacia el tope. La digitalización, la igualación de color de hilo y una ronda de revisiones de muestra están incluidas.",

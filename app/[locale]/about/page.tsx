@@ -18,7 +18,7 @@ const TIMELINE = [
 const TEAM = [
   { role: "Sales Director", name: "Sales Team", desc: "Your dedicated B2B specialist — fluent in English, ready to quote within 12 hours. Handles all inquiries from initial contact to final delivery.", emoji: "💼" },
   { role: "Head of Design", name: "Design Team", desc: "Specializes in 3D embroidery digitizing and production-ready design files. Turns sketches, logos, or just an idea into a manufacturable design.", emoji: "🎨" },
-  { role: "QC Manager", name: "QC Team", desc: "Leads our 5-stage AQL 2.5 inspection protocol. Every single cap is piece-by-piece checked before leaving the factory floor.", emoji: "🔍" },
+  { role: "QC Manager", name: "QC Team", desc: "Leads our 5-stage piece-by-piece inspection protocol. Every single cap is piece-by-piece checked before leaving the factory floor.", emoji: "🔍" },
   { role: "Production Manager", name: "Production Team", desc: "Oversees 200+ tailors and 100+ Japanese embroidery machines. Ensures on-time delivery without compromising quality.", emoji: "🧵" }
 ];
 

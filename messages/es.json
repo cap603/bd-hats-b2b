@@ -61,7 +61,7 @@
       "p1": "A diferencia de los intermediarios, Baoding Junyang opera sus propias líneas de producción. Empleamos a más de 200 sastres especializados y operamos más de 100 máquinas de bordado japonesas Barudan de última generación.",
       "p2Pre": "Nuestra Política de Transparencia:",
       "p2": "Te enviamos fotos y videos directos (corte de tela, precisión del bordado, estructura de costura, planchado final) durante toda tu producción. Estás virtualmente dentro de la fábrica.",
-      "aql": "Estándar AQL 2.5",
+      "aql": "Inspección 100%",
       "aqlDesc": "Inspección rigurosa pieza por pieza.",
       "samples": "Muestras en 7 Días",
       "samplesDesc": "Entrega rápida de prototipo físico.",
@@ -85,7 +85,7 @@
       "sgsSupplier": "Proveedor Verificado SGS",
       "goldSupplier": "Proveedor Gold de Alibaba",
       "certifications": "CE · REACH · RoHS Certificado",
-      "aqlStandard": "Estándar de Calidad AQL 2.5"
+      "aqlStandard": "Inspección 100% Pieza por Pieza"
     },
     "catalog": {
       "label": "Categorías Premium de Gorras",
@@ -118,7 +118,7 @@
       "step5Title": "Auditoría de Empaque y Etiquetado",
       "step5Desc": "Verificación final del conteo contra la lista de empaque y auditoría de etiquetas de envío para garantizar 100% de precisión en logística internacional.",
       "liveStatus": "Estado en Vivo",
-      "aqlPassed": "AQL 2.5 Aprobado"
+      "aqlPassed": "QC Aprobado"
     },
     "faq": {
       "heading": "Preguntas Frecuentes",
@@ -183,7 +183,7 @@
     "backToCatalog": "Volver al Catálogo",
     "whatsappQuote": "Cotizar por WhatsApp",
     "topSeller": "Más Vendido",
-    "aql": "AQL 2.5",
+    "aql": "QC 100%",
     "aqlSub": "Estándar QC",
     "production": "15 Días",
     "productionSub": "Producción",

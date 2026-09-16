@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         : "OEM Hat Manufacturer China | Private Label Hat Factory",
     description:
       locale === "es"
-        ? "Fabricante OEM/ODM de gorras en China. Más de 100 máquinas de bordado, fábrica de 50.000m², certificada SGS/CE/REACH, control de calidad AQL 2.5. Gorras de béisbol, snapbacks y gorros de marca propia desde 2014."
-        : "Full-service OEM/ODM hat manufacturer in China. 100+ embroidery machines, 50,000sqm factory, SGS/CE/REACH certified, AQL 2.5 QC. Private label baseball caps, snapbacks, beanies since 2014.",
+        ? "Fabricante OEM/ODM de gorras en China. Más de 100 máquinas de bordado, fábrica de 50.000m², certificada SGS/CE/REACH, 100% inspeccionado. Gorras de béisbol, snapbacks y gorros de marca propia desde 2014."
+        : "Full-service OEM/ODM hat manufacturer in China. 100+ embroidery machines, 50,000sqm factory, SGS/CE/REACH certified, 100% inspected. Private label baseball caps, snapbacks, beanies since 2014.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

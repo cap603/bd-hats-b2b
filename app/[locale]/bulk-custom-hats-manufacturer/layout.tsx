@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         : "Bulk Custom Hats Manufacturer | Large Volume Cap Production",
     description:
       locale === "es"
-        ? "Producción de gorras personalizadas en gran volumen: 5M+ unidades al año, más de 100 máquinas de bordado, descuentos desde 500uds hasta 10.000+. AQL 2.5, SGS verificado, FOB o CIF."
-        : "Large-volume custom hat production: 5M+ caps per year, 100+ embroidery machines, volume pricing from 500 to 10,000+ pcs. AQL 2.5, SGS verified, FOB or CIF terms.",
+        ? "Producción de gorras personalizadas en gran volumen: 5M+ unidades al año, más de 100 máquinas de bordado, descuentos desde 500uds hasta 10.000+. 100% inspeccionado, SGS verificado, FOB o CIF."
+        : "Large-volume custom hat production: 5M+ caps per year, 100+ embroidery machines, volume pricing from 500 to 10,000+ pcs. 100% inspected, SGS verified, FOB or CIF terms.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
           : "Bulk Custom Hats — Large Volume Production | BD Hats",
       description:
         locale === "es"
-          ? "Capacidad industrial de 5M+ gorras al año con control de calidad AQL 2.5 y escalones de precio por volumen."
-          : "Industrial capacity of 5M+ caps per year with AQL 2.5 QC and tiered volume pricing.",
+          ? "Capacidad industrial de 5M+ gorras al año con QC 100% y escalones de precio por volumen."
+          : "Industrial capacity of 5M+ caps per year with 100% QC and tiered volume pricing.",
     },
   };
 }

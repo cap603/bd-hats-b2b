@@ -40,7 +40,7 @@ const CONTENT = {
       },
       {
         title: "Decoration-Ready Quality",
-        desc: "Blank does not mean cheap. All caps pass the same 5-stage AQL 2.5 inspection: fabric check, panel symmetricity, stitching integrity, thread trimming and packing audit. Flat brims stay flat after shipping.",
+        desc: "Blank does not mean cheap. All caps pass the same 5-stage 100% inspection: fabric check, panel symmetricity, stitching integrity, thread trimming and packing audit. Flat brims stay flat after shipping.",
       },
     ],
     specsTitle: "Blank Cap Specification Sheet",
@@ -120,7 +120,7 @@ const CONTENT = {
       },
       {
         title: "Calidad lista para decorar",
-        desc: "Blank no significa barato. Todas las gorras pasan la misma inspección de 5 etapas con AQL 2.5: revisión de tejido, simetría de paneles, integridad de costuras, corte de hilos y auditoría de empaque. Las viseras planas se mantienen planas después del envío.",
+        desc: "Blank no significa barato. Todas las gorras pasan la misma inspección 100% de 5 etapas: revisión de tejido, simetría de paneles, integridad de costuras, corte de hilos y auditoría de empaque. Las viseras planas se mantienen planas después del envío.",
       },
     ],
     specsTitle: "Ficha técnica de la gorra blank",
