@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     title:
       locale === "es"
-        ? "Gorras de 5 Paneles vs 6 Paneles: ¿Cuál Elegir para Tu Marca? | BD Hats"
-        : "5-Panel vs 6-Panel Caps: Which Should Your Brand Choose? | BD Hats",
+        ? "Gorras de 5 Paneles vs 6 Paneles: ¿Cuál Elegir para Tu Marca?"
+        : "5-Panel vs 6-Panel Caps: Which Should Your Brand Choose?",
     description:
       locale === "es"
         ? "Comparativa de gorras de 5 y 6 paneles: construcción del frente, superficie para logo, compatibilidad con bordado 3D puff, costo y cuál vende más. Datos de fábrica, MOQ 200 uds."

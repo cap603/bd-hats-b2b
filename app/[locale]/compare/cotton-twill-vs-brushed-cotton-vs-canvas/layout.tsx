@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     title:
       locale === "es"
-        ? "Sarga de Algodón vs Algodón Cepillado vs Canvas: ¿Cuál Elegir? | BD Hats"
-        : "Cotton Twill vs Brushed Cotton vs Canvas Caps: Which to Choose? | BD Hats",
+        ? "Sarga de Algodón vs Algodón Cepillado vs Canvas: ¿Cuál Elegir?"
+        : "Cotton Twill vs Brushed Cotton vs Canvas Caps: Which to Choose?",
     description:
       locale === "es"
         ? "Sarga de algodón, algodón cepillado y canvas comparados: tacto, peso y estructura, transpiración, durabilidad, teñido y acabados lavados, precio y estilos de gorra. Datos de fábrica, MOQ 200 uds."

@@ -36,7 +36,7 @@ export function NavCompareMenu({ label = "Compare" }: { label?: string }) {
 
       {/* pt-3 keeps the hover bridge so the panel does not close in the gap */}
       <div
-        className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50 w-80 ${
+        className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50 w-96 ${
           open
             ? "visible opacity-100"
             : "invisible opacity-0 group-hover:visible group-hover:opacity-100"
