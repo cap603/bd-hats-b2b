@@ -175,13 +175,16 @@ export default async function LocaleLayout({
       <body>
         <I18nProvider locale={locale} messages={messages}>
           {children}
+          {/* Floating WhatsApp button — appears on every page.
+              IMPORTANT: these two must stay INSIDE I18nProvider. Outside it,
+              useT() finds an empty messages object and returns raw keys such as
+              "chat.cta" / "popup.heading", which is what visitors would read. */}
+          <WhatsAppFloat />
+          {/* Intent popup — appears after 30s of browsing, once per session */}
+          <IntentPopup />
         </I18nProvider>
         {/* Vercel Analytics — zero-config traffic & pageview tracking */}
         <Analytics />
-        {/* Floating WhatsApp button — appears on every page */}
-        <WhatsAppFloat />
-        {/* Intent popup — appears after 30s of browsing, once per session */}
-        <IntentPopup />
         {/* GA4 — enabled when NEXT_PUBLIC_GA4_ID is set in Vercel env */}
         {process.env.NEXT_PUBLIC_GA4_ID && (
           <>
