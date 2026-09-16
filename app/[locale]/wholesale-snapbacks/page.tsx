@@ -4,7 +4,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { useLang } from "../../lib/i18n";
-import { COMPARISON_LINKS } from "../../components/ComparisonShell";
+import { COMPARISON_LINKS } from "../../lib/comparison-links";
+import { NavCompareMenu } from "../../components/NavCompareMenu";
 
 const CONTENT = {
   en: {
@@ -110,6 +111,7 @@ export default function SnapbacksPage() {
             <Link href={`/${lang}/#catalog`} className="hover:text-black transition">Products</Link>
             <Link href={`/${lang}/about`} className="hover:text-black transition">About</Link>
             <Link href={`/${lang}/guide`} className="hover:text-black transition">Guide</Link>
+            <NavCompareMenu />
             <Link href={`/${lang}/#inquiry`} className="hover:text-black transition">Inquiry</Link>
           </nav>
           <Link href={`/${lang}/#inquiry`} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm">Get Quote</Link>
