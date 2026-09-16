@@ -107,6 +107,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly" as const,
         priority: 0.8,
       },
+      // Comparison pages — machine-extractable X vs Y content (AI-citation friendly)
+      {
+        url: `${baseUrl}${lc}/compare/5-panel-vs-6-panel-caps`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      },
+      {
+        url: `${baseUrl}${lc}/compare/flat-embroidery-vs-3d-puff`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      },
+      {
+        url: `${baseUrl}${lc}/compare/cotton-twill-vs-brushed-cotton-vs-canvas`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      },
+      {
+        url: `${baseUrl}${lc}/compare/snapback-vs-strapback-vs-buckle`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      },
+      {
+        url: `${baseUrl}${lc}/compare/china-vs-vietnam-vs-bangladesh-hat-sourcing`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      },
     );
 
     for (const product of HATS) {

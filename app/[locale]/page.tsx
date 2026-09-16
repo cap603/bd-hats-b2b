@@ -616,6 +616,11 @@ export default function Home() {
             <li><a href={`/${lang}/bulk-custom-hats-manufacturer`} className="hover:text-white">Bulk Hat Production</a></li>
             <li><a href={`/${lang}/custom-beanies-manufacturer`} className="hover:text-white">Custom Beanies</a></li>
             <li><a href={`/${lang}/custom-bucket-hats-manufacturer`} className="hover:text-white">Custom Bucket Hats</a></li>
+            <li><a href={`/${lang}/compare/5-panel-vs-6-panel-caps`} className="hover:text-white">5-Panel vs 6-Panel Caps</a></li>
+            <li><a href={`/${lang}/compare/flat-embroidery-vs-3d-puff`} className="hover:text-white">Flat vs 3D Puff Embroidery</a></li>
+            <li><a href={`/${lang}/compare/cotton-twill-vs-brushed-cotton-vs-canvas`} className="hover:text-white">Twill vs Brushed Cotton vs Canvas</a></li>
+            <li><a href={`/${lang}/compare/snapback-vs-strapback-vs-buckle`} className="hover:text-white">Snapback vs Strapback vs Buckle</a></li>
+            <li><a href={`/${lang}/compare/china-vs-vietnam-vs-bangladesh-hat-sourcing`} className="hover:text-white">China vs Vietnam vs Bangladesh</a></li>
                 <li><a href="#inquiry" className="hover:text-white">{ft("requestQuote")}</a></li>
               </ul>
             </div>

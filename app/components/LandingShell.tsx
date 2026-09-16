@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Breadcrumb } from "./Breadcrumb";
 import { useLang } from "../lib/i18n";
+import { COMPARISON_LINKS } from "./ComparisonShell";
 
 /**
  * Shared shell for buyer-intent landing pages.
@@ -171,11 +172,23 @@ export function LandingShell({
               Baoding Junyang Hat Manufacturing Co., Ltd. — premium custom hat factory since 2014.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
             <div>
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Capabilities</h4>
               <ul className="space-y-2 text-sm">
                 {LANDING_LINKS.map((l) => (
+                  <li key={l.href}>
+                    <Link href={`/${lang}${l.href}`} className="hover:text-white">
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Comparisons</h4>
+              <ul className="space-y-2 text-sm">
+                {COMPARISON_LINKS.map((l) => (
                   <li key={l.href}>
                     <Link href={`/${lang}${l.href}`} className="hover:text-white">
                       {l.label}
