@@ -162,11 +162,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className="scroll-smooth">
       <head>
-        <link rel="preconnect" href="https://sc01.alicdn.com" />
-        <link rel="preconnect" href="https://sc02.alicdn.com" />
-        <link rel="preconnect" href="https://sc04.alicdn.com" />
-        <link rel="preconnect" href="https://s.alicdn.com" />
-        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        {/* All imagery is self-hosted under /public/images now, so the old
+            preconnects to the Alibaba CDN and Unsplash only bought a wasted DNS
+            lookup and TLS handshake on every page load. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
