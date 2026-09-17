@@ -141,7 +141,7 @@ export function HatCatalog() {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {filteredHats.map((hat) => (
           <Link
             href={`/${lang}/product/${hat.id}`}
@@ -184,17 +184,17 @@ export function HatCatalog() {
                 </span>
               </div>
             </div>
-            <div className="p-6 flex flex-col flex-grow justify-between">
+            <div className="p-4 flex flex-col flex-grow justify-between">
               <div>
-                <div className="flex justify-between items-start mb-2">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">{t("moq", { count: hat.moq })}</span>
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-yellow-600">{t("factoryDirect")}</span>
+                <div className="flex justify-between items-start gap-2 mb-1.5">
+                  <span className="text-[9px] font-bold uppercase tracking-wider text-gray-400 whitespace-nowrap">{t("moq", { count: hat.moq })}</span>
+                  <span className="text-[9px] font-bold uppercase tracking-wider text-yellow-600 whitespace-nowrap">{t("factoryDirect")}</span>
                 </div>
-                <h3 className="text-base font-bold text-black mb-2 group-hover:text-yellow-600 transition line-clamp-2 leading-snug">{hat.name}</h3>
-                <p className="text-gray-500 text-xs leading-relaxed mb-4 line-clamp-2">{hat.desc}</p>
+                <h3 className="text-sm font-bold text-black mb-1.5 group-hover:text-yellow-600 transition line-clamp-2 leading-snug">{hat.name}</h3>
+                <p className="text-gray-500 text-[11px] leading-relaxed mb-3 line-clamp-2">{hat.desc}</p>
               </div>
               <div>
-                <p className="text-base font-black text-black mb-3">{priceLabel(hat.price)}</p>
+                <p className="text-sm font-black text-black mb-2.5">{priceLabel(hat.price)}</p>
                 <div className="flex gap-2">
                   <button
                     onClick={(e) => handleWhatsAppClick(e, hat.name)}
