@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
           : "Real cost, relief and durability differences between flat embroidery and 3D puff.",
       images: [
         {
-          url: "https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png",
+          url: "/images/brand/junyang-logo.png",
           alt: "BD Hats · JUNYANG custom cap factory",
         },
       ],

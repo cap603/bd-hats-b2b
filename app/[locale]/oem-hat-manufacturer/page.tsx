@@ -93,7 +93,7 @@ export default function OemPage() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href={`/${lang}`} className="flex items-center gap-4">
-            <img src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" alt="JUNYANG" className="h-12 w-auto object-contain" />
+            <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-12 w-auto object-contain" />
             <span className="hidden lg:block text-xl font-black text-black">JUNYANG</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
@@ -173,7 +173,7 @@ export default function OemPage() {
       <footer className="bg-gray-950 text-gray-500 py-16 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
-            <img src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" alt="JUNYANG" className="h-16 w-auto object-contain mb-4" />
+            <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-16 w-auto object-contain mb-4" />
             <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Hat Manufacturing Co., Ltd. — premium custom hat factory since 2014.</p>
           </div>
           <div className="grid grid-cols-2 gap-12">

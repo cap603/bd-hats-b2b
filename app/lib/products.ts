@@ -35,7 +35,7 @@ export const HATS: Product[] = [
     fullDesc: "This premium A-Frame cap represents the pinnacle of street fashion manufacturing. Utilizing high-density foam for the front panel, it provides a perfectly structured profile that never collapses. The contrast visor adds a bold visual pop, making it a favorite for streetwear brands globally.",
     price: "$3.50 - $7.00",
     moq: 200,
-    img: "https://sc01.alicdn.com/kf/H4faf483cc337458cbb9d161826e041f2u.png",
+    img: "/images/products/two-tone-3d-embroidery-a-frame-cap.webp",
     category: "Baseball Caps",
     specs: {
       material: "Premium Cotton Twill",
@@ -65,7 +65,7 @@ export const HATS: Product[] = [
     fullDesc: "Our most viewed product on Alibaba.com. This 5-panel cap is built with premium 108*56 heavy cotton twill, designed specifically for brands requiring intricate 3D puff embroidery. The front panel provides a large canvas for bold branding without seam interference.",
     price: "$3.50 - $7.00",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H29fdeb6f4619484b9c599ddf5b497ecfl/Factory-Price-100-cotton-5-Panel-Gorras.png",
+    img: "/images/products/custom-3d-embroidered-5-panel-gorras.webp",
     badge: "bestseller",
     category: "Baseball Caps",
     specs: {
@@ -96,7 +96,7 @@ export const HATS: Product[] = [
     fullDesc: "The #2 best-seller in our Alibaba store. This cap undergoes a rigorous washing and treatment process to achieve its unique distressed look. Ideal for brands looking for a high-end vintage or streetwear vibe. Features a soft, unstructured crown for the ultimate 'Dad Hat' fit.",
     price: "$3.50 - $7.00",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/Hf2141a42b2ed454ca54b221bf447618dD/Wholesale-Acid-Wash-Vintage-6-Panel-Unisex.jpg",
+    img: "/images/products/vintage-acid-wash-6-panel-dad-hat.webp",
     badge: "trending",
     category: "Vintage Series",
     specs: {
@@ -126,7 +126,7 @@ export const HATS: Product[] = [
     fullDesc: "Engineered for high performance. This cap uses lightweight cotton-nylon blends for superior moisture management. The 5-panel construction ensures a sleek, streamlined look while providing maximum comfort during physical activity.",
     price: "$3.50 - $7.00",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H491f2ecb113c48148e0b4e7fd119c9ceQ.jpg",
+    img: "/images/products/outdoor-performance-5-panel-cap.webp",
     category: "Sports & Active",
     specs: {
       material: "Breathable Tech Cotton",
@@ -152,7 +152,7 @@ export const HATS: Product[] = [
     fullDesc: "A high-stability cap that maintains its shape. Built with heavy-duty buckram front panels, this cap is the industry standard for durability and classic fit. Perfect for corporate programs or brands requiring a consistent, high-impact retail presence.",
     price: "$3.50 - $7.00",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png",
+    img: "/images/products/structured-multi-color-baseball-cap.webp",
     category: "Baseball Caps",
     specs: {
       material: "Heavy Duty Cotton Twill",
@@ -169,7 +169,7 @@ export const HATS: Product[] = [
     fullDesc: "Designed with a smaller circumference and slightly shorter brim to provide a perfect fit for women's head shapes. This cap is a top choice for athleisure and boutique female fashion brands.",
     price: "$3.50 - $7.00",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/Hd4865fa5783c4a5da8fd17a2fd64f703G.png",
+    img: "/images/products/ladies-plain-blank-cotton-sports-cap.webp",
     category: "Baseball Caps",
     specs: {
       material: "Fine Cotton Twill",
@@ -186,7 +186,7 @@ export const HATS: Product[] = [
     fullDesc: "Contrast visor and panels for maximum visual appeal. The A-frame crown provides a unique profile that's highly popular in the Australian and US streetwear markets. 100% customizable from colors to stitching thread.",
     price: "$3.50 - $7.00",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H5a0171373c2b42a6a0083b82f6e7c57da.jpg",
+    img: "/images/products/personalised-two-tone-a-frame-cap.webp",
     category: "Baseball Caps",
     specs: {
       material: "Premium Cotton Canvas",
@@ -203,7 +203,7 @@ export const HATS: Product[] = [
     fullDesc: "This cap features reinforced ventilation eyelets and a lightweight mesh-lined crown. Designed for heavy use in sports and outdoor events, it maintains a crisp, professional look while keeping the wearer cool.",
     price: "$3.50 - $7.00",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/Hefa4838aa05548fc9893878e057a8bees.png",
+    img: "/images/products/breathable-custom-embroidered-6-panel.webp",
     category: "Baseball Caps",
     specs: {
       material: "Breathable Cotton Mix",
@@ -220,7 +220,7 @@ export const HATS: Product[] = [
     fullDesc: "A wholesale winter beanie built for logo programs. The acrylic rib knit holds its structure through repeated wear, and the front accepts flat embroidery, 3D puff or a woven patch. Unisex 56-58cm fit, 61 stock colours with custom yarn dyeing available on request. Samples dispatch from our Baoding factory in 3-5 working days.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H7fafba7566ca4703a3f63a78943c98d4u.jpg",
+    img: "/images/products/custom-embroidery-knitted-beanie.webp",
     badge: "new",
     category: "Beanies",
     specs: {
@@ -251,7 +251,7 @@ export const HATS: Product[] = [
     fullDesc: "A retro-toned knitted beanie produced from core yarn and finished with a wash treatment that softens the handfeel and gives each unit a faded colour. Built for lifestyle, streetwear and winter accessory ranges where a vintage look matters. Unisex 56-58cm fit. Decoration is applied at the factory, so graphics and labels arrive ready for retail.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H379e73c6541e4b8ca551a5dcbc322440H.jpg",
+    img: "/images/products/retro-washed-knitted-beanie.webp",
     badge: "new",
     category: "Beanies",
     specs: {
@@ -282,12 +282,12 @@ export const HATS: Product[] = [
     fullDesc: "A foam-front 5-panel trucker built for summer and outdoor programmes. The foam front holds its shape and takes 3D puff or flat embroidery, silk screen and heat-transfer printing without collapsing, while the mesh back keeps the cap light and breathable. Logo positions include the front panel, brim, side panels and back. Unisex 56-58cm head circumference. Custom design files are prepared in 3 days and a physical sample in 7 days.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H5bfd56a0758f4158b28790eaaba50679m.png_960x960q80.jpg",
+    img: "/images/products/custom-foam-front-trucker-hat.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/H5bfd56a0758f4158b28790eaaba50679m.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H5b967074766f4f678becefbdc3a891b7a.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H983210a55abd4439b781c702cd7a9e79K.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hb9d05779eadf44d0992f122673013b1cq.jpg_960x960q80.jpg"
+      "/images/products/custom-foam-front-trucker-hat.webp",
+      "/images/products/custom-foam-front-trucker-hat-2.webp",
+      "/images/products/custom-foam-front-trucker-hat-3.webp",
+      "/images/products/custom-foam-front-trucker-hat-4.webp"
     ],
     badge: "new",
     category: "Trucker Hats",
@@ -320,12 +320,12 @@ export const HATS: Product[] = [
     fullDesc: "A 6-panel flat-brim snapback for streetwear, hip-hop and casual ranges. The polyester shell keeps the flat brim crisp, and the adjustable buckle closure fits a 56-60cm head. Heat-transfer printing suits full-colour graphics, while flat embroidery gives a raised logo; artwork can be placed on the front panel, brim, side panels and back. 14 stock colours are available for sampling and bulk. Custom design files are prepared in 3 days and a physical sample in 7 days.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H5d9801b9d2ac4d1a8283ff6a66ee28ad7.jpg_960x960q80.jpg",
+    img: "/images/products/vintage-flat-brim-snapback-cap.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/H5d9801b9d2ac4d1a8283ff6a66ee28ad7.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H2970f4423d9b4a79ae0508e08cdb0cec1.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hae011aa7a8bb4c8ca5cd09439f9449b3r.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hfccf9b2d8c3f4663bc4e83f97857792bx.png_960x960q80.jpg"
+      "/images/products/vintage-flat-brim-snapback-cap.webp",
+      "/images/products/vintage-flat-brim-snapback-cap-2.webp",
+      "/images/products/vintage-flat-brim-snapback-cap-3.webp",
+      "/images/products/vintage-flat-brim-snapback-cap-4.webp"
     ],
     badge: "new",
     category: "Snapback Caps",
@@ -359,12 +359,12 @@ export const HATS: Product[] = [
     fullDesc: "A nylon bucket hat designed for hiking, travel and outdoor programmes. The large brim shades the face and neck, and the nylon shell is waterproof and sun-protective. Head circumference options cover 56-58cm and 58-60cm plus an adjustable fit. Brand graphics can be applied by heat-transfer, digital or silk screen printing, with embroidery available on request. 7 stock colours are available for sampling and bulk. Custom design files are prepared in 3 days and a physical sample in 7 days.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H4d62772bbf2a4f21b12b5eb83439751dI.png_960x960q80.jpg",
+    img: "/images/products/nylon-large-brim-bucket-hat.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/H4d62772bbf2a4f21b12b5eb83439751dI.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hf0b62b5b07a54682829d0c559bdcaa344.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hc30e978908ed4bbd8cc9881907a214c2q.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H1c29ccd3b6c94f40a8b17f0872109691s.png_960x960q80.jpg"
+      "/images/products/nylon-large-brim-bucket-hat.webp",
+      "/images/products/nylon-large-brim-bucket-hat-2.webp",
+      "/images/products/nylon-large-brim-bucket-hat-3.webp",
+      "/images/products/nylon-large-brim-bucket-hat-4.webp"
     ],
     badge: "new",
     category: "Bucket Hats",
@@ -399,12 +399,12 @@ export const HATS: Product[] = [
     fullDesc: "A structured high-profile 5-panel in 100% cotton, built for streetwear drops that need a raised crown and a bold front graphic. The two-tone panelling separates the crown from the visor, and the seamless front panel takes 3D embroidery, silk screen or heat-transfer artwork without distortion. Adjustable buckle closure, 56-58cm head circumference. Logo positions include the front panel, brim, side panels and back.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H9ff6b827d4dd4691afa0c7227d72b77cg.png_960x960q80.jpg",
+    img: "/images/products/two-tone-structured-5-panel-streetwear-cap.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/H9ff6b827d4dd4691afa0c7227d72b77cg.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H478f8b0ab5054036b9eb803aa60b62e0e.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/He080fb2ca65c475b9b5bfcf1a92edbf9D.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H95fb25164859495f810587865e62ba0bC.png_960x960q80.jpg"
+      "/images/products/two-tone-structured-5-panel-streetwear-cap.webp",
+      "/images/products/two-tone-structured-5-panel-streetwear-cap-2.webp",
+      "/images/products/two-tone-structured-5-panel-streetwear-cap-3.webp",
+      "/images/products/two-tone-structured-5-panel-streetwear-cap-4.webp"
     ],
     badge: "new",
     category: "Baseball Caps",
@@ -437,12 +437,12 @@ export const HATS: Product[] = [
     fullDesc: "A 5-panel trucker with a 100% high-density combed cotton front and visor, paired with a reinforced mesh back for ventilation. The seamless front panel gives a flat, wide canvas that takes 3D embroidery, silk screen or heat-transfer logos without distortion, and a stiffening process keeps the crown from collapsing after shipping. Adjustable plastic snapback closure for a one-size-fits-most fit.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H0f32f45a07f34b37867be1d3226950a0W.jpg_960x960q80.jpg",
+    img: "/images/products/cotton-front-5-panel-mesh-trucker-cap.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/H0f32f45a07f34b37867be1d3226950a0W.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H6d68f20508434cf3a93176f12606a0c63.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H167414a7b9334f5fb1dfa13e8bcb09dfC.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H74f5252b59094355b84a3e1d702e6d00U.png_960x960q80.jpg"
+      "/images/products/cotton-front-5-panel-mesh-trucker-cap.webp",
+      "/images/products/cotton-front-5-panel-mesh-trucker-cap-2.webp",
+      "/images/products/cotton-front-5-panel-mesh-trucker-cap-3.webp",
+      "/images/products/cotton-front-5-panel-mesh-trucker-cap-4.webp"
     ],
     badge: "new",
     category: "Trucker Hats",
@@ -475,12 +475,12 @@ export const HATS: Product[] = [
     fullDesc: "A cuffed knitted beanie in 100% acrylic with a satin lining that reduces friction and itch against the forehead, plus a pompom topper. The front takes flat embroidery, 3D puff or a printed patch, and colours can be dyed to your seasonal palette. Unisex 56-58cm fit. Samples run 3-5 working days; ODM and OEM service available.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H3c3261225f144b21aef3acd82edb4343N.jpg_960x960q80.jpg",
+    img: "/images/products/silk-lined-pompom-knitted-beanie.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/H3c3261225f144b21aef3acd82edb4343N.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hd4c35430a71c445180cb037b9ab0b7b5U.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H9b278e97841343cf90ace8f0603690c7e.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H53682a00fafa41549d609ae4d126c516x.png_960x960q80.jpg"
+      "/images/products/silk-lined-pompom-knitted-beanie.webp",
+      "/images/products/silk-lined-pompom-knitted-beanie-2.webp",
+      "/images/products/silk-lined-pompom-knitted-beanie-3.webp",
+      "/images/products/silk-lined-pompom-knitted-beanie-4.webp"
     ],
     badge: "new",
     category: "Beanies",
@@ -514,12 +514,12 @@ export const HATS: Product[] = [
     fullDesc: "A heavyweight 100% cotton A-frame 5-panel with a clean, uninterrupted front panel. A-frame construction gives a distinctive crown profile that stays crisp because the fabric weight holds it, and the front takes 3D embroidery, heat-transfer or silk screen artwork. Adjustable buckle closure, 56-58cm head circumference, unisex.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H7b4c97bb8d5b40d98e922aabe9607a26E.png_960x960q80.jpg",
+    img: "/images/products/heavyweight-cotton-a-frame-5-panel-cap.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/H7b4c97bb8d5b40d98e922aabe9607a26E.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H1c7f78be1f754cd0893515a73539dcbcl.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H3e5baf9555764c95bd3a8c91427a36f3r.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/He8e0e8368e7b432ea000bb94adfb388aV.png_960x960q80.jpg"
+      "/images/products/heavyweight-cotton-a-frame-5-panel-cap.webp",
+      "/images/products/heavyweight-cotton-a-frame-5-panel-cap-2.webp",
+      "/images/products/heavyweight-cotton-a-frame-5-panel-cap-3.webp",
+      "/images/products/heavyweight-cotton-a-frame-5-panel-cap-4.webp"
     ],
     badge: "new",
     category: "Baseball Caps",
@@ -552,12 +552,12 @@ export const HATS: Product[] = [
     fullDesc: "A clean white 6-panel cap cut for women's fashion and athleisure ranges. The 100% cotton crown takes raised 3D lettering or logo embroidery, and the metal buckle closure adjusts to fit a 56-58cm head. A curved visor gives a softer profile than a flat brim. Embroidery and heat-transfer decoration are both available, with additional colourways on request.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/He020510bd3b542549d45f0feaaf60d7ar.jpg_960x960q80.jpg",
+    img: "/images/products/womens-3d-letter-embroidered-cap.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/He020510bd3b542549d45f0feaaf60d7ar.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H08f33a37943e40079657a40e88750d4ez.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H77be33aa51cf425e94cdf9e7a905935fi.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hced8e2cf327b48a1a4564396fb0a2fdbv.jpg_960x960q80.jpg"
+      "/images/products/womens-3d-letter-embroidered-cap.webp",
+      "/images/products/womens-3d-letter-embroidered-cap-2.webp",
+      "/images/products/womens-3d-letter-embroidered-cap-3.webp",
+      "/images/products/womens-3d-letter-embroidered-cap-4.webp"
     ],
     badge: "new",
     category: "Baseball Caps",
@@ -590,12 +590,12 @@ export const HATS: Product[] = [
     fullDesc: "A 6-panel mesh trucker in a breathable cotton-polyester blend, with a curved visor for sport and casual wear. The mesh back vents heat in summer, and the front panel takes 3D embroidery, silk screen or heat-transfer logos. Logo positions include the front panel, brim, side panels and back. Adjustable fit for a 56-58cm head.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H25923077c08d41518ac8e6a43f1e578bP.png_960x960q80.jpg",
+    img: "/images/products/curved-brim-6-panel-mesh-trucker-cap.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/H25923077c08d41518ac8e6a43f1e578bP.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hbc4c1372939d4ca192531fcc8659eee9a.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H96bfb706dac146f5b34938cafc7e34b6Z.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H2764015518b246e192a57fc970876afdH.png_960x960q80.jpg"
+      "/images/products/curved-brim-6-panel-mesh-trucker-cap.webp",
+      "/images/products/curved-brim-6-panel-mesh-trucker-cap-2.webp",
+      "/images/products/curved-brim-6-panel-mesh-trucker-cap-3.webp",
+      "/images/products/curved-brim-6-panel-mesh-trucker-cap-4.webp"
     ],
     badge: "new",
     category: "Trucker Hats",
@@ -628,12 +628,12 @@ export const HATS: Product[] = [
     fullDesc: "A structured high-profile 5-panel in 100% cotton, made for streetwear and skate programmes. The stiffened front holds a tall crown, and both the front panel and brim take 3D embroidery, so a raised logo can run across the visor as well. Adjustable closure with a one-size-fits-most fit for adults. Silk screen and heat-transfer decoration are also available.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/Hc46f754a29f04f9aacd38235b974f9c4w.png_960x960q80.jpg",
+    img: "/images/products/streetwear-high-profile-5-panel-cap.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/Hc46f754a29f04f9aacd38235b974f9c4w.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H7ac9840c66614d099d6a9f4e6e380f8c6.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hfc65279c88d24d85a9604452d6df391f3.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H29fb9c538abc44fbb120b4f1635060b4O.png_960x960q80.jpg"
+      "/images/products/streetwear-high-profile-5-panel-cap.webp",
+      "/images/products/streetwear-high-profile-5-panel-cap-2.webp",
+      "/images/products/streetwear-high-profile-5-panel-cap-3.webp",
+      "/images/products/streetwear-high-profile-5-panel-cap-4.webp"
     ],
     badge: "new",
     category: "Baseball Caps",
@@ -666,12 +666,12 @@ export const HATS: Product[] = [
     fullDesc: "A performance 5-panel in water-repellent nylon, designed for golf and outdoor sport. Laser-cut holes across the panels add ventilation without letting the shell lose its water-repellent finish, and a rope trim runs along the front seam. The cap takes silk screen, heat-transfer and sublimation printing, with logo positions on the front panel, brim, sides and back. Adjustable fit, 56-58cm.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/Hcd3dfba8d89a484ea2ed59076dcf7bb7J.png_960x960q80.jpg",
+    img: "/images/products/nylon-waterproof-performance-golf-cap.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/Hcd3dfba8d89a484ea2ed59076dcf7bb7J.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Ha7b93e4894264917a48243dc132a860eh.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H4b54cbde0a8e4246a6cdc0d0235f4c26v.png_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H8f23893be25044498e078549df4b3d9cI.png_960x960q80.jpg"
+      "/images/products/nylon-waterproof-performance-golf-cap.webp",
+      "/images/products/nylon-waterproof-performance-golf-cap-2.webp",
+      "/images/products/nylon-waterproof-performance-golf-cap-3.webp",
+      "/images/products/nylon-waterproof-performance-golf-cap-4.webp"
     ],
     badge: "new",
     category: "Sports & Active",
@@ -705,12 +705,12 @@ export const HATS: Product[] = [
     fullDesc: "A thick cuffed knitted beanie in 100% acrylic with a fur-ball pompom, built for winter and outdoor programmes. The dense rib knit holds warmth and the cuff keeps the fit snug; the front takes embroidery, printing or a woven patch. Available in kids and adult sizes with custom colours on request. Samples run 5-7 working days and bulk production 15-21 days after sample approval.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/Hb1a53dadc1f342d280beb7a4de59a6act.jpg_960x960q80.jpg",
+    img: "/images/products/pompom-fur-ball-knitted-beanie.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/Hb1a53dadc1f342d280beb7a4de59a6act.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Ha3fe73ad091b4d38bd7d9bbbb1da7d2bq.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hdb4376cf81da438db4802ee9bd14afc4y.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H948d5f9554744e4e865f213458ca78b6r.jpg_960x960q80.jpg"
+      "/images/products/pompom-fur-ball-knitted-beanie.webp",
+      "/images/products/pompom-fur-ball-knitted-beanie-2.webp",
+      "/images/products/pompom-fur-ball-knitted-beanie-3.webp",
+      "/images/products/pompom-fur-ball-knitted-beanie-4.webp"
     ],
     badge: "new",
     category: "Beanies",
@@ -744,12 +744,12 @@ export const HATS: Product[] = [
     fullDesc: "A unisex knitted winter beanie with a satin lining that sits against the forehead and reduces the itch and friction of plain acrylic. The rib knit keeps warmth through autumn and winter, and the multi-colour yarn palette gives each colourway a different look. The front accepts embroidery or a woven patch. Available in a range of multi-colour combinations to your palette.",
     price: "Contact for factory pricing",
     moq: 200,
-    img: "https://s.alicdn.com/@sc04/kf/H5b34d2b164f04f3a806642a50e1514386.jpg_960x960q80.jpg",
+    img: "/images/products/multi-colour-satin-lined-winter-beanie.webp",
     images: [
-      "https://s.alicdn.com/@sc04/kf/H5b34d2b164f04f3a806642a50e1514386.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H3075f39a86bb496e8dcf67a9510ff654N.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/Hdb023488fab947e49a3b96a27b8e2775B.jpg_960x960q80.jpg",
-      "https://s.alicdn.com/@sc04/kf/H4b8d363736a6473ab4c64ba22ff3a443I.jpg_960x960q80.jpg"
+      "/images/products/multi-colour-satin-lined-winter-beanie.webp",
+      "/images/products/multi-colour-satin-lined-winter-beanie-2.webp",
+      "/images/products/multi-colour-satin-lined-winter-beanie-3.webp",
+      "/images/products/multi-colour-satin-lined-winter-beanie-4.webp"
     ],
     badge: "new",
     category: "Beanies",

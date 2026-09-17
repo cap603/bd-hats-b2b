@@ -82,7 +82,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         : "Premium custom hats directly from the factory since 2014. Custom embroidery, MOQ 200pcs, 7-day samples, shipped globally.",
       images: [
         {
-          url: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png",
+          url: "/images/products/structured-multi-color-baseball-cap.webp",
           width: 960,
           height: 960,
           alt: "BD Hats Factory - Custom Embroidery Baseball Caps",
@@ -93,7 +93,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       card: "summary_large_image",
       title: "BD Hats | Premium Custom Hat Factory",
       description: "Factory-direct custom hats since 2014. MOQ 200pcs · 7-Day Samples · Global Shipping.",
-      images: ["https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png"],
+      images: ["/images/products/structured-multi-color-baseball-cap.webp"],
     },
   };
 }
@@ -122,7 +122,7 @@ export default async function LocaleLayout({
     name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
     alternateName: "BD Hats",
     url: "https://bdjunyang.com",
-    logo: "https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png",
+    logo: "/images/brand/junyang-logo.png",
     description: "Premium custom hat factory and B2B wholesale supplier specializing in embroidery and customized headwear.",
     foundingDate: "2014",
     telephone: "+86-15933930830",

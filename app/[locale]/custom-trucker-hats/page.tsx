@@ -80,9 +80,9 @@ const CONTENT = {
 // Every trucker hat this factory makes — keep in sync with products.ts
 // (category "Trucker Hats").
 const RELATED = [
-  { href: "/product/custom-foam-front-trucker-hat", name: "Custom Foam Front 5 Panel Trucker Hat", img: "https://s.alicdn.com/@sc04/kf/H5bfd56a0758f4158b28790eaaba50679m.png_960x960q80.jpg" },
-  { href: "/product/cotton-front-5-panel-mesh-trucker-cap", name: "Cotton Front 5 Panel Mesh Trucker Cap", img: "https://s.alicdn.com/@sc04/kf/H0f32f45a07f34b37867be1d3226950a0W.jpg_960x960q80.jpg" },
-  { href: "/product/curved-brim-6-panel-mesh-trucker-cap", name: "Curved Brim 6 Panel Mesh Trucker Cap", img: "https://s.alicdn.com/@sc04/kf/H25923077c08d41518ac8e6a43f1e578bP.png_960x960q80.jpg" }
+  { href: "/product/custom-foam-front-trucker-hat", name: "Custom Foam Front 5 Panel Trucker Hat", img: "/images/products/custom-foam-front-trucker-hat.webp" },
+  { href: "/product/cotton-front-5-panel-mesh-trucker-cap", name: "Cotton Front 5 Panel Mesh Trucker Cap", img: "/images/products/cotton-front-5-panel-mesh-trucker-cap.webp" },
+  { href: "/product/curved-brim-6-panel-mesh-trucker-cap", name: "Curved Brim 6 Panel Mesh Trucker Cap", img: "/images/products/curved-brim-6-panel-mesh-trucker-cap.webp" }
 ];
 
 export default function TruckerPage() {
@@ -107,7 +107,7 @@ export default function TruckerPage() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href={`/${lang}`} className="flex items-center gap-4">
-            <img src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" alt="JUNYANG" className="h-12 w-auto object-contain" />
+            <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-12 w-auto object-contain" />
             <span className="hidden lg:block text-xl font-black text-black">JUNYANG</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
@@ -187,7 +187,7 @@ export default function TruckerPage() {
       <footer className="bg-gray-950 text-gray-500 py-16 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
-            <img src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" alt="JUNYANG" className="h-16 w-auto object-contain mb-4" />
+            <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-16 w-auto object-contain mb-4" />
             <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Hat Manufacturing Co., Ltd. — premium custom hat factory since 2014.</p>
           </div>
           <div className="grid grid-cols-2 gap-12">

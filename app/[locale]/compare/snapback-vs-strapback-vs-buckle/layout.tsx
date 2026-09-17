@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
           : "Fit, look, durability and return-rate risk across the three standard back closures.",
       images: [
         {
-          url: "https://s.alicdn.com/@sc04/kf/Hf2141a42b2ed454ca54b221bf447618dD/Wholesale-Acid-Wash-Vintage-6-Panel-Unisex.jpg",
+          url: "/images/products/vintage-acid-wash-6-panel-dad-hat.webp",
           width: 960,
           height: 960,
           alt: "Custom caps with snapback, strapback and buckle closures",

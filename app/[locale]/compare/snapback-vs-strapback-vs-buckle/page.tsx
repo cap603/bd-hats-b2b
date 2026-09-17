@@ -436,7 +436,7 @@ export default function Page() {
       name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
       logo: {
         "@type": "ImageObject",
-        url: "https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png",
+        url: "/images/brand/junyang-logo.png",
       },
     },
     mainEntityOfPage: {

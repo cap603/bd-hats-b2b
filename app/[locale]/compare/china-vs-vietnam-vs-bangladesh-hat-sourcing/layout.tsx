@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
           : "Where to source custom hats, judged by programme size and decoration complexity rather than by country alone.",
       images: [
         {
-          url: "https://s.alicdn.com/@sc04/kf/H29fdeb6f4619484b9c599ddf5b497ecfl/Factory-Price-100-cotton-5-Panel-Gorras.png",
+          url: "/images/products/custom-3d-embroidered-5-panel-gorras.webp",
           width: 960,
           height: 960,
           alt: "Custom hat sourcing comparison",

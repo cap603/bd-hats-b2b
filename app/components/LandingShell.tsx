@@ -88,7 +88,7 @@ export function LandingShell({
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href={`/${lang}`} className="flex items-center gap-4">
             <img
-              src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png"
+              src="/images/brand/junyang-logo.webp"
               alt="JUNYANG"
               className="h-12 w-auto object-contain"
             />
@@ -167,7 +167,7 @@ export function LandingShell({
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
             <img
-              src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png"
+              src="/images/brand/junyang-logo.webp"
               alt="JUNYANG"
               className="h-16 w-auto object-contain mb-4"
             />

@@ -20,21 +20,21 @@ export default function Home() {
 
   const BANNERS = [
     {
-      image: "https://sc02.alicdn.com/kf/A08f3026e946b4a238d225173ff266ad8N.png",
+      image: "/images/site/img-34a1ae33.webp",
       title: t("banners.0.title"),
       sub: t("banners.0.sub"),
       cta: t("banners.0.cta"),
       link: "whatsapp"
     },
     {
-      image: "https://sc02.alicdn.com/kf/Ab257aa93655344cdb3405b61cb0622bfS.png",
+      image: "/images/site/ab257aa93655344cdb3405b61cb0622bfs.webp",
       title: t("banners.1.title"),
       sub: t("banners.1.sub"),
       cta: t("banners.1.cta"),
       link: "#inquiry?intent=bulk"
     },
     {
-      image: "https://sc02.alicdn.com/kf/Af4c92eab3b8f4bd68fcb467865c9d3512.png",
+      image: "/images/site/af4c92eab3b8f4bd68fcb467865c9d3512.webp",
       title: t("banners.2.title"),
       sub: t("banners.2.sub"),
       cta: t("banners.2.cta"),
@@ -64,7 +64,7 @@ export default function Home() {
     "@type": "LocalBusiness",
     "name": "Baoding Junyang Hat Manufacturing Co., Ltd.",
     "description": "Premium custom hat factory — OEM/ODM baseball caps, snapbacks, trucker hats, and beanies. SGS verified, 12+ years experience.",
-    "image": "https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png",
+    "image": "/images/brand/junyang-logo.png",
     "url": "https://bdjunyang.com",
     "telephone": "+86-15933930830",
     "email": "admin@bdjunyang.com",
@@ -141,7 +141,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <img 
-              src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" 
+              src="/images/brand/junyang-logo.webp" 
               alt="JUNYANG Logo" 
               className="h-12 w-auto object-contain"
             />
@@ -254,7 +254,10 @@ export default function Home() {
             <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.moqLabel")}</p>
           </div>
           <div className="p-4 flex flex-col items-center justify-center">
-            <img src="https://sc02.alicdn.com/kf/S550f2425a6104c99a815a513ca0c5e7fG.png" alt="SGS Verified" className="h-12 w-auto mb-2 opacity-80" />
+            {/* The SGS badge image 404s on production, so show an icon + label
+                rather than a broken <img>. Drop the real badge into
+                public/images/brand/sgs-badge.png to use the actual artwork. */}
+            <ShieldCheck size={40} strokeWidth={1.5} className="mb-2 text-gray-400" />
             <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.sgs")}</p>
           </div>
         </div>
@@ -334,7 +337,7 @@ export default function Home() {
                 <div className="relative w-full h-full cursor-pointer" onClick={() => setIsPlaying(true)}>
                    {/* TODO: Replace with real factory floor photo — e.g. production line or embroidery machine close-up */}
                    <img 
-                     src="https://images.unsplash.com/photo-1556011504-f58c4033b93f?auto=format&fit=crop&q=80&w=1200" 
+                     src="/images/site/img-34a1ae33.webp" 
                      alt="Baoding Junyang Hat Factory Floor" 
                      className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700"
                      width="1200"
@@ -399,7 +402,7 @@ export default function Home() {
           {/* Certifications Row */}
           <div className="flex flex-wrap items-center justify-center gap-8 py-8 border-t border-gray-100">
             <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
-              <img src="https://sc02.alicdn.com/kf/S550f2425a6104c99a815a513ca0c5e7fG.png" alt="SGS" className="h-8 w-auto" />
+              <ShieldCheck size={18} className="text-green-600" />
               <span className="text-sm font-bold">{t("trust.sgsSupplier")}</span>
             </div>
             <div className="flex items-center gap-3 px-6 py-3 border border-gray-200 rounded-full">
@@ -507,7 +510,7 @@ export default function Home() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                  {/* TODO: Replace with real QC inspection photo from your factory floor */}
                  <img 
-                   src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&q=80&w=800" 
+                   src="/images/site/af4c92eab3b8f4bd68fcb467865c9d3512.webp" 
                    alt="Quality Control" 
                    className="w-full h-auto"
                  />
@@ -593,7 +596,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
             <img 
-              src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" 
+              src="/images/brand/junyang-logo.webp" 
               alt="JUNYANG Logo" 
               className="h-16 w-auto object-contain mb-4"
             />

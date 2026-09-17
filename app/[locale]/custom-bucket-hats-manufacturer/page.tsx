@@ -67,7 +67,7 @@ const CONTENT = {
       {
         href: "/product/nylon-large-brim-bucket-hat",
         name: "Nylon Large Brim Bucket Hat",
-        img: "https://s.alicdn.com/@sc04/kf/H4d62772bbf2a4f21b12b5eb83439751dI.png_960x960q80.jpg",
+        img: "/images/products/nylon-large-brim-bucket-hat.webp",
         note: "Waterproof nylon · 7 stock colours",
       },
     ],
@@ -77,19 +77,19 @@ const CONTENT = {
       {
         href: "/product/vintage-acid-wash-6-panel-dad-hat",
         name: "Vintage Acid Wash 6 Panel Dad Hat",
-        img: "https://s.alicdn.com/@sc04/kf/Hf2141a42b2ed454ca54b221bf447618dD/Wholesale-Acid-Wash-Vintage-6-Panel-Unisex.jpg",
+        img: "/images/products/vintage-acid-wash-6-panel-dad-hat.webp",
         note: "Same washed-cotton aesthetic",
       },
       {
         href: "/product/personalised-two-tone-a-frame-cap",
         name: "Personalised Two-Tone A-Frame Cap",
-        img: "https://s.alicdn.com/@sc04/kf/H5a0171373c2b42a6a0083b82f6e7c57da.jpg",
+        img: "/images/products/personalised-two-tone-a-frame-cap.webp",
         note: "Contrast styling for the same drop",
       },
       {
         href: "/product/structured-multi-color-baseball-cap",
         name: "Structured Multi-Color Baseball Cap",
-        img: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png",
+        img: "/images/products/structured-multi-color-baseball-cap.webp",
         note: "30+ colours to match your palette",
       },
     ],
@@ -157,7 +157,7 @@ const CONTENT = {
       {
         href: "/product/nylon-large-brim-bucket-hat",
         name: "Nylon Large Brim Bucket Hat",
-        img: "https://s.alicdn.com/@sc04/kf/H4d62772bbf2a4f21b12b5eb83439751dI.png_960x960q80.jpg",
+        img: "/images/products/nylon-large-brim-bucket-hat.webp",
         note: "Nailon impermeable · 7 colores en stock",
       },
     ],
@@ -167,19 +167,19 @@ const CONTENT = {
       {
         href: "/product/vintage-acid-wash-6-panel-dad-hat",
         name: "Vintage Acid Wash 6 Panel Dad Hat",
-        img: "https://s.alicdn.com/@sc04/kf/Hf2141a42b2ed454ca54b221bf447618dD/Wholesale-Acid-Wash-Vintage-6-Panel-Unisex.jpg",
+        img: "/images/products/vintage-acid-wash-6-panel-dad-hat.webp",
         note: "Misma estética de algodón lavado",
       },
       {
         href: "/product/personalised-two-tone-a-frame-cap",
         name: "Personalised Two-Tone A-Frame Cap",
-        img: "https://s.alicdn.com/@sc04/kf/H5a0171373c2b42a6a0083b82f6e7c57da.jpg",
+        img: "/images/products/personalised-two-tone-a-frame-cap.webp",
         note: "Contraste para la misma colección",
       },
       {
         href: "/product/structured-multi-color-baseball-cap",
         name: "Structured Multi-Color Baseball Cap",
-        img: "https://s.alicdn.com/@sc04/kf/H4909f9b79df84a87af9eb8a21f91e5bci.png",
+        img: "/images/products/structured-multi-color-baseball-cap.webp",
         note: "Más de 30 colores para tu paleta",
       },
     ],

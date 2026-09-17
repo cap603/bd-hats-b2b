@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
           : "Real hand-feel, structure, ageing and price differences between the three most-used cotton cap fabrics.",
       images: [
         {
-          url: "https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png",
+          url: "/images/brand/junyang-logo.png",
           alt: "BD Hats · JUNYANG custom cap factory",
         },
       ],

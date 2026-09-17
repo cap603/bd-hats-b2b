@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Breadcrumb } from "../../../components/Breadcrumb";
 import { LanguageSwitcher } from "../../../components/LanguageSwitcher";
+import { CATEGORY_LANDING, CATEGORY_COMPARISONS, labelFor } from "../../../lib/product-links";
 
 export default function ProductDetail() {
   const t = useT("product");
@@ -70,48 +71,21 @@ export default function ProductDetail() {
     "category": hat.category || "Baseball Caps"
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://bdjunyang.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": hat.category || "Products",
-        "item": "https://bdjunyang.com/#catalog"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": hat.name,
-        "item": `https://bdjunyang.com/product/${hat.id}`
-      }
-    ]
-  };
-
   return (
     <main className="min-h-screen bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      {/* BreadcrumbList is emitted by the <Breadcrumb /> component below, so the
+          page declares it exactly once for the whole site. */}
       {/* Navigation Bar */}
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-6 md:px-12 flex items-center justify-between">
         <Link href={`/${lang}`} className="flex items-center gap-2 text-black font-bold hover:text-gray-600 transition">
           <ArrowLeft size={20} /> <span className="hidden sm:inline">{t("backToCatalog")}</span>
         </Link>
         <img 
-          src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" 
+          src="/images/brand/junyang-logo.webp" 
           alt="JUNYANG" 
           className="h-8 w-auto"
         />
@@ -126,7 +100,7 @@ export default function ProductDetail() {
       {/* Breadcrumb */}
       <Breadcrumb items={[
         { label: "Home", href: `/${lang}` },
-        { label: hat.category || "Products", href: `/${lang}/#catalog` },
+        { label: hat.category || "Products", href: `/${lang}${CATEGORY_LANDING[hat.category || "Baseball Caps"] ?? "/#catalog"}` },
         { label: hat.name }
       ]} />
 
@@ -196,8 +170,7 @@ export default function ProductDetail() {
             <div className="flex border-b border-gray-100 mb-8 overflow-x-auto no-scrollbar">
               {[
                 { id: "specs", label: t("tabs.specs"), icon: Cpu },
-                { id: "custom", label: t("tabs.custom"), icon: Settings },
-                { id: "faq", label: t("tabs.faq"), icon: HelpCircle }
+                { id: "custom", label: t("tabs.custom"), icon: Settings }
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -250,30 +223,9 @@ export default function ProductDetail() {
               </div>
             )}
 
-            {/* Tab Content: FAQ */}
-            {activeTab === "faq" && (
-              <div className="space-y-3 animate-in fade-in duration-500">
-                {(hat.faqs || [
-                  { q: "Can I get a sample before bulk production?", a: "Yes, we produce a physical sample for your final approval. Lead time is 7 days." },
-                  { q: "Do you ship worldwide?", a: "We ship to over 50 countries via DHL/FedEx/UPS with door-to-door delivery in 5-8 business days." }
-                ]).map((faq, i) => (
-                  <div key={i} className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button 
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                      className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition"
-                    >
-                      <span className="font-black text-black text-sm uppercase tracking-tight">{faq.q}</span>
-                      {openFaq === i ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-                    </button>
-                    {openFaq === i && (
-                      <div className="px-5 pb-5 text-gray-500 text-sm leading-relaxed border-t border-gray-50 pt-4">
-                        {faq.a}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            )}
+            {/* FAQ moved out of the tab set — see the full-width section below.
+                Inside a tab + accordion the answers never reached the initial
+                HTML, so crawlers and AI retrieval could not read them. */}
 
             {/* Action Buttons */}
             <div className="mt-12 space-y-4">
@@ -291,6 +243,99 @@ export default function ProductDetail() {
           </div>
         </div>
       </section>
+
+      {/* FAQ — full width and always in the DOM, with matching FAQPage JSON-LD.
+          <details> keeps the accordion behaviour without needing JS state, so the
+          answers are in the served HTML and eligible for rich results. */}
+      {(() => {
+        const faqs = hat.faqs || [
+          { q: "Can I get a sample before bulk production?", a: "Yes, we produce a physical sample for your final approval. Lead time is 7 days." },
+          { q: "Do you ship worldwide?", a: "We ship to over 50 countries via DHL/FedEx/UPS with door-to-door delivery in 5-8 business days." },
+        ];
+        const faqSchema = {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        };
+        return (
+          <section className="py-16 bg-gray-50 border-t border-gray-100">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <div className="max-w-4xl mx-auto px-4">
+              <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-8">
+                {hat.name} — {t("faqHeading")}
+              </h2>
+              <div className="space-y-3">
+                {faqs.map((faq) => (
+                  <details key={faq.q} className="group bg-white border border-gray-100 rounded-2xl shadow-sm transition">
+                    <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer list-none">
+                      <span className="font-black text-black text-sm uppercase tracking-tight">{faq.q}</span>
+                      <ChevronDown size={20} className="shrink-0 transition group-open:rotate-180" />
+                    </summary>
+                    <div className="px-5 pb-5 text-gray-500 text-sm leading-relaxed border-t border-gray-50 pt-4">
+                      {faq.a}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* Where to go next — links up to the category landing page, sideways into
+          the comparison cluster and across to the buying guides. */}
+      {(() => {
+        const category = hat.category || "Baseball Caps";
+        const landing = CATEGORY_LANDING[category];
+        const comparisons = (CATEGORY_COMPARISONS[category] ?? []).slice(0, 3);
+        const supportPages = ["/pricing", "/materials", "/guide"];
+        return (
+          <section className="py-16 px-4 max-w-7xl mx-auto">
+            <div className="text-center mb-10">
+              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{t("moreInfo")}</span>
+              <h2 className="text-2xl md:text-4xl font-black tracking-tight mt-2">{t("moreInfoTitle")}</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {landing && (
+                <div>
+                  <h3 className="text-xs font-black uppercase tracking-widest text-gray-400 mb-4">{t("moreInfoCategory")}</h3>
+                  <Link href={`/${lang}${landing}`} className="block bg-gray-50 hover:bg-gray-100 border border-gray-100 rounded-xl p-4 text-sm font-bold text-black transition">
+                    {labelFor(landing, lang)}
+                  </Link>
+                </div>
+              )}
+              <div>
+                <h3 className="text-xs font-black uppercase tracking-widest text-gray-400 mb-4">{t("moreInfoCompare")}</h3>
+                <ul className="space-y-2">
+                  {comparisons.map((href) => (
+                    <li key={href}>
+                      <Link href={`/${lang}${href}`} className="block bg-gray-50 hover:bg-gray-100 border border-gray-100 rounded-xl p-4 text-sm font-bold text-black transition">
+                        {labelFor(href, lang)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xs font-black uppercase tracking-widest text-gray-400 mb-4">{t("moreInfoGuides")}</h3>
+                <ul className="space-y-2">
+                  {supportPages.map((href) => (
+                    <li key={href}>
+                      <Link href={`/${lang}${href}`} className="block bg-gray-50 hover:bg-gray-100 border border-gray-100 rounded-xl p-4 text-sm font-bold text-black transition">
+                        {labelFor(href, lang)}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* Related Products */}
       {(() => {
@@ -344,7 +389,7 @@ export default function ProductDetail() {
       <footer className="bg-black py-16 text-center">
          <div className="max-w-7xl mx-auto px-4 flex flex-col items-center">
            <img 
-              src="https://sc01.alicdn.com/kf/H77e3adefc7b64346986b3b9b66ab5940x.png" 
+              src="/images/brand/junyang-logo.webp" 
               alt="JUNYANG" 
               className="h-12 w-auto mb-8 opacity-50"
             />
