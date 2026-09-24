@@ -10,7 +10,7 @@ import { MobileNav } from "../components/MobileNav";
 import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
-import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight, ArrowRight, ChevronDown, CheckCircle2 } from "lucide-react";
 
 const MANUFACTURING_PROGRAMS = [
   {
@@ -509,44 +509,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* B2B Manufacturing Programs & Contextual Internal Link Network */}
-      <section className="py-20 px-4 bg-gray-50 border-y border-gray-100">
+      {/* B2B Manufacturing Programs — High-Density 4-Column Grid */}
+      <section className="py-12 sm:py-16 px-4 bg-slate-100/70 border-y border-slate-200/80">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-yellow-600 font-bold uppercase tracking-wider text-xs md:text-sm">
-              Specialized Production Lines
-            </span>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900 mt-2 mb-4">
-              Explore Our B2B Headwear Programs
-            </h2>
-            <p className="text-gray-600 text-base md:text-lg">
-              Direct-to-factory contract manufacturing programs tailored to brand founders, wholesalers, and international procurement teams. Minimum order 200 pcs.
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-6 sm:mb-8">
+            <div>
+              <span className="text-[11px] font-black uppercase tracking-widest text-slate-500 bg-slate-200/70 px-2.5 py-0.5 rounded-full inline-block">
+                OEM / ODM Lines
+              </span>
+              <h2 className="text-2xl md:text-3xl font-black tracking-tight text-slate-900 mt-2">
+                Specialized B2B Production Programs
+              </h2>
+            </div>
+            <p className="text-slate-500 text-xs sm:text-sm max-w-md">
+              Direct-to-factory contract programs for brand founders, distributors, and bulk importers. MOQ 200 pcs.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {MANUFACTURING_PROGRAMS.map((prog, idx) => (
               <Link
                 key={idx}
                 href={`/${lang}${prog.href}`}
-                className="group bg-white p-6 rounded-2xl border border-gray-200 hover:border-yellow-500 hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+                className="group bg-white p-3.5 sm:p-4 rounded-xl border border-slate-200/80 hover:border-slate-400 hover:shadow-md transition-all duration-200 flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-yellow-700 bg-yellow-50 px-2.5 py-1 rounded-full">
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className="text-[10px] font-black uppercase tracking-wider text-amber-800 bg-amber-50 border border-amber-200/60 px-2 py-0.5 rounded">
                       {prog.tag}
                     </span>
+                    <ArrowRight size={13} className="text-slate-400 group-hover:text-slate-900 group-hover:translate-x-0.5 transition" />
                   </div>
-                  <h3 className="text-lg font-black text-gray-900 group-hover:text-yellow-600 transition-colors mb-2">
+                  <h3 className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-1 mb-1">
                     {prog.title}
                   </h3>
-                  <p className="text-gray-600 text-xs leading-relaxed mb-4">
+                  <p className="text-slate-500 text-[11px] leading-relaxed line-clamp-2">
                     {prog.desc}
                   </p>
-                </div>
-                <div className="flex items-center gap-1.5 text-xs font-bold text-gray-900 group-hover:text-yellow-600 transition-colors pt-3 border-t border-gray-100">
-                  <span>View Program Specs</span>
-                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             ))}
@@ -554,161 +553,177 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Process / How It Works */}
-      <section className="py-24 bg-gray-950 text-white">
+      {/* Process / How It Works — Compact Horizontal Flow Ribbon */}
+      <section className="py-10 sm:py-14 bg-slate-900 text-white border-y border-slate-800">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-20">
-            <span className="text-xs font-bold uppercase tracking-widest text-yellow-400">{t("process.label")}</span>
-            <h2 className="text-3xl md:text-5xl font-black mt-2">{t("process.heading")}</h2>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 sm:mb-8">
+            <div>
+              <span className="text-[11px] font-black uppercase tracking-widest text-amber-400">{t("process.label")}</span>
+              <h2 className="text-2xl md:text-3xl font-black mt-1">{t("process.heading")}</h2>
+            </div>
+            <span className="text-xs text-slate-400 font-medium">Standard 7-Day Samples · 15-20 Days Bulk Delivery</span>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative">
-              <span className="absolute -top-6 left-8 text-5xl font-black text-gray-800">01</span>
-              <h3 className="text-lg font-bold mb-3 mt-4">{t("process.step1Title")}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{t("process.step1Desc")}</p>
-            </div>
-            <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative">
-              <span className="absolute -top-6 left-8 text-5xl font-black text-gray-800">02</span>
-              <h3 className="text-lg font-bold mb-3 mt-4">{t("process.step2Title")}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{t("process.step2Desc")}</p>
-            </div>
-            <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative">
-              <span className="absolute -top-6 left-8 text-5xl font-black text-gray-800">03</span>
-              <h3 className="text-lg font-bold mb-3 mt-4">{t("process.step3Title")}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{t("process.step3Desc")}</p>
-            </div>
-            <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 relative">
-              <span className="absolute -top-6 left-8 text-5xl font-black text-gray-800">04</span>
-              <h3 className="text-lg font-bold mb-3 mt-4">{t("process.step4Title")}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{t("process.step4Desc")}</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* QC Protocol Section */}
-      <section id="qc" className="py-24 bg-white scroll-mt-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
-            <div className="lg:w-1/2">
-              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{t("qc.label")}</span>
-              <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-8">{t("qc.heading")}</h2>
-              <div className="space-y-8">
-                <div className="flex gap-6">
-                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">01</div>
-                  <div>
-                    <h4 className="font-bold text-lg text-black">{t("qc.step1Title")}</h4>
-                    <p className="text-gray-600 text-sm mt-1">{t("qc.step1Desc")}</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+            {[
+              { num: "01", title: t("process.step1Title"), desc: t("process.step1Desc") },
+              { num: "02", title: t("process.step2Title"), desc: t("process.step2Desc") },
+              { num: "03", title: t("process.step3Title"), desc: t("process.step3Desc") },
+              { num: "04", title: t("process.step4Title"), desc: t("process.step4Desc") },
+            ].map((step, sIdx) => (
+              <div key={sIdx} className="bg-slate-800/80 border border-slate-700/70 p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-black text-amber-400 font-mono tracking-wider">STEP {step.num}</span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
                   </div>
+                  <h3 className="text-sm font-bold text-white mb-1">{step.title}</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed line-clamp-3">{step.desc}</p>
                 </div>
-                <div className="flex gap-6">
-                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">02</div>
-                  <div>
-                    <h4 className="font-bold text-lg text-black">{t("qc.step2Title")}</h4>
-                    <p className="text-gray-600 text-sm mt-1">{t("qc.step2Desc")}</p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">03</div>
-                  <div>
-                    <h4 className="font-bold text-lg text-black">{t("qc.step3Title")}</h4>
-                    <p className="text-gray-600 text-sm mt-1">{t("qc.step3Desc")}</p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">04</div>
-                  <div>
-                    <h4 className="font-bold text-lg text-black">{t("qc.step4Title")}</h4>
-                    <p className="text-gray-600 text-sm mt-1">{t("qc.step4Desc")}</p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="h-10 w-10 shrink-0 bg-black text-white rounded-full flex items-center justify-center font-bold text-sm">05</div>
-                  <div>
-                    <h4 className="font-bold text-lg text-black">{t("qc.step5Title")}</h4>
-                    <p className="text-gray-600 text-sm mt-1">{t("qc.step5Desc")}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/2 relative">
-              <div className="absolute -right-24 -top-24 w-96 h-96 bg-yellow-400 rounded-full blur-3xl opacity-20"></div>
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                 {/* TODO: Replace with real QC inspection photo from your factory floor */}
-                 <img 
-                   src="/images/site/af4c92eab3b8f4bd68fcb467865c9d3512.webp" 
-                   alt="Quality Control" 
-                   className="w-full h-auto"
-                 />
-                <div className="absolute top-8 left-8 bg-white/90 backdrop-blur shadow-lg p-4 rounded-xl border border-gray-100">
-                  <div className="flex items-center gap-2 mb-1">
-                    <div className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">{t("qc.liveStatus")}</span>
-                  </div>
-                  <p className="text-black font-bold text-sm">{t("qc.qcPassed")}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">{t("faq.heading")}</h2>
-            <p className="text-gray-500 text-lg">{t("faq.sub")}</p>
-          </div>
-          <div className="space-y-6">
-            {FAQS.map((faq, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                <h3 className="font-bold text-lg mb-3 flex gap-3">
-                  <span className="text-yellow-500 font-black">Q:</span> {faq.q}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed flex gap-3">
-                  <span className="text-gray-400 font-black">A:</span> {faq.a}
-                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Inquiry Section */}
-      <section id="inquiry" className="py-24 px-4 bg-white scroll-mt-20">
-        <div className="max-w-4xl mx-auto bg-gray-50 rounded-[2rem] p-8 md:p-16 shadow-inner border border-gray-100">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-black uppercase">{t("inquiry.heading")}</h2>
-            <p className="text-gray-500 text-lg max-w-lg mx-auto leading-relaxed">{t("inquiry.sub")}</p>
+      {/* QC Protocol Section — High-Density 2-Column Balanced View */}
+      <section id="qc" className="py-12 sm:py-16 bg-white border-b border-slate-200/80 scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Left 7 cols: 5 QC Inspection Checkpoints in 2-col compact grid */}
+            <div className="lg:col-span-7">
+              <span className="text-[11px] font-black uppercase tracking-widest text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full inline-block mb-2">
+                {t("qc.label")}
+              </span>
+              <h2 className="text-2xl md:text-3xl font-black tracking-tight text-slate-900 mb-6">
+                {t("qc.heading")}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  { num: "01", title: t("qc.step1Title"), desc: t("qc.step1Desc") },
+                  { num: "02", title: t("qc.step2Title"), desc: t("qc.step2Desc") },
+                  { num: "03", title: t("qc.step3Title"), desc: t("qc.step3Desc") },
+                  { num: "04", title: t("qc.step4Title"), desc: t("qc.step4Desc") },
+                  { num: "05", title: t("qc.step5Title"), desc: t("qc.step5Desc") },
+                ].map((qcItem, qIdx) => (
+                  <div key={qIdx} className={`p-3.5 rounded-xl border border-slate-200/80 bg-slate-50/60 ${qIdx === 4 ? "sm:col-span-2" : ""}`}>
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="h-5 w-5 rounded-md bg-slate-900 text-white flex items-center justify-center text-[10px] font-black shrink-0">
+                        {qcItem.num}
+                      </span>
+                      <h4 className="font-bold text-xs sm:text-sm text-slate-900 line-clamp-1">{qcItem.title}</h4>
+                    </div>
+                    <p className="text-slate-500 text-xs leading-relaxed line-clamp-2 pl-7">{qcItem.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right 5 cols: Compact Factory QC Card */}
+            <div className="lg:col-span-5 relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-50">
+                <img 
+                  src="/images/site/af4c92eab3b8f4bd68fcb467865c9d3512.webp" 
+                  alt="Quality Control Factory Floor" 
+                  className="w-full h-48 sm:h-56 object-cover"
+                />
+                <div className="p-4 bg-white flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="h-2.5 w-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                    <div>
+                      <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 block">{t("qc.liveStatus")}</span>
+                      <p className="text-slate-900 font-bold text-xs">{t("qc.qcPassed")}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 text-slate-400 font-black text-xs">
+                    <span>CE</span>
+                    <span>•</span>
+                    <span>SGS</span>
+                    <span>•</span>
+                    <span>RoHS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section — Compact 2-Column Accordion */}
+      <section className="py-10 sm:py-14 bg-slate-50 border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-6 sm:mb-8">
+            <div>
+              <span className="text-[11px] font-black uppercase tracking-widest text-slate-500 bg-slate-200/70 px-2.5 py-0.5 rounded-full inline-block">
+                FAQ
+              </span>
+              <h2 className="text-2xl md:text-3xl font-black tracking-tight text-slate-900 mt-2">
+                {t("faq.heading")}
+              </h2>
+            </div>
+            <p className="text-slate-500 text-xs sm:text-sm max-w-md">{t("faq.sub")}</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {FAQS.map((faq, index) => (
+              <details key={index} className="group bg-white p-4 rounded-xl border border-slate-200/80 shadow-2xs transition">
+                <summary className="flex items-center justify-between gap-3 cursor-pointer list-none">
+                  <h3 className="font-bold text-xs sm:text-sm text-slate-900 flex items-center gap-2">
+                    <span className="text-amber-500 font-black text-xs">Q:</span>
+                    <span>{faq.q}</span>
+                  </h3>
+                  <ChevronDown size={16} className="text-slate-400 shrink-0 transition-transform duration-200 group-open:rotate-180" />
+                </summary>
+                <p className="text-slate-600 text-xs leading-relaxed pt-3 mt-3 border-t border-slate-100 flex gap-2">
+                  <span className="text-slate-400 font-black shrink-0">A:</span>
+                  <span>{faq.a}</span>
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Inquiry Section — High-Efficiency Lead Box */}
+      <section id="inquiry" className="py-12 sm:py-16 px-4 bg-white scroll-mt-20">
+        <div className="max-w-4xl mx-auto bg-slate-50 rounded-2xl p-5 sm:p-10 border border-slate-200 shadow-xs">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-black tracking-tight text-slate-900 uppercase">
+              {t("inquiry.heading")}
+            </h2>
+            <p className="text-slate-500 text-xs sm:text-sm max-w-md mx-auto mt-1 leading-relaxed">
+              {t("inquiry.sub")}
+            </p>
           </div>
 
           {/* Trust label above form */}
-          <div className="mb-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-            <span className="flex items-center gap-2 text-xs font-black text-gray-500 uppercase tracking-widest">
-              <ShieldCheck size={16} className="text-green-500" /> {t("inquiry.trustLabel")}
+          <div className="mb-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <span className="flex items-center gap-1.5 text-xs font-bold text-slate-600">
+              <ShieldCheck size={16} className="text-emerald-600" /> {t("inquiry.trustLabel")}
             </span>
           </div>
 
           <InquiryForm />
 
-          {/* Client testimonials below form */}
-          <div className="mt-14">
-            <h3 className="text-center text-xs font-black uppercase tracking-[0.2em] text-gray-400 mb-8">
+          {/* Client testimonials below form — Compact 3-Column Grid */}
+          <div className="mt-10 pt-8 border-t border-slate-200/80">
+            <h3 className="text-center text-[11px] font-black uppercase tracking-[0.2em] text-slate-400 mb-6">
               {t("inquiry.testimonialTitle")}
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
               {[0, 1, 2].map((i) => (
-                <div key={i} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex flex-col">
-                  <div className="flex gap-1 text-yellow-400 mb-3" aria-hidden="true">
-                    {"★★★★★".split("").map((s, j) => <span key={j}>{s}</span>)}
-                  </div>
-                  <p className="text-sm text-gray-600 leading-relaxed flex-grow mb-4 italic">
-                    &ldquo;{t(`inquiry.testimonials.${i}.quote`)}&rdquo;
-                  </p>
+                <div key={i} className="bg-white p-4 rounded-xl border border-slate-200/80 shadow-2xs flex flex-col justify-between">
                   <div>
-                    <p className="text-sm font-black text-black">{t(`inquiry.testimonials.${i}.name`)}</p>
-                    <p className="text-xs font-bold text-gray-400">{t(`inquiry.testimonials.${i}.role`)}</p>
+                    <div className="flex gap-0.5 text-amber-400 text-xs mb-2" aria-hidden="true">
+                      {"★★★★★".split("").map((s, j) => <span key={j}>{s}</span>)}
+                    </div>
+                    <p className="text-xs text-slate-600 leading-relaxed mb-3 italic line-clamp-3">
+                      &ldquo;{t(`inquiry.testimonials.${i}.quote`)}&rdquo;
+                    </p>
+                  </div>
+                  <div className="pt-2 border-t border-slate-100">
+                    <p className="text-xs font-black text-slate-900">{t(`inquiry.testimonials.${i}.name`)}</p>
+                    <p className="text-[10px] font-bold text-slate-400">{t(`inquiry.testimonials.${i}.role`)}</p>
                   </div>
                 </div>
               ))}
