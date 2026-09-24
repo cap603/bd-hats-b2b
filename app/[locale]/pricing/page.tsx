@@ -1,11 +1,79 @@
 "use client";
 
 import Link from "next/link";
-import { CheckCircle2, ArrowRight, HelpCircle } from "lucide-react";
+import { CheckCircle2, ArrowRight, HelpCircle, ShieldCheck, Zap } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { useLang } from "../../lib/i18n";
 import { NavCompareMenu } from "../../components/NavCompareMenu";
 import { NavProductsMenu } from "../../components/NavProductsMenu";
+
+const TIERS = [
+  {
+    name: "Tier 1: Starter Batch",
+    range: "200 – 499 pcs",
+    basePrice: "$6.50 – $8.00",
+    premiumPrice: "$8.00 – $10.50",
+    leadTime: "10 – 12 Days",
+    badge: "MOQ Entry",
+    desc: "Ideal for streetwear brand launches, retail test batches, and boutique private-label runs.",
+    features: [
+      "Minimum order of 200 pcs per style/color",
+      "Free embroidery digitizing & mockups",
+      "Sample fee fully credited against bulk order",
+      "Standard individual polybag & 5-ply export carton",
+      "Standard air express / air freight ready"
+    ]
+  },
+  {
+    name: "Tier 2: Standard Wholesale",
+    range: "500 – 1,999 pcs",
+    basePrice: "$5.20 – $6.50",
+    premiumPrice: "$6.50 – $8.00",
+    leadTime: "14 – 16 Days",
+    badge: "Most Popular",
+    featured: true,
+    desc: "The sweet spot for established apparel brands, corporate merchandise, and seasonal restocking.",
+    features: [
+      "Custom woven sweatband labels & care tags",
+      "Free pre-production physical counter-sample",
+      "Fast-track cutting & embroidery line scheduling",
+      "Pantone color matching on stock twill fabrics",
+      "Flexible split-shipment options"
+    ]
+  },
+  {
+    name: "Tier 3: Volume Program",
+    range: "2,000 – 9,999 pcs",
+    basePrice: "$4.20 – $5.00",
+    premiumPrice: "$5.00 – $6.20",
+    leadTime: "18 – 22 Days",
+    badge: "High Efficiency",
+    desc: "Engineered for regional distributors, promotional uniform buyers, and chain store replenishment.",
+    features: [
+      "Custom fabric weaving & bespoke fabric dyeing",
+      "Dedicated QC video report during production",
+      "FOB Tianjin / Qingdao ocean cargo optimization",
+      "Custom branded retail hangtags & barcoding",
+      "Strict pre-shipment audit inspection report"
+    ]
+  },
+  {
+    name: "Tier 4: Container Bulk Scale",
+    range: "10,000+ pcs",
+    basePrice: "$3.50 – $4.00",
+    premiumPrice: "$4.00 – $4.80",
+    leadTime: "25 – 30 Days",
+    badge: "Factory Direct Floor",
+    desc: "Direct-to-factory container load production for multinational brands and international procurement groups.",
+    features: [
+      "Direct factory floor price from $3.50/pc FOB",
+      "Dedicated multi-head Barudan line allocation",
+      "20GP (35,000+ pcs) & 40HQ (85,000+ pcs) container packing",
+      "Letter of Credit (L/C) & milestone payment support",
+      "Annual supply agreement & buffer stock reservation"
+    ]
+  }
+];
 
 const FAQS = [
   {
@@ -111,6 +179,104 @@ export default function PricingPage() {
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Complete cost breakdown for wholesale custom caps — from factory pricing and volume discounts to shipping methods and payment terms. No hidden fees.
           </p>
+        </div>
+      </section>
+
+      {/* Tiered Wholesale Pricing Matrix */}
+      <section className="py-20 px-4 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-yellow-600 font-bold uppercase tracking-wider text-xs md:text-sm">Factory-Direct Wholesale Matrix</span>
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900 mt-2 mb-4">
+              Tiered Volume Pricing (FOB China)
+            </h2>
+            <p className="text-gray-600 text-base md:text-lg">
+              Transparent, factory-floor pricing structured by volume. Strict MOQ of 200 pcs per style/color, with floor rates reaching $3.50/pc for container-scale programs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {TIERS.map((tier, idx) => (
+              <div
+                key={idx}
+                className={`rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between ${
+                  tier.featured
+                    ? "bg-white border-2 border-yellow-500 shadow-xl relative scale-105 z-10"
+                    : "bg-white border border-gray-200 shadow-sm hover:shadow-md"
+                }`}
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-bold uppercase tracking-wider text-gray-500">{tier.badge}</span>
+                    <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-gray-500 bg-gray-100 px-2.5 py-1 rounded-full">
+                      <Zap size={12} className="text-yellow-600" /> {tier.leadTime}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-black text-gray-900">{tier.name}</h3>
+                  <div className="text-sm font-bold text-yellow-600 mt-1 mb-4">{tier.range}</div>
+
+                  <div className="bg-gray-50 rounded-xl p-4 mb-4 border border-gray-100">
+                    <div className="text-xs text-gray-500 mb-1">Standard Twill / Flat:</div>
+                    <div className="text-2xl font-black text-gray-900">{tier.basePrice}</div>
+                    <div className="text-[11px] text-gray-500 mt-2 pt-2 border-t border-gray-200">
+                      3D Puff / High-Spec: <span className="font-bold text-gray-700">{tier.premiumPrice}</span>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-600 text-xs leading-relaxed mb-6">{tier.desc}</p>
+
+                  <ul className="space-y-2.5 text-xs text-gray-700 mb-6">
+                    {tier.features.map((feat, fIdx) => (
+                      <li key={fIdx} className="flex items-start gap-2">
+                        <CheckCircle2 size={14} className="text-green-600 shrink-0 mt-0.5" />
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <a
+                  href={`https://wa.me/8615933930830?text=${encodeURIComponent(
+                    `Hi Baoding Junyang! I would like to get a quote for ${tier.name} (${tier.range}). MOQ 200pcs.`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full py-3 px-4 rounded-xl font-bold text-xs text-center transition flex items-center justify-center gap-2 ${
+                    tier.featured
+                      ? "bg-yellow-500 hover:bg-yellow-600 text-black shadow-md shadow-yellow-500/20"
+                      : "bg-gray-900 hover:bg-black text-white"
+                  }`}
+                >
+                  Inquire on WhatsApp <ArrowRight size={14} />
+                </a>
+              </div>
+            ))}
+          </div>
+
+          {/* Value inclusions card */}
+          <div className="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-sm max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="w-12 h-12 rounded-xl bg-yellow-100 text-yellow-700 flex items-center justify-center shrink-0">
+                <ShieldCheck size={28} />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h4 className="text-base font-bold text-gray-900 mb-1">Standard All-Inclusive Price Promise</h4>
+                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                  Every quotation includes: 100% heavy cotton twill or classic twill-mesh, up to 2 embroidery/screen-print positions, custom sweatband care label, individual moisture-proof polybag, and 5-ply reinforced export seaworthy cartons. No hidden digitizing or setup surcharges.
+                </p>
+              </div>
+              <a
+                href={`https://wa.me/8615933930830?text=${encodeURIComponent(
+                  "Hi Baoding Junyang! I would like to submit our tech pack for a custom tiered quote."
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl text-xs md:text-sm whitespace-nowrap transition"
+              >
+                Inquire on WhatsApp
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

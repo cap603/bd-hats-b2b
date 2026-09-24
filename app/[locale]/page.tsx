@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { useT, useLang } from "../lib/i18n";
 import { attributionTag } from "../lib/attribution";
 import { NavCompareMenu } from "../components/NavCompareMenu";
@@ -8,7 +9,82 @@ import { NavProductsMenu } from "../components/NavProductsMenu";
 import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
-import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight } from "lucide-react";
+import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+
+const MANUFACTURING_PROGRAMS = [
+  {
+    href: "/custom-5-panel-caps-manufacturer",
+    title: "Custom 5-Panel Caps",
+    desc: "Streetwear & camper profiles, lightweight cotton-nylon blends, flat brim and brass closures.",
+    tag: "High Demand",
+  },
+  {
+    href: "/oem-hat-manufacturer",
+    title: "OEM Hat Manufacturing",
+    desc: "Complete custom headwear contract manufacturing. Full tech pack digitizing and brand scaling.",
+    tag: "Full Service",
+  },
+  {
+    href: "/custom-beanies-manufacturer",
+    title: "Custom Knit Beanies",
+    desc: "Ribbed knit, cuffed beanies, jacquard and genuine leather patch applications for winter programs.",
+    tag: "Seasonal",
+  },
+  {
+    href: "/custom-dad-hats-manufacturer",
+    title: "Custom Dad Hats",
+    desc: "Vintage unstructured 6-panel caps, heavy enzyme wash, curved visor, antique slide buckles.",
+    tag: "Lifestyle",
+  },
+  {
+    href: "/wholesale-snapbacks",
+    title: "Wholesale Snapback Hats",
+    desc: "Classic high-crown flat brim caps, buckram structured front with 3D high-density puff embroidery.",
+    tag: "Streetwear",
+  },
+  {
+    href: "/custom-trucker-hats",
+    title: "Custom Trucker Hats",
+    desc: "Breathable poly-mesh backs, foam or heavy cotton twill fronts, customized for promotional runs.",
+    tag: "Promo & Outdoor",
+  },
+  {
+    href: "/wholesale-blank-caps-supplier",
+    title: "Wholesale Blank Caps",
+    desc: "Immediate warehouse inventory ready for domestic printers and embroidery shops.",
+    tag: "Fast Dispatch",
+  },
+  {
+    href: "/private-label-hat-manufacturer",
+    title: "Private Label Headwear",
+    desc: "Dedicated branding package: custom woven labels, printed seam tape, bespoke hangtags and boxes.",
+    tag: "Brand Turnkey",
+  },
+  {
+    href: "/corporate-custom-hats-supplier",
+    title: "Corporate Uniform Headwear",
+    desc: "Durable, high-repeat corporate identity programs and company uniform cap bulk orders.",
+    tag: "Uniforms",
+  },
+  {
+    href: "/custom-bucket-hats-manufacturer",
+    title: "Custom Bucket Hats",
+    desc: "Wide-brim festival and outdoor bucket hats, UPF 50+ sun protection, chin cords and reversible builds.",
+    tag: "Outdoor",
+  },
+  {
+    href: "/bulk-custom-hats-manufacturer",
+    title: "Container Bulk Production",
+    desc: "20GP and 40HQ container load manufacturing for international distributors and importers.",
+    tag: "10,000+ Scale",
+  },
+  {
+    href: "/pricing",
+    title: "Tiered Wholesale Pricing",
+    desc: "Transparent FOB price breaks from $3.50/pc floor rate, MOQ 200pcs, and cost breakdowns.",
+    tag: "Transparent Rates",
+  },
+];
 
 export default function Home() {
   const t = useT("home");
@@ -426,6 +502,51 @@ export default function Home() {
           <p className="text-gray-500 max-w-xl mx-auto text-lg font-light leading-relaxed">{t("catalog.sub")}</p>
         </div>
         <HatCatalog />
+      </section>
+
+      {/* B2B Manufacturing Programs & Contextual Internal Link Network */}
+      <section className="py-20 px-4 bg-gray-50 border-y border-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-yellow-600 font-bold uppercase tracking-wider text-xs md:text-sm">
+              Specialized Production Lines
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900 mt-2 mb-4">
+              Explore Our B2B Headwear Programs
+            </h2>
+            <p className="text-gray-600 text-base md:text-lg">
+              Direct-to-factory contract manufacturing programs tailored to brand founders, wholesalers, and international procurement teams. Minimum order 200 pcs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {MANUFACTURING_PROGRAMS.map((prog, idx) => (
+              <Link
+                key={idx}
+                href={`/${lang}${prog.href}`}
+                className="group bg-white p-6 rounded-2xl border border-gray-200 hover:border-yellow-500 hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-yellow-700 bg-yellow-50 px-2.5 py-1 rounded-full">
+                      {prog.tag}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-black text-gray-900 group-hover:text-yellow-600 transition-colors mb-2">
+                    {prog.title}
+                  </h3>
+                  <p className="text-gray-600 text-xs leading-relaxed mb-4">
+                    {prog.desc}
+                  </p>
+                </div>
+                <div className="flex items-center gap-1.5 text-xs font-bold text-gray-900 group-hover:text-yellow-600 transition-colors pt-3 border-t border-gray-100">
+                  <span>View Program Specs</span>
+                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Process / How It Works */}

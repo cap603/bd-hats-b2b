@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { Breadcrumb } from "./Breadcrumb";
 import { useLang } from "../lib/i18n";
 import { COMPARISON_LINKS } from "../lib/comparison-links";
@@ -147,17 +147,30 @@ export function LandingShell({
             Send your specs and artwork — pricing and lead time within 12 hours. Physical samples in 7 days.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href={`https://wa.me/8615933930830?text=${encodeURIComponent(
+                `Hi Baoding Junyang! I would like to get a factory quote for ${title} (${crumb}). MOQ 200pcs.`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                if (typeof window !== "undefined" && (window as any).gtag) {
+                  (window as any).gtag("event", "whatsapp_click", {
+                    event_category: "engagement",
+                    event_label: `landing_${crumb.toLowerCase().replace(/\s+/g, "_")}`,
+                  });
+                }
+              }}
+              className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition shadow-lg shadow-green-500/20"
+            >
+              <MessageCircle size={22} />
+              Chat on WhatsApp (Fast Quote)
+            </a>
             <Link
               href={`/${lang}/#inquiry`}
-              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition"
+              className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-full text-lg transition border border-white/20"
             >
-              Request Factory Quote <ArrowRight size={20} />
-            </Link>
-            <Link
-              href={`/${lang}/#catalog`}
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-full text-lg transition border border-white/20"
-            >
-              Browse Full Catalog
+              Submit Tech Pack Form <ArrowRight size={20} />
             </Link>
           </div>
         </div>
