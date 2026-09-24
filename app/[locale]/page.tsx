@@ -6,6 +6,7 @@ import { useT, useLang } from "../lib/i18n";
 import { attributionTag } from "../lib/attribution";
 import { NavCompareMenu } from "../components/NavCompareMenu";
 import { NavProductsMenu } from "../components/NavProductsMenu";
+import { MobileNav } from "../components/MobileNav";
 import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
@@ -197,29 +198,19 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Floating WhatsApp Widget */}
-      <div className="fixed bottom-8 right-8 z-50">
-        <button 
-          onClick={() => handleWhatsApp("floating-widget")}
-          className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition duration-300 text-sm md:text-base animate-bounce"
-        >
-          <MessageCircle size={20} /> Chat with a Specialist
-        </button>
-      </div>
-
       {/* Trust Banner / Top Bar */}
       <div className="bg-black text-white text-center py-2 px-4 text-xs font-semibold tracking-wider uppercase">
         China's Leading Premium Baseball Cap Manufacturer • Est. 2014
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-4 md:px-8">
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-3.5 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 md:gap-4">
             <img 
               src="/images/brand/junyang-logo.webp" 
               alt="JUNYANG Logo" 
-              className="h-12 w-auto object-contain"
+              className="h-10 md:h-12 w-auto object-contain"
             />
             <div className="hidden lg:flex flex-col">
               <span className="text-xl font-black tracking-tighter text-black">JUNYANG</span>
@@ -234,51 +225,57 @@ export default function Home() {
             <NavCompareMenu />
             <a href="#inquiry" className="hover:text-black transition">{n("inquiry")}</a>
           </nav>
-          <button 
-            onClick={() => handleWhatsApp("header")}
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm flex items-center gap-2 transition"
-          >
-            <MessageCircle size={16} /> {n("whatsappQuote")}
-          </button>
-          <LanguageSwitcher />
+          {/* Action buttons (Desktop + Mobile) */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            <button 
+              onClick={() => handleWhatsApp("header")}
+              className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 sm:py-2.5 px-3.5 sm:px-5 rounded-full text-xs md:text-sm flex items-center gap-1.5 sm:gap-2 transition shadow-xs cursor-pointer"
+            >
+              <MessageCircle size={15} /> <span className="hidden sm:inline">{n("whatsappQuote")}</span><span className="sm:hidden">Quote</span>
+            </button>
+            <div className="hidden sm:block">
+              <LanguageSwitcher />
+            </div>
+            <MobileNav />
+          </div>
         </div>
       </header>
 
-      {/* Hero Section (Carousel) */}
-      <section className="relative h-[500px] md:h-[700px] bg-gray-950 text-white overflow-hidden">
+      {/* Hero Section (Carousel — Optimized for Mobile Viewport) */}
+      <section className="relative min-h-[460px] sm:h-[540px] md:h-[680px] bg-gray-950 text-white overflow-hidden flex items-center">
         {BANNERS.map((banner, index) => (
           <div 
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentBanner ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
           >
-            <div className="absolute inset-0 bg-black/50 z-10"></div>
+            <div className="absolute inset-0 bg-black/55 z-10"></div>
             <img 
               src={banner.image} 
               alt={banner.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
-              <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm border-b-2 border-yellow-400 pb-1 mb-6">
+            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 sm:px-6">
+              <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-[10px] sm:text-xs md:text-sm border-b-2 border-yellow-400 pb-0.5 mb-3 sm:mb-6">
                 {t(`banners.${currentBanner}.label`)}
               </span>
               {index === 0 ? (
-                <h1 className="text-4xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight max-w-5xl">
+                <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-3 sm:mb-6 tracking-tight leading-tight max-w-5xl">
                   {banner.title}
                 </h1>
               ) : (
-                <h2 className="text-4xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight max-w-5xl">
+                <h2 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-3 sm:mb-6 tracking-tight leading-tight max-w-5xl">
                   {banner.title}
                 </h2>
               )}
-              <p className="text-lg md:text-2xl text-gray-200 mb-12 max-w-3xl font-light leading-relaxed">
+              <p className="text-xs sm:text-base md:text-xl text-gray-200 mb-6 sm:mb-10 max-w-2xl font-light leading-relaxed line-clamp-2 sm:line-clamp-none">
                 {banner.sub}
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4 w-full max-w-md">
                 <button 
                   onClick={banner.link === 'whatsapp' ? () => handleWhatsApp("hero-banner") : () => window.location.hash = banner.link}
-                  className="bg-green-500 text-white font-bold px-10 py-5 rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2 text-lg shadow-lg"
+                  className="bg-emerald-500 text-white font-black px-6 sm:px-10 py-3 sm:py-4.5 rounded-full hover:bg-emerald-600 transition flex items-center justify-center gap-2 text-sm sm:text-base md:text-lg shadow-xl shadow-emerald-500/20 active:scale-95 cursor-pointer"
                 >
-                  {banner.link === 'whatsapp' && <MessageCircle size={24} />} {banner.cta}
+                  {banner.link === 'whatsapp' && <MessageCircle size={20} />} {banner.cta}
                 </button>
               </div>
             </div>

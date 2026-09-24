@@ -15,6 +15,30 @@ import { Breadcrumb } from "../../../components/Breadcrumb";
 import { LanguageSwitcher } from "../../../components/LanguageSwitcher";
 import { CATEGORY_LANDING, CATEGORY_COMPARISONS, labelFor } from "../../../lib/product-links";
 
+function getProductSku(id: string): string {
+  const map: Record<string, string> = {
+    "two-tone-3d-embroidery-a-frame-cap": "JY-101",
+    "custom-3d-embroidered-5-panel-gorras": "JY-102",
+    "structured-multi-color-baseball-cap": "JY-103",
+    "ladies-plain-blank-cotton-sports-cap": "JY-104",
+    "personalised-two-tone-a-frame-cap": "JY-105",
+    "breathable-custom-embroidered-6-panel": "JY-106",
+    "vintage-acid-wash-6-panel-dad-hat": "JY-201",
+    "custom-foam-front-5-panel-trucker-hat": "JY-112",
+    "cotton-front-5-panel-mesh-trucker-cap": "JY-113",
+    "curved-brim-6-panel-mesh-trucker-cap": "JY-114",
+    "vintage-flat-brim-snapback-cap": "JY-301",
+    "waterproof-nylon-large-brim-bucket-hat": "JY-401",
+    "outdoor-performance-5-panel-cap": "JY-501",
+    "custom-embroidery-knitted-beanie": "JY-601",
+    "retro-washed-knitted-beanie": "JY-602",
+    "silk-lined-pompom-knitted-beanie": "JY-603",
+    "pompom-fur-ball-knitted-beanie": "JY-604",
+    "multi-colour-satin-lined-winter-beanie": "JY-605",
+  };
+  return map[id] || "JY-CAP";
+}
+
 export default function ProductDetail() {
   const t = useT("product");
   const lang = useLang();
@@ -35,7 +59,16 @@ export default function ProductDetail() {
   }
 
   const handleWhatsAppClick = () => {
-    const text = encodeURIComponent(`Hi Baoding Junyang! I'm interested in the "${hat.name}" (Product ID: ${hat.id}). Can you provide a detailed quote and production information?`);
+    const sku = getProductSku(String(hat.id));
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "whatsapp_click", {
+        event_category: "engagement",
+        event_label: `pdp-${sku}`,
+      });
+    }
+    const text = encodeURIComponent(
+      `Hi Baoding Junyang! I would like to get a wholesale quote and spec sheet for [${sku}] "${hat.name}". MOQ ${hat.moq}pcs.`
+    );
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
 
@@ -399,13 +432,27 @@ export default function ProductDetail() {
          </div>
       </footer>
 
-      {/* Mobile sticky inquiry bar */}
-      <div className="fixed bottom-0 inset-x-0 z-50 lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+      {/* Mobile sticky inquiry bar — Upgraded with SKU, MOQ and Quick Quote */}
+      <div className="fixed bottom-0 inset-x-0 z-50 lg:hidden bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-2.5 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] flex items-center justify-between gap-3">
+        <div className="flex flex-col min-w-0 flex-1">
+          <div className="flex items-center gap-1.5">
+            <span className="text-[10px] font-black bg-slate-900 text-white px-1.5 py-0.5 rounded">
+              {getProductSku(String(hat.id))}
+            </span>
+            <span className="text-xs font-black text-slate-900 truncate">
+              {hat.name}
+            </span>
+          </div>
+          <div className="text-[11px] text-slate-500 font-bold mt-0.5">
+            <span className="text-emerald-600 font-black">From $3.50</span> · MOQ {hat.moq}
+          </div>
+        </div>
         <button
           onClick={handleWhatsAppClick}
-          className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-3.5 rounded-xl transition text-sm"
+          className="shrink-0 inline-flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-black px-4 py-2.5 rounded-xl transition text-xs shadow-md shadow-emerald-600/20 cursor-pointer"
         >
-          <MessageCircle size={18} /> {t("getQuote")}
+          <MessageCircle size={15} />
+          <span>{t("getQuote")}</span>
         </button>
       </div>
       {/* Spacer so footer content is not covered by sticky bar on mobile */}

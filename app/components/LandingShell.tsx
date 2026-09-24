@@ -7,6 +7,7 @@ import { useLang } from "../lib/i18n";
 import { COMPARISON_LINKS } from "../lib/comparison-links";
 import { NavCompareMenu } from "./NavCompareMenu";
 import { NavProductsMenu } from "./NavProductsMenu";
+import { MobileNav } from "./MobileNav";
 
 /**
  * Shared shell for buyer-intent landing pages.
@@ -101,12 +102,15 @@ export function LandingShell({
             <NavCompareMenu />
             <Link href={`/${lang}/#inquiry`} className="hover:text-black transition">Inquiry</Link>
           </nav>
-          <Link
-            href={`/${lang}/#inquiry`}
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm"
-          >
-            Get Quote
-          </Link>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <Link
+              href={`/${lang}/#inquiry`}
+              className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 sm:py-2.5 px-3.5 sm:px-5 rounded-full text-xs md:text-sm shadow-xs"
+            >
+              Get Quote
+            </Link>
+            <MobileNav />
+          </div>
         </div>
       </header>
 

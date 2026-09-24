@@ -111,13 +111,13 @@ export function HatCatalog() {
 
   return (
     <div>
-      {/* Category Filter Bar (Modern B2B Clean Pills) */}
-      <div className="flex flex-wrap items-center justify-center gap-2 md:gap-2.5 mb-8">
+      {/* Category Filter Bar (Modern B2B Clean Pills — Horizontal Swipe on Mobile) */}
+      <div className="flex items-center sm:justify-center gap-2 md:gap-2.5 mb-6 sm:mb-8 overflow-x-auto no-scrollbar pb-2 px-1">
         {CATEGORIES.map((cat) => (
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`px-4.5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+            className={`px-3.5 sm:px-4.5 py-1.5 sm:py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer shrink-0 ${
               activeCategory === cat
                 ? "bg-slate-900 text-white shadow-md font-black"
                 : "bg-white border border-slate-200 text-slate-700 hover:border-slate-400 hover:text-slate-900 shadow-xs"
@@ -134,16 +134,16 @@ export function HatCatalog() {
       </div>
 
       {/* Secondary Filter Row */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 pb-5 border-b border-slate-200">
-        <div className="flex items-center gap-2">
-          <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 mr-1">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 mb-6 sm:mb-8 pb-4 sm:pb-5 border-b border-slate-200">
+        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar w-full sm:w-auto pb-1 sm:pb-0">
+          <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 mr-1 shrink-0">
             {t("panelLabel")}:
           </span>
           {PANEL_TYPES.map((panel) => (
             <button
               key={panel}
               onClick={() => setActivePanel(panel)}
-              className={`px-3 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer ${
+              className={`px-2.5 sm:px-3 py-1 rounded-md text-[10px] sm:text-[11px] font-bold uppercase tracking-wider transition-all cursor-pointer shrink-0 ${
                 activePanel === panel
                   ? "bg-slate-800 text-white font-bold"
                   : "bg-white border border-slate-200 text-slate-600 hover:border-slate-300 hover:text-slate-900"
@@ -154,7 +154,7 @@ export function HatCatalog() {
           ))}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 self-end sm:self-auto">
           <ArrowUpDown size={14} className="text-slate-400" />
           <select
             value={sortBy}
@@ -175,17 +175,17 @@ export function HatCatalog() {
         </div>
       </div>
 
-      {/* Product Grid — 4 per row, fluidly adapting to page width */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-7">
+      {/* Product Grid — Mobile 2-column, Desktop 4-column fluid layout */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 xl:gap-7">
         {filteredHats.map((hat, idx) => {
           const sku = getProductSku(hat.id, idx);
           return (
             <div
               key={hat.id}
-              className="group flex flex-col justify-between bg-white border border-slate-200 hover:border-slate-400 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300"
+              className="group flex flex-col justify-between bg-white border border-slate-200 hover:border-slate-400 rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300"
             >
               {/* Image Area on neutral light technical backdrop */}
-              <div className="relative aspect-square bg-slate-50 p-4 overflow-hidden border-b border-slate-100 flex items-center justify-center">
+              <div className="relative aspect-square bg-slate-50 p-2 sm:p-4 overflow-hidden border-b border-slate-100 flex items-center justify-center">
                 <Link href={`/${lang}/product/${hat.id}`} className="block w-full h-full">
                   <img
                     src={hat.img}
@@ -198,13 +198,13 @@ export function HatCatalog() {
                 </Link>
 
                 {/* SKU Badge & Product Badge */}
-                <div className="absolute top-3 left-3 flex items-center gap-1.5">
-                  <span className="bg-slate-900 text-white text-[10px] font-black tracking-wider px-2 py-0.5 rounded-md shadow-xs">
+                <div className="absolute top-2 sm:top-3 left-2 sm:left-3 flex items-center gap-1 sm:gap-1.5">
+                  <span className="bg-slate-900 text-white text-[9px] sm:text-[10px] font-black tracking-wider px-1.5 sm:px-2 py-0.5 rounded shadow-xs">
                     {sku}
                   </span>
                   {hat.badge && (
                     <span
-                      className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-md shadow-xs ${
+                      className={`text-[8px] sm:text-[9px] font-black uppercase px-1.5 sm:px-2 py-0.5 rounded shadow-xs hidden xs:inline-block ${
                         hat.badge === "bestseller"
                           ? "bg-amber-400 text-slate-950 font-black"
                           : hat.badge === "trending"
@@ -222,78 +222,78 @@ export function HatCatalog() {
                 </div>
 
                 {/* MOQ Tag */}
-                <div className="absolute top-3 right-3">
-                  <span className="bg-white/95 backdrop-blur border border-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded-md shadow-xs">
+                <div className="absolute top-2 sm:top-3 right-2 sm:right-3">
+                  <span className="bg-white/95 backdrop-blur border border-slate-200 text-slate-700 text-[9px] sm:text-[10px] font-bold px-1.5 sm:px-2 py-0.5 rounded shadow-xs">
                     MOQ {hat.moq}
                   </span>
                 </div>
               </div>
 
               {/* Technical Specifications Area */}
-              <div className="p-5 flex flex-col flex-grow justify-between text-left">
+              <div className="p-3 sm:p-5 flex flex-col flex-grow justify-between text-left">
                 <div>
                   {/* Category & Panels Header */}
-                  <div className="flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">
-                    <span>{hat.category || "HEADWEAR"}</span>
+                  <div className="flex items-center justify-between text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-0.5 sm:mb-1">
+                    <span className="truncate max-w-[90px]">{hat.category || "HEADWEAR"}</span>
                     <span>{hat.specs.panels}</span>
                   </div>
 
                   {/* Product Name */}
                   <Link href={`/${lang}/product/${hat.id}`}>
-                    <h3 className="text-base font-black text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-1 leading-snug mb-1">
+                    <h3 className="text-xs sm:text-base font-black text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-1 leading-snug mb-0.5 sm:mb-1">
                       {hat.name}
                     </h3>
                   </Link>
 
                   {/* Fabric Description */}
-                  <p className="text-xs text-slate-500 line-clamp-1 mb-3.5">
+                  <p className="text-[10px] sm:text-xs text-slate-500 line-clamp-1 mb-2 sm:mb-3.5">
                     {hat.specs.material} · {hat.specs.style}
                   </p>
 
                   {/* 3-Column Industrial Technical Spec Matrix */}
-                  <div className="grid grid-cols-3 gap-2 py-2 px-2.5 mb-4 rounded-xl bg-slate-50 border border-slate-100 text-left">
+                  <div className="grid grid-cols-3 gap-1 sm:gap-2 py-1.5 sm:py-2 px-1.5 sm:px-2.5 mb-2.5 sm:mb-4 rounded-lg sm:rounded-xl bg-slate-50 border border-slate-100 text-left">
                     <div>
-                      <span className="block text-[9px] font-bold uppercase tracking-wider text-slate-400">
+                      <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-400">
                         FLOOR
                       </span>
-                      <span className="text-xs font-black text-emerald-600">
-                        From $3.50
+                      <span className="text-[10px] sm:text-xs font-black text-emerald-600 truncate block">
+                        $3.50
                       </span>
                     </div>
                     <div>
-                      <span className="block text-[9px] font-bold uppercase tracking-wider text-slate-400">
-                        STRUCTURE
+                      <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-400">
+                        PROFILE
                       </span>
-                      <span className="text-xs font-bold text-slate-800 truncate block">
+                      <span className="text-[10px] sm:text-xs font-bold text-slate-800 truncate block">
                         {hat.specs.panels}
                       </span>
                     </div>
                     <div>
-                      <span className="block text-[9px] font-bold uppercase tracking-wider text-slate-400">
+                      <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-400">
                         CUSTOM
                       </span>
-                      <span className="text-xs font-bold text-slate-800 truncate block">
-                        48+ Colors
+                      <span className="text-[10px] sm:text-xs font-bold text-slate-800 truncate block">
+                        48+ Col
                       </span>
                     </div>
                   </div>
                 </div>
 
                 {/* B2B Action Buttons */}
-                <div className="grid grid-cols-2 gap-2 pt-1">
+                <div className="grid grid-cols-2 gap-1.5 sm:gap-2 pt-1">
                   <button
                     onClick={(e) => handleWhatsAppClick(e, hat.name, sku)}
-                    className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-3 rounded-xl text-xs transition flex items-center justify-center gap-1.5 shadow-xs cursor-pointer"
+                    className="w-full bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold py-2 sm:py-2.5 px-1.5 sm:px-3 rounded-lg sm:rounded-xl text-[11px] sm:text-xs transition flex items-center justify-center gap-1 shadow-xs cursor-pointer"
                   >
-                    <MessageCircle size={13} />
+                    <MessageCircle size={12} className="shrink-0" />
                     <span>Quote</span>
                   </button>
                   <Link
                     href={`/${lang}/product/${hat.id}`}
-                    className="w-full bg-slate-900 hover:bg-black text-white font-bold py-2.5 px-3 rounded-xl text-xs transition flex items-center justify-center gap-1 text-center"
+                    className="w-full bg-slate-900 hover:bg-black text-white font-bold py-2 sm:py-2.5 px-1.5 sm:px-3 rounded-lg sm:rounded-xl text-[11px] sm:text-xs transition flex items-center justify-center gap-1 text-center"
                   >
-                    <span>Tech Specs</span>
-                    <ArrowRight size={13} />
+                    <span>Specs</span>
+                    <ArrowRight size={12} className="shrink-0" />
                   </Link>
                 </div>
               </div>

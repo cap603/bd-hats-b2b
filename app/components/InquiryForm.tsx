@@ -75,15 +75,15 @@ export function InquiryForm() {
     <form onSubmit={handleSubmit} className="space-y-5 bg-white p-8 rounded-xl shadow-sm border">
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">{t("name")} *</label>
-        <input ref={nameRef} required type="text" className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("namePlaceholder")} />
+        <input ref={nameRef} required type="text" className="w-full px-4 py-3 text-base border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("namePlaceholder")} />
       </div>
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">{t("email")} *</label>
-        <input ref={emailRef} required type="email" className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("emailPlaceholder")} />
+        <input ref={emailRef} required type="email" className="w-full px-4 py-3 text-base border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("emailPlaceholder")} />
       </div>
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">{t("message")} *</label>
-        <textarea ref={messageRef} required rows={5} defaultValue={prefill} className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("messagePlaceholder")}></textarea>
+        <textarea ref={messageRef} required rows={5} defaultValue={prefill} className="w-full px-4 py-3 text-base border rounded-lg focus:ring-2 focus:ring-black outline-none" placeholder={t("messagePlaceholder")}></textarea>
       </div>
       <p className="text-xs text-gray-400 -mt-2">{t("privacyNote")}</p>
       <button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white py-4 font-black rounded-lg transition flex items-center justify-center gap-2 shadow-lg shadow-green-500/20">
