@@ -494,13 +494,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Catalog Section — Luxopack Dark Luxury Showcase & Fluid 4-Column Grid */}
-      <section id="catalog" className="py-24 bg-[#0a0d14] text-white border-y border-gray-900 scroll-mt-20">
-        <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-14">
-          <div className="text-center mb-16">
-            <span className="text-xs font-black uppercase tracking-widest text-yellow-400">{t("catalog.label")}</span>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-4 text-white">{t("catalog.heading")}</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto text-lg font-light leading-relaxed">{t("catalog.sub")}</p>
+      {/* Catalog Section — Modern B2B Industrial Wholesale Fluid 4-Column Grid */}
+      <section id="catalog" className="py-24 bg-slate-50/80 border-y border-slate-200/80 scroll-mt-20">
+        <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-xs font-black uppercase tracking-widest text-slate-500 bg-slate-200/70 px-3 py-1 rounded-full inline-block">
+              {t("catalog.label")}
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 mt-3 mb-4">
+              {t("catalog.heading")}
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto text-base md:text-lg font-normal leading-relaxed">
+              {t("catalog.sub")}
+            </p>
           </div>
           <HatCatalog />
         </div>
