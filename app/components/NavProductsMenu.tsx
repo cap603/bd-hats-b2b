@@ -4,24 +4,14 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { useT, useLang } from "../lib/i18n";
-import { PRODUCT_CATEGORIES, PRODUCTS_PER_NAV_CATEGORY } from "../lib/product-categories";
+import { PRODUCT_CATEGORIES } from "../lib/product-categories";
 import { HATS } from "../lib/products";
 
 /**
  * Top-navigation "Products" dropdown — first item in the nav bar.
  *
- * Two levels: each category row links to its category landing page (the page
- * that actually ranks for "custom trucker hats" style queries), and the caps in
- * that category are listed underneath so a buyer can reach a specific product
- * in one click without scrolling down to the catalog.
- *
- * Products are derived from products.ts, so adding a cap never means editing
- * this file — it simply appears under its category.
- *
- * Links stay real <a> elements in the initial HTML (only visually collapsed),
- * so crawlers follow them and SEO value is preserved.
- *
- * Opens on hover (desktop) and on click (touch / keyboard).
+ * Clean, compact category menu linking directly to category landing pages
+ * or catalog anchors, with style counts.
  */
 export function NavProductsMenu({ label = "Products" }: { label?: string }) {
   const lang = useLang();
@@ -43,71 +33,48 @@ export function NavProductsMenu({ label = "Products" }: { label?: string }) {
 
       {/* pt-3 keeps the hover bridge so the panel does not close in the gap */}
       <div
-        className={`absolute left-0 top-full pt-3 z-50 w-[24rem] ${
+        className={`absolute left-0 top-full pt-3 z-50 w-64 ${
           open
             ? "visible opacity-100"
             : "invisible opacity-0 group-hover:visible group-hover:opacity-100"
         } transition`}
       >
-        <div className="bg-white border border-gray-100 rounded-2xl shadow-2xl p-2 max-h-[70vh] overflow-y-auto">
-          <p className="px-4 pt-2 pb-1 text-[10px] font-black uppercase tracking-widest text-gray-400">
+        <div className="bg-white border border-gray-100 rounded-2xl shadow-2xl p-2">
+          <p className="px-3 pt-2 pb-1 text-[10px] font-black uppercase tracking-widest text-gray-400">
             {t("categories")}
           </p>
 
-          {PRODUCT_CATEGORIES.map((cat) => {
-            const products = HATS.filter((h) =>
-              (cat.categories as readonly string[]).includes(h.category ?? "")
-            );
-            const shown = products.slice(0, PRODUCTS_PER_NAV_CATEGORY);
-            const hiddenCount = products.length - shown.length;
+          <div className="space-y-0.5">
+            {PRODUCT_CATEGORIES.map((cat) => {
+              const products = HATS.filter((h) =>
+                (cat.categories as readonly string[]).includes(h.category ?? "")
+              );
 
-            return (
-              <div key={cat.href} className="border-b border-gray-50 last:border-b-0">
+              return (
                 <Link
+                  key={cat.href}
                   href={`/${lang}${cat.href}`}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between gap-3 px-4 pt-3 pb-1 rounded-lg hover:bg-gray-50 transition"
+                  className="flex items-center justify-between gap-3 px-3 py-2 rounded-xl hover:bg-gray-50 transition group/item"
                 >
-                  <span className="text-sm font-bold text-gray-900 group-hover/item:text-black">
+                  <span className="text-sm font-bold text-gray-800 group-hover/item:text-black">
                     {cat.label}
                   </span>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400 whitespace-nowrap">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400 whitespace-nowrap bg-gray-50 px-2 py-0.5 rounded-full border border-gray-100">
                     {t("stylesCount", { count: products.length })}
                   </span>
                 </Link>
+              );
+            })}
+          </div>
 
-                <div className="pb-2">
-                  {shown.map((p) => (
-                    <Link
-                      key={p.id}
-                      href={`/${lang}/product/${p.id}`}
-                      onClick={() => setOpen(false)}
-                      className="block pl-6 pr-4 py-1.5 rounded-lg text-xs text-gray-500 hover:text-black hover:bg-gray-50 transition truncate"
-                    >
-                      {p.name}
-                    </Link>
-                  ))}
-                  {hiddenCount > 0 && (
-                    <Link
-                      href={`/${lang}${cat.href}`}
-                      onClick={() => setOpen(false)}
-                      className="block pl-6 pr-4 py-1.5 text-xs font-bold text-gray-500 hover:text-black transition"
-                    >
-                      {t("viewAllCount", { count: products.length })}
-                    </Link>
-                  )}
-                </div>
-              </div>
-            );
-          })}
-
-          <div className="border-t border-gray-100 mt-1 pt-2 px-4 pb-1">
+          <div className="border-t border-gray-100 mt-2 pt-2 px-3 pb-1">
             <Link
               href={`/${lang}/#catalog`}
               onClick={() => setOpen(false)}
-              className="text-xs font-bold text-gray-500 hover:text-black transition"
+              className="block text-xs font-bold text-gray-500 hover:text-black transition py-1"
             >
-              {t("viewAllProducts")}
+              {t("viewAllProducts")} →
             </Link>
           </div>
         </div>
