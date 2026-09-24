@@ -494,14 +494,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Catalog Section */}
-      <section id="catalog" className="py-24 px-4 max-w-7xl mx-auto scroll-mt-20">
-        <div className="text-center mb-20">
-          <span className="text-xs font-black uppercase tracking-widest text-gray-500">{t("catalog.label")}</span>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-4">{t("catalog.heading")}</h2>
-          <p className="text-gray-500 max-w-xl mx-auto text-lg font-light leading-relaxed">{t("catalog.sub")}</p>
+      {/* Catalog Section — Luxopack Dark Luxury Showcase & Fluid 4-Column Grid */}
+      <section id="catalog" className="py-24 bg-[#0a0d14] text-white border-y border-gray-900 scroll-mt-20">
+        <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-14">
+          <div className="text-center mb-16">
+            <span className="text-xs font-black uppercase tracking-widest text-yellow-400">{t("catalog.label")}</span>
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-2 mb-4 text-white">{t("catalog.heading")}</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto text-lg font-light leading-relaxed">{t("catalog.sub")}</p>
+          </div>
+          <HatCatalog />
         </div>
-        <HatCatalog />
       </section>
 
       {/* B2B Manufacturing Programs & Contextual Internal Link Network */}

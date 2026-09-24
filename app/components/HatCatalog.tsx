@@ -3,9 +3,8 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { useT, useLang } from "../lib/i18n";
-import { MessageCircle, ArrowRight, ArrowUpDown } from "lucide-react";
+import { ArrowRight, ArrowUpDown } from "lucide-react";
 import { HATS } from "../lib/products";
-import { priceLabel } from "../lib/price";
 
 const CATEGORY_KEYS = [
   "filterAll",
@@ -17,6 +16,7 @@ const CATEGORY_KEYS = [
   "filterBucketHats",
   "filterBeanies",
 ] as const;
+
 const CATEGORY_MAP: Record<string, string> = {
   "All": "filterAll",
   "Baseball Caps": "filterBaseballCaps",
@@ -27,7 +27,9 @@ const CATEGORY_MAP: Record<string, string> = {
   "Bucket Hats": "filterBucketHats",
   "Beanies": "filterBeanies",
 };
+
 const PANEL_TYPES = ["All", "5-Panel", "6-Panel"];
+
 const SORT_OPTIONS = [
   { value: "default", key: "sortDefault" },
   { value: "price-asc", key: "sortPriceAsc" },
@@ -66,35 +68,25 @@ export function HatCatalog() {
     return result;
   }, [activeCategory, activePanel, sortBy]);
 
-  const handleWhatsAppClick = (e: React.MouseEvent, hatName: string) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "whatsapp_click", { event_category: "engagement", event_label: `product-${hatName}` });
-    }
-    const text = encodeURIComponent(`Hi Baoding Junyang! I'm interested in the "${hatName}". Can I get a quote?`);
-    window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
-  };
-
   const CATEGORIES = ["All", "Baseball Caps", "Vintage Series", "Sports & Active", "Trucker Hats", "Snapback Caps", "Bucket Hats", "Beanies"];
 
   return (
     <div>
-      {/* Category Filter Bar */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
+      {/* Category Filter Bar (Luxopack Dark Gold Pills) */}
+      <div className="flex flex-wrap items-center justify-center gap-2 md:gap-2.5 mb-8">
         {CATEGORIES.map((cat) => (
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`px-5 py-2 rounded-full text-xs font-black uppercase tracking-wider transition-all ${
+            className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
               activeCategory === cat
-                ? "bg-black text-white shadow-lg"
-                : "bg-gray-100 text-gray-500 hover:bg-gray-200 hover:text-black"
+                ? "bg-yellow-500 text-black shadow-lg shadow-yellow-500/20 font-black"
+                : "bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/20"
             }`}
           >
             {t(CATEGORY_MAP[cat])}
             {cat !== "All" && (
-              <span className="ml-1.5 text-[10px] opacity-60">
+              <span className="ml-1.5 text-[10px] opacity-75">
                 ({HATS.filter(h => h.category === cat).length})
               </span>
             )}
@@ -103,17 +95,17 @@ export function HatCatalog() {
       </div>
 
       {/* Secondary Filter Row */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mb-10">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10 pb-6 border-b border-white/10">
         <div className="flex items-center gap-2">
-          <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400 mr-1">{t("panelLabel")}</span>
+          <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 mr-1">{t("panelLabel")}:</span>
           {PANEL_TYPES.map((panel) => (
             <button
               key={panel}
               onClick={() => setActivePanel(panel)}
-              className={`px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${
+              className={`px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider transition-all ${
                 activePanel === panel
-                  ? "bg-gray-900 text-white"
-                  : "bg-gray-100 text-gray-500 hover:bg-gray-200"
+                  ? "bg-white text-black font-bold"
+                  : "bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10"
               }`}
             >
               {panel === "All" ? t("panelAll") : panel}
@@ -126,40 +118,43 @@ export function HatCatalog() {
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as SortBy)}
-            className="text-xs font-bold text-gray-600 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 outline-none focus:border-black transition cursor-pointer appearance-none pr-8"
+            className="text-xs font-bold text-gray-300 bg-[#141822] border border-white/15 rounded-xl px-3.5 py-2 outline-none focus:border-yellow-400 transition cursor-pointer appearance-none pr-8"
             style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`,
+              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`,
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "right 8px center",
+              backgroundPosition: "right 10px center",
             }}
           >
             {SORT_OPTIONS.map((opt) => (
-              <option key={opt.value} value={opt.value}>{t(opt.key)}</option>
+              <option key={opt.value} value={opt.value} className="bg-[#141822] text-gray-200">
+                {t(opt.key)}
+              </option>
             ))}
           </select>
         </div>
       </div>
 
-      {/* Product Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      {/* Product Grid — 4 per row, fluidly adapting to page width */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
         {filteredHats.map((hat) => (
           <Link
             href={`/${lang}/product/${hat.id}`}
             key={hat.id}
-            className="group flex flex-col justify-between border border-gray-100 bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-1"
+            className="group flex flex-col justify-between bg-[#141822] border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-500/50 hover:shadow-2xl hover:shadow-yellow-500/5 transition-all duration-500 hover:-translate-y-1.5"
           >
-            <div className="aspect-square bg-gray-50 relative overflow-hidden">
-              <img
-                src={hat.img}
-                alt={`${hat.name} Wholesale Manufacturer`}
-                className="object-cover w-full h-full group-hover:scale-110 transition duration-700"
-                loading="lazy"
-                width="640"
-                height="640"
-              />
-              <div className="absolute top-3 left-3 flex gap-1.5 flex-wrap">
+            {/* Card Image Area with gentle inner padding matching Luxopack */}
+            <div className="p-3 bg-[#0d1017]">
+              <div className="aspect-square relative overflow-hidden rounded-xl bg-gray-900">
+                <img
+                  src={hat.img}
+                  alt={`${hat.name} Wholesale Manufacturer`}
+                  className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  width="640"
+                  height="640"
+                />
                 {hat.badge && (
-                  <span className={`text-[9px] font-black uppercase px-2.5 py-1 rounded-full tracking-wide shadow-md ${
+                  <span className={`absolute top-2.5 left-2.5 text-[9px] font-black uppercase px-2.5 py-1 rounded-full tracking-wider shadow-lg ${
                     hat.badge === "bestseller"
                       ? "bg-yellow-400 text-black"
                       : hat.badge === "trending"
@@ -169,42 +164,55 @@ export function HatCatalog() {
                     {hat.badge === "bestseller" ? t("badgeBestSeller") : hat.badge === "trending" ? t("badgeTrending") : t("badgeNew")}
                   </span>
                 )}
-                {hat.category && (
-                  <span className="bg-black/70 backdrop-blur text-white text-[9px] font-bold uppercase px-2 py-0.5 rounded-full tracking-wide">
-                    {hat.category}
-                  </span>
-                )}
-                <span className="bg-white/80 backdrop-blur text-gray-700 text-[9px] font-bold uppercase px-2 py-0.5 rounded-full tracking-wide">
-                  {hat.specs.panels}
-                </span>
-              </div>
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                <span className="bg-white text-black font-bold px-6 py-3 rounded-full flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
-                  {t("viewDetails")} <ArrowRight size={16} />
-                </span>
               </div>
             </div>
-            <div className="p-4 flex flex-col flex-grow justify-between">
+
+            {/* Card Content (Luxopack Typography & Specs) */}
+            <div className="p-5 flex flex-col flex-grow justify-between text-left">
               <div>
-                <div className="flex justify-between items-start gap-2 mb-1.5">
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-gray-400 whitespace-nowrap">{t("moq", { count: hat.moq })}</span>
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-yellow-600 whitespace-nowrap">{t("factoryDirect")}</span>
+                {/* Category Pill with decorative glyph */}
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <span className="text-[11px] font-bold text-yellow-400 uppercase tracking-widest truncate">
+                    ✦ {hat.category || "CUSTOM CAP"}
+                  </span>
+                  <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider">
+                    {hat.specs.panels}
+                  </span>
                 </div>
-                <h3 className="text-sm font-bold text-black mb-1.5 group-hover:text-yellow-600 transition line-clamp-2 leading-snug">{hat.name}</h3>
-                <p className="text-gray-500 text-[11px] leading-relaxed mb-3 line-clamp-2">{hat.desc}</p>
-              </div>
-              <div>
-                <p className="text-sm font-black text-black mb-2.5">{priceLabel(hat.price)}</p>
-                <div className="flex gap-2">
-                  <button
-                    onClick={(e) => handleWhatsAppClick(e, hat.name)}
-                    className="flex-1 bg-green-500 text-white py-2.5 px-3 font-semibold text-xs rounded-lg hover:bg-green-600 transition flex items-center justify-center gap-1.5"
-                  >
-                    <MessageCircle size={14} /> {t("quote")}
-                  </button>
-                  <div className="bg-black text-white py-2.5 px-3 font-semibold text-xs rounded-lg group-hover:bg-yellow-600 transition flex items-center justify-center">
-                    {t("details")}
+
+                {/* Title */}
+                <h3 className="text-base font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors line-clamp-1 leading-snug">
+                  {hat.name}
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-400 text-xs leading-relaxed mb-4 line-clamp-2 min-h-[2rem]">
+                  {hat.desc}
+                </p>
+
+                {/* Spec Grid (3 columns matching Luxopack: MOQ | MATERIAL | STRUCTURE) */}
+                <div className="grid grid-cols-3 gap-2 py-3 mb-5 border-y border-white/10 text-left">
+                  <div>
+                    <span className="block text-[9px] font-bold uppercase tracking-wider text-gray-500 mb-0.5">MOQ</span>
+                    <span className="text-xs font-semibold text-gray-200">{hat.moq} pcs</span>
                   </div>
+                  <div>
+                    <span className="block text-[9px] font-bold uppercase tracking-wider text-gray-500 mb-0.5 truncate">FABRIC</span>
+                    <span className="text-xs font-semibold text-gray-200 truncate block" title={hat.specs.material}>
+                      {hat.specs.material.replace(/Twilling|Twill/i, "Twill").split(" ")[0]}
+                    </span>
+                  </div>
+                  <div>
+                    <span className="block text-[9px] font-bold uppercase tracking-wider text-gray-500 mb-0.5">PROFILE</span>
+                    <span className="text-xs font-semibold text-gray-200 truncate block">{hat.specs.panels}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Luxopack-style Action Button */}
+              <div className="pt-1">
+                <div className="w-full py-2.5 px-4 rounded-xl border border-white/20 text-white font-semibold text-xs md:text-sm text-center group-hover:border-yellow-400 group-hover:text-yellow-400 group-hover:bg-yellow-400/5 transition-all duration-300 flex items-center justify-center gap-2">
+                  <span>→ View Details</span>
                 </div>
               </div>
             </div>
@@ -212,19 +220,20 @@ export function HatCatalog() {
         ))}
       </div>
 
-      <div className="text-center mt-8">
+      {/* Showing counter / Empty state */}
+      <div className="text-center mt-12">
         {filteredHats.length === 0 ? (
           <p className="text-gray-400 text-sm">
             {t("noResults")}{" "}
             <button
               onClick={() => { setActiveCategory("All"); setActivePanel("All"); setSortBy("default"); }}
-              className="text-black font-bold underline"
+              className="text-yellow-400 font-bold underline ml-1"
             >
               {t("resetFilters")}
             </button>
           </p>
         ) : (
-          <p className="text-gray-400 text-xs font-medium">
+          <p className="text-gray-500 text-xs font-medium">
             {t("showing", { shown: filteredHats.length, total: HATS.length })}
           </p>
         )}
