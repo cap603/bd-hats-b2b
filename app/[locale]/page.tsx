@@ -774,8 +774,16 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{ft("contact")}</h4>
               <ul className="space-y-2 text-sm">
-                <li className="text-gray-400">{ft("whatsapp")}</li>
-                <li className="text-gray-400">{ft("email")}</li>
+                <li className="text-gray-400">
+                  <a href="https://wa.me/8615933930830" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                    {ft("whatsapp")}
+                  </a>
+                </li>
+                <li className="text-gray-400">
+                  <a href="mailto:admin@bdjunyang.com" className="hover:text-white transition">
+                    {ft("email")}
+                  </a>
+                </li>
                 <li className="text-gray-400">{ft("office")}</li>
               </ul>
             </div>
