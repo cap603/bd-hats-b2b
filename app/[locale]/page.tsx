@@ -97,7 +97,7 @@ export default function Home() {
 
   const BANNERS = [
     {
-      image: "/images/site/img-34a1ae33.webp",
+      image: "/images/site/factory-embroidery-panels.webp",
       title: t("banners.0.title"),
       sub: t("banners.0.sub"),
       cta: t("banners.0.cta"),
