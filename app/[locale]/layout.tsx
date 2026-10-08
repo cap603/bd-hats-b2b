@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { locales } from "../../i18n";
 import { Analytics } from "@vercel/analytics/react";
 import { WhatsAppFloat } from "../components/WhatsAppFloat";
+import { LanguageNotice } from "../components/LanguageNotice";
 import "../globals.css";
 
 export const dynamic = "force-dynamic";
@@ -177,6 +178,7 @@ export default async function LocaleLayout({
               useT() finds an empty messages object and returns raw keys such as
               "chat.cta" / "popup.heading", which is what visitors would read. */}
           <WhatsAppFloat />
+          <LanguageNotice />
         </I18nProvider>
         {/* Vercel Analytics — zero-config traffic & pageview tracking */}
         <Analytics />
