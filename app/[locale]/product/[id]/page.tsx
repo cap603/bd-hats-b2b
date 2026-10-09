@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Breadcrumb } from "../../../components/Breadcrumb";
 import { LanguageSwitcher } from "../../../components/LanguageSwitcher";
+import { trackWhatsAppClick } from "../../../lib/tracking";
 import { CATEGORY_LANDING, CATEGORY_COMPARISONS, labelFor } from "../../../lib/product-links";
 
 function getProductSku(id: string): string {
@@ -60,12 +61,10 @@ export default function ProductDetail() {
 
   const handleWhatsAppClick = () => {
     const sku = getProductSku(String(hat.id));
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "whatsapp_click", {
-        event_category: "engagement",
-        event_label: `pdp-${sku}`,
-      });
-    }
+    trackWhatsAppClick({
+      button: "pdp_sticky_bar",
+      label: `Product: [${sku}] ${hat.name}`,
+    });
     const text = encodeURIComponent(
       `Hi Baoding Junyang! I would like to get a wholesale quote and spec sheet for [${sku}] "${hat.name}". MOQ ${hat.moq}pcs.`
     );

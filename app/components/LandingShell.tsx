@@ -8,6 +8,7 @@ import { COMPARISON_LINKS } from "../lib/comparison-links";
 import { NavCompareMenu } from "./NavCompareMenu";
 import { NavProductsMenu } from "./NavProductsMenu";
 import { MobileNav } from "./MobileNav";
+import { trackWhatsAppClick } from "../lib/tracking";
 
 /**
  * Shared shell for buyer-intent landing pages.
@@ -158,12 +159,10 @@ export function LandingShell({
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {
-                if (typeof window !== "undefined" && (window as any).gtag) {
-                  (window as any).gtag("event", "whatsapp_click", {
-                    event_category: "engagement",
-                    event_label: `landing_${crumb.toLowerCase().replace(/\s+/g, "_")}`,
-                  });
-                }
+                trackWhatsAppClick({
+                  button: "landing_bottom_cta",
+                  label: `Landing: ${title} (${crumb})`,
+                });
               }}
               className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition shadow-lg shadow-green-500/20"
             >

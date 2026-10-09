@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useT, useLang } from "../lib/i18n";
 import { attributionLines } from "../lib/attribution";
+import { trackWhatsAppClick } from "../lib/tracking";
 import { CheckCircle2, MessageCircle, Send } from "lucide-react";
 
 const WHATSAPP_NUMBER = "8615933930830";
@@ -140,6 +141,12 @@ export function InquiryForm() {
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${whatsAppText}`}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              trackWhatsAppClick({
+                button: "form_success_card",
+                label: `Inquiry Form Followup (#${inquiryId})`,
+              })
+            }
             className="w-full bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold py-3 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition shadow-md shadow-emerald-600/20"
           >
             <MessageCircle size={16} />

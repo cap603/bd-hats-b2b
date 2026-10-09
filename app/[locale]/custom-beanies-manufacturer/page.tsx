@@ -2,6 +2,7 @@
 
 import { LandingShell, ProductLinks } from "../../components/LandingShell";
 import { useLang } from "../../lib/i18n";
+import { trackWhatsAppClick } from "../../lib/tracking";
 import { MessageCircle, ArrowRight, Layers, ShieldCheck, Sparkles, CheckCircle2 } from "lucide-react";
 
 const CONTENT = {
@@ -327,6 +328,10 @@ export default function BeaniesPage() {
   };
 
   const handleWhatsAppFastQuote = (styleName?: string) => {
+    trackWhatsAppClick({
+      button: "beanies_fast_quote",
+      label: styleName ? `Beanies Silhouette: ${styleName}` : "Beanies Q4 Fast Track Banner",
+    });
     const text = encodeURIComponent(
       `Hi Baoding Junyang! I am interested in custom manufacturing beanies (${styleName ? styleName : "Winter Knit Beanie Collection"}). Please send me your knitwear spec sheet & yarn color cards. MOQ 200pcs.`
     );

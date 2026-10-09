@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useT, useLang } from "../lib/i18n";
 import { MessageCircle, ArrowRight, ArrowUpDown } from "lucide-react";
 import { HATS } from "../lib/products";
+import { trackWhatsAppClick } from "../lib/tracking";
 
 const CATEGORY_KEYS = [
   "filterAll",
@@ -95,12 +96,10 @@ export function HatCatalog() {
   const handleWhatsAppClick = (e: React.MouseEvent, hatName: string, sku: string) => {
     e.preventDefault();
     e.stopPropagation();
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "whatsapp_click", {
-        event_category: "engagement",
-        event_label: `catalog-${sku}`,
-      });
-    }
+    trackWhatsAppClick({
+      button: "catalog_card",
+      label: `Catalog Item: [${sku}] ${hatName}`,
+    });
     const text = encodeURIComponent(
       `Hi Baoding Junyang! I would like to get a wholesale quote and spec sheet for [${sku}] ${hatName}. MOQ 200pcs.`
     );

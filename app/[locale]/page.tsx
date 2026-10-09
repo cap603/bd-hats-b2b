@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useT, useLang } from "../lib/i18n";
 import { attributionTag } from "../lib/attribution";
+import { trackWhatsAppClick } from "../lib/tracking";
 import { NavCompareMenu } from "../components/NavCompareMenu";
 import { NavProductsMenu } from "../components/NavProductsMenu";
 import { MobileNav } from "../components/MobileNav";
@@ -176,6 +177,10 @@ export default function Home() {
   };
 
   const handleWhatsApp = (source: string, customText?: string) => {
+    trackWhatsAppClick({
+      button: "homepage_cta",
+      label: `Home Section: ${source}`,
+    });
     const defaultText = "Hi Baoding Junyang! I would like to get a catalog and quote for custom baseball caps.";
     const text = encodeURIComponent(`${customText || defaultText}\n\n${attributionTag()}`);
     trackWhatsApp(source);

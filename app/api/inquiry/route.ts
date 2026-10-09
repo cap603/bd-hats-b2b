@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
+import { formatCountry } from "../../lib/country";
+import { sendWebhookNotification } from "../../lib/notify";
 
 export const runtime = "nodejs";
 
@@ -72,7 +74,26 @@ export async function POST(req: NextRequest) {
 
     // 2. Email Notification Pipeline (Resend API)
     const resendApiKey = process.env.RESEND_API_KEY;
-    const recipientEmail = process.env.INQUIRY_RECIPIENT || "admin@bdjunyang.com";
+    const recipientEmail = process.env.INQUIRY_RECIPIENT || "3779980382@qq.com";
+
+    // Extract buyer geography from edge headers
+    const countryCode =
+      req.headers.get("x-vercel-ip-country") ||
+      req.headers.get("cf-ipcountry") ||
+      "";
+    const city = req.headers.get("x-vercel-ip-city") || "";
+    const countryText = formatCountry(countryCode) + (city ? ` · ${city}` : "");
+
+    const timeStr =
+      new Date().toLocaleString("zh-CN", {
+        timeZone: "Asia/Shanghai",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      }) + " (北京时间)";
 
     if (resendApiKey) {
       try {
@@ -99,8 +120,16 @@ export async function POST(req: NextRequest) {
               </tr>
               ` : ""}
               <tr>
+                <td style="padding: 8px 0; color: #64748b; font-size: 13px;"><strong>Country / Region:</strong></td>
+                <td style="padding: 8px 0; color: #0f172a; font-size: 13px;">${countryText}</td>
+              </tr>
+              <tr>
                 <td style="padding: 8px 0; color: #64748b; font-size: 13px;"><strong>Language:</strong></td>
                 <td style="padding: 8px 0; color: #0f172a; font-size: 13px;">${locale.toUpperCase()}</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0; color: #64748b; font-size: 13px;"><strong>Page URL:</strong></td>
+                <td style="padding: 8px 0; color: #0f172a; font-size: 13px;">${url || "/"}</td>
               </tr>
             </table>
 
@@ -132,7 +161,7 @@ export async function POST(req: NextRequest) {
             from: process.env.RESEND_FROM || "BD Junyang Inquiries <onboarding@resend.dev>",
             to: [recipientEmail],
             reply_to: email,
-            subject: `[New Inquiry] ${name} — B2B Custom Hats Requirements (${inquiryId})`,
+            subject: `[New Inquiry] ${name} (${countryCode || "Overseas"}) — B2B Custom Hats Requirements (${inquiryId})`,
             html: emailHtml,
           }),
         });
@@ -142,26 +171,26 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 3. Webhook Integration Pipeline (Feishu / DingTalk / Slack / WeCom / Zapier)
-    const webhookUrl = process.env.INQUIRY_WEBHOOK_URL;
-    if (webhookUrl) {
-      try {
-        await fetch(webhookUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            msg_type: "text",
-            content: {
-              text: `【新独立站询盘】\n客户：${name} (${email})\n需求：${message}\n编号：${inquiryId}\n语言：${locale}`,
-            },
-            ...inquiryRecord,
-          }),
-        });
-        console.log(`[WEBHOOK DISPATCHED] Sent to webhook`);
-      } catch (err) {
-        console.error("[WEBHOOK ERROR]", err);
-      }
-    }
+    // 3. Webhook Integration Pipeline (DingTalk / Feishu / WeCom)
+    const dingMarkdown = `### 📩 【收到网站邮箱新询盘】
+> 客户已正式提交定制需求表单！
+
+- **客户姓名**：**${name}**
+- **客户邮箱**：[${email}](mailto:${email})
+- **电话/WhatsApp**：${phone || "未提供"}
+- **买手国家**：**${countryText}**
+- **来源页面**：\`${url || "/"}\`
+- **语言版本**：${locale.toUpperCase()}
+- **询盘编号**：\`${inquiryId}\`
+- **提交时间**：${timeStr}
+- **定制需求**：
+> ${message.replace(/\n/g, "\n> ")}
+${attribution.length > 0 ? `\n- **引流渠道**：\n${attribution.map((a) => `  • ${a}`).join("\n")}` : ""}`;
+
+    await sendWebhookNotification({
+      title: "【收到网站邮箱新询盘】",
+      markdown: dingMarkdown,
+    });
 
     // 4. Supabase Storage Pipeline (Optional Database Backup)
     const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;

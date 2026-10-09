@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useT } from "../lib/i18n";
 import { attributionTag } from "../lib/attribution";
+import { trackWhatsAppClick } from "../lib/tracking";
 
 const WHATSAPP_NUMBER = "8615933930830";
 
@@ -18,9 +19,10 @@ export function WhatsAppFloat() {
   }, []);
 
   const handleClick = () => {
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "whatsapp_float_click", { event_category: "engagement" });
-    }
+    trackWhatsAppClick({
+      button: "floating_bubble",
+      label: "Global WhatsApp Float",
+    });
     const text = encodeURIComponent(
       "Hi Baoding Junyang! I'm interested in your custom hats. Can we discuss a quote?\n\n" + attributionTag()
     );

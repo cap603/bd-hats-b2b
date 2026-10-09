@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ChevronRight, MessageCircle, Layers, Tag, BookOpen, ShieldCheck, Factory, Info } from "lucide-react";
 import { useLang, useT } from "../lib/i18n";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { trackWhatsAppClick } from "../lib/tracking";
 
 const CORE_CATEGORIES = [
   { href: "/custom-5-panel-caps-manufacturer", label: "5-Panel Caps", tag: "High Demand" },
@@ -40,6 +41,10 @@ export function MobileNav() {
   }, [isOpen]);
 
   const handleWhatsApp = () => {
+    trackWhatsAppClick({
+      button: "mobile_drawer",
+      label: "Mobile Drawer Navigation WhatsApp Button",
+    });
     const text = encodeURIComponent(
       "Hi Baoding Junyang! I'm browsing on mobile and would like to get a custom hat quote and catalog."
     );
