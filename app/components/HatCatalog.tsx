@@ -256,7 +256,7 @@ export function HatCatalog() {
                         FLOOR
                       </span>
                       <span className="text-[10px] sm:text-xs font-black text-emerald-600 truncate block">
-                        $3.50
+                        {hat.price.includes("-") ? hat.price.split("-")[0].trim() : hat.price}
                       </span>
                     </div>
                     <div>

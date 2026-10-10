@@ -443,7 +443,9 @@ export default function ProductDetail() {
             </span>
           </div>
           <div className="text-[11px] text-slate-500 font-bold mt-0.5">
-            <span className="text-emerald-600 font-black">From $3.50</span> · MOQ {hat.moq}
+            <span className="text-emerald-600 font-black">
+              {hat.price.includes("-") ? `From ${hat.price.split("-")[0].trim()}` : hat.price}
+            </span> · MOQ {hat.moq}
           </div>
         </div>
         <button
