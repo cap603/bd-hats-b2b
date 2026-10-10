@@ -7,6 +7,7 @@ import { useLang } from "../../lib/i18n";
 import { NavCompareMenu } from "../../components/NavCompareMenu";
 import { NavProductsMenu } from "../../components/NavProductsMenu";
 import { MobileNav } from "../../components/MobileNav";
+import { trackWhatsAppClick } from "../../lib/tracking";
 
 const TIERS = [
   {
@@ -250,6 +251,12 @@ export default function PricingPage() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    trackWhatsAppClick({
+                      button: "pricing_tier_button",
+                      label: `Pricing Tier: ${tier.name}`,
+                    })
+                  }
                   className={`w-full py-3 px-4 rounded-xl font-bold text-xs text-center transition flex items-center justify-center gap-2 ${
                     tier.featured
                       ? "bg-yellow-500 hover:bg-yellow-600 text-black shadow-md shadow-yellow-500/20"
@@ -280,6 +287,12 @@ export default function PricingPage() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  trackWhatsAppClick({
+                    button: "pricing_tech_pack_button",
+                    label: "Pricing Page All-Inclusive Promise Card",
+                  })
+                }
                 className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl text-xs md:text-sm whitespace-nowrap transition"
               >
                 Inquire on WhatsApp

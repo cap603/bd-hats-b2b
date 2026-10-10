@@ -7,6 +7,7 @@ import { useLang } from "../lib/i18n";
 import { COMPARISON_LINKS } from "../lib/comparison-links";
 import { NavCompareMenu } from "./NavCompareMenu";
 import { NavProductsMenu } from "./NavProductsMenu";
+import { trackWhatsAppClick } from "../lib/tracking";
 
 /**
  * Shared shell for X-vs-Y comparison pages.
@@ -280,11 +281,26 @@ export function ComparisonShell({
             <p className="text-white font-bold mb-3">Contact</p>
             <ul className="space-y-2">
               <li>
-                <a href="https://wa.me/8615933930830" className="hover:text-white">
+                <a
+                  href="https://wa.me/8615933930830"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() =>
+                    trackWhatsAppClick({
+                      button: "comparison_footer_whatsapp",
+                      label: "Comparison Page Footer Contact",
+                    })
+                  }
+                  className="hover:text-white"
+                >
                   WhatsApp: +86 15933930830
                 </a>
               </li>
-              <li>Email: admin@bdjunyang.com</li>
+              <li>
+                <a href="mailto:amanda@bdjunyang.com" className="hover:text-white">
+                  Email: amanda@bdjunyang.com
+                </a>
+              </li>
               <li>Baoding, Hebei, China</li>
             </ul>
           </div>

@@ -780,12 +780,23 @@ export default function Home() {
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{ft("contact")}</h4>
               <ul className="space-y-2 text-sm">
                 <li className="text-gray-400">
-                  <a href="https://wa.me/8615933930830" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                  <a
+                    href="https://wa.me/8615933930830"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() =>
+                      trackWhatsAppClick({
+                        button: "footer_whatsapp_link",
+                        label: "Homepage Footer Contact",
+                      })
+                    }
+                    className="hover:text-white transition"
+                  >
                     {ft("whatsapp")}
                   </a>
                 </li>
                 <li className="text-gray-400">
-                  <a href="mailto:admin@bdjunyang.com" className="hover:text-white transition">
+                  <a href="mailto:amanda@bdjunyang.com" className="hover:text-white transition">
                     {ft("email")}
                   </a>
                 </li>

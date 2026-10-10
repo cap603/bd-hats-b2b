@@ -7,8 +7,8 @@ export interface TrackClickParams {
 }
 
 /**
- * Tracks WhatsApp clicks across the website and dispatches an immediate
- * beacon event to /api/inquiry/event for DingTalk notification & country identification.
+ * Robust WhatsApp click tracker supporting modern fetch keepalive and sendBeacon fallback.
+ * Guarantees dispatch even during mobile external app switcher navigation.
  */
 export function trackWhatsAppClick(params?: TrackClickParams) {
   if (typeof window === "undefined") return;
@@ -30,7 +30,7 @@ export function trackWhatsAppClick(params?: TrackClickParams) {
     } catch (e) {}
   }
 
-  // 2. Asynchronous Beacon to server for DingTalk instant webhook alert
+  // 2. Dual-channel dispatch to server for DingTalk instant webhook alert
   try {
     const payload = JSON.stringify({
       type: "whatsapp_click",
@@ -41,16 +41,21 @@ export function trackWhatsAppClick(params?: TrackClickParams) {
       timestamp: new Date().toISOString(),
     });
 
-    if (navigator.sendBeacon) {
-      const blob = new Blob([payload], { type: "application/json" });
-      navigator.sendBeacon("/api/inquiry/event", blob);
-    } else {
+    // Primary: fetch with keepalive: true (W3C standard for analytics on unload)
+    try {
       fetch("/api/inquiry/event", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: payload,
         keepalive: true,
       }).catch(() => {});
+    } catch (e) {}
+
+    // Secondary redundancy: sendBeacon with text/plain (avoids CORS preflight / WebKit blob bugs)
+    if (navigator.sendBeacon) {
+      try {
+        navigator.sendBeacon("/api/inquiry/event", payload);
+      } catch (e) {}
     }
   } catch (err) {
     // Non-blocking

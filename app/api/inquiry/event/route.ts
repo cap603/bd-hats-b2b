@@ -3,10 +3,19 @@ import { formatCountry } from "../../../lib/country";
 import { sendWebhookNotification } from "../../../lib/notify";
 
 export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json().catch(() => ({}));
+    let body: any = {};
+    try {
+      const text = await req.text();
+      if (text) {
+        body = JSON.parse(text);
+      }
+    } catch {
+      body = {};
+    }
 
     const type = String(body.type || "whatsapp_click");
     const page = String(body.page || "/");
