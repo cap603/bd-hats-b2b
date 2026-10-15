@@ -219,7 +219,7 @@ export default function Home() {
             />
             <div className="hidden lg:flex flex-col">
               <span className="text-xl font-black tracking-tighter text-black">JUNYANG</span>
-              <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none">{t("subtitle")}</span>
+              <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none whitespace-nowrap">{t("subtitle")}</span>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">

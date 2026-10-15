@@ -37,7 +37,7 @@ export default function AboutPage() {
             />
             <div className="hidden lg:flex flex-col">
               <span className="text-xl font-black tracking-tighter text-black">JUNYANG</span>
-              <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none">Baoding Junyang Hat Factory</span>
+              <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none whitespace-nowrap">Supply Chain & Manufacturing Partner</span>
             </div>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
