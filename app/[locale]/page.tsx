@@ -71,7 +71,7 @@ const MANUFACTURING_PROGRAMS = [
   {
     href: "/custom-bucket-hats-manufacturer",
     title: "Custom Bucket Hats",
-    desc: "Wide-brim festival and outdoor bucket hats, UPF 50+ sun protection, chin cords and reversible builds.",
+    desc: "Wide-brim festival and outdoor bucket hats, sun shading fabrics, chin cords and reversible builds.",
     tag: "Outdoor",
   },
   {

@@ -85,12 +85,12 @@ const CONTENT = {
       { value: "$5.20 – $7.80", label: "Per unit, FOB China" },
       { value: "200 Pcs", label: "MOQ per style / color" },
       { value: "7 / 15-20 Days", label: "Sample / bulk lead time" },
-      { value: "UPF 50+", label: "Certified UV sun protection rating" },
+      { value: "DWR Finish", label: "Hydrophobic rain-shedding performance" },
     ],
     faqs: [
       {
         q: "What makes these caps specifically suitable for golf and athletic tournaments?",
-        a: "They combine UPF 50+ sun protection, DWR rain-shedding capability, featherlight weight (under 65 grams), and laser perforation for active cooling. They are designed to withstand 18 holes of sweat, rain, and intense UV exposure while maintaining a crisp, professional aesthetic.",
+        a: "They combine weather-resistant performance, DWR rain-shedding capability, featherlight weight (under 65 grams), and laser perforation for active cooling. They are designed to withstand 18 holes of sweat, rain, and intense outdoor sun while maintaining a crisp, professional aesthetic.",
       },
       {
         q: "What is the best logo method for technical waterproof hats?",
@@ -187,12 +187,12 @@ const CONTENT = {
       { value: "$5.20 – $7.80", label: "Por unidad, FOB China" },
       { value: "200 Pzas", label: "Pedido mínimo por estilo/color" },
       { value: "7 / 15-20 Días", label: "Muestra / Producción en serie" },
-      { value: "UPF 50+", label: "Certificación de protección solar UV" },
+      { value: "Acabado DWR", label: "Tratamiento hidrófugo repelente al agua" },
     ],
     faqs: [
       {
         q: "¿Por qué estas gorras son especialmente aptas para torneos de golf y deportes?",
-        a: "Combinan certificación UPF 50+ contra la radiación UV, repelencia al agua DWR, peso pluma inferior a 65 gramos y refrigeración activa por perforación láser. Soportan 18 hoyos de sudor, calor y lluvia manteniendo una presencia pulcra y elegante.",
+        a: "Combinan alta resistencia a la intemperie, repelencia al agua DWR, peso pluma inferior a 65 gramos y refrigeración activa por perforación láser. Soportan 18 hoyos de sudor, calor y lluvia manteniendo una presencia pulcra y elegante.",
       },
       {
         q: "¿Qué método de personalización de logotipo es el más adecuado?",

@@ -139,7 +139,7 @@ export const HATS: Product[] = [
       title: "Performance Features",
       options: [
         "Moisture-wicking Sweatband Technology",
-        "UPF 50+ Sun Protection Fabric",
+        "Sun & Weather Protection Fabric",
         "Reflective Printing for Visibility",
         "Laser-cut Ventilation Eyelets"
       ]
