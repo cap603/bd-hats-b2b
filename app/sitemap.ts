@@ -150,6 +150,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly" as const,
         priority: 0.7,
       },
+      {
+        url: `${baseUrl}${lc}/compare/merino-wool-vs-acrylic-beanies`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.85,
+      },
     );
 
     for (const product of HATS) {

@@ -17,4 +17,8 @@ export const COMPARISON_LINKS = [
     href: "/compare/china-vs-vietnam-vs-bangladesh-hat-sourcing",
     label: "China vs Vietnam vs Bangladesh",
   },
+  {
+    href: "/compare/merino-wool-vs-acrylic-beanies",
+    label: "Merino Wool vs Acrylic Beanies",
+  },
 ];

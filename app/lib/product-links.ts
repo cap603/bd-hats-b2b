@@ -49,8 +49,8 @@ export const CATEGORY_COMPARISONS: Record<string, string[]> = {
     "/compare/5-panel-vs-6-panel-caps",
   ],
   Beanies: [
+    "/compare/merino-wool-vs-acrylic-beanies",
     "/compare/flat-embroidery-vs-3d-puff",
-    "/compare/cotton-twill-vs-brushed-cotton-vs-canvas",
     "/compare/china-vs-vietnam-vs-bangladesh-hat-sourcing",
   ],
   "Bucket Hats": [
@@ -71,6 +71,7 @@ export const PAGE_LABELS: Record<string, { en: string; es: string }> = {
   "/compare/cotton-twill-vs-brushed-cotton-vs-canvas": { en: "cotton twill vs brushed cotton vs canvas", es: "sarga vs algodón cepillado vs lona" },
   "/compare/snapback-vs-strapback-vs-buckle": { en: "snapback vs strapback vs buckle", es: "snapback vs strapback vs hebilla" },
   "/compare/china-vs-vietnam-vs-bangladesh-hat-sourcing": { en: "sourcing in China vs Vietnam vs Bangladesh", es: "producir en China vs Vietnam vs Bangladés" },
+  "/compare/merino-wool-vs-acrylic-beanies": { en: "merino wool vs acrylic beanies", es: "lana merino vs gorros acrílicos" },
   "/pricing": { en: "pricing and shipping FAQ", es: "precios y envíos" },
   "/materials": { en: "hat materials and customization guide", es: "guía de materiales y personalización" },
   "/guide": { en: "custom hat buying guide", es: "guía de compra de gorras" },
