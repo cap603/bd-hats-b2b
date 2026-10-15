@@ -40,6 +40,18 @@ export const PRODUCT_CATEGORIES = [
     desc: "Nylon · large brim · waterproof",
     categories: ["Bucket Hats"],
   },
+  {
+    href: "/custom-corduroy-caps-manufacturer",
+    label: "Corduroy Cap",
+    desc: "8W / 14W / 21W · Vintage streetwear",
+    categories: ["Vintage Series"],
+  },
+  {
+    href: "/custom-golf-performance-hats",
+    label: "Performance Golf",
+    desc: "DWR Waterproof · Laser perforated",
+    categories: ["Sports & Active"],
+  },
 ] as const;
 
 /** Product links shown per category before the "View all" link takes over. */

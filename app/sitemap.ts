@@ -107,6 +107,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly" as const,
         priority: 0.8,
       },
+      {
+        url: `${baseUrl}${lc}/custom-corduroy-caps-manufacturer`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.9,
+      },
+      {
+        url: `${baseUrl}${lc}/custom-golf-performance-hats`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.9,
+      },
       // Comparison pages — machine-extractable X vs Y content (AI-citation friendly)
       {
         url: `${baseUrl}${lc}/compare/5-panel-vs-6-panel-caps`,
