@@ -191,7 +191,7 @@ export default function AboutPage() {
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li className="text-gray-400">WhatsApp: +86 15933930830</li>
-                <li className="text-gray-400">Email: amanda@bdjunyang.com</li>
+                <li className="text-gray-400">Email: admin@bdjunyang.com</li>
                 <li className="text-gray-400">Office: Baoding, Hebei, China</li>
               </ul>
             </div>

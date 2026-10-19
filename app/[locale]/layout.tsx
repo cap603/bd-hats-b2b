@@ -126,7 +126,7 @@ export default async function LocaleLayout({
     description: "Premium custom hat factory and B2B wholesale supplier specializing in embroidery and customized headwear.",
     foundingDate: "2014",
     telephone: "+86-15933930830",
-    email: "amanda@bdjunyang.com",
+    email: "admin@bdjunyang.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Baoding",
@@ -136,7 +136,7 @@ export default async function LocaleLayout({
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
-      email: "amanda@bdjunyang.com",
+      email: "admin@bdjunyang.com",
       telephone: "+86-15933930830",
       availableLanguage: ["en", "es", "zh"],
     },

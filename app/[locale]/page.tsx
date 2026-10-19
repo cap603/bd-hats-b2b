@@ -145,7 +145,7 @@ export default function Home() {
     "image": "/images/brand/junyang-logo.png",
     "url": "https://bdjunyang.com",
     "telephone": "+86-15933930830",
-    "email": "amanda@bdjunyang.com",
+    "email": "admin@bdjunyang.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Baoding", "addressRegion": "Hebei", "addressCountry": "CN" },
     "priceRange": "$$",
     "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }
