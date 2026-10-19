@@ -112,7 +112,7 @@ const FAQS = [
   },
   {
     q: "What payment methods do you accept?",
-    a: "We accept T/T bank transfer (30% deposit, 70% before shipment), Alibaba Trade Assurance (credit card, online payment), Western Union for samples, and L/C for orders over $50,000. Trade Assurance provides buyer protection and secure transaction processing."
+    a: "We accept T/T bank transfer (30% deposit, 70% before shipment), secure international commercial escrow (credit card, online wire), Western Union for samples, and L/C at sight for orders over $50,000. All payments provide verified buyer protection and secure transaction processing."
   },
   {
     q: "Are there any hidden costs or surcharges?",
@@ -247,7 +247,9 @@ export default function PricingPage() {
 
                 <a
                   href={`https://wa.me/8615933930830?text=${encodeURIComponent(
-                    `Hi Baoding Junyang! I would like to get a quote for ${tier.name} (${tier.range}). MOQ 200pcs.`
+                    lang === "es"
+                      ? `¡Hola Baoding Junyang! Me gustaría solicitar cotización para ${tier.name} (${tier.range}). MOQ 200 uds.`
+                      : `Hi Baoding Junyang! I would like to get a quote for ${tier.name} (${tier.range}). MOQ 200pcs.`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -283,7 +285,9 @@ export default function PricingPage() {
               </div>
               <a
                 href={`https://wa.me/8615933930830?text=${encodeURIComponent(
-                  "Hi Baoding Junyang! I would like to submit our tech pack for a custom tiered quote."
+                  lang === "es"
+                    ? "¡Hola Baoding Junyang! Me gustaría enviar nuestro tech pack para una cotización personalizada por escalas (MOQ 200 uds)."
+                    : "Hi Baoding Junyang! I would like to submit our tech pack for a custom tiered quote."
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -366,7 +370,7 @@ export default function PricingPage() {
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li>WhatsApp: +86 15933930830</li>
-                <li>Email: admin@bdjunyang.com</li>
+                <li>Email: amanda@bdjunyang.com</li>
                 <li>Office: Baoding, Hebei, China</li>
               </ul>
             </div>

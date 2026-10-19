@@ -45,8 +45,11 @@ export function MobileNav() {
       button: "mobile_drawer",
       label: "Mobile Drawer Navigation WhatsApp Button",
     });
+    const isEs = lang === "es";
     const text = encodeURIComponent(
-      "Hi Baoding Junyang! I'm browsing on mobile and would like to get a custom hat quote and catalog."
+      isEs
+        ? "¡Hola Baoding Junyang! Estoy navegando desde el móvil y me gustaría recibir el catálogo de fábrica y cotización para gorras personalizadas (MOQ 200 uds)."
+        : "Hi Baoding Junyang! I'm browsing on mobile and would like to get a custom hat quote and catalog (MOQ 200pcs)."
     );
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };

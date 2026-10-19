@@ -90,16 +90,28 @@ export function InquiryForm() {
     trackInquiry(generatedId);
 
     // 2. Prepare WhatsApp direct message
-    const lines = [
-      `New B2B Inquiry (${generatedId}) — BD Hats`,
-      "----------------------------------",
-      `Name: ${name}`,
-      `Email: ${email}`,
-      ...(phone ? [`Phone/WhatsApp: ${phone}`] : []),
-      "----------------------------------",
-      `Requirements: ${message}`,
-      ...attrLines,
-    ];
+    const isEs = lang === "es";
+    const lines = isEs
+      ? [
+          `Nueva Consulta B2B (${generatedId}) — BD Hats`,
+          "----------------------------------",
+          `Nombre: ${name}`,
+          `Correo Electrónico: ${email}`,
+          ...(phone ? [`Teléfono / WhatsApp: ${phone}`] : []),
+          "----------------------------------",
+          `Requisitos y Especificaciones: ${message}`,
+          ...attrLines,
+        ]
+      : [
+          `New B2B Inquiry (${generatedId}) — BD Hats`,
+          "----------------------------------",
+          `Name: ${name}`,
+          `Email: ${email}`,
+          ...(phone ? [`Phone/WhatsApp: ${phone}`] : []),
+          "----------------------------------",
+          `Requirements: ${message}`,
+          ...attrLines,
+        ];
     const encodedText = encodeURIComponent(lines.join("\n"));
     setWhatsAppText(encodedText);
     setInquiryId(generatedId);

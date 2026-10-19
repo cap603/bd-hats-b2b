@@ -146,15 +146,19 @@ export function LandingShell({
       <section className="py-24 px-4 bg-black text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">
-            Get Your Factory Quote Today
+            {lang === "es" ? "Solicite su Cotización de Fábrica Hoy" : "Get Your Factory Quote Today"}
           </h2>
           <p className="text-gray-400 text-lg mb-8">
-            Send your specs and artwork — pricing and lead time within 12 hours. Physical samples in 7 days.
+            {lang === "es"
+              ? "Envíenos sus especificaciones y diseño — cotización y plazos en menos de 12 horas. Muestras físicas en 7 días."
+              : "Send your specs and artwork — pricing and lead time within 12 hours. Physical samples in 7 days."}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href={`https://wa.me/8615933930830?text=${encodeURIComponent(
-                `Hi Baoding Junyang! I would like to get a factory quote for ${title} (${crumb}). MOQ 200pcs.`
+                lang === "es"
+                  ? `¡Hola Baoding Junyang! Me gustaría solicitar cotización de fábrica para ${title} (${crumb}). MOQ 200 uds.`
+                  : `Hi Baoding Junyang! I would like to get a factory quote for ${title} (${crumb}). MOQ 200pcs.`
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -167,13 +171,14 @@ export function LandingShell({
               className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition shadow-lg shadow-green-500/20"
             >
               <MessageCircle size={22} />
-              Chat on WhatsApp (Fast Quote)
+              {lang === "es" ? "Cotizar por WhatsApp (Rápido)" : "Chat on WhatsApp (Fast Quote)"}
             </a>
             <Link
               href={`/${lang}/#inquiry`}
               className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-full text-lg transition border border-white/20"
             >
-              Submit Tech Pack Form <ArrowRight size={20} />
+              <Mail size={22} />
+              {lang === "es" ? "Enviar Formulario de Especificaciones" : "Send Tech Pack & Specs"}
             </Link>
           </div>
         </div>
@@ -220,7 +225,7 @@ export function LandingShell({
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li>WhatsApp: +86 15933930830</li>
-                <li>Email: admin@bdjunyang.com</li>
+                <li>Email: amanda@bdjunyang.com</li>
                 <li>Office: Baoding, Hebei, China</li>
               </ul>
             </div>

@@ -282,7 +282,11 @@ export function ComparisonShell({
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://wa.me/8615933930830"
+                  href={`https://wa.me/8615933930830?text=${encodeURIComponent(
+                    lang === "es"
+                      ? "¡Hola Baoding Junyang! Me gustaría solicitar información técnica y cotización de fábrica (MOQ 200 uds)."
+                      : "Hi Baoding Junyang! I would like to inquire about specifications and factory quotation (MOQ 200pcs)."
+                  )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() =>

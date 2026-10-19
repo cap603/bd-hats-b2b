@@ -145,7 +145,7 @@ export default function Home() {
     "image": "/images/brand/junyang-logo.png",
     "url": "https://bdjunyang.com",
     "telephone": "+86-15933930830",
-    "email": "admin@bdjunyang.com",
+    "email": "amanda@bdjunyang.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Baoding", "addressRegion": "Hebei", "addressCountry": "CN" },
     "priceRange": "$$",
     "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }
@@ -181,7 +181,10 @@ export default function Home() {
       button: "homepage_cta",
       label: `Home Section: ${source}`,
     });
-    const defaultText = "Hi Baoding Junyang! I would like to get a catalog and quote for custom baseball caps.";
+    const isEs = lang === "es";
+    const defaultText = isEs
+      ? "¡Hola Baoding Junyang! Me gustaría solicitar el catálogo de fábrica y una cotización para gorras personalizadas (MOQ 200 uds)."
+      : "Hi Baoding Junyang! I would like to get a catalog and quote for custom baseball caps.";
     const text = encodeURIComponent(`${customText || defaultText}\n\n${attributionTag()}`);
     trackWhatsApp(source);
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
@@ -781,7 +784,11 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li className="text-gray-400">
                   <a
-                    href="https://wa.me/8615933930830"
+                    href={`https://wa.me/8615933930830?text=${encodeURIComponent(
+                      lang === "es"
+                        ? "¡Hola Baoding Junyang! Me gustaría solicitar información y cotización para fabricación de gorras personalizadas (MOQ 200 uds)."
+                        : "Hi Baoding Junyang! I would like to inquire about custom hat manufacturing and get a quote (MOQ 200pcs)."
+                    )}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() =>

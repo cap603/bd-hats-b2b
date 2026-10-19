@@ -65,8 +65,11 @@ export default function ProductDetail() {
       button: "pdp_sticky_bar",
       label: `Product: [${sku}] ${hat.name}`,
     });
+    const isEs = lang === "es";
     const text = encodeURIComponent(
-      `Hi Baoding Junyang! I would like to get a wholesale quote and spec sheet for [${sku}] "${hat.name}". MOQ ${hat.moq}pcs.`
+      isEs
+        ? `¡Hola Baoding Junyang! Me gustaría solicitar cotización de fábrica y ficha técnica para [${sku}] "${hat.name}". MOQ ${hat.moq} uds.`
+        : `Hi Baoding Junyang! I would like to get a wholesale quote and spec sheet for [${sku}] "${hat.name}". MOQ ${hat.moq}pcs.`
     );
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };

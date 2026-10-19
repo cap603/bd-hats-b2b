@@ -100,8 +100,11 @@ export function HatCatalog() {
       button: "catalog_card",
       label: `Catalog Item: [${sku}] ${hatName}`,
     });
+    const isEs = lang === "es";
     const text = encodeURIComponent(
-      `Hi Baoding Junyang! I would like to get a wholesale quote and spec sheet for [${sku}] ${hatName}. MOQ 200pcs.`
+      isEs
+        ? `¡Hola Baoding Junyang! Me gustaría solicitar cotización al por mayor y ficha técnica para [${sku}] ${hatName}. MOQ 200 uds.`
+        : `Hi Baoding Junyang! I would like to get a wholesale quote and spec sheet for [${sku}] ${hatName}. MOQ 200pcs.`
     );
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };

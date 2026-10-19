@@ -35,9 +35,11 @@ export function IntentPopup() {
   const close = () => setVisible(false);
 
   const handleWhatsApp = () => {
-    const text = encodeURIComponent(
-      "Hi Baoding Junyang! I'm browsing your site and would like a quote for custom hats.\n\n" + attributionTag()
-    );
+    const isEs = lang === "es";
+    const greeting = isEs
+      ? "¡Hola Baoding Junyang! Estoy navegando en su sitio web y me gustaría recibir una cotización de fábrica para gorras personalizadas (MOQ 200 uds).\n\n"
+      : "Hi Baoding Junyang! I'm browsing your site and would like a quote for custom hats.\n\n";
+    const text = encodeURIComponent(greeting + attributionTag());
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
     if (typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag("event", "intent_popup_click", { event_category: "engagement", label: "whatsapp" });

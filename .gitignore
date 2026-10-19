@@ -47,3 +47,5 @@ video.mp4
 
 # exception: IndexNow ownership key must be publicly served and committed
 !public/*.txt
+
+node-compile-cache/

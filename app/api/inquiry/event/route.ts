@@ -55,15 +55,25 @@ export async function POST(req: NextRequest) {
     }
 
     if (type === "whatsapp_click") {
+      const isSpanishLead =
+        page.startsWith("/es") ||
+        ["MX", "CO", "CL", "ES", "AR", "PE", "EC", "GT", "VE", "PA", "CR", "DO", "UY", "PY", "BO", "SV", "HN", "NI", "PR"].includes(
+          countryCode.toUpperCase()
+        );
+
       const markdown = `### 🟢 【独立站 WhatsApp 询盘意向】
 > 海外买手刚在网站点击了 WhatsApp 沟通按钮！
 
 - **买手国家**：**${countryText}**
-- **点击页面**：\`${page}\`
+${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}- **点击页面**：\`${page}\`
 - **触发模块**：${label ? `${label} (${button})` : button}
 - **引流渠道**：${channel}
 - **发生时间**：${timeStr}
-- **跟进提示**：请销售员留意 WhatsApp (+86 159 3393 0830) 是否有来自该国家的新客户接入并打招呼！`;
+- **跟进提示**：${
+        isSpanishLead
+          ? "💡 潜在西语买手！请留意 WhatsApp (+86 159 3393 0830) 并优先使用西班牙语（或借助翻译软件）打招呼跟进！"
+          : "请销售员留意 WhatsApp (+86 159 3393 0830) 是否有来自该国家的新客户接入并打招呼！"
+      }`;
 
       console.log(`[WHATSAPP CLICK EVENT] Country: ${countryCode} | Page: ${page} | Button: ${button}`);
       await sendWebhookNotification({

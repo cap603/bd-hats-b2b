@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useT } from "../lib/i18n";
+import { useT, useLang } from "../lib/i18n";
 import { attributionTag } from "../lib/attribution";
 import { trackWhatsAppClick } from "../lib/tracking";
 
@@ -9,6 +9,7 @@ const WHATSAPP_NUMBER = "8615933930830";
 
 export function WhatsAppFloat() {
   const t = useT("chat");
+  const lang = useLang();
   const [visible, setVisible] = useState(false);
   const [tooltip, setTooltip] = useState(false);
 
@@ -23,9 +24,11 @@ export function WhatsAppFloat() {
       button: "floating_bubble",
       label: "Global WhatsApp Float",
     });
-    const text = encodeURIComponent(
-      "Hi Baoding Junyang! I'm interested in your custom hats. Can we discuss a quote?\n\n" + attributionTag()
-    );
+    const isEs = lang === "es";
+    const greeting = isEs
+      ? "¡Hola Baoding Junyang! Estoy interesado en la fabricación de gorras personalizadas (MOQ 200 uds). ¿Podemos revisar una cotización?\n\n"
+      : "Hi Baoding Junyang! I'm interested in your custom hats. Can we discuss a quote?\n\n";
+    const text = encodeURIComponent(greeting + attributionTag());
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
   };
 

@@ -36,7 +36,7 @@ const CONTENT = {
       },
       {
         title: "Payment & Trade Terms",
-        desc: "T/T with 30% deposit and 70% before shipment is standard. L/C at sight is accepted for orders above $50,000, and Alibaba Trade Assurance is available if you prefer escrow protection.",
+        desc: "T/T with 30% deposit and 70% before shipment is standard. L/C at sight is accepted for orders above $50,000, and secure international trade escrow is available if you prefer third-party protection.",
       },
       {
         title: "Logistics Planning",
@@ -117,7 +117,7 @@ const CONTENT = {
       },
       {
         title: "Condiciones comerciales y de pago",
-        desc: "El estándar es transferencia bancaria (T/T) con 30% de anticipo y 70% antes del embarque. Aceptamos carta de crédito (L/C) a la vista para pedidos superiores a 50.000 USD y ofrecemos Alibaba Trade Assurance si prefieres protección con depósito en garantía.",
+        desc: "El estándar es transferencia bancaria (T/T) con 30% de anticipo y 70% antes del embarque. Aceptamos carta de crédito (L/C) a la vista para pedidos superiores a 50.000 USD y ofrecemos garantía comercial internacional si prefieres protección con depósito en garantía.",
       },
       {
         title: "Planificación logística",

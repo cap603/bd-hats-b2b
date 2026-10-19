@@ -332,8 +332,11 @@ export default function BeaniesPage() {
       button: "beanies_fast_quote",
       label: styleName ? `Beanies Silhouette: ${styleName}` : "Beanies Q4 Fast Track Banner",
     });
+    const isEs = lang === "es";
     const text = encodeURIComponent(
-      `Hi Baoding Junyang! I am interested in custom manufacturing beanies (${styleName ? styleName : "Winter Knit Beanie Collection"}). Please send me your knitwear spec sheet & yarn color cards. MOQ 200pcs.`
+      isEs
+        ? `¡Hola Baoding Junyang! Estoy interesado en la fabricación personalizada de gorros tejidos (${styleName ? styleName : "Colección de Gorros de Invierno"}). Por favor envíenme la ficha técnica y carta de colores de hilos. MOQ 200 uds.`
+        : `Hi Baoding Junyang! I am interested in custom manufacturing beanies (${styleName ? styleName : "Winter Knit Beanie Collection"}). Please send me your knitwear spec sheet & yarn color cards. MOQ 200pcs.`
     );
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };

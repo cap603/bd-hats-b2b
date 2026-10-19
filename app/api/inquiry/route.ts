@@ -172,6 +172,14 @@ export async function POST(req: NextRequest) {
     }
 
     // 3. Webhook Integration Pipeline (DingTalk / Feishu / WeCom)
+    const isSpanishLead =
+      locale === "es" ||
+      url.includes("/es/") ||
+      url.endsWith("/es") ||
+      ["MX", "CO", "CL", "ES", "AR", "PE", "EC", "GT", "VE", "PA", "CR", "DO", "UY", "PY", "BO", "SV", "HN", "NI", "PR"].includes(
+        countryCode.toUpperCase()
+      );
+
     const dingMarkdown = `### 📩 【收到网站邮箱新询盘】
 > 客户已正式提交定制需求表单！
 
@@ -179,11 +187,11 @@ export async function POST(req: NextRequest) {
 - **客户邮箱**：[${email}](mailto:${email})
 - **电话/WhatsApp**：${phone || "未提供"}
 - **买手国家**：**${countryText}**
-- **来源页面**：\`${url || "/"}\`
+${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}- **来源页面**：\`${url || "/"}\`
 - **语言版本**：${locale.toUpperCase()}
 - **询盘编号**：\`${inquiryId}\`
 - **提交时间**：${timeStr}
-- **定制需求**：
+${isSpanishLead ? `- **跟进提示**：💡 客户来自西语市场，请业务员优先使用西班牙语（或借助翻译软件）跟进！\n` : ""}- **定制需求**：
 > ${message.replace(/\n/g, "\n> ")}
 ${attribution.length > 0 ? `\n- **引流渠道**：\n${attribution.map((a) => `  • ${a}`).join("\n")}` : ""}`;
 

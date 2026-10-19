@@ -15,7 +15,7 @@ const SECTIONS = [
     tips: [
       "Always request a factory video tour before placing large orders",
       "Verify SGS/ISO certifications independently",
-      "Check how long the factory has been on Alibaba (12+ years is a strong signal)",
+      "Check factory operational track record (12+ years of manufacturing is a strong trust signal)",
       "Test communication quality: send a detailed inquiry and measure response time"
     ]
   },
@@ -184,7 +184,7 @@ export default function GuidePage() {
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li>WhatsApp: +86 15933930830</li>
-                <li>Email: admin@bdjunyang.com</li>
+                <li>Email: amanda@bdjunyang.com</li>
                 <li>Office: Baoding, Hebei, China</li>
               </ul>
             </div>

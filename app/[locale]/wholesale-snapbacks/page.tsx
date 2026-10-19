@@ -209,7 +209,7 @@ export default function SnapbacksPage() {
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li>WhatsApp: +86 15933930830</li>
-                <li>Email: admin@bdjunyang.com</li>
+                <li>Email: amanda@bdjunyang.com</li>
                 <li>Office: Baoding, Hebei, China</li>
               </ul>
             </div>

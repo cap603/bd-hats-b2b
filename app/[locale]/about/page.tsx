@@ -11,7 +11,7 @@ const TIMELINE = [
   { year: "2016", title: "First Export Order", desc: "Shipped our first container to a US streetwear brand. Expanded to 50 staff and invested in Japanese Barudan embroidery machines." },
   { year: "2018", title: "SGS & CE Certified", desc: "Achieved SGS factory verification and CE product certification. Entered European market with REACH & RoHS compliance." },
   { year: "2020", title: "50,000sqm Facility", desc: "Moved to a modern 50,000sqm factory. Installed 100+ Barudan machines. Reached 5M+ caps annual capacity." },
-  { year: "2022", title: "Alibaba Gold Supplier", desc: "Earned Alibaba Gold Supplier status and expanded our OEM/ODM design capabilities, delivering 1,000+ custom designs to global brands." },
+  { year: "2022", title: "Global Export Expansion", desc: "Awarded top-tier international trade honors and expanded our OEM/ODM design capabilities, delivering 1,000+ custom designs to global brands." },
   { year: "2026", title: "300+ Global Brands", desc: "Now serving 300+ brands across 50+ countries. North America accounts for 70% of our production." }
 ];
 
@@ -191,7 +191,7 @@ export default function AboutPage() {
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li className="text-gray-400">WhatsApp: +86 15933930830</li>
-                <li className="text-gray-400">Email: admin@bdjunyang.com</li>
+                <li className="text-gray-400">Email: amanda@bdjunyang.com</li>
                 <li className="text-gray-400">Office: Baoding, Hebei, China</li>
               </ul>
             </div>

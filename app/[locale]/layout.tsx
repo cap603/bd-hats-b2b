@@ -126,7 +126,7 @@ export default async function LocaleLayout({
     description: "Premium custom hat factory and B2B wholesale supplier specializing in embroidery and customized headwear.",
     foundingDate: "2014",
     telephone: "+86-15933930830",
-    email: "admin@bdjunyang.com",
+    email: "amanda@bdjunyang.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Baoding",
@@ -136,14 +136,12 @@ export default async function LocaleLayout({
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
-      email: "admin@bdjunyang.com",
+      email: "amanda@bdjunyang.com",
       telephone: "+86-15933930830",
       availableLanguage: ["en", "es", "zh"],
     },
     sameAs: [
-      "https://bdjunyang.en.alibaba.com/",
       "https://www.facebook.com/p/Baoding-Junyang-Import-And-Export-Trade-Co-Ltd-100079978783412/",
-      "https://suppliers.alibaba.com/baoding-junyang-import-and-export-trade-co-ltd_2477972385",
     ],
     knowsAbout: [
       "Custom baseball caps",
