@@ -11,6 +11,7 @@ import { MobileNav } from "../components/MobileNav";
 import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
+import { MobileStickyBar } from "../components/MobileStickyBar";
 import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight, ArrowRight, ChevronDown, CheckCircle2 } from "lucide-react";
 
 const MANUFACTURING_PROGRAMS = [
@@ -803,7 +804,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="text-gray-400">
-                  <a href="mailto:amanda@bdjunyang.com" className="hover:text-white transition">
+                  <a href="mailto:admin@bdjunyang.com" className="hover:text-white transition">
                     {ft("email")}
                   </a>
                 </li>
@@ -816,6 +817,7 @@ export default function Home() {
           <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
         </div>
       </footer>
+      <MobileStickyBar pageName="Homepage" />
     </main>
   );
 }

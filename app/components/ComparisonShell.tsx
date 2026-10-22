@@ -7,6 +7,7 @@ import { useLang } from "../lib/i18n";
 import { COMPARISON_LINKS } from "../lib/comparison-links";
 import { NavCompareMenu } from "./NavCompareMenu";
 import { NavProductsMenu } from "./NavProductsMenu";
+import { MobileStickyBar } from "./MobileStickyBar";
 import { trackWhatsAppClick } from "../lib/tracking";
 
 /**
@@ -301,8 +302,8 @@ export function ComparisonShell({
                 </a>
               </li>
               <li>
-                <a href="mailto:amanda@bdjunyang.com" className="hover:text-white">
-                  Email: amanda@bdjunyang.com
+                <a href="mailto:admin@bdjunyang.com" className="hover:text-white">
+                  Email: admin@bdjunyang.com
                 </a>
               </li>
               <li>Baoding, Hebei, China</li>
@@ -313,6 +314,7 @@ export function ComparisonShell({
           © 2026 Baoding Junyang Hat Manufacturing Co., Ltd.
         </div>
       </footer>
+      <MobileStickyBar pageName="Comparison Guide" />
     </main>
   );
 }

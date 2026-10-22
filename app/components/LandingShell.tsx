@@ -8,6 +8,7 @@ import { COMPARISON_LINKS } from "../lib/comparison-links";
 import { NavCompareMenu } from "./NavCompareMenu";
 import { NavProductsMenu } from "./NavProductsMenu";
 import { MobileNav } from "./MobileNav";
+import { MobileStickyBar } from "./MobileStickyBar";
 import { trackWhatsAppClick } from "../lib/tracking";
 
 /**
@@ -235,6 +236,7 @@ export function LandingShell({
           <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
         </div>
       </footer>
+      <MobileStickyBar pageName={`Landing: ${title}`} />
     </main>
   );
 }

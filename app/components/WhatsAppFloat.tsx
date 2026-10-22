@@ -10,14 +10,7 @@ const WHATSAPP_NUMBER = "8615933930830";
 export function WhatsAppFloat() {
   const t = useT("chat");
   const lang = useLang();
-  const [visible, setVisible] = useState(false);
   const [tooltip, setTooltip] = useState(false);
-
-  useEffect(() => {
-    // Show after slight delay (avoid covering hero CTA immediately)
-    const timer = setTimeout(() => setVisible(true), 2500);
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleClick = () => {
     trackWhatsAppClick({
@@ -32,10 +25,8 @@ export function WhatsAppFloat() {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
   };
 
-  if (!visible) return null;
-
   return (
-    <div className="fixed bottom-6 right-6 z-[60] flex flex-col items-end gap-2">
+    <div className="fixed bottom-20 right-4 lg:bottom-6 lg:right-6 z-[45] flex flex-col items-end gap-2">
       {/* Tooltip bubble */}
       <div
         className={`bg-white border border-gray-100 shadow-2xl rounded-2xl px-4 py-2.5 text-xs font-bold text-gray-800 transition-all duration-300 ${
