@@ -73,6 +73,20 @@ export function LandingShell({
   accent,
   subtitle,
   pills,
+  featuresTitle,
+  featuresIntro,
+  features,
+  compareTitle,
+  compareCols,
+  compare,
+  compareNote,
+  pricingTitle,
+  stats,
+  faqs,
+  faqTitle,
+  productsTitle,
+  productsIntro,
+  products,
   children,
 }: {
   crumb: string;
@@ -81,7 +95,21 @@ export function LandingShell({
   accent: string;
   subtitle: string;
   pills: string[];
-  children: React.ReactNode;
+  featuresTitle?: string;
+  featuresIntro?: string;
+  features?: { tag?: string; title: string; desc: string }[];
+  compareTitle?: string;
+  compareCols?: string[];
+  compare?: { style: string; shape: string; brim: string; fit: string }[];
+  compareNote?: string;
+  pricingTitle?: string;
+  stats?: { value: string; label: string }[];
+  faqs?: { q: string; a: string }[];
+  faqTitle?: string;
+  productsTitle?: string;
+  productsIntro?: string;
+  products?: { href: string; name: string; tag?: string; badge?: string; price?: string; moq?: string; img: string; note?: string }[];
+  children?: React.ReactNode;
 }) {
   const lang = useLang();
 
@@ -142,7 +170,174 @@ export function LandingShell({
         </div>
       </section>
 
+      {/* Production Specs / Stats Strip */}
+      {stats && stats.length > 0 && (
+        <section className="bg-slate-900 border-b border-slate-800 py-8 px-4">
+          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            {stats.map((s, i) => (
+              <div key={i} className="p-3">
+                <p className="text-2xl md:text-3xl font-black text-amber-400 mb-1">{s.value}</p>
+                <p className="text-xs uppercase tracking-wider text-slate-400 font-bold">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Engineering Features */}
+      {features && features.length > 0 && (
+        <section className="py-20 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            {featuresTitle && (
+              <div className="text-center max-w-3xl mx-auto mb-14">
+                <h2 className="text-2xl md:text-4xl font-black text-black tracking-tight mb-4">
+                  {featuresTitle}
+                </h2>
+                {featuresIntro && (
+                  <p className="text-gray-600 text-base md:text-lg leading-relaxed">{featuresIntro}</p>
+                )}
+              </div>
+            )}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {features.map((f, i) => (
+                <div key={i} className="bg-gray-50 rounded-2xl p-7 border border-gray-100 hover:border-gray-200 transition">
+                  {f.tag && (
+                    <span className="inline-block text-[10px] font-black uppercase tracking-wider bg-slate-900 text-white px-3 py-1 rounded-full mb-3">
+                      {f.tag}
+                    </span>
+                  )}
+                  <h3 className="font-black text-xl text-black mb-3">{f.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{f.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Specification Comparison Table */}
+      {compare && compare.length > 0 && (
+        <section className="py-20 px-4 bg-gray-50 border-y border-gray-100">
+          <div className="max-w-5xl mx-auto">
+            {compareTitle && (
+              <h2 className="text-2xl md:text-4xl font-black text-black tracking-tight mb-10 text-center">
+                {compareTitle}
+              </h2>
+            )}
+            <div className="overflow-x-auto bg-white rounded-2xl border border-gray-200 shadow-xs">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-slate-900 text-white text-xs uppercase tracking-wider font-bold">
+                  <tr>
+                    {(compareCols || ["Style", "Profile", "Visor", "Best For"]).map((col, i) => (
+                      <th key={i} className="py-4 px-5">{col}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100 text-gray-700">
+                  {compare.map((row, i) => (
+                    <tr key={i} className="hover:bg-gray-50/80 transition">
+                      <td className="py-4 px-5 font-bold text-black">{row.style}</td>
+                      <td className="py-4 px-5 text-gray-600">{row.shape}</td>
+                      <td className="py-4 px-5 text-gray-600">{row.brim}</td>
+                      <td className="py-4 px-5 text-gray-600">{row.fit}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {compareNote && (
+              <p className="text-xs text-gray-500 mt-4 text-center max-w-2xl mx-auto">{compareNote}</p>
+            )}
+          </div>
+        </section>
+      )}
+
       {children}
+
+      {/* Complementary Products */}
+      {products && products.length > 0 && (
+        <section className="py-20 px-4 bg-gray-50 border-t border-gray-100">
+          <div className="max-w-6xl mx-auto">
+            {productsTitle && (
+              <div className="text-center max-w-3xl mx-auto mb-12">
+                <h2 className="text-2xl md:text-4xl font-black text-black tracking-tight mb-3">
+                  {productsTitle}
+                </h2>
+                {productsIntro && (
+                  <p className="text-gray-600 text-sm md:text-base">{productsIntro}</p>
+                )}
+              </div>
+            )}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {products.map((p, i) => (
+                <Link
+                  key={i}
+                  href={`/${lang}${p.href}`}
+                  className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition"
+                >
+                  <div className="aspect-square bg-gray-50 overflow-hidden">
+                    <img
+                      src={p.img}
+                      alt={p.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-5">
+                    {p.badge && (
+                      <span className="text-[10px] font-black uppercase tracking-wider text-emerald-600 mb-1 block">
+                        {p.badge}
+                      </span>
+                    )}
+                    <h3 className="font-black text-black text-base mb-1">{p.name}</h3>
+                    {p.tag && <p className="text-xs text-gray-500 mb-3">{p.tag}</p>}
+                    <div className="flex items-center justify-between pt-3 border-t border-gray-100 text-xs font-bold">
+                      <span className="text-slate-900">{p.price}</span>
+                      <span className="text-gray-500">{p.moq}</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Structured FAQ Section with FAQPage JSON-LD */}
+      {faqs && faqs.length > 0 && (
+        <section className="py-20 px-4 bg-white border-t border-gray-100">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: faqs.map((f) => ({
+                  "@type": "Question",
+                  name: f.q,
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: f.a,
+                  },
+                })),
+              }),
+            }}
+          />
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-4xl font-black text-black tracking-tight mb-10 text-center">
+              {faqTitle || (lang === "es" ? "Preguntas Frecuentes sobre Fabricación" : "Frequently Asked Questions")}
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((f, i) => (
+                <div key={i} className="bg-gray-50 rounded-2xl border border-gray-200/80 p-6 md:p-7">
+                  <h3 className="font-bold text-base md:text-lg text-black mb-2">{f.q}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="py-24 px-4 bg-black text-white text-center">
         <div className="max-w-2xl mx-auto">

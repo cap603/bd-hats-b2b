@@ -156,6 +156,24 @@ const CONTENT = {
         note: "Pairs with beanies for a two-season line",
       },
     ],
+    faqs: [
+      {
+        q: "What knitting gauge (3GG, 5GG, 7GG, 12GG) should our brand choose for custom winter beanies?",
+        a: "5GG and 7GG are the retail industry benchmarks for classic cuffed street beanies, offering optimal rib warmth and structural elasticity. 3GG delivers a chunky, heavy winter knit, while 12GG is ultra-fine for athletic, sleek under-helmet beanies.",
+      },
+      {
+        q: "Can you produce custom jacquard patterns and embroidered woven labels on the cuff?",
+        a: "Yes. We offer multi-color computer jacquard knitting for all-over artwork, as well as 3D puff embroidery, high-density damask woven foldover clamp labels, and laser-debossed leather patches.",
+      },
+      {
+        q: "What is the Minimum Order Quantity (MOQ) and production turnaround for bulk custom beanies?",
+        a: "Our MOQ is strictly 200 pieces per style / colorway. Physical pre-production sample turnaround is 7 business days, and bulk orders ship in 15–20 business days.",
+      },
+      {
+        q: "Do you offer anti-pilling and itch-free yarn certifications for EU and North American markets?",
+        a: "Yes. All our acrylic, core-spun, and Merino wool blended yarns meet OEKO-TEX Standard 100, REACH, and RoHS environmental standards with zero skin-irritation and verified anti-pilling treatments.",
+      },
+    ],
   },
   es: {
     hero: {
@@ -307,6 +325,24 @@ const CONTENT = {
         note: "Combina con gorros para una línea de dos temporadas",
       },
     ],
+    faqs: [
+      {
+        q: "¿Qué galga de tejido (3GG, 5GG, 7GG, 12GG) es la más recomendada para gorros de invierno?",
+        a: "5GG y 7GG son las galgas estándar para gorros urbanos clásicos con doblez, equilibrando abrigo y elasticidad. 3GG ofrece un punto grueso y robusto, mientras que 12GG es un tejido extrafino para gorros deportivos y ajustados.",
+      },
+      {
+        q: "¿Pueden fabricar patrones en jacquard e incorporar etiquetas tejidas en el doblez?",
+        a: "Sí. Ofrecemos tejido jacquard computarizado multicolor para diseños integrales, así como bordado 3D en relieve, etiquetas tejidas damasco dobladas al borde y parches de cuero grabados con láser.",
+      },
+      {
+        q: "¿Cuál es la Cantidad Mínima de Pedido (MOQ) y los plazos de entrega para gorros?",
+        a: "El pedido mínimo es de 200 unidades por modelo y color. El muestreo físico de preproducción tarda 7 días laborables y la producción en masa se completa en 15 a 20 días hábiles.",
+      },
+      {
+        q: "¿Los hilos cuentan con certificación antipilling y son suaves sin picazón?",
+        a: "Sí. Todos nuestros hilos acrílicos y mezclas de lana merino cuentan con certificación OEKO-TEX Standard 100 y cumplen con las normativas REACH, garantizando un tacto suave sin picazón ni formación de bolitas.",
+      },
+    ],
   },
 };
 
@@ -349,6 +385,7 @@ export default function BeaniesPage() {
       accent={c.hero.accent}
       subtitle={c.hero.subtitle}
       pills={c.hero.pills}
+      faqs={c.faqs}
     >
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
