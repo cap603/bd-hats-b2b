@@ -142,6 +142,7 @@ export default async function LocaleLayout({
     },
     sameAs: [
       "https://www.facebook.com/p/Baoding-Junyang-Import-And-Export-Trade-Co-Ltd-100079978783412/",
+      "https://www.linkedin.com/company/146738106/",
     ],
     knowsAbout: [
       "Custom baseball caps",

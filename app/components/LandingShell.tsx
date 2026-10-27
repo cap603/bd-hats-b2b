@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle, Facebook, Linkedin } from "lucide-react";
 import { Breadcrumb } from "./Breadcrumb";
 import { useLang } from "../lib/i18n";
 import { COMPARISON_LINKS } from "../lib/comparison-links";
@@ -229,6 +229,28 @@ export function LandingShell({
                 <li>Email: admin@bdjunyang.com</li>
                 <li>Office: Baoding, Hebei, China</li>
               </ul>
+              <div className="mt-4 pt-3 flex items-center gap-3">
+                <a
+                  href="https://www.facebook.com/p/Baoding-Junyang-Import-And-Export-Trade-Co-Ltd-100079978783412/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-full bg-white/5 hover:bg-blue-600/20 hover:text-blue-400 text-gray-400 flex items-center justify-center transition border border-white/10"
+                  aria-label="Facebook Page"
+                  title="Follow us on Facebook"
+                >
+                  <Facebook size={16} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/146738106/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-full bg-white/5 hover:bg-blue-500/20 hover:text-blue-300 text-gray-400 flex items-center justify-center transition border border-white/10"
+                  aria-label="LinkedIn Company Page"
+                  title="Connect on LinkedIn"
+                >
+                  <Linkedin size={16} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
