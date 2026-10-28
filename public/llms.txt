@@ -35,6 +35,7 @@
 
 ## B2B Technical Decision & Material Comparison Guides
 
+- [2026 Custom Hat Manufacturing Cost Index](https://bdjunyang.com/en/custom-hat-cost-index-2026): Factory FOB pricing benchmarks ($3.20 - $7.80), BOM cost breakdowns, volume scaling curves, and Barudan embroidery technique surcharges.
 - [Merino Wool vs Acrylic Beanies B2B Guide](https://bdjunyang.com/en/compare/merino-wool-vs-acrylic-beanies): Technical cost comparison, micron count, pilling resistance, and retail tier recommendations.
 - [5-Panel vs 6-Panel Caps Comparison](https://bdjunyang.com/en/compare/5-panel-vs-6-panel-caps): Structural differences, embroidery placement advantages, streetwear vs athletic fit analysis.
 - [Flat Embroidery vs 3D Puff Embroidery](https://bdjunyang.com/en/compare/flat-embroidery-vs-3d-puff): Stitch count density, minimum text height limits, durability in wash cycles, unit cost impact.

@@ -775,5 +775,71 @@ export const HATS: Product[] = [
       { q: "Can I combine several colours in one beanie?", a: "Yes. This is a multi-colour knit, so send us the colour combination you want and we will produce a sample for approval before bulk." },
       { q: "What is the delivery time?", a: "Delivery runs 7-15 working days after payment is confirmed, depending on quantity. We confirm the exact window with your quotation." }
     ]
+  },
+  {
+    id: "vintage-8-wale-corduroy-dad-hat",
+    name: "Vintage 8-Wale Corduroy Unstructured Dad Hat",
+    desc: "Heavyweight 8-wale 100% cotton corduroy dad hat with unstructured 6-panel crown, curved brim, and antique brass tri-glide buckle.",
+    fullDesc: "Crafted from authentic heavyweight 8-wale cotton corduroy with deep, rich rib ridges. The relaxed unstructured crown offers superior drape and street aesthetic without collapsing. Designed specifically for autumn and winter collections, compatible with high-density Tatami flat embroidery, 3D puff embroidery, or debossed leather patches. MOQ 200 pcs per colorway.",
+    price: "$4.50 - $6.80",
+    moq: 200,
+    badge: "new",
+    category: "Dad Hats",
+    img: "/images/products/vintage-acid-wash-6-panel-dad-hat.webp",
+    specs: {
+      material: "100% Heavyweight Cotton Corduroy (8-Wale)",
+      style: "Unstructured 6-Panel Dad Hat",
+      logo: "Tatami Flat / 3D Puff Embroidery / Leather Patch",
+      closure: "Self-Fabric Strap with Antique Brass Buckle",
+      panels: "6-Panel Curved Brim",
+      size: "58cm · Adjustable (54-62cm)",
+      colour: "Vintage Black, Forest Green, Camel, Rust Brown, Navy"
+    },
+    customization: {
+      title: "Our Customization Capabilities",
+      options: [
+        "High-density Tatami embroidery backing to prevent rib sinking",
+        "Custom antique brass or matte silver metal buckles",
+        "Woven internal brand labels and branded seam taping",
+        "Pantone-matched corduroy fabric dyeing available for 500+ pcs"
+      ]
+    },
+    faqs: [
+      { q: "What makes 8-wale corduroy better than standard corduroy?", a: "8-wale corduroy features wider, thicker ridges (wales per inch) that give a heavier, vintage drape ideal for premium autumn/winter streetwear." },
+      { q: "Can you embroider logos on textured corduroy without distortion?", a: "Yes. We use reinforced underlay stitching (Tatami backing) on our Barudan embroidery machines to prevent stitches from sinking into the fabric wales." }
+    ]
+  },
+  {
+    id: "polar-fleece-winter-5-panel-camp-cap",
+    name: "Polar Fleece Winter 5-Panel Camp Cap",
+    desc: "Insulating polar fleece 5-panel camper cap with flat visor, nylon webbing strapback, and moisture-wicking sweatband for cold-weather outdoor lines.",
+    fullDesc: "Engineered for winter outdoor, ski, and streetwear apparel drops. Made from ultra-soft, anti-pilling 280gsm polar fleece that locks in warmth while maintaining lightweight breathability. Features a low-profile 5-panel camper silhouette, flexible flat visor, and an adjustable nylon webbing strapback with quick-release buckle. MOQ 200 pcs per colorway.",
+    price: "$4.80 - $7.20",
+    moq: 200,
+    badge: "new",
+    category: "5-Panel Caps",
+    img: "/images/products/outdoor-performance-5-panel-cap.webp",
+    specs: {
+      material: "280gsm Anti-Pilling Polar Fleece",
+      style: "Low-Profile 5-Panel Camper Cap",
+      logo: "Woven Label / Rubber Patch / Embroidered Front",
+      closure: "Nylon Webbing Strap with Quick-Release Buckle",
+      panels: "5-Panel Flat Visor",
+      size: "58cm · Adjustable (55-61cm)",
+      colour: "Charcoal Heather, Olive Night, Deep Navy, Burnt Orange"
+    },
+    customization: {
+      title: "Our Customization Capabilities",
+      options: [
+        "High-definition damask woven labels and micro-injection rubber patches",
+        "Nylon webbing strap in matching or contrast military colorways",
+        "Thermal polar fleece crown with nylon ripstop visor contrast option",
+        "OEM/ODM custom embroidery and private label hangtags"
+      ]
+    },
+    faqs: [
+      { q: "Is the polar fleece anti-pilling treated?", a: "Yes, our polar fleece uses grade-4 anti-pilling finishing, ensuring the fabric retains its soft texture through prolonged winter use and washing." },
+      { q: "What is the MOQ for custom fleece 5-panel caps?", a: "Our standard MOQ is strictly 200 pieces per style/colorway, supporting fast turnaround for seasonal apparel drops." }
+    ]
   }
 ];

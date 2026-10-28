@@ -156,6 +156,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "weekly" as const,
         priority: 0.85,
       },
+      {
+        url: `${baseUrl}${lc}/custom-hat-cost-index-2026`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.95,
+      },
     );
 
     for (const product of HATS) {
