@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, MessageCircle, Facebook, Linkedin } from "lucide-react";
+import { ArrowRight, MessageCircle, Mail, Facebook, Linkedin } from "lucide-react";
 import { Breadcrumb } from "./Breadcrumb";
 import { useLang } from "../lib/i18n";
 import { COMPARISON_LINKS } from "../lib/comparison-links";

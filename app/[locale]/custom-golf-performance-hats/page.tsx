@@ -214,7 +214,7 @@ export default function GolfPerformancePage() {
   const lang = useLang();
   const c = CONTENT[lang as "en" | "es"] || CONTENT.en;
 
-  const RELATED_PRODUCTS: ProductLinks[] = [
+  const RELATED_PRODUCTS = [
     {
       href: "/product/nylon-waterproof-performance-golf-cap",
       name: "Nylon Waterproof Performance Golf Cap",

@@ -215,7 +215,7 @@ export default function CorduroyCapsPage() {
   const lang = useLang();
   const c = CONTENT[lang as "en" | "es"] || CONTENT.en;
 
-  const RELATED_PRODUCTS: ProductLinks[] = [
+  const RELATED_PRODUCTS = [
     {
       href: "/product/vintage-acid-wash-6-panel-dad-hat",
       name: "Vintage Acid Wash 6-Panel Dad Hat",

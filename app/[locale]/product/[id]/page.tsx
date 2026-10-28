@@ -339,7 +339,7 @@ export default function ProductDetail() {
                 <div>
                   <h3 className="text-xs font-black uppercase tracking-widest text-gray-400 mb-4">{t("moreInfoCategory")}</h3>
                   <Link href={`/${lang}${landing}`} className="block bg-gray-50 hover:bg-gray-100 border border-gray-100 rounded-xl p-4 text-sm font-bold text-black transition">
-                    {labelFor(landing, lang)}
+                    {labelFor(landing, lang as "en" | "es")}
                   </Link>
                 </div>
               )}
@@ -349,7 +349,7 @@ export default function ProductDetail() {
                   {comparisons.map((href) => (
                     <li key={href}>
                       <Link href={`/${lang}${href}`} className="block bg-gray-50 hover:bg-gray-100 border border-gray-100 rounded-xl p-4 text-sm font-bold text-black transition">
-                        {labelFor(href, lang)}
+                        {labelFor(href, lang as "en" | "es")}
                       </Link>
                     </li>
                   ))}
@@ -361,7 +361,7 @@ export default function ProductDetail() {
                   {supportPages.map((href) => (
                     <li key={href}>
                       <Link href={`/${lang}${href}`} className="block bg-gray-50 hover:bg-gray-100 border border-gray-100 rounded-xl p-4 text-sm font-bold text-black transition">
-                        {labelFor(href, lang)}
+                        {labelFor(href, lang as "en" | "es")}
                       </Link>
                     </li>
                   ))}

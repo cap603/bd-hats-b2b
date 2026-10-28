@@ -207,7 +207,7 @@ export default function CustomHatCostIndexPage() {
             />
             <span className="text-xl font-black tracking-tighter text-black">JUNYANG</span>
           </Link>
-          <NavProductsMenu lang={lang} />
+          <NavProductsMenu />
           <div className="flex items-center gap-3">
             <button
               onClick={() => handleWhatsApp("Top Header")}
