@@ -24,17 +24,25 @@ export function InquiryForm() {
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
-    // Pre-fill message from URL intent (e.g. /#inquiry?intent=sample)
-    if (typeof window !== "undefined") {
+    const handleIntent = () => {
+      if (typeof window === "undefined") return;
       const hash = window.location.hash;
       const match = hash.match(/intent=([^&]+)/);
-      if (match) {
-        const intent = decodeURIComponent(match[1]);
+      const searchMatch = window.location.search.match(/intent=([^&]+)/);
+      const intentRaw = match ? match[1] : (searchMatch ? searchMatch[1] : null);
+      if (intentRaw) {
+        const intent = decodeURIComponent(intentRaw);
         if (intent === "sample") setPrefill(t("intentSample"));
         else if (intent === "bulk") setPrefill(t("intentBulk"));
         else if (intent === "test") setPrefill(t("intentTest"));
+        else if (intent === "techpack") setPrefill(t("intentTechpack"));
+        else if (intent === "mockup") setPrefill(t("intentMockup"));
       }
-    }
+    };
+
+    handleIntent();
+    window.addEventListener("hashchange", handleIntent);
+    return () => window.removeEventListener("hashchange", handleIntent);
   }, [t]);
 
   const trackInquiry = (id?: string) => {

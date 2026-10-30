@@ -12,7 +12,7 @@ import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
 import { MobileStickyBar } from "../components/MobileStickyBar";
-import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight, ArrowRight, ChevronDown, CheckCircle2, Facebook, Linkedin } from "lucide-react";
+import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight, ArrowRight, ChevronDown, CheckCircle2, Facebook, Linkedin, FileDown, Sparkles } from "lucide-react";
 
 const MANUFACTURING_PROGRAMS = [
   {
@@ -710,6 +710,45 @@ export default function Home() {
             <span className="flex items-center gap-1.5 text-xs font-bold text-slate-600">
               <ShieldCheck size={16} className="text-emerald-600" /> {t("inquiry.trustLabel")}
             </span>
+          </div>
+
+          {/* Quick intent selector for zero-cost high-conversion hooks */}
+          <div className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <a
+              href="#inquiry?intent=techpack"
+              className="flex items-center gap-3 p-3.5 bg-blue-50/70 hover:bg-blue-100/70 border border-blue-200/80 rounded-xl transition text-left group"
+            >
+              <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                <FileDown size={16} />
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs font-black text-slate-900 group-hover:text-blue-600 transition flex items-center gap-1">
+                  {lang === "es" ? "Descargar Ficha Técnica en Blanco (AI/PDF)" : "Download Blank Tech Pack (AI/PDF)"}
+                  <ArrowRight size={12} className="inline opacity-60" />
+                </div>
+                <div className="text-[11px] text-slate-500 truncate">
+                  {lang === "es" ? "Plantillas vectoriales con cotas de costura" : "Vector 2D flat templates with seam specs"}
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#inquiry?intent=mockup"
+              className="flex items-center gap-3 p-3.5 bg-emerald-50/70 hover:bg-emerald-100/70 border border-emerald-200/80 rounded-xl transition text-left group"
+            >
+              <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                <Sparkles size={16} />
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs font-black text-slate-900 group-hover:text-emerald-700 transition flex items-center gap-1">
+                  {lang === "es" ? "Vista Previa 3D y Revisión en 2h (Gratis)" : "Free 2-Hour 3D Mockup & Feasibility"}
+                  <ArrowRight size={12} className="inline opacity-60" />
+                </div>
+                <div className="text-[11px] text-slate-500 truncate">
+                  {lang === "es" ? "Envía tu logo para revisión de puntadas y 3D" : "Send logo for stitch density & 3D render"}
+                </div>
+              </div>
+            </a>
           </div>
 
           <InquiryForm />

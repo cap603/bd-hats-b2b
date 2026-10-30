@@ -217,7 +217,16 @@
     "moreInfoGuides": "Guías de compra",
     "trustBar": "Estándares Globales de Fabricación",
     "notFound": "Producto No Encontrado",
-    "backLink": "Volver al Catálogo"
+    "backLink": "Volver al Catálogo",
+    "devToolsBadge": "Herramientas para Diseñadores y Marcas",
+    "devToolsTitle": "Plantillas Vectoriales y Revisión Técnica Lista para Producción",
+    "devToolsSub": "Acelera el lanzamiento de tu colección con plantillas vectoriales directas de fábrica y evaluación 3D.",
+    "techpackTitle": "Descargar Ficha Técnica en Blanco (AI / PDF)",
+    "techpackDesc": "Plantillas vectoriales 2D con medidas exactas de corona, visera curva/plana y costuras de 5 y 6 paneles.",
+    "techpackBtn": "Obtener Plantilla Vectorial",
+    "mockupTitle": "Vista Previa 3D y Revisión de Viabilidad en 2 Horas (Gratis)",
+    "mockupDesc": "Envía tu logotipo — nuestro equipo técnico revisa la densidad de puntadas, soporte Tatami y genera una vista 3D.",
+    "mockupBtn": "Solicitar Mockup Gratis"
   },
   "form": {
     "name": "Tu Nombre",
@@ -232,6 +241,8 @@
     "intentSample": "¡Hola Baoding Junyang! Quisiera pedir una muestra física antes de la producción en masa. ¿Pueden darme detalles?",
     "intentBulk": "¡Hola Baoding Junyang! Me interesa la producción en masa. ¿Pueden proporcionarme una cotización?",
     "intentTest": "¡Hola Baoding Junyang! Quisiera hacer un pedido de prueba pequeño. ¿Pueden darme detalles?",
+    "intentTechpack": "¡Hola Baoding Junyang! Por favor envíenme las plantillas vectoriales en blanco (Tech Pack en AI/PDF) y hojas de especificaciones de costura para nuestro equipo de diseño. Mi marca/empresa es: ",
+    "intentMockup": "¡Hola Baoding Junyang! Me gustaría solicitar una vista previa digital en 3D y evaluación de viabilidad de bordado gratuita para nuestro logotipo. Estilo de interés: ",
     "submit": "Enviar Consulta a la Fábrica",
     "submitting": "Transmitiendo al Equipo de Ventas...",
     "thanks": "¡Consulta Recibida con Éxito!",

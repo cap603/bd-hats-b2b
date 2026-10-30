@@ -9,7 +9,7 @@ import { priceLabel, priceRange, hasNumericPrice } from "../../../lib/price";
 import { 
   MessageCircle, ArrowLeft, ShieldCheck, Zap, Globe, Cpu, 
   CheckCircle2, ChevronDown, ChevronUp, Image as ImageIcon, 
-  Settings, HelpCircle, Package, Truck
+  Settings, HelpCircle, Package, Truck, FileDown, Sparkles
 } from "lucide-react";
 import { Breadcrumb } from "../../../components/Breadcrumb";
 import { LanguageSwitcher } from "../../../components/LanguageSwitcher";
@@ -70,6 +70,21 @@ export default function ProductDetail() {
       isEs
         ? `¡Hola Baoding Junyang! Me gustaría solicitar cotización de fábrica y ficha técnica para [${sku}] "${hat.name}". MOQ ${hat.moq} uds.`
         : `Hi Baoding Junyang! I would like to get a wholesale quote and spec sheet for [${sku}] "${hat.name}". MOQ ${hat.moq}pcs.`
+    );
+    window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
+  };
+
+  const handleMockupWhatsApp = () => {
+    const sku = getProductSku(String(hat.id));
+    trackWhatsAppClick({
+      button: "mockup_review_whatsapp",
+      label: `3D Mockup Request: [${sku}] ${hat.name}`,
+    });
+    const isEs = lang === "es";
+    const text = encodeURIComponent(
+      isEs
+        ? `¡Hola Baoding Junyang! Me gustaría solicitar una vista previa 3D y revisión técnica de bordado gratuita para mi logotipo en el modelo [${sku}] "${hat.name}".`
+        : `Hi Baoding Junyang! I would like to request a free 2-hour 3D digital mockup and embroidery feasibility review for my logo on [${sku}] "${hat.name}".`
     );
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
@@ -273,6 +288,74 @@ export default function ProductDetail() {
                <Link href={`/${lang}/#inquiry?intent=sample`} className="w-full bg-gray-100 hover:bg-gray-200 text-black font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
                   {t("orderSample")}
               </Link>
+            </div>
+
+            {/* B2B Brand Developer Tools — Zero-Cost Digital Lead Magnet */}
+            <div className="mt-8 bg-slate-900 text-white rounded-3xl p-6 border border-slate-800 shadow-xl relative overflow-hidden">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400">
+                  <Sparkles size={13} />
+                </span>
+                <span className="text-[11px] font-black uppercase tracking-widest text-emerald-400">
+                  {t("devToolsBadge")}
+                </span>
+              </div>
+              <h3 className="text-base sm:text-lg font-black text-white leading-tight mb-1">
+                {t("devToolsTitle")}
+              </h3>
+              <p className="text-xs text-slate-400 leading-relaxed mb-4">
+                {t("devToolsSub")}
+              </p>
+
+              <div className="space-y-3">
+                {/* Tool 1: Blank Tech Pack Template */}
+                <div className="bg-slate-800/90 rounded-2xl p-4 border border-slate-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                  <div className="flex items-start gap-3 min-w-0">
+                    <FileDown size={22} className="text-blue-400 shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="text-xs font-bold text-white leading-snug">
+                        {t("techpackTitle")}
+                      </h4>
+                      <p className="text-[11px] text-slate-400 leading-normal mt-0.5">
+                        {t("techpackDesc")}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
+                    <Link
+                      href={`/${lang}/#inquiry?intent=techpack`}
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm"
+                    >
+                      <FileDown size={14} />
+                      <span>{t("techpackBtn")}</span>
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Tool 2: Free 2-Hour 3D Mockup & Feasibility Review */}
+                <div className="bg-slate-800/90 rounded-2xl p-4 border border-slate-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                  <div className="flex items-start gap-3 min-w-0">
+                    <Zap size={22} className="text-emerald-400 shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="text-xs font-bold text-white leading-snug">
+                        {t("mockupTitle")}
+                      </h4>
+                      <p className="text-[11px] text-slate-400 leading-normal mt-0.5">
+                        {t("mockupDesc")}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
+                    <button
+                      onClick={handleMockupWhatsApp}
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm cursor-pointer"
+                    >
+                      <MessageCircle size={14} />
+                      <span>{t("mockupBtn")}</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
