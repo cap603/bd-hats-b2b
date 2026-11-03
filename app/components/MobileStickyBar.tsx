@@ -27,16 +27,16 @@ export function MobileStickyBar({ pageName = "Homepage" }: MobileStickyBarProps)
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
   };
 
-  const handleScrollToInquiry = (e: React.MouseEvent) => {
-    const el = document.getElementById("inquiry");
-    if (el) {
-      e.preventDefault();
-      el.scrollIntoView({ behavior: "smooth" });
+  const handleOpenInquiry = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent("open-inquiry-modal"));
     }
   };
 
   return (
     <>
+      {/* Mobile Sticky Bar */}
       <div className="fixed bottom-0 inset-x-0 z-50 lg:hidden bg-white/95 backdrop-blur-md border-t border-slate-200 px-3.5 py-2 shadow-[0_-4px_25px_rgba(0,0,0,0.12)] flex items-center justify-between gap-2.5 pb-[max(0.6rem,env(safe-area-inset-bottom))]">
         {/* Left Factory Info */}
         <div className="flex flex-col min-w-0 flex-1">
@@ -56,14 +56,13 @@ export function MobileStickyBar({ pageName = "Homepage" }: MobileStickyBarProps)
 
         {/* Right CTA Buttons */}
         <div className="flex items-center gap-1.5 shrink-0">
-          <a
-            href={`/${lang}#inquiry`}
-            onClick={handleScrollToInquiry}
-            className="inline-flex items-center justify-center gap-1 bg-slate-900 active:bg-slate-800 text-white font-bold px-3 py-2 rounded-xl text-xs transition shadow-sm"
+          <button
+            onClick={handleOpenInquiry}
+            className="inline-flex items-center justify-center gap-1 bg-slate-900 active:bg-slate-800 text-white font-bold px-3 py-2 rounded-xl text-xs transition shadow-sm cursor-pointer"
           >
             <Mail size={13} />
             <span>{isEs ? "Consulta" : "Inquire"}</span>
-          </a>
+          </button>
           <button
             onClick={handleWhatsApp}
             className="inline-flex items-center justify-center gap-1 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-black px-3.5 py-2 rounded-xl text-xs transition shadow-md shadow-emerald-600/25 cursor-pointer"

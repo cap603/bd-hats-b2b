@@ -6,6 +6,7 @@ import { locales } from "../../i18n";
 import { Analytics } from "@vercel/analytics/react";
 import { WhatsAppFloat } from "../components/WhatsAppFloat";
 import { LanguageNotice } from "../components/LanguageNotice";
+import { InquiryModal } from "../components/InquiryModal";
 import "../globals.css";
 
 export const dynamic = "force-dynamic";
@@ -192,6 +193,7 @@ export default async function LocaleLayout({
               "chat.cta" / "popup.heading", which is what visitors would read. */}
           <WhatsAppFloat />
           <LanguageNotice />
+          <InquiryModal />
         </I18nProvider>
         {/* Vercel Analytics — zero-config traffic & pageview tracking */}
         <Analytics />
