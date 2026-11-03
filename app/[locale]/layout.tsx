@@ -66,20 +66,18 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       languages: {
         en: "https://bdjunyang.com/en",
         es: "https://bdjunyang.com/es",
+        de: "https://bdjunyang.com/de",
+        fr: "https://bdjunyang.com/fr",
         "x-default": "https://bdjunyang.com/en",
       },
     },
     openGraph: {
       type: "website",
-      locale: locale === "es" ? "es_ES" : "en_US",
+      locale: locale === "es" ? "es_ES" : (locale === "de" ? "de_DE" : (locale === "fr" ? "fr_FR" : "en_US")),
       url: `https://bdjunyang.com/${locale}`,
       siteName: "BD Hats Factory",
-      title: locale === "es"
-        ? "BD Hats | Fábrica Premium de Gorras — Directo de Fábrica, MOQ 200uds"
-        : "BD Hats | Premium Custom Hat Factory — Factory Direct, MOQ 200pcs",
-      description: locale === "es"
-        ? "Gorras personalizadas premium directamente de fábrica desde 2014. Bordado personalizado, MOQ 200uds, muestras en 7 días, envíos globales."
-        : "Premium custom hats directly from the factory since 2014. Custom embroidery, MOQ 200pcs, 7-day samples, shipped globally.",
+      title: messages.meta?.homeTitle || "BD Hats | Premium Custom Hat Factory",
+      description: messages.meta?.homeDesc || "Factory-direct custom hats since 2014.",
       images: [
         {
           url: "/images/products/structured-multi-color-baseball-cap.webp",

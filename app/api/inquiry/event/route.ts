@@ -61,17 +61,29 @@ export async function POST(req: NextRequest) {
           countryCode.toUpperCase()
         );
 
+      const isGermanLead =
+        page.startsWith("/de") ||
+        ["DE", "AT", "CH", "LI"].includes(countryCode.toUpperCase());
+
+      const isFrenchLead =
+        page.startsWith("/fr") ||
+        ["FR", "BE", "LU", "MC"].includes(countryCode.toUpperCase());
+
       const markdown = `### 🟢 【独立站 WhatsApp 询盘意向】
 > 海外买手刚在网站点击了 WhatsApp 沟通按钮！
 
 - **买手国家**：**${countryText}**
-${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}- **点击页面**：\`${page}\`
+${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}${isGermanLead ? `- **客群属性**：🇩🇪 **【德语区潜在买手 / Lead auf Deutsch】**\n` : ""}${isFrenchLead ? `- **客群属性**：🇫🇷 **【法语区潜在买手 / Lead en Français】**\n` : ""}- **点击页面**：\`${page}\`
 - **触发模块**：${label ? `${label} (${button})` : button}
 - **引流渠道**：${channel}
 - **发生时间**：${timeStr}
 - **跟进提示**：${
         isSpanishLead
-          ? "💡 潜在西语买手！请留意 WhatsApp (+86 159 3393 0830) 并优先使用西班牙语（或借助翻译软件）打招呼跟进！"
+          ? "💡 潜在西语买手！请留意 WhatsApp (+86 159 3393 0830) 并优先使用西班牙语打招呼跟进！"
+          : isGermanLead
+          ? "💡 潜在德语区买手！请留意 WhatsApp (+86 159 3393 0830)，买手注重严谨品质，建议准备好德语/英语规格书！"
+          : isFrenchLead
+          ? "💡 潜在法语区买手！请留意 WhatsApp (+86 159 3393 0830)，建议首轮以礼貌法语或英语打招呼！"
           : "请销售员留意 WhatsApp (+86 159 3393 0830) 是否有来自该国家的新客户接入并打招呼！"
       }`;
 

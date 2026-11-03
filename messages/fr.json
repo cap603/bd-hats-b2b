@@ -1,0 +1,305 @@
+{
+  "nav": {
+    "advantages": "Avantages",
+    "factory": "Notre Usine",
+    "qualityControl": "Contrôle Qualité",
+    "products": "Casquettes de Baseball",
+    "inquiry": "Demande de Devis",
+    "about": "À Propos",
+    "guide": "Guide d'Achat B2B",
+    "materials": "Matières & Tissus",
+    "pricing": "Prix & Expédition",
+    "getQuote": "Obtenir un Devis",
+    "categories": "Catégories de Casquettes",
+    "viewAllProducts": "Voir tous les modèles →",
+    "viewAllCount": "Voir les {count} modèles →",
+    "stylesCount": "{count} modèles",
+    "whatsappQuote": "Devis sur WhatsApp",
+    "home": "Accueil"
+  },
+  "home": {
+    "topBar": "Premier Fabricant Chinois de Casquettes Haut de Gamme • Fondé en 2014",
+    "subtitle": "Supply Chain & Manufacturing Partner",
+    "banners": {
+      "0": {
+        "label": "Solutions B2B Direct Usine",
+        "title": "Fabrication de Casquettes de Classe Mondiale",
+        "sub": "Plus de 100 brodeuses japonaises Barudan. 200+ artisans qualifiés. Vente en gros direct usine depuis la Chine.",
+        "cta": "Obtenir les Prix Usine"
+      },
+      "1": {
+        "label": "Solutions B2B Direct Usine",
+        "title": "Personnalisation Haut de Gamme Clé en Main",
+        "sub": "Options illimitées : Tissus premium, coloris sur-mesure, broderie 3D en relief et profils de casquettes personnalisés.",
+        "cta": "Commencer la Création"
+      },
+      "2": {
+        "label": "Solutions B2B Direct Usine",
+        "title": "Votre Vision, Tous les Styles",
+        "sub": "Des modèles 5-Panel et 6-Panel aux Truckers, Dad Hats, Bonnets et Bobs. Fabrication 100 % sur-mesure.",
+        "cta": "Demander des Échantillons"
+      }
+    },
+    "pills": {
+      "moq": "MOQ 200 Pièces",
+      "samples": "Échantillons en 7 Jours",
+      "market": "70 % Amérique du Nord, 25 % Europe de l'Ouest"
+    },
+    "stats": {
+      "years": "20+ Ans",
+      "yearsLabel": "Expérience de Production",
+      "moq": "200 Pcs",
+      "moqLabel": "MOQ à partir de 200 Pièces",
+      "sgs": "Usine Vérifiée par SGS"
+    },
+    "compliance": {
+      "title": "Normes de Conformité",
+      "certified": "Produits Certifiés",
+      "markets": "Marchés Principaux",
+      "na": "AMÉRIQUE DU NORD (70 %)",
+      "eu": "EUROPE DE L'OUEST (25 %)"
+    },
+    "factory": {
+      "label": "Contrôle Qualité Intégré",
+      "heading": "Suivez la Fabrication de vos Casquettes — en Direct.",
+      "p1": "Contrairement aux simples intermédiaires, Baoding Junyang gère ses propres lignes de production spécialisées. Nous employons plus de 200 couturiers qualifiés et exploitons plus de 100 brodeuses japonaises Barudan à la pointe de la technologie.",
+      "p2Pre": "Notre Politique de Transparence :",
+      "p2": "Nous vous envoyons des photos et vidéos à chaque étape de votre commande (découpe, précision de broderie, assemblage des panneaux, repassage vapeur). Vous êtes virtuellement au cœur de nos ateliers.",
+      "qcStandard": "Contrôle Qualité Interne",
+      "qcStandardDesc": "Inspection rigoureuse à chaque phase de production.",
+      "samples": "Échantillons en 7 Jours",
+      "samplesDesc": "Expédition rapide de prototypes physiques.",
+      "videoCta": "Demander une Visite Vidéo de l'Usine",
+      "videoTitle": "Voir la Vidéo de Production (2026)",
+      "videoSub": "Brodeuses japonaises et assemblage professionnel à la main."
+    },
+    "trust": {
+      "label": "Reconnu par les Marques Internationales",
+      "heading": "Pourquoi les Marques Choisissent BD Hats",
+      "sub": "Nous sommes le fabricant industriel derrière des centaines de marques streetwear, corporate et lifestyle à travers le monde.",
+      "brands": "300+",
+      "brandsLabel": "Marques Servies dans le Monde",
+      "brandsDesc": "Des jeunes marques streetwear américaines aux grands programmes d'uniformes d'entreprises européennes.",
+      "caps": "5M+",
+      "capsLabel": "Casquettes Produites par An",
+      "capsDesc": "Capacité industrielle de grande série avec une qualité premium irréprochable.",
+      "retention": "98 %",
+      "retentionLabel": "Taux de Fidélité Client",
+      "retentionDesc": "Notre exigence de qualité et notre rigueur commerciale incitent nos clients à recommander saison après saison.",
+      "sgsSupplier": "Fournisseur Vérifié SGS",
+      "goldSupplier": "Site Industriel Audité ISO 9001:2015",
+      "certifications": "Certifié CE · REACH · RoHS",
+      "qcStandard": "Contrôle Qualité Interne Strict"
+    },
+    "catalog": {
+      "label": "Catégories de Casquettes Premium",
+      "heading": "Nos Collections de Casquettes",
+      "sub": "Faites votre choix parmi nos modèles de base éprouvés ou transmettez votre dossier technique pour une création 100 % sur-mesure."
+    },
+    "process": {
+      "label": "Fabrication sur-mesure étape par étape",
+      "heading": "Comment Nous Collaborons avec les Marques",
+      "step1Title": "Sélection du Modèle & du Tissu",
+      "step1Desc": "Choisissez des structures rigides ou déstructurées, et spécifiez vos matières (coton lourd, toile canvas, velours côtelé, etc.).",
+      "step2Title": "Obtenez un Devis Détaillé",
+      "step2Desc": "Transmettez vos fichiers graphiques et quantités. Notre équipe commerciale vous remet un devis complet (prix et délais) sous 12 heures.",
+      "step3Title": "Validation de l'Échantillon",
+      "step3Desc": "Nous produisons un prototype physique et vous envoyons photos et vidéos détaillées pour validation avant lancement série.",
+      "step4Title": "Production Série & Suivi Qualité",
+      "step4Desc": "Nous lançons la fabrication de masse avec des points d'étape réguliers. Contrôle final complet avant expédition internationale."
+    },
+    "qc": {
+      "label": "Assurance Qualité",
+      "heading": "Notre Processus de Contrôle Qualité en 5 Étapes",
+      "step1Title": "Contrôle des Matières Premières",
+      "step1Desc": "Les rouleaux de sergé de coton, toile bio et fils à broder sont vérifiés (stabilité de teinture, résistance mécanique) avant découpe.",
+      "step2Title": "Précision de Broderie",
+      "step2Desc": "Contrôle en temps réel du relief 3D et de la densité de points. Tout décalage ou fil tiré est immédiatement écarté.",
+      "step3Title": "Audit d'Assemblage des Coutures",
+      "step3Desc": "Rigueur absolue sur la structure de la calotte et les bandes de propreté. Les bandeaux anti-transpiration sont alignés au millimètre près.",
+      "step4Title": "Contrôle Final avant Conditionnement",
+      "step4Desc": "Toutes les casquettes sont épluchées (fils coupés), vérifiées et repassées à la vapeur avant la mise sous polybag.",
+      "step5Title": "Conditionnement Export & Audit d'Étiquetage",
+      "step5Desc": "Comptage rigoureux selon la liste de colisage et vérification des étiquettes d'expédition pour faciliter les formalités douanières.",
+      "liveStatus": "Statut en Direct",
+      "qcPassed": "CQ Validé"
+    },
+    "faq": {
+      "heading": "Questions Fréquentes",
+      "sub": "Tout ce que vous devez savoir sur notre processus de fabrication directe usine.",
+      "q0": "Quelle est votre Quantité Minimum de Commande (MOQ) ?",
+      "a0": "Notre MOQ standard est de 200 pièces par modèle/couleur. Nous acceptons également de petits ordres tests pour les lancements de nouvelles marques.",
+      "q1": "Puis-je commander un échantillon avant la production de masse ?",
+      "a1": "Oui, tout à fait ! Nous réalisons des prototypes physiques complets afin que vous puissiez valider la coupe, la matière et les finitions avant la production série.",
+      "q2": "Fabriquez-vous des modèles selon nos créations sur-mesure (OEM/ODM) ?",
+      "a2": "Oui. Baoding Junyang est une usine intégrée OEM/ODM. Nous concevons vos casquettes à partir de croquis, dossiers techniques ou prototypes physiques existants.",
+      "q3": "Quels sont vos délais habituels de fabrication et de livraison ?",
+      "a3": "Nos échantillons nécessitent environ 7 jours. La production série prend 15 à 20 jours selon les volumes. Le fret aérien express mondial prend 5 à 8 jours."
+    },
+    "inquiry": {
+      "heading": "Demander un Devis Usine",
+      "sub": "Envoyez-nous votre cahier des charges (modèles, logos, quantités). Nos experts B2B vous répondent sous 12 heures.",
+      "trustLabel": "100 % Direct Usine · Vérifié SGS · 12 Ans d'Expérience OEM/ODM",
+      "testimonialTitle": "Témoignages de nos Marques Partenaires",
+      "testimonials": [
+        {
+          "quote": "Leur broderie 3D en relief était parfaite dès le premier échantillon. L'usine nous envoie des photos à chaque étape — on a l'impression d'être dans l'atelier.",
+          "name": "Marcus T.",
+          "role": "Fondateur de Marque Streetwear, USA"
+        },
+        {
+          "quote": "Une MOQ de 200 pièces avec une telle qualité de finition est rare en Europe. Notre commande de 2 000 casquettes a été expédiée en 18 jours sans aucun défaut.",
+          "name": "Sophie L.",
+          "role": "Importatrice Textile, Allemagne"
+        },
+        {
+          "quote": "La communication sur WhatsApp est ultra-rapide. Les échantillons sont arrivés en 7 jours chrono, exactement comme convenu.",
+          "name": "Daniel R.",
+          "role": "Acheteur Réseau de Boutiques, Australie"
+        }
+      ]
+    }
+  },
+  "catalog": {
+    "filterAll": "Tous",
+    "filterBaseballCaps": "Casquettes de Baseball",
+    "filterVintage": "Série Vintage",
+    "filterSports": "Sport & Performance",
+    "filterTruckerHats": "Casquettes Trucker",
+    "filterSnapbacks": "Casquettes Snapback",
+    "filterBucketHats": "Bobs / Chapeaux Seau",
+    "filterBeanies": "Bonnets en Maille",
+    "panelLabel": "Panneaux :",
+    "panelAll": "Tous",
+    "sortDefault": "Par défaut",
+    "sortPriceAsc": "Prix : Croissant",
+    "sortPriceDesc": "Prix : Décroissant",
+    "moq": "MOQ : {count} Pcs",
+    "factoryDirect": "Direct Usine",
+    "viewDetails": "Voir Détails",
+    "quote": "Devis",
+    "details": "Détails",
+    "showing": "Affichage de {shown} sur {total} modèles",
+    "noResults": "Aucun modèle ne correspond aux filtres sélectionnés.",
+    "resetFilters": "Réinitialiser les filtres",
+    "badgeBestSeller": "Meilleure Vente",
+    "badgeTrending": "Tendance",
+    "badgeNew": "Nouveau"
+  },
+  "product": {
+    "backToCatalog": "Retour au Catalogue",
+    "whatsappQuote": "Devis sur WhatsApp",
+    "topSeller": "Top Ventes",
+    "qc": "Interne",
+    "qcSub": "Équipe CQ",
+    "production": "15 Jours",
+    "productionSub": "Production",
+    "moq": "200 Pcs",
+    "moqSub": "MOQ",
+    "shipping": "Mondial",
+    "shippingSub": "Fret Aérien Express",
+    "unit": "/ Pièce (FOB)",
+    "tabs": {
+      "specs": "Fiche Technique",
+      "custom": "Personnalisation",
+      "faq": "FAQ Produit"
+    },
+    "getQuote": "Demander un Devis Usine",
+    "orderSample": "Commander un Échantillon",
+    "urgencyStrip": "Les créneaux de fabrication pour la saison actuelle se remplissent vite — réservez votre ligne de production dès aujourd'hui",
+    "related": "Continuer la Découverte",
+    "relatedTitle": "Produits Similaires",
+    "faqHeading": "Questions Fréquentes",
+    "moreInfo": "Poursuivre la recherche",
+    "moreInfoTitle": "Guides et comparatifs associés",
+    "moreInfoCategory": "Cette catégorie",
+    "moreInfoCompare": "Comparer les matières",
+    "moreInfoGuides": "Guides d'achat B2B",
+    "trustBar": "Normes Industrielles Mondiales Certifiées",
+    "notFound": "Produit Non Trouvé",
+    "backLink": "Retour au Catalogue",
+    "devToolsBadge": "Outils de Conception pour Marques B2B",
+    "devToolsTitle": "Patrons Vectoriels & Faisabilité Technique Immédiate",
+    "devToolsSub": "Accélérez le lancement de votre collection grâce à nos dossiers techniques vectoriels direct usine et simulation 3D.",
+    "techpackTitle": "Télécharger la Fiche Technique Vierge (AI / PDF)",
+    "techpackDesc": "Patrons vectoriels 2D avec cotes précises de hauteur de calotte, courbure de visière et coutures 5/6 panneaux.",
+    "techpackBtn": "Obtenir les Fiches Vectorielles",
+    "mockupTitle": "Simulation 3D & Étude de Faisabilité Gratuite en 2h",
+    "mockupDesc": "Téléversez votre logo — notre bureau d'études analyse la densité de points, le support Tatami et vous livre un aperçu 3D sous 2 heures.",
+    "mockupBtn": "Demander une Simulation 3D Gratuite"
+  },
+  "form": {
+    "name": "Votre Nom",
+    "namePlaceholder": "Jean Dupont",
+    "email": "Adresse Email",
+    "emailPlaceholder": "contact@votre-marque.fr",
+    "phone": "Téléphone / WhatsApp (Optionnel)",
+    "phonePlaceholder": "+33 6 00 00 00 00",
+    "message": "Message / Cahier des Charges",
+    "messagePlaceholder": "Décrivez les modèles, volumes ou techniques souhaitées (ex. broderie 3D en relief, étiquettes tissées, boucle métal)...",
+    "privacyNote": "Votre demande est transmise directement au bureau commercial de notre usine (admin@bdjunyang.com). Réponse rapide sous 2 à 4 heures.",
+    "intentSample": "Bonjour Baoding Junyang ! Je souhaite commander un échantillon physique avant de lancer la production série. Pouvez-vous me transmettre les modalités ?",
+    "intentBulk": "Bonjour Baoding Junyang ! Je suis intéressé par une production de série. Pouvez-vous me faire parvenir un devis chiffré ?",
+    "intentTest": "Bonjour Baoding Junyang ! J'aimerais passer une commande test. Pouvez-vous me donner les détails ?",
+    "intentTechpack": "Bonjour Baoding Junyang ! Merci de m'envoyer les patrons vectoriels vierges (Tech Pack AI/PDF) et les fiches techniques pour notre équipe de design. Ma marque/société est : ",
+    "intentMockup": "Bonjour Baoding Junyang ! Je souhaite demander une simulation 3D gratuite et une analyse de faisabilité de broderie pour notre logo. Modèle visé : ",
+    "submit": "Envoyer la Demande à l'Usine",
+    "submitting": "Transmission à l'équipe commerciale...",
+    "thanks": "Demande Reçue avec Succès !",
+    "thanksMsg": "Votre cahier des charges a bien été réceptionné par notre équipe technique et commerciale (admin@bdjunyang.com). Nous étudions votre demande et vous répondrons par email dans les plus brefs délais.",
+    "whatsappFallback": "Besoin d'une réponse immédiate ? Échangez directement avec notre responsable B2B sur WhatsApp :",
+    "chatWhatsApp": "Discuter sur WhatsApp (+86 159 3393 0830)",
+    "sendAnother": "Envoyer une autre demande"
+  },
+  "footer": {
+    "about": "Baoding Junyang Hat Manufacturing Co., Ltd. est une manufacture industrielle spécialisée dans la broderie OEM/ODM de casquettes de baseball, bonnets et casquettes trucker depuis 2014.",
+    "navigation": "Navigation",
+    "products": "Produits",
+    "aboutLink": "À Propos",
+    "guideLink": "Guide d'Achat B2B",
+    "materialsLink": "Matières & Tissus",
+    "pricingLink": "Prix & Expédition",
+    "requestQuote": "Demander un Devis",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp : +86 15933930830",
+    "email": "Email : admin@bdjunyang.com",
+    "office": "Ateliers : Baoding, Hebei, Chine",
+    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Tous droits réservés."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "about": "Notre Usine",
+    "guide": "Guide d'Achat B2B",
+    "materials": "Matières & Tissus",
+    "pricing": "Prix & Expédition",
+    "products": "Produits"
+  },
+  "meta": {
+    "homeTitle": "BD Hats | Fabricant de Casquettes Haut de Gamme & Vente en Gros Direct Usine",
+    "homeDesc": "Casquettes personnalisées de qualité supérieure direct usine. OEM/ODM depuis 2014. Broderie sur-mesure, MOQ 200 pcs, échantillons en 7 jours. Usine auditée SGS à Baoding, Chine.",
+    "aboutTitle": "À Propos de BD Hats | 12 Ans de Fabrication de Casquettes à Baoding, Chine",
+    "aboutDesc": "D'un atelier de 15 artisans à un complexe de 50 000 m² servant plus de 300 marques mondiales. Découvrez l'histoire et les capacités industrielles de Baoding Junyang depuis 2014.",
+    "guideTitle": "Guide de Fabrication de Casquettes B2B | Sourcing Grossiste en Chine",
+    "guideDesc": "Guide complet pour acheteurs B2B : comment choisir son usine de casquettes, comparatif des techniques de broderie, négociation des MOQ, contrôle qualité et logistique internationale.",
+    "materialsTitle": "Guide des Matières de Casquettes | Coton, Laine, Polyester & Plus | BD Hats",
+    "materialsDesc": "Panorama complet des tissus pour casquettes : sergé de coton, coton brossé, laine, nylon, toile canvas. Types de fermetures et découpe des panneaux expliqués.",
+    "pricingTitle": "Prix, MOQ & Expédition de Casquettes | Détail des Coûts Grossiste | BD Hats",
+    "pricingDesc": "Structure tarifaire transparente pour casquettes : FOB vs CIF, MOQ 200 pcs, coûts de fret aérien et maritime, frais d'échantillonnage et remises par paliers."
+  },
+  "popup": {
+    "badge": "Direct Usine · Fondé en 2014",
+    "heading": "Des Casquettes Sur-Mesure pour Votre Marque ?",
+    "sub": "Recevez votre chiffrage usine sous 12 heures — sans engagement, prototypes physiques en 7 jours.",
+    "whatsappBtn": "Discuter sur WhatsApp",
+    "formBtn": "Envoyer une Demande",
+    "note": "100 % direct usine · Audit SGS validé · 300+ marques clientes"
+  },
+  "chat": {
+    "cta": "Discuter avec Nous",
+    "tip": "Bonjour ! Obtenez votre devis sous 12h."
+  },
+  "language": {
+    "switchTo": "Français",
+    "label": "FR"
+  }
+}

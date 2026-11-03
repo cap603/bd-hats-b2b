@@ -1,0 +1,305 @@
+{
+  "nav": {
+    "advantages": "Vorteile",
+    "factory": "Unsere Fabrik",
+    "qualityControl": "Qualitätskontrolle",
+    "products": "Baseballkappen",
+    "inquiry": "Anfrage",
+    "about": "Über uns",
+    "guide": "B2B-Einkaufsführer",
+    "materials": "Materialien & Stoffe",
+    "pricing": "Preise & Versand",
+    "getQuote": "Angebot einholen",
+    "categories": "Kappen-Kategorien",
+    "viewAllProducts": "Alle Produkte anzeigen →",
+    "viewAllCount": "Alle {count} anzeigen →",
+    "stylesCount": "{count} Modelle",
+    "whatsappQuote": "WhatsApp-Angebot",
+    "home": "Startseite"
+  },
+  "home": {
+    "topBar": "Chinas führender Hersteller von Premium-Kappen • Gegründet 2014",
+    "subtitle": "Supply Chain & Manufacturing Partner",
+    "banners": {
+      "0": {
+        "label": "Direkte B2B-Fabriklösungen",
+        "title": "Kappenherstellung auf Weltklasseniveau",
+        "sub": "Über 100 japanische Stickmaschinen. 200+ erfahrene Fachkräfte. B2B-Großhandel direkt ab Werk in China.",
+        "cta": "Fabrikpreise anfordern"
+      },
+      "1": {
+        "label": "Direkte B2B-Fabriklösungen",
+        "title": "Individuelle Maßanfertigung aus einer Hand",
+        "sub": "Grenzenlose Optionen: Hochwertige Stoffe, Wunschfarben, 3D-Puff-Stickerei und maßgeschneiderte Kappenprofile.",
+        "cta": "Konfiguration starten"
+      },
+      "2": {
+        "label": "Direkte B2B-Fabriklösungen",
+        "title": "Ihre Vision, jeder Stil",
+        "sub": "Von 5-Panel- und 6-Panel-Kappen bis zu Truckern, Dad Hats, Beanies und Bucket Hats. Alles individuell gefertigt.",
+        "cta": "Muster anfordern"
+      }
+    },
+    "pills": {
+      "moq": "MOQ 200 Stück",
+      "samples": "Muster in 7 Tagen",
+      "market": "70 % Nordamerika, 25 % Westeuropa"
+    },
+    "stats": {
+      "years": "20+ Jahre",
+      "yearsLabel": "Produktionserfahrung",
+      "moq": "200 Stück",
+      "moqLabel": "MOQ ab 200 Stück",
+      "sgs": "SGS-geprüfte Fabrik"
+    },
+    "compliance": {
+      "title": "Konformitätsstandards",
+      "certified": "Zertifiziertes Produkt",
+      "markets": "Hauptmärkte",
+      "na": "NORDAMERIKA (70 %)",
+      "eu": "WESTEUROPA (25 %)"
+    },
+    "factory": {
+      "label": "Werkseigene Qualitätskontrolle",
+      "heading": "Erleben Sie die Fertigung Ihrer Kappen — live.",
+      "p1": "Im Gegensatz zu reinen Handelsagenturen betreibt Baoding Junyang eigene spezialisierte Produktionslinien. Wir beschäftigen über 200 qualifizierte Schneider und betreiben mehr als 100 hochmoderne japanische Barudan-Stickmaschinen.",
+      "p2Pre": "Unser Transparenzversprechen:",
+      "p2": "Wir senden Ihnen während der gesamten Produktion direkte Foto- und Video-Updates (Zuschnitt, Stickpräzision, Nahtstruktur, Dämpfen). Sie sind virtuell direkt in der Produktionshalle dabei.",
+      "qcStandard": "Werkseigene QS",
+      "qcStandardDesc": "Prüfung auf jeder Produktionsstufe.",
+      "samples": "Muster in 7 Tagen",
+      "samplesDesc": "Schnelle Lieferung physischer Prototypen.",
+      "videoCta": "Fabrik-Videotour anfordern",
+      "videoTitle": "Produktionsvideo ansehen (2026)",
+      "videoSub": "Japanische Stickmaschinen & professionelle Handarbeit."
+    },
+    "trust": {
+      "label": "Weltweit von Marken geschätzt",
+      "heading": "Warum Marken auf BD Hats vertrauen",
+      "sub": "Wir sind der Hersteller hinter Hunderten von Streetwear-, Corporate- und Lifestyle-Marken weltweit.",
+      "brands": "300+",
+      "brandsLabel": "Betreute Marken weltweit",
+      "brandsDesc": "Von US-amerikanischen Streetwear-Startups bis zu europäischen Firmenkappen-Programmen.",
+      "caps": "5 Mio.+",
+      "capsLabel": "Jährlich produzierte Kappen",
+      "capsDesc": "Industrielle Großserienkapazität bei gleichbleibender Premium-Qualität.",
+      "retention": "98 %",
+      "retentionLabel": "Kundenbindungsrate",
+      "retentionDesc": "Unsere Qualität und Verlässlichkeit bringen Marken Saison für Saison zurück.",
+      "sgsSupplier": "SGS-geprüfter Lieferant",
+      "goldSupplier": "ISO 9001:2015 zertifizierte Betriebsstätte",
+      "certifications": "CE · REACH · RoHS zertifiziert",
+      "qcStandard": "Werkseigene Qualitätskontrolle"
+    },
+    "catalog": {
+      "label": "Premium Kappen-Kategorien",
+      "heading": "Unsere Kappen-Serien",
+      "sub": "Wählen Sie aus unseren bewährten B2B-Basiskappen oder senden Sie Ihr eigenes Tech Pack für eine vollständige Sonderanfertigung."
+    },
+    "process": {
+      "label": "Schritt-für-Schritt-Auftragsabwicklung",
+      "heading": "So arbeiten wir mit B2B-Marken zusammen",
+      "step1Title": "Modell & Stoff wählen",
+      "step1Desc": "Wählen Sie strukturierte oder unstrukturierte Profile und bestimmen Sie Stoffe von schwerer Baumwolle über Canvas bis Cord.",
+      "step2Title": "Detailliertes Angebot erhalten",
+      "step2Desc": "Übermitteln Sie Spezifikationen und Artwork. Unser Vertriebsteam liefert innerhalb von 12 Stunden ein vollständiges Angebot mit Preis und Lieferzeit.",
+      "step3Title": "Musterfreigabe",
+      "step3Desc": "Wir fertigen ein physisches Muster und senden detaillierte Videos/Fotos zur finalen Freigabe vor der Serienproduktion.",
+      "step4Title": "Serienfertigung & Qualitätsupdates",
+      "step4Desc": "Wir produzieren Ihren Großauftrag und halten Sie mit regelmäßigen Medien-Updates auf dem Laufenden. Gründliche Endkontrolle vor Versand."
+    },
+    "qc": {
+      "label": "Qualitätssicherung",
+      "heading": "Unser 5-stufiger Qualitätskontrollprozess",
+      "step1Title": "Rohmaterialprüfung",
+      "step1Desc": "Ballen aus schwerem Baumwolltwill, Bio-Canvas und Stickgarn werden vor dem Zuschnitt auf Farbgleichheit und Reißfestigkeit geprüft.",
+      "step2Title": "Präzisionsprüfung der Stickerei",
+      "step2Desc": "Echtzeit-Überwachung von Höhe und Stichdichte bei 3D-Puff-Stickereien. Unsaubere Kanten oder Fehlstellungen werden sofort aussortiert.",
+      "step3Title": "Prüfung der Nahtintegrität",
+      "step3Desc": "Fokus auf Kronenstruktur und Nahtbänder. Interne Schweißbänder werden auf 1 mm Genauigkeit ausgerichtet.",
+      "step4Title": "Endkontrolle vor dem Verpacken",
+      "step4Desc": "Alle Kappen werden geprüft, Fäden getrimmt und vor dem Verpacken professionell dampfgebügelt.",
+      "step5Title": "Exportverpackung & Etikettenprüfung",
+      "step5Desc": "Finaler Stückzahlabgleich mit der Packliste und Prüfung der Versandetiketten für reibungslose internationale Zollabfertigung.",
+      "liveStatus": "Live-Status",
+      "qcPassed": "QS bestanden"
+    },
+    "faq": {
+      "heading": "Häufig gestellte Fragen",
+      "sub": "Alles Wichtige über unsere B2B-Sonderanfertigung ab Fabrik.",
+      "q0": "Wie hoch ist die Mindestbestellmenge (MOQ) für individuelle Kappen?",
+      "a0": "Unsere Standard-MOQ beträgt 200 Stück pro Modell/Farbe. Für Markeneinführungen und Design-Tests bieten wir flexible Einstiegsoptionen.",
+      "q1": "Kann ich vor der Serienproduktion ein physisches Muster erhalten?",
+      "a1": "Ja, absolut! Wir fertigen physische Vorproduktionsmuster, damit Sie Material, Passform und Stickqualität vor dem Serienstart prüfen können.",
+      "q2": "Fertigen Sie Kappen nach unseren individuellen Designs (OEM/ODM)?",
+      "a2": "Ja. Baoding Junyang ist ein vollwertiger OEM/ODM-Hersteller. Wir produzieren nach Skizzen, Tech Packs oder physischen Originalmustern.",
+      "q3": "Wie lang sind die Standard-Produktions- und Lieferzeiten?",
+      "a3": "Muster benötigen ca. 7 Tage. Die Serienproduktion dauert je nach Menge und Ausführung 15–20 Tage. Der weltweite Express-Luftversand benötigt 5–8 Tage."
+    },
+    "inquiry": {
+      "heading": "Fabrikangebot anfordern",
+      "sub": "Senden Sie uns Ihre Kappen-Anforderungen (Modelle, Logos, Stückzahlen). Unsere B2B-Spezialisten antworten innerhalb von 12 Stunden.",
+      "trustLabel": "100 % Direkt ab Werk · SGS-geprüft · 12 Jahre OEM/ODM",
+      "testimonialTitle": "Was unsere Markenpartner sagen",
+      "testimonials": [
+        {
+          "quote": "Unsere 3D-Puff-Stickerei saß bereits beim ersten Muster perfekt. Die Fabrik sendet Fotos bei jedem Arbeitsschritt — man fühlt sich wie direkt vor Ort.",
+          "name": "Marcus T.",
+          "role": "Streetwear-Markeninhaber, USA"
+        },
+        {
+          "quote": "Eine MOQ von 200 Stück bei dieser Verarbeitungsqualität ist selten. Unsere Erstbestellung von 2.000 Kappen war in 18 Tagen fertig und bestand jede Prüfung.",
+          "name": "Sophie L.",
+          "role": "Textilimporteurin, Deutschland"
+        },
+        {
+          "quote": "Schnelle, direkte Kommunikation über WhatsApp. Die physischen Muster trafen nach exakt 7 Tagen bei uns ein.",
+          "name": "Daniel R.",
+          "role": "Einkäufer Filialkette, Australien"
+        }
+      ]
+    }
+  },
+  "catalog": {
+    "filterAll": "Alle",
+    "filterBaseballCaps": "Baseballkappen",
+    "filterVintage": "Vintage-Serie",
+    "filterSports": "Sport & Funktionskappen",
+    "filterTruckerHats": "Trucker-Kappen",
+    "filterSnapbacks": "Snapback-Kappen",
+    "filterBucketHats": "Bucket Hats",
+    "filterBeanies": "Beanies & Strickmützen",
+    "panelLabel": "Panels:",
+    "panelAll": "Alle",
+    "sortDefault": "Standard",
+    "sortPriceAsc": "Preis: Aufsteigend",
+    "sortPriceDesc": "Preis: Absteigend",
+    "moq": "MOQ: {count} Stück",
+    "factoryDirect": "Direkt ab Werk",
+    "viewDetails": "Details ansehen",
+    "quote": "Angebot",
+    "details": "Details",
+    "showing": "{shown} von {total} Modellen angezeigt",
+    "noResults": "Keine Modelle entsprechen den aktuellen Filtern.",
+    "resetFilters": "Filter zurücksetzen",
+    "badgeBestSeller": "Bestseller",
+    "badgeTrending": "Angesagt",
+    "badgeNew": "Neu"
+  },
+  "product": {
+    "backToCatalog": "Zurück zum Katalog",
+    "whatsappQuote": "WhatsApp-Angebot",
+    "topSeller": "Top-Seller",
+    "qc": "Werkseigen",
+    "qcSub": "QS-Team",
+    "production": "15 Tage",
+    "productionSub": "Serienfertigung",
+    "moq": "200 Stück",
+    "moqSub": "Mindestmenge",
+    "shipping": "Weltweit",
+    "shippingSub": "Express-Luftfracht",
+    "unit": "/ Stück (FOB)",
+    "tabs": {
+      "specs": "Spezifikationen",
+      "custom": "Individualisierung",
+      "faq": "Produkt-FAQ"
+    },
+    "getQuote": "Fabrikangebot anfordern",
+    "orderSample": "Muster bestellen",
+    "urgencyStrip": "Produktionskapazitäten für diese Saison sind stark nachgefragt — sichern Sie sich Ihre Fertigungslinie noch heute",
+    "related": "Weitere Modelle entdecken",
+    "relatedTitle": "Verwandte Produkte",
+    "faqHeading": "Häufige Fragen",
+    "moreInfo": "Weiter informieren",
+    "moreInfoTitle": "Verwandte Leitfäden und Vergleiche",
+    "moreInfoCategory": "Diese Kategorie",
+    "moreInfoCompare": "Materialien vergleichen",
+    "moreInfoGuides": "Einkaufsratgeber",
+    "trustBar": "Geprüfte globale Fertigungsstandards",
+    "notFound": "Produkt nicht gefunden",
+    "backLink": "Zurück zum Katalog",
+    "devToolsBadge": "B2B-Markenentwickler-Tools",
+    "devToolsTitle": "Produktionsreife Design-Vorlagen & Machbarkeitsprüfung",
+    "devToolsSub": "Beschleunigen Sie Ihren Kollektionsstart mit Vektor-Tech-Packs direkt aus der Fabrik und 3D-Stickbarkeitsprüfung.",
+    "techpackTitle": "Tech Pack Maßblatt herunterladen (AI / PDF)",
+    "techpackDesc": "2D-Vektorvorlagen mit präzisen Maßen für Kronenhöhe, gebogene/flache Schirme und Nahtvorgaben.",
+    "techpackBtn": "Vektor-Vorlagen anfordern",
+    "mockupTitle": "Kostenloses 3D-Mockup & Prüfung in 2 Std.",
+    "mockupDesc": "Logo hochladen — unser Technikteam prüft Stichdichte, Tatami-Unterleger und liefert in 2 Std. eine 3D-Vorschau.",
+    "mockupBtn": "Kostenloses 3D-Mockup anfordern"
+  },
+  "form": {
+    "name": "Ihr Name",
+    "namePlaceholder": "Max Mustermann",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "name@unternehmen.de",
+    "phone": "Telefon / WhatsApp (Optional)",
+    "phonePlaceholder": "+49 170 0000000",
+    "message": "Nachricht / Spezifikationen",
+    "messagePlaceholder": "Beschreiben Sie Modelle, Stückzahlen oder gewünschte Veredelungen (z. B. 3D-Puff-Stickerei, Webetiketten)...",
+    "privacyNote": "Ihre Anfrage wird direkt an unser Vertriebsteam (admin@bdjunyang.com) gesendet. Schnelle Antwort in 2–4 Stunden.",
+    "intentSample": "Hallo Baoding Junyang! Ich möchte vor der Serienproduktion ein physisches Muster bestellen. Können Sie Details senden?",
+    "intentBulk": "Hallo Baoding Junyang! Ich interessiere mich für eine Serienproduktion. Können Sie mir ein Angebot erstellen?",
+    "intentTest": "Hallo Baoding Junyang! Ich möchte eine kleine Testbestellung aufgeben. Bitte senden Sie mir die Konditionen.",
+    "intentTechpack": "Hallo Baoding Junyang! Bitte senden Sie mir die Blanko-Vektor-Tech-Packs (AI/PDF) und Nähmaßblätter für unser Designteam. Meine Marke/Firma ist: ",
+    "intentMockup": "Hallo Baoding Junyang! Ich möchte eine kostenlose 3D-Vorschau und Stickbarkeitsprüfung für unser Logo anfordern. Gewünschtes Modell: ",
+    "submit": "Anfrage an Fabrik senden",
+    "submitting": "Wird an Vertriebsteam übertragen...",
+    "thanks": "Anfrage erfolgreich erhalten!",
+    "thanksMsg": "Ihre Spezifikationen wurden sicher an unser Vertriebs- und Technikteam (admin@bdjunyang.com) übermittelt. Wir prüfen die Angaben und melden uns in Kürze per E-Mail.",
+    "whatsappFallback": "Dringende Frage? Sie erreichen unsere B2B-Berater auch direkt per WhatsApp:",
+    "chatWhatsApp": "Auf WhatsApp chatten (+86 159 3393 0830)",
+    "sendAnother": "Weitere Anfrage senden"
+  },
+  "footer": {
+    "about": "Baoding Junyang Hat Manufacturing Co., Ltd. ist eine führende Kappenfabrik, spezialisiert auf OEM/ODM-Stickerei von Baseballkappen, Beanies und Trucker-Hüten seit 2014.",
+    "navigation": "Navigation",
+    "products": "Produkte",
+    "aboutLink": "Über uns",
+    "guideLink": "B2B-Einkaufsführer",
+    "materialsLink": "Materialien & Stoffe",
+    "pricingLink": "Preise & Versand",
+    "requestQuote": "Angebot anfordern",
+    "contact": "Kontakt",
+    "whatsapp": "WhatsApp: +86 15933930830",
+    "email": "E-Mail: admin@bdjunyang.com",
+    "office": "Standort: Baoding, Hebei, China",
+    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Alle Rechte vorbehalten."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "about": "Über unsere Fabrik",
+    "guide": "B2B-Einkaufsführer",
+    "materials": "Materialien & Stoffe",
+    "pricing": "Preise & Versand",
+    "products": "Produkte"
+  },
+  "meta": {
+    "homeTitle": "BD Hats | Premium Kappenhersteller & B2B-Großhandel Direkt ab Werk",
+    "homeDesc": "Hochwertige individuelle Kappen direkt ab Fabrik. OEM/ODM seit 2014. Individuelle Stickerei, MOQ 200 Stk., 7-Tage-Muster. SGS-geprüfte Fabrik in Baoding, China.",
+    "aboutTitle": "Über BD Hats | 12 Jahre Kappenfabrik in Baoding, China",
+    "aboutDesc": "Von der 15-Personen-Werkstatt zur 50.000 m² Anlage für über 300 Marken weltweit. Erfahren Sie mehr über Baoding Junyangs Kapazitäten seit 2014.",
+    "guideTitle": "B2B-Leitfaden Kappenherstellung | Großhandel Kappen aus China beschaffen",
+    "guideDesc": "Kompletter B2B-Ratgeber: Auswahl der richtigen Kappenfabrik, Stickereiverfahren im Vergleich, MOQ-Verhandlungen, Qualitätskontrolle und Logistik.",
+    "materialsTitle": "Ratgeber Kappenmaterialien | Baumwolle, Wolle, Polyester & mehr | BD Hats",
+    "materialsDesc": "Vollständiger Materialratgeber für Caps: Baumwolltwill, gebürstete Baumwolle, Wolle, Nylon, Canvas. Verschlüsse und Panel-Konstruktionen im Detail.",
+    "pricingTitle": "Preise, MOQ & Versand für Kappen | B2B-Kostenübersicht | BD Hats",
+    "pricingDesc": "Transparente Kostenübersicht für Kappen: FOB vs. CIF, MOQ 200 Stk., Luft- und Seefrachtkosten, Mustergebühren und Staffelrabatte."
+  },
+  "popup": {
+    "badge": "Direkt ab Werk · Gegr. 2014",
+    "heading": "Individuelle Kappen für Ihre Marke gesucht?",
+    "sub": "Erhalten Sie innerhalb von 12 Stunden ein unverbindliches Fabrikangebot — physische Muster in 7 Tagen.",
+    "whatsappBtn": "Auf WhatsApp chatten",
+    "formBtn": "Anfrage senden",
+    "note": "100 % Direkt ab Werk · SGS-geprüft · 300+ betreute Marken"
+  },
+  "chat": {
+    "cta": "Mit uns chatten",
+    "tip": "Hallo! Erhalten Sie in 12 Std. Ihr Angebot."
+  },
+  "language": {
+    "switchTo": "Deutsch",
+    "label": "DE"
+  }
+}

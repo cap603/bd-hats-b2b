@@ -180,6 +180,18 @@ export async function POST(req: NextRequest) {
         countryCode.toUpperCase()
       );
 
+    const isGermanLead =
+      locale === "de" ||
+      url.includes("/de/") ||
+      url.endsWith("/de") ||
+      ["DE", "AT", "CH", "LI"].includes(countryCode.toUpperCase());
+
+    const isFrenchLead =
+      locale === "fr" ||
+      url.includes("/fr/") ||
+      url.endsWith("/fr") ||
+      ["FR", "BE", "LU", "MC"].includes(countryCode.toUpperCase());
+
     const dingMarkdown = `### 📩 【收到网站邮箱新询盘】
 > 客户已正式提交定制需求表单！
 
@@ -187,11 +199,11 @@ export async function POST(req: NextRequest) {
 - **客户邮箱**：[${email}](mailto:${email})
 - **电话/WhatsApp**：${phone || "未提供"}
 - **买手国家**：**${countryText}**
-${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}- **来源页面**：\`${url || "/"}\`
+${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}${isGermanLead ? `- **客群属性**：🇩🇪 **【德语区潜在买手 / Lead auf Deutsch】**\n` : ""}${isFrenchLead ? `- **客群属性**：🇫🇷 **【法语区潜在买手 / Lead en Français】**\n` : ""}- **来源页面**：\`${url || "/"}\`
 - **语言版本**：${locale.toUpperCase()}
 - **询盘编号**：\`${inquiryId}\`
 - **提交时间**：${timeStr}
-${isSpanishLead ? `- **跟进提示**：💡 客户来自西语市场，请业务员优先使用西班牙语（或借助翻译软件）跟进！\n` : ""}- **定制需求**：
+${isSpanishLead ? `- **跟进提示**：💡 客户来自西语市场，请业务员优先使用西班牙语（或借助翻译软件）跟进！\n` : ""}${isGermanLead ? `- **跟进提示**：💡 客户来自欧洲德语区，对品质与验厂认证敏感，建议附带德语/英语规格书！\n` : ""}${isFrenchLead ? `- **跟进提示**：💡 客户来自法语区市场，建议首轮以法语或礼貌英文跟进！\n` : ""}- **定制需求**：
 > ${message.replace(/\n/g, "\n> ")}
 ${attribution.length > 0 ? `\n- **引流渠道**：\n${attribution.map((a) => `  • ${a}`).join("\n")}` : ""}`;
 
