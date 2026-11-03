@@ -1,0 +1,305 @@
+{
+  "nav": {
+    "advantages": "Vantagens",
+    "factory": "Nossa Fábrica",
+    "qualityControl": "Controle de Qualidade",
+    "products": "Bonés de Beisebol",
+    "inquiry": "Solicitar Orçamento",
+    "about": "Sobre Nós",
+    "guide": "Guia de Compra B2B",
+    "materials": "Materiais e Tecidos",
+    "pricing": "Preços e Envio",
+    "getQuote": "Obter Orçamento",
+    "categories": "Categorias de Bonés",
+    "viewAllProducts": "Ver todos os modelos →",
+    "viewAllCount": "Ver todos os {count} modelos →",
+    "stylesCount": "{count} modelos",
+    "whatsappQuote": "Cotação no WhatsApp",
+    "home": "Início"
+  },
+  "home": {
+    "topBar": "Principal Fabricante de Bonés Premium da China • Fundada em 2014",
+    "subtitle": "Supply Chain & Manufacturing Partner",
+    "banners": {
+      "0": {
+        "label": "Soluções B2B Direto da Fábrica",
+        "title": "Fabricação de Bonés de Nível Internacional",
+        "sub": "Mais de 100 máquinas japonesas Barudan. 200+ artesãos qualificados. Atacado direto de fábrica na China.",
+        "cta": "Preços Direto da Fábrica"
+      },
+      "1": {
+        "label": "Soluções B2B Direto da Fábrica",
+        "title": "Personalização Premium Completa",
+        "sub": "Opções ilimitadas: Tecidos premium, cores sob medida, bordado 3D em alto relevo e formatos personalizados.",
+        "cta": "Iniciar Personalização"
+      },
+      "2": {
+        "label": "Soluções B2B Direto da Fábrica",
+        "title": "Sua Visão, Todos os Estilos",
+        "sub": "De bonés 5-Panel e 6-Panel a Truckers, Dad Hats, Gorros e Bucket Hats. Tudo sob medida.",
+        "cta": "Pedir Amostras"
+      }
+    },
+    "pills": {
+      "moq": "MOQ 200 Peças",
+      "samples": "Amostras em 7 Dias",
+      "market": "70% América do Norte, 25% Europa Ocidental"
+    },
+    "stats": {
+      "years": "20+ Anos",
+      "yearsLabel": "Experiência de Produção",
+      "moq": "200 Pcs",
+      "moqLabel": "MOQ a partir de 200 Peças",
+      "sgs": "Fábrica Auditada pela SGS"
+    },
+    "compliance": {
+      "title": "Normas de Conformidade",
+      "certified": "Produto Certificado",
+      "markets": "Mercados Principais",
+      "na": "AMÉRICA DO NORTE (70%)",
+      "eu": "EUROPA OCIDENTAL (25%)"
+    },
+    "factory": {
+      "label": "Controle de Qualidade Próprio",
+      "heading": "Acompanhe a Fabricação do Seu Boné — ao Vivo.",
+      "p1": "Diferente de intermediários, a Baoding Junyang opera linhas de produção especializadas próprias. Empregamos mais de 200 costureiros qualificados e operamos mais de 100 máquinas de bordar japonesas Barudan de última geração.",
+      "p2Pre": "Nossa Política de Transparência:",
+      "p2": "Enviamos fotos e atualizações em vídeo (corte de tecidos, precisão de bordado, costura de painéis, passadoria a vapor) durante toda a produção. Você acompanha como se estivesse dentro da fábrica.",
+      "qcStandard": "Controle de Qualidade Interno",
+      "qcStandardDesc": "Inspecionado em cada etapa produtiva.",
+      "samples": "Amostras em 7 Dias",
+      "samplesDesc": "Envio rápido de protótipos físicos.",
+      "videoCta": "Solicitar Tour em Vídeo da Fábrica",
+      "videoTitle": "Assistir Vídeo de Produção (2026)",
+      "videoSub": "Máquinas de bordado japonesas e costura artesanal profissional."
+    },
+    "trust": {
+      "label": "Confiada por Marcas Globais",
+      "heading": "Por Que Grandes Marcas Escolhem a BD Hats",
+      "sub": "Somos a fábrica parceira de centenas de marcas de streetwear, corporativas e lifestyle no mundo inteiro.",
+      "brands": "300+",
+      "brandsLabel": "Marcas Atendidas no Mundo",
+      "brandsDesc": "De marcas streetwear americanas a programas corporativos de uniformes europeus.",
+      "caps": "5M+",
+      "capsLabel": "Bonés Produzidos por Ano",
+      "capsDesc": "Capacidade industrial em larga escala com qualidade premium constante.",
+      "retention": "98%",
+      "retentionLabel": "Taxa de Retenção de Clientes",
+      "retentionDesc": "Nossa pontualidade e rigor técnico trazem as marcas de volta a cada coleção.",
+      "sgsSupplier": "Fornecedor Auditado pela SGS",
+      "goldSupplier": "Instalação Certificada ISO 9001:2015",
+      "certifications": "Certificados CE · REACH · RoHS",
+      "qcStandard": "Controle de Qualidade em Linha"
+    },
+    "catalog": {
+      "label": "Categorias de Bonés Premium",
+      "heading": "Nossas Coleções de Bonés",
+      "sub": "Escolha entre nossos modelos de alta conversão comprovados ou envie seu dossier técnico para personalização total."
+    },
+    "process": {
+      "label": "Processo de fabricação sob medida",
+      "heading": "Como Trabalhamos com as Marcas",
+      "step1Title": "Selecione o Modelo e Tecido",
+      "step1Desc": "Escolha estruturas com reforço ou desestruturadas, e selecione tecidos como sarja pesada de algodão, lona ou veludo cotelê.",
+      "step2Title": "Receba Orçamento Detalhado",
+      "step2Desc": "Envie suas especificações e artes. Nossa equipe comercial entrega um orçamento completo com preços e prazos em 12 horas.",
+      "step3Title": "Aprovação de Amostra",
+      "step3Desc": "Produzimos uma amostra física e enviamos fotos e vídeos detalhados para sua aprovação final antes da produção em massa.",
+      "step4Title": "Produção em Massa e Atualizações",
+      "step4Desc": "Iniciamos a fabricação em escala com atualizações regulares. Inspeção final rigorosa antes do despacho internacional."
+    },
+    "qc": {
+      "label": "Garantia de Qualidade",
+      "heading": "Nosso Processo de Controle de Qualidade em 5 Etapas",
+      "step1Title": "Verificação de Matérias-Primas",
+      "step1Desc": "Rolos de sarja pesada, lona orgânica e fios de bordado são inspecionados quanto à cor e resistência antes do corte.",
+      "step2Title": "Precisão do Bordado",
+      "step2Desc": "Monitoramento em tempo real do relevo 3D e densidade de pontos. Qualquer defeito de contorno é imediatamente descartado.",
+      "step3Title": "Auditoria de Estrutura e Costura",
+      "step3Desc": "Foco na estrutura da copa e fitas de costura. Faixas internas antitranspiração são alinhadas com tolerância de até 1mm.",
+      "step4Title": "Inspeção Final Pré-Embalagem",
+      "step4Desc": "Todos os bonés são limpos (fios aparados), revisados e passados a vapor antes da embalagem individual.",
+      "step5Title": "Embalagem de Exportação e Auditoria de Etiquetas",
+      "step5Desc": "Contagem exata com a lista de embarque e checagem de etiquetas para garantir desembaraço aduaneiro rápido.",
+      "liveStatus": "Status em Tempo Real",
+      "qcPassed": "QC Aprovado"
+    },
+    "faq": {
+      "heading": "Perguntas Frequentes",
+      "sub": "Tudo o que você precisa saber sobre nossa fabricação direta de fábrica.",
+      "q0": "Qual é a Quantidade Mínima de Pedido (MOQ) para bonés personalizados?",
+      "a0": "Nossa quantidade mínima padrão é de 200 peças por modelo/cor. Também aceitamos pedidos de teste para lançamentos de novas marcas.",
+      "q1": "Posso solicitar uma amostra antes da produção em massa?",
+      "a1": "Sim, com certeza! Produzimos amostras físicas completas de pré-produção para você validar material, caimento e bordado antes da produção em lote.",
+      "q2": "Vocês fabricam bonés com base em nossos designs exclusivos (OEM/ODM)?",
+      "a2": "Sim. A Baoding Junyang é uma fábrica completa de OEM/ODM. Desenvolvemos a partir de croquis, fichas técnicas ou amostras físicas de referência.",
+      "q3": "Quais são os prazos médios de produção e entrega?",
+      "a3": "A produção de amostras leva cerca de 7 dias. A produção em massa leva de 15 a 20 dias conforme o volume. O frete aéreo expresso mundial leva de 5 a 8 dias."
+    },
+    "inquiry": {
+      "heading": "Solicitar Orçamento de Fábrica",
+      "sub": "Envie suas especificações (modelos, artes, quantidades). Nossos especialistas em B2B respondem em até 12 horas.",
+      "trustLabel": "100% Direto de Fábrica · Auditado SGS · 12 Anos OEM/ODM",
+      "testimonialTitle": "O Que Nossos Parceiros Dizem",
+      "testimonials": [
+        {
+          "quote": "Eles acertaram nosso bordado 3D em relevo logo na primeira amostra. A fábrica manda atualizações em foto de cada etapa — é como estar na linha de produção.",
+          "name": "Marcus T.",
+          "role": "Fundador de Marca Streetwear, EUA"
+        },
+        {
+          "quote": "MOQ de 200 peças com essa qualidade é raro. Nosso primeiro pedido de 2.000 bonés foi enviado em 18 dias e passou em todas as inspeções.",
+          "name": "Sophie L.",
+          "role": "Importadora de Roupas, Alemanha"
+        },
+        {
+          "quote": "A comunicação é ágil via WhatsApp. As amostras físicas chegaram em exatamente 7 dias, conforme combinado.",
+          "name": "Daniel R.",
+          "role": "Comprador de Rede Varejista, Austrália"
+        }
+      ]
+    }
+  },
+  "catalog": {
+    "filterAll": "Todos",
+    "filterBaseballCaps": "Bonés de Beisebol",
+    "filterVintage": "Série Vintage",
+    "filterSports": "Esporte e Performance",
+    "filterTruckerHats": "Bonés Trucker",
+    "filterSnapbacks": "Bonés Snapback",
+    "filterBucketHats": "Chapéus Bucket",
+    "filterBeanies": "Gorros de Lã",
+    "panelLabel": "Painéis:",
+    "panelAll": "Todos",
+    "sortDefault": "Padrão",
+    "sortPriceAsc": "Preço: Menor → Maior",
+    "sortPriceDesc": "Preço: Maior → Menor",
+    "moq": "MOQ: {count} Pcs",
+    "factoryDirect": "Direto da Fábrica",
+    "viewDetails": "Ver Detalhes",
+    "quote": "Cotação",
+    "details": "Detalhes",
+    "showing": "Exibindo {shown} de {total} produtos",
+    "noResults": "Nenhum produto corresponde aos filtros selecionados.",
+    "resetFilters": "Redefinir filtros",
+    "badgeBestSeller": "Mais Vendido",
+    "badgeTrending": "Em Alta",
+    "badgeNew": "Novo"
+  },
+  "product": {
+    "backToCatalog": "Voltar ao Catálogo",
+    "whatsappQuote": "Orçamento no WhatsApp",
+    "topSeller": "Destaque",
+    "qc": "Interno",
+    "qcSub": "Equipe QC",
+    "production": "15 Dias",
+    "productionSub": "Produção",
+    "moq": "200 Pcs",
+    "moqSub": "MOQ",
+    "shipping": "Global",
+    "shippingSub": "Aéreo Expresso",
+    "unit": "/ Unidade (FOB)",
+    "tabs": {
+      "specs": "Especificações",
+      "custom": "Personalização",
+      "faq": "Dúvidas Frequentes"
+    },
+    "getQuote": "Obter Orçamento de Fábrica",
+    "orderSample": "Pedir Amostra",
+    "urgencyStrip": "A capacidade produtiva para esta temporada está preenchendo rápido — garanta sua linha de produção hoje",
+    "related": "Continuar Explorando",
+    "relatedTitle": "Produtos Relacionados",
+    "faqHeading": "FAQ",
+    "moreInfo": "Mais informações",
+    "moreInfoTitle": "Guias e comparativos relacionados",
+    "moreInfoCategory": "Esta categoria",
+    "moreInfoCompare": "Comparar opções",
+    "moreInfoGuides": "Guias de compra",
+    "trustBar": "Padrões Internacionais de Fabricação Certificados",
+    "notFound": "Produto Não Encontrado",
+    "backLink": "Voltar ao Catálogo",
+    "devToolsBadge": "Ferramentas para Criadores de Marcas B2B",
+    "devToolsTitle": "Molde Vetorial Pronto para Produção e Análise Técnica",
+    "devToolsSub": "Acelere o lançamento da sua coleção com moldes vetoriais direto da fábrica e avaliação 3D de bordado.",
+    "techpackTitle": "Baixar Ficha Técnica em Branco (AI / PDF)",
+    "techpackDesc": "Moldes vetoriais 2D com medidas exatas de altura de copa, curvatura de aba e costura 5/6 gomos.",
+    "techpackBtn": "Obter Moldes Vetoriais",
+    "mockupTitle": "Simulação 3D Gratuita e Avaliação em 2 Horas",
+    "mockupDesc": "Envie seu logo — nossa engenharia avalia densidade de pontos, base Tatami e entrega simulação 3D em 2 horas.",
+    "mockupBtn": "Solicitar Simulação 3D Grátis"
+  },
+  "form": {
+    "name": "Seu Nome",
+    "namePlaceholder": "João Silva",
+    "email": "E-mail de Contato",
+    "emailPlaceholder": "seu@empresa.com",
+    "phone": "Telefone / WhatsApp (Opcional)",
+    "phonePlaceholder": "+55 (11) 90000-0000",
+    "message": "Mensagem / Especificações",
+    "messagePlaceholder": "Informe modelos, quantidades ou personalizações desejadas (ex.: Bordado 3D em relevo, etiquetas tecidas)...",
+    "privacyNote": "Sua solicitação é enviada diretamente ao nosso departamento comercial (admin@bdjunyang.com). Retorno ágil em 2-4 horas.",
+    "intentSample": "Olá Baoding Junyang! Gostaria de pedir uma amostra física antes da produção em massa. Podem me passar os detalhes?",
+    "intentBulk": "Olá Baoding Junyang! Tenho interesse em produção em massa. Podem enviar um orçamento formal?",
+    "intentTest": "Olá Baoding Junyang! Gostaria de fazer um pedido de teste menor. Podem informar as condições?",
+    "intentTechpack": "Olá Baoding Junyang! Por favor, enviem os moldes vetoriais em branco (Tech Pack AI/PDF) e fichas de costura para nossa equipe de design. Minha marca é: ",
+    "intentMockup": "Olá Baoding Junyang! Gostaria de solicitar uma simulação digital 3D gratuita e análise de bordado para nosso logo. Modelo de interesse: ",
+    "submit": "Enviar Pedido para a Fábrica",
+    "submitting": "Transmitindo para a equipe comercial...",
+    "thanks": "Solicitação Recebida com Sucesso!",
+    "thanksMsg": "Suas especificações foram entregues à nossa equipe de vendas e engenharia (admin@bdjunyang.com). Analisaremos os dados e responderemos por e-mail em breve.",
+    "whatsappFallback": "Precisa de resposta imediata? Fale diretamente com nosso especialista no WhatsApp:",
+    "chatWhatsApp": "Conversar no WhatsApp (+86 159 3393 0830)",
+    "sendAnother": "Enviar outra solicitação"
+  },
+  "footer": {
+    "about": "A Baoding Junyang Hat Manufacturing Co., Ltd. é uma fábrica de bonés premium especializada em bordado OEM/ODM de bonés de beisebol, gorros e bonés trucker desde 2014.",
+    "navigation": "Navegação",
+    "products": "Produtos",
+    "aboutLink": "Sobre Nós",
+    "guideLink": "Guia de Compra B2B",
+    "materialsLink": "Materiais e Tecidos",
+    "pricingLink": "Preços e Envio",
+    "requestQuote": "Pedir Orçamento",
+    "contact": "Contato",
+    "whatsapp": "WhatsApp: +86 15933930830",
+    "email": "E-mail: admin@bdjunyang.com",
+    "office": "Fábrica: Baoding, Hebei, China",
+    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Todos os direitos reservados."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "about": "Sobre Nossa Fábrica",
+    "guide": "Guia de Compra B2B",
+    "materials": "Materiais e Tecidos",
+    "pricing": "Preços e Envio",
+    "products": "Produtos"
+  },
+  "meta": {
+    "homeTitle": "BD Hats | Fábrica de Bonés Premium e Atacado B2B Direto da Fábrica",
+    "homeDesc": "Bonés personalizados premium direto da fábrica. OEM/ODM desde 2014. Bordado personalizado, MOQ 200 pçs, amostras em 7 dias. Fábrica auditada pela SGS em Baoding, China.",
+    "aboutTitle": "Sobre a BD Hats | 12 Anos de Fabricação de Bonés em Baoding, China",
+    "aboutDesc": "De uma oficina de 15 pessoas a um parque fabril de 50.000m² atendendo mais de 300 marcas mundiais. Conheça a infraestrutura da Baoding Junyang desde 2014.",
+    "guideTitle": "Guia B2B de Fabricação de Bonés | Como Importar Bonés no Atacado da China",
+    "guideDesc": "Guia completo para compradores B2B: como selecionar a fábrica certa, tipos de bordado explicados, negociação de MOQ, controle de qualidade e logística.",
+    "materialsTitle": "Guia de Tecidos para Bonés | Algodão, Lã, Poliéster e Mais | BD Hats",
+    "materialsDesc": "Panorama completo de tecidos para bonés: sarja de algodão, algodão peletizado, lã, nylon e lona. Tipos de fechos e construção de painéis detalhados.",
+    "pricingTitle": "Preços, MOQ e Envio de Bonés | Estrutura de Custos Atacado | BD Hats",
+    "pricingDesc": "Estrutura transparente de preços para bonés: FOB vs CIF, MOQ 200 pçs, custos de frete aéreo e marítimo, taxas de amostragem e descontos progressivos."
+  },
+  "popup": {
+    "badge": "Direto de Fábrica · Desde 2014",
+    "heading": "Precisa de Bonés Personalizados para Sua Marca?",
+    "sub": "Receba um orçamento de fábrica em até 12 horas — sem compromisso, amostras físicas em 7 dias.",
+    "whatsappBtn": "Falar no WhatsApp",
+    "formBtn": "Enviar Solicitação",
+    "note": "100% direto de fábrica · Auditado SGS · 300+ marcas atendidas"
+  },
+  "chat": {
+    "cta": "Fale Conosco",
+    "tip": "Olá! Receba um orçamento em 12 horas."
+  },
+  "language": {
+    "switchTo": "Português",
+    "label": "PT"
+  }
+}

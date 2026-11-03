@@ -192,6 +192,24 @@ export async function POST(req: NextRequest) {
       url.endsWith("/fr") ||
       ["FR", "BE", "LU", "MC"].includes(countryCode.toUpperCase());
 
+    const isPortugueseLead =
+      locale === "pt" ||
+      url.includes("/pt/") ||
+      url.endsWith("/pt") ||
+      ["BR", "PT", "AO", "MZ"].includes(countryCode.toUpperCase());
+
+    const isItalianLead =
+      locale === "it" ||
+      url.includes("/it/") ||
+      url.endsWith("/it") ||
+      ["IT", "SM", "VA"].includes(countryCode.toUpperCase());
+
+    const isJapaneseLead =
+      locale === "ja" ||
+      url.includes("/ja/") ||
+      url.endsWith("/ja") ||
+      ["JP"].includes(countryCode.toUpperCase());
+
     const dingMarkdown = `### 📩 【收到网站邮箱新询盘】
 > 客户已正式提交定制需求表单！
 
@@ -199,11 +217,11 @@ export async function POST(req: NextRequest) {
 - **客户邮箱**：[${email}](mailto:${email})
 - **电话/WhatsApp**：${phone || "未提供"}
 - **买手国家**：**${countryText}**
-${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}${isGermanLead ? `- **客群属性**：🇩🇪 **【德语区潜在买手 / Lead auf Deutsch】**\n` : ""}${isFrenchLead ? `- **客群属性**：🇫🇷 **【法语区潜在买手 / Lead en Français】**\n` : ""}- **来源页面**：\`${url || "/"}\`
+${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}${isGermanLead ? `- **客群属性**：🇩🇪 **【德语区潜在买手 / Lead auf Deutsch】**\n` : ""}${isFrenchLead ? `- **客群属性**：🇫🇷 **【法语区潜在买手 / Lead en Français】**\n` : ""}${isPortugueseLead ? `- **客群属性**：🇵🇹 **【葡语区潜在买手 / Lead em Português】**\n` : ""}${isItalianLead ? `- **客群属性**：🇮🇹 **【意大利语潜在买手 / Lead in Italiano】**\n` : ""}${isJapaneseLead ? `- **客群属性**：🇯🇵 **【日本市场潜在买手 / 日本語リード】**\n` : ""}- **来源页面**：\`${url || "/"}\`
 - **语言版本**：${locale.toUpperCase()}
 - **询盘编号**：\`${inquiryId}\`
 - **提交时间**：${timeStr}
-${isSpanishLead ? `- **跟进提示**：💡 客户来自西语市场，请业务员优先使用西班牙语（或借助翻译软件）跟进！\n` : ""}${isGermanLead ? `- **跟进提示**：💡 客户来自欧洲德语区，对品质与验厂认证敏感，建议附带德语/英语规格书！\n` : ""}${isFrenchLead ? `- **跟进提示**：💡 客户来自法语区市场，建议首轮以法语或礼貌英文跟进！\n` : ""}- **定制需求**：
+${isSpanishLead ? `- **跟进提示**：💡 客户来自西语市场，请业务员优先使用西班牙语跟进！\n` : ""}${isGermanLead ? `- **跟进提示**：💡 客户来自欧洲德语区，对品质与验厂认证敏感，建议附带德语/英语规格书！\n` : ""}${isFrenchLead ? `- **跟进提示**：💡 客户来自法语区市场，建议首轮以法语或礼貌英文跟进！\n` : ""}${isPortugueseLead ? `- **跟进提示**：💡 客户来自葡语区（巴西/葡萄牙），建议使用葡萄牙语或英语跟进！\n` : ""}${isItalianLead ? `- **跟进提示**：💡 客户来自意大利时尚/运动市场，重视款式设计与做工细节！\n` : ""}${isJapaneseLead ? `- **跟进提示**：💡 日本买手极其注重做工精细度、针距与交期稳定，建议回复格外严谨礼貌！\n` : ""}- **定制需求**：
 > ${message.replace(/\n/g, "\n> ")}
 ${attribution.length > 0 ? `\n- **引流渠道**：\n${attribution.map((a) => `  • ${a}`).join("\n")}` : ""}`;
 

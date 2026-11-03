@@ -69,11 +69,23 @@ export async function POST(req: NextRequest) {
         page.startsWith("/fr") ||
         ["FR", "BE", "LU", "MC"].includes(countryCode.toUpperCase());
 
+      const isPortugueseLead =
+        page.startsWith("/pt") ||
+        ["BR", "PT", "AO", "MZ"].includes(countryCode.toUpperCase());
+
+      const isItalianLead =
+        page.startsWith("/it") ||
+        ["IT", "SM", "VA"].includes(countryCode.toUpperCase());
+
+      const isJapaneseLead =
+        page.startsWith("/ja") ||
+        ["JP"].includes(countryCode.toUpperCase());
+
       const markdown = `### 🟢 【独立站 WhatsApp 询盘意向】
 > 海外买手刚在网站点击了 WhatsApp 沟通按钮！
 
 - **买手国家**：**${countryText}**
-${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}${isGermanLead ? `- **客群属性**：🇩🇪 **【德语区潜在买手 / Lead auf Deutsch】**\n` : ""}${isFrenchLead ? `- **客群属性**：🇫🇷 **【法语区潜在买手 / Lead en Français】**\n` : ""}- **点击页面**：\`${page}\`
+${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 / Lead en Español】**\n` : ""}${isGermanLead ? `- **客群属性**：🇩🇪 **【德语区潜在买手 / Lead auf Deutsch】**\n` : ""}${isFrenchLead ? `- **客群属性**：🇫🇷 **【法语区潜在买手 / Lead en Français】**\n` : ""}${isPortugueseLead ? `- **客群属性**：🇵🇹 **【葡语区潜在买手 / Lead em Português】**\n` : ""}${isItalianLead ? `- **客群属性**：🇮🇹 **【意大利语潜在买手 / Lead in Italiano】**\n` : ""}${isJapaneseLead ? `- **客群属性**：🇯🇵 **【日本市场潜在买手 / 日本語リード】**\n` : ""}- **点击页面**：\`${page}\`
 - **触发模块**：${label ? `${label} (${button})` : button}
 - **引流渠道**：${channel}
 - **发生时间**：${timeStr}
@@ -84,6 +96,12 @@ ${isSpanishLead ? `- **客群属性**：🇪🇸 **【西语拉美潜在客户 /
           ? "💡 潜在德语区买手！请留意 WhatsApp (+86 159 3393 0830)，买手注重严谨品质，建议准备好德语/英语规格书！"
           : isFrenchLead
           ? "💡 潜在法语区买手！请留意 WhatsApp (+86 159 3393 0830)，建议首轮以礼貌法语或英语打招呼！"
+          : isPortugueseLead
+          ? "💡 潜在葡语买手（巴西/葡萄牙）！请留意 WhatsApp (+86 159 3393 0830)，建议使用葡萄牙语或英语跟进！"
+          : isItalianLead
+          ? "💡 潜在意大利买手！请留意 WhatsApp (+86 159 3393 0830)，客户重视设计与做工细节！"
+          : isJapaneseLead
+          ? "💡 潜在日本买手！请留意 WhatsApp (+86 159 3393 0830)，日本客户注重针距精度与严谨沟通，建议礼貌回复！"
           : "请销售员留意 WhatsApp (+86 159 3393 0830) 是否有来自该国家的新客户接入并打招呼！"
       }`;
 

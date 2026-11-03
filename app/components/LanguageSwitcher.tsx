@@ -17,6 +17,9 @@ const LANGUAGES: LanguageOption[] = [
   { code: "es", label: "ES", name: "Español", flag: "🇪🇸" },
   { code: "de", label: "DE", name: "Deutsch", flag: "🇩🇪" },
   { code: "fr", label: "FR", name: "Français", flag: "🇫🇷" },
+  { code: "pt", label: "PT", name: "Português", flag: "🇵🇹" },
+  { code: "it", label: "IT", name: "Italiano", flag: "🇮🇹" },
+  { code: "ja", label: "JA", name: "日本語", flag: "🇯🇵" },
 ];
 
 export function LanguageSwitcher() {

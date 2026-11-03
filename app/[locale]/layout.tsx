@@ -68,12 +68,28 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         es: "https://bdjunyang.com/es",
         de: "https://bdjunyang.com/de",
         fr: "https://bdjunyang.com/fr",
+        pt: "https://bdjunyang.com/pt",
+        it: "https://bdjunyang.com/it",
+        ja: "https://bdjunyang.com/ja",
         "x-default": "https://bdjunyang.com/en",
       },
     },
     openGraph: {
       type: "website",
-      locale: locale === "es" ? "es_ES" : (locale === "de" ? "de_DE" : (locale === "fr" ? "fr_FR" : "en_US")),
+      locale:
+        locale === "es"
+          ? "es_ES"
+          : locale === "de"
+          ? "de_DE"
+          : locale === "fr"
+          ? "fr_FR"
+          : locale === "pt"
+          ? "pt_PT"
+          : locale === "it"
+          ? "it_IT"
+          : locale === "ja"
+          ? "ja_JP"
+          : "en_US",
       url: `https://bdjunyang.com/${locale}`,
       siteName: "BD Hats Factory",
       title: messages.meta?.homeTitle || "BD Hats | Premium Custom Hat Factory",
@@ -136,7 +152,7 @@ export default async function LocaleLayout({
       contactType: "sales",
       email: "admin@bdjunyang.com",
       telephone: "+86-15933930830",
-      availableLanguage: ["en", "es", "zh"],
+      availableLanguage: ["en", "es", "de", "fr", "pt", "it", "ja", "zh"],
     },
     sameAs: [
       "https://www.facebook.com/p/Baoding-Junyang-Import-And-Export-Trade-Co-Ltd-100079978783412/",
