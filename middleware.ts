@@ -71,10 +71,10 @@ export function middleware(request: NextRequest) {
   }
 
   if (!hasLocale) {
-    // Redirect to default locale
+    // Redirect to default locale (301 Permanent Redirect for SEO equity)
     const url = request.nextUrl.clone();
     url.pathname = `/${defaultLocale}${pathname === "/" ? "" : pathname}`;
-    return NextResponse.redirect(url);
+    return NextResponse.redirect(url, 301);
   }
 
   return NextResponse.next();
