@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { HATS } from "../../../lib/products";
 import { priceLabel } from "../../../lib/price";
+import { getAlternateLanguages } from "../../../lib/seo";
 
 export async function generateMetadata({ params }: { params: { locale: string; id: string } }): Promise<Metadata> {
   const { locale, id } = await params;
@@ -9,15 +10,12 @@ export async function generateMetadata({ params }: { params: { locale: string; i
 
   const path = `/product/${hat.id}`;
   const canonical = `https://bdjunyang.com/${locale}${path}`;
-  const languages = {
-    en: `https://bdjunyang.com/en${path}`,
-    es: `https://bdjunyang.com/es${path}`,
-    "x-default": `https://bdjunyang.com/en${path}`,
-  };
+  const languages = getAlternateLanguages(path);
+  const description = `Custom wholesale ${hat.name}. High-density 3D embroidery, MOQ ${hat.moq}pcs, ${priceLabel(hat.price)}. 7-day samples & SGS verified. Get factory quote.`;
 
   return {
-    title: `${hat.name} | Custom Wholesale`,
-    description: `${hat.desc} Price: ${priceLabel(hat.price)}. MOQ ${hat.moq}pcs. Custom ${hat.specs.material} material with ${hat.specs.logo}. Factory direct from Baoding Junyang.`,
+    title: `${hat.name} | Custom Factory`,
+    description,
     alternates: { canonical, languages },
     openGraph: {
       title: `${hat.name} | BD Hats Factory`,
@@ -29,7 +27,7 @@ export async function generateMetadata({ params }: { params: { locale: string; i
     twitter: {
       card: "summary_large_image",
       title: `${hat.name} | BD Hats`,
-      description: `Factory direct ${hat.name}. ${priceLabel(hat.price)}.`,
+      description,
       images: [hat.img],
     },
   };

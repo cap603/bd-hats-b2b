@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getAlternateLanguages } from "../../lib/seo";
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = await params;
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title:
       locale === "es"
         ? "Fabricante OEM de Gorras en China | Fábrica de Gorras de Marca Propia"
-        : "OEM Hat Manufacturer China | Private Label Hat Factory",
+        : "OEM Hat Manufacturer China | Factory Direct",
     description:
       locale === "es"
         ? "Fabricante OEM/ODM de gorras en China. Más de 100 máquinas de bordado, fábrica de 50.000m², certificada SGS/CE/REACH. Gorras de béisbol, snapbacks y gorros de marca propia desde 2014."

@@ -308,17 +308,9 @@ export default function MerinoVsAcrylicPage() {
       subtitle={c.hero.subtitle}
       quickAnswerLabel={c.hero.quickAnswerLabel}
       quickAnswer={c.hero.quickAnswer}
-      category="Beanies"
-      faqSchema={{
-        mainEntity: c.faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: f.a,
-          },
-        })),
-      }}
+      ctaTitle={lang === "es" ? "¿Listo para Diseñar su Colección de Gorros?" : "Ready to Build Your Custom Beanie Collection?"}
+      ctaText={lang === "es" ? "Desde acrílico suave de gran volumen hasta lana merino extrafina de alta gama. Cotización de fábrica en 12 horas." : "From high-volume soft acrylics to premium extrafine Merino wool. Get your direct factory quote in 12 hours."}
+      ctaButton={lang === "es" ? "Solicitar Cotización de Fábrica" : "Get Factory Quote"}
     >
       <ComparisonTable
         caption={c.table.caption}
@@ -345,8 +337,8 @@ export default function MerinoVsAcrylicPage() {
       </section>
 
       <ComparisonFaq
-        title={lang === "es" ? "Preguntas Frecuentes sobre Hilos y Tejidos" : "Frequently Asked Questions"}
-        faqs={c.faqs}
+        heading={lang === "es" ? "Preguntas Frecuentes sobre Hilos y Tejidos" : "Frequently Asked Questions"}
+        items={c.faqs}
       />
 
       {/* Internal link bridge back to custom beanies landing page */}

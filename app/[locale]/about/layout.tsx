@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getAlternateLanguages } from "../../lib/seo";
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = await params;
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title:
       locale === "es"
         ? "Acerca de BD Hats | Fábrica de Gorras Personalizadas en Baoding, China"
-        : "About BD Hats | 12-Year Custom Hat Factory in Baoding, China",
+        : "About BD Hats | 12-Year Custom Hat Factory",
     description:
       locale === "es"
         ? "De un taller de 15 personas a una instalación de 50.000m² que sirve a más de 300 marcas globales. Conoce la trayectoria, misión, equipo y capacidades de Baoding Junyang desde 2014."

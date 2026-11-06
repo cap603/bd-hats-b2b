@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getAlternateLanguages } from "../../lib/seo";
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = await params;
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title:
       locale === "es"
         ? "Gorras Snapback al por Mayor | Fabricante de Snapbacks Personalizadas"
-        : "Wholesale Snapback Hats | Custom Snapback Manufacturer",
+        : "Wholesale Snapback Hats | Custom Manufacturer",
     description:
       locale === "es"
         ? "Gorras snapback al por mayor directo de fábrica desde China. Snapbacks personalizadas con bordado 3D puff, MOQ 200uds, $3.50-$7.00 FOB, verificadas SGS. Programa de muestras gratuitas: cotización en 12 horas."

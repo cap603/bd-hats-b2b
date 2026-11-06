@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getAlternateLanguages } from "../../lib/seo";
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = await params;
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title:
       locale === "es"
         ? "Gorras Trucker Personalizadas al por Mayor | Fábrica de Gorras de Malla"
-        : "Custom Trucker Hats Wholesale | Mesh Back Caps Factory",
+        : "Custom Trucker Hats Wholesale | Factory Direct",
     description:
       locale === "es"
         ? "Gorras trucker personalizadas al por mayor desde una fábrica china. Frente de espuma + espalda de malla, bordado e impresión personalizados, MOQ 200uds, precios directos de fábrica. Fabricante verificado SGS desde 2014."
