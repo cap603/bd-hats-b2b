@@ -251,7 +251,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section (Carousel — High Impact Poster Banners) */}
-      <section className="relative w-full aspect-[16/9] sm:aspect-auto sm:h-[480px] md:h-[580px] lg:h-[680px] bg-gray-950 text-white overflow-hidden flex items-center">
+      <section className="relative w-full aspect-[16/9] bg-gray-950 text-white overflow-hidden flex items-center">
         {BANNERS.map((banner, index) => (
           <div 
             key={index}
@@ -280,36 +280,29 @@ export default function Home() {
         {/* Carousel Controls */}
         <button 
           onClick={(e) => { e.stopPropagation(); prevBanner(); }}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/30 hover:bg-black/60 backdrop-blur-sm transition text-white"
+          className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-30 p-1.5 sm:p-2 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-sm transition text-white"
           aria-label="Previous slide"
         >
-          <ChevronLeft size={32} />
+          <ChevronLeft className="w-5 h-5 sm:w-8 sm:h-8" />
         </button>
         <button 
           onClick={(e) => { e.stopPropagation(); nextBanner(); }}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/30 hover:bg-black/60 backdrop-blur-sm transition text-white"
+          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-30 p-1.5 sm:p-2 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-sm transition text-white"
           aria-label="Next slide"
         >
-          <ChevronRight size={32} />
+          <ChevronRight className="w-5 h-5 sm:w-8 sm:h-8" />
         </button>
 
         {/* Carousel Indicators */}
-        <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3">
+        <div className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 z-30 flex gap-2 sm:gap-3">
           {BANNERS.map((_, index) => (
             <button
               key={index}
               onClick={(e) => { e.stopPropagation(); setCurrentBanner(index); }}
-              className={`h-2 transition-all duration-300 rounded-full ${index === currentBanner ? 'w-8 bg-yellow-400' : 'w-2 bg-white/50 hover:bg-white/80'}`}
+              className={`h-1.5 sm:h-2 transition-all duration-300 rounded-full ${index === currentBanner ? 'w-6 sm:w-8 bg-yellow-400' : 'w-1.5 sm:w-2 bg-white/50 hover:bg-white/80'}`}
               aria-label={`Go to slide ${index + 1}`}
             ></button>
           ))}
-        </div>
-
-        {/* Hero Data Pills */}
-        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30 flex gap-2 md:gap-3 flex-wrap justify-center px-4">
-           <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.moq")}</span>
-          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.samples")}</span>
-          <span className="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 rounded-full">{t("pills.market")}</span>
         </div>
       </section>
 
