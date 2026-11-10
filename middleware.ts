@@ -51,6 +51,13 @@ export function middleware(request: NextRequest) {
     ? pathname.replace(`/${effectiveLocale}`, "") || "/"
     : pathname;
 
+  // Shortcut alias /techpack → /custom-hat-tech-pack-template
+  if (pathWithoutLocale === "/techpack") {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${effectiveLocale}/custom-hat-tech-pack-template`;
+    return NextResponse.redirect(url, 301);
+  }
+
   // Legacy product URL redirect (301)
   const legacyMatch = pathWithoutLocale.match(/^\/product\/([^/]+)$/);
   if (legacyMatch) {

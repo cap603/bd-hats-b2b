@@ -323,7 +323,7 @@ export default function ProductDetail() {
                   </div>
                   <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
                     <Link
-                      href={`/${lang}/#inquiry?intent=techpack`}
+                      href={`/${lang}/custom-hat-tech-pack-template`}
                       className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm"
                     >
                       <FileDown size={14} />

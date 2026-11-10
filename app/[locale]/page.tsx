@@ -798,7 +798,9 @@ export default function Home() {
                 <li><a href="#advantages" className="hover:text-white">{n("advantages")}</a></li>
                 <li><a href="#factory" className="hover:text-white">{n("factory")}</a></li>
                 <li><a href="#catalog" className="hover:text-white">{ft("products")}</a></li>
-            <li><a href={`/${lang}/about`} className="hover:text-white">{ft("aboutLink")}</a></li>
+                <li><a href={`/${lang}/custom-hat-tech-pack-template`} className="hover:text-white text-yellow-400 font-bold">Vector Tech Pack Guide</a></li>
+                <li><a href={`/${lang}/custom-hat-cost-index-2026`} className="hover:text-white">2026 Hat Cost Index</a></li>
+                <li><a href={`/${lang}/about`} className="hover:text-white">{ft("aboutLink")}</a></li>
             <li><a href={`/${lang}/guide`} className="hover:text-white">{ft("guideLink")}</a></li>
             <li><a href={`/${lang}/wholesale-snapbacks`} className="hover:text-white">Wholesale Snapbacks</a></li>
             <li><a href={`/${lang}/custom-trucker-hats`} className="hover:text-white">Custom Trucker Hats</a></li>
