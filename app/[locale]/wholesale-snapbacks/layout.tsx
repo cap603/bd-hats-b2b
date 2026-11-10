@@ -5,21 +5,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const { locale } = await params;
   const path = "/wholesale-snapbacks";
   const canonical = `https://bdjunyang.com/${locale}${path}`;
-  const languages = {
-    en: `https://bdjunyang.com/en${path}`,
-    es: `https://bdjunyang.com/es${path}`,
-    "x-default": `https://bdjunyang.com/en${path}`,
-  };
+  const languages = getAlternateLanguages(path);
 
   return {
     title:
       locale === "es"
-        ? "Gorras Snapback al por Mayor | Fabricante de Snapbacks Personalizadas"
+        ? "Gorras Snapback al por Mayor | Fabricante de Snapbacks"
         : "Wholesale Snapback Hats | Custom Manufacturer",
     description:
       locale === "es"
-        ? "Gorras snapback al por mayor directo de fábrica desde China. Snapbacks personalizadas con bordado 3D puff, MOQ 200uds, $3.50-$7.00 FOB, verificadas SGS. Programa de muestras gratuitas: cotización en 12 horas."
-        : "Factory-direct wholesale snapback hats from China. Custom snapbacks with 3D puff embroidery, MOQ 200pcs, $3.50-$7.00 FOB, SGS verified. Free samples program — get your quote in 12 hours.",
+        ? "Gorras snapback al por mayor directo de fábrica en China. Bordado 3D puff, MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días y SGS verificado. Cotización en 12h."
+        : "Factory-direct custom snapbacks with 3D puff embroidery. MOQ 200pcs, $3.50-$7.00 FOB, 7-day samples, SGS verified. Direct Chinese manufacturer — quote in 12h.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

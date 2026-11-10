@@ -5,21 +5,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const { locale } = await params;
   const path = "/oem-hat-manufacturer";
   const canonical = `https://bdjunyang.com/${locale}${path}`;
-  const languages = {
-    en: `https://bdjunyang.com/en${path}`,
-    es: `https://bdjunyang.com/es${path}`,
-    "x-default": `https://bdjunyang.com/en${path}`,
-  };
+  const languages = getAlternateLanguages(path);
 
   return {
     title:
       locale === "es"
-        ? "Fabricante OEM de Gorras en China | Fábrica de Gorras de Marca Propia"
+        ? "Fabricante OEM de Gorras en China | Fábrica Directa"
         : "OEM Hat Manufacturer China | Factory Direct",
     description:
       locale === "es"
-        ? "Fabricante OEM/ODM de gorras en China. Más de 100 máquinas de bordado, fábrica de 50.000m², certificada SGS/CE/REACH. Gorras de béisbol, snapbacks y gorros de marca propia desde 2014."
-        : "Full-service OEM/ODM hat manufacturer in China. 100+ embroidery machines, 50,000sqm factory, SGS/CE/REACH certified. Private label baseball caps, snapbacks, beanies since 2014.",
+        ? "Fabricante OEM/ODM de gorras en China. Más de 100 máquinas Barudan, certificación SGS/CE. Gorras de béisbol, snapbacks, gorros. MOQ 200uds, muestras en 7 días."
+        : "OEM/ODM hat manufacturer in China. 100+ Barudan embroidery machines, SGS/CE certified. Custom baseball caps, snapbacks, beanies, MOQ 200pcs, 7-day samples.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

@@ -5,21 +5,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const { locale } = await params;
   const path = "/wholesale-blank-caps-supplier";
   const canonical = `https://bdjunyang.com/${locale}${path}`;
-  const languages = {
-    en: `https://bdjunyang.com/en${path}`,
-    es: `https://bdjunyang.com/es${path}`,
-    "x-default": `https://bdjunyang.com/en${path}`,
-  };
+  const languages = getAlternateLanguages(path);
 
   return {
     title:
       locale === "es"
-        ? "Proveedor de Gorras Lisas al por Mayor | Fabricante de Gorras en China"
+        ? "Proveedor de Gorras Lisas al por Mayor | Fábrica en China"
         : "Wholesale Blank Caps Supplier | Plain Hat Manufacturer China",
     description:
       locale === "es"
-        ? "Gorras lisas al por mayor directo de fábrica: más de 50 colores en stock, sarga de algodón 100%, sin logo desde $3.50 FOB. MOQ 200uds, muestras en 7 días para programas de serigrafía y bordado."
-        : "Bulk blank caps direct from the factory: 50+ stock colors, 100% cotton twill, no-logo pricing from $3.50 FOB. MOQ 200pcs and 7-day samples for screen printing and embroidery programs.",
+        ? "Gorras lisas al por mayor directo de fábrica: más de 50 colores, algodón 100%, sin logo desde $3.50 FOB. MOQ 200uds, muestras en 7 días y verificación SGS."
+        : "Bulk blank caps direct from factory: 50+ stock colors, 100% cotton twill, unbranded from $3.50 FOB. MOQ 200pcs, 7-day samples for embroidery & print brands.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

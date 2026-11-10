@@ -123,7 +123,8 @@ export default async function LocaleLayout({
     "@type": "Organization",
     "@id": "https://bdjunyang.com/#organization",
     name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
-    alternateName: "BD Hats",
+    legalName: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+    alternateName: ["BD Hats", "Junyang Headwear", "Baoding Junyang Import and Export Trade Co., Ltd."],
     url: "https://bdjunyang.com",
     logo: "/images/brand/junyang-logo.png",
     description: "Premium custom hat factory and B2B wholesale supplier specializing in embroidery and customized headwear.",
@@ -144,6 +145,7 @@ export default async function LocaleLayout({
       availableLanguage: ["en", "es", "de", "fr", "pt", "it", "ja", "zh"],
     },
     sameAs: [
+      "https://bdjunyang.en.alibaba.com/",
       "https://www.facebook.com/p/Baoding-Junyang-Import-And-Export-Trade-Co-Ltd-100079978783412/",
       "https://www.linkedin.com/company/146738106/",
     ],

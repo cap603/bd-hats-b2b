@@ -5,21 +5,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const { locale } = await params;
   const path = "/custom-dad-hats-manufacturer";
   const canonical = `https://bdjunyang.com/${locale}${path}`;
-  const languages = {
-    en: `https://bdjunyang.com/en${path}`,
-    es: `https://bdjunyang.com/es${path}`,
-    "x-default": `https://bdjunyang.com/en${path}`,
-  };
+  const languages = getAlternateLanguages(path);
 
   return {
     title:
       locale === "es"
-        ? "Fabricante de Gorras Dad Personalizadas | Gorras sin Estructura al por Mayor"
+        ? "Fabricante de Gorras Dad Personalizadas | Fábrica Directa"
         : "Custom Dad Hats Manufacturer | Wholesale Unstructured Caps",
     description:
       locale === "es"
-        ? "Gorras dad personalizadas directo de fábrica: 6 paneles sin estructura, acid wash y acabados vintage. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días. Fábrica verificada SGS en China."
-        : "Factory-direct custom dad hats: unstructured 6-panel, acid wash, garment dye and vintage finishes. MOQ 200pcs, $3.50-$7.00 FOB, samples in 7 days. SGS verified factory in China.",
+        ? "Gorras dad personalizadas directo de fábrica: 6 paneles sin estructura, lavado vintage. MOQ 200uds, $3.50-$6.80 FOB, muestras en 7 días y SGS verificado."
+        : "Custom dad hats factory direct: unstructured 6-panel, vintage enzyme wash & pigment dye. MOQ 200pcs, $3.50-$6.80 FOB, 7-day samples. SGS verified manufacturer.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

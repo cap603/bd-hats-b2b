@@ -5,21 +5,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const { locale } = await params;
   const path = "/custom-trucker-hats";
   const canonical = `https://bdjunyang.com/${locale}${path}`;
-  const languages = {
-    en: `https://bdjunyang.com/en${path}`,
-    es: `https://bdjunyang.com/es${path}`,
-    "x-default": `https://bdjunyang.com/en${path}`,
-  };
+  const languages = getAlternateLanguages(path);
 
   return {
     title:
       locale === "es"
-        ? "Gorras Trucker Personalizadas al por Mayor | Fábrica de Gorras de Malla"
+        ? "Gorras Trucker Personalizadas al por Mayor | Fábrica de Malla"
         : "Custom Trucker Hats Wholesale | Factory Direct",
     description:
       locale === "es"
-        ? "Gorras trucker personalizadas al por mayor desde una fábrica china. Frente de espuma + espalda de malla, bordado e impresión personalizados, MOQ 200uds, precios directos de fábrica. Fabricante verificado SGS desde 2014."
-        : "Wholesale custom trucker hats from a Chinese factory. Foam front + mesh back caps, custom embroidery & printing, MOQ 200pcs, factory direct pricing. SGS verified manufacturer since 2014.",
+        ? "Gorras trucker personalizadas directo de fábrica en China. Frente de espuma y malla, bordado 3D, MOQ 200uds, $3.50-$6.50 FOB, muestras en 7 días y SGS verificado."
+        : "Custom trucker hats factory direct from China. Foam front & mesh back, 3D embroidery & print, MOQ 200pcs, $3.50-$6.50 FOB, 7-day samples. SGS verified since 2014.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

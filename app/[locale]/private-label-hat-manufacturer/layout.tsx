@@ -5,21 +5,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const { locale } = await params;
   const path = "/private-label-hat-manufacturer";
   const canonical = `https://bdjunyang.com/${locale}${path}`;
-  const languages = {
-    en: `https://bdjunyang.com/en${path}`,
-    es: `https://bdjunyang.com/es${path}`,
-    "x-default": `https://bdjunyang.com/en${path}`,
-  };
+  const languages = getAlternateLanguages(path);
 
   return {
     title:
       locale === "es"
-        ? "Fabricante de Gorras de Marca Privada | Gorras con Tu Marca en China"
+        ? "Fabricante de Gorras de Marca Privada | Fábrica en China"
         : "Private Label Hat Manufacturer | Custom Branded Caps China",
     description:
       locale === "es"
-        ? "Fabricación de gorras de marca privada: etiquetas tejidas, colgantes personalizados, bolsas y empaque retail. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días desde nuestra fábrica verificada SGS."
-        : "Private label hat manufacturing: woven labels, custom hang tags, poly bags and retail packaging. MOQ 200pcs, $3.50-$7.00 FOB, samples in 7 days from our SGS verified factory.",
+        ? "Fabricación de gorras de marca privada: etiquetas tejidas, colgantes, bolsas y empaque retail. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días y SGS verificado."
+        : "Private label hat manufacturing: woven labels, custom hang tags & retail packaging. MOQ 200pcs, $3.50-$7.00 FOB, 7-day samples. SGS verified factory in China.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

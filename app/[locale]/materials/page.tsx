@@ -196,6 +196,43 @@ export default function MaterialsPage() {
         </section>
       ))}
 
+      {/* Deep Comparison Interlinks: Merino Wool & Cost Index */}
+      <section className="py-12 px-4 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <span className="text-yellow-600 text-xs font-black uppercase tracking-widest">Knitwear Fabric Guide</span>
+              <h3 className="text-lg font-bold text-gray-900 mt-1 mb-2">Merino Wool vs Acrylic Beanies</h3>
+              <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-4">
+                Detailed B2B comparison of thermal retention, piling resistance, hand feel, and manufacturing costs for winter beanie programs.
+              </p>
+            </div>
+            <Link
+              href={`/${lang}/compare/merino-wool-vs-acrylic-beanies`}
+              className="text-xs font-bold text-black hover:text-yellow-600 inline-flex items-center gap-1.5 transition"
+            >
+              Read Full Comparison <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <span className="text-yellow-600 text-xs font-black uppercase tracking-widest">B2B Manufacturing Benchmark</span>
+              <h3 className="text-lg font-bold text-gray-900 mt-1 mb-2">2026 Custom Hat Cost Breakdown Index</h3>
+              <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-4">
+                Transparent line-item material, embroidery, and production cost breakdowns ($3.20 - $7.80 FOB) across all major hat categories.
+              </p>
+            </div>
+            <Link
+              href={`/${lang}/custom-hat-cost-index-2026`}
+              className="text-xs font-bold text-black hover:text-yellow-600 inline-flex items-center gap-1.5 transition"
+            >
+              View 2026 Cost Index <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 px-4 bg-black text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">Ready to Choose Your Materials?</h2>
@@ -221,8 +258,9 @@ export default function MaterialsPage() {
             <div>
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Resources</h4>
               <ul className="space-y-2 text-sm">
+                <li><Link href={`/${lang}/compare/merino-wool-vs-acrylic-beanies`} className="hover:text-white text-yellow-400 font-semibold">Merino vs Acrylic Beanies</Link></li>
+                <li><Link href={`/${lang}/custom-hat-cost-index-2026`} className="hover:text-white">2026 Hat Cost Index</Link></li>
                 <li><Link href={`/${lang}/guide`} className="hover:text-white">B2B Manufacturing Guide</Link></li>
-                <li><Link href={`/${lang}/materials`} className="hover:text-white">Materials & Fabrics Guide</Link></li>
                 <li><Link href={`/${lang}/pricing`} className="hover:text-white">Pricing & Shipping</Link></li>
                 <li><Link href={`/${lang}/about`} className="hover:text-white">About Our Factory</Link></li>
               </ul>

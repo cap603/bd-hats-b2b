@@ -66,12 +66,12 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-black text-white py-24 md:py-32 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm">Est. 2014 · Baoding, China</span>
+          <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-xs md:text-sm">Baoding Junyang Hat Manufacturing Co., Ltd. · Est. 2014</span>
           <h1 className="text-4xl md:text-7xl font-extrabold mt-6 mb-6 tracking-tight leading-tight">
             The Hat Factory Behind <span className="text-yellow-400">300+ Brands</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            From a 15-person workshop to a 50,000sqm facility with 200+ tailors and 100+ Japanese embroidery machines. This is our story.
+            Baoding Junyang Hat Manufacturing Co., Ltd. (BD Hats / 保定俊阳制帽) — from a 15-person workshop to a 50,000sqm facility with 200+ tailors and 100+ Japanese Barudan embroidery machines. This is our factory story.
           </p>
         </div>
       </section>

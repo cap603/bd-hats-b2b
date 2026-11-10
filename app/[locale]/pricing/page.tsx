@@ -303,6 +303,23 @@ export default function PricingPage() {
               </a>
             </div>
           </div>
+
+          {/* Deep Guide Interlink: 2026 Cost Index */}
+          <div className="mt-8 bg-gradient-to-r from-gray-900 to-black text-white rounded-2xl p-6 md:p-8 border border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
+            <div>
+              <span className="text-yellow-400 text-xs font-black uppercase tracking-widest">Industry Benchmark Data</span>
+              <h3 className="text-lg md:text-xl font-bold mt-1">2026 Custom Hat Manufacturing Cost Breakdown Index</h3>
+              <p className="text-gray-400 text-xs md:text-sm mt-2 max-w-xl">
+                See exact line-item material, embroidery, labor and logistics cost models ($3.20 - $7.80 FOB) across 6 cap silhouettes.
+              </p>
+            </div>
+            <Link
+              href={`/${lang}/custom-hat-cost-index-2026`}
+              className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-xl text-xs md:text-sm whitespace-nowrap transition flex items-center gap-2"
+            >
+              Explore Cost Index <ArrowRight size={14} />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -360,9 +377,10 @@ export default function PricingPage() {
             <div>
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Resources</h4>
               <ul className="space-y-2 text-sm">
+                <li><Link href={`/${lang}/custom-hat-cost-index-2026`} className="hover:text-white text-yellow-400 font-semibold">2026 Hat Cost Index</Link></li>
+                <li><Link href={`/${lang}/compare/merino-wool-vs-acrylic-beanies`} className="hover:text-white">Merino vs Acrylic Beanies</Link></li>
                 <li><Link href={`/${lang}/guide`} className="hover:text-white">B2B Manufacturing Guide</Link></li>
                 <li><Link href={`/${lang}/materials`} className="hover:text-white">Materials & Fabrics Guide</Link></li>
-                <li><Link href={`/${lang}/pricing`} className="hover:text-white">Pricing & Shipping</Link></li>
                 <li><Link href={`/${lang}/about`} className="hover:text-white">About Our Factory</Link></li>
               </ul>
             </div>
