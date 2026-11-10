@@ -99,21 +99,21 @@ export default function Home() {
 
   const BANNERS = [
     {
-      image: "/images/site/factory-embroidery-panels.webp",
+      image: "/images/site/banner-1-premier-manufacturer.png",
       title: t("banners.0.title"),
       sub: t("banners.0.sub"),
       cta: t("banners.0.cta"),
       link: "whatsapp"
     },
     {
-      image: "/images/site/ab257aa93655344cdb3405b61cb0622bfs.webp",
+      image: "/images/site/banner-2-customize-detail.png",
       title: t("banners.1.title"),
       sub: t("banners.1.sub"),
       cta: t("banners.1.cta"),
       link: "#inquiry?intent=bulk"
     },
     {
-      image: "/images/site/af4c92eab3b8f4bd68fcb467865c9d3512.webp",
+      image: "/images/site/banner-3-trusted-supplier.png",
       title: t("banners.2.title"),
       sub: t("banners.2.sub"),
       cta: t("banners.2.cta"),
@@ -250,68 +250,57 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section (Carousel — Optimized for Mobile Viewport) */}
-      <section className="relative min-h-[460px] sm:h-[540px] md:h-[680px] bg-gray-950 text-white overflow-hidden flex items-center">
+      {/* Hero Section (Carousel — High Impact Poster Banners) */}
+      <section className="relative w-full aspect-[16/9] sm:aspect-auto sm:h-[480px] md:h-[580px] lg:h-[680px] bg-gray-950 text-white overflow-hidden flex items-center">
         {BANNERS.map((banner, index) => (
           <div 
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentBanner ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+            onClick={banner.link === 'whatsapp' ? () => handleWhatsApp("hero-banner") : () => window.location.hash = banner.link}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out cursor-pointer ${index === currentBanner ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
           >
-            <div className="absolute inset-0 bg-black/55 z-10"></div>
             <img 
               src={banner.image} 
               alt={banner.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 sm:px-6">
-              <span className="text-yellow-400 font-extrabold tracking-widest uppercase text-[10px] sm:text-xs md:text-sm border-b-2 border-yellow-400 pb-0.5 mb-3 sm:mb-6">
-                {t(`banners.${currentBanner}.label`)}
-              </span>
+            {/* Screen Reader & SEO semantic preservation */}
+            <div className="sr-only">
               {index === 0 ? (
-                <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-3 sm:mb-6 tracking-tight leading-tight max-w-5xl">
-                  {banner.title}
-                </h1>
+                <h1>{banner.title}</h1>
               ) : (
-                <h2 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-3 sm:mb-6 tracking-tight leading-tight max-w-5xl">
-                  {banner.title}
-                </h2>
+                <h2>{banner.title}</h2>
               )}
-              <p className="text-xs sm:text-base md:text-xl text-gray-200 mb-6 sm:mb-10 max-w-2xl font-light leading-relaxed line-clamp-2 sm:line-clamp-none">
-                {banner.sub}
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-4 w-full max-w-md">
-                <button 
-                  onClick={banner.link === 'whatsapp' ? () => handleWhatsApp("hero-banner") : () => window.location.hash = banner.link}
-                  className="bg-emerald-500 text-white font-black px-6 sm:px-10 py-3 sm:py-4.5 rounded-full hover:bg-emerald-600 transition flex items-center justify-center gap-2 text-sm sm:text-base md:text-lg shadow-xl shadow-emerald-500/20 active:scale-95 cursor-pointer"
-                >
-                  {banner.link === 'whatsapp' && <MessageCircle size={20} />} {banner.cta}
-                </button>
-              </div>
+              <p>{banner.sub}</p>
+              <span>{t(`banners.${currentBanner}.label`)}</span>
+              <span>{banner.cta}</span>
             </div>
           </div>
         ))}
 
         {/* Carousel Controls */}
         <button 
-          onClick={prevBanner}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition text-white"
+          onClick={(e) => { e.stopPropagation(); prevBanner(); }}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/30 hover:bg-black/60 backdrop-blur-sm transition text-white"
+          aria-label="Previous slide"
         >
           <ChevronLeft size={32} />
         </button>
         <button 
-          onClick={nextBanner}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition text-white"
+          onClick={(e) => { e.stopPropagation(); nextBanner(); }}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-black/30 hover:bg-black/60 backdrop-blur-sm transition text-white"
+          aria-label="Next slide"
         >
           <ChevronRight size={32} />
         </button>
 
         {/* Carousel Indicators */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3">
+        <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3">
           {BANNERS.map((_, index) => (
             <button
               key={index}
-              onClick={() => setCurrentBanner(index)}
-              className={`h-1.5 transition-all duration-300 rounded-full ${index === currentBanner ? 'w-8 bg-yellow-400' : 'w-3 bg-white/30'}`}
+              onClick={(e) => { e.stopPropagation(); setCurrentBanner(index); }}
+              className={`h-2 transition-all duration-300 rounded-full ${index === currentBanner ? 'w-8 bg-yellow-400' : 'w-2 bg-white/50 hover:bg-white/80'}`}
+              aria-label={`Go to slide ${index + 1}`}
             ></button>
           ))}
         </div>
