@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Breadcrumb } from "../../../components/Breadcrumb";
 import { LanguageSwitcher } from "../../../components/LanguageSwitcher";
+import { ShippingCalculator } from "../../../components/ShippingCalculator";
 import { trackWhatsAppClick } from "../../../lib/tracking";
 import { CATEGORY_LANDING, CATEGORY_COMPARISONS, labelFor } from "../../../lib/product-links";
 
@@ -360,6 +361,21 @@ export default function ProductDetail() {
 
           </div>
         </div>
+      </section>
+
+      {/* Logistics & Export Packing CBM Calculator */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ShippingCalculator
+          defaultCapType={
+            hat.category?.toLowerCase().includes("beanie")
+              ? "beanie"
+              : hat.category?.toLowerCase().includes("dad") || hat.category?.toLowerCase().includes("bucket")
+              ? "unstructured"
+              : "structured"
+          }
+          productName={hat.name}
+          sku={getProductSku(String(hat.id))}
+        />
       </section>
 
       {/* FAQ — full width and always in the DOM, with matching FAQPage JSON-LD.

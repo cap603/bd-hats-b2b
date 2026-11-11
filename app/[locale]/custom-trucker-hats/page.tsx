@@ -7,6 +7,7 @@ import { useLang } from "../../lib/i18n";
 import { COMPARISON_LINKS } from "../../lib/comparison-links";
 import { NavCompareMenu } from "../../components/NavCompareMenu";
 import { NavProductsMenu } from "../../components/NavProductsMenu";
+import { ShippingCalculator } from "../../components/ShippingCalculator";
 
 const CONTENT = {
   en: {
@@ -167,6 +168,10 @@ export default function TruckerPage() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="py-8 px-4 max-w-5xl mx-auto">
+        <ShippingCalculator defaultCapType="structured" productName="Custom Wholesale Trucker Hats" sku="JY-TRUCKER" />
       </section>
 
       <section className="py-24 px-4 bg-black text-white text-center">
