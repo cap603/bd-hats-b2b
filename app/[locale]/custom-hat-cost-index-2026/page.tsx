@@ -72,7 +72,7 @@ const CONTENT = {
       },
       {
         q: "Why is the MOQ set strictly at 200 pieces?",
-        a: "Our facility runs 100+ Japanese Barudan multi-head automated embroidery machines. A 200-piece production run ensures optimal fabric cutting yields from standard textile bolts and amortizes thread setup time without excessive overhead."
+        a: "Our facility runs 100+ precision Barudan multi-head automated embroidery machines. A 200-piece production run ensures optimal fabric cutting yields from standard textile bolts and amortizes thread setup time without excessive overhead."
       },
       {
         q: "How much does physical pre-production sampling cost?",
@@ -278,7 +278,7 @@ export default function CustomHatCostIndexPage() {
                   {lang === "es" ? "Líneas de Bordado Barudan" : "Automated Barudan Lines"}
                 </h3>
                 <p className="text-xs text-gray-500">
-                  {lang === "es" ? "Más de 100 cabezales japoneses de alta precisión con registro milimétrico." : "100+ Japanese high-precision embroidery heads for 3D puff and Tatami flat stitching."}
+                  {lang === "es" ? "Más de 100 cabezales de bordado de alta precisión con registro milimétrico." : "100+ high-precision automated embroidery heads for 3D puff and Tatami flat stitching."}
                 </p>
               </div>
             </div>

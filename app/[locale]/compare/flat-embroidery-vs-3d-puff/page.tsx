@@ -156,7 +156,7 @@ const CONTENT = {
         { k: "15–20 days", v: "Bulk production after sample approval" },
         { k: "In-House", v: "Quality control at each stage" },
       ],
-      note: "Baoding Junyang has manufactured custom caps since 2014, running 100+ Japanese Barudan embroidery machines and a 200-person production team. The factory is SGS verified, ships 5M+ caps a year, and sends 70% of that output to North America.",
+      note: "Baoding Junyang has manufactured custom caps since 2014, running 100+ precision Barudan embroidery machines and a 200-person production team. The factory is SGS verified, ships 5M+ caps a year, and sends 70% of that output to North America.",
     },
     faq: {
       heading: "Flat embroidery and 3D puff FAQ",

@@ -159,7 +159,7 @@ const CONTENT = {
         { k: "15–20 days", v: "Bulk production after sample approval" },
         { k: "In-House", v: "Quality control at each stage" },
       ],
-      note: "Baoding Junyang has manufactured custom caps since 2014, running 100+ Japanese Barudan embroidery machines and a 200-person production team, with capacity above 5M caps per year and SGS verification.",
+      note: "Baoding Junyang has manufactured custom caps since 2014, running 100+ precision Barudan embroidery machines and a 200-person production team, with capacity above 5M caps per year and SGS verification.",
     },
     faq: {
       heading: "Sourcing custom hats: common buyer questions",

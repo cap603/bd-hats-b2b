@@ -20,7 +20,7 @@ const CONTENT = {
     },
     capabilitiesTitle: "Factory Capabilities",
     capabilities: [
-      { title: "Production Capacity", desc: "50,000 sqm factory floor, 200+ skilled tailors and 100+ Japanese Barudan embroidery machines. Annual output exceeds 5 million caps — with dedicated production lines for snapbacks, 5-panel caps, trucker hats and beanies." },
+      { title: "Production Capacity", desc: "50,000 sqm factory floor, 200+ skilled tailors and 100+ precision Barudan embroidery machines. Annual output exceeds 5 million caps — with dedicated production lines for snapbacks, 5-panel caps, trucker hats and beanies." },
       { title: "Certifications & Compliance", desc: "SGS factory verification, CE product certification, and full REACH and RoHS compliance for the European market. Our quality system is documented at each production stage." },
       { title: "OEM / ODM Service", desc: "Send us sketches, spec sheets, or a reference product and our in-house design team turns it into production-ready files. We handle embroidery digitizing, color matching, and engineering for your exact cap style." },
       { title: "Sample & Approval Process", desc: "Physical pre-production samples in 7 days. Sample fees range $50-100 including courier and are fully credited against your bulk order — so sampling a new style is low-risk for first-time partners." },

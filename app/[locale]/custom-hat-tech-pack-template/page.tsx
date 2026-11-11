@@ -121,7 +121,7 @@ const CONTENT = {
     ],
     limitsTitle: "3. Factory Embroidery & Decoration Engineering Limits",
     limitsIntro:
-      "To ensure your artwork stitches cleanly without thread fraying or fabric puckering, follow our Japanese Barudan machine tolerances:",
+      "To ensure your artwork stitches cleanly without thread fraying or fabric puckering, follow our precision Barudan machine tolerances:",
     limits: [
       { technique: "Front Panel 3D Puff Embroidery", maxDim: "13.0cm W × 5.5cm H", minLine: "3.0mm (0.12 in)", note: "Requires EVA foam underlay. Fine details under 3mm must be converted to flat stitch." },
       { technique: "Front Panel Flat Direct Embroidery", maxDim: "14.0cm W × 6.0cm H", minLine: "1.0mm (0.04 in)", note: "Ideal for detailed typography and crests up to 15,000 stitches." },
@@ -167,7 +167,7 @@ const CONTENT = {
       },
       {
         q: "What is your factory Minimum Order Quantity (MOQ) for custom hats?",
-        a: "Our strict factory-direct MOQ is 200 pieces per style/colorway. This guarantees optimal fabric yield from standard textile bolts and amortizes setup time on our automated Japanese Barudan embroidery machines.",
+        a: "Our strict factory-direct MOQ is 200 pieces per style/colorway. This guarantees optimal fabric yield from standard textile bolts and amortizes setup time on our automated Barudan embroidery machines.",
       },
       {
         q: "How fast can you deliver physical pre-production samples from a tech pack?",

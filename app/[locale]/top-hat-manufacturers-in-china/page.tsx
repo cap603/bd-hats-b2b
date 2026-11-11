@@ -49,7 +49,7 @@ const CONTENT = {
         id: "hebei",
         name: "Hebei Province (Baoding / Baigou Cluster)",
         role: "The Specialized Embroidery & Agile B2B Customization Powerhouse",
-        desc: "Located in Northern China, the Baoding industrial belt is world-renowned for dedicated headwear specialization. Factories here feature dense concentrations of Japanese multi-head Barudan and Tajima automated embroidery machinery, extensive cotton twill and corduroy fabric stocks, and agile minimum order requirements (MOQ 200).",
+        desc: "Located in Northern China, the Baoding industrial belt is world-renowned for dedicated headwear specialization. Factories here feature dense concentrations of multi-head Barudan and Tajima automated embroidery machinery, extensive cotton twill and corduroy fabric stocks, and agile minimum order requirements (MOQ 200).",
         advantages: [
           "Optimal price-to-quality ratio: 15% - 25% lower overhead than Southern coastal hubs",
           "Unrivaled 3D puff embroidery and high-density tatami stitch capabilities",
@@ -147,8 +147,8 @@ const CONTENT = {
     steps: [
       {
         num: "01",
-        title: "Verify Factory Machinery (Japanese Barudan / Tajima)",
-        desc: "Ask for live video footage of the embroidery workshop. Tier-1 headwear factories operate Japanese Barudan or Tajima multi-head automated machines. Domestic lower-tier machines frequently suffer from tension drops, resulting in uneven 3D puff stitching and loose thread tails.",
+        title: "Verify Factory Machinery (Barudan / Tajima Equipment)",
+        desc: "Ask for live video footage of the embroidery workshop. Tier-1 headwear factories operate precision Barudan or Tajima multi-head automated machines. Domestic lower-tier machines frequently suffer from tension drops, resulting in uneven 3D puff stitching and loose thread tails.",
       },
       {
         num: "02",
@@ -180,7 +180,7 @@ const CONTENT = {
     junyangDesc:
       "Founded in 2014, Baoding Junyang Hat Manufacturing Co., Ltd. bridges the gap between high-overhead multinational factories and low-end promotional mills. We offer enterprise-grade craftsmanship with startup-friendly agility:",
     highlights: [
-      { label: "100+ Barudan Heads", detail: "Automated Japanese embroidery lines ensuring micro-millimeter stitch precision across 3D puff, flat, and tatami textures." },
+      { label: "100+ Barudan Heads", detail: "Automated multi-head embroidery lines ensuring micro-millimeter stitch precision across 3D puff, flat, and tatami textures." },
       { label: "Strict MOQ 200 Pcs", detail: "Boutique drop volume flexibility, enabling fashion streetwear and lifestyle brands to test new colorways without excessive inventory risk." },
       { label: "Transparent FOB Pricing", detail: "Real factory floor pricing ($3.20 - $7.80) with full Bill of Materials (BOM) cost breakdowns." },
       { label: "7-Day Sample Turnaround", detail: "Rapid prototyping supported by in-house pattern digitizers, custom laser cutters, and over 50 stock fabric colors." },

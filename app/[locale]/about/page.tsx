@@ -8,7 +8,7 @@ import { NavProductsMenu } from "../../components/NavProductsMenu";
 
 const TIMELINE = [
   { year: "2014", title: "Founded in Baoding", desc: "Started with 15 tailors and 5 embroidery machines in a small workshop, specializing in custom baseball caps for local sportswear brands." },
-  { year: "2016", title: "First Export Order", desc: "Shipped our first container to a US streetwear brand. Expanded to 50 staff and invested in Japanese Barudan embroidery machines." },
+  { year: "2016", title: "First Export Order", desc: "Shipped our first container to a US streetwear brand. Expanded to 50 staff and invested in automated Barudan embroidery machines." },
   { year: "2018", title: "SGS & CE Certified", desc: "Achieved SGS factory verification and CE product certification. Entered European market with REACH & RoHS compliance." },
   { year: "2020", title: "50,000sqm Facility", desc: "Moved to a modern 50,000sqm factory. Installed 100+ Barudan machines. Reached 5M+ caps annual capacity." },
   { year: "2022", title: "Global Export Expansion", desc: "Awarded top-tier international trade honors and expanded our OEM/ODM design capabilities, delivering 1,000+ custom designs to global brands." },
@@ -19,7 +19,7 @@ const TEAM = [
   { role: "Sales Director", name: "Sales Team", desc: "Your dedicated B2B specialist — fluent in English, ready to quote within 12 hours. Handles all inquiries from initial contact to final delivery.", emoji: "💼" },
   { role: "Head of Design", name: "Design Team", desc: "Specializes in 3D embroidery digitizing and production-ready design files. Turns sketches, logos, or just an idea into a manufacturable design.", emoji: "🎨" },
   { role: "QC Manager", name: "QC Team", desc: "Leads our in-house QC team. Caps are checked at each production stage before leaving the factory floor.", emoji: "🔍" },
-  { role: "Production Manager", name: "Production Team", desc: "Oversees 200+ tailors and 100+ Japanese embroidery machines. Ensures on-time delivery without compromising quality.", emoji: "🧵" }
+  { role: "Production Manager", name: "Production Team", desc: "Oversees 200+ tailors and 100+ automated embroidery machines. Ensures on-time delivery without compromising quality.", emoji: "🧵" }
 ];
 
 export default function AboutPage() {
@@ -71,7 +71,7 @@ export default function AboutPage() {
             The Hat Factory Behind <span className="text-yellow-400">300+ Brands</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Baoding Junyang Hat Manufacturing Co., Ltd. (BD Hats / 保定俊阳制帽) — from a 15-person workshop to a 50,000sqm facility with 200+ tailors and 100+ Japanese Barudan embroidery machines. This is our factory story.
+            Baoding Junyang Hat Manufacturing Co., Ltd. (BD Hats / 保定俊阳制帽) — from a 15-person workshop to a 50,000sqm facility with 200+ tailors and 100+ precision Barudan embroidery machines. This is our factory story.
           </p>
         </div>
       </section>

@@ -20,7 +20,7 @@ const CONTENT = {
     features: [
       {
         title: "Capacity That Absorbs Spikes",
-        desc: "50,000 sqm of production space, 200+ tailors and 100+ Japanese Barudan embroidery machines, with annual output above 5 million caps. A 50,000-piece order runs on dedicated lines rather than competing with small jobs for machine time.",
+        desc: "50,000 sqm of production space, 200+ tailors and 100+ precision Barudan embroidery machines, with annual output above 5 million caps. A 50,000-piece order runs on dedicated lines rather than competing with small jobs for machine time.",
       },
       {
         title: "Tiered Volume Pricing",

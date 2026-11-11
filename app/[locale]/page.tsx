@@ -397,7 +397,7 @@ export default function Home() {
               {isPlaying ? (
                 <video 
                   src="https://github.com/cap603/bd-hats-b2b/releases/download/v1.0.0/factory-video.mp4"
-                  poster="/images/site/factory-embroidery-panels.webp"
+                  poster="/images/site/video-cap-production-cover.webp"
                   controls
                   autoPlay
                   className="w-full h-full object-cover"
@@ -405,9 +405,9 @@ export default function Home() {
               ) : (
                 <div className="relative w-full h-full cursor-pointer" onClick={() => setIsPlaying(true)}>
                    <img 
-                     src="/images/site/factory-embroidery-panels.webp" 
-                     alt="Baoding Junyang Hat Factory Floor" 
-                     className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700"
+                     src="/images/site/video-cap-production-cover.webp" 
+                     alt="Baoding Junyang Custom Hat Manufacturing Line" 
+                     className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-700"
                      width="1200"
                      height="800" 
                    />

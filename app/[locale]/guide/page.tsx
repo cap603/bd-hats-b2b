@@ -11,7 +11,7 @@ const SECTIONS = [
   {
     id: "factory-selection",
     title: "1. How to Choose a Reliable Custom Hat Factory",
-    content: "Selecting the right manufacturing partner is the single most important decision in your custom hat project. Look for third-party verification such as SGS, Bureau Veritas, or TÜV. At Baoding Junyang, we focus exclusively on headwear with 100+ Japanese Barudan embroidery machines and 200+ cap specialists.",
+    content: "Selecting the right manufacturing partner is the single most important decision in your custom hat project. Look for third-party verification such as SGS, Bureau Veritas, or TÜV. At Baoding Junyang, we focus exclusively on headwear with 100+ precision Barudan embroidery machines and 200+ cap specialists.",
     tips: [
       "Always request a factory video tour before placing large orders",
       "Verify SGS/ISO certifications independently",
