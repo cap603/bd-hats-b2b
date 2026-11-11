@@ -250,9 +250,9 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section (Carousel — True Full-Bleed 3.2:1 Panoramic Banners) */}
+      {/* Hero Section (Carousel — True Full-Bleed 2560x864 Panoramic Banners) */}
       <section className="relative w-full overflow-hidden bg-gray-950 flex items-center justify-center">
-        <div className="relative w-full aspect-[16/9] sm:aspect-[2.4/1] md:aspect-[2.8/1] lg:aspect-[3.2/1] max-h-[640px] overflow-hidden">
+        <div className="relative w-full aspect-[2560/864] max-h-[660px] overflow-hidden">
           {BANNERS.map((banner, index) => (
             <div 
               key={index}
