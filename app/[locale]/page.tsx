@@ -250,62 +250,60 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section (Carousel — High Impact Framed Showcase) */}
-      <section className="relative bg-slate-950 text-white overflow-hidden py-3 sm:py-5 px-2 sm:px-6 flex flex-col items-center justify-center">
-        <div className="w-full max-w-5xl mx-auto">
-          <div className="relative w-full aspect-[16/9] rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10 bg-black flex items-center justify-center">
-            {BANNERS.map((banner, index) => (
-              <div 
-                key={index}
-                onClick={banner.link === 'whatsapp' ? () => handleWhatsApp("hero-banner") : () => window.location.hash = banner.link}
-                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out cursor-pointer ${index === currentBanner ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
-              >
-                <img 
-                  src={banner.image} 
-                  alt={banner.title}
-                  className="w-full h-full object-cover"
-                />
-                {/* Screen Reader & SEO semantic preservation */}
-                <div className="sr-only">
-                  {index === 0 ? (
-                    <h1>{banner.title}</h1>
-                  ) : (
-                    <h2>{banner.title}</h2>
-                  )}
-                  <p>{banner.sub}</p>
-                  <span>{t(`banners.${currentBanner}.label`)}</span>
-                  <span>{banner.cta}</span>
-                </div>
+      {/* Hero Section (Carousel — High Impact Full Bleed Ultra-Wide Banners) */}
+      <section className="relative w-full overflow-hidden bg-gray-950 text-white flex items-center justify-center">
+        <div className="relative w-full aspect-[16/9] sm:aspect-[2.2/1] md:aspect-[2.5/1] lg:aspect-[2.8/1] max-h-[640px] overflow-hidden">
+          {BANNERS.map((banner, index) => (
+            <div 
+              key={index}
+              onClick={banner.link === 'whatsapp' ? () => handleWhatsApp("hero-banner") : () => window.location.hash = banner.link}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out cursor-pointer ${index === currentBanner ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+            >
+              <img 
+                src={banner.image} 
+                alt={banner.title}
+                className="w-full h-full object-cover"
+              />
+              {/* Screen Reader & SEO semantic preservation */}
+              <div className="sr-only">
+                {index === 0 ? (
+                  <h1>{banner.title}</h1>
+                ) : (
+                  <h2>{banner.title}</h2>
+                )}
+                <p>{banner.sub}</p>
+                <span>{t(`banners.${currentBanner}.label`)}</span>
+                <span>{banner.cta}</span>
               </div>
-            ))}
-
-            {/* Carousel Controls */}
-            <button 
-              onClick={(e) => { e.stopPropagation(); prevBanner(); }}
-              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-30 p-1.5 sm:p-2 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-sm transition text-white"
-              aria-label="Previous slide"
-            >
-              <ChevronLeft className="w-5 h-5 sm:w-7 sm:h-7" />
-            </button>
-            <button 
-              onClick={(e) => { e.stopPropagation(); nextBanner(); }}
-              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-30 p-1.5 sm:p-2 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-sm transition text-white"
-              aria-label="Next slide"
-            >
-              <ChevronRight className="w-5 h-5 sm:w-7 sm:h-7" />
-            </button>
-
-            {/* Carousel Indicators */}
-            <div className="absolute bottom-2.5 sm:bottom-4 left-1/2 -translate-x-1/2 z-30 flex gap-2 sm:gap-3">
-              {BANNERS.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={(e) => { e.stopPropagation(); setCurrentBanner(index); }}
-                  className={`h-1.5 sm:h-2 transition-all duration-300 rounded-full ${index === currentBanner ? 'w-6 sm:w-8 bg-yellow-400' : 'w-1.5 sm:w-2 bg-white/50 hover:bg-white/80'}`}
-                  aria-label={`Go to slide ${index + 1}`}
-                ></button>
-              ))}
             </div>
+          ))}
+
+          {/* Carousel Controls */}
+          <button 
+            onClick={(e) => { e.stopPropagation(); prevBanner(); }}
+            className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 p-2 sm:p-3 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-sm transition text-white shadow-lg"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
+          </button>
+          <button 
+            onClick={(e) => { e.stopPropagation(); nextBanner(); }}
+            className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 p-2 sm:p-3 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-sm transition text-white shadow-lg"
+            aria-label="Next slide"
+          >
+            <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
+          </button>
+
+          {/* Carousel Indicators */}
+          <div className="absolute bottom-3 sm:bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2 sm:gap-3">
+            {BANNERS.map((_, index) => (
+              <button
+                key={index}
+                onClick={(e) => { e.stopPropagation(); setCurrentBanner(index); }}
+                className={`h-2 transition-all duration-300 rounded-full ${index === currentBanner ? 'w-8 bg-yellow-400' : 'w-2 bg-white/50 hover:bg-white/80'}`}
+                aria-label={`Go to slide ${index + 1}`}
+              ></button>
+            ))}
           </div>
         </div>
       </section>
