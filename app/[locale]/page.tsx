@@ -99,21 +99,21 @@ export default function Home() {
 
   const BANNERS = [
     {
-      image: "/images/site/banner-1-premier-manufacturer.png",
+      image: "/images/site/banner-1-premier-manufacturer.webp",
       title: t("banners.0.title"),
       sub: t("banners.0.sub"),
       cta: t("banners.0.cta"),
       link: "whatsapp"
     },
     {
-      image: "/images/site/banner-2-customize-detail.png",
+      image: "/images/site/banner-2-customize-detail.webp",
       title: t("banners.1.title"),
       sub: t("banners.1.sub"),
       cta: t("banners.1.cta"),
       link: "#inquiry?intent=bulk"
     },
     {
-      image: "/images/site/banner-3-trusted-supplier.png",
+      image: "/images/site/banner-3-trusted-supplier.webp",
       title: t("banners.2.title"),
       sub: t("banners.2.sub"),
       cta: t("banners.2.cta"),
@@ -262,6 +262,8 @@ export default function Home() {
               <img 
                 src={banner.image} 
                 alt={banner.title}
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "auto"}
                 className="w-full h-full object-cover"
               />
               {/* Screen Reader & SEO semantic preservation */}
