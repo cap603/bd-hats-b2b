@@ -103,24 +103,21 @@ export default function Home() {
       title: t("banners.0.title"),
       sub: t("banners.0.sub"),
       cta: t("banners.0.cta"),
-      link: "whatsapp",
-      bg: "bg-[#dbe7f2]"
+      link: "whatsapp"
     },
     {
       image: "/images/site/banner-2-customize-detail.png",
       title: t("banners.1.title"),
       sub: t("banners.1.sub"),
       cta: t("banners.1.cta"),
-      link: "#inquiry?intent=bulk",
-      bg: "bg-[#08111e]"
+      link: "#inquiry?intent=bulk"
     },
     {
       image: "/images/site/banner-3-trusted-supplier.png",
       title: t("banners.2.title"),
       sub: t("banners.2.sub"),
       cta: t("banners.2.cta"),
-      link: "#inquiry?intent=sample",
-      bg: "bg-[#c3e3fb]"
+      link: "#inquiry?intent=sample"
     }
   ];
 
@@ -253,32 +250,33 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section (Carousel — Full-Bleed Theme Matched Widescreen) */}
-      <section className="relative w-full overflow-hidden flex items-center justify-center transition-colors duration-700 h-[380px] sm:h-[460px] md:h-[540px] lg:h-[600px] xl:h-[640px]">
-        {BANNERS.map((banner, index) => (
-          <div 
-            key={index}
-            onClick={banner.link === 'whatsapp' ? () => handleWhatsApp("hero-banner") : () => window.location.hash = banner.link}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out cursor-pointer flex items-center justify-center ${banner.bg} ${index === currentBanner ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
-          >
-            <img 
-              src={banner.image} 
-              alt={banner.title}
-              className="h-full w-auto max-w-full object-contain mx-auto"
-            />
-            {/* Screen Reader & SEO semantic preservation */}
-            <div className="sr-only">
-              {index === 0 ? (
-                <h1>{banner.title}</h1>
-              ) : (
-                <h2>{banner.title}</h2>
-              )}
-              <p>{banner.sub}</p>
-              <span>{t(`banners.${currentBanner}.label`)}</span>
-              <span>{banner.cta}</span>
+      {/* Hero Section (Carousel — True Full-Bleed 3.2:1 Panoramic Banners) */}
+      <section className="relative w-full overflow-hidden bg-gray-950 flex items-center justify-center">
+        <div className="relative w-full aspect-[16/9] sm:aspect-[2.4/1] md:aspect-[2.8/1] lg:aspect-[3.2/1] max-h-[640px] overflow-hidden">
+          {BANNERS.map((banner, index) => (
+            <div 
+              key={index}
+              onClick={banner.link === 'whatsapp' ? () => handleWhatsApp("hero-banner") : () => window.location.hash = banner.link}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out cursor-pointer ${index === currentBanner ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+            >
+              <img 
+                src={banner.image} 
+                alt={banner.title}
+                className="w-full h-full object-cover"
+              />
+              {/* Screen Reader & SEO semantic preservation */}
+              <div className="sr-only">
+                {index === 0 ? (
+                  <h1>{banner.title}</h1>
+                ) : (
+                  <h2>{banner.title}</h2>
+                )}
+                <p>{banner.sub}</p>
+                <span>{t(`banners.${currentBanner}.label`)}</span>
+                <span>{banner.cta}</span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
 
         {/* Carousel Controls */}
         <button 
@@ -296,16 +294,17 @@ export default function Home() {
           <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
         </button>
 
-        {/* Carousel Indicators */}
-        <div className="absolute bottom-3 sm:bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2 sm:gap-3">
-          {BANNERS.map((_, index) => (
-            <button
-              key={index}
-              onClick={(e) => { e.stopPropagation(); setCurrentBanner(index); }}
-              className={`h-2 transition-all duration-300 rounded-full ${index === currentBanner ? 'w-8 bg-yellow-400' : 'w-2 bg-gray-500/50 hover:bg-gray-500/80'}`}
-              aria-label={`Go to slide ${index + 1}`}
-            ></button>
-          ))}
+          {/* Carousel Indicators */}
+          <div className="absolute bottom-3 sm:bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2 sm:gap-3">
+            {BANNERS.map((_, index) => (
+              <button
+                key={index}
+                onClick={(e) => { e.stopPropagation(); setCurrentBanner(index); }}
+                className={`h-2 transition-all duration-300 rounded-full ${index === currentBanner ? 'w-8 bg-yellow-400' : 'w-2 bg-gray-500/50 hover:bg-gray-500/80'}`}
+                aria-label={`Go to slide ${index + 1}`}
+              ></button>
+            ))}
+          </div>
         </div>
       </section>
 
