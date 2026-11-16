@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "China vs Vietnam vs Bangladés: ¿Dónde Fabricar Gorras Personalizadas?"
-        : "China vs Vietnam vs Bangladesh: Where Should You Source Custom Hats?",
+    title: {
+      absolute:
+        locale === "es"
+          ? "China vs Vietnam vs Bangladés: Dónde Fabricar | BD Hats"
+          : "China vs Vietnam vs Bangladesh: Sourcing Hats | BD Hats",
+    },
     description:
       locale === "es"
         ? "Comparativa neutral de abastecimiento de gorras: China, Vietnam y Bangladés en cadena de suministro, MOQ, muestreo, comunicación, plazos, logística y tamaño de pedido ideal. MOQ de fábrica 200 uds."

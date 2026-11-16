@@ -13,8 +13,12 @@ export async function generateMetadata({ params }: { params: { locale: string; i
   const languages = getAlternateLanguages(path);
   const description = `Custom wholesale ${hat.name}. High-density 3D embroidery, MOQ ${hat.moq}pcs, ${priceLabel(hat.price)}. 7-day samples & SGS verified. Get factory quote.`;
 
+  const shortName = hat.name.length > 36 ? hat.name.substring(0, 36).trim() : hat.name;
+
   return {
-    title: `${hat.name} | Custom Factory`,
+    title: {
+      absolute: `${shortName} | BD Hats`,
+    },
     description,
     alternates: { canonical, languages },
     openGraph: {
@@ -33,6 +37,60 @@ export async function generateMetadata({ params }: { params: { locale: string; i
   };
 }
 
-export default function ProductLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+export default async function ProductLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: { locale: string; id: string };
+}) {
+  const { locale, id } = await params;
+  const hat = HATS.find((h) => String(h.id) === String(id));
+
+  // Build JSON-LD Product & Offer Schema
+  const schema = hat
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: hat.name,
+        image: `https://bdjunyang.com${hat.img}`,
+        description: hat.fullDesc || hat.desc,
+        sku: `JY-${hat.id.substring(0, 8).toUpperCase()}`,
+        brand: {
+          "@type": "Brand",
+          name: "BD Hats",
+        },
+        manufacturer: {
+          "@type": "Organization",
+          name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+          url: "https://bdjunyang.com",
+        },
+        offers: {
+          "@type": "AggregateOffer",
+          priceCurrency: "USD",
+          lowPrice: "3.50",
+          highPrice: "7.00",
+          offerCount: "1",
+          priceValidUntil: "2027-12-31",
+          availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
+          seller: {
+            "@type": "Organization",
+            name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+          },
+        },
+      }
+    : null;
+
+  return (
+    <>
+      {schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
+      {children}
+    </>
+  );
 }

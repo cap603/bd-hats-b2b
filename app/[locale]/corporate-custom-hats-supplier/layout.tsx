@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Proveedor de Gorras Corporativas Personalizadas | Gorras para Empresas"
-        : "Corporate Custom Hats Supplier | Branded Caps for Companies",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Gorras Corporativas Personalizadas | BD Hats"
+          : "Corporate Custom Hats Supplier for Brands | BD Hats",
+    },
     description:
       locale === "es"
         ? "Gorras corporativas personalizadas directo de fábrica: bordado de logotipo, empaque individual, entregas por fases para eventos. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días."

@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Fabricante de Gorras al por Mayor | Producción en Grandes Volúmenes"
-        : "Bulk Custom Hats Manufacturer | Large Volume Cap Production",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Fabricante de Gorras en Grandes Volúmenes | BD Hats"
+          : "Bulk Custom Hats Manufacturer & Wholesale | BD Hats",
+    },
     description:
       locale === "es"
         ? "Producción de gorras personalizadas en gran volumen: 5M+ unidades al año, más de 100 máquinas de bordado, descuentos desde 500uds hasta 10.000+. SGS verificado, FOB o CIF."

@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Snapback vs Strapback vs Hebilla: ¿Qué Cierre Elegir?"
-        : "Snapback vs Strapback vs Buckle: Which Closure Should You Choose?",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Snapback vs Strapback vs Hebilla: Cierre de Gorras | BD Hats"
+          : "Snapback vs Strapback vs Buckle: Cap Closure Guide | BD Hats",
+    },
     description:
       locale === "es"
         ? "Comparativa de cierres traseros para gorras personalizadas: rango de ajuste, aspecto, durabilidad, riesgo de devoluciones y qué cierre conviene a cada público. Datos de fábrica, MOQ 200 uds."

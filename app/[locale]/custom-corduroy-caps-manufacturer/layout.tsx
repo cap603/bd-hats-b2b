@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Gorras de Pana Personalizadas | Fábrica Directa"
-        : "Custom Corduroy Caps | Wholesale Factory",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Gorras de Pana Personalizadas al por Mayor | BD Hats"
+          : "Custom Corduroy Caps Manufacturer & Wholesale | BD Hats",
+    },
     description:
       locale === "es"
         ? "Fabricante de gorras de pana personalizadas en China. Pana vintage 8W, 14W y 21W, bordado 3D, MOQ 200uds, FOB desde $4.50. Muestras en 7 días y SGS verificado."

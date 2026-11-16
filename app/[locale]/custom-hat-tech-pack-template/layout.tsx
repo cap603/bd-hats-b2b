@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Plantilla Tech Pack de Gorras Gratis | Ficha Técnica Vectorial"
-        : "Custom Hat Tech Pack Template | Free Vector Cap Guide",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Plantilla Tech Pack de Gorras Vectorial | BD Hats"
+          : "Custom Hat Tech Pack Template & Vector Flats | BD Hats",
+    },
     description:
       locale === "es"
         ? "Descarga plantillas tech pack vectoriales para gorras (AI/PDF). Medidas de corona, costuras, bordado 3D, MOQ 200 y revisión técnica gratuita en 2 horas."

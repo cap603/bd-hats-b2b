@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Gorros Lana Merina vs Acrílico | Guía de Fábrica"
-        : "Merino Wool vs Acrylic Beanies | Sourcing Guide",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Gorros Lana Merina vs Acrílico: Guía | BD Hats"
+          : "Merino Wool vs Acrylic Beanies: Guide | BD Hats",
+    },
     description:
       locale === "es"
         ? "Comparativa de gorros de lana merina vs acrílico: coste de hilo, calidez, lavado y MOQ. Guía de fábrica para marcas de streetwear y outdoor."

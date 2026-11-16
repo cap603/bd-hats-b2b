@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Proveedor de Gorras Lisas al por Mayor | Fábrica en China"
-        : "Wholesale Blank Caps Supplier | Plain Hat Manufacturer China",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Proveedor de Gorras Lisas al por Mayor | BD Hats"
+          : "Wholesale Blank Caps Supplier & Plain Hats | BD Hats",
+    },
     description:
       locale === "es"
         ? "Gorras lisas al por mayor directo de fábrica: más de 50 colores, algodón 100%, sin logo desde $3.50 FOB. MOQ 200uds, muestras en 7 días y verificación SGS."

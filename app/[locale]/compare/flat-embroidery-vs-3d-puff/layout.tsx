@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Bordado Plano vs Bordado 3D Puff: ¿Cuál Elegir para Tu Logo?"
-        : "Flat Embroidery vs 3D Puff: Which Should Your Logo Use?",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Bordado Plano vs 3D Puff: Cuál Elegir | BD Hats"
+          : "Flat Embroidery vs 3D Puff: Cap Logo Guide | BD Hats",
+    },
     description:
       locale === "es"
         ? "Bordado plano vs bordado 3D puff: altura y aspecto, estructura de costo, durabilidad, tamaño mínimo de letra, tipos de logo y aplicaciones. Datos de fábrica, MOQ 200 uds, muestras en 7 días."

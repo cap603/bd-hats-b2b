@@ -75,10 +75,93 @@ export default function GuidePage() {
     ]
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the real factory MOQ for custom hats in China?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At Baoding Junyang, our standard production MOQ is 200 pieces per style/colorway. This threshold allows automated computer embroidery lines to run cost-effectively while giving emerging streetwear and apparel brands accessible factory-direct FOB pricing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does custom hat sampling and mass production take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pre-production physical samples take exactly 7 business days, including 3D digitizing and custom embroidery stitch-out. Bulk mass production takes 15 to 20 days depending on total order volume and custom trims. Express air shipping takes 5-8 days to North America and Western Europe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you protect international buyers against manufacturing defects or fraud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We operate a 50,000 sqm SGS-audited facility with ISO 9001:2015 certification. We provide live video and photo updates at each stage (cutting, embroidery, sewing, steam ironing). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the typical FOB price range for custom baseball caps and truckers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Direct factory FOB prices generally range from $3.50 to $7.00 per unit, depending on fabric (heavy cotton twill, organic canvas, nylon ripstop, or vintage corduroy), panel construction, and embroidery complexity (flat vs 3D puff embroidery)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What closure options are available for custom wholesale caps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer 7-hole plastic snapbacks, matching fabric straps with antique brass slide buckles, genuine leather straps with embossed metal buckles, nylon webbing with quick-release clips, and elastic stretch-fit bands."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you handle complete private label packaging and custom inner trims?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our private label turnkey service includes custom branded interior seam tape, woven or satin sweatband care labels, laser-engraved hardware, custom paper hang tags with retail barcodes, and individually sealed poly bags."
+        }
+      }
+    ]
+  };
+
+  const FAQS = [
+    {
+      q: "What is the real factory MOQ for custom hats in China?",
+      a: "Our standard production MOQ is 200 pieces per style/colorway. This threshold allows automated computer embroidery lines to run cost-effectively while giving emerging streetwear and apparel brands accessible factory-direct FOB pricing."
+    },
+    {
+      q: "How long does custom hat sampling and mass production take?",
+      a: "Pre-production physical samples take exactly 7 business days, including 3D digitizing and custom embroidery stitch-out. Bulk mass production takes 15 to 20 days depending on total order volume and custom trims. Express air shipping takes 5-8 days to North America and Western Europe."
+    },
+    {
+      q: "How do you protect international buyers against manufacturing defects or fraud?",
+      a: "We operate a 50,000 sqm SGS-audited facility with ISO 9001:2015 certification. We provide live video and photo updates at each stage (cutting, embroidery, sewing, steam ironing). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
+    },
+    {
+      q: "What is the typical FOB price range for custom baseball caps and truckers?",
+      a: "Direct factory FOB prices generally range from $3.50 to $7.00 per unit, depending on fabric (heavy cotton twill, organic canvas, nylon ripstop, or vintage corduroy), panel construction, and embroidery complexity (flat vs 3D puff embroidery)."
+    },
+    {
+      q: "What closure options are available for custom wholesale caps?",
+      a: "We offer 7-hole plastic snapbacks, matching fabric straps with antique brass slide buckles, genuine leather straps with embossed metal buckles, nylon webbing with quick-release clips, and elastic stretch-fit bands."
+    },
+    {
+      q: "Can you handle complete private label packaging and custom inner trims?",
+      a: "Yes. Our private label turnkey service includes custom branded interior seam tape, woven or satin sweatband care labels, laser-engraved hardware, custom paper hang tags with retail barcodes, and individually sealed poly bags."
+    }
+  ];
+
   return (
     <main className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -148,6 +231,37 @@ export default function GuidePage() {
           </div>
         </section>
       ))}
+
+      {/* Structured B2B Buyer FAQ Section — GEO Engineered */}
+      <section className="py-20 px-4 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-xs font-black uppercase tracking-[0.2em] text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+              Verified Factory Direct FAQs
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-gray-950 mt-4 tracking-tight">
+              Frequently Asked Questions for B2B Cap Buyers
+            </h2>
+            <p className="text-gray-600 mt-2 text-sm md:text-base">
+              Transparent answers regarding wholesale MOQs, sampling timelines, international shipping, and fraud protection.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {FAQS.map((faq, idx) => (
+              <div key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:border-gray-300 transition">
+                <h3 className="text-base md:text-lg font-black text-gray-900 mb-2 flex items-start gap-2">
+                  <span className="text-emerald-600 shrink-0">Q:</span>
+                  <span>{faq.q}</span>
+                </h3>
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed pl-6 border-l-2 border-emerald-200 mt-3">
+                  {faq.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="py-24 px-4 bg-black text-white text-center">
         <div className="max-w-2xl mx-auto">

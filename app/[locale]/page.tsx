@@ -696,6 +696,12 @@ export default function Home() {
             <span className="flex items-center gap-1.5 text-xs font-bold text-slate-600">
               <ShieldCheck size={16} className="text-emerald-600" /> {t("inquiry.trustLabel")}
             </span>
+            <span className="flex items-center gap-1.5 text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200/80 px-2.5 py-0.5 rounded-full">
+              <ShieldCheck size={14} className="text-blue-600" />
+              {lang === "es"
+                ? "Soporte de Pago Seguro: Garantía Comercial Alibaba (Trade Assurance) / Escrow"
+                : "Payment Protection: Alibaba Trade Assurance & Escrow Supported"}
+            </span>
           </div>
 
           {/* Quick intent selector for zero-cost high-conversion hooks */}

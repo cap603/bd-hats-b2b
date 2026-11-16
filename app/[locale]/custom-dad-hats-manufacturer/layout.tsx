@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Fabricante de Gorras Dad Personalizadas | Fábrica Directa"
-        : "Custom Dad Hats Manufacturer | Wholesale Unstructured Caps",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Fabricante de Gorras Dad Personalizadas | BD Hats"
+          : "Custom Dad Hats Manufacturer & Wholesale | BD Hats",
+    },
     description:
       locale === "es"
         ? "Gorras dad personalizadas directo de fábrica: 6 paneles sin estructura, lavado vintage. MOQ 200uds, $3.50-$6.80 FOB, muestras en 7 días y SGS verificado."

@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Fabricante de Gorros Bucket Personalizados | Sombreros de Pescador al por Mayor"
-        : "Custom Bucket Hats Manufacturer | Wholesale Fisherman Hats",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Fabricante de Gorros Bucket al por Mayor | BD Hats"
+          : "Custom Bucket Hats Manufacturer & Wholesale | BD Hats",
+    },
     description:
       locale === "es"
         ? "Gorros bucket personalizados directo de fábrica: sarga de algodón, pana, ripstop y reversibles. Bordado, parches e impresión. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días."

@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Gorras de Golf de Alto Rendimiento | Fábrica B2B"
-        : "Performance Golf Hats | Custom Manufacturer",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Gorras de Golf de Rendimiento al por Mayor | BD Hats"
+          : "Custom Performance Golf Hats Manufacturer | BD Hats",
+    },
     description:
       locale === "es"
         ? "Fabricante de gorras de golf personalizadas. Tejido DWR impermeable, perforación láser, logotipos de silicona y TPU, MOQ 200uds, FOB desde $5.20. Muestras rápidas."

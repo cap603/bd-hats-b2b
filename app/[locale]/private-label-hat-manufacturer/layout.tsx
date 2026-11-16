@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Fabricante de Gorras de Marca Privada | Fábrica en China"
-        : "Private Label Hat Manufacturer | Custom Branded Caps China",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Fabricante de Gorras Marca Privada | BD Hats"
+          : "Private Label Hat Manufacturer in China | BD Hats",
+    },
     description:
       locale === "es"
         ? "Fabricación de gorras de marca privada: etiquetas tejidas, colgantes, bolsas y empaque retail. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días y SGS verificado."

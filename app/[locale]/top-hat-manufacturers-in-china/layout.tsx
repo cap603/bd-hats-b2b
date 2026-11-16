@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Top Fabricantes de Gorras en China | Guía B2B 2026"
-        : "Top Custom Hat Manufacturers in China | 2026 B2B Sourcing Guide",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Top Fabricantes de Gorras en China 2026 | BD Hats"
+          : "Top Custom Hat Manufacturers in China 2026 | BD Hats",
+    },
     description:
       locale === "es"
         ? "Guía y comparativa de los mejores fabricantes de gorras en China 2026. Análisis de clústeres (Hebei, Guangdong, Zhejiang), MOQ, precios FOB y auditoría de calidad."

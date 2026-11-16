@@ -8,10 +8,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Fabricante de Gorras de 5 Paneles | Fábrica Directa"
-        : "Custom 5-Panel Caps Manufacturer | Wholesale 5 Panel Hats",
+    title: {
+      absolute:
+        locale === "es"
+          ? "Fabricante de Gorras de 5 Paneles | BD Hats"
+          : "Custom 5-Panel Caps Manufacturer & Wholesale | BD Hats",
+    },
     description:
       locale === "es"
         ? "Gorras de 5 paneles directo de fábrica: A-frame y camper, bordado 3D puff, más de 30 colores. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días y SGS verificado."
