@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { formatCountry } from "../../lib/country";
 import { sendWebhookNotification } from "../../lib/notify";
+import nodemailer from "nodemailer";
 
 export const runtime = "nodejs";
 
@@ -72,9 +73,8 @@ export async function POST(req: NextRequest) {
     }
     console.log("==========================================");
 
-    // 2. Email Notification Pipeline (Resend API)
-    const resendApiKey = process.env.RESEND_API_KEY;
-    const recipientEmail = process.env.INQUIRY_RECIPIENT || "3779980382@qq.com";
+    // 2. Email Notification Pipeline (SMTP Direct + Resend API Fallback)
+    const recipientEmail = process.env.INQUIRY_RECIPIENT || "admin@bdjunyang.com";
 
     // Extract buyer geography from edge headers
     const countryCode =
@@ -95,80 +95,149 @@ export async function POST(req: NextRequest) {
         second: "2-digit",
       }) + " (北京时间)";
 
-    if (resendApiKey) {
+    const emailSubject = `[New Inquiry] ${name} (${countryText || "Overseas"}) — B2B Custom Hats Requirements (${inquiryId})`;
+    const emailHtml = `
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 620px; margin: 0 auto; padding: 24px; border: 1px solid #e2e8f0; border-radius: 8px; background-color: #ffffff;">
+        <div style="background-color: #0f172a; padding: 18px 24px; border-radius: 6px; margin-bottom: 24px;">
+          <h2 style="color: #ffffff; margin: 0; font-size: 18px; font-weight: 700;">收到网站新定制询盘 (B2B Lead)</h2>
+          <span style="color: #94a3b8; font-size: 12px; display: inline-block; margin-top: 4px;">编号: ${inquiryId} • ${timeStr}</span>
+        </div>
+        
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+          <tr>
+            <td style="padding: 10px 0; color: #64748b; font-size: 13px; width: 140px; border-bottom: 1px solid #f1f5f9;"><strong>客户姓名 (Name):</strong></td>
+            <td style="padding: 10px 0; color: #0f172a; font-size: 14px; font-weight: 700; border-bottom: 1px solid #f1f5f9;">${name}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px 0; color: #64748b; font-size: 13px; border-bottom: 1px solid #f1f5f9;"><strong>客户邮箱 (Email):</strong></td>
+            <td style="padding: 10px 0; color: #0f172a; font-size: 14px; border-bottom: 1px solid #f1f5f9;">
+              <a href="mailto:${email}" style="color: #2563eb; font-weight: 600; text-decoration: none;">${email}</a>
+              <span style="color: #64748b; font-size: 12px; margin-left: 8px;">(可直接在邮件中点击“回复”联系买家)</span>
+            </td>
+          </tr>
+          ${phone ? `
+          <tr>
+            <td style="padding: 10px 0; color: #64748b; font-size: 13px; border-bottom: 1px solid #f1f5f9;"><strong>电话 / WhatsApp:</strong></td>
+            <td style="padding: 10px 0; color: #0f172a; font-size: 14px; font-weight: 600; border-bottom: 1px solid #f1f5f9;">${phone}</td>
+          </tr>
+          ` : ""}
+          <tr>
+            <td style="padding: 10px 0; color: #64748b; font-size: 13px; border-bottom: 1px solid #f1f5f9;"><strong>买家国家 (Region):</strong></td>
+            <td style="padding: 10px 0; color: #0f172a; font-size: 14px; border-bottom: 1px solid #f1f5f9;">${countryText}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px 0; color: #64748b; font-size: 13px; border-bottom: 1px solid #f1f5f9;"><strong>访问语种 (Locale):</strong></td>
+            <td style="padding: 10px 0; color: #0f172a; font-size: 13px; border-bottom: 1px solid #f1f5f9;">${locale.toUpperCase()}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px 0; color: #64748b; font-size: 13px; border-bottom: 1px solid #f1f5f9;"><strong>来源网页 (URL):</strong></td>
+            <td style="padding: 10px 0; color: #0f172a; font-size: 13px; border-bottom: 1px solid #f1f5f9;"><a href="${url || "/"}" style="color: #64748b; text-decoration: none;">${url || "/"}</a></td>
+          </tr>
+        </table>
+
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 18px; margin-bottom: 20px;">
+          <h4 style="margin: 0 0 10px 0; font-size: 12px; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">客户定制需求 (Custom Requirements)</h4>
+          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #1e293b; white-space: pre-wrap;">${message}</p>
+        </div>
+
+        ${attribution.length > 0 ? `
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 12px; margin-top: 15px;">
+          <h5 style="margin: 0 0 6px 0; font-size: 11px; color: #94a3b8; text-transform: uppercase;">引流渠道与归因 (Traffic Attribution)</h5>
+          <p style="margin: 0; font-size: 11px; color: #64748b; line-height: 1.4;">${attribution.join("<br>")}</p>
+        </div>
+        ` : ""}
+
+        <div style="text-align: center; margin-top: 25px; padding-top: 15px; border-top: 1px solid #e2e8f0; font-size: 12px; color: #94a3b8;">
+          Baoding Junyang Hat Manufacturing Co., Ltd. • 官方询盘自动分发系统
+        </div>
+      </div>
+    `;
+
+    // 2.1 Attempt SMTP dispatch if configured (e.g. 263 企业邮箱 smtp.263.net)
+    let emailSent = false;
+    const smtpPass = process.env.SMTP_PASSWORD || process.env.SMTP_PASS;
+    if (smtpPass) {
       try {
-        const emailHtml = `
-          <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px;">
-            <div style="background-color: #0f172a; padding: 16px 20px; border-radius: 6px; margin-bottom: 20px;">
-              <h2 style="color: #ffffff; margin: 0; font-size: 18px;">New B2B Inquiry — BD Junyang Hats</h2>
-              <span style="color: #94a3b8; font-size: 12px;">ID: ${inquiryId} • ${timestamp}</span>
-            </div>
-            
-            <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
-              <tr>
-                <td style="padding: 8px 0; color: #64748b; font-size: 13px; width: 120px;"><strong>Client Name:</strong></td>
-                <td style="padding: 8px 0; color: #0f172a; font-size: 14px; font-weight: bold;">${name}</td>
-              </tr>
-              <tr>
-                <td style="padding: 8px 0; color: #64748b; font-size: 13px;"><strong>Client Email:</strong></td>
-                <td style="padding: 8px 0; color: #0f172a; font-size: 14px;"><a href="mailto:${email}" style="color: #2563eb; text-decoration: none;">${email}</a></td>
-              </tr>
-              ${phone ? `
-              <tr>
-                <td style="padding: 8px 0; color: #64748b; font-size: 13px;"><strong>Phone / WhatsApp:</strong></td>
-                <td style="padding: 8px 0; color: #0f172a; font-size: 14px;">${phone}</td>
-              </tr>
-              ` : ""}
-              <tr>
-                <td style="padding: 8px 0; color: #64748b; font-size: 13px;"><strong>Country / Region:</strong></td>
-                <td style="padding: 8px 0; color: #0f172a; font-size: 13px;">${countryText}</td>
-              </tr>
-              <tr>
-                <td style="padding: 8px 0; color: #64748b; font-size: 13px;"><strong>Language:</strong></td>
-                <td style="padding: 8px 0; color: #0f172a; font-size: 13px;">${locale.toUpperCase()}</td>
-              </tr>
-              <tr>
-                <td style="padding: 8px 0; color: #64748b; font-size: 13px;"><strong>Page URL:</strong></td>
-                <td style="padding: 8px 0; color: #0f172a; font-size: 13px;">${url || "/"}</td>
-              </tr>
-            </table>
+        const smtpPort = Number(process.env.SMTP_PORT) || 465;
+        const transporter = nodemailer.createTransport({
+          host: process.env.SMTP_HOST || "smtp.263.net",
+          port: smtpPort,
+          secure: process.env.SMTP_SECURE ? process.env.SMTP_SECURE === "true" : smtpPort === 465,
+          auth: {
+            user: process.env.SMTP_USER || "admin@bdjunyang.com",
+            pass: smtpPass,
+          },
+        });
 
-            <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 15px; margin-bottom: 20px;">
-              <h4 style="margin: 0 0 10px 0; font-size: 13px; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;">Custom Requirements</h4>
-              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #1e293b; white-space: pre-wrap;">${message}</p>
-            </div>
+        await transporter.sendMail({
+          from: `"${process.env.SMTP_FROM_NAME || "BD Junyang Inquiries"}" <${process.env.SMTP_USER || "admin@bdjunyang.com"}>`,
+          to: recipientEmail,
+          replyTo: `"${name}" <${email}>`,
+          subject: emailSubject,
+          html: emailHtml,
+        });
 
-            ${attribution.length > 0 ? `
-            <div style="border-top: 1px solid #e2e8f0; padding-top: 12px; margin-top: 15px;">
-              <h5 style="margin: 0 0 6px 0; font-size: 11px; color: #94a3b8; text-transform: uppercase;">Traffic & Attribution</h5>
-              <p style="margin: 0; font-size: 11px; color: #64748b; line-height: 1.4;">${attribution.join("<br>")}</p>
-            </div>
-            ` : ""}
+        emailSent = true;
+        console.log(`[SMTP EMAIL SENT] Successfully delivered to ${recipientEmail} via SMTP`);
+      } catch (err) {
+        console.error("[SMTP EMAIL ERROR]", err);
+      }
+    }
 
-            <div style="text-align: center; margin-top: 25px; padding-top: 15px; border-top: 1px solid #e2e8f0; font-size: 12px; color: #94a3b8;">
-              Baoding Junyang Hat Manufacturing Co., Ltd. • Automated Lead Dispatcher
-            </div>
-          </div>
-        `;
-
-        await fetch("https://api.resend.com/emails", {
+    // 2.2 Attempt Resend API fallback if SMTP not configured or failed
+    const resendApiKey = process.env.RESEND_API_KEY;
+    if (!emailSent && resendApiKey) {
+      try {
+        const defaultFrom = process.env.RESEND_FROM || "BD Junyang Inquiries <onboarding@resend.dev>";
+        let res = await fetch("https://api.resend.com/emails", {
           method: "POST",
           headers: {
             "Authorization": `Bearer ${resendApiKey}`,
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: process.env.RESEND_FROM || "BD Junyang Inquiries <onboarding@resend.dev>",
+            from: defaultFrom,
             to: [recipientEmail],
             reply_to: email,
-            subject: `[New Inquiry] ${name} (${countryCode || "Overseas"}) — B2B Custom Hats Requirements (${inquiryId})`,
+            subject: emailSubject,
             html: emailHtml,
           }),
         });
-        console.log(`[RESEND EMAIL SENT] Dispatched to ${recipientEmail}`);
+
+        // Fallback retry with onboarding@resend.dev if custom from fails
+        if (!res.ok && defaultFrom !== "onboarding@resend.dev") {
+          const firstErr = await res.json().catch(() => ({}));
+          console.warn("[RESEND PRIMARY ATTEMPT FAILED, RETRYING WITH ONBOARDING]", firstErr);
+          res = await fetch("https://api.resend.com/emails", {
+            method: "POST",
+            headers: {
+              "Authorization": `Bearer ${resendApiKey}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              from: "BD Junyang Inquiries <onboarding@resend.dev>",
+              to: [recipientEmail],
+              reply_to: email,
+              subject: emailSubject,
+              html: emailHtml,
+            }),
+          });
+        }
+
+        if (res.ok) {
+          emailSent = true;
+          console.log(`[RESEND EMAIL SENT] Dispatched to ${recipientEmail}`);
+        } else {
+          const errorData = await res.json().catch(() => ({}));
+          console.error("[RESEND API ERROR RESPONSE]", errorData);
+        }
       } catch (err) {
         console.error("[RESEND EMAIL ERROR]", err);
       }
+    }
+
+    if (!emailSent && !smtpPass && !resendApiKey) {
+      console.warn("[EMAIL NOT CONFIGURED] Neither SMTP_PASSWORD nor RESEND_API_KEY is configured. Only Webhook dispatched.");
     }
 
     // 3. Webhook Integration Pipeline (DingTalk / Feishu / WeCom)
