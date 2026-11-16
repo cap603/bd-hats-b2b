@@ -62,6 +62,25 @@ const CONTENT = {
       { n: "02", t: "Confirm the sample", d: "We send one blank sample per style in 7 days so you can test decoration, fit and shrinkage first." },
       { n: "03", t: "Bulk & ship", d: "15-20 days production, then air express (5-8 days) or sea freight. Packing list and QC photos before dispatch." },
     ],
+    faqsTitle: "Blank Caps Wholesale FAQs",
+    faqs: [
+      {
+        q: "What is the minimum order quantity (MOQ) for unbranded blank caps?",
+        a: "Our MOQ is 200 pieces per style/colorway for in-stock cotton twill and polyester fabrics. You can combine sizes or request neutral inner tags without incurring custom setup fees.",
+      },
+      {
+        q: "Can you provide custom Pantone-dyed blank fabric for large programs?",
+        a: "Yes. For volume buyers ordering 1,000+ pieces per colorway, we offer custom dye-to-match fabric service matching your exact Pantone TPX/TCX color codes.",
+      },
+      {
+        q: "Are the blank caps pre-treated for direct-to-film (DTF) or screen printing?",
+        a: "Yes, our seamless 5-panel and flat-brim 6-panel blank hats use high-density combed cotton with low fuzz, making them ideal for high-heat DTF transfers, screen printing, and third-party embroidery.",
+      },
+      {
+        q: "What packaging is used to prevent brim distortion during international transit?",
+        a: "Every 25 caps are stacked with protective cardboard inserts and packed into moisture-resistant inner boxes before loading into 5-ply reinforced export cartons.",
+      },
+    ],
     stylesTitle: "Blank & Ready-to-Decorate Styles",
     products: [
       {
@@ -275,6 +294,29 @@ export default function BlankCapsPage() {
           <ProductLinks items={c.products} />
         </div>
       </section>
+
+      {/* Blank Caps FAQ Section */}
+      {"faqs" in c && Array.isArray((c as any).faqs) && (
+        <section className="py-16 px-4 bg-white border-b border-gray-100">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-8 text-center text-gray-950">
+              {(c as any).faqsTitle || "Frequently Asked Questions"}
+            </h2>
+            <div className="space-y-4">
+              {((c as any).faqs as Array<{ q: string; a: string }>).map((f, idx) => (
+                <div key={idx} className="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+                  <h3 className="text-base md:text-lg font-black text-gray-900 mb-2">
+                    {f.q}
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-700 leading-relaxed border-l-2 border-emerald-300 pl-4">
+                    {f.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </LandingShell>
   );
 }

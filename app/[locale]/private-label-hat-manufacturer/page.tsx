@@ -82,6 +82,25 @@ const CONTENT = {
       { value: "200 Pcs", label: "Per style / color" },
       { value: "No Tooling Fee", label: "On labels & tags" },
     ],
+    faqsTitle: "Private Label Hat Manufacturing FAQs",
+    faqs: [
+      {
+        q: "How does private label differ from buying generic blanks?",
+        a: "Private label gives you a complete turnkey retail product: your custom woven damask labels sewn into the sweatband, branded interior seam tape, barcode hang tags, and custom poly bags. There is zero trace of our factory name.",
+      },
+      {
+        q: "What is the minimum order quantity (MOQ) for full private label custom trims?",
+        a: "We maintain our standard low MOQ of 200 pieces per style/colorway. We produce your labels and tags in batches of 1,000+ at zero tooling cost and hold remaining inventory for your subsequent reorders.",
+      },
+      {
+        q: "Can you pre-label cartons with Amazon FNSKU and retail shipping marks?",
+        a: "Yes. We directly print and apply Amazon FBA carton labels, individual SKU barcodes, and pallet shipping marks so goods arrive dock-ready for international warehouses.",
+      },
+      {
+        q: "What design file formats do you need to create private label trims?",
+        a: "Vector files in Adobe Illustrator (.AI) or high-resolution PDF format with fonts outlined and Pantone Solid Coated (TPX/TCX) color codes specified.",
+      },
+    ],
     stylesTitle: "Styles Most Often Private Labelled",
     products: [
       {
@@ -325,6 +344,29 @@ export default function PrivateLabelPage() {
           <ProductLinks items={c.products} />
         </div>
       </section>
+
+      {/* Private Label FAQs */}
+      {"faqs" in c && Array.isArray((c as any).faqs) && (
+        <section className="py-16 px-4 bg-white border-b border-gray-100">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-8 text-center text-gray-950">
+              {(c as any).faqsTitle || "Frequently Asked Questions"}
+            </h2>
+            <div className="space-y-4">
+              {((c as any).faqs as Array<{ q: string; a: string }>).map((f, idx) => (
+                <div key={idx} className="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+                  <h3 className="text-base md:text-lg font-black text-gray-900 mb-2">
+                    {f.q}
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-700 leading-relaxed border-l-2 border-emerald-300 pl-4">
+                    {f.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </LandingShell>
   );
 }
