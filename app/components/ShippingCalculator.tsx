@@ -67,11 +67,11 @@ const DICT: Record<string, {
     oceanFreight: "Ocean LCL / FCL Container · 25-35 Days (Lowest Landed Cost)",
     guaranteeBadge: "Zero Risk Sourcing",
     guaranteeTitle: "100% Refundable Sampling Guarantee",
-    guaranteeDesc: "Test factory quality with zero dead investment. Your initial sample development fee is 100% credited back onto your bulk invoice upon order confirmation.",
+    guaranteeDesc: "Test factory quality with zero dead investment. When your bulk order reaches 500+ units (≥ 500 pcs), your initial sample development fee is 100% credited back onto your bulk invoice.",
     guaranteePoints: [
       "7-Day rapid sample dispatch via DHL/FedEx",
       "Full digital stitch-out video proof before physical shipping",
-      "Sample fee 100% reimbursed on bulk production (MOQ ≥ 200 pcs)"
+      "Sample fee 100% reimbursed on bulk production (Order ≥ 500 pcs)"
     ],
     ctaBtn: "Get Landed Quote with this Packing Spec"
   },
@@ -101,11 +101,11 @@ const DICT: Record<string, {
     oceanFreight: "Transporte Marítimo LCL / FCL · 25-35 Días (Menor Coste)",
     guaranteeBadge: "Compra Sin Riesgo",
     guaranteeTitle: "Garantía de Muestra 100% Reembolsable",
-    guaranteeDesc: "Pruebe la calidad de fábrica sin riesgo. El coste de desarrollo de muestra se reembolsa al 100% en la factura de producción al confirmar el pedido.",
+    guaranteeDesc: "Pruebe la calidad de fábrica sin riesgo. Para pedidos a partir de 500 unidades (≥ 500 pzs), el coste de desarrollo de muestra se reembolsa al 100% en la factura de producción.",
     guaranteePoints: [
       "Envío de muestras rápido en 7 días vía DHL/FedEx",
       "Vídeo HD y prueba digital de bordado antes del envío",
-      "Coste de muestra 100% deducido en producción (MOQ ≥ 200 pzs)"
+      "Coste de muestra 100% deducido en pedidos de 500+ pzs (≥ 500 pzs)"
     ],
     ctaBtn: "Solicitar Cotización con esta Especificación"
   },
@@ -135,11 +135,11 @@ const DICT: Record<string, {
     oceanFreight: "Seefracht LCL / FCL · 25-35 Tage (Günstigste Frachtkosten)",
     guaranteeBadge: "Risikofreie Beschaffung",
     guaranteeTitle: "100% Erstattbare Muster-Garantie",
-    guaranteeDesc: "Testen Sie unsere Fabrikqualität ohne Risiko. Die Mustererstellungsgebühr wird bei Großauftragsbestätigung zu 100% auf die Rechnung gutgeschrieben.",
+    guaranteeDesc: "Testen Sie unsere Fabrikqualität ohne Risiko. Ab einer Großauftragsmenge von 500 Stück (≥ 500 Stück) werden Ihre Musterkosten zu 100% auf die Gesamtrechnung angerechnet.",
     guaranteePoints: [
       "7 Tage Musterschnellfertigung & Versand via DHL/FedEx",
       "HD-Stickvideonachweis vor physischem Versand",
-      "100% Mustervergütung bei Großserie (MOQ ≥ 200 Stück)"
+      "100% Mustervergütung bei Großbestellungen ab 500 Stück (≥ 500 Stück)"
     ],
     ctaBtn: "Angebot mit diesen Verpackungsdaten anfordern"
   },
@@ -169,11 +169,11 @@ const DICT: Record<string, {
     oceanFreight: "Fret Maritime LCL / FCL · 25-35 Jours (Coût le plus bas)",
     guaranteeBadge: "Sourcing Sans Risque",
     guaranteeTitle: "Garantie Échantillon 100% Remboursable",
-    guaranteeDesc: "Testez notre qualité industrielle sans risque. Les frais de développement d'échantillon sont déduits à 100% sur votre facture de production finale.",
+    guaranteeDesc: "Testez notre qualité industrielle sans risque. Pour toute commande d'au moins 500 pièces (≥ 500 pcs), les frais de développement d'échantillon sont déduits à 100% sur votre facture de production finale.",
     guaranteePoints: [
       "Production d'échantillon express en 7 jours via DHL/FedEx",
       "Validation vidéo HD de broderie avant expédition physique",
-      "Frais d'échantillon déduits à 100% en production (MOQ ≥ 200 pcs)"
+      "Frais d'échantillon déduits à 100% pour commandes de 500+ pcs (≥ 500 pcs)"
     ],
     ctaBtn: "Obtenir un Devis avec ces Spécifications"
   },
@@ -203,11 +203,11 @@ const DICT: Record<string, {
     oceanFreight: "Transporte Marítimo LCL / FCL · 25-35 Dias (Menor Custo)",
     guaranteeBadge: "Compra Sem Risco",
     guaranteeTitle: "Garantia de Amostra 100% Reembolsável",
-    guaranteeDesc: "Teste a qualidade de fábrica sem riscos. O valor da amostra é 100% creditado na sua fatura de produção em massa ao confirmar o pedido.",
+    guaranteeDesc: "Teste a qualidade de fábrica sem riscos. Para pedidos a partir de 500 peças (≥ 500 pcs), o valor investido na amostra é 100% creditado na sua fatura de produção em massa.",
     guaranteePoints: [
       "Envio rápido de amostras em 7 dias via DHL/FedEx",
       "Vídeo em alta definição antes do envio físico",
-      "Valor da amostra 100% abatido na produção (MOQ ≥ 200 pcs)"
+      "Valor da amostra 100% abatido em pedidos a partir de 500 pcs (≥ 500 pcs)"
     ],
     ctaBtn: "Solicitar Cotação com estas Especificações"
   },
@@ -237,11 +237,11 @@ const DICT: Record<string, {
     oceanFreight: "Spedizione Marittima LCL / FCL · 25-35 Giorni (Miglior Costo)",
     guaranteeBadge: "Acquisto a Rischio Zero",
     guaranteeTitle: "Garanzia Campione Rimborsabile al 100%",
-    guaranteeDesc: "Verifica la qualità industriale senza rischi. Il costo del campione ti viene rimborsato al 100% nella fattura finale di produzione.",
+    guaranteeDesc: "Verifica la qualità industriale senza rischi. Per ordini a partire da 500 pezzi (≥ 500 pz), il costo del campione ti viene rimborsato al 100% nella fattura finale di produzione.",
     guaranteePoints: [
       "Spedizione del campione in soli 7 giorni con corriere DHL/FedEx",
       "Video prova di ricamo ad alta definizione prima della spedizione",
-      "Costo del campione detratto al 100% sull'ordine (MOQ ≥ 200 pz)"
+      "Costo del campione detratto al 100% per ordini da 500+ pz (≥ 500 pz)"
     ],
     ctaBtn: "Richiedi Preventivo con queste Specifiche"
   },
@@ -271,11 +271,11 @@ const DICT: Record<string, {
     oceanFreight: "海上コンテナ混載 (LCL) / 専属 (FCL) · 25-35日（最も安価）",
     guaranteeBadge: "リスクゼロ発注保証",
     guaranteeTitle: "サンプル代金100%返還・充当保証",
-    guaranteeDesc: "工場直販の確かな品質を安心してお試しいただけます。本生産発注時（MOQ 200個以上）、初回試作にかかったサンプル製作費を全額一括値引きいたします。",
+    guaranteeDesc: "工場直販の確かな品質を安心してお試しいただけます。大口発注時（500個以上）、初回試作にかかったサンプル製作費を全額一括値引きいたします。",
     guaranteePoints: [
       "7営業日での超高速サンプル出荷（DHL / FedEx 直送）",
       "発送前に工場内高精度刺繍のHD動画確認を実施",
-      "本生産確定時にサンプル代金を100%全額相殺返還"
+      "大口発注（500個以上）確定時にサンプル代金を100%全額相殺返還"
     ],
     ctaBtn: "この梱包仕様で概算見積を依頼する"
   }
@@ -503,6 +503,35 @@ export function ShippingCalculator({
         <p className="text-xs text-slate-300 leading-relaxed mb-3">
           {d.guaranteeDesc}
         </p>
+        <div className="mb-3">
+          {qty >= 500 ? (
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+              <CheckCircle2 size={13} className="text-emerald-400" />
+              {lang === "es"
+                ? `¡Su cantidad actual (${qty} pzs) CUMPLE con el reembolso del 100% de la muestra!`
+                : lang === "de"
+                ? `Ihre aktuelle Menge (${qty} Stk.) QUALIFIZIERT für 100% Mustervergütung!`
+                : lang === "fr"
+                ? `Votre quantité actuelle (${qty} pcs) BÉNÉFICIE de la déduction à 100% de l'échantillon!`
+                : lang === "ja"
+                ? `現在の発注数量（${qty}個）はサンプル代100%全額値引きの適用対象です！`
+                : `Your current order (${qty} pcs) QUALIFIES for 100% sample fee reimbursement!`}
+            </span>
+          ) : (
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-300 border border-amber-500/30">
+              <Sparkles size={13} className="text-amber-400" />
+              {lang === "es"
+                ? `Consejo: Ordene 500+ piezas para deducir el 100% del coste de muestra en su factura.`
+                : lang === "de"
+                ? `Tipp: Erhöhen Sie auf 500+ Stück, um 100% der Mustergebühr erstattet zu bekommen.`
+                : lang === "fr"
+                ? `Conseil: Commandez 500+ pièces pour déduire 100% des frais d'échantillon.`
+                : lang === "ja"
+                ? `ヒント: 500個以上のご発注で、初回サンプル代が100%全額相殺されます。`
+                : `Pro Tip: Order 500+ pieces to have your entire sample development fee credited back.`}
+            </span>
+          )}
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
           {d.guaranteePoints.map((pt, idx) => (
             <div key={idx} className="flex items-start gap-2 text-[11px] text-slate-300">

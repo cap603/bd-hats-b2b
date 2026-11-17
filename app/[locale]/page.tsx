@@ -808,103 +808,131 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-gray-500 py-16 px-4 border-t border-gray-900">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
-          <div className="max-w-sm">
+      <footer className="bg-black text-gray-500 py-12 px-4 border-t border-gray-900">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 items-start">
+          {/* Col 1: Brand & Factory Profile */}
+          <div className="space-y-4">
             <img 
               src="/images/brand/junyang-logo.webp" 
               alt="JUNYANG Logo" 
-              className="h-16 w-auto object-contain mb-4"
+              className="h-14 w-auto object-contain"
             />
-            <p className="text-sm mt-3 leading-relaxed">{ft("about")}</p>
+            <p className="text-xs text-gray-400 leading-relaxed">{ft("about")}</p>
+            <div className="pt-3 border-t border-gray-900 text-[11px] text-gray-500 space-y-1">
+              <p className="font-semibold text-gray-400">Direct Super Factory · OEM/ODM</p>
+              <p>Exporting to US, EU & AU since 2014</p>
+            </div>
           </div>
-          <div className="grid grid-cols-2 gap-12">
-            <div>
-              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{ft("navigation")}</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#advantages" className="hover:text-white">{n("advantages")}</a></li>
-                <li><a href="#factory" className="hover:text-white">{n("factory")}</a></li>
-                <li><a href="#catalog" className="hover:text-white">{ft("products")}</a></li>
-                <li><a href={`/${lang}/custom-hat-tech-pack-template`} className="hover:text-white text-yellow-400 font-bold">Vector Tech Pack Guide</a></li>
-                <li><a href={`/${lang}/custom-hat-cost-index-2026`} className="hover:text-white">2026 Hat Cost Index</a></li>
-                <li><a href={`/${lang}/about`} className="hover:text-white">{ft("aboutLink")}</a></li>
-            <li><a href={`/${lang}/guide`} className="hover:text-white">{ft("guideLink")}</a></li>
-            <li><a href={`/${lang}/wholesale-snapbacks`} className="hover:text-white">Wholesale Snapbacks</a></li>
-            <li><a href={`/${lang}/custom-trucker-hats`} className="hover:text-white">Custom Trucker Hats</a></li>
-            <li><a href={`/${lang}/oem-hat-manufacturer`} className="hover:text-white">OEM Hat Manufacturing</a></li>
-            <li><a href={`/${lang}/private-label-hat-manufacturer`} className="hover:text-white">Private Label Hats</a></li>
-            <li><a href={`/${lang}/custom-dad-hats-manufacturer`} className="hover:text-white">Custom Dad Hats</a></li>
-            <li><a href={`/${lang}/custom-5-panel-caps-manufacturer`} className="hover:text-white">Custom 5-Panel Caps</a></li>
-            <li><a href={`/${lang}/wholesale-blank-caps-supplier`} className="hover:text-white">Wholesale Blank Caps</a></li>
-            <li><a href={`/${lang}/corporate-custom-hats-supplier`} className="hover:text-white">Corporate Custom Hats</a></li>
-            <li><a href={`/${lang}/bulk-custom-hats-manufacturer`} className="hover:text-white">Bulk Hat Production</a></li>
-            <li><a href={`/${lang}/custom-beanies-manufacturer`} className="hover:text-white">Custom Beanies</a></li>
-            <li><a href={`/${lang}/custom-bucket-hats-manufacturer`} className="hover:text-white">Custom Bucket Hats</a></li>
-            <li><a href={`/${lang}/compare/5-panel-vs-6-panel-caps`} className="hover:text-white">5-Panel vs 6-Panel Caps</a></li>
-            <li><a href={`/${lang}/compare/flat-embroidery-vs-3d-puff`} className="hover:text-white">Flat vs 3D Puff Embroidery</a></li>
-            <li><a href={`/${lang}/compare/cotton-twill-vs-brushed-cotton-vs-canvas`} className="hover:text-white">Twill vs Brushed Cotton vs Canvas</a></li>
-            <li><a href={`/${lang}/compare/snapback-vs-strapback-vs-buckle`} className="hover:text-white">Snapback vs Strapback vs Buckle</a></li>
-            <li><a href={`/${lang}/compare/china-vs-vietnam-vs-bangladesh-hat-sourcing`} className="hover:text-white">China vs Vietnam vs Bangladesh</a></li>
-                <li><a href="#inquiry" className="hover:text-white">{ft("requestQuote")}</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">{ft("contact")}</h4>
-              <ul className="space-y-2 text-sm">
-                <li className="text-gray-400">
-                  <a
-                    href={`https://wa.me/8615933930830?text=${encodeURIComponent(
-                      lang === "es"
-                        ? "¡Hola Baoding Junyang! Me gustaría solicitar información y cotización para fabricación de gorras personalizadas (MOQ 200 uds)."
-                        : "Hi Baoding Junyang! I would like to inquire about custom hat manufacturing and get a quote (MOQ 200pcs)."
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() =>
-                      trackWhatsAppClick({
-                        button: "footer_whatsapp_link",
-                        label: "Homepage Footer Contact",
-                      })
-                    }
-                    className="hover:text-white transition"
-                  >
-                    {ft("whatsapp")}
-                  </a>
-                </li>
-                <li className="text-gray-400">
-                  <a href="mailto:admin@bdjunyang.com" className="hover:text-white transition">
-                    {ft("email")}
-                  </a>
-                </li>
-                <li className="text-gray-400">{ft("office")}</li>
-              </ul>
-              <div className="mt-4 pt-3 flex items-center gap-3">
+
+          {/* Col 2: Custom Headwear Categories */}
+          <div>
+            <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-3">Custom Headwear</h4>
+            <ul className="space-y-2 text-xs">
+              <li><a href={`/${lang}/wholesale-snapbacks`} className="hover:text-white transition">Wholesale Snapbacks</a></li>
+              <li><a href={`/${lang}/custom-trucker-hats`} className="hover:text-white transition">Custom Trucker Hats</a></li>
+              <li><a href={`/${lang}/custom-dad-hats-manufacturer`} className="hover:text-white transition">Custom Dad Hats</a></li>
+              <li><a href={`/${lang}/custom-5-panel-caps-manufacturer`} className="hover:text-white transition">Custom 5-Panel Caps</a></li>
+              <li><a href={`/${lang}/custom-beanies-manufacturer`} className="hover:text-white transition">Custom Beanies</a></li>
+              <li><a href={`/${lang}/custom-bucket-hats-manufacturer`} className="hover:text-white transition">Custom Bucket Hats</a></li>
+              <li><a href={`/${lang}/bulk-custom-hats-manufacturer`} className="hover:text-white transition">Bulk & Corporate Orders</a></li>
+            </ul>
+          </div>
+
+          {/* Col 3: Sourcing Guides & Comparisons */}
+          <div>
+            <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-3">B2B Sourcing Guides</h4>
+            <ul className="space-y-2 text-xs">
+              <li>
+                <a href={`/${lang}/custom-hat-tech-pack-template`} className="text-yellow-400 hover:text-yellow-300 font-bold transition flex items-center gap-1">
+                  <span>Vector Tech Pack Guide</span>
+                  <span className="text-[10px] bg-yellow-400/20 text-yellow-300 px-1 py-0.2 rounded font-normal">Free AI/PDF</span>
+                </a>
+              </li>
+              <li><a href={`/${lang}/custom-hat-cost-index-2026`} className="hover:text-white transition">2026 Hat Cost Index</a></li>
+              <li><a href={`/${lang}/top-hat-manufacturers-in-china`} className="hover:text-white transition">Top Hat Manufacturers</a></li>
+              <li><a href={`/${lang}/compare/5-panel-vs-6-panel-caps`} className="hover:text-white transition">5-Panel vs 6-Panel Caps</a></li>
+              <li><a href={`/${lang}/compare/flat-embroidery-vs-3d-puff`} className="hover:text-white transition">Flat vs 3D Puff Embroidery</a></li>
+              <li><a href={`/${lang}/compare/cotton-twill-vs-brushed-cotton-vs-canvas`} className="hover:text-white transition">Cotton Twill vs Canvas</a></li>
+              <li><a href={`/${lang}/compare/china-vs-vietnam-vs-bangladesh-hat-sourcing`} className="hover:text-white transition">China vs Vietnam vs Bangladesh</a></li>
+            </ul>
+          </div>
+
+          {/* Col 4: Contact & Factory Desk */}
+          <div>
+            <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-3">{ft("contact")}</h4>
+            <ul className="space-y-2 text-xs text-gray-400">
+              <li>
                 <a
-                  href="https://www.facebook.com/p/Baoding-Junyang-Import-And-Export-Trade-Co-Ltd-100079978783412/"
+                  href={`https://wa.me/8615933930830?text=${encodeURIComponent(
+                    lang === "es"
+                      ? "¡Hola Baoding Junyang! Me gustaría solicitar información y cotización para fabricación de gorras personalizadas (MOQ 200 uds)."
+                      : "Hi Baoding Junyang! I would like to inquire about custom hat manufacturing and get a quote (MOQ 200pcs)."
+                  )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full bg-white/5 hover:bg-blue-600/20 hover:text-blue-400 text-gray-400 flex items-center justify-center transition border border-white/10"
-                  aria-label="Facebook Page"
-                  title="Follow us on Facebook"
+                  onClick={() =>
+                    trackWhatsAppClick({
+                      button: "footer_whatsapp_link",
+                      label: "Homepage Footer Contact",
+                    })
+                  }
+                  className="hover:text-white transition flex items-center gap-1.5"
                 >
-                  <Facebook size={16} />
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+                  <span>WhatsApp: +86 159 3393 0830</span>
                 </a>
-                <a
-                  href="https://www.linkedin.com/company/146738106/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full bg-white/5 hover:bg-blue-500/20 hover:text-blue-300 text-gray-400 flex items-center justify-center transition border border-white/10"
-                  aria-label="LinkedIn Company Page"
-                  title="Connect on LinkedIn"
-                >
-                  <Linkedin size={16} />
+              </li>
+              <li>
+                <a href="mailto:admin@bdjunyang.com" className="hover:text-white transition flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0"></span>
+                  <span>Email: admin@bdjunyang.com</span>
                 </a>
-              </div>
+              </li>
+              <li className="text-gray-400 flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-slate-500 shrink-0"></span>
+                <span>Office: Baoding, Hebei, China</span>
+              </li>
+            </ul>
+
+            <div className="mt-4 pt-3 flex items-center gap-3">
+              <a
+                href="https://www.facebook.com/p/Baoding-Junyang-Import-And-Export-Trade-Co-Ltd-100079978783412/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-full bg-white/5 hover:bg-blue-600/20 hover:text-blue-400 text-gray-400 flex items-center justify-center transition border border-white/10"
+                aria-label="Facebook Page"
+                title="Follow us on Facebook"
+              >
+                <Facebook size={15} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/146738106/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-full bg-white/5 hover:bg-blue-500/20 hover:text-blue-300 text-gray-400 flex items-center justify-center transition border border-white/10"
+                aria-label="LinkedIn Company Page"
+                title="Connect on LinkedIn"
+              >
+                <Linkedin size={15} />
+              </a>
             </div>
+
+            <a
+              href="#inquiry"
+              className="mt-4 inline-flex items-center justify-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white font-bold px-3.5 py-2 rounded-lg text-xs transition shadow-sm cursor-pointer"
+            >
+              <span>{ft("requestQuote")}</span>
+              <ArrowRight size={13} />
+            </a>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
+
+        {/* Bottom Bar */}
+        <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-gray-900 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-gray-500">
           <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+          <div className="flex items-center gap-4 text-gray-500">
+            <a href="#top" className="hover:text-gray-300 transition">Back to Top ↑</a>
+          </div>
         </div>
       </footer>
       <MobileStickyBar pageName="Homepage" />

@@ -76,7 +76,7 @@ const CONTENT = {
       },
       {
         q: "How much does physical pre-production sampling cost?",
-        a: "Pre-production samples typically cost $50 - $80 USD depending on logo complexity, which includes full digitizing, fabric preparation, and photo/video proofing. Sample fees are 100% credited back toward your bulk invoice once the 200+ unit order is confirmed."
+        a: "Pre-production samples typically cost $50 - $80 USD depending on logo complexity, which includes full digitizing, fabric preparation, and photo/video proofing. Sample fees are 100% credited back toward your bulk invoice once the 500+ unit order is confirmed."
       },
       {
         q: "What payment terms and buyer protections are accepted?",

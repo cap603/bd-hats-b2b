@@ -777,39 +777,6 @@ export const HATS: Product[] = [
     ]
   },
   {
-    id: "vintage-8-wale-corduroy-dad-hat",
-    name: "Vintage 8-Wale Corduroy Unstructured Dad Hat",
-    desc: "Heavyweight 8-wale 100% cotton corduroy dad hat with unstructured 6-panel crown, curved brim, and antique brass tri-glide buckle.",
-    fullDesc: "Crafted from authentic heavyweight 8-wale cotton corduroy with deep, rich rib ridges. The relaxed unstructured crown offers superior drape and street aesthetic without collapsing. Designed specifically for autumn and winter collections, compatible with high-density Tatami flat embroidery, 3D puff embroidery, or debossed leather patches. MOQ 200 pcs per colorway.",
-    price: "$4.50 - $6.80",
-    moq: 200,
-    badge: "new",
-    category: "Dad Hats",
-    img: "/images/products/vintage-acid-wash-6-panel-dad-hat.webp",
-    specs: {
-      material: "100% Heavyweight Cotton Corduroy (8-Wale)",
-      style: "Unstructured 6-Panel Dad Hat",
-      logo: "Tatami Flat / 3D Puff Embroidery / Leather Patch",
-      closure: "Self-Fabric Strap with Antique Brass Buckle",
-      panels: "6-Panel Curved Brim",
-      size: "58cm · Adjustable (54-62cm)",
-      colour: "Vintage Black, Forest Green, Camel, Rust Brown, Navy"
-    },
-    customization: {
-      title: "Our Customization Capabilities",
-      options: [
-        "High-density Tatami embroidery backing to prevent rib sinking",
-        "Custom antique brass or matte silver metal buckles",
-        "Woven internal brand labels and branded seam taping",
-        "Pantone-matched corduroy fabric dyeing available for 500+ pcs"
-      ]
-    },
-    faqs: [
-      { q: "What makes 8-wale corduroy better than standard corduroy?", a: "8-wale corduroy features wider, thicker ridges (wales per inch) that give a heavier, vintage drape ideal for premium autumn/winter streetwear." },
-      { q: "Can you embroider logos on textured corduroy without distortion?", a: "Yes. We use reinforced underlay stitching (Tatami backing) on our Barudan embroidery machines to prevent stitches from sinking into the fabric wales." }
-    ]
-  },
-  {
     id: "polar-fleece-winter-5-panel-camp-cap",
     name: "Polar Fleece Winter 5-Panel Camp Cap",
     desc: "Insulating polar fleece 5-panel camper cap with flat visor, nylon webbing strapback, and moisture-wicking sweatband for cold-weather outdoor lines.",

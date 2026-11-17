@@ -100,7 +100,7 @@ const FAQS = [
   },
   {
     q: "How much does a custom sample cost?",
-    a: "A physical pre-production sample typically costs $50-100 including courier shipping, depending on complexity. This fee is fully credited against your bulk order."
+    a: "A physical pre-production sample typically costs $50-100 including courier shipping, depending on complexity. This fee is fully credited against your bulk order of 500+ pieces."
   },
   {
     q: "What is the production lead time for custom hats?",
