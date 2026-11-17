@@ -11,13 +11,13 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: {
       absolute:
         locale === "es"
-          ? "China vs Vietnam vs Bangladés: Dónde Fabricar | BD Hats"
-          : "China vs Vietnam vs Bangladesh: Sourcing Hats | BD Hats",
+          ? "China vs Vietnam vs Bangladés: Precios y MOQ | BD Hats"
+          : "China vs Vietnam vs Bangladesh: Hat Sourcing Rates | BD Hats",
     },
     description:
       locale === "es"
-        ? "Comparativa neutral de abastecimiento de gorras: China, Vietnam y Bangladés en cadena de suministro, MOQ, muestreo, comunicación, plazos, logística y tamaño de pedido ideal. MOQ de fábrica 200 uds."
-        : "A neutral headwear sourcing comparison of China, Vietnam and Bangladesh: supply chain depth, MOQ flexibility, sampling speed, communication, delivery, logistics and best-fit order size. Factory MOQ 200 pcs.",
+        ? "Comparativa de producción de gorras 2026: costos FOB, tiempos de entrega y MOQ real entre China, Vietnam y Bangladés. Guía para compradores B2B, fábrica MOQ 200 uds."
+        : "2026 custom hat sourcing benchmark: FOB cost comparison, production lead times and realistic MOQs across China, Vietnam and Bangladesh. Factory direct MOQ 200pcs.",
     alternates: { canonical, languages },
     openGraph: {
       type: "article",

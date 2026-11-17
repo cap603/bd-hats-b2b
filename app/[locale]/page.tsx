@@ -329,6 +329,41 @@ export default function Home() {
             <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t("stats.sgs")}</p>
           </div>
         </div>
+
+        {/* Free B2B Lead Magnet Banner — Free Vector Tech Pack Download */}
+        <div className="max-w-5xl mx-auto mt-10 px-4">
+          <div className="bg-slate-900 rounded-3xl p-6 md:p-8 border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 text-white">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-amber-400/20 text-amber-400 flex items-center justify-center shrink-0 mt-1">
+                <FileDown size={24} />
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-2 text-amber-400 text-[10px] font-black uppercase tracking-widest mb-1">
+                  <span>Free B2B Design Asset</span>
+                  <span>•</span>
+                  <span>AI / PDF / EPS Flats</span>
+                </div>
+                <h3 className="text-lg md:text-xl font-black tracking-tight text-white mb-1">
+                  {lang === "es"
+                    ? "Descarga Gratis: Plantillas Vectoriales Tech Pack para Gorras"
+                    : "Download Free Cap Vector Tech Pack Templates (1:1 Scale)"}
+                </h3>
+                <p className="text-xs md:text-sm text-slate-400 leading-relaxed">
+                  {lang === "es"
+                    ? "Patrones listos para producción de gorras de 6 paneles, 5 paneles, trucker y gorros con cotas de fábrica."
+                    : "Production-ready flat sketches for 6-panel, 5-panel, mesh truckers & beanies with embroidery scale limits."}
+                </p>
+              </div>
+            </div>
+            <Link
+              href={`/${lang}/custom-hat-tech-pack-template`}
+              className="w-full md:w-auto shrink-0 inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs md:text-sm px-6 py-3.5 rounded-xl transition shadow-md whitespace-nowrap"
+            >
+              <span>{lang === "es" ? "Descargar Plantillas" : "Get Free Templates"}</span>
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Global Markets & Compliance */}

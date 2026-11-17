@@ -11,13 +11,13 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: {
       absolute:
         locale === "es"
-          ? "Sarga vs Algodón vs Canvas: Cuál Elegir | BD Hats"
-          : "Cotton Twill vs Brushed Cotton vs Canvas | BD Hats",
+          ? "Sarga vs Algodón vs Canvas: Precios y Gramaje | BD Hats"
+          : "Cotton Twill vs Brushed Cotton vs Canvas: Fabric Cost | BD Hats",
     },
     description:
       locale === "es"
-        ? "Sarga de algodón, algodón cepillado y canvas comparados: tacto, peso y estructura, transpiración, durabilidad, teñido y acabados lavados, precio y estilos de gorra. Datos de fábrica, MOQ 200 uds."
-        : "Cotton twill, brushed cotton and canvas compared: hand feel, weight and structure, breathability, durability, dyeing and washed finishes, price position and cap styles. Factory data, MOQ 200 pcs.",
+        ? "Comparativa de telas de gorras B2B: precios FOB, gramajes GSM, tacto y durabilidad entre sarga, algodón cepillado y canvas. MOQ 200 uds directas de fábrica."
+        : "Cap fabric cost & weight guide: FOB rates, GSM weights, hand feel and durability compared between cotton twill, brushed cotton and canvas. Direct factory MOQ 200pcs.",
     alternates: { canonical, languages },
     openGraph: {
       type: "article",

@@ -11,13 +11,13 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: {
       absolute:
         locale === "es"
-          ? "Snapback vs Strapback vs Hebilla: Cierre de Gorras | BD Hats"
-          : "Snapback vs Strapback vs Buckle: Cap Closure Guide | BD Hats",
+          ? "Snapback vs Strapback vs Hebilla: Costos y Ajuste | BD Hats"
+          : "Snapback vs Strapback vs Buckle: Cap Closures | BD Hats",
     },
     description:
       locale === "es"
-        ? "Comparativa de cierres traseros para gorras personalizadas: rango de ajuste, aspecto, durabilidad, riesgo de devoluciones y qué cierre conviene a cada público. Datos de fábrica, MOQ 200 uds."
-        : "Snapback vs strapback vs buckle closures compared: adjustment range, perceived tier, durability, hardware cost and return-rate risk. Factory data, MOQ 200 pcs, samples in 7 days.",
+        ? "Guía B2B de cierres traseros para gorras: costos de herrajes, durabilidad y ajuste entre snapback, strapback y hebilla de latón. MOQ de fábrica 200 uds."
+        : "Cap closure comparison guide: hardware unit cost, adjustment range, durability and return risks between snapback, strapback and metal buckle. Factory MOQ 200pcs.",
     alternates: { canonical, languages },
     openGraph: {
       type: "article",
