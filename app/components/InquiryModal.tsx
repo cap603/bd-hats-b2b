@@ -21,7 +21,7 @@ export function InquiryModal() {
   const phoneRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
-  // 1. Listen for global open triggers + smart exit-intent & timed triggers
+  // 1. Listen for global open triggers ONLY (Disable aggressive auto-popups / exit-intent)
   useEffect(() => {
     // Custom event listener so any button can open this modal
     const handleOpen = () => {
@@ -30,7 +30,7 @@ export function InquiryModal() {
     };
     window.addEventListener("open-inquiry-modal", handleOpen);
 
-    // Global click listener for elements with data-inquiry-modal or matching buttons
+    // Listen for direct trigger buttons ONLY (Never auto popup or interrupt user browsing)
     const handleDocumentClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement | null;
       if (!target) return;
@@ -43,35 +43,9 @@ export function InquiryModal() {
     };
     document.addEventListener("click", handleDocumentClick);
 
-    // Smart auto triggers: exit-intent & 25s engagement (session-scoped)
-    const isDismissed = sessionStorage.getItem("inquiry_modal_dismissed");
-    let exitTriggered = false;
-
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (exitTriggered || isDismissed) return;
-      if (e.clientY <= 10) {
-        exitTriggered = true;
-        setVisible(true);
-        sessionStorage.setItem("inquiry_modal_dismissed", "1");
-      }
-    };
-
-    const timer = setTimeout(() => {
-      if (!isDismissed && !exitTriggered) {
-        setVisible(true);
-        sessionStorage.setItem("inquiry_modal_dismissed", "1");
-      }
-    }, 25000);
-
-    if (!isDismissed) {
-      document.addEventListener("mouseleave", handleMouseLeave);
-    }
-
     return () => {
       window.removeEventListener("open-inquiry-modal", handleOpen);
       document.removeEventListener("click", handleDocumentClick);
-      document.removeEventListener("mouseleave", handleMouseLeave);
-      clearTimeout(timer);
     };
   }, []);
 
