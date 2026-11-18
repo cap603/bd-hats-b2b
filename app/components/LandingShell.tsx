@@ -158,14 +158,25 @@ export function LandingShell({
             {subtitle}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm font-bold">
-            {pills.map((p) => (
-              <span
-                key={p}
-                className="bg-white/10 border border-white/20 px-4 py-2 rounded-full"
-              >
-                {p}
-              </span>
-            ))}
+            {pills.map((p) =>
+              p.includes("FOB") ? (
+                <Link
+                  key={p}
+                  href={`/${lang}/pricing`}
+                  className="bg-white/10 border border-white/20 px-4 py-2 rounded-full hover:bg-white/20 hover:border-white/40 transition-colors"
+                  aria-label={`${p} — view pricing details`}
+                >
+                  {p}
+                </Link>
+              ) : (
+                <span
+                  key={p}
+                  className="bg-white/10 border border-white/20 px-4 py-2 rounded-full"
+                >
+                  {p}
+                </span>
+              )
+            )}
           </div>
         </div>
       </section>
@@ -281,6 +292,7 @@ export function LandingShell({
                       alt={p.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="p-5">

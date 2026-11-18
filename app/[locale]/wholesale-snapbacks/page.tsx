@@ -116,7 +116,13 @@ export default function SnapbacksPage() {
             <NavCompareMenu />
             <Link href={`/${lang}/#inquiry`} className="hover:text-black transition">Inquiry</Link>
           </nav>
-          <Link href={`/${lang}/#inquiry`} className="bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm">Get Quote</Link>
+          <Link
+            href={`/${lang}/#inquiry`}
+            className="bg-green-500 hover:bg-green-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm transition"
+            aria-label="Get a factory quote"
+          >
+            Get Quote
+          </Link>
         </div>
       </header>
 
@@ -133,7 +139,18 @@ export default function SnapbacksPage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm font-bold">
             {c.hero.pills.map((p, i) => (
-              <span key={i} className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">{p}</span>
+              p.includes("FOB") ? (
+                <Link
+                  key={i}
+                  href={`/${lang}/pricing`}
+                  className="bg-white/10 border border-white/20 px-4 py-2 rounded-full hover:bg-white/20 hover:border-white/40 transition-colors"
+                  aria-label={`${p} — view pricing details`}
+                >
+                  {p}
+                </Link>
+              ) : (
+                <span key={i} className="bg-white/10 border border-white/20 px-4 py-2 rounded-full">{p}</span>
+              )
             ))}
           </div>
         </div>
@@ -143,8 +160,17 @@ export default function SnapbacksPage() {
         <div className="max-w-3xl mx-auto space-y-8">
           {c.features.map((f, i) => (
             <div key={i} className="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100">
-              <h2 className="font-black text-xl text-black mb-3">{f.title}</h2>
-              <p className="text-gray-600 leading-relaxed">{f.desc}</p>
+                {i === 0 ? (
+                  <Link
+                    href={`/${lang}#catalog`}
+                    className="inline-flex items-center gap-1.5 font-black text-xl text-black hover:text-emerald-700 transition-colors mb-3"
+                  >
+                    {f.title} <ArrowRight size={18} className="shrink-0" />
+                  </Link>
+                ) : (
+                  <h2 className="font-black text-xl text-black mb-3">{f.title}</h2>
+                )}
+                <p className="text-gray-600 leading-relaxed">{f.desc}</p>
             </div>
           ))}
         </div>
@@ -157,7 +183,7 @@ export default function SnapbacksPage() {
             {RELATED.map((p) => (
               <Link key={p.href} href={p.href} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
                 <div className="aspect-square bg-gray-100 overflow-hidden">
-                  <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" width="480" height="480" loading="lazy" />
+                  <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" width="480" height="480" loading="lazy" decoding="async" />
                 </div>
                 <div className="p-4">
                   <p className="font-bold text-sm text-black group-hover:text-yellow-600 transition">{p.name}</p>
