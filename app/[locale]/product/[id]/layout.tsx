@@ -3,6 +3,14 @@ import { HATS } from "../../../lib/products";
 import { priceLabel } from "../../../lib/price";
 import { getAlternateLanguages } from "../../../lib/seo";
 
+// Pre-render en/es product pages at build time; other locales render on demand
+// (they are noindex,follow via middleware until translated).
+export function generateStaticParams() {
+  return ["en", "es"].flatMap((locale) =>
+    HATS.map((h) => ({ locale, id: String(h.id) }))
+  );
+}
+
 export async function generateMetadata({ params }: { params: { locale: string; id: string } }): Promise<Metadata> {
   const { locale, id } = await params;
   const hat = HATS.find((h) => String(h.id) === String(id));
@@ -44,53 +52,8 @@ export default async function ProductLayout({
   children: React.ReactNode;
   params: { locale: string; id: string };
 }) {
-  const { locale, id } = await params;
-  const hat = HATS.find((h) => String(h.id) === String(id));
-
-  // Build JSON-LD Product & Offer Schema
-  const schema = hat
-    ? {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        name: hat.name,
-        image: `https://bdjunyang.com${hat.img}`,
-        description: hat.fullDesc || hat.desc,
-        sku: `JY-${hat.id.substring(0, 8).toUpperCase()}`,
-        brand: {
-          "@type": "Brand",
-          name: "BD Hats",
-        },
-        manufacturer: {
-          "@type": "Organization",
-          name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
-          url: "https://bdjunyang.com",
-        },
-        offers: {
-          "@type": "AggregateOffer",
-          priceCurrency: "USD",
-          lowPrice: "3.50",
-          highPrice: "7.00",
-          offerCount: "1",
-          priceValidUntil: "2027-12-31",
-          availability: "https://schema.org/InStock",
-          itemCondition: "https://schema.org/NewCondition",
-          seller: {
-            "@type": "Organization",
-            name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
-          },
-        },
-      }
-    : null;
-
-  return (
-    <>
-      {schema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      )}
-      {children}
-    </>
-  );
+  // Product JSON-LD is emitted exactly once by page.tsx (single schema source).
+  // The duplicate hardcoded 3.50–7.00 schema that used to live here conflicted
+  // with the page schema (different SKU/brand/price) and weakened rich-results.
+  return <>{children}</>;
 }

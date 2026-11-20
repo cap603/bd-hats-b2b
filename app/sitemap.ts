@@ -1,13 +1,14 @@
 import { MetadataRoute } from "next";
 import { HATS } from "./lib/products";
-import { locales } from "../i18n";
+// Sitemap scope (2026-11-20): en/es full site + ja/pt/it homepages only.
+// Non-en/es subpages are noindex,follow via middleware (pseudo-localization).
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://bdjunyang.com";
 
   const entries: MetadataRoute.Sitemap = [];
 
-  for (const locale of locales) {
+  for (const locale of ["en", "es"]) {
     const lc = `/${locale}`;
 
     entries.push(
@@ -184,6 +185,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
       });
     }
+  }
+
+  // ja/pt/it homepages are already indexed with localized UI — keep them.
+  // Their subpages serve English body copy and are noindex,follow via middleware.
+  for (const locale of ["ja", "pt", "it"]) {
+    entries.push({
+      url: `${baseUrl}/${locale}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    });
   }
 
   return entries;

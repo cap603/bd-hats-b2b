@@ -171,12 +171,9 @@ export default function Home() {
     }))
   };
 
-  const trackWhatsApp = (source: string) => {
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "whatsapp_click", { event_category: "engagement", event_label: source });
-    }
-  };
-
+  // WhatsApp click tracking is handled once by trackWhatsAppClick (lib/tracking).
+  // A duplicate local gtag call used to live here and double-counted every
+  // homepage WhatsApp click in GA4 with a different parameter shape.
   const handleWhatsApp = (source: string, customText?: string) => {
     trackWhatsAppClick({
       button: "homepage_cta",
@@ -187,7 +184,6 @@ export default function Home() {
       ? "¡Hola Baoding Junyang! Me gustaría solicitar el catálogo de fábrica y una cotización para gorras personalizadas (MOQ 200 uds)."
       : "Hi Baoding Junyang! I would like to get a catalog and quote for custom baseball caps.";
     const text = encodeURIComponent(`${customText || defaultText}\n\n${attributionTag()}`);
-    trackWhatsApp(source);
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
 
@@ -445,6 +441,8 @@ export default function Home() {
                      className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-700"
                      width="1200"
                      height="800" 
+                     loading="lazy"
+                     decoding="async"
                    />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <div className="bg-white text-black h-16 w-16 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition">

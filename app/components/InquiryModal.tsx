@@ -14,6 +14,7 @@ export function InquiryModal() {
   const [visible, setVisible] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const [inquiryId, setInquiryId] = useState("");
 
   const nameRef = useRef<HTMLInputElement>(null);
@@ -27,6 +28,7 @@ export function InquiryModal() {
     const handleOpen = () => {
       setVisible(true);
       setIsSubmitted(false);
+      setSubmitError(false);
     };
     window.addEventListener("open-inquiry-modal", handleOpen);
 
@@ -39,6 +41,7 @@ export function InquiryModal() {
         e.preventDefault();
         setVisible(true);
         setIsSubmitted(false);
+        setSubmitError(false);
       }
     };
     document.addEventListener("click", handleDocumentClick);
@@ -118,22 +121,43 @@ export function InquiryModal() {
 
     let generatedId = `INQ-${Date.now().toString(36).toUpperCase()}`;
 
+    // Success is judged by the real backend response (res.ok). A failed submit
+    // must not show success or fire the conversion event.
+    let submitted = false;
     try {
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const data = await res.json();
-      if (data?.inquiryId) {
-        generatedId = data.inquiryId;
+      if (res.ok) {
+        const data = await res.json().catch(() => null);
+        if (data?.inquiryId) generatedId = data.inquiryId;
+        submitted = true;
       }
     } catch (err) {
-      console.warn("Inquiry modal submission fallback active:", err);
+      console.warn("Inquiry modal submission network error:", err);
+    }
+
+    if (!submitted) {
+      setIsSubmitting(false);
+      setSubmitError(true);
+      return;
+    }
+
+    // GA4 key event — fired only on confirmed backend success.
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      try {
+        (window as any).gtag("event", "inquiry_submit", {
+          event_category: "conversion",
+          event_label: `modal-${generatedId}`,
+        });
+      } catch (e) {}
     }
 
     setInquiryId(generatedId);
     setIsSubmitting(false);
+    setSubmitError(false);
     setIsSubmitted(true);
   };
 
@@ -366,6 +390,15 @@ export function InquiryModal() {
                 />
               </div>
 
+              {submitError && (
+                <div className="bg-rose-50 border border-rose-200 rounded-xl px-3 py-2.5 text-[11px] text-rose-700 font-medium">
+                  {isEs
+                    ? "No se pudo enviar. Inténtelo de nuevo o use el botón de WhatsApp arriba."
+                    : isJa
+                    ? "送信に失敗しました。再試行するか、上のWhatsAppボタンをご利用ください。"
+                    : "Submission failed. Please try again, or use the WhatsApp button above."}
+                </div>
+              )}
               <button
                 type="submit"
                 disabled={isSubmitting}

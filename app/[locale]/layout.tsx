@@ -9,8 +9,9 @@ import { LanguageNotice } from "../components/LanguageNotice";
 import { InquiryModal } from "../components/InquiryModal";
 import "../globals.css";
 
-export const dynamic = "force-dynamic";
-
+// Static rendering restored (2026-11-20): force-dynamic forced every request
+// through Serverless re-computation, causing TTFB variance, cold starts and the
+// 2 GSC 5xx records. generateStaticParams below pre-renders all locale shells.
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -52,11 +53,11 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     alternates: {
       canonical: `https://bdjunyang.com/${locale}`,
+      // de/fr homepages are noindex,follow (English body copy) — omitted here.
+      // ja/pt/it homepages are indexed with localized UI — kept.
       languages: {
         en: "https://bdjunyang.com/en",
         es: "https://bdjunyang.com/es",
-        de: "https://bdjunyang.com/de",
-        fr: "https://bdjunyang.com/fr",
         pt: "https://bdjunyang.com/pt",
         it: "https://bdjunyang.com/it",
         ja: "https://bdjunyang.com/ja",
@@ -174,7 +175,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
       </head>
-      <body>
+      <body className="overflow-x-hidden">
         <I18nProvider locale={locale} messages={messages}>
           {children}
           {/* Floating WhatsApp button — appears on every page.

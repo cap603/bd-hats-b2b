@@ -66,6 +66,7 @@ export function InquiryForm() {
     if (!name || !email || !message) return;
 
     setIsSubmitting(true);
+    setStatus(null);
 
     const attrLines = attributionLines();
     const payload = {
@@ -80,21 +81,30 @@ export function InquiryForm() {
 
     let generatedId = `INQ-${Date.now().toString(36).toUpperCase()}`;
 
-    // 1. Send to server-side backend API (Guaranteed lead capture & email/webhook dispatch)
+    // 1. Send to server-side backend API. Success is judged by the REAL response
+    //    (res.ok) — previously a failed submit still showed "success" and fired
+    //    the conversion event, silently losing leads and polluting GA4.
+    let submitted = false;
     try {
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const data = await res.json();
-      if (data?.inquiryId) {
-        generatedId = data.inquiryId;
+      if (res.ok) {
+        const data = await res.json().catch(() => null);
+        if (data?.inquiryId) generatedId = data.inquiryId;
+        submitted = true;
       }
     } catch (err) {
-      console.warn("Backend logging fallback active:", err);
+      console.warn("Inquiry submission network error:", err);
     }
 
+    if (!submitted) {
+      setIsSubmitting(false);
+      setStatus("error");
+      return;
+    }
     trackInquiry(generatedId);
 
     // 2. Prepare WhatsApp direct message
@@ -189,6 +199,28 @@ export function InquiryForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 bg-white p-5 sm:p-8 rounded-2xl shadow-xs border border-slate-200/90 text-left">
+      {status === "error" && (
+        <div className="bg-rose-50 border border-rose-200 rounded-xl p-4 text-left">
+          <p className="text-sm font-bold text-rose-800 mb-1">
+            {lang === "es" ? "No se pudo enviar la consulta" : "Submission failed"}
+          </p>
+          <p className="text-xs text-rose-700 mb-3">
+            {lang === "es"
+              ? "Nuestro servidor no confirmó la recepción. Inténtelo de nuevo o escríbanos directamente por WhatsApp."
+              : "Our server did not confirm receipt. Please try again, or send via WhatsApp."}
+          </p>
+          <a
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi Baoding Junyang! My website inquiry failed to submit. I would like a factory quote for custom hats (MOQ 200 pcs).")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick({ button: "form_error_fallback", label: "Inquiry Form Error WhatsApp Fallback" })}
+            className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-lg transition"
+          >
+            <MessageCircle size={14} />
+            {lang === "es" ? "Enviar por WhatsApp" : "Send via WhatsApp instead"}
+          </a>
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">

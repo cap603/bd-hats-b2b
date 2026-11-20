@@ -84,7 +84,20 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
-  return NextResponse.next();
+  // Pseudo-localization containment (2026-11-20): de/fr serve English body copy
+  // on every page; ja/pt/it have localized homepages only. Tell Google not to
+  // index those URLs while keeping link follow, until human translation lands.
+  const response = NextResponse.next();
+  const frozenHomeLocale =
+    effectiveLocale === "ja" || effectiveLocale === "pt" || effectiveLocale === "it";
+  if (
+    effectiveLocale === "de" ||
+    effectiveLocale === "fr" ||
+    (frozenHomeLocale && pathWithoutLocale !== "/")
+  ) {
+    response.headers.set("X-Robots-Tag", "noindex, follow");
+  }
+  return response;
 }
 
 export const config = {

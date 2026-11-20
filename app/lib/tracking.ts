@@ -51,12 +51,9 @@ export function trackWhatsAppClick(params?: TrackClickParams) {
       }).catch(() => {});
     } catch (e) {}
 
-    // Secondary redundancy: sendBeacon with text/plain (avoids CORS preflight / WebKit blob bugs)
-    if (navigator.sendBeacon) {
-      try {
-        navigator.sendBeacon("/api/inquiry/event", payload);
-      } catch (e) {}
-    }
+    // NOTE: sendBeacon redundancy removed (2026-11-20) — dual dispatch made the
+    // server log every click twice and fired duplicate DingTalk alerts.
+    // fetch keepalive alone survives page unload / external app switches.
   } catch (err) {
     // Non-blocking
   }

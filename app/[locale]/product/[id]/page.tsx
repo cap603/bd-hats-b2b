@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, notFound } from "next/navigation";
 import { useT, useLang } from "../../../lib/i18n";
 import { HATS, Product } from "../../../lib/products";
 import { priceLabel, priceRange, hasNumericPrice } from "../../../lib/price";
@@ -49,15 +49,10 @@ export default function ProductDetail() {
   const [activeTab, setActiveTab] = useState("specs");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
+  // True 404 for unknown/discontinued products (was a soft-404 returning 200 +
+  // "Product Not Found", wasting crawl budget and confusing Google's indexer).
   if (!hat) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">{t("notFound")}</h1>
-          <Link href={`/${lang}`} className="text-black font-bold underline">{t("backLink")}</Link>
-        </div>
-      </div>
-    );
+    notFound();
   }
 
   const handleWhatsAppClick = () => {
@@ -95,12 +90,12 @@ export default function ProductDetail() {
     "@type": "Product",
     "name": hat.name,
     "description": hat.fullDesc,
-    "image": hat.img,
-    "sku": String(hat.id),
-    "mpn": String(hat.id),
+    "image": `https://bdjunyang.com${hat.img}`,
+    "sku": getProductSku(String(hat.id)),
+    "mpn": getProductSku(String(hat.id)),
     "brand": {
       "@type": "Brand",
-      "name": "Baoding Junyang"
+      "name": "BD Hats"
     },
     "manufacturer": {
       "@type": "Organization",

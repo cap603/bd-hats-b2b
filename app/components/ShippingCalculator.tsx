@@ -332,7 +332,7 @@ export function ShippingCalculator({
       `Packaging: ${cartonCount} cartons (${cbm} CBM, ~${grossWeight} kg).\n` +
       `Please provide an FOB / Door-to-Door shipping quote.`
     );
-    window.open(`https://wa.me/8618931290562?text=${msg}`, "_blank");
+    window.open(`https://wa.me/8615933930830?text=${msg}`, "_blank");
   };
 
   return (

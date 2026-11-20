@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronRight, MessageCircle, Layers, Tag, BookOpen, ShieldCheck, Factory, Info } from "lucide-react";
@@ -22,6 +22,15 @@ export function MobileNav() {
   const lang = useLang();
   const tNav = useT("nav");
   const pathname = usePathname();
+  const drawerRef = useRef<HTMLDivElement>(null);
+
+  // React 18 does not support the `inert` prop natively (React 19+ does).
+  // Set the DOM property directly so the closed drawer is truly non-interactive.
+  useEffect(() => {
+    if (drawerRef.current) {
+      (drawerRef.current as any).inert = !isOpen;
+    }
+  }, [isOpen]);
 
   // Close drawer on navigation
   useEffect(() => {
@@ -75,9 +84,11 @@ export function MobileNav() {
 
       {/* Slide-in Drawer from Right */}
       <div
+        ref={drawerRef}
         className={`fixed top-0 right-0 bottom-0 w-[85vw] max-w-[360px] bg-white z-[80] shadow-2xl flex flex-col justify-between transition-transform duration-300 ease-out ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+          isOpen ? "translate-x-0 visible pointer-events-auto" : "translate-x-full invisible pointer-events-none"
         }`}
+        aria-hidden={!isOpen}
       >
         {/* Drawer Header */}
         <div className="p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50">
