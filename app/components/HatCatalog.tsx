@@ -127,7 +127,7 @@ export function HatCatalog() {
           >
             {t(CATEGORY_MAP[cat])}
             {cat !== "All" && (
-              <span className={`ml-1.5 text-[10px] font-semibold ${activeCategory === cat ? "text-slate-300" : "text-slate-400"}`}>
+              <span className={`ml-1.5 text-[10px] font-semibold ${activeCategory === cat ? "text-slate-300" : "text-slate-500"}`}>
                 ({HATS.filter((h) => h.category === cat).length})
               </span>
             )}
@@ -255,7 +255,7 @@ export function HatCatalog() {
                   {/* 3-Column Industrial Technical Spec Matrix */}
                   <div className="grid grid-cols-3 gap-1 sm:gap-2 py-1.5 sm:py-2 px-1.5 sm:px-2.5 mb-2.5 sm:mb-4 rounded-lg sm:rounded-xl bg-slate-50 border border-slate-100 text-left">
                     <div>
-                      <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-400">
+                      <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">
                         FLOOR
                       </span>
                       <span className="text-[10px] sm:text-xs font-black text-emerald-600 truncate block">
@@ -263,7 +263,7 @@ export function HatCatalog() {
                       </span>
                     </div>
                     <div>
-                      <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-400">
+                      <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">
                         PROFILE
                       </span>
                       <span className="text-[10px] sm:text-xs font-bold text-slate-800 truncate block">
@@ -271,7 +271,7 @@ export function HatCatalog() {
                       </span>
                     </div>
                     <div>
-                      <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-400">
+                      <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">
                         CUSTOM
                       </span>
                       <span className="text-[10px] sm:text-xs font-bold text-slate-800 truncate block">
@@ -292,6 +292,7 @@ export function HatCatalog() {
                   </button>
                   <Link
                     href={`/${lang}/product/${hat.id}`}
+                    aria-label={`Specs: ${hat.name}`}
                     className="w-full bg-slate-900 hover:bg-black text-white font-bold py-2 sm:py-2.5 px-1.5 sm:px-3 rounded-lg sm:rounded-xl text-[11px] sm:text-xs transition flex items-center justify-center gap-1 text-center"
                   >
                     <span>Specs</span>

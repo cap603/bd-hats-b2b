@@ -86,7 +86,7 @@ export function MobileNav() {
       <div
         ref={drawerRef}
         className={`fixed top-0 right-0 bottom-0 w-[85vw] max-w-[360px] bg-white z-[80] shadow-2xl flex flex-col justify-between transition-transform duration-300 ease-out ${
-          isOpen ? "translate-x-0 visible pointer-events-auto" : "translate-x-full invisible pointer-events-none"
+          isOpen ? "translate-x-0 visible pointer-events-auto" : "translate-x-full invisible pointer-events-none hidden"
         }`}
         aria-hidden={!isOpen}
       >
@@ -96,6 +96,8 @@ export function MobileNav() {
             <img
               src="/images/brand/junyang-logo.webp"
               alt="JUNYANG"
+              width="36"
+              height="36"
               className="h-9 w-auto object-contain"
             />
             <div>

@@ -165,7 +165,7 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang={locale} className="scroll-smooth overflow-x-hidden">
       <head>
         {/* All imagery is self-hosted under /public/images now, so the old
             preconnects to the Alibaba CDN and Unsplash only bought a wasted DNS
@@ -193,16 +193,16 @@ export default async function LocaleLayout({
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA4_ID}`}
-              strategy="afterInteractive"
+              strategy="lazyOnload"
             />
-            <Script id="google-analytics" strategy="afterInteractive">
+            <Script id="google-analytics" strategy="lazyOnload">
               {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${process.env.NEXT_PUBLIC_GA4_ID}');`}
             </Script>
           </>
         )}
         {/* Microsoft Clarity — enabled when NEXT_PUBLIC_CLARITY_ID is set in Vercel env */}
         {process.env.NEXT_PUBLIC_CLARITY_ID && (
-          <Script id="microsoft-clarity" strategy="afterInteractive">
+          <Script id="microsoft-clarity" strategy="lazyOnload">
             {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','${process.env.NEXT_PUBLIC_CLARITY_ID}');`}
           </Script>
         )}
