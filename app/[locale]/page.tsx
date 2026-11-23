@@ -12,7 +12,7 @@ import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
 import { MobileStickyBar } from "../components/MobileStickyBar";
-import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight, ArrowRight, ChevronDown, CheckCircle2, Facebook, Linkedin, FileDown, Sparkles } from "lucide-react";
+import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight, ArrowRight, ChevronDown, CheckCircle2, Facebook, Linkedin, FileDown, Sparkles, Package } from "lucide-react";
 
 const MANUFACTURING_PROGRAMS = [
   {
@@ -336,37 +336,71 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Free B2B Lead Magnet Banner — Free Vector Tech Pack Download */}
-        <div className="max-w-5xl mx-auto mt-4 sm:mt-8 px-4">
-          <div className="bg-slate-900 rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 md:p-8 border border-slate-800 shadow-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-6 text-white">
-            <div className="flex items-start gap-3 sm:gap-4">
-              <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-amber-400/20 text-amber-400 flex items-center justify-center shrink-0 mt-0.5 sm:mt-1">
-                <FileDown size={18} className="sm:w-6 sm:h-6" />
+        {/* B2B Procurement Assets & Decision Tools Grid */}
+        <div className="max-w-6xl mx-auto mt-4 sm:mt-8 px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Asset 1: Vector Tech Pack Templates */}
+          <div className="bg-slate-900 rounded-2xl p-4 sm:p-6 border border-slate-800 shadow-xl flex flex-col justify-between text-white">
+            <div className="flex items-start gap-3.5 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                <FileDown size={20} />
               </div>
               <div>
-                <div className="inline-flex items-center gap-1.5 sm:gap-2 text-amber-400 text-[9px] sm:text-[10px] font-black uppercase tracking-widest mb-0.5 sm:mb-1">
+                <div className="inline-flex items-center gap-1.5 text-amber-400 text-[10px] font-black uppercase tracking-widest mb-1">
                   <span>Free B2B Design Asset</span>
                   <span>•</span>
                   <span>AI / PDF / EPS Flats</span>
                 </div>
-                <h3 className="text-sm sm:text-lg md:text-xl font-black tracking-tight text-white mb-0.5 sm:mb-1">
+                <h3 className="text-base sm:text-lg font-black tracking-tight text-white mb-1">
                   {lang === "es"
-                    ? "Descarga Gratis: Plantillas Vectoriales Tech Pack para Gorras"
+                    ? "Descarga Gratis: Plantillas Tech Pack Vectoriales (Escala 1:1)"
                     : "Download Free Cap Vector Tech Pack Templates (1:1 Scale)"}
                 </h3>
-                <p className="text-[11px] sm:text-xs md:text-sm text-slate-400 leading-relaxed line-clamp-1 sm:line-clamp-none">
+                <p className="text-xs text-slate-400 leading-relaxed">
                   {lang === "es"
-                    ? "Patrones listos para producción de gorras de 6 paneles, 5 paneles, trucker y gorros con cotas de fábrica."
-                    : "Production-ready flat sketches for 6-panel, 5-panel, mesh truckers & beanies with embroidery scale limits."}
+                    ? "Patrones listos para producción con cotas de fábrica para 5 paneles, 6 paneles, truckers y gorros con límites de bordado."
+                    : "Production-ready flat sketches for 5-panel, 6-panel, truckers & beanies with factory embroidery scale limits."}
                 </p>
               </div>
             </div>
             <Link
               href={`/${lang}/custom-hat-tech-pack-template`}
-              className="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs md:text-sm px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-xl transition shadow-md whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl transition shadow-md whitespace-nowrap self-start"
             >
-              <span>{lang === "es" ? "Descargar Plantillas" : "Get Free Templates"}</span>
-              <ArrowRight size={14} className="sm:w-4 sm:h-4" />
+              <span>{lang === "es" ? "Descargar Plantillas Vectoriales" : "Get Vector Templates"}</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          {/* Asset 2: Export Carton & CBM Calculator Tool */}
+          <div className="bg-slate-900 rounded-2xl p-4 sm:p-6 border border-slate-800 shadow-xl flex flex-col justify-between text-white">
+            <div className="flex items-start gap-3.5 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+                <Package size={20} />
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-1.5 text-blue-400 text-[10px] font-black uppercase tracking-widest mb-1">
+                  <span>Interactive Logistics Tool</span>
+                  <span>•</span>
+                  <span>60×45×40cm Spec</span>
+                </div>
+                <h3 className="text-base sm:text-lg font-black tracking-tight text-white mb-1">
+                  {lang === "es"
+                    ? "Calculadora B2B de Cajas de Exportación y CBM"
+                    : "Export Carton Count & Freight CBM Calculator"}
+                </h3>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  {lang === "es"
+                    ? "Calcule número de cajas (100 uds/caja), peso bruto (~12kg) y volumen CBM para envíos aéreos y contenedores FCL (20GP/40HQ)."
+                    : "Estimate master export cartons (100 pcs/ctn), gross weight (~12kg), and CBM volume for Air Cargo and FCL ocean containers."}
+                </p>
+              </div>
+            </div>
+            <Link
+              href={`/${lang}/tools/carton-calculator`}
+              className="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-black text-xs px-4 py-2.5 rounded-xl transition shadow-md whitespace-nowrap self-start"
+            >
+              <span>{lang === "es" ? "Abrir Calculadora CBM" : "Open Carton Calculator"}</span>
+              <ArrowRight size={14} />
             </Link>
           </div>
         </div>

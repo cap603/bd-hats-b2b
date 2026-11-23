@@ -256,10 +256,10 @@ export function HatCatalog() {
                   <div className="grid grid-cols-3 gap-1 sm:gap-2 py-1.5 sm:py-2 px-1.5 sm:px-2.5 mb-2.5 sm:mb-4 rounded-lg sm:rounded-xl bg-slate-50 border border-slate-100 text-left">
                     <div>
                       <span className="block text-[8px] sm:text-[9px] font-bold uppercase tracking-wider text-slate-500">
-                        FLOOR
+                        FOB RANGE
                       </span>
                       <span className="text-[10px] sm:text-xs font-black text-emerald-600 truncate block">
-                        {hat.price.includes("-") ? hat.price.split("-")[0].trim() : hat.price}
+                        {hat.price}
                       </span>
                     </div>
                     <div>

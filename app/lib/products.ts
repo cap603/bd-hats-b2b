@@ -86,7 +86,8 @@ export const HATS: Product[] = [
     },
     faqs: [
       { q: "Do you have stock colors?", a: "Yes, we maintain over 50 colors of cotton twill in stock for fast turnaround." },
-      { q: "Is the price negotiable for large volumes?", a: "Absolutely. For orders over 1,000 units, we offer significant volume discounts." }
+      { q: "Does order quantity change the unit price?", a: "Yes. Setup, digitizing and tooling are one-time costs spread across the order run. Larger runs spread them further, so the unit FOB price is lower. Exact figures are confirmed in your itemised quotation." },
+      { q: "5-panel or 6-panel for large 3D puff embroidery?", a: "The 5-panel front crown has no vertical centre seam, allowing large 3D puff artwork to sit completely flat without stitch distortion. For oversized 3D logos, our engineers recommend 5-panel construction." }
     ]
   },
   { 
@@ -150,7 +151,7 @@ export const HATS: Product[] = [
     name: "Structured Multi-Color Baseball Cap", 
     desc: "Classic high-profile structured cap available in over 30 vibrant colors. The workhorse of promotional and retail hat programs.",
     fullDesc: "A high-stability cap that maintains its shape. Built with heavy-duty buckram front panels, this cap is the industry standard for durability and classic fit. Perfect for corporate programs or brands requiring a consistent, high-impact retail presence.",
-    price: "$3.20 - $4.80",
+    price: "$3.50 - $4.80",
     moq: 200,
     img: "/images/products/structured-multi-color-baseball-cap.webp",
     category: "Baseball Caps",
@@ -167,7 +168,7 @@ export const HATS: Product[] = [
     name: "Ladies Plain Blank Cotton Sports Cap", 
     desc: "Specifically tailored profile for a feminine fit. Soft, breathable cotton for comfort and style.",
     fullDesc: "Designed with a smaller circumference and slightly shorter brim to provide a perfect fit for women's head shapes. This cap is a top choice for athleisure and boutique female fashion brands.",
-    price: "$3.20 - $4.60",
+    price: "$3.50 - $4.80",
     moq: 200,
     img: "/images/products/ladies-plain-blank-cotton-sports-cap.webp",
     category: "Baseball Caps",
@@ -218,7 +219,7 @@ export const HATS: Product[] = [
     name: "Custom Embroidery Knitted Beanie",
     desc: "Warm winter beanie knitted from 100% acrylic, finished with your embroidered or 3D puff logo. Unisex 56-58cm fit, 61 stock colours for bulk programs.",
     fullDesc: "A wholesale winter beanie built for logo programs. The acrylic rib knit holds its structure through repeated wear, and the front accepts flat embroidery, 3D puff or a woven patch. Unisex 56-58cm fit, 61 stock colours with custom yarn dyeing available on request. Samples dispatch from our Baoding factory in 3-5 working days.",
-    price: "$3.20 - $4.50",
+    price: "$3.50 - $4.80",
     moq: 200,
     img: "/images/products/custom-embroidery-knitted-beanie.webp",
     badge: "new",
@@ -280,7 +281,7 @@ export const HATS: Product[] = [
     name: "Custom Foam Front 5 Panel Trucker Hat",
     desc: "Foam-front 5-panel trucker with a breathable mesh back and rope trim. Front, brim and side panels all accept your logo.",
     fullDesc: "A foam-front 5-panel trucker built for summer and outdoor programmes. The foam front holds its shape and takes 3D puff or flat embroidery, silk screen and heat-transfer printing without collapsing, while the mesh back keeps the cap light and breathable. Logo positions include the front panel, brim, side panels and back. Unisex 56-58cm head circumference. Custom design files are prepared in 3 days and a physical sample in 7 days.",
-    price: "$3.20 - $4.60",
+    price: "$3.50 - $4.80",
     moq: 200,
     img: "/images/products/custom-foam-front-trucker-hat.webp",
     images: [

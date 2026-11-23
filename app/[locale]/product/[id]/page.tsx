@@ -242,11 +242,97 @@ export default function ProductDetail() {
                   ))}
                   <div className="flex justify-between border-b border-gray-200 pb-2">
                     <span className="text-gray-500 font-medium">MOQ</span>
-                    <span className="text-black font-bold">{hat.moq} Pcs</span>
+                    <span className="text-black font-bold">{hat.moq} Pcs / Style</span>
+                  </div>
+                  <div className="flex justify-between border-b border-gray-200 pb-2">
+                    <span className="text-gray-500 font-medium">Export Packing</span>
+                    <span className="text-black font-bold text-right">100 pcs/ctn (60×45×40cm, ~12kg)</span>
+                  </div>
+                  <div className="flex justify-between border-b border-gray-200 pb-2">
+                    <span className="text-gray-500 font-medium">Sweatband Craft</span>
+                    <span className="text-black font-bold text-right">4-needle stitch with foam</span>
+                  </div>
+                  <div className="flex justify-between border-b border-gray-200 pb-2">
+                    <span className="text-gray-500 font-medium">Production SLA</span>
+                    <span className="text-black font-bold text-right">Sample 7d · Bulk 15–20d</span>
+                  </div>
+                  <div className="flex justify-between border-b border-gray-200 pb-2">
+                    <span className="text-gray-500 font-medium">Sampling Policy</span>
+                    <span className="text-emerald-600 font-bold text-right">100% Refundable on Bulk ≥500 pcs</span>
                   </div>
                 </div>
               </div>
             )}
+
+            {/* B2B Factory Engineering & Anti-Pitfall Advisory */}
+            <div className="my-8 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-xs text-left">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-blue-50 text-blue-600">
+                  <ShieldCheck size={18} />
+                </span>
+                <span className="text-xs font-black uppercase tracking-widest text-blue-600">
+                  {lang === "es" ? "Criterios de Ingeniería B2B" : "Factory Engineering Advisory"}
+                </span>
+              </div>
+              <h3 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2">
+                {lang === "es" ? "Puntos Clave de Producción para Evitar Errores" : "Production Feasibility & Anti-Deformation Standards"}
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">
+                {lang === "es"
+                  ? "Recomendaciones directas del equipo de patronaje y bordado Barudan para optimizar calidad y reducir mermas."
+                  : "Direct manufacturing guidelines from our Baoding Barudan embroidery and pattern-making floor."}
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                  <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                    {lang === "es" ? "Bordado 3D vs Costura Frontal" : "3D Puff vs Centre Seam"}
+                  </h4>
+                  <p className="text-slate-600 text-[11px] leading-relaxed">
+                    {lang === "es"
+                      ? "Para logotipos 3D grandes recomendamos perfiles de 5 paneles. La ausencia de costura central evita deformaciones y saltos de aguja."
+                      : "For oversized 3D puff artwork, 5-panel silhouettes prevent needle deflection and distortion across the vertical centre seam."}
+                  </p>
+                </div>
+
+                <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                  <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                    {lang === "es" ? "Lavado Vintage y Bordado" : "Vintage Enzyme Wash Sequence"}
+                  </h4>
+                  <p className="text-slate-600 text-[11px] leading-relaxed">
+                    {lang === "es"
+                      ? "En gorras desgastadas bordamos después del lavado para máxima nitidez, o antes para lograr un desgaste auténtico vintage según muestra firmada."
+                      : "For distressed caps, embroidery can be executed pre-wash for authentic weathering or post-wash for sharp contrast per approved sign-off."}
+                  </p>
+                </div>
+
+                <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                  <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                    {lang === "es" ? "Protección de Estructura Buckram" : "Rigid Buckram Crown Protection"}
+                  </h4>
+                  <p className="text-slate-600 text-[11px] leading-relaxed">
+                    {lang === "es"
+                      ? "Gorras estructuradas empacadas en 4 cajas interiores de 25 uds dentro de cartón máster de 5 capas (60×45×40cm) para evitar aplastamientos en flete marítimo."
+                      : "Structured crowns are packed in 4 inner boxes (25 caps each) within 5-ply seaworthy master cartons (60×45×40cm) to prevent creasing in transit."}
+                  </p>
+                </div>
+
+                <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                  <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                    {lang === "es" ? "Banda de Sudor de 4 Agujas" : "4-Needle Ergonomic Sweatband"}
+                  </h4>
+                  <p className="text-slate-600 text-[11px] leading-relaxed">
+                    {lang === "es"
+                      ? "Confección con espuma de celda cerrada y costura cuádruple de precisión para absorción de sudor duradera y confort sin roces."
+                      : "Multi-needle stitch pitch with closed-cell anti-sweat foam ensures long-term comfort, shape retention, and zero stitch chafing."}
+                  </p>
+                </div>
+              </div>
+            </div>
 
             {/* Tab Content: Customization */}
             {activeTab === "custom" && (
@@ -377,10 +463,17 @@ export default function ProductDetail() {
           <details> keeps the accordion behaviour without needing JS state, so the
           answers are in the served HTML and eligible for rich results. */}
       {(() => {
-        const faqs = hat.faqs || [
-          { q: "Can I get a sample before bulk production?", a: "Yes, we produce a physical sample for your final approval. Lead time is 7 days." },
-          { q: "Do you ship worldwide?", a: "We ship to over 50 countries via DHL/FedEx/UPS with door-to-door delivery in 5-8 business days." },
+        const engineeringFaqs = [
+          { q: "5-panel or 6-panel for large 3D puff embroidery?", a: "The 5-panel front crown has no vertical centre seam, allowing large 3D puff artwork to sit completely flat. A 6-panel front seam runs under the logo and can distort high-density puff stitches. For oversized front embroidery, our engineers recommend 5-panel." },
+          { q: "What packing protects a structured crown during international transit?", a: "We pack 25 caps per inner box and 4 inner boxes per master carton (100 caps total) in 5-ply double-wall export corrugated boxes (60×45×40cm, ~12kg gross weight). You can verify exact CBM and gross weight in our Carton Calculator." },
+          { q: "Does order quantity change the unit FOB price?", a: "Yes. Setup, digitizing and tooling are one-time costs spread across the order run. Larger runs spread them further, so the unit FOB price is lower. Exact figures are confirmed in your itemised quotation." },
+          { q: "What technical details are needed to provide an accurate quotation?", a: "Silhouette style, target quantity, fabric GSM, decoration type and stitch count, closure/hardware type, and destination country. With these we deliver an itemised written quotation within 12 hours." }
         ];
+        const baseFaqs = hat.faqs || [
+          { q: "Can I get a sample before bulk production?", a: "Yes, we produce a physical sample for your final approval. Lead time is 7 days with full HD video and photo proof before shipping." },
+          { q: "Do you ship worldwide?", a: "We ship to over 50 countries via DHL/FedEx/UPS air express (4-7 days) and FCL/LCL ocean freight with door-to-door delivery." },
+        ];
+        const faqs = [...baseFaqs, ...engineeringFaqs.filter(ef => !baseFaqs.some(bf => bf.q === ef.q))];
         const faqSchema = {
           "@context": "https://schema.org",
           "@type": "FAQPage",

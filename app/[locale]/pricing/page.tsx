@@ -310,15 +310,23 @@ export default function PricingPage() {
               <span className="text-yellow-400 text-xs font-black uppercase tracking-widest">Industry Benchmark Data</span>
               <h3 className="text-lg md:text-xl font-bold mt-1">2026 Custom Hat Manufacturing Cost Breakdown Index</h3>
               <p className="text-gray-400 text-xs md:text-sm mt-2 max-w-xl">
-                See exact line-item material, embroidery, labor and logistics cost models ($3.20 - $7.80 FOB) across 6 cap silhouettes.
+                See exact line-item material, embroidery, labor and logistics cost models ($3.50 - $7.80 FOB) across 6 cap silhouettes.
               </p>
             </div>
-            <Link
-              href={`/${lang}/custom-hat-cost-index-2026`}
-              className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-xl text-xs md:text-sm whitespace-nowrap transition flex items-center gap-2"
-            >
-              Explore Cost Index <ArrowRight size={14} />
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+              <Link
+                href={`/${lang}/tools/carton-calculator`}
+                className="bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-5 rounded-xl text-xs md:text-sm whitespace-nowrap transition border border-slate-700"
+              >
+                CBM Calculator
+              </Link>
+              <Link
+                href={`/${lang}/custom-hat-cost-index-2026`}
+                className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-xl text-xs md:text-sm whitespace-nowrap transition flex items-center gap-2"
+              >
+                Explore Cost Index <ArrowRight size={14} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

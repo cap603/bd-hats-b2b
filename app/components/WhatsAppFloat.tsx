@@ -19,8 +19,8 @@ export function WhatsAppFloat() {
     });
     const isEs = lang === "es";
     const greeting = isEs
-      ? "¡Hola Baoding Junyang! Estoy interesado en la fabricación de gorras personalizadas (MOQ 200 uds). ¿Podemos revisar una cotización?\n\n"
-      : "Hi Baoding Junyang! I'm interested in your custom hats. Can we discuss a quote?\n\n";
+      ? "¡Hola BD Hats! He visto su perfil de fábrica. Por favor envíenme MOQ, precio de referencia FOB y política de muestras para gorras personalizadas.\n\n"
+      : "Hi BD Hats, I saw your factory profile. Please send MOQ, FOB reference price and sample policy for custom caps.\n\n";
     const text = encodeURIComponent(greeting + attributionTag());
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
   };

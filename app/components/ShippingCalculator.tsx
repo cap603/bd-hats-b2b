@@ -48,7 +48,7 @@ const DICT: Record<string, {
     selectType: "1. Select Cap Construction",
     types: {
       structured: { label: "Structured Caps", desc: "Snapbacks, Baseball, Trucker (100 pcs/ctn)" },
-      unstructured: { label: "Unstructured / Bucket", desc: "Dad Hats, Campers, Buckets (150 pcs/ctn)" },
+      unstructured: { label: "Unstructured / Bucket", desc: "Dad Hats, Campers, Buckets (100 pcs/ctn)" },
       beanie: { label: "Knit Beanies", desc: "Ribbed, Cuffed, Satin-Lined (200 pcs/ctn)" }
     },
     orderQty: "2. Order Quantity (Pcs)",
@@ -82,7 +82,7 @@ const DICT: Record<string, {
     selectType: "1. Seleccione el Tipo de Gorra",
     types: {
       structured: { label: "Gorras Estructuradas", desc: "Snapbacks, Béisbol, Camionero (100 pzs/caja)" },
-      unstructured: { label: "Sin Estructura / Bucket", desc: "Dad Hats, Gorros Pescador (150 pzs/caja)" },
+      unstructured: { label: "Sin Estructura / Bucket", desc: "Dad Hats, Gorros Pescador (100 pzs/caja)" },
       beanie: { label: "Gorros de Lana (Beanies)", desc: "Tejidos, con Vuelta, Forro Satén (200 pzs/caja)" }
     },
     orderQty: "2. Cantidad de Pedido (Piezas)",
@@ -116,7 +116,7 @@ const DICT: Record<string, {
     selectType: "1. Kappen-Konstruktion wählen",
     types: {
       structured: { label: "Strukturierte Kappen", desc: "Snapbacks, Baseball, Trucker (100 Stk./Karton)" },
-      unstructured: { label: "Unstrukturierte / Bucket", desc: "Dad Hats, Fischerhüte (150 Stk./Karton)" },
+      unstructured: { label: "Unstrukturierte / Bucket", desc: "Dad Hats, Fischerhüte (100 Stk./Karton)" },
       beanie: { label: "Strickmützen (Beanies)", desc: "Gerippt, mit Umschlag (200 Stk./Karton)" }
     },
     orderQty: "2. Bestellmenge (Stück)",
@@ -150,7 +150,7 @@ const DICT: Record<string, {
     selectType: "1. Type de Construction",
     types: {
       structured: { label: "Casquettes Structurées", desc: "Snapbacks, Baseball, Trucker (100 pcs/carton)" },
-      unstructured: { label: "Non Structurées / Bobs", desc: "Dad Hats, Bob Hats (150 pcs/carton)" },
+      unstructured: { label: "Non Structurées / Bobs", desc: "Dad Hats, Bob Hats (100 pcs/carton)" },
       beanie: { label: "Bonnets en Tricot", desc: "Côtelés, à Revers, Doublés (200 pcs/carton)" }
     },
     orderQty: "2. Quantité Commandée (Pièces)",
@@ -184,7 +184,7 @@ const DICT: Record<string, {
     selectType: "1. Selecione a Estrutura do Boné",
     types: {
       structured: { label: "Bonés Estruturados", desc: "Snapbacks, Beisebol, Trucker (100 pcs/cx)" },
-      unstructured: { label: "Sem Estrutura / Bucket", desc: "Dad Hats, Chapéus Bucket (150 pcs/cx)" },
+      unstructured: { label: "Sem Estrutura / Bucket", desc: "Dad Hats, Chapéus Bucket (100 pcs/cx)" },
       beanie: { label: "Gorros de Tricô (Beanies)", desc: "Com Dobra, Forro de Cetim (200 pcs/cx)" }
     },
     orderQty: "2. Quantidade do Pedido (Peças)",
@@ -218,7 +218,7 @@ const DICT: Record<string, {
     selectType: "1. Seleziona la Struttura del Cappello",
     types: {
       structured: { label: "Cappelli Strutturati", desc: "Snapback, Baseball, Trucker (100 pz/scatola)" },
-      unstructured: { label: "Destrutturati / Bucket", desc: "Dad Hat, Cappelli da Pescatore (150 pz/scatola)" },
+      unstructured: { label: "Destrutturati / Bucket", desc: "Dad Hat, Cappelli da Pescatore (100 pz/scatola)" },
       beanie: { label: "Berretti in Maglia (Beanie)", desc: "A Coste, con Risvolto (200 pz/scatola)" }
     },
     orderQty: "2. Quantità d'Ordine (Pezzi)",
@@ -252,7 +252,7 @@ const DICT: Record<string, {
     selectType: "1. キャップの構造を選択",
     types: {
       structured: { label: "立体構造キャップ", desc: "スナップバック、野球帽、トラッカー（100個/箱）" },
-      unstructured: { label: "無芯・バケットハット", desc: "ダッドハット、サファリハット（150個/箱）" },
+      unstructured: { label: "無芯・バケットハット", desc: "ダッドハット、サファリハット（100個/箱）" },
       beanie: { label: "ニット帽（ビーニー）", desc: "リブ編み、折り返し、サテン裏地（200個/箱）" }
     },
     orderQty: "2. 発注数量（個）",
@@ -295,13 +295,13 @@ export function ShippingCalculator({
   // Logistics engineering factors
   const capacityMap = {
     structured: 100,
-    unstructured: 150,
+    unstructured: 100,
     beanie: 200
   };
 
   const weightPerCartonMap = {
-    structured: 11.0, // kg per carton (including buckram, packaging, master box)
-    unstructured: 13.0,
+    structured: 12.0, // kg per carton (including buckram, packaging, master box)
+    unstructured: 12.0,
     beanie: 14.0
   };
 
@@ -327,10 +327,9 @@ export function ShippingCalculator({
     });
 
     const msg = encodeURIComponent(
-      `Hi Baoding Junyang team, I am reviewing ${productName} (SKU: ${sku}).\n` +
-      `Estimated Order: ${qty} pcs (${capType} style).\n` +
-      `Packaging: ${cartonCount} cartons (${cbm} CBM, ~${grossWeight} kg).\n` +
-      `Please provide an FOB / Door-to-Door shipping quote.`
+      `Hi BD Hats, I used your carton calculator for ${qty} pcs of ${capType} caps.\n` +
+      `Estimated: ${cartonCount} cartons / ${cbm} CBM / ~${grossWeight} kg (60x45x40cm double-wall cartons).\n` +
+      `Please confirm packing spec and quote FOB China within 12 hours.`
     );
     window.open(`https://wa.me/8615933930830?text=${msg}`, "_blank");
   };
@@ -485,6 +484,16 @@ export function ShippingCalculator({
           </div>
           <span className="text-xs font-bold text-slate-400 shrink-0">
             Transit: <strong className="text-white">{modeBadge}</strong>
+          </span>
+        </div>
+
+        {/* Logistics Scope & Duty Disclaimer */}
+        <div className="mt-3 text-[11px] text-slate-400 bg-slate-950/60 rounded-xl px-3.5 py-2.5 border border-slate-800/80 flex items-start gap-2">
+          <span className="text-amber-400 font-bold shrink-0">※</span>
+          <span>
+            {lang === "es"
+              ? "Alcance Logístico: La estimación incluye el valor FOB y la cuota de flete marítimo/aéreo internacional. No incluye aranceles de importación en destino ni gastos de despacho aduanero local."
+              : "Logistics Scope: Freight estimates reflect factory export packing volume and international shipping share. Destination import customs clearance, local tariffs (duty/taxes), and port terminal charges are excluded and subject to destination country customs regulations."}
           </span>
         </div>
       </div>

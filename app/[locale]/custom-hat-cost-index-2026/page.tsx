@@ -19,10 +19,10 @@ const CONTENT = {
       accent: "Cost Index & Sourcing Guide",
       subtitle: "Transparent factory-floor economics for global apparel brands, streetwear labels, and corporate buyers. Real FOB cost breakdowns across fabric tiers, Barudan embroidery techniques, order volumes (MOQ 200), and lead times.",
       quickSummaryTitle: "Executive Summary & Benchmark Takeaways",
-      quickSummary: "In 2026, bulk custom hat manufacturing in China ranges between $3.20 and $7.80 per unit FOB for standard minimum orders of 200 pieces. Base cotton twill caps anchor the entry tier ($3.20 - $4.80), while textured 8-wale corduroy and laser-perforated performance golf hats sit in the upper tier ($4.50 - $7.80). Scaling order volume from 200 to 1,000 units reduces per-cap production costs by 22% to 28% due to fabric yield efficiency and setup amortization across automated Barudan embroidery lines."
+      quickSummary: "In 2026, bulk custom hat manufacturing in China ranges between $3.50 and $7.80 per unit FOB for standard minimum orders of 200 pieces. Base cotton twill caps anchor the entry tier ($3.50 - $4.80), while textured 8-wale corduroy and laser-perforated performance golf hats sit in the upper tier ($4.50 - $7.80). Scaling order volume from 200 to 1,000 units reduces per-cap production costs by 22% to 28% due to fabric yield efficiency and setup amortization across automated Barudan embroidery lines."
     },
     stats: [
-      { value: "$3.20 - $7.80", label: "FOB Factory Price Range" },
+      { value: "$3.50 - $7.80", label: "FOB Factory Price Range" },
       { value: "200 Pcs", label: "Strict Minimum Order (MOQ)" },
       { value: "7 Days", label: "Pre-Production Sample Turnaround" },
       { value: "15-20 Days", label: "Bulk Manufacturing Window" }
@@ -30,7 +30,7 @@ const CONTENT = {
     table1Title: "1. 2026 Headwear Category Pricing Benchmarks (FOB China)",
     table1Intro: "Estimated unit costs based on 200-piece baseline orders with standard front embroidery, custom woven sweatband label, and private-label hangtag.",
     categories: [
-      { name: "Classic 6-Panel Cotton Twill Dad Hat", range: "$3.20 - $4.80", moq: "200 pcs", fabric: "100% Chino Cotton Twill", features: "Soft unstructured crown, brass buckle strapback, curved visor" },
+      { name: "Classic 6-Panel Cotton Twill Dad Hat", range: "$3.50 - $4.80", moq: "200 pcs", fabric: "100% Chino Cotton Twill", features: "Soft unstructured crown, brass buckle strapback, curved visor" },
       { name: "Heavyweight Cotton 5-Panel A-Frame Cap", range: "$3.80 - $5.60", moq: "200 pcs", fabric: "280gsm Heavy Cotton", features: "High structured crown, buckram backing, plastic snapback" },
       { name: "Classic 5-Panel Mesh Trucker Cap", range: "$3.50 - $5.20", moq: "200 pcs", fabric: "Cotton Front / Poly Mesh", features: "High-density nylon mesh, padded sweatband, snapback" },
       { name: "Vintage 8-Wale Corduroy Dad Hat", range: "$4.50 - $6.80", moq: "200 pcs", fabric: "100% Cotton 8-Wale Corduroy", features: "Heavy rib texture, Tatami anti-sink embroidery, brass tri-glide" },
@@ -91,10 +91,10 @@ const CONTENT = {
       accent: "Guía de Precios al por Mayor",
       subtitle: "Economía de producción transparente para marcas de ropa urbana, corporativas y distribuidores internacionales. Desglose detallado de precios FOB por tipos de tejido, bordado Barudan, volúmenes (MOQ 200) y tiempos de entrega.",
       quickSummaryTitle: "Resumen Ejecutivo y Métricas Clave",
-      quickSummary: "En 2026, la fabricación de gorras personalizadas al por mayor en China se sitúa entre $3.20 y $7.80 USD por unidad FOB para pedidos mínimos de 200 piezas. Las gorras básicas de sarga de algodón representan la escala de entrada ($3.20 - $4.80), mientras que el tejido de pana gruesa de 8 cordones y las gorras de golf con perforación láser se ubican en la escala superior ($4.50 - $7.80). Aumentar el volumen de 200 a 1,000 unidades reduce el costo por unidad entre un 22% y un 28% gracias a la optimización de corte y amortización en líneas de bordado Barudan."
+      quickSummary: "En 2026, la fabricación de gorras personalizadas al por mayor en China se sitúa entre $3.50 y $7.80 USD por unidad FOB para pedidos mínimos de 200 piezas. Las gorras básicas de sarga de algodón representan la escala de entrada ($3.50 - $4.80), mientras que el tejido de pana gruesa de 8 cordones y las gorras de golf con perforación láser se ubican en la escala superior ($4.50 - $7.80). Aumentar el volumen de 200 a 1,000 unidades reduce el costo por unidad entre un 22% y un 28% gracias a la optimización de corte y amortización en líneas de bordado Barudan."
     },
     stats: [
-      { value: "$3.20 - $7.80", label: "Rango de Precios FOB" },
+      { value: "$3.50 - $7.80", label: "Rango de Precios FOB" },
       { value: "200 Uds", label: "Cantidad Mínima Estricta (MOQ)" },
       { value: "7 Días", label: "Tiempo de Muestra Física" },
       { value: "15-20 Días", label: "Plazo de Producción en Masa" }
@@ -102,7 +102,7 @@ const CONTENT = {
     table1Title: "1. Precios de Referencia por Categoría 2026 (FOB China)",
     table1Intro: "Costos unitarios estimados para pedidos base de 200 unidades con bordado frontal estándar, etiqueta de sudadera y etiqueta colgante de marca.",
     categories: [
-      { name: "Gorra Dad Hat Clásica de 6 Paneles", range: "$3.20 - $4.80", moq: "200 uds", fabric: "100% Sarga de Algodón Chino", features: "Corona suave no estructurada, hebilla de latón, visera curva" },
+      { name: "Gorra Dad Hat Clásica de 6 Paneles", range: "$3.50 - $4.80", moq: "200 uds", fabric: "100% Sarga de Algodón Chino", features: "Corona suave no estructurada, hebilla de latón, visera curva" },
       { name: "Gorra A-Frame de 5 Paneles Pesada", range: "$3.80 - $5.60", moq: "200 uds", fabric: "Algodón Pesado 280gsm", features: "Corona alta estructurada con entretela, cierre snapback" },
       { name: "Gorra Trucker Clásica con Malla", range: "$3.50 - $5.20", moq: "200 uds", fabric: "Frontal Algodón / Malla Poliéster", features: "Malla de nailon resistente, badana acolchada, snapback" },
       { name: "Gorra de Pana Gruesa Vintage de 8 Cordones", range: "$4.50 - $6.80", moq: "200 uds", fabric: "100% Algodón Pana 8-Wale", features: "Textura gruesa, bordado reforzado Tatami, hebilla metálica" },

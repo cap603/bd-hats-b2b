@@ -50,7 +50,7 @@ export function MobileStickyBar({ pageName = "Homepage" }: MobileStickyBarProps)
             </span>
           </div>
           <span className="text-[9px] text-slate-500 font-bold tracking-tight">
-            {isEs ? "⚡ Respuesta rápida < 2h" : "⚡ Fast quote < 2h"}
+            {isEs ? "⚡ Cotización escrita en 12h" : "⚡ Written quote in 12h"}
           </span>
         </div>
 

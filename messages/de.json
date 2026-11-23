@@ -22,10 +22,10 @@
     "subtitle": "Supply Chain & Manufacturing Partner",
     "banners": {
       "0": {
-        "label": "Direkte B2B-Fabriklösungen",
-        "title": "Kappenherstellung auf Weltklasseniveau",
-        "sub": "Über 100 Barudan-Stickmaschinen. 200+ erfahrene Fachkräfte. B2B-Großhandel direkt ab Werk in China.",
-        "cta": "Fabrikpreise anfordern"
+        "label": "Direkt ab Werk · Baoding, China · SGS & BSCI auditiert",
+        "title": "Maßgefertigte Kappen nach Ihren Vorgaben, ab 200 Stück.",
+        "sub": "Gefertigt von Baoding Junyang in China. 100+ Barudan-Stickmaschinen · 5M+ Jahreskapazität. MOQ 200 Stk. · Muster in 7 Tagen · Serie in 15–20 Tagen · Angebot in 12 Std.",
+        "cta": "Detailliertes Fabrikangebot anfordern"
       },
       "1": {
         "label": "Direkte B2B-Fabriklösungen",
@@ -88,7 +88,7 @@
       "retentionDesc": "Unsere Qualität und Verlässlichkeit bringen Marken Saison für Saison zurück.",
       "sgsSupplier": "SGS-geprüfter Lieferant",
       "goldSupplier": "ISO 9001:2015 zertifizierte Betriebsstätte",
-      "certifications": "CE · REACH · RoHS zertifiziert",
+      "certifications": "CE-zertifizierte Fertigwaren · REACH-, RoHS-, OEKO-TEX- & GRS-Prüfung auftragsbezogen",
       "qcStandard": "Werkseigene Qualitätskontrolle"
     },
     "catalog": {
@@ -143,19 +143,19 @@
       "testimonialTitle": "Was unsere Markenpartner sagen",
       "testimonials": [
         {
-          "quote": "Unsere 3D-Puff-Stickerei saß bereits beim ersten Muster perfekt. Die Fabrik sendet Fotos bei jedem Arbeitsschritt — man fühlt sich wie direkt vor Ort.",
-          "name": "Marcus T.",
-          "role": "Streetwear-Markeninhaber, USA"
+          "quote": "Hochdichte 3D-Puff-Stickerei bereits beim ersten Muster perfekt umgesetzt. Tägliche Video-Updates aus Zuschnitt, Stickerei und Endbügeln: 2.000 Kappen in 18 Tagen geliefert.",
+          "name": "US-Streetwear-Marke (2.000 Stk. Auftrag)",
+          "role": "Lieferung in 18 Tagen · Durch Geheimhaltungsvereinbarung (NDA) geschützt"
         },
         {
-          "quote": "Eine MOQ von 200 Stück bei dieser Verarbeitungsqualität ist selten. Unsere Erstbestellung von 2.000 Kappen war in 18 Tagen fertig und bestand jede Prüfung.",
-          "name": "Sophie L.",
-          "role": "Textilimporteurin, Deutschland"
+          "quote": "Direkte Fabrikpreise mit lückenloser Stücklisten-Transparenz. Unser 5.000-Stück-Auftrag bestand alle AQL 2.5 Qualitätsprüfungen ohne Ausschuss.",
+          "name": "Europäischer Berufsbekleidungs-Importeur (5.000 Stk.)",
+          "role": "AQL 2.5 geprüft · Durch Geheimhaltungsvereinbarung (NDA) geschützt"
         },
         {
-          "quote": "Schnelle, direkte Kommunikation über WhatsApp. Die physischen Muster trafen nach exakt 7 Tagen bei uns ein.",
-          "name": "Daniel R.",
-          "role": "Einkäufer Filialkette, Australien"
+          "quote": "Effiziente technische Abstimmung via WhatsApp. Aus dem Blanko-Tech-Pack entstanden innerhalb von exakt 7 Tagen freigegebene Vorproduktionsmuster.",
+          "name": "Australisches Lifestyle-Label (1.500 Stk. Cordkappen)",
+          "role": "Individuelle Weblabel & Beschläge · Durch NDA geschützt"
         }
       ]
     }
@@ -206,7 +206,7 @@
     },
     "getQuote": "Fabrikangebot anfordern",
     "orderSample": "Muster bestellen",
-    "urgencyStrip": "Produktionskapazitäten für diese Saison sind stark nachgefragt — sichern Sie sich Ihre Fertigungslinie noch heute",
+    "urgencyStrip": "Direkte Fabrikfertigung · MOQ 200 Stk. · Schriftliches Angebot in 12 Std. · Muster in 7 Tagen",
     "related": "Weitere Modelle entdecken",
     "relatedTitle": "Verwandte Produkte",
     "faqHeading": "Häufige Fragen",
@@ -237,7 +237,7 @@
     "phonePlaceholder": "+49 170 0000000",
     "message": "Nachricht / Spezifikationen",
     "messagePlaceholder": "Beschreiben Sie Modelle, Stückzahlen oder gewünschte Veredelungen (z. B. 3D-Puff-Stickerei, Webetiketten)...",
-    "privacyNote": "Ihre Anfrage wird direkt an unser Vertriebsteam (admin@bdjunyang.com) gesendet. Schnelle Antwort in 2–4 Stunden.",
+    "privacyNote": "Ihre Anfrage wird direkt an unser B2B-Technik- und Vertriebsteam (admin@bdjunyang.com) gesendet. Verbindliches schriftliches Angebot innerhalb von 12 Stunden.",
     "intentSample": "Hallo Baoding Junyang! Ich möchte vor der Serienproduktion ein physisches Muster bestellen. Können Sie Details senden?",
     "intentBulk": "Hallo Baoding Junyang! Ich interessiere mich für eine Serienproduktion. Können Sie mir ein Angebot erstellen?",
     "intentTest": "Hallo Baoding Junyang! Ich möchte eine kleine Testbestellung aufgeben. Bitte senden Sie mir die Konditionen.",
@@ -296,7 +296,7 @@
   },
   "chat": {
     "cta": "Mit uns chatten",
-    "tip": "Hallo! Erhalten Sie in 12 Std. Ihr Angebot."
+    "tip": "⚡ Angebot in 12 Std."
   },
   "language": {
     "switchTo": "Deutsch",
