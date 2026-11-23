@@ -19,7 +19,7 @@ const CONTENT = {
       accent: "Cost Index & Sourcing Guide",
       subtitle: "Transparent factory-floor economics for global apparel brands, streetwear labels, and corporate buyers. Real FOB cost breakdowns across fabric tiers, Barudan embroidery techniques, order volumes (MOQ 200), and lead times.",
       quickSummaryTitle: "Executive Summary & Benchmark Takeaways",
-      quickSummary: "In 2026, bulk custom hat manufacturing in China ranges between $3.50 and $7.80 per unit FOB for standard minimum orders of 200 pieces. Base cotton twill caps anchor the entry tier ($3.50 - $4.80), while textured 8-wale corduroy and laser-perforated performance golf hats sit in the upper tier ($4.50 - $7.80). Scaling order volume from 200 to 1,000 units reduces per-cap production costs by 22% to 28% due to fabric yield efficiency and setup amortization across automated Barudan embroidery lines."
+      quickSummary: "In 2026, bulk custom hat manufacturing in China ranges between $5.20 and $7.80 per unit FOB for standard minimum orders of 200 pieces. Base cotton twill caps anchor the entry tier ($5.20 - $6.80), while textured 8-wale corduroy and laser-perforated performance golf hats sit in the upper tier ($4.50 - $7.80). Scaling order volume from 200 to 1,000 units reduces per-cap production costs by 22% to 28% due to fabric yield efficiency and setup amortization across automated Barudan embroidery lines."
     },
     stats: [
       { value: "$3.50 - $7.80", label: "FOB Factory Price Range" },
@@ -30,7 +30,7 @@ const CONTENT = {
     table1Title: "1. 2026 Headwear Category Pricing Benchmarks (FOB China)",
     table1Intro: "Estimated unit costs based on 200-piece baseline orders with standard front embroidery, custom woven sweatband label, and private-label hangtag.",
     categories: [
-      { name: "Classic 6-Panel Cotton Twill Dad Hat", range: "$3.50 - $4.80", moq: "200 pcs", fabric: "100% Chino Cotton Twill", features: "Soft unstructured crown, brass buckle strapback, curved visor" },
+      { name: "Classic 6-Panel Cotton Twill Dad Hat", range: "$5.20 - $6.80", moq: "200 pcs", fabric: "100% Chino Cotton Twill", features: "Soft unstructured crown, brass buckle strapback, curved visor" },
       { name: "Heavyweight Cotton 5-Panel A-Frame Cap", range: "$3.80 - $5.60", moq: "200 pcs", fabric: "280gsm Heavy Cotton", features: "High structured crown, buckram backing, plastic snapback" },
       { name: "Classic 5-Panel Mesh Trucker Cap", range: "$3.50 - $5.20", moq: "200 pcs", fabric: "Cotton Front / Poly Mesh", features: "High-density nylon mesh, padded sweatband, snapback" },
       { name: "Vintage 8-Wale Corduroy Dad Hat", range: "$4.50 - $6.80", moq: "200 pcs", fabric: "100% Cotton 8-Wale Corduroy", features: "Heavy rib texture, Tatami anti-sink embroidery, brass tri-glide" },
@@ -46,7 +46,7 @@ const CONTENT = {
       { component: "Embroidery & Branding", share: "20% - 28%", details: "Digitizing fees, stitch density run time on Barudan machines, 3D puff foam, and thread spool consumption." },
       { component: "Hardware & Closures", share: "10% - 15%", details: "Antique brass metal buckles, 7-hole snapbacks, custom embossed metal eyelets, and nylon webbing straps." },
       { component: "Internal Sweatband & Taping", share: "8% - 12%", details: "Cotton/terrycloth sweatbands, custom branded seam tape, woven brand and care labels." },
-      { component: "Labor, Cutting & Quality Control", share: "15% - 20%", details: "Precision pattern cutting, skilled panel assembly, visor molding, steam shaping, and AQL 2.5 final inspection." }
+      { component: "Labor, Cutting & Quality Control", share: "15% - 20%", details: "Precision pattern cutting, skilled panel assembly, visor molding, steam shaping, and piece-by-piece final quality inspection." }
     ],
     table3Title: "3. Volume Discount & Economy of Scale Tiers",
     table3Intro: "How production run size directly impacts manufacturing costs at our Baoding facility.",
@@ -68,7 +68,7 @@ const CONTENT = {
     faqs: [
       {
         q: "What is the true starting cost for 200 custom embroidered hats?",
-        a: "For 200 standard structured cotton twill caps with custom 3D front embroidery and woven sweatband label, total production cost typically ranges from $700 to $960 USD ($3.50 - $4.80 per cap) FOB China, excluding international courier/sea shipping."
+        a: "For 200 standard structured cotton twill caps with custom 3D front embroidery and woven sweatband label, total production cost typically ranges from $1,040 to $1,360 USD ($5.20 - $6.80 per cap) FOB China, excluding international courier/sea shipping."
       },
       {
         q: "Why is the MOQ set strictly at 200 pieces?",
@@ -91,7 +91,7 @@ const CONTENT = {
       accent: "Guía de Precios al por Mayor",
       subtitle: "Economía de producción transparente para marcas de ropa urbana, corporativas y distribuidores internacionales. Desglose detallado de precios FOB por tipos de tejido, bordado Barudan, volúmenes (MOQ 200) y tiempos de entrega.",
       quickSummaryTitle: "Resumen Ejecutivo y Métricas Clave",
-      quickSummary: "En 2026, la fabricación de gorras personalizadas al por mayor en China se sitúa entre $3.50 y $7.80 USD por unidad FOB para pedidos mínimos de 200 piezas. Las gorras básicas de sarga de algodón representan la escala de entrada ($3.50 - $4.80), mientras que el tejido de pana gruesa de 8 cordones y las gorras de golf con perforación láser se ubican en la escala superior ($4.50 - $7.80). Aumentar el volumen de 200 a 1,000 unidades reduce el costo por unidad entre un 22% y un 28% gracias a la optimización de corte y amortización en líneas de bordado Barudan."
+      quickSummary: "En 2026, la fabricación de gorras personalizadas al por mayor en China se sitúa entre $5.20 y $7.80 USD por unidad FOB para pedidos mínimos de 200 piezas. Las gorras básicas de sarga de algodón representan la escala de entrada ($5.20 - $6.80), mientras que el tejido de pana gruesa de 8 cordones y las gorras de golf con perforación láser se ubican en la escala superior ($4.50 - $7.80). Aumentar el volumen de 200 a 1,000 unidades reduce el costo por unidad entre un 22% y un 28% gracias a la optimización de corte y amortización en líneas de bordado Barudan."
     },
     stats: [
       { value: "$3.50 - $7.80", label: "Rango de Precios FOB" },
@@ -102,7 +102,7 @@ const CONTENT = {
     table1Title: "1. Precios de Referencia por Categoría 2026 (FOB China)",
     table1Intro: "Costos unitarios estimados para pedidos base de 200 unidades con bordado frontal estándar, etiqueta de sudadera y etiqueta colgante de marca.",
     categories: [
-      { name: "Gorra Dad Hat Clásica de 6 Paneles", range: "$3.50 - $4.80", moq: "200 uds", fabric: "100% Sarga de Algodón Chino", features: "Corona suave no estructurada, hebilla de latón, visera curva" },
+      { name: "Gorra Dad Hat Clásica de 6 Paneles", range: "$5.20 - $6.80", moq: "200 uds", fabric: "100% Sarga de Algodón Chino", features: "Corona suave no estructurada, hebilla de latón, visera curva" },
       { name: "Gorra A-Frame de 5 Paneles Pesada", range: "$3.80 - $5.60", moq: "200 uds", fabric: "Algodón Pesado 280gsm", features: "Corona alta estructurada con entretela, cierre snapback" },
       { name: "Gorra Trucker Clásica con Malla", range: "$3.50 - $5.20", moq: "200 uds", fabric: "Frontal Algodón / Malla Poliéster", features: "Malla de nailon resistente, badana acolchada, snapback" },
       { name: "Gorra de Pana Gruesa Vintage de 8 Cordones", range: "$4.50 - $6.80", moq: "200 uds", fabric: "100% Algodón Pana 8-Wale", features: "Textura gruesa, bordado reforzado Tatami, hebilla metálica" },
@@ -118,7 +118,7 @@ const CONTENT = {
       { component: "Bordado y Personalización", share: "20% - 28%", details: "Digitalización de puntadas, tiempo en máquinas Barudan, espuma 3D y consumo de hilo." },
       { component: "Herrajes y Cierres", share: "10% - 15%", details: "Hebillas de latón envejecido, cierres plásticos snapback de 7 orificios y correas de nailon." },
       { component: "Banda Antisudor y Cintas Internas", share: "8% - 12%", details: "Bandas de sudor acolchadas, cintas interiores personalizadas y etiquetas tejidas." },
-      { component: "Mano de Obra y Control de Calidad", share: "15% - 20%", details: "Corte de patrones de precisión, ensamblaje de paneles, moldeado a vapor e inspección AQL 2.5." }
+      { component: "Mano de Obra y Control de Calidad", share: "15% - 20%", details: "Corte de patrones de precisión, ensamblaje de paneles, moldeado a vapor e inspección rigurosa pieza por pieza." }
     ],
     table3Title: "3. Descuentos por Escala y Volumen de Producción",
     table3Intro: "Impacto del tamaño del lote en el costo unitario de fabricación en nuestra planta de Baoding.",
@@ -140,7 +140,7 @@ const CONTENT = {
     faqs: [
       {
         q: "¿Cuál es el costo real de fabricar 200 gorras personalizadas?",
-        a: "Para 200 gorras estructuradas de sarga con bordado 3D frontal y etiqueta interior personalizada, el costo de producción oscila entre $700 y $960 USD ($3.50 - $4.80 por gorra) FOB China, sin incluir flete internacional."
+        a: "Para 200 gorras estructuradas de sarga con bordado 3D frontal y etiqueta interior personalizada, el costo de producción oscila entre $1,040 y $1,360 USD ($5.20 - $6.80 por gorra) FOB China, sin incluir flete internacional."
       },
       {
         q: "¿Por qué el pedido mínimo está fijado en 200 unidades?",
@@ -311,7 +311,7 @@ export default function CustomHatCostIndexPage() {
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-sm text-black mb-1">
-                  {lang === "es" ? "Planta de 50.000㎡ y Control AQL" : "50,000㎡ Facility & AQL 2.5"}
+                  {lang === "es" ? "Planta de 50.000㎡ y Control Pieza por Pieza" : "50,000㎡ Facility & Piece-by-Piece QC"}
                 </h3>
                 <p className="text-xs text-gray-500">
                   {lang === "es" ? "Inspección de preembarque, planchado a vapor y empaque en cajas reforzadas." : "Dedicated staging bays, steam shaping machines, and final pre-shipment inspection."}
@@ -474,8 +474,8 @@ export default function CustomHatCostIndexPage() {
           </h2>
           <p className="text-slate-400 text-base md:text-lg mb-8 leading-relaxed">
             {lang === "es"
-              ? "Envíenos su diseño o tech pack y reciba una cotización formal FOB con desglose detallado en menos de 12 horas."
-              : "Submit your tech pack or artwork for a comprehensive factory quotation with exact BOM breakdowns within 12 hours."}
+              ? "Envíenos su diseño o tech pack y reciba una cotización formal FOB con desglose detallado en menos de 2 horas."
+              : "Submit your tech pack or artwork for a comprehensive factory quotation with exact BOM breakdowns within 2 hours."}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button

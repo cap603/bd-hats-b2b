@@ -329,7 +329,7 @@ export function ShippingCalculator({
     const msg = encodeURIComponent(
       `Hi BD Hats, I used your carton calculator for ${qty} pcs of ${capType} caps.\n` +
       `Estimated: ${cartonCount} cartons / ${cbm} CBM / ~${grossWeight} kg (60x45x40cm double-wall cartons).\n` +
-      `Please confirm packing spec and quote FOB China within 12 hours.`
+      `Please confirm packing spec and quote FOB China within 2 hours.`
     );
     window.open(`https://wa.me/8615933930830?text=${msg}`, "_blank");
   };

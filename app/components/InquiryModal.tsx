@@ -200,18 +200,18 @@ export function InquiryModal() {
     : "Get Factory Direct Quote & Pricing";
 
   const subText = isEs
-    ? "Respuesta rápida <12h, 100+ máquinas Barudan, muestras físicas en 7 días."
+    ? "Respuesta rápida <2h, 100+ máquinas Barudan, muestras físicas en 7 días."
     : isDe
-    ? "12-Std.-Antwort, 100+ Barudan-Stickköpfe, physische Muster in 7 Tagen."
+    ? "2-Std.-Antwort, 100+ Barudan-Stickköpfe, physische Muster in 7 Tagen."
     : isFr
-    ? "Réponse en 12h, 100+ têtes de broderie Barudan, échantillons en 7 jours."
+    ? "Réponse en 2h, 100+ têtes de broderie Barudan, échantillons en 7 jours."
     : isPt
-    ? "Resposta em 12h, 100+ máquinas Barudan, amostras físicas em 7 dias."
+    ? "Resposta em 2h, 100+ máquinas Barudan, amostras físicas em 7 dias."
     : isIt
-    ? "Risposta rapida <12h, 100+ macchine da ricamo Barudan, campioni in 7 giorni."
+    ? "Risposta rapida <2h, 100+ macchine da ricamo Barudan, campioni in 7 giorni."
     : isJa
-    ? "12時間以内見積り回答、百霊達高速刺繍機100台、7日間サンプル作成。"
-    : "12h rapid turnaround, 100+ Barudan embroidery heads, 7-day physical samples.";
+    ? "2時間以内見積り回答、百霊達高速刺繍機100台、7日間サンプル作成。"
+    : "2h rapid turnaround, 100+ Barudan embroidery heads, 7-day physical samples.";
 
   const whatsappBtnText = isEs
     ? "Chatear por WhatsApp Directo"
@@ -410,7 +410,7 @@ export function InquiryModal() {
 
               <div className="flex items-center justify-between text-[10px] text-slate-400 font-medium px-1">
                 <span>🔒 {isEs ? "Tus datos son 100% confidenciales" : isJa ? "秘密厳守・直接工場見積り" : "100% confidential factory quote"}</span>
-                <span>⚡ {isEs ? "Respuesta < 12h" : isJa ? "12h以内回答" : "Direct response < 12h"}</span>
+                <span>⚡ {isEs ? "Respuesta < 2h" : isJa ? "2h以内回答" : "Direct response < 2h"}</span>
               </div>
             </form>
           </>
@@ -442,14 +442,14 @@ export function InquiryModal() {
               </h3>
               <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mt-1.5 max-w-sm mx-auto">
                 {isEs
-                  ? "Nuestro equipo de ingeniería revisará sus especificaciones y le enviará la cotización de fábrica por correo en menos de 12 horas."
+                  ? "Nuestro equipo de ingeniería revisará sus especificaciones y le enviará la cotización de fábrica por correo en menos de 2 horas."
                   : isDe
-                  ? "Unser Technik-Team prüft Ihre Angaben und sendet Ihnen innerhalb von 12 Stunden ein schriftliches Fabrikangebot per E-Mail."
+                  ? "Unser Technik-Team prüft Ihre Angaben und sendet Ihnen innerhalb von 2 Stunden ein schriftliches Fabrikangebot per E-Mail."
                   : isFr
-                  ? "Notre équipe examinera vos spécifications et vous enverra un devis détaillé par email sous 12 heures."
+                  ? "Notre équipe examinera vos spécifications et vous enverra un devis détaillé par email sous 2 heures."
                   : isJa
-                  ? "当社の技術・営業チームが仕様を確認の上、12時間以内に詳細なお見積書をメールにて返信いたします。"
-                  : "Our engineering sales team is reviewing your specs and will email you an itemized factory quote within 12 hours."}
+                  ? "当社の技術・営業チームが仕様を確認の上、2時間以内に詳細なお見積書をメールにて返信いたします。"
+                  : "Our engineering sales team is reviewing your specs and will email you an itemized factory quote within 2 hours."}
               </p>
             </div>
 

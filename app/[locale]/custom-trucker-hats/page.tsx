@@ -39,7 +39,7 @@ const CONTENT = {
     ],
     rangeTitle: "Our Trucker Hat Range",
     ctaTitle: "Launch Your Trucker Program",
-    ctaDesc: "Send us your artwork — get a factory quote within 12 hours and a physical sample in 7 days.",
+    ctaDesc: "Send us your artwork — get a factory quote within 2 hours and a physical sample in 7 days.",
     ctaPrimary: "Request Factory Quote",
     ctaSecondary: "Browse Full Catalog"
   },
@@ -72,7 +72,7 @@ const CONTENT = {
     ],
     rangeTitle: "Nuestra línea de gorras trucker",
     ctaTitle: "Lance su programa de gorras trucker",
-    ctaDesc: "Envíenos su diseño — reciba una cotización de fábrica en 12 horas y una muestra física en 7 días.",
+    ctaDesc: "Envíenos su diseño — reciba una cotización de fábrica en 2 horas y una muestra física en 7 días.",
     ctaPrimary: "Solicite cotización de fábrica",
     ctaSecondary: "Ver catálogo completo"
   }

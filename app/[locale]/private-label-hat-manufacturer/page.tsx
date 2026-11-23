@@ -72,7 +72,7 @@ const CONTENT = {
       "All three run at the same MOQ of 200 pieces per style and color, so you can start with ODM, then move to private label once a style proves itself.",
     stepsTitle: "From Brand Kit to Retail Shelf",
     steps: [
-      { n: "01", t: "Send your brand kit", d: "Logo files (AI/PDF), label artwork, packaging references and target quantity. We reply with questions and a quote within 12 hours." },
+      { n: "01", t: "Send your brand kit", d: "Logo files (AI/PDF), label artwork, packaging references and target quantity. We reply with questions and a quote within 2 hours." },
       { n: "02", t: "Approve the branded sample", d: "In 7 days you receive a physical cap with your label, hang tag and packaging applied — the whole brand experience, not just the cap." },
       { n: "03", t: "Production with photo updates", d: "15-20 days of bulk production. We send weekly photos of embroidery, label sewing and packing so you can approve remotely." },
       { n: "04", t: "Retail-ready shipment", d: "Barcodes applied, cartons labelled per size and color, packing list issued. Air express 5-8 days or sea freight 25-35 days." },
@@ -191,7 +191,7 @@ const CONTENT = {
       "Los tres modelos manejan la misma MOQ de 200 piezas por estilo y color, así que puedes empezar con ODM y pasar a private label cuando un estilo demuestre funcionar.",
     stepsTitle: "Del kit de marca al anaquel retail",
     steps: [
-      { n: "01", t: "Envía tu kit de marca", d: "Archivos de logo (AI/PDF), diseño de etiquetas, referencias de empaque y cantidad objetivo. Respondemos con preguntas y una cotización en 12 horas." },
+      { n: "01", t: "Envía tu kit de marca", d: "Archivos de logo (AI/PDF), diseño de etiquetas, referencias de empaque y cantidad objetivo. Respondemos con preguntas y una cotización en 2 horas." },
       { n: "02", t: "Aprueba la muestra con marca", d: "En 7 días recibes una gorra física con tu etiqueta, colgante y empaque aplicados: toda la experiencia de marca, no solo la gorra." },
       { n: "03", t: "Producción con actualizaciones fotográficas", d: "15-20 días de producción en masa. Enviamos fotos semanales del bordado, el cosido de etiquetas y el empaque para que apruebes a distancia." },
       { n: "04", t: "Embarque listo para retail", d: "Códigos de barras aplicados, cartones etiquetados por talla y color, lista de empaque emitida. Envío aéreo exprés 5-8 días o marítimo 25-35 días." },

@@ -39,7 +39,7 @@ const CONTENT = {
     ],
     modelsTitle: "Our Snapback Range",
     ctaTitle: "Start Your Snapback Line Today",
-    ctaDesc: "Send us your requirements — get a factory quote within 12 hours and a physical sample in 7 days.",
+    ctaDesc: "Send us your requirements — get a factory quote within 2 hours and a physical sample in 7 days.",
     ctaPrimary: "Request Factory Quote",
     ctaSecondary: "Browse Full Catalog"
   },
@@ -72,7 +72,7 @@ const CONTENT = {
     ],
     modelsTitle: "Nuestra línea de snapbacks",
     ctaTitle: "Inicie su línea de snapbacks hoy",
-    ctaDesc: "Envíenos sus requisitos — reciba una cotización de fábrica en 12 horas y una muestra física en 7 días.",
+    ctaDesc: "Envíenos sus requisitos — reciba una cotización de fábrica en 2 horas y una muestra física en 7 días.",
     ctaPrimary: "Solicite cotización de fábrica",
     ctaSecondary: "Ver catálogo completo"
   }

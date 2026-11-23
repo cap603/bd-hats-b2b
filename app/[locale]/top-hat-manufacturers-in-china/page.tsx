@@ -162,8 +162,8 @@ const CONTENT = {
       },
       {
         num: "04",
-        title: "Require Written AQL 2.5 Quality Control Inspection",
-        desc: "Ensure your commercial contract explicitly specifies AQL (Acceptable Quality Limit) 2.5 standard for critical and major defects, covering seam alignment, color consistency, and needle hole integrity before packing.",
+        title: "Require Written Piece-by-Piece Quality Control Inspection",
+        desc: "Ensure your commercial contract explicitly specifies piece-by-piece inspection standards for critical and major details, covering seam alignment, color consistency, and needle hole integrity before packing.",
       },
       {
         num: "05",
@@ -194,7 +194,7 @@ const CONTENT = {
       },
       {
         q: "What is the real starting cost for 200 custom embroidered hats from China?",
-        a: "For 200 high-quality custom structured cotton twill or dad hats with 3D front embroidery and custom woven sweatband labels, total factory production cost typically ranges from $700 to $960 USD ($3.50 - $4.80 per unit) FOB China, excluding international courier delivery.",
+        a: "For 200 high-quality custom structured cotton twill or dad hats with 3D front embroidery and custom woven sweatband labels, total factory production cost typically ranges from $1,040 to $1,360 USD ($5.20 - $6.80 per unit) FOB China, excluding international courier delivery.",
       },
       {
         q: "How can I verify if a supplier is a real factory or just a trading company?",
@@ -345,8 +345,8 @@ const CONTENT = {
       },
       {
         num: "04",
-        title: "Especifica Estándares AQL 2.5 por Escrito",
-        desc: "Asegúrate de que el contrato comercial estipule el estándar AQL 2.5 para defectos mayores antes del empaquetado final.",
+        title: "Especifica Control de Calidad Pieza por Pieza por Escrito",
+        desc: "Asegúrate de que el contrato comercial estipule inspección rigurosa pieza por pieza para evitar defectos antes del empaquetado final.",
       },
       {
         num: "05",
@@ -377,7 +377,7 @@ const CONTENT = {
       },
       {
         q: "¿Cuál es el coste real para fabricar 200 gorras personalizadas en China?",
-        a: "Para 200 gorras de algodón twill estructuradas con bordado 3D frontal y etiquetas tejidas en badana, el coste total de producción suele rondar entre $700 y $960 USD ($3.50 - $4.80 por gorra) FOB China, excluyendo el envío internacional.",
+        a: "Para 200 gorras de algodón twill estructuradas con bordado 3D frontal y etiquetas tejidas en badana, el coste total de producción suele rondar entre $1,040 y $1,360 USD ($5.20 - $6.80 por gorra) FOB China, excluyendo el envío internacional.",
       },
       {
         q: "¿Cómo saber si un proveedor es una fábrica real o un intermediario?",

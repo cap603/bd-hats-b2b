@@ -52,7 +52,7 @@ const CONTENT = {
       { style: "5-panel (A-frame)", shape: "Wide flat front panel", brim: "Flat", fit: "Bold logos, camp-style caps" },
     ],
     compareNote:
-      "Not sure which one fits your line? Send us a reference cap or a photo — we will match the construction and quote it within 12 hours.",
+      "Not sure which one fits your line? Send us a reference cap or a photo — we will match the construction and quote it within 2 hours.",
     pricingTitle: "Pricing, MOQ & Lead Time",
     stats: [
       { value: "$3.50 – $7.00", label: "Per unit, FOB" },
@@ -131,7 +131,7 @@ const CONTENT = {
       { style: "5 paneles (A-frame)", shape: "Panel frontal ancho y plano", brim: "Plana", fit: "Logos llamativos, gorras estilo camp" },
     ],
     compareNote:
-      "¿No sabes cuál encaja con tu línea? Envíanos una gorra de referencia o una foto: replicamos la construcción y te cotizamos en 12 horas.",
+      "¿No sabes cuál encaja con tu línea? Envíanos una gorra de referencia o una foto: replicamos la construcción y te cotizamos en 2 horas.",
     pricingTitle: "Precios, MOQ y plazo de entrega",
     stats: [
       { value: "$3.50 – $7.00", label: "Por unidad, FOB" },

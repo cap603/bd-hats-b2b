@@ -22,8 +22,8 @@ export default function CartonCalculatorPage() {
       label: "Carton Calculator Page Hero CTA",
     });
     const greeting = isEs
-      ? "¡Hola BD Hats! He utilizado su Calculadora de Embalaje y CBM. Quisiera confirmar especificaciones de embalaje y solicitar cotización FOB China en 12 horas."
-      : "Hi BD Hats, I used your carton calculator. Please confirm export packing specifications and quote FOB China within 12 hours.";
+      ? "¡Hola BD Hats! He utilizado su Calculadora de Embalaje y CBM. Quisiera confirmar especificaciones de embalaje y solicitar cotización FOB China en 2 horas."
+      : "Hi BD Hats, I used your carton calculator. Please confirm export packing specifications and quote FOB China within 2 hours.";
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(greeting)}`, "_blank");
   };
 
@@ -178,7 +178,7 @@ export default function CartonCalculatorPage() {
       {/* Footer Minimal */}
       <footer className="bg-white border-t border-slate-200/80 py-8 text-center text-xs text-slate-500">
         <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Direct Factory B2B Export Solutions.</p>
-        <p className="mt-1 text-[11px] text-slate-400">Written quotations delivered within 12 hours · admin@bdjunyang.com</p>
+        <p className="mt-1 text-[11px] text-slate-400">Written quotations delivered within 2 hours · admin@bdjunyang.com</p>
       </footer>
     </div>
   );

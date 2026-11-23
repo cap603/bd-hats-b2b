@@ -309,7 +309,7 @@ export default function MerinoVsAcrylicPage() {
       quickAnswerLabel={c.hero.quickAnswerLabel}
       quickAnswer={c.hero.quickAnswer}
       ctaTitle={lang === "es" ? "¿Listo para Diseñar su Colección de Gorros?" : "Ready to Build Your Custom Beanie Collection?"}
-      ctaText={lang === "es" ? "Desde acrílico suave de gran volumen hasta lana merino extrafina de alta gama. Cotización de fábrica en 12 horas." : "From high-volume soft acrylics to premium extrafine Merino wool. Get your direct factory quote in 12 hours."}
+      ctaText={lang === "es" ? "Desde acrílico suave de gran volumen hasta lana merino extrafina de alta gama. Cotización de fábrica en 2 horas." : "From high-volume soft acrylics to premium extrafine Merino wool. Get your direct factory quote in 2 hours."}
       ctaButton={lang === "es" ? "Solicitar Cotización de Fábrica" : "Get Factory Quote"}
     >
       <ComparisonTable

@@ -29,13 +29,13 @@ const CONTENT = {
     ],
     stepsTitle: "How OEM Works With Us",
     steps: [
-      { n: "01", t: "Send Your Brief", d: "Styles, quantities, artwork — or just an idea. We confirm specs within 12 hours." },
+      { n: "01", t: "Send Your Brief", d: "Styles, quantities, artwork — or just an idea. We confirm specs within 2 hours." },
       { n: "02", t: "Get Your Quote", d: "A detailed quotation with pricing, MOQ, and lead time. No hidden costs." },
       { n: "03", t: "Approve the Sample", d: "Physical pre-production sample in 7 days for your final approval." },
       { n: "04", t: "Bulk Production", d: "15-20 days production with weekly photo/video progress updates and final QC." }
     ],
     ctaTitle: "Build Your Brand on Our Factory",
-    ctaDesc: "Tell us about your project — get a quote within 12 hours and a sample in 7 days.",
+    ctaDesc: "Tell us about your project — get a quote within 2 hours and a sample in 7 days.",
     ctaPrimary: "Request Factory Quote",
     ctaSecondary: "Browse Full Catalog"
   },
@@ -59,13 +59,13 @@ const CONTENT = {
     ],
     stepsTitle: "Cómo funciona el OEM con nosotros",
     steps: [
-      { n: "01", t: "Envíe su brief", d: "Estilos, cantidades, diseños o solo una idea. Confirmamos las especificaciones en 12 horas." },
-      { n: "02", t: "Reciba su cotización", d: "Una cotización detallada con precios, cantidad mínima de pedido (MOQ) y plazo de entrega. Sin costos ocultos." },
+      { n: "01", t: "Envíe su brief", d: "Estilos, cantidades, diseños o solo una idea. Confirmamos las especificaciones en 2 horas." },
+      { n: "02", t: "Reciba su cotización", d: "Una cotización detallada con precios, MOQ y tiempo de entrega. Sin costos ocultos." },
       { n: "03", t: "Apruebe la muestra", d: "Muestra física de preproducción en 7 días para su aprobación final." },
-      { n: "04", t: "Producción en masa", d: "Producción de 15-20 días con avances semanales en fotos y videos y control de calidad final." }
+      { n: "04", t: "Producción en masa", d: "15-20 días de producción con actualizaciones semanales en foto/video y QC final." }
     ],
-    ctaTitle: "Construya su marca sobre nuestra fábrica",
-    ctaDesc: "Cuéntenos sobre su proyecto — reciba una cotización en 12 horas y una muestra en 7 días.",
+    ctaTitle: "Construya su Marca Sobre Nuestra Fábrica",
+    ctaDesc: "Cuéntenos sobre su proyecto — reciba una cotización en 2 horas y una muestra en 7 días.",
     ctaPrimary: "Solicite cotización de fábrica",
     ctaSecondary: "Ver catálogo completo"
   }

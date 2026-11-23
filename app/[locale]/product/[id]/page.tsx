@@ -14,6 +14,7 @@ import {
 import { Breadcrumb } from "../../../components/Breadcrumb";
 import { LanguageSwitcher } from "../../../components/LanguageSwitcher";
 import { ShippingCalculator } from "../../../components/ShippingCalculator";
+import { InquiryForm } from "../../../components/InquiryForm";
 import { trackWhatsAppClick } from "../../../lib/tracking";
 import { CATEGORY_LANDING, CATEGORY_COMPARISONS, labelFor } from "../../../lib/product-links";
 
@@ -459,6 +460,197 @@ export default function ProductDetail() {
         />
       </section>
 
+      {/* Pre-Production Sample QC Checklist (3 physical tests) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
+        <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-xs">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-emerald-50 text-emerald-600">
+              <ShieldCheck size={18} />
+            </span>
+            <span className="text-xs font-black uppercase tracking-widest text-emerald-600">
+              {lang === "es" ? "Protocolo de Recepción de Muestra" : "Pre-Production Sample Acceptance Protocol"}
+            </span>
+          </div>
+          <h3 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2">
+            {lang === "es" ? "3 Pruebas Físicas para Aprobar su Muestra de Preproducción" : "3 Physical Tests to Sign Off Your Pre-Production Sample"}
+          </h3>
+          <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">
+            {lang === "es"
+              ? "Cuando llegue la muestra a su oficina, realice estas tres pruebas antes de autorizar la producción en masa. Son los mismos puntos de control que aplica nuestro equipo de QC en planta."
+              : "When the sample arrives at your office, run these three checks before authorising bulk. They mirror the checkpoints our in-house QC team applies on the factory floor."}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <div className="text-[10px] font-black text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-2 py-0.5 rounded-full inline-block mb-2">TEST 01</div>
+              <h4 className="font-black text-slate-900 mb-1">
+                {lang === "es" ? "Compresión y Rebote de Corona" : "Crown Pinch & Spring-Back Test"}
+              </h4>
+              <p className="text-slate-600 text-[11px] leading-relaxed">
+                {lang === "es"
+                  ? "Comprima la corona estructurada y suelte: el refuerzo buckram debe recuperar la forma al instante sin pliegues permanentes. Verifique la alineación de la costura frontal con el centro de la visera (tolerancia industrial ±1mm)."
+                  : "Pinch the structured crown and release: the buckram backing should recover its shape immediately without permanent creases. Check front-seam to visor centreline alignment within the ±1mm industrial tolerance."}
+              </p>
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <div className="text-[10px] font-black text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-2 py-0.5 rounded-full inline-block mb-2">TEST 02</div>
+              <h4 className="font-black text-slate-900 mb-1">
+                {lang === "es" ? "Sellado de Espuma 3D Puff" : "3D Puff Foam Sealing & Stitch Density"}
+              </h4>
+              <p className="text-slate-600 text-[11px] leading-relaxed">
+                {lang === "es"
+                  ? "Bajo luz intensa y lupa, las puntadas satinadas de alta densidad deben encapsular por completo la espuma EVA: sin espuma blanca expuesta en bordes ni esquinas, y sin hilos sueltos."
+                  : "Under strong light and magnification, the high-density satin stitches must fully encapsulate the EVA foam — no white foam visible at edges or corners, and no loose thread tails."}
+              </p>
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <div className="text-[10px] font-black text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-2 py-0.5 rounded-full inline-block mb-2">TEST 03</div>
+              <h4 className="font-black text-slate-900 mb-1">
+                {lang === "es" ? "Badana Plana de 4 Agujas" : "4-Needle Sweatband Flatlock Check"}
+              </h4>
+              <p className="text-slate-600 text-[11px] leading-relaxed">
+                {lang === "es"
+                  ? "Abra la badana interior: las 4 hileras de costura deben mantener paso uniforme, la espuma de celda cerrada sin arrugas ni bordes levantados, y sin rebabas de hilo en la zona de contacto con la frente."
+                  : "Flip the inner sweatband: the 4 stitch rows must hold an even pitch, the closed-cell foam must lie flat without wrinkles or lifted edges, and there must be no thread burrs at the forehead contact zone."}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fabric × Decoration Compatibility Matrix */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
+        <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-xs">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-blue-50 text-blue-600">
+              <Cpu size={18} />
+            </span>
+            <span className="text-xs font-black uppercase tracking-widest text-blue-600">
+              {lang === "es" ? "Matriz de Compatibilidad Textil" : "Fabric × Decoration Compatibility Matrix"}
+            </span>
+          </div>
+          <h3 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2">
+            {lang === "es" ? "Qué Tejido Soporta Mejor su Logotipo" : "Which Fabric Carries Your Logo Best"}
+          </h3>
+          <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">
+            {lang === "es"
+              ? "La elección del tejido fija el techo de calidad de la decoración. Estos cuatro grupos cubren la mayoría de los programas B2B de gorras."
+              : "Fabric choice sets the quality ceiling for decoration. These four groups cover most B2B cap programs."}
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs border-collapse min-w-[640px]">
+              <thead>
+                <tr className="bg-slate-900 text-white text-left">
+                  <th className="p-3 font-black rounded-tl-xl">{lang === "es" ? "Tejido" : "Fabric"}</th>
+                  <th className="p-3 font-black">{lang === "es" ? "Decoración Óptima" : "Best Decoration"}</th>
+                  <th className="p-3 font-black rounded-tr-xl">{lang === "es" ? "Nota de Ingeniería" : "Engineering Note"}</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                <tr className="bg-slate-50/60">
+                  <td className="p-3 font-bold text-slate-900">{lang === "es" ? "Sarga de Algodón Pesada (280gsm)" : "Heavyweight Chino Twill (280gsm)"}</td>
+                  <td className="p-3 text-slate-700">{lang === "es" ? "Bordado plano y 3D puff" : "Flat embroidery & 3D puff"}</td>
+                  <td className="p-3 text-slate-600">{lang === "es" ? "Tejido denso y estable: soporta alta densidad de puntadas sin distorsión de paneles." : "Dense, stable weave: supports high stitch density without panel distortion."}</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-bold text-slate-900">{lang === "es" ? "Pana Gruesa 8-Wale" : "8-Wale Corduroy"}</td>
+                  <td className="p-3 text-slate-700">{lang === "es" ? "Bordado con base Tatami" : "Tatami-underlay embroidery"}</td>
+                  <td className="p-3 text-slate-600">{lang === "es" ? "El pelo alto exige base Tatami de alta densidad para evitar que las letras se hundan entre los canalés." : "High pile requires a dense Tatami underlay so lettering does not sink into the wales."}</td>
+                </tr>
+                <tr className="bg-slate-50/60">
+                  <td className="p-3 font-bold text-slate-900">{lang === "es" ? "Nailon Técnico DWR" : "DWR Performance Nylon"}</td>
+                  <td className="p-3 text-slate-700">{lang === "es" ? "Micro-logo / silicona / perforación láser" : "Micro-logo / silicone / laser perforation"}</td>
+                  <td className="p-3 text-slate-600">{lang === "es" ? "Los agujeros de aguja pueden filtrar agua: evitar bordados muy densos; preferir parches de silicona o ventilación láser." : "Needle holes can leak: avoid ultra-dense embroidery; prefer silicone patches or laser ventilation."}</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-bold text-slate-900">{lang === "es" ? "Mezcla Lana / Acrílico" : "Wool / Acrylic Blend"}</td>
+                  <td className="p-3 text-slate-700">{lang === "es" ? "3D puff de gran formato" : "Oversized 3D puff lettering"}</td>
+                  <td className="p-3 text-slate-600">{lang === "es" ? "Alta rigidez y gramaje: la mejor base para letras 3D elevadas en perfiles snapback de visera plana." : "Stiff, heavy hand: the best base for raised 3D lettering on flat-brim snapback profiles."}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* FOB Volume Pricing Tiers (factory-confirmed rates) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
+        <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 border border-slate-800 shadow-xl">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-amber-400/20 text-amber-400">
+              <Package size={18} />
+            </span>
+            <span className="text-xs font-black uppercase tracking-widest text-amber-400">
+              {lang === "es" ? "Escalas de Precio FOB por Volumen" : "FOB Volume Pricing Tiers"}
+            </span>
+          </div>
+          <h3 className="text-lg sm:text-xl font-black tracking-tight mb-2">
+            {lang === "es" ? "Cómo el Volumen Reduce su Costo Unitario FOB" : "How Volume Reduces Your Unit FOB Cost"}
+          </h3>
+          <p className="text-xs sm:text-sm text-slate-400 leading-relaxed mb-6">
+            {lang === "es"
+              ? "Digitalización, ajuste de máquinas y preparación son costos únicos que se amortizan entre todo el lote. A mayor volumen, menor costo unitario. El precio final se confirma en la cotización desglosada en 2 horas."
+              : "Digitizing, machine setup and tooling are one-time costs amortised across the run. Larger runs spread them further, so the unit FOB price drops. Exact figures are confirmed in your itemised written quote within 2 hours."}
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs border-collapse min-w-[640px]">
+              <thead>
+                <tr className="text-left border-b border-slate-700">
+                  <th className="p-3 font-black text-amber-400">{lang === "es" ? "Volumen" : "Quantity"}</th>
+                  <th className="p-3 font-black text-amber-400">{lang === "es" ? "Precio de Referencia (FOB China)" : "Reference Price (FOB China)"}</th>
+                  <th className="p-3 font-black text-amber-400">{lang === "es" ? "Qué Incluye / Escenario" : "What It Covers / Use Case"}</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-800">
+                <tr>
+                  <td className="p-3 font-black text-white">200 Pcs</td>
+                  <td className="p-3 font-bold text-amber-300">$5.20 – $6.80 FOB</td>
+                  <td className="p-3 text-slate-300">{lang === "es" ? "Lote de prueba o test multicolor; amortiza digitalización y preparación de bordado." : "Starter / multi-colour test batch; amortises embroidery digitizing & setup."}</td>
+                </tr>
+                <tr className="bg-slate-800/60">
+                  <td className="p-3 font-black text-white">500 Pcs</td>
+                  <td className="p-3 font-bold text-amber-300">$4.20 – $5.20 FOB</td>
+                  <td className="p-3 text-slate-300">{lang === "es" ? "100% de devolución del costo de muestra · etiquetas tejidas y de cuidado personalizadas gratis." : "100% sample fee credit · free custom woven brand & care labels."}</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-black text-white">1,000 Pcs</td>
+                  <td className="p-3 font-bold text-amber-300">$3.80 – $4.20 FOB</td>
+                  <td className="p-3 text-slate-300">{lang === "es" ? "Corte por rollo completo y programación continua en líneas Barudan de 20 cabezales." : "Full-roll fabric cutting and continuous scheduling on 20-head Barudan lines."}</td>
+                </tr>
+                <tr className="bg-slate-800/60">
+                  <td className="p-3 font-black text-white">5,000+ Pcs</td>
+                  <td className="p-3 font-bold text-amber-300">{lang === "es" ? "Cotización dedicada" : "Dedicated Quote"}</td>
+                  <td className="p-3 text-slate-300">{lang === "es" ? "Teñido Pantone a medida, tejido a medida y optimización de carga en contenedor completo." : "Custom Pantone mill dyeing, bespoke weaving and full-container load optimisation."}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-[10px] text-slate-500 mt-4">
+            {lang === "es"
+              ? "*Precios de referencia FOB China para bordado frontal estándar; no incluyen flete internacional. El precio final por proyecto se confirma en la cotización desglosada en 2 horas."
+              : "*Reference FOB China prices for standard front embroidery; international freight excluded. Final per-project pricing is confirmed in the itemised written quote within 2 hours."}
+          </p>
+        </div>
+      </section>
+
+      {/* In-Page Single-SKU RFQ Form */}
+      <section id="product-rfq" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-10 scroll-mt-24">
+        <div className="text-center mb-6">
+          <span className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 border border-blue-200/60 px-2.5 py-0.5 rounded-full inline-block mb-2">
+            {lang === "es" ? "Cotización en 2h · Revisión Directa de Fábrica" : "Written Quote in 2h · Direct Factory Review"}
+          </span>
+          <h3 className="text-xl sm:text-2xl font-black tracking-tight text-slate-900">
+            {lang === "es" ? `Cotizar: ${hat.name}` : `Request a Quote for ${hat.name}`}
+            <span className="text-sm font-bold text-slate-400 ml-2">(SKU: {getProductSku(String(hat.id))})</span>
+          </h3>
+          <p className="text-xs sm:text-sm text-slate-500 mt-2 max-w-xl mx-auto">
+            {lang === "es"
+              ? "Eileen y el equipo de ingeniería comercial revisarán sus especificaciones y enviarán la cotización FOB desglosada en menos de 2 horas."
+              : "Eileen and the sales engineering team will review your specs and send your itemised FOB quote within 2 hours."}
+          </p>
+        </div>
+        <InquiryForm productName={hat.name} sku={getProductSku(String(hat.id))} />
+      </section>
+
       {/* FAQ — full width and always in the DOM, with matching FAQPage JSON-LD.
           <details> keeps the accordion behaviour without needing JS state, so the
           answers are in the served HTML and eligible for rich results. */}
@@ -467,7 +659,7 @@ export default function ProductDetail() {
           { q: "5-panel or 6-panel for large 3D puff embroidery?", a: "The 5-panel front crown has no vertical centre seam, allowing large 3D puff artwork to sit completely flat. A 6-panel front seam runs under the logo and can distort high-density puff stitches. For oversized front embroidery, our engineers recommend 5-panel." },
           { q: "What packing protects a structured crown during international transit?", a: "We pack 25 caps per inner box and 4 inner boxes per master carton (100 caps total) in 5-ply double-wall export corrugated boxes (60×45×40cm, ~12kg gross weight). You can verify exact CBM and gross weight in our Carton Calculator." },
           { q: "Does order quantity change the unit FOB price?", a: "Yes. Setup, digitizing and tooling are one-time costs spread across the order run. Larger runs spread them further, so the unit FOB price is lower. Exact figures are confirmed in your itemised quotation." },
-          { q: "What technical details are needed to provide an accurate quotation?", a: "Silhouette style, target quantity, fabric GSM, decoration type and stitch count, closure/hardware type, and destination country. With these we deliver an itemised written quotation within 12 hours." }
+          { q: "What technical details are needed to provide an accurate quotation?", a: "Silhouette style, target quantity, fabric GSM, decoration type and stitch count, closure/hardware type, and destination country. With these we deliver an itemised written quotation within 2 hours." }
         ];
         const baseFaqs = hat.faqs || [
           { q: "Can I get a sample before bulk production?", a: "Yes, we produce a physical sample for your final approval. Lead time is 7 days with full HD video and photo proof before shipping." },

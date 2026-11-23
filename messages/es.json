@@ -24,8 +24,8 @@
       "0": {
         "label": "Fábrica Directa · Baoding, China · Auditada por SGS y BSCI",
         "title": "Gorras a medida según tus especificaciones, desde 200 unidades.",
-        "sub": "Fabricadas por Baoding Junyang en China. Más de 100 máquinas Barudan · 5M+ producción anual. MOQ 200 uds · Muestra en 7 días · Producción 15–20 días · Cotización escrita en 12h.",
-        "cta": "Cotización Desglosada en 12h"
+        "sub": "Fabricadas por Baoding Junyang en China. Más de 100 máquinas Barudan · 5M+ producción anual. MOQ 200 uds · Muestra en 7 días · Producción 15–20 días · Cotización escrita en 2h.",
+        "cta": "Cotización Desglosada en 2h"
       },
       "1": {
         "label": "Soluciones B2B Directo de Fábrica",
@@ -102,7 +102,7 @@
       "step1Title": "Selecciona Estilo y Tejido",
       "step1Desc": "Elige entre estructuras rígidas o suaves, y especifica tejidos desde algodón pesado hasta lona o terciopelo.",
       "step2Title": "Recibe Cotización Detallada",
-      "step2Desc": "Envía tus requisitos y diseño. Nuestro equipo comercial te entrega una cotización completa con precios y plazos en 12 horas.",
+      "step2Desc": "Envía tus requisitos y diseño. Nuestro equipo comercial te entrega una cotización completa con precios y plazos en 2 horas.",
       "step3Title": "Aprobación de Muestra",
       "step3Desc": "Producimos una muestra física y te enviamos videos y fotos detalladas para aprobación final de ajustes.",
       "step4Title": "Producción y Actualizaciones",
@@ -138,7 +138,7 @@
     },
     "inquiry": {
       "heading": "Solicitar Cotización de Fábrica",
-      "sub": "Envíanos los requisitos de tus gorras (estilos, logotipos, cantidades). Nuestros especialistas B2B te entregarán tu cotización en 12 horas.",
+      "sub": "Envíanos los requisitos de tus gorras (estilos, logotipos, cantidades). Nuestros especialistas B2B te entregarán tu cotización en 2 horas.",
       "trustLabel": "100% Directo de Fábrica · Verificado SGS · 12 Años OEM/ODM",
       "testimonialTitle": "Lo Que Dicen Nuestros Socios",
       "testimonials": [
@@ -148,9 +148,9 @@
           "role": "Entrega en 18 Días · Protegido por NDA Mutuo"
         },
         {
-          "quote": "Precios FOB directos con transparencia total de desglose de materiales. Nuestro programa de 5.000 unidades superó todos los controles AQL 2.5 sin defectos.",
+          "quote": "Precios FOB directos con transparencia total de desglose de materiales. Nuestro programa de 5.000 unidades superó todos los controles rigurosos de calidad pieza por pieza sin defectos.",
           "name": "Importador Europeo de Ropa Laboral (5.000 Uds)",
-          "role": "Auditoría AQL 2.5 · Protegido por NDA Mutuo"
+          "role": "Control de Calidad Pieza por Pieza · Protegido por NDA"
         },
         {
           "quote": "Comunicación técnica fluida vía WhatsApp. La revisión de la ficha técnica vectorial se tradujo en muestras de preproducción aprobadas en 7 días exactos.",
@@ -206,7 +206,7 @@
     },
     "getQuote": "Solicitar Cotización",
     "orderSample": "Pedir Muestra",
-    "urgencyStrip": "Fabricación Directa de Fábrica · MOQ 200 Uds · Cotización Escrita en 12h · Muestras en 7 Días",
+    "urgencyStrip": "Fabricación Directa de Fábrica · MOQ 200 Uds · Cotización Escrita en 2h · Muestras en 7 Días",
     "related": "Seguir Explorando",
     "relatedTitle": "Productos Relacionados",
     "faqHeading": "Preguntas frecuentes",
@@ -237,7 +237,7 @@
     "phonePlaceholder": "+34 600 000 000",
     "message": "Mensaje / Requisitos",
     "messagePlaceholder": "Cuéntanos sobre los estilos, cantidades o personalización específica (ej. Bordado 3D Puff, Etiquetas Tejidas)...",
-    "privacyNote": "Tu consulta se envía directamente al equipo técnico comercial de nuestra fábrica (admin@bdjunyang.com). Cotización formal por escrito en 12 horas.",
+    "privacyNote": "Tu consulta se envía directamente al equipo técnico comercial de nuestra fábrica (admin@bdjunyang.com). Cotización formal por escrito en 2 horas.",
     "intentSample": "¡Hola Baoding Junyang! Quisiera pedir una muestra física antes de la producción en masa. ¿Pueden darme detalles?",
     "intentBulk": "¡Hola Baoding Junyang! Me interesa la producción en masa. ¿Pueden proporcionarme una cotización?",
     "intentTest": "¡Hola Baoding Junyang! Quisiera hacer un pedido de prueba pequeño. ¿Pueden darme detalles?",
@@ -289,14 +289,14 @@
   "popup": {
     "badge": "Directo de Fábrica · Desde 2014",
     "heading": "¿Necesitas Gorras Personalizadas para Tu Marca?",
-    "sub": "Obtén una cotización de fábrica en 12 horas — sin compromiso, muestras físicas en 7 días.",
+    "sub": "Obtén una cotización de fábrica en 2 horas — sin compromiso, muestras físicas en 7 días.",
     "whatsappBtn": "Chatear por WhatsApp",
     "formBtn": "Enviar Consulta",
     "note": "100% directo de fábrica · Verificado SGS · Más de 300 marcas"
   },
   "chat": {
     "cta": "Chatea con Nosotros",
-    "tip": "⚡ Cotización escrita en 12h"
+    "tip": "⚡ Cotización escrita en 2h"
   },
   "language": {
     "switchTo": "English",

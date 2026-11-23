@@ -138,7 +138,7 @@ const CONTENT = {
     },
     cta: {
       title: "Send your artwork — we will tell you which construction fits it",
-      text: "We assess your logo, recommend the construction and crown profile, then quote within 12 hours. MOQ 200 pcs, physical samples in 7 days.",
+      text: "We assess your logo, recommend the construction and crown profile, then quote within 2 hours. MOQ 200 pcs, physical samples in 7 days.",
       button: "Get Factory Quote",
     },
   },
@@ -272,7 +272,7 @@ const CONTENT = {
     },
     cta: {
       title: "Envíanos tu diseño y te diremos qué construcción le va mejor",
-      text: "Evaluamos tu logo, recomendamos la construcción y el perfil de corona, y cotizamos en 12 horas. MOQ 200 uds, muestras físicas en 7 días.",
+      text: "Evaluamos tu logo, recomendamos la construcción y el perfil de corona, y cotizamos en 2 horas. MOQ 200 uds, muestras físicas en 7 días.",
       button: "Solicitar Cotización",
     },
   },

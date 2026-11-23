@@ -24,8 +24,8 @@
       "0": {
         "label": "Direct Factory · Baoding, China · SGS & BSCI Audited",
         "title": "Custom caps built to your spec, from 200 pieces.",
-        "sub": "Made by Baoding Junyang in Baoding, China. 100+ precision Barudan embroidery machines, 5M+ annual capacity. MOQ 200 pcs · Sample 7 days · Bulk 15–20 days · Written quote in 12h.",
-        "cta": "Get Itemised Factory Quote (12h)"
+        "sub": "Made by Baoding Junyang in Baoding, China. 100+ precision Barudan embroidery machines, 5M+ annual capacity. MOQ 200 pcs · Sample 7 days · Bulk 15–20 days · Written quote in 2h.",
+        "cta": "Get Itemised Factory Quote (2h)"
       },
       "1": {
         "label": "Engineered to Spec • Bespoke OEM/ODM",
@@ -102,7 +102,7 @@
       "step1Title": "Select Style & Fabric",
       "step1Desc": "Choose structured or unstructured frames, and specify fabrics from heavy cotton to canvas or velvet.",
       "step2Title": "Get Detailed Quotation",
-      "step2Desc": "Submit your requirements and artwork. Our sales team delivers a full quotation with pricing and lead time within 12 hours.",
+      "step2Desc": "Submit your requirements and artwork. Our sales team delivers a full quotation with pricing and lead time within 2 hours.",
       "step3Title": "Sample Approval",
       "step3Desc": "We produce a physical sample and send you detailed videos/photos for final adjustment approval.",
       "step4Title": "Bulk & Quality Updates",
@@ -138,7 +138,7 @@
     },
     "inquiry": {
       "heading": "Request Factory Quote",
-      "sub": "Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote within 12 hours.",
+      "sub": "Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote within 2 hours.",
       "trustLabel": "100% Factory Direct · SGS Verified · 12 Years OEM/ODM",
       "testimonialTitle": "What Our Brand Partners Say",
       "testimonials": [
@@ -148,9 +148,9 @@
           "role": "Verified 18-Day Delivery · Mutual NDA Protected"
         },
         {
-          "quote": "Direct factory FOB pricing with complete BOM transparency. Our 5,000-piece seasonal program passed all AQL 2.5 quality control checks with zero defect rejections.",
+          "quote": "Direct factory FOB pricing with complete BOM transparency. Our 5,000-piece seasonal program passed all rigorous piece-by-piece quality control checks with zero defect rejections.",
           "name": "European Corporate & Uniform Importer (5,000 Pcs)",
-          "role": "Full AQL 2.5 Audit · Mutual NDA Protected"
+          "role": "Piece-by-Piece Quality Audit · Mutual NDA Protected"
         },
         {
           "quote": "Seamless WhatsApp engineering communication. Blank vector tech pack review was turned into signed physical pre-production samples in 7 days exactly.",
@@ -206,7 +206,7 @@
     },
     "getQuote": "Get Factory Quote",
     "orderSample": "Order Sample",
-    "urgencyStrip": "Factory Direct Manufacturing · MOQ 200 Pcs · Written Quote in 12h · 7d Sample Dispatch",
+    "urgencyStrip": "Factory Direct Manufacturing · MOQ 200 Pcs · Written Quote in 2h · 7d Sample Dispatch",
     "related": "Continue Exploring",
     "relatedTitle": "Related Products",
     "faqHeading": "FAQ",
@@ -237,7 +237,7 @@
     "phonePlaceholder": "+1 (555) 000-0000",
     "message": "Message / Requirements",
     "messagePlaceholder": "Tell us about the styles, quantities, or specific customization (e.g. 3D Puff Embroidery, Woven Labels)...",
-    "privacyNote": "Your inquiry is sent directly to our factory sales engineering team (admin@bdjunyang.com). Written quotation delivered within 12 hours.",
+    "privacyNote": "Your inquiry is sent directly to our factory sales engineering team (admin@bdjunyang.com). Written quotation delivered within 2 hours.",
     "intentSample": "Hi Baoding Junyang! I would like to order a physical sample before bulk production. Can you provide details?",
     "intentBulk": "Hi Baoding Junyang! I'm interested in bulk production. Can you provide a quotation?",
     "intentTest": "Hi Baoding Junyang! I'd like to place a small test order. Can you provide details?",
@@ -289,14 +289,14 @@
   "popup": {
     "badge": "Factory Direct · Est. 2014",
     "heading": "Need Custom Hats for Your Brand?",
-    "sub": "Get a factory quote within 12 hours — no obligation, physical samples in 7 days.",
+    "sub": "Get a factory quote within 2 hours — no obligation, physical samples in 7 days.",
     "whatsappBtn": "Chat on WhatsApp",
     "formBtn": "Send Inquiry",
     "note": "100% factory direct · SGS verified · 300+ brands served"
   },
   "chat": {
     "cta": "Chat with Us",
-    "tip": "⚡ Written quote in 12h"
+    "tip": "⚡ Written quote in 2h"
   },
   "language": {
     "switchTo": "Español",

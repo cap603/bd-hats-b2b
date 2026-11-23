@@ -202,7 +202,7 @@ const CONTENT = {
     },
     cta: {
       title: "Send your logo — we will advise on fabric and quote it",
-      text: "Tell us the cap style and the feel you want, and we will recommend cotton twill, brushed cotton or canvas and quote within 12 hours. MOQ 200 pcs, physical samples in 7 days.",
+      text: "Tell us the cap style and the feel you want, and we will recommend cotton twill, brushed cotton or canvas and quote within 2 hours. MOQ 200 pcs, physical samples in 7 days.",
       button: "Get Factory Quote",
     },
   },
@@ -399,7 +399,7 @@ const CONTENT = {
     },
     cta: {
       title: "Envíanos tu logo y te asesoramos sobre la tela con su cotización",
-      text: "Cuéntanos el estilo de gorra y el tacto que buscas, y te recomendamos sarga de algodón, algodón cepillado o canvas, con cotización en 12 horas. MOQ 200 uds, muestras físicas en 7 días.",
+      text: "Cuéntanos el estilo de gorra y el tacto que buscas, y te recomendamos sarga de algodón, algodón cepillado o canvas, con cotización en 2 horas. MOQ 200 uds, muestras físicas en 7 días.",
       button: "Solicitar Cotización",
     },
   },

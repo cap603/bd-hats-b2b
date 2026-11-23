@@ -3,11 +3,11 @@ import { useState, useEffect, useRef } from "react";
 import { useT, useLang } from "../lib/i18n";
 import { attributionLines } from "../lib/attribution";
 import { trackWhatsAppClick } from "../lib/tracking";
-import { CheckCircle2, MessageCircle, Send, ShieldCheck, Lock, FileText, Sparkles } from "lucide-react";
+import { CheckCircle2, MessageCircle, Send, ShieldCheck, Lock, FileText, Sparkles, Clock, UserCheck, Layers } from "lucide-react";
 
 const WHATSAPP_NUMBER = "8615933930830";
 
-export function InquiryForm() {
+export function InquiryForm({ productName, sku }: { productName?: string; sku?: string } = {}) {
   const t = useT("form");
   const lang = useLang();
   const isEs = lang === "es";
@@ -81,6 +81,7 @@ export function InquiryForm() {
     // Build structured technical RFQ message payload
     const structuredMessage = [
       `[Structured B2B RFQ Technical Specifications]`,
+      ...(productName ? [`[Reference Product]: ${productName}${sku ? ` (SKU: ${sku})` : ""}`] : []),
       `• Cap Silhouette: ${capStyle}`,
       `• Target Production Quantity: ${targetQty}`,
       `• Primary Decoration: ${decoration}`,
@@ -147,6 +148,7 @@ export function InquiryForm() {
       : [
           `New B2B Factory RFQ (${generatedId}) — BD Hats`,
           "----------------------------------",
+          ...(productName ? [`Product: ${productName}${sku ? ` (SKU: ${sku})` : ""}`] : []),
           `Name: ${name}`,
           `Email: ${email}`,
           ...(phone ? [`WhatsApp: ${phone}`] : []),
@@ -206,7 +208,7 @@ export function InquiryForm() {
           </div>
           <div className="flex items-start gap-2.5 text-xs text-slate-700">
             <span className="font-black text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded text-[10px]">02</span>
-            <span>{isEs ? "Cotización formal por escrito y desglosada con precios FOB en menos de 12 horas." : "Itemised, written quotation with tiered FOB unit rates delivered within 12 hours."}</span>
+            <span>{isEs ? "Cotización formal por escrito y desglosada con precios FOB en menos de 2 horas." : "Itemised, written quotation with tiered FOB unit rates delivered within 2 hours."}</span>
           </div>
           <div className="flex items-start gap-2.5 text-xs text-slate-700">
             <span className="font-black text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded text-[10px]">03</span>
@@ -214,7 +216,7 @@ export function InquiryForm() {
           </div>
           <div className="flex items-start gap-2.5 text-xs text-slate-700">
             <span className="font-black text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded text-[10px]">04</span>
-            <span>{isEs ? "Producción en masa en 15–20 días, con reportes multimedia en corte, bordado y empaque." : "Bulk production in 15–20 days, with progress photo/video logs at cutting, stitching and packing."}</span>
+            <span>{isEs ? "Producción en masa en 15–20 días, con bitácora multimedia (corte, bordado Barudan, inspección pieza a pieza y empaque)." : "Bulk production in 15–20 days, with milestone photo/video logs at fabric cutting, Barudan embroidery, piece-by-piece QC and packing."}</span>
           </div>
         </div>
 
@@ -306,8 +308,93 @@ export function InquiryForm() {
         </div>
       </div>
 
+      {/* Consultant Card — Eileen (Item 4) */}
+      <div className="bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-2xl p-4 sm:p-5 border border-slate-700/80 shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-left">
+        <div className="flex items-center gap-3.5">
+          <div className="relative shrink-0">
+            <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-400 to-amber-200 text-slate-950 font-black text-lg flex items-center justify-center shadow-md border-2 border-white/20">
+              E
+            </div>
+            <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-emerald-500 border-2 border-slate-900 rounded-full animate-pulse" title="Online now"></span>
+          </div>
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <h4 className="font-black text-sm sm:text-base text-white">Eileen</h4>
+              <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/80 border border-emerald-500/40 px-2 py-0.5 rounded-full flex items-center gap-1">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                {isEs ? "En Línea · Respuesta en 2h" : "Online · Written Quote in 2h"}
+              </span>
+            </div>
+            <p className="text-[11px] text-slate-300 font-medium mt-0.5">
+              {isEs ? "Consultora de Producción e Ingeniería B2B" : "Senior Headwear Production Consultant & B2B Specialist"}
+            </p>
+            <p className="text-[11px] text-slate-300 mt-1 leading-snug">
+              {isEs
+                ? "«Envía tus especificaciones o diseño abajo; revisaré puntadas, perfil de corona y te entregaré cotización desglosada en menos de 2 horas.»"
+                : "“Submit your cap brief or tech pack below. I will personally review stitch counts, crown structure, and send your itemised BOM quote within 2 hours.”"}
+            </p>
+          </div>
+        </div>
+        <div className="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto shrink-0 border-t sm:border-t-0 pt-2 sm:pt-0 border-slate-700/60 text-[10px] text-slate-300 gap-1">
+          <span className="flex items-center gap-1 text-amber-300 font-bold">
+            <ShieldCheck size={12} className="text-amber-400" />
+            {isEs ? "Revisión Directa de Fábrica" : "Direct Factory Review"}
+          </span>
+          <span className="text-slate-400">admin@bdjunyang.com</span>
+        </div>
+      </div>
+
+      {/* Order Volume & Factory Capability Scope (Item 5) */}
+      <div className="bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 text-left shadow-2xs">
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-1.5 text-xs font-black text-slate-900 uppercase tracking-wider">
+            <Layers size={14} className="text-blue-600" />
+            <span>{isEs ? "Guía de Capacidad por Volumen de Pedido" : "Order Volume & Factory Production Scope"}</span>
+          </div>
+          <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
+            {isEs ? "Actualizado Q4 2026" : "Active Q4 2026 Schedule"}
+          </span>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-[11px]">
+          <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
+            <div className="font-black text-slate-900 mb-0.5">200 – 499 Pcs</div>
+            <div className="text-[10px] font-bold text-amber-700 uppercase mb-1">{isEs ? "Lote de Entrada (MOQ)" : "Starter Batch (MOQ Entry)"}</div>
+            <p className="text-slate-500 leading-snug">
+              {isEs ? "Asignación estándar, digitalización gratuita, ideal para test de colecciones." : "Standard line allocation, free digitizing, ideal for testing capsule drops."}
+            </p>
+          </div>
+          <div className="p-3 bg-blue-50/60 rounded-xl border border-blue-100">
+            <div className="font-black text-blue-950 mb-0.5">500 – 1,999 Pcs</div>
+            <div className="text-[10px] font-bold text-blue-700 uppercase mb-1">{isEs ? "Al Por Mayor (Recomendado)" : "Brand Wholesale (Best Value)"}</div>
+            <p className="text-slate-600 leading-snug">
+              {isEs ? "100% de devolución de muestra, etiquetas y cintas personalizadas, costo óptimo." : "100% sample fee refund, custom woven labels & seam tape, optimal amortization."}
+            </p>
+          </div>
+          <div className="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100">
+            <div className="font-black text-emerald-950 mb-0.5">2,000+ Pcs</div>
+            <div className="text-[10px] font-bold text-emerald-700 uppercase mb-1">{isEs ? "Escala Contenedor FCL" : "Container Scale (Floor Rate)"}</div>
+            <p className="text-slate-600 leading-snug">
+              {isEs ? "Líneas Barudan dedicadas, teñido Pantone en pieza, precio suelo desde $3.50 FOB." : "Dedicated Barudan lines, mill-run dyeing, container packaging from $3.50 FOB."}
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Main Structured RFQ Form */}
       <form onSubmit={handleSubmit} className="space-y-4 bg-white p-5 sm:p-8 rounded-2xl shadow-xs border border-slate-200/90 text-left">
+        {productName && (
+          <div className="bg-blue-50/70 border border-blue-200/70 rounded-xl px-4 py-3 flex items-center justify-between gap-3">
+            <div className="min-w-0">
+              <div className="text-[10px] font-black uppercase tracking-wider text-blue-700">
+                {isEs ? "Cotizando este modelo" : "Quoting this style"}
+              </div>
+              <div className="text-xs font-bold text-slate-900 truncate">{productName}{sku ? ` (SKU: ${sku})` : ""}</div>
+            </div>
+            <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-2 py-0.5 rounded-full shrink-0">
+              ⚡ {isEs ? "Cotización en 2h" : "Quote in 2h"}
+          </span>
+          </div>
+        )}
         {status === "error" && (
           <div className="bg-rose-50 border border-rose-200 rounded-xl p-4 text-left">
             <p className="text-sm font-bold text-rose-800 mb-1">

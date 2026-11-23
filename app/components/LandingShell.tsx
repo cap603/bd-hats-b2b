@@ -358,8 +358,8 @@ export function LandingShell({
           </h2>
           <p className="text-gray-400 text-lg mb-8">
             {lang === "es"
-              ? "Envíenos sus especificaciones y diseño — cotización y plazos en menos de 12 horas. Muestras físicas en 7 días."
-              : "Send your specs and artwork — pricing and lead time within 12 hours. Physical samples in 7 days."}
+              ? "Envíenos sus especificaciones y diseño — cotización y plazos en menos de 2 horas. Muestras físicas en 7 días."
+              : "Send your specs and artwork — pricing and lead time within 2 hours. Physical samples in 7 days."}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a

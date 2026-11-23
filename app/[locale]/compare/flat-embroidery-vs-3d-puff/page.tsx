@@ -185,7 +185,7 @@ const CONTENT = {
     },
     cta: {
       title: "Send your artwork — we will recommend the decoration and quote it",
-      text: "We assess your logo, advise between flat embroidery and 3D puff, and quote within 12 hours. MOQ 200 pcs, physical samples in 7 days.",
+      text: "We assess your logo, advise between flat embroidery and 3D puff, and quote within 2 hours. MOQ 200 pcs, physical samples in 7 days.",
       button: "Get Factory Quote",
     },
   },
@@ -365,7 +365,7 @@ const CONTENT = {
     },
     cta: {
       title: "Envíanos tu diseño y te recomendamos la decoración con su cotización",
-      text: "Evaluamos tu logo, te asesoramos entre bordado plano y 3D puff, y cotizamos en 12 horas. MOQ 200 uds, muestras físicas en 7 días.",
+      text: "Evaluamos tu logo, te asesoramos entre bordado plano y 3D puff, y cotizamos en 2 horas. MOQ 200 uds, muestras físicas en 7 días.",
       button: "Solicitar Cotización",
     },
   },

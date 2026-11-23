@@ -148,9 +148,9 @@
           "role": "Lieferung in 18 Tagen · Durch Geheimhaltungsvereinbarung (NDA) geschützt"
         },
         {
-          "quote": "Direkte Fabrikpreise mit lückenloser Stücklisten-Transparenz. Unser 5.000-Stück-Auftrag bestand alle AQL 2.5 Qualitätsprüfungen ohne Ausschuss.",
+          "quote": "Direkte Fabrikpreise mit lückenloser Stücklisten-Transparenz. Unser 5.000-Stück-Auftrag bestand alle strengen Stück-für-Stück Qualitätsprüfungen ohne Ausschuss.",
           "name": "Europäischer Berufsbekleidungs-Importeur (5.000 Stk.)",
-          "role": "AQL 2.5 geprüft · Durch Geheimhaltungsvereinbarung (NDA) geschützt"
+          "role": "Lückenlose Qualitätsprüfung · Durch Geheimhaltungsvereinbarung (NDA) geschützt"
         },
         {
           "quote": "Effiziente technische Abstimmung via WhatsApp. Aus dem Blanko-Tech-Pack entstanden innerhalb von exakt 7 Tagen freigegebene Vorproduktionsmuster.",
@@ -289,14 +289,14 @@
   "popup": {
     "badge": "Direkt ab Werk · Gegr. 2014",
     "heading": "Individuelle Kappen für Ihre Marke gesucht?",
-    "sub": "Erhalten Sie innerhalb von 12 Stunden ein unverbindliches Fabrikangebot — physische Muster in 7 Tagen.",
+    "sub": "Erhalten Sie innerhalb von 2 Stunden ein unverbindliches Fabrikangebot — physische Muster in 7 Tagen.",
     "whatsappBtn": "Auf WhatsApp chatten",
     "formBtn": "Anfrage senden",
     "note": "100 % Direkt ab Werk · SGS-geprüft · 300+ betreute Marken"
   },
   "chat": {
     "cta": "Mit uns chatten",
-    "tip": "⚡ Angebot in 12 Std."
+    "tip": "⚡ Angebot in 2 Std."
   },
   "language": {
     "switchTo": "Deutsch",

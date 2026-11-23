@@ -84,7 +84,7 @@ const MANUFACTURING_PROGRAMS = [
   {
     href: "/pricing",
     title: "Tiered Wholesale Pricing",
-    desc: "Transparent FOB price breaks from $3.50/pc floor rate, MOQ 200pcs, and cost breakdowns.",
+    desc: "Transparent FOB volume tiers from $5.20/pc at MOQ 200; container-scale floor from $3.50/pc. Cost breakdowns included.",
     tag: "Transparent Rates",
   },
 ];
@@ -207,8 +207,10 @@ export default function Home() {
       />
 
       {/* Trust Banner / Top Bar */}
-      <div className="bg-black text-white text-center py-2 px-4 text-xs font-semibold tracking-wider uppercase">
-        China's Leading Premium Baseball Cap Manufacturer • Est. 2014
+      <div className="bg-black text-white text-center py-2 px-4 text-xs font-semibold tracking-wider uppercase flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+        <span>China's Leading Premium Baseball Cap Manufacturer • Est. 2014</span>
+        <span className="hidden sm:inline text-amber-400">•</span>
+        <span className="text-amber-400 font-bold">Active Q4 2026 Production Schedule</span>
       </div>
 
       {/* Header */}
@@ -584,6 +586,133 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sourcing Programs by Buyer Segment (Item 2) */}
+      <section className="py-8 sm:py-14 md:py-18 px-4 bg-white border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-1.5 sm:gap-3 mb-6 sm:mb-10">
+            <div>
+              <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 border border-blue-200/60 px-2.5 py-0.5 rounded-full inline-block">
+                {lang === "es" ? "Segmentación por Perfil de Comprador" : "Buyer Sourcing Programs"}
+              </span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-slate-900 mt-1.5 sm:mt-2">
+                {lang === "es" ? "Programas a Medida según tu Industria y Escala" : "Tailored Manufacturing Programs by Buyer Segment"}
+              </h2>
+            </div>
+            <p className="text-slate-500 text-[11px] sm:text-xs md:text-sm max-w-md">
+              {lang === "es"
+                ? "Soluciones de producción directas de fábrica optimizadas para los requisitos específicos de cada sector."
+                : "Engineered factory-direct supply programs matching the exact specifications and volume curves of global procurement sectors."}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Sector 1: Streetwear & Apparel Brands */}
+            <div className="bg-slate-50 hover:bg-white rounded-2xl p-5 border border-slate-200 hover:border-slate-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[10px] font-black uppercase tracking-wider text-purple-700 bg-purple-100/80 px-2 py-0.5 rounded">
+                    Fashion & Drops
+                  </span>
+                  <span className="text-xs font-black text-slate-900">MOQ 200</span>
+                </div>
+                <h3 className="text-base font-black text-slate-900 mb-1">
+                  {lang === "es" ? "Marcas Streetwear & Diseñadores" : "Streetwear & Apparel Labels"}
+                </h3>
+                <p className="text-slate-600 text-xs leading-relaxed mb-4">
+                  {lang === "es"
+                    ? "Perfiles 5-panel camper, gorras desgastadas enzyme wash, bordado 3D puff de alta densidad y etiquetas tejidas personalizadas."
+                    : "5-panel campers, vintage enzyme-washed dad hats, high-density 3D puff embroidery, and custom branded damask inner taping."}
+                </p>
+              </div>
+              <div className="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs">
+                <span className="text-[11px] font-bold text-emerald-700">100% Sample Refund ≥500</span>
+                <Link href={`/${lang}/custom-5-panel-caps-manufacturer`} className="font-bold text-slate-900 hover:text-blue-600 flex items-center gap-1">
+                  <span>Explore</span> <ArrowRight size={12} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Sector 2: Corporate Uniforms & Identity */}
+            <div className="bg-slate-50 hover:bg-white rounded-2xl p-5 border border-slate-200 hover:border-slate-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[10px] font-black uppercase tracking-wider text-blue-700 bg-blue-100/80 px-2 py-0.5 rounded">
+                    Uniform & Workwear
+                  </span>
+                  <span className="text-xs font-black text-slate-900">500 – 5,000+</span>
+                </div>
+                <h3 className="text-base font-black text-slate-900 mb-1">
+                  {lang === "es" ? "Uniformes y Dotaciones Corporativas" : "Corporate & Uniform Programs"}
+                </h3>
+                <p className="text-slate-600 text-xs leading-relaxed mb-4">
+                  {lang === "es"
+                    ? "Gorras clásicas estructuradas de 6 paneles, alta solidez del color, ribetes reflectantes e inspección rigurosa pieza por pieza."
+                    : "Heavy-duty structured 6-panel twill caps, high colorfastness, reflective piping, and piece-by-piece pre-shipment QC inspection."}
+                </p>
+              </div>
+              <div className="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs">
+                <span className="text-[11px] font-bold text-blue-700">Itemized BOM Quotes</span>
+                <Link href={`/${lang}/corporate-custom-hats-supplier`} className="font-bold text-slate-900 hover:text-blue-600 flex items-center gap-1">
+                  <span>Explore</span> <ArrowRight size={12} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Sector 3: Golf, Outdoor & Athletic */}
+            <div className="bg-slate-50 hover:bg-white rounded-2xl p-5 border border-slate-200 hover:border-slate-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[10px] font-black uppercase tracking-wider text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded">
+                    Performance Active
+                  </span>
+                  <span className="text-xs font-black text-slate-900">MOQ 200</span>
+                </div>
+                <h3 className="text-base font-black text-slate-900 mb-1">
+                  {lang === "es" ? "Golf, Deportes y Outdoor Técnico" : "Golf & Performance Athletic"}
+                </h3>
+                <p className="text-slate-600 text-xs leading-relaxed mb-4">
+                  {lang === "es"
+                    ? "Paneles perforados a láser, nailon impermeable DWR, badanas CoolMax transpirables y cierres de silicona prémium."
+                    : "Laser-perforated airflow panels, lightweight DWR water-repellent nylon, moisture-wicking CoolMax sweatbands, and silicone closures."}
+                </p>
+              </div>
+              <div className="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs">
+                <span className="text-[11px] font-bold text-emerald-700">CoolMax Tech Ready</span>
+                <Link href={`/${lang}/custom-golf-performance-hats`} className="font-bold text-slate-900 hover:text-blue-600 flex items-center gap-1">
+                  <span>Explore</span> <ArrowRight size={12} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Sector 4: Container Bulk & Importers */}
+            <div className="bg-slate-50 hover:bg-white rounded-2xl p-5 border border-slate-200 hover:border-slate-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[10px] font-black uppercase tracking-wider text-amber-700 bg-amber-100/80 px-2 py-0.5 rounded">
+                    Container FCL Scale
+                  </span>
+                  <span className="text-xs font-black text-slate-900">10,000+ Pcs</span>
+                </div>
+                <h3 className="text-base font-black text-slate-900 mb-1">
+                  {lang === "es" ? "Distribuidores y Cargas Contenedor" : "Container Bulk & Distributors"}
+                </h3>
+                <p className="text-slate-600 text-xs leading-relaxed mb-4">
+                  {lang === "es"
+                    ? "Gorras trucker de malla y snapbacks de visera plana. Optimización de cubicaje para contenedores 20GP/40HQ y precio suelo directo de fábrica."
+                    : "High-volume mesh truckers and flat-brim snapbacks. 20GP & 40HQ container load optimization and factory floor FOB rates from $3.50."}
+                </p>
+              </div>
+              <div className="pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs">
+                <span className="text-[11px] font-bold text-amber-800">From $3.50 FOB</span>
+                <Link href={`/${lang}/bulk-custom-hats-manufacturer`} className="font-bold text-slate-900 hover:text-blue-600 flex items-center gap-1">
+                  <span>Explore</span> <ArrowRight size={12} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* B2B Manufacturing Programs — High-Density 4-Column Grid */}
       <section className="py-6 sm:py-12 md:py-16 px-4 bg-slate-100/70 border-y border-slate-200/80">
         <div className="max-w-7xl mx-auto">
@@ -636,10 +765,16 @@ export default function Home() {
               <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-amber-400">{t("process.label")}</span>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-black mt-0.5 sm:mt-1">{t("process.heading")}</h2>
             </div>
-            <span className="text-[11px] sm:text-xs text-slate-400 font-medium">Standard 7-Day Samples · 15-20 Days Bulk Delivery</span>
+            <div className="flex items-center gap-2">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-[11px] font-bold text-emerald-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                {lang === "es" ? "Cotización Escrita en 2h" : "Written Quote in 2h"}
+              </span>
+              <span className="text-[11px] sm:text-xs text-slate-400 font-medium">Standard 7-Day Samples · 15-20 Days Bulk</span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 mb-6">
             {[
               { num: "01", title: t("process.step1Title"), desc: t("process.step1Desc") },
               { num: "02", title: t("process.step2Title"), desc: t("process.step2Desc") },
@@ -657,6 +792,35 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Milestone Photo & Video Proof Bar (Item 3) */}
+          <div className="bg-slate-800/90 rounded-2xl p-4 sm:p-5 border border-slate-700/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center shrink-0">
+                <Sparkles size={20} />
+              </div>
+              <div>
+                <h4 className="text-xs sm:text-sm font-black text-white flex items-center gap-2">
+                  <span>{lang === "es" ? "Bitácora Multimedia de Producción en Vivo" : "Milestone Photo & Video Proof Protocol"}</span>
+                  <span className="text-[9px] font-black uppercase tracking-wider text-emerald-400 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-500/30">
+                    {lang === "es" ? "Actualizaciones cada 2 días" : "Updates Every 2 Days"}
+                  </span>
+                </h4>
+                <p className="text-[11px] text-slate-300 leading-snug mt-0.5">
+                  {lang === "es"
+                    ? "Seguimiento transparente en cada fase: ① Muestra de tela y corte ② Bordado en máquina Barudan ③ Confección de badana ④ Inspección pieza por pieza y empaque."
+                    : "Full production transparency: ① Fabric roll cutting & color check ② Barudan embroidery live video ③ 4-needle sweatband assembly ④ Piece-by-piece final inspection & export carton packing."}
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={() => handleWhatsApp("process-milestone")}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition shadow-xs whitespace-nowrap cursor-pointer"
+            >
+              <MessageCircle size={14} />
+              <span>{lang === "es" ? "Consultar con Eileen" : "Inquire with Eileen"}</span>
+            </button>
           </div>
         </div>
       </section>
