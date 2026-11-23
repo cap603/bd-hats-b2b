@@ -8,10 +8,14 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Guía B2B de Gorras Personalizadas | Fábrica BD Hats"
-        : "Custom Hat Manufacturing Guide for B2B Buyers | BD Hats",
+    // absolute: the root layout appends "| BD Hats" via title.template, which
+    // duplicated the brand suffix when this page used a plain title string.
+    title: {
+      absolute:
+        locale === "es"
+          ? "Guía B2B de Gorras Personalizadas | BD Hats"
+          : "Custom Hat Manufacturing Guide for B2B Buyers | BD Hats",
+    },
     description:
       locale === "es"
         ? "Guía completa para compradores B2B: cómo elegir una fábrica de gorras, tipos de bordado, negociación de MOQ, control de calidad y logística de envío. Consejos de una fábrica con 12 años de experiencia."

@@ -8,10 +8,14 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const languages = getAlternateLanguages(path);
 
   return {
-    title:
-      locale === "es"
-        ? "Precios y MOQ de Gorras Personalizadas | BD Hats"
-        : "Custom Hat Pricing & MOQ Guide | BD Hats",
+    // absolute: avoid the root layout's "| BD Hats" template duplicating the
+    // brand suffix (was rendering "… | BD Hats | BD Hats").
+    title: {
+      absolute:
+        locale === "es"
+          ? "Precios y MOQ de Gorras Personalizadas | BD Hats"
+          : "Custom Hat Pricing & MOQ Guide | BD Hats",
+    },
     description:
       locale === "es"
         ? "Guía de precios transparente para gorras personalizadas: cuánto cuestan las gorras a medida, FOB vs CIF, MOQ 200uds, costos de flete aéreo vs marítimo, tarifas de muestras y descuentos por volumen. Directo de fábrica desde China."
