@@ -10,8 +10,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     title:
       locale === "es"
-        ? "Guía de Fabricación de Gorras Personalizadas B2B | Cómo Comprar Gorras al por Mayor desde China"
-        : "B2B Custom Hat Manufacturing Guide | How to Source Wholesale Caps from China",
+        ? "Guía B2B de Gorras Personalizadas | Fábrica BD Hats"
+        : "Custom Hat Manufacturing Guide for B2B Buyers | BD Hats",
     description:
       locale === "es"
         ? "Guía completa para compradores B2B: cómo elegir una fábrica de gorras, tipos de bordado, negociación de MOQ, control de calidad y logística de envío. Consejos de una fábrica con 12 años de experiencia."

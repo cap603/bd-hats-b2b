@@ -66,15 +66,9 @@ export default function GuidePage() {
     "mainEntityOfPage": "https://bdjunyang.com/guide"
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bdjunyang.com" },
-      { "@type": "ListItem", "position": 2, "name": "B2B Custom Hat Manufacturing Guide", "item": "https://bdjunyang.com/guide" }
-    ]
-  };
-
+  // BreadcrumbList is emitted exactly once by the <Breadcrumb /> component
+  // below (locale-aware, canonical-consistent). The hardcoded block that used
+  // to live here duplicated it and pointed at /guide instead of /{lang}/guide.
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -160,7 +154,6 @@ export default function GuidePage() {
   return (
     <main className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-4 md:px-8">

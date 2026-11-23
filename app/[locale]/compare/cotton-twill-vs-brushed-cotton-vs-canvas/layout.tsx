@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: {
       absolute:
         locale === "es"
-          ? "Sarga vs Algodón vs Canvas: Precios y Gramaje | BD Hats"
-          : "Cotton Twill vs Brushed Cotton vs Canvas: Fabric Cost | BD Hats",
+          ? "Sarga vs Algodón Cepillado vs Lona: Guía | BD Hats"
+          : "Cotton Twill vs Brushed Cotton vs Canvas | BD Hats",
     },
     description:
       locale === "es"

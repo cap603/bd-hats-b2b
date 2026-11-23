@@ -110,9 +110,17 @@ export default function ProductDetail() {
       "lowPrice": priceRange(hat.price)?.low,
       "highPrice": priceRange(hat.price)?.high,
       "priceCurrency": "USD",
-      "offerCount": "1",
+      // offerCount removed (2026-11-23): "1" contradicted the low–high price
+      // band and was a string. AggregateOffer permits omission; Google can
+      // still build the product snippet from the band.
       "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition"
+      "itemCondition": "https://schema.org/NewCondition",
+      "url": `https://bdjunyang.com/${lang}/product/${hat.id}`,
+    },
+    "seller": {
+      "@type": "Organization",
+      "name": "Baoding Junyang Hat Manufacturing Co., Ltd.",
+      "url": "https://bdjunyang.com",
     },
     "material": hat.specs.material,
     "category": hat.category || "Baseball Caps"

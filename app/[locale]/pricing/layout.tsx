@@ -10,8 +10,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     title:
       locale === "es"
-        ? "Guía de Precios, MOQ y Envío de Gorras Personalizadas | Desglose de Costos al por Mayor"
-        : "Custom Hat Pricing, MOQ & Shipping Guide | Wholesale Cost Breakdown",
+        ? "Precios y MOQ de Gorras Personalizadas | BD Hats"
+        : "Custom Hat Pricing & MOQ Guide | BD Hats",
     description:
       locale === "es"
         ? "Guía de precios transparente para gorras personalizadas: cuánto cuestan las gorras a medida, FOB vs CIF, MOQ 200uds, costos de flete aéreo vs marítimo, tarifas de muestras y descuentos por volumen. Directo de fábrica desde China."
