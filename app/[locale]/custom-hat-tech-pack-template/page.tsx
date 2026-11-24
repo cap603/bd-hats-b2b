@@ -824,9 +824,10 @@ export default function TechPackPage() {
               <ul className="space-y-2 text-xs">
                 <li><Link href={`/${lang}/custom-hat-tech-pack-template`} className="hover:text-white text-yellow-400 font-bold">Vector Tech Pack Guide</Link></li>
                 <li><Link href={`/${lang}/custom-hat-cost-index-2026`} className="hover:text-white">2026 Hat Cost Index</Link></li>
+                <li><Link href={`/${lang}/compare/cotton-twill-vs-brushed-cotton-vs-canvas`} className="hover:text-white">Cotton Twill vs Canvas</Link></li>
                 <li><Link href={`/${lang}/compare/merino-wool-vs-acrylic-beanies`} className="hover:text-white">Merino vs Acrylic</Link></li>
-                <li><Link href={`/${lang}/materials`} className="hover:text-white">Materials & Fabrics</Link></li>
-                <li><Link href={`/${lang}/pricing`} className="hover:text-white">Factory Pricing</Link></li>
+                <li><Link href={`/${lang}/guide`} className="hover:text-white">B2B Manufacturing Guide</Link></li>
+                <li><Link href={`/${lang}/pricing`} className="hover:text-white">Factory Pricing & MOQ</Link></li>
               </ul>
             </div>
             <div>
