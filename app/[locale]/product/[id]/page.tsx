@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { useParams, notFound } from "next/navigation";
 import { useT, useLang } from "../../../lib/i18n";
@@ -47,8 +46,6 @@ export default function ProductDetail() {
   const lang = useLang();
   const { id } = useParams();
   const hat = HATS.find(h => String(h.id) === String(id));
-  const [activeTab, setActiveTab] = useState("specs");
-  const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   // True 404 for unknown/discontinued products (was a soft-404 returning 200 +
   // "Product Not Found", wasting crawl budget and confusing Google's indexer).
@@ -159,18 +156,50 @@ export default function ProductDetail() {
         { label: hat.name }
       ]} />
 
-      <section className="max-w-7xl mx-auto py-12 md:py-20 px-4 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          
-          {/* Left: Product Images & Quality Badges */}
-          <div className="space-y-8">
+      {/* Hero — reference PDP rhythm: wider text column (60%) with category →
+          title → price → urgency → copy → data bar → dual CTA, and a single
+          product image in the narrower right column (40%). On mobile the
+          image sits between the title block and the copy/CTA. */}
+      <section className="max-w-7xl mx-auto py-12 md:py-16 px-4 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] lg:grid-rows-[auto_1fr] gap-10 lg:gap-16 items-start">
+
+          {/* Top text block */}
+          <div className="order-1 lg:order-none lg:col-start-1 lg:row-start-1">
+            <span className="text-yellow-600 text-xs font-black uppercase tracking-widest mb-2 block">{hat.category || "Premium Headwear"}</span>
+            <h1 className="text-4xl md:text-5xl font-black text-black leading-tight mb-4">{hat.name}</h1>
+            <div className="flex items-baseline gap-3 mb-4">
+              <span className="text-3xl font-black text-black">{hat.price}</span>
+              {/* "/ Unit (FOB)" only reads correctly next to a numeric price.
+                  Quote-on-request products show the MOQ instead. */}
+              <span className="text-gray-400 font-bold">
+                {hasNumericPrice(hat.price) ? t("unit") : `MOQ ${hat.moq} pcs`}
+              </span>
+            </div>
+
+            {/* Urgency strip — production slot availability */}
+            <div className="flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2.5 w-fit max-w-full animate-pulse">
+              <span className="relative flex h-2 w-2 shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-600"></span>
+              </span>
+              <p className="text-xs font-bold text-yellow-800">{t("urgencyStrip")}</p>
+            </div>
+          </div>
+
+          {/* Single product image */}
+          <div className="order-2 lg:order-none lg:col-start-2 lg:row-start-1 lg:row-span-2">
             <div className="rounded-[2.5rem] overflow-hidden bg-gray-50 border border-gray-100 shadow-2xl relative group">
               <img src={hat.img} alt={hat.name} className="w-full h-auto object-cover group-hover:scale-105 transition duration-700" width="960" height="960" />
               <div className="absolute top-6 left-6 flex gap-2">
                  <span className="bg-black/80 backdrop-blur text-white text-[10px] font-black uppercase px-3 py-1.5 rounded-full">{t("topSeller")}</span>
               </div>
             </div>
-            
+          </div>
+
+          {/* Bottom text block: copy → data bar → dual CTA */}
+          <div className="order-3 lg:order-none lg:col-start-1 lg:row-start-2 space-y-8">
+            <p className="text-gray-600 text-lg leading-relaxed">{hat.fullDesc}</p>
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                {[
                  { icon: ShieldCheck, label: t("qc"), sub: t("qcSub") },
@@ -183,171 +212,148 @@ export default function ProductDetail() {
                     <span className="text-xs font-black text-black leading-none mb-1">{item.label}</span>
                     <span className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">{item.sub}</span>
                  </div>
-               ))}
-            </div>
-          </div>
+                ))}
+             </div>
 
-          {/* Right: Product Meta & Tabs */}
-          <div className="flex flex-col h-full">
-            <div className="mb-8">
-              <span className="text-yellow-600 text-xs font-black uppercase tracking-widest mb-2 block">{hat.category || "Premium Headwear"}</span>
-              <h1 className="text-4xl md:text-5xl font-black text-black leading-tight mb-4">{hat.name}</h1>
-               <div className="flex items-baseline gap-3 mb-4">
-                 <span className="text-3xl font-black text-black">{hat.price}</span>
-                 {/* "/ Unit (FOB)" only reads correctly next to a numeric price.
-                     Quote-on-request products show the MOQ instead. */}
-                 <span className="text-gray-400 font-bold">
-                   {hasNumericPrice(hat.price) ? t("unit") : `MOQ ${hat.moq} pcs`}
-                 </span>
-               </div>
-
-              {/* Urgency strip — production slot availability */}
-              <div className="flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-2.5 mb-4 animate-pulse">
-                <span className="relative flex h-2 w-2 shrink-0">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-500 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-600"></span>
-                </span>
-                <p className="text-xs font-bold text-yellow-800">{t("urgencyStrip")}</p>
-              </div>
-
-              <p className="text-gray-600 text-lg leading-relaxed mb-6">{hat.fullDesc}</p>
-
-              {/* Above-the-fold quick actions */}
+            {/* Dual CTA — filled WhatsApp quote + outlined sample request */}
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={handleWhatsAppClick}
-                className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-4 rounded-2xl transition shadow-lg shadow-green-500/20 text-base"
+                className="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-black py-4 rounded-2xl transition shadow-lg shadow-green-500/20 text-base"
               >
                 <MessageCircle size={20} /> {t("getQuote")}
               </button>
+              <Link href={`/${lang}/#inquiry?intent=sample`} className="flex-1 inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-black text-black font-bold py-4 rounded-2xl transition text-sm uppercase tracking-widest">
+                {t("orderSample")}
+              </Link>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Tab Controls */}
-            <div className="flex border-b border-gray-100 mb-8 overflow-x-auto no-scrollbar">
-              {[
-                { id: "specs", label: t("tabs.specs"), icon: Cpu },
-                { id: "custom", label: t("tabs.custom"), icon: Settings }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-2 px-6 py-4 text-sm font-black uppercase tracking-wider transition-all whitespace-nowrap border-b-2 ${
-                    activeTab === tab.id ? "border-black text-black" : "border-transparent text-gray-400 hover:text-gray-600"
-                  }`}
-                >
-                  <tab.icon size={16} /> {tab.label}
-                </button>
-              ))}
+      {/* Factory Engineering Advisory — full-width light section, 4-card row */}
+      <section className="bg-gray-50 border-y border-gray-100 py-14 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+               <div className="flex items-center gap-2 mb-3">
+                 <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-blue-50 text-blue-600">
+                   <ShieldCheck size={18} />
+                 </span>
+                 <span className="text-xs font-black uppercase tracking-widest text-blue-600">
+                   {lang === "es" ? "Criterios de Ingeniería B2B" : "Factory Engineering Advisory"}
+                 </span>
+               </div>
+               <h3 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2">
+                 {lang === "es" ? "Puntos Clave de Producción para Evitar Errores" : "Production Feasibility & Anti-Deformation Standards"}
+               </h3>
+               <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">
+                 {lang === "es"
+                   ? "Recomendaciones directas del equipo de patronaje y bordado Barudan para optimizar calidad y reducir mermas."
+                   : "Direct manufacturing guidelines from our Baoding Barudan embroidery and pattern-making floor."}
+               </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                 <div className="p-4 bg-white rounded-2xl border border-slate-200">
+                   <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
+                     <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                     {lang === "es" ? "Bordado 3D vs Costura Frontal" : "3D Puff vs Centre Seam"}
+                   </h4>
+                   <p className="text-slate-600 text-[11px] leading-relaxed">
+                     {lang === "es"
+                       ? "Para logotipos 3D grandes recomendamos perfiles de 5 paneles. La ausencia de costura central evita deformaciones y saltos de aguja."
+                       : "For oversized 3D puff artwork, 5-panel silhouettes prevent needle deflection and distortion across the vertical centre seam."}
+                   </p>
+                 </div>
+
+                 <div className="p-4 bg-white rounded-2xl border border-slate-200">
+                   <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
+                     <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                     {lang === "es" ? "Lavado Vintage y Bordado" : "Vintage Enzyme Wash Sequence"}
+                   </h4>
+                   <p className="text-slate-600 text-[11px] leading-relaxed">
+                     {lang === "es"
+                       ? "En gorras desgastadas bordamos después del lavado para máxima nitidez, o antes para lograr un desgaste auténtico vintage según muestra firmada."
+                       : "For distressed caps, embroidery can be executed pre-wash for authentic weathering or post-wash for sharp contrast per approved sign-off."}
+                   </p>
+                 </div>
+
+                 <div className="p-4 bg-white rounded-2xl border border-slate-200">
+                   <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
+                     <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                     {lang === "es" ? "Protección de Estructura Buckram" : "Rigid Buckram Crown Protection"}
+                   </h4>
+                   <p className="text-slate-600 text-[11px] leading-relaxed">
+                     {lang === "es"
+                       ? "Gorras estructuradas empacadas en 4 cajas interiores de 25 uds dentro de cartón máster de 5 capas (60×45×40cm) para evitar aplastamientos en flete marítimo."
+                       : "Structured crowns are packed in 4 inner boxes (25 caps each) within 5-ply seaworthy master cartons (60×45×40cm) to prevent creasing in transit."}
+                   </p>
+                 </div>
+
+                 <div className="p-4 bg-white rounded-2xl border border-slate-200">
+                   <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
+                     <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                     {lang === "es" ? "Banda de Sudor de 4 Agujas" : "4-Needle Ergonomic Sweatband"}
+                   </h4>
+                   <p className="text-slate-600 text-[11px] leading-relaxed">
+                     {lang === "es"
+                       ? "Confección con espuma de celda cerrada y costura cuádruple de precisión para absorción de sudor duradera y confort sin roces."
+                       : "Multi-needle stitch pitch with closed-cell anti-sweat foam ensures long-term comfort, shape retention, and zero stitch chafing."}
+                   </p>
+                 </div>
+               </div>
+        </div>
+      </section>
+
+      {/* Product Specifications — full-width dark section; the table stays
+          visible (reference style) instead of living in a collapsed accordion. */}
+      <section className="bg-slate-900 py-14 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="flex items-center gap-2.5 mb-8">
+            <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-white/10 text-white">
+              <Cpu size={18} />
+            </span>
+            <h2 className="text-lg sm:text-2xl font-black text-white tracking-tight">{t("tabs.specs")}</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+            {Object.entries(hat.specs).map(([key, value]) => (
+              <div key={key} className="flex justify-between border-b border-white/10 pb-2.5">
+                <span className="text-slate-400 font-medium capitalize">{key}</span>
+                <span className="text-white font-bold text-right">{value}</span>
+              </div>
+            ))}
+            <div className="flex justify-between border-b border-white/10 pb-2.5">
+              <span className="text-slate-400 font-medium">MOQ</span>
+              <span className="text-white font-bold">{hat.moq} Pcs / Style</span>
             </div>
-
-            {/* Tab Content: Specifications */}
-            {activeTab === "specs" && (
-              <div className="bg-gray-50 rounded-3xl p-8 border border-gray-100 animate-in fade-in duration-500">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
-                  {Object.entries(hat.specs).map(([key, value]) => (
-                    <div key={key} className="flex justify-between border-b border-gray-200 pb-2">
-                      <span className="text-gray-500 font-medium capitalize">{key}</span>
-                      <span className="text-black font-bold text-right">{value}</span>
-                    </div>
-                  ))}
-                  <div className="flex justify-between border-b border-gray-200 pb-2">
-                    <span className="text-gray-500 font-medium">MOQ</span>
-                    <span className="text-black font-bold">{hat.moq} Pcs / Style</span>
-                  </div>
-                  <div className="flex justify-between border-b border-gray-200 pb-2">
-                    <span className="text-gray-500 font-medium">Export Packing</span>
-                    <span className="text-black font-bold text-right">100 pcs/ctn (60×45×40cm, ~12kg)</span>
-                  </div>
-                  <div className="flex justify-between border-b border-gray-200 pb-2">
-                    <span className="text-gray-500 font-medium">Sweatband Craft</span>
-                    <span className="text-black font-bold text-right">4-needle stitch with foam</span>
-                  </div>
-                  <div className="flex justify-between border-b border-gray-200 pb-2">
-                    <span className="text-gray-500 font-medium">Production SLA</span>
-                    <span className="text-black font-bold text-right">Sample 7d · Bulk 15–20d</span>
-                  </div>
-                  <div className="flex justify-between border-b border-gray-200 pb-2">
-                    <span className="text-gray-500 font-medium">Sampling Policy</span>
-                    <span className="text-emerald-600 font-bold text-right">100% Refundable on Bulk ≥500 pcs</span>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* B2B Factory Engineering & Anti-Pitfall Advisory */}
-            <div className="my-8 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-xs text-left">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-blue-50 text-blue-600">
-                  <ShieldCheck size={18} />
-                </span>
-                <span className="text-xs font-black uppercase tracking-widest text-blue-600">
-                  {lang === "es" ? "Criterios de Ingeniería B2B" : "Factory Engineering Advisory"}
-                </span>
-              </div>
-              <h3 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2">
-                {lang === "es" ? "Puntos Clave de Producción para Evitar Errores" : "Production Feasibility & Anti-Deformation Standards"}
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">
-                {lang === "es"
-                  ? "Recomendaciones directas del equipo de patronaje y bordado Barudan para optimizar calidad y reducir mermas."
-                  : "Direct manufacturing guidelines from our Baoding Barudan embroidery and pattern-making floor."}
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                  <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                    {lang === "es" ? "Bordado 3D vs Costura Frontal" : "3D Puff vs Centre Seam"}
-                  </h4>
-                  <p className="text-slate-600 text-[11px] leading-relaxed">
-                    {lang === "es"
-                      ? "Para logotipos 3D grandes recomendamos perfiles de 5 paneles. La ausencia de costura central evita deformaciones y saltos de aguja."
-                      : "For oversized 3D puff artwork, 5-panel silhouettes prevent needle deflection and distortion across the vertical centre seam."}
-                  </p>
-                </div>
-
-                <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                  <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                    {lang === "es" ? "Lavado Vintage y Bordado" : "Vintage Enzyme Wash Sequence"}
-                  </h4>
-                  <p className="text-slate-600 text-[11px] leading-relaxed">
-                    {lang === "es"
-                      ? "En gorras desgastadas bordamos después del lavado para máxima nitidez, o antes para lograr un desgaste auténtico vintage según muestra firmada."
-                      : "For distressed caps, embroidery can be executed pre-wash for authentic weathering or post-wash for sharp contrast per approved sign-off."}
-                  </p>
-                </div>
-
-                <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                  <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                    {lang === "es" ? "Protección de Estructura Buckram" : "Rigid Buckram Crown Protection"}
-                  </h4>
-                  <p className="text-slate-600 text-[11px] leading-relaxed">
-                    {lang === "es"
-                      ? "Gorras estructuradas empacadas en 4 cajas interiores de 25 uds dentro de cartón máster de 5 capas (60×45×40cm) para evitar aplastamientos en flete marítimo."
-                      : "Structured crowns are packed in 4 inner boxes (25 caps each) within 5-ply seaworthy master cartons (60×45×40cm) to prevent creasing in transit."}
-                  </p>
-                </div>
-
-                <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                  <h4 className="font-black text-slate-900 mb-1 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                    {lang === "es" ? "Banda de Sudor de 4 Agujas" : "4-Needle Ergonomic Sweatband"}
-                  </h4>
-                  <p className="text-slate-600 text-[11px] leading-relaxed">
-                    {lang === "es"
-                      ? "Confección con espuma de celda cerrada y costura cuádruple de precisión para absorción de sudor duradera y confort sin roces."
-                      : "Multi-needle stitch pitch with closed-cell anti-sweat foam ensures long-term comfort, shape retention, and zero stitch chafing."}
-                  </p>
-                </div>
-              </div>
+            <div className="flex justify-between border-b border-white/10 pb-2.5">
+              <span className="text-slate-400 font-medium">Export Packing</span>
+              <span className="text-white font-bold text-right">100 pcs/ctn (60×45×40cm, ~12kg)</span>
             </div>
+            <div className="flex justify-between border-b border-white/10 pb-2.5">
+              <span className="text-slate-400 font-medium">Sweatband Craft</span>
+              <span className="text-white font-bold text-right">4-needle stitch with foam</span>
+            </div>
+            <div className="flex justify-between border-b border-white/10 pb-2.5">
+              <span className="text-slate-400 font-medium">Production SLA</span>
+              <span className="text-white font-bold text-right">Sample 7d · Bulk 15–20d</span>
+            </div>
+            <div className="flex justify-between border-b border-white/10 pb-2.5">
+              <span className="text-slate-400 font-medium">Sampling Policy</span>
+              <span className="text-emerald-400 font-bold text-right">100% Refundable on Bulk ≥500 pcs</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Tab Content: Customization */}
-            {activeTab === "custom" && (
-              <div className="bg-gray-50 rounded-3xl p-8 border border-gray-100 animate-in fade-in duration-500">
-                <h4 className="font-black text-black mb-6 uppercase tracking-wider">{hat.customization?.title || "OEM/ODM Capabilities"}</h4>
-                <div className="grid grid-cols-1 gap-4">
+      {/* Customization — full-width white section, two-up option grid */}
+      <section className="py-14 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="flex items-center gap-2.5 mb-8">
+            <span className="flex items-center justify-center w-8 h-8 rounded-xl bg-gray-100 text-black">
+              <Settings size={18} />
+            </span>
+            <h2 className="font-black text-black uppercase tracking-wider text-lg sm:text-2xl">{hat.customization?.title || "OEM/ODM Capabilities"}</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {(hat.customization?.options || [
                     "Full color custom logo embroidery (3D/Flat/Chenille)",
                     "Internal custom woven labels and care tags",
@@ -360,45 +366,31 @@ export default function ProductDetail() {
                       <span className="text-sm font-bold text-gray-800">{opt}</span>
                     </div>
                   ))}
-                </div>
-              </div>
-            )}
+          </div>
+        </div>
+      </section>
 
-            {/* FAQ moved out of the tab set — see the full-width section below.
-                Inside a tab + accordion the answers never reached the initial
-                HTML, so crawlers and AI retrieval could not read them. */}
-
-            {/* Action Buttons */}
-            <div className="mt-12 space-y-4">
-              <button 
-                onClick={handleWhatsAppClick}
-                className="w-full bg-green-500 hover:bg-green-600 text-white font-black py-5 rounded-2xl transition shadow-xl shadow-green-500/20 flex items-center justify-center gap-3 text-lg"
-              >
-                <MessageCircle size={24} /> {t("getQuote")}
-              </button>
-               <Link href={`/${lang}/#inquiry?intent=sample`} className="w-full bg-gray-100 hover:bg-gray-200 text-black font-bold py-4 rounded-xl transition flex items-center justify-center text-sm uppercase tracking-widest">
-                  {t("orderSample")}
-              </Link>
+      {/* B2B Brand Developer Tools — Zero-Cost Digital Lead Magnet (full-width).
+          The FAQ further below still exposes its answers in the initial HTML. */}
+      <section className="pb-14 md:pb-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="bg-slate-900 text-white rounded-3xl border border-slate-800 shadow-xl relative overflow-hidden p-6 sm:p-8">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400">
+                <Sparkles size={13} />
+              </span>
+              <span className="text-[11px] font-black uppercase tracking-widest text-emerald-400">
+                {t("devToolsBadge")}
+              </span>
             </div>
+            <h3 className="text-base sm:text-lg font-black text-white leading-tight mb-1">
+              {t("devToolsTitle")}
+            </h3>
+            <p className="text-xs text-slate-400 leading-relaxed mb-4">
+              {t("devToolsSub")}
+            </p>
 
-            {/* B2B Brand Developer Tools — Zero-Cost Digital Lead Magnet */}
-            <div className="mt-8 bg-slate-900 text-white rounded-3xl p-6 border border-slate-800 shadow-xl relative overflow-hidden">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400">
-                  <Sparkles size={13} />
-                </span>
-                <span className="text-[11px] font-black uppercase tracking-widest text-emerald-400">
-                  {t("devToolsBadge")}
-                </span>
-              </div>
-              <h3 className="text-base sm:text-lg font-black text-white leading-tight mb-1">
-                {t("devToolsTitle")}
-              </h3>
-              <p className="text-xs text-slate-400 leading-relaxed mb-4">
-                {t("devToolsSub")}
-              </p>
-
-              <div className="space-y-3">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 {/* Tool 1: Blank Tech Pack Template */}
                 <div className="bg-slate-800/90 rounded-2xl p-4 border border-slate-700/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                   <div className="flex items-start gap-3 min-w-0">
@@ -446,9 +438,7 @@ export default function ProductDetail() {
                     </button>
                   </div>
                 </div>
-              </div>
             </div>
-
           </div>
         </div>
       </section>
