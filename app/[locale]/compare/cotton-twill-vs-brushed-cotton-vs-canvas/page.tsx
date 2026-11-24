@@ -39,6 +39,14 @@ const CONTENT = {
           ],
         },
         {
+          label: "Mill specification & fabric weight (GSM)",
+          values: [
+            "108*56 high-density twill weave · 260–280 GSM; standard retail cap weight",
+            "10*10 heavy brushed yarn count · 270–290 GSM; post-wash softened hand",
+            "10 oz – 12 oz duck canvas weave · 340–380 GSM; heavy-duty industrial grade",
+          ],
+        },
+        {
           label: "Weight and structure",
           values: [
             "Usually the reference weight for caps; holds a structured buckram front without extra help",
@@ -154,6 +162,26 @@ const CONTENT = {
           d: "Flat fronts that carry a large logo on canvas or twill.",
         },
         {
+          href: "/custom-corduroy-caps-manufacturer",
+          label: "Custom corduroy caps",
+          d: "Vintage ribbed 8-wale and 14-wale texture as a seasonal alternative.",
+        },
+        {
+          href: "/custom-beanies-manufacturer",
+          label: "Custom knit beanies",
+          d: "Acrylic and merino winter headwear programs for cold-weather drops.",
+        },
+        {
+          href: "/pricing",
+          label: "Custom hat pricing & MOQ guide",
+          d: "Transparent FOB volume tiers, tooling costs, and sample terms.",
+        },
+        {
+          href: "/custom-hat-tech-pack-template",
+          label: "Free vector tech pack templates",
+          d: "1:1 flat sketches with embroidery scale limits in AI/PDF/EPS.",
+        },
+        {
           href: "/wholesale-blank-caps-supplier",
           label: "Wholesale blank caps",
           d: "Stock caps in the same fabrics for print or embroidery later.",
@@ -233,6 +261,14 @@ const CONTENT = {
             "Tejido denso y liso con un brillo leve; se ve nítido y uniforme en todo el panel",
             "Superficie cepillada: suave, mate y algo afelpada, con aspecto de ya usada desde el primer día",
             "Tejido más grueso y visible, de acabado mate; se ablanda con cada lavado",
+          ],
+        },
+        {
+          label: "Especificación de tejeduría y gramaje (GSM)",
+          values: [
+            "Sarga de alta densidad 108*56 · 260–280 GSM; gramaje estándar de retail",
+            "Hilado grueso 10*10 con cepillado · 270–290 GSM; tacto suavizado post-lavado",
+            "Tejido duck canvas de 10 oz – 12 oz · 340–380 GSM; grado industrial de alta resistencia",
           ],
         },
         {
@@ -349,6 +385,26 @@ const CONTENT = {
           href: "/custom-5-panel-caps-manufacturer",
           label: "Gorras de 5 paneles personalizadas",
           d: "Frentes planos que llevan un logo grande en canvas o sarga.",
+        },
+        {
+          href: "/custom-corduroy-caps-manufacturer",
+          label: "Gorras de pana personalizadas",
+          d: "Textura acanalada vintage de 8 y 14 canales como alternativa estacional.",
+        },
+        {
+          href: "/custom-beanies-manufacturer",
+          label: "Gorros tejidos personalizados",
+          d: "Programas de invierno en acrílico y lana merino para clima frío.",
+        },
+        {
+          href: "/pricing",
+          label: "Guía de precios y MOQ",
+          d: "Escalones FOB transparentes por volumen, costes de utillaje y muestras.",
+        },
+        {
+          href: "/custom-hat-tech-pack-template",
+          label: "Plantillas vectoriales de tech pack",
+          d: "Bocetos planos 1:1 con límites de escala de bordado en AI/PDF/EPS.",
         },
         {
           href: "/wholesale-blank-caps-supplier",
