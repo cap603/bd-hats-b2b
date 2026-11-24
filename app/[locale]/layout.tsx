@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     alternates: {
       canonical: `https://bdjunyang.com/${locale}`,
-      // de/fr homepages are noindex,follow (English body copy) — omitted here.
+      // de/fr are retired (301 to /en as of 2026-11-24) — omitted here.
       // ja/pt/it homepages are indexed with localized UI — kept.
       languages: {
         en: "https://bdjunyang.com/en",

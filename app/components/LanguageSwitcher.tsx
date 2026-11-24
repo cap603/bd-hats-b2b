@@ -12,11 +12,15 @@ interface LanguageOption {
   flag: string;
 }
 
-const LANGUAGES: LanguageOption[] = [
+// 2026-11-24: de/fr retired (English body copy, now 301 to /en). ja/pt/it keep
+// only their localized homepages — inner pages 301 to /en — so they are not
+// offered on inner pages, otherwise the switcher would create redirect chains
+// and re-seed the duplicate URLs Google is already reporting.
+const CORE_LANGUAGES: LanguageOption[] = [
   { code: "en", label: "EN", name: "English", flag: "🇺🇸" },
   { code: "es", label: "ES", name: "Español", flag: "🇪🇸" },
-  { code: "de", label: "DE", name: "Deutsch", flag: "🇩🇪" },
-  { code: "fr", label: "FR", name: "Français", flag: "🇫🇷" },
+];
+const HOME_ONLY_LANGUAGES: LanguageOption[] = [
   { code: "pt", label: "PT", name: "Português", flag: "🇵🇹" },
   { code: "it", label: "IT", name: "Italiano", flag: "🇮🇹" },
   { code: "ja", label: "JA", name: "日本語", flag: "🇯🇵" },
@@ -30,7 +34,13 @@ export function LanguageSwitcher() {
   const [isPending, startTransition] = useTransition();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const current = LANGUAGES.find((l) => l.code === currentLocale) || LANGUAGES[0];
+  const ALL_LANGUAGES = [...CORE_LANGUAGES, ...HOME_ONLY_LANGUAGES];
+  // Home-only locales are offered on the homepage only; on inner pages their
+  // URLs would 301 straight back to /en.
+  const isHome = pathname === `/${currentLocale}` || pathname === `/${currentLocale}/`;
+  const options = isHome ? ALL_LANGUAGES : CORE_LANGUAGES;
+  const current =
+    ALL_LANGUAGES.find((l) => l.code === currentLocale) || CORE_LANGUAGES[0];
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -54,7 +64,7 @@ export function LanguageSwitcher() {
 
     // Replace the first locale segment e.g. /en/... -> /de/...
     const segments = pathname.split("/");
-    if (segments.length > 1 && LANGUAGES.some((l) => l.code === segments[1])) {
+    if (segments.length > 1 && ALL_LANGUAGES.some((l) => l.code === segments[1])) {
       segments[1] = targetCode;
     } else {
       segments.splice(1, 0, targetCode);
@@ -87,7 +97,7 @@ export function LanguageSwitcher() {
           <div className="px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-slate-400 border-b border-slate-100 mb-1">
             Language / Sprache / Langue
           </div>
-          {LANGUAGES.map((lang) => {
+          {options.map((lang) => {
             const isActive = lang.code === currentLocale;
             return (
               <button

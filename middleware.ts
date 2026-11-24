@@ -31,6 +31,9 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
+  // /index.html → canonical /en is handled in next.config.mjs redirects(),
+  // because the middleware matcher excludes paths containing a dot.
+
   // Skip static files, API, etc.
   if (
     pathname.startsWith("/_next") ||
@@ -84,20 +87,28 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
-  // Pseudo-localization containment (2026-11-20): de/fr serve English body copy
-  // on every page; ja/pt/it have localized homepages only. Tell Google not to
-  // index those URLs while keeping link follow, until human translation lands.
-  const response = NextResponse.next();
+  // Locale consolidation (2026-11-24), replacing the 11-20 noindex-header
+  // approach. Evidence: GSC 11-24 shows 23 canonical conflicts (22 of them
+  // de/fr/ja/pt/it copies) and 249 "discovered - not indexed" URLs whose first
+  // 42 sample entries are all /de/*. The noindex header left those URLs
+  // returning 200 with a self-canonical, so Google kept crawling them and
+  // reporting duplicates instead of dropping them.
+  //
+  // 301 to the English equivalent consolidates the signal, removes the
+  // duplicate URL from the crawl queue, and matches the site's en/es-only
+  // hreflang + sitemap policy. ja/pt/it homepages stay live (already indexed,
+  // localized UI) — only their inner pages redirect.
   const frozenHomeLocale =
-    effectiveLocale === "ja" || effectiveLocale === "pt" || effectiveLocale === "it";
-  if (
-    effectiveLocale === "de" ||
-    effectiveLocale === "fr" ||
-    (frozenHomeLocale && pathWithoutLocale !== "/")
-  ) {
-    response.headers.set("X-Robots-Tag", "noindex, follow");
+    effectiveLocale === "ja" || effectiveLocale === "pt" ||
+    effectiveLocale === "it";
+  const retiredLocale = effectiveLocale === "de" || effectiveLocale === "fr";
+  if (retiredLocale || (frozenHomeLocale && pathWithoutLocale !== "/")) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/en${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
+    return NextResponse.redirect(url, 301);
   }
-  return response;
+
+  return NextResponse.next();
 }
 
 export const config = {
