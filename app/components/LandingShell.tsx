@@ -434,7 +434,7 @@ export function LandingShell({
               <ul className="space-y-2 text-sm">
                 <li>WhatsApp: +86 15933930830</li>
                 <li>Email: admin@bdjunyang.com</li>
-                <li>Office: Baoding, Hebei, China</li>
+                <li>{lang === "es" ? "Oficina: Baoding, Hebei, China" : "Office: Baoding, Hebei, China"}</li>
               </ul>
               <div className="mt-4 pt-3 flex items-center gap-3">
                 <a
@@ -462,7 +462,7 @@ export function LandingShell({
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
-          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+          <p>{lang === "es" ? "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Todos los derechos reservados." : "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved."}</p>
         </div>
       </footer>
       <MobileStickyBar pageName={`Landing: ${title}`} />

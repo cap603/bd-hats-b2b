@@ -208,9 +208,11 @@ export default function Home() {
 
       {/* Trust Banner / Top Bar */}
       <div className="bg-black text-white text-center py-2 px-4 text-xs font-semibold tracking-wider uppercase flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
-        <span>China's Leading Premium Baseball Cap Manufacturer • Est. 2014</span>
+        <span>{t("topBar")}</span>
         <span className="hidden sm:inline text-amber-400">•</span>
-        <span className="text-amber-400 font-bold">Active Q4 2026 Production Schedule</span>
+        <span className="text-amber-400 font-bold">
+          {lang === "es" ? "Calendario de producción Q4 2026 activo" : "Active Q4 2026 Production Schedule"}
+        </span>
       </div>
 
       {/* Header */}
@@ -770,7 +772,9 @@ export default function Home() {
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 {lang === "es" ? "Cotización Escrita en 2h" : "Written Quote in 2h"}
               </span>
-              <span className="text-[11px] sm:text-xs text-slate-400 font-medium">Standard 7-Day Samples · 15-20 Days Bulk</span>
+              <span className="text-[11px] sm:text-xs text-slate-400 font-medium">
+                {lang === "es" ? "Muestras en 7 días · Volumen en 15-20 días" : "Standard 7-Day Samples · 15-20 Days Bulk"}
+              </span>
             </div>
           </div>
 
@@ -1096,12 +1100,12 @@ export default function Home() {
               <li>
                 <a href="mailto:admin@bdjunyang.com" className="hover:text-white transition flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0"></span>
-                  <span>Email: admin@bdjunyang.com</span>
+                  <span>{ft("email")}</span>
                 </a>
               </li>
               <li className="text-gray-400 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-slate-500 shrink-0"></span>
-                <span>Office: Baoding, Hebei, China</span>
+                <span>{ft("office")}</span>
               </li>
             </ul>
 
@@ -1140,9 +1144,11 @@ export default function Home() {
 
         {/* Bottom Bar */}
         <div className="max-w-7xl mx-auto mt-6 sm:mt-10 pt-4 sm:pt-6 border-t border-gray-900 flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-3 text-[11px] text-gray-500">
-          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+          <p>{ft("copyright")}</p>
           <div className="flex items-center gap-4 text-gray-500">
-            <a href="#top" className="hover:text-gray-300 transition">Back to Top ↑</a>
+            <a href="#top" className="hover:text-gray-300 transition">
+              {lang === "es" ? "Volver arriba ↑" : "Back to Top ↑"}
+            </a>
           </div>
         </div>
       </footer>

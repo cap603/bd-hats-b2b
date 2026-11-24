@@ -126,7 +126,7 @@ export function MobileNav() {
             className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20 active:scale-98 transition cursor-pointer"
           >
             <MessageCircle size={18} />
-            <span>Fast WhatsApp Quote</span>
+            <span>{lang === "es" ? "Cotización rápida por WhatsApp" : "Fast WhatsApp Quote"}</span>
           </button>
 
           {/* Product Categories */}
@@ -186,7 +186,7 @@ export function MobileNav() {
               >
                 <span className="flex items-center gap-2.5">
                   <BookOpen size={14} className="text-blue-600" />
-                  <span>B2B Buyer's Guide</span>
+                  <span>{tNav("guide")}</span>
                 </span>
                 <ChevronRight size={14} className="text-slate-300" />
               </Link>
