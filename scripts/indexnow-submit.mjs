@@ -11,25 +11,43 @@ const KEY = "b855288ac13d47c99a41e37e1f6887ff";
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const SITEMAP = `https://${HOST}/sitemap.xml`;
 
-const res = await fetch(SITEMAP);
-if (!res.ok) {
-  console.error(`Failed to fetch sitemap: ${res.status} ${res.statusText}`);
-  process.exit(1);
+// /sitemap.xml is a sitemap *index* pointing at per-locale shards
+// (sitemap-en.xml, sitemap-es.xml). Resolve it: fetch the index, then each
+// child shard, and merge every <loc> into a single URL list.
+async function fetchXml(url) {
+  const r = await fetch(url, { signal: AbortSignal.timeout(20000) });
+  if (!r.ok) {
+    console.error(`Failed to fetch ${url}: ${r.status} ${r.statusText}`);
+    process.exit(1);
+  }
+  return r.text();
 }
-const xml = await res.text();
-const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
+const locs = (xml) => [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
 
-if (urls.length === 0) {
+const indexXml = await fetchXml(SITEMAP);
+const urls = [];
+if (/<sitemap>/.test(indexXml)) {
+  for (const child of locs(indexXml)) {
+    console.log(`Fetching shard ${child}`);
+    urls.push(...locs(await fetchXml(child)));
+  }
+} else {
+  urls.push(...locs(indexXml));
+}
+// De-duplicate while preserving order.
+const unique = [...new Set(urls)];
+
+if (unique.length === 0) {
   console.error("No URLs found in sitemap.");
   process.exit(1);
 }
-console.log(`Found ${urls.length} URLs in sitemap.`);
+console.log(`Found ${unique.length} URLs across sitemap shards.`);
 
 const payload = {
   host: HOST,
   key: KEY,
   keyLocation: KEY_LOCATION,
-  urlList: urls,
+  urlList: unique,
 };
 
 const submit = await fetch("https://api.indexnow.org/indexnow", {

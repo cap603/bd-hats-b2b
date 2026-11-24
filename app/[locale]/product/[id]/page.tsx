@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useParams, notFound } from "next/navigation";
 import { useT, useLang } from "../../../lib/i18n";
-import { HATS, Product } from "../../../lib/products";
+import { HATS, Product, CAP_FOB_TIERS } from "../../../lib/products";
 import { priceLabel, priceRange, hasNumericPrice } from "../../../lib/price";
 import { 
   MessageCircle, ArrowLeft, ShieldCheck, Zap, Globe, Cpu, 
@@ -52,6 +52,24 @@ export default function ProductDetail() {
   if (!hat) {
     notFound();
   }
+
+  // Products declare `fobTiers: []` when no factory-confirmed band exists for
+  // their line (knitwear today); everyone else renders the published cap tiers.
+  const fobTiers = hat.fobTiers === undefined ? CAP_FOB_TIERS : hat.fobTiers;
+  const tierNotes =
+    lang === "es"
+      ? [
+          "Lote de prueba o test multicolor; amortiza digitalización y preparación de bordado.",
+          "100% de devolución del costo de muestra · etiquetas tejidas y de cuidado personalizadas gratis.",
+          "Corte por rollo completo y programación continua en líneas Barudan de 20 cabezales.",
+          "Teñido Pantone a medida, tejido a medida y optimización de carga en contenedor completo.",
+        ]
+      : [
+          "Starter / multi-colour test batch; amortises embroidery digitizing & setup.",
+          "100% sample fee credit · free custom woven brand & care labels.",
+          "Full-roll fabric cutting and continuous scheduling on 20-head Barudan lines.",
+          "Custom Pantone mill dyeing, bespoke weaving and full-container load optimisation.",
+        ];
 
   const handleWhatsAppClick = () => {
     const sku = getProductSku(String(hat.id));
@@ -589,39 +607,46 @@ export default function ProductDetail() {
               ? "Digitalización, ajuste de máquinas y preparación son costos únicos que se amortizan entre todo el lote. A mayor volumen, menor costo unitario. El precio final se confirma en la cotización desglosada en 2 horas."
               : "Digitizing, machine setup and tooling are one-time costs amortised across the run. Larger runs spread them further, so the unit FOB price drops. Exact figures are confirmed in your itemised written quote within 2 hours."}
           </p>
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse min-w-[640px]">
-              <thead>
-                <tr className="text-left border-b border-slate-700">
-                  <th className="p-3 font-black text-amber-400">{lang === "es" ? "Volumen" : "Quantity"}</th>
-                  <th className="p-3 font-black text-amber-400">{lang === "es" ? "Precio de Referencia (FOB China)" : "Reference Price (FOB China)"}</th>
-                  <th className="p-3 font-black text-amber-400">{lang === "es" ? "Qué Incluye / Escenario" : "What It Covers / Use Case"}</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-800">
-                <tr>
-                  <td className="p-3 font-black text-white">200 Pcs</td>
-                  <td className="p-3 font-bold text-amber-300">$5.20 – $6.80 FOB</td>
-                  <td className="p-3 text-slate-300">{lang === "es" ? "Lote de prueba o test multicolor; amortiza digitalización y preparación de bordado." : "Starter / multi-colour test batch; amortises embroidery digitizing & setup."}</td>
-                </tr>
-                <tr className="bg-slate-800/60">
-                  <td className="p-3 font-black text-white">500 Pcs</td>
-                  <td className="p-3 font-bold text-amber-300">$4.20 – $5.20 FOB</td>
-                  <td className="p-3 text-slate-300">{lang === "es" ? "100% de devolución del costo de muestra · etiquetas tejidas y de cuidado personalizadas gratis." : "100% sample fee credit · free custom woven brand & care labels."}</td>
-                </tr>
-                <tr>
-                  <td className="p-3 font-black text-white">1,000 Pcs</td>
-                  <td className="p-3 font-bold text-amber-300">$3.80 – $4.20 FOB</td>
-                  <td className="p-3 text-slate-300">{lang === "es" ? "Corte por rollo completo y programación continua en líneas Barudan de 20 cabezales." : "Full-roll fabric cutting and continuous scheduling on 20-head Barudan lines."}</td>
-                </tr>
-                <tr className="bg-slate-800/60">
-                  <td className="p-3 font-black text-white">5,000+ Pcs</td>
-                  <td className="p-3 font-bold text-amber-300">{lang === "es" ? "Cotización dedicada" : "Dedicated Quote"}</td>
-                  <td className="p-3 text-slate-300">{lang === "es" ? "Teñido Pantone a medida, tejido a medida y optimización de carga en contenedor completo." : "Custom Pantone mill dyeing, bespoke weaving and full-container load optimisation."}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+           {fobTiers.length > 0 ? (
+           <div className="overflow-x-auto">
+             <table className="w-full text-xs border-collapse min-w-[640px]">
+               <thead>
+                 <tr className="text-left border-b border-slate-700">
+                   <th className="p-3 font-black text-amber-400">{lang === "es" ? "Volumen" : "Quantity"}</th>
+                   <th className="p-3 font-black text-amber-400">{lang === "es" ? "Precio de Referencia (FOB China)" : "Reference Price (FOB China)"}</th>
+                   <th className="p-3 font-black text-amber-400">{lang === "es" ? "Qué Incluye / Escenario" : "What It Covers / Use Case"}</th>
+                 </tr>
+               </thead>
+               <tbody className="divide-y divide-slate-800">
+                 {fobTiers.map((tier, i) => (
+                   <tr key={tier.qty} className={i % 2 === 1 ? "bg-slate-800/60" : ""}>
+                     <td className="p-3 font-black text-white">{tier.qty}</td>
+                     <td className="p-3 font-bold text-amber-300">{tier.price}</td>
+                     <td className="p-3 text-slate-300">{tierNotes[i] || ""}</td>
+                   </tr>
+                 ))}
+               </tbody>
+             </table>
+           </div>
+           ) : (
+           /* Quote-on-request state — shown for product lines without a
+              factory-confirmed published band (knitwear until bands arrive). */
+           <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-5 sm:p-6">
+             <p className="text-sm sm:text-base font-bold text-white leading-relaxed mb-3">
+               {lang === "es"
+                 ? "Los precios por volumen de esta línea se confirman por proyecto: todavía no publicamos bandas de referencia para punto."
+                 : "Volume pricing for this product line is confirmed per project — no reference bands are published for it yet."}
+             </p>
+             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+               {lang === "es"
+                 ? "Eileen y el equipo de ingeniería comercial le enviarán sus escalas FOB desglosadas para la cantidad objetivo en menos de 2 horas tras su solicitud."
+                 : "Eileen and the sales engineering team will send your itemised FOB tiers for your target quantity within 2 hours of your request."}
+             </p>
+             <a href="#product-rfq" className="mt-4 inline-flex items-center gap-1.5 text-amber-300 font-black text-xs uppercase tracking-widest hover:text-amber-200 transition">
+               {lang === "es" ? "Solicitar escalas de volumen de esta línea" : "Request this line's volume tiers"} →
+             </a>
+           </div>
+           )}
           <p className="text-[10px] text-slate-500 mt-4">
             {lang === "es"
               ? "*Precios de referencia FOB China para bordado frontal estándar; no incluyen flete internacional. El precio final por proyecto se confirma en la cotización desglosada en 2 horas."
@@ -631,7 +656,7 @@ export default function ProductDetail() {
       </section>
 
       {/* In-Page Single-SKU RFQ Form */}
-      <section id="product-rfq" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-10 scroll-mt-24">
+      <section id="product-rfq" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-10 scroll-mt-24">
         <div className="text-center mb-6">
           <span className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 border border-blue-200/60 px-2.5 py-0.5 rounded-full inline-block mb-2">
             {lang === "es" ? "Cotización en 2h · Revisión Directa de Fábrica" : "Written Quote in 2h · Direct Factory Review"}
@@ -653,13 +678,14 @@ export default function ProductDetail() {
           <details> keeps the accordion behaviour without needing JS state, so the
           answers are in the served HTML and eligible for rich results. */}
       {(() => {
-        const engineeringFaqs = [
+        type PdpFaq = { q: string; a: string; link?: { label: string; href: string } };
+        const engineeringFaqs: PdpFaq[] = [
           { q: "5-panel or 6-panel for large 3D puff embroidery?", a: "The 5-panel front crown has no vertical centre seam, allowing large 3D puff artwork to sit completely flat. A 6-panel front seam runs under the logo and can distort high-density puff stitches. For oversized front embroidery, our engineers recommend 5-panel." },
-          { q: "What packing protects a structured crown during international transit?", a: "We pack 25 caps per inner box and 4 inner boxes per master carton (100 caps total) in 5-ply double-wall export corrugated boxes (60×45×40cm, ~12kg gross weight). You can verify exact CBM and gross weight in our Carton Calculator." },
+          { q: "What packing protects a structured crown during international transit?", a: "We pack 25 caps per inner box and 4 inner boxes per master carton (100 caps total) in 5-ply double-wall export corrugated boxes (60×45×40cm, ~12kg gross weight). You can verify exact CBM and gross weight in our Carton Calculator.", link: { label: "Carton Calculator", href: `/${lang}/tools/carton-calculator` } },
           { q: "Does order quantity change the unit FOB price?", a: "Yes. Setup, digitizing and tooling are one-time costs spread across the order run. Larger runs spread them further, so the unit FOB price is lower. Exact figures are confirmed in your itemised quotation." },
           { q: "What technical details are needed to provide an accurate quotation?", a: "Silhouette style, target quantity, fabric GSM, decoration type and stitch count, closure/hardware type, and destination country. With these we deliver an itemised written quotation within 2 hours." }
         ];
-        const baseFaqs = hat.faqs || [
+        const baseFaqs: PdpFaq[] = hat.faqs || [
           { q: "Can I get a sample before bulk production?", a: "Yes, we produce a physical sample for your final approval. Lead time is 7 days with full HD video and photo proof before shipping." },
           { q: "Do you ship worldwide?", a: "We ship to over 50 countries via DHL/FedEx/UPS air express (4-7 days) and FCL/LCL ocean freight with door-to-door delivery." },
         ];
@@ -688,7 +714,20 @@ export default function ProductDetail() {
                       <ChevronDown size={20} className="shrink-0 transition group-open:rotate-180" />
                     </summary>
                     <div className="px-5 pb-5 text-gray-500 text-sm leading-relaxed border-t border-gray-50 pt-4">
-                      {faq.a}
+                      {faq.link && faq.a.includes(faq.link.label)
+                        ? (() => {
+                            const at = faq.a.indexOf(faq.link.label);
+                            return (
+                              <>
+                                {faq.a.slice(0, at)}
+                                <Link href={faq.link.href} className="font-bold text-blue-600 hover:underline">
+                                  {faq.link.label}
+                                </Link>
+                                {faq.a.slice(at + faq.link.label.length)}
+                              </>
+                            );
+                          })()
+                        : faq.a}
                     </div>
                   </details>
                 ))}

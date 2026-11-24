@@ -25,7 +25,24 @@ export interface Product {
     q: string;
     a: string;
   }[];
+  /**
+   * Published FOB volume tiers for this product line. When the field is
+   * present but the array is empty, the PDP renders a quote-on-request
+   * state instead of a price table (e.g. knitwear, whose factory-confirmed
+   * bands are not published yet).
+   */
+  fobTiers?: { qty: string; price: string }[];
 }
+
+// Factory-confirmed FOB volume tiers for standard front-embroidery cap
+// constructions — the only published bands on the site. Products without a
+// confirmed band declare `fobTiers: []` and show the quote-on-request state.
+export const CAP_FOB_TIERS: { qty: string; price: string }[] = [
+  { qty: "200 Pcs", price: "$5.20 – $6.80 FOB" },
+  { qty: "500 Pcs", price: "$4.20 – $5.20 FOB" },
+  { qty: "1,000 Pcs", price: "$3.80 – $4.20 FOB" },
+  { qty: "5,000+ Pcs", price: "Dedicated Quote" },
+];
 
 export const HATS: Product[] = [
   { 
@@ -219,8 +236,9 @@ export const HATS: Product[] = [
     name: "Custom Embroidery Knitted Beanie",
     desc: "Warm winter beanie knitted from 100% acrylic, finished with your embroidered or 3D puff logo. Unisex 56-58cm fit, 61 stock colours for bulk programs.",
     fullDesc: "A wholesale winter beanie built for logo programs. The acrylic rib knit holds its structure through repeated wear, and the front accepts flat embroidery, 3D puff or a woven patch. Unisex 56-58cm fit, 61 stock colours with custom yarn dyeing available on request. Samples dispatch from our Baoding factory in 3-5 working days.",
-    price: "$5.20 - $6.80",
+    price: "Custom Quote",
     moq: 200,
+    fobTiers: [], // knitwear: no published FOB band, pricing confirmed per project
     img: "/images/products/custom-embroidery-knitted-beanie.webp",
     badge: "new",
     category: "Beanies",
@@ -250,8 +268,9 @@ export const HATS: Product[] = [
     name: "Retro Washed Knitted Beanie",
     desc: "Vintage washed-finish beanie knitted from core yarn. Soft handfeel with a faded retro tone, made for lifestyle and streetwear ranges.",
     fullDesc: "A retro-toned knitted beanie produced from core yarn and finished with a wash treatment that softens the handfeel and gives each unit a faded colour. Built for lifestyle, streetwear and winter accessory ranges where a vintage look matters. Unisex 56-58cm fit. Decoration is applied at the factory, so graphics and labels arrive ready for retail.",
-    price: "$4.20 - $5.80",
+    price: "Custom Quote",
     moq: 200,
+    fobTiers: [], // knitwear: no published FOB band, pricing confirmed per project
     img: "/images/products/retro-washed-knitted-beanie.webp",
     badge: "new",
     category: "Beanies",
@@ -474,8 +493,9 @@ export const HATS: Product[] = [
     name: "Silk Lined Pompom Knitted Beanie",
     desc: "Cuffed acrylic beanie with a satin lining and pompom, finished with your embroidered logo.",
     fullDesc: "A cuffed knitted beanie in 100% acrylic with a satin lining that reduces friction and itch against the forehead, plus a pompom topper. The front takes flat embroidery, 3D puff or a printed patch, and colours can be dyed to your seasonal palette. Unisex 56-58cm fit. Samples run 3-5 working days; ODM and OEM service available.",
-    price: "$5.50 - $8.20",
+    price: "Custom Quote",
     moq: 200,
+    fobTiers: [], // knitwear: no published FOB band, pricing confirmed per project
     img: "/images/products/silk-lined-pompom-knitted-beanie.webp",
     images: [
       "/images/products/silk-lined-pompom-knitted-beanie.webp",
@@ -704,8 +724,9 @@ export const HATS: Product[] = [
     name: "Pompom Fur Ball Knitted Beanie",
     desc: "Thick cuffed acrylic beanie with a fur-ball pompom, knit for winter warmth and windproofing.",
     fullDesc: "A thick cuffed knitted beanie in 100% acrylic with a fur-ball pompom, built for winter and outdoor programmes. The dense rib knit holds warmth and the cuff keeps the fit snug; the front takes embroidery, printing or a woven patch. Available in kids and adult sizes with custom colours on request. Samples run 5-7 working days and bulk production 15-21 days after sample approval.",
-    price: "$4.80 - $6.50",
+    price: "Custom Quote",
     moq: 200,
+    fobTiers: [], // knitwear: no published FOB band, pricing confirmed per project
     img: "/images/products/pompom-fur-ball-knitted-beanie.webp",
     images: [
       "/images/products/pompom-fur-ball-knitted-beanie.webp",
@@ -743,8 +764,9 @@ export const HATS: Product[] = [
     name: "Multi-Colour Satin Lined Winter Beanie",
     desc: "Unisex winter beanie with a satin lining and multi-colour yarns for autumn and winter ranges.",
     fullDesc: "A unisex knitted winter beanie with a satin lining that sits against the forehead and reduces the itch and friction of plain acrylic. The rib knit keeps warmth through autumn and winter, and the multi-colour yarn palette gives each colourway a different look. The front accepts embroidery or a woven patch. Available in a range of multi-colour combinations to your palette.",
-    price: "$5.20 - $7.50",
+    price: "Custom Quote",
     moq: 200,
+    fobTiers: [], // knitwear: no published FOB band, pricing confirmed per project
     img: "/images/products/multi-colour-satin-lined-winter-beanie.webp",
     images: [
       "/images/products/multi-colour-satin-lined-winter-beanie.webp",
