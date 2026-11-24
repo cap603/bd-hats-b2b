@@ -24,6 +24,18 @@ export const CONTENT_UPDATED: Record<string, string> = {
   "/es/guide": "2026-11-23",
   "/en/pricing": "2026-11-23",
   "/es/pricing": "2026-11-23",
+  "/en/resources": "2026-11-24",
+  "/es/resources": "2026-11-24",
+  "/en/resources/hat-sample-approval-guide": "2026-11-24",
+  "/es/resources/hat-sample-approval-guide": "2026-11-24",
+  "/en/resources/vet-hat-manufacturer-checklist": "2026-11-24",
+  "/es/resources/vet-hat-manufacturer-checklist": "2026-11-24",
+  "/en/resources/custom-hat-moq-guide": "2026-11-24",
+  "/es/resources/custom-hat-moq-guide": "2026-11-24",
+  "/en/resources/import-hats-us-compliance": "2026-11-24",
+  "/es/resources/import-hats-us-compliance": "2026-11-24",
+  "/en/resources/safe-sourcing-trade-assurance": "2026-11-24",
+  "/es/resources/safe-sourcing-trade-assurance": "2026-11-24",
   ...Object.fromEntries(
     ["en", "es"].flatMap((l) =>
       HATS.map((h) => [`/${l}/product/${h.id}`, "2026-11-23"])
@@ -62,6 +74,12 @@ const CORE_PAGES: Array<{
   { path: "/custom-hat-cost-index-2026", priority: 0.95, freq: "weekly" },
   { path: "/custom-hat-tech-pack-template", priority: 0.95, freq: "weekly" },
   { path: "/top-hat-manufacturers-in-china", priority: 0.95, freq: "weekly" },
+  { path: "/resources", priority: 0.9, freq: "weekly" },
+  { path: "/resources/hat-sample-approval-guide", priority: 0.85, freq: "monthly" },
+  { path: "/resources/vet-hat-manufacturer-checklist", priority: 0.85, freq: "monthly" },
+  { path: "/resources/custom-hat-moq-guide", priority: 0.85, freq: "monthly" },
+  { path: "/resources/import-hats-us-compliance", priority: 0.85, freq: "monthly" },
+  { path: "/resources/safe-sourcing-trade-assurance", priority: 0.85, freq: "monthly" },
 ];
 
 export interface SitemapUrl {
