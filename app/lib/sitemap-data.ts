@@ -32,23 +32,8 @@ export const CONTENT_UPDATED: Record<string, string> = {
   "/es/guide/custom-hat-logo-size-placement-guide": "2026-11-25",
   "/en/guide/importing-custom-hats-from-china": "2026-11-25",
   "/es/guide/importing-custom-hats-from-china": "2026-11-25",
-  "/en/resources": "2026-11-24",
-  "/es/resources": "2026-11-24",
-  "/en/resources/hat-sample-approval-guide": "2026-11-24",
-  "/es/resources/hat-sample-approval-guide": "2026-11-24",
-  "/en/resources/vet-hat-manufacturer-checklist": "2026-11-24",
-  "/es/resources/vet-hat-manufacturer-checklist": "2026-11-24",
-  "/en/resources/custom-hat-moq-guide": "2026-11-24",
-  "/es/resources/custom-hat-moq-guide": "2026-11-24",
-  "/en/resources/import-hats-us-compliance": "2026-11-24",
-  "/es/resources/import-hats-us-compliance": "2026-11-24",
-  "/en/resources/safe-sourcing-trade-assurance": "2026-11-24",
-  "/es/resources/safe-sourcing-trade-assurance": "2026-11-24",
-  ...Object.fromEntries(
-    ["en", "es"].flatMap((l) =>
-      HATS.map((h) => [`/${l}/product/${h.id}`, "2026-11-23"])
-    )
-  ),
+  "/en/blog/puff-foam-vs-silicone-heat-transfer-trucker-hats": "2026-11-25",
+  "/es/blog/puff-foam-vs-silicone-heat-transfer-trucker-hats": "2026-11-25",
 };
 
 const CORE_PAGES: Array<{
@@ -90,6 +75,7 @@ const CORE_PAGES: Array<{
   { path: "/blog/custom-hat-moq-guide", priority: 0.85, freq: "monthly" },
   { path: "/blog/import-hats-us-compliance", priority: 0.85, freq: "monthly" },
   { path: "/blog/safe-sourcing-trade-assurance", priority: 0.85, freq: "monthly" },
+  { path: "/blog/puff-foam-vs-silicone-heat-transfer-trucker-hats", priority: 0.85, freq: "monthly" },
   { path: "/resources", priority: 0.9, freq: "weekly" },
   { path: "/resources/hat-sample-approval-guide", priority: 0.85, freq: "monthly" },
   { path: "/resources/vet-hat-manufacturer-checklist", priority: 0.85, freq: "monthly" },
