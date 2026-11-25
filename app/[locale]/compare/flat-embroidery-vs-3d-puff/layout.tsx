@@ -11,13 +11,13 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: {
       absolute:
         locale === "es"
-          ? "Bordado Plano vs 3D Puff: Cuál Elegir | BD Hats"
-          : "Flat Embroidery vs 3D Puff: Cap Logo Guide | BD Hats",
+          ? "Bordado Plano vs 3D Puff en Gorras: Guía B2B"
+          : "Flat vs 3D Embroidery on Hats: B2B Sourcing Guide",
     },
     description:
       locale === "es"
-        ? "Bordado plano vs bordado 3D puff: altura y aspecto, estructura de costo, durabilidad, tamaño mínimo de letra, tipos de logo y aplicaciones. Datos de fábrica, MOQ 200 uds, muestras en 7 días."
-        : "Flat embroidery vs 3D puff embroidery compared: height and appearance, cost structure, durability, minimum lettering size, best logo types and typical uses. Factory data, MOQ 200 pcs, samples in 7 days.",
+        ? "Comparativa de bordado plano vs 3D puff en gorras: límites de trazo (1mm vs 3mm), durabilidad del foam, costes FOB y pedido mínimo de fábrica de 200 uds."
+        : "Flat vs 3D embroidery on custom hats compared: stitch density, stroke limits (1mm vs 3mm), foam durability, and FOB cost impact. Factory MOQ 200 pcs.",
     alternates: { canonical, languages },
     openGraph: {
       type: "article",

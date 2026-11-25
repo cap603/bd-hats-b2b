@@ -11,12 +11,12 @@ import { useLang } from "../../../lib/i18n";
 const CONTENT = {
   en: {
     hero: {
-      crumb: "Flat vs 3D Puff Embroidery",
+      crumb: "Flat vs 3D Embroidery",
       badge: "Headwear Comparison · Factory Data 2026",
-      title: "Flat Embroidery vs",
-      accent: "3D Puff",
+      title: "Flat vs 3D Embroidery",
+      accent: "on Custom Hats",
       subtitle:
-        "Both decorations run on the same Barudan machines, but they solve different problems. One keeps your artwork low and detailed, the other pushes it off the fabric. The choice changes your cost, your usable logo scale and how the cap reads across a room.",
+        "Both decorations run on our Barudan multi-head machines, but solve distinct design challenges. Flat embroidery preserves fine lines and complex typography, while 3D puff delivers raised dimensional impact. Here is how flat embroidery vs 3D embroidery compares on stitch count, stroke limits, and FOB unit cost.",
       quickAnswerLabel: "Short answer",
       quickAnswer:
         "Choose flat embroidery for small text, fine detail and a lower unit cost: one pass, no foam. Choose 3D puff when you want a raised, high-impact logo on a cap with a flat front panel. Both run on the same machines, at MOQ 200 pcs per style and colour.",
@@ -181,6 +181,10 @@ const CONTENT = {
           q: "Can I use both decorations on the same cap?",
           a: "Yes, and it is common: 3D puff on the front with flat embroidery on a side or back panel, or a flat wordmark sitting above a puff emblem. Minimums apply per style and colour, not per decoration type, so mixing the two does not raise your MOQ.",
         },
+        {
+          q: "How does flat embroidery on hats compare with 3D embroidery for fine lines?",
+          a: "For flat embroidery on hats, the minimum recommended line stroke is 1.0mm, allowing fine scripts and intricate emblems to sew cleanly. In contrast, 3D puff embroidery requires at least 3.0mm stroke width to securely wrap foam without cutting through it.",
+        },
       ],
     },
     cta: {
@@ -193,10 +197,10 @@ const CONTENT = {
     hero: {
       crumb: "Bordado Plano vs 3D Puff",
       badge: "Comparativa de Gorras · Datos de Fábrica 2026",
-      title: "Bordado Plano vs",
-      accent: "Bordado 3D Puff",
+      title: "Bordado Plano vs 3D Puff",
+      accent: "en Gorras Personalizadas",
       subtitle:
-        "Las dos decoraciones se bordan en las mismas máquinas Barudan, pero resuelven problemas distintos. Una mantiene tu diseño bajo y detallado; la otra lo levanta de la tela. La elección cambia el costo, la escala útil de tu logo y cómo se lee la gorra a distancia.",
+        "Ambas decoraciones se bordan en nuestras máquinas automáticas Barudan, pero resuelven necesidades técnicas distintas. El bordado plano preserva líneas finas y letras pequeñas, mientras que el bordado 3D puff ofrece impacto volumétrico en relieve. Aquí comparamos densidad de puntada, límites de trazo y coste FOB.",
       quickAnswerLabel: "Respuesta corta",
       quickAnswer:
         "Elige bordado plano para textos pequeños, detalle fino y un costo unitario menor: una sola pasada y sin foam. Elige bordado 3D puff si quieres un logo en relieve y de alto impacto sobre un frente plano. Ambos usan las mismas máquinas, con MOQ de 200 uds por estilo y color.",
