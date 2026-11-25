@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
+import { FACTORY_FACTS, DEFAULT_FAQS } from "../../components/LandingShell";
 import { useLang } from "../../lib/i18n";
 import { COMPARISON_LINKS } from "../../lib/comparison-links";
 import { NavCompareMenu } from "../../components/NavCompareMenu";
@@ -73,6 +74,7 @@ const CONTENT = {
 
 export default function OemPage() {
   const lang = useLang();
+  const locale = lang === "es" ? "es" : "en";
   const c = CONTENT[lang === "es" ? "es" : "en"];
   const articleSchema = {
     "@context": "https://schema.org",
@@ -167,6 +169,56 @@ export default function OemPage() {
               {c.ctaSecondary}
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Factory at a Glance — shared verifiable factory data */}
+      <section className="py-12 sm:py-16">
+        <div className="max-w-4xl mx-auto bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-10">
+          <h2 className="text-lg sm:text-2xl font-black tracking-tight text-slate-900 mb-3">
+            {FACTORY_FACTS[locale].title}
+          </h2>
+          <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+            {FACTORY_FACTS[locale].intro}
+          </p>
+          <div className="space-y-4">
+            {FACTORY_FACTS[locale].paragraphs.map((p, i) => (
+              <p key={i} className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                {p}
+              </p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-12 sm:py-16 border-t border-slate-100">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-lg sm:text-2xl font-black tracking-tight text-slate-900 mb-6">
+            {lang === "es" ? "Preguntas Frecuentes sobre Fabricación" : "Frequently Asked Questions"}
+          </h2>
+          <div className="space-y-3">
+            {DEFAULT_FAQS[locale].map((f) => (
+              <div key={f.q} className="bg-white rounded-xl border border-slate-200 p-4 sm:p-5">
+                <h3 className="font-bold text-sm text-slate-900 mb-1">{f.q}</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">{f.a}</p>
+              </div>
+            ))}
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: DEFAULT_FAQS[locale].map((f) => ({
+                  "@type": "Question",
+                  name: f.q,
+                  acceptedAnswer: { "@type": "Answer", text: f.a },
+                })),
+              }),
+            }}
+          />
         </div>
       </section>
 

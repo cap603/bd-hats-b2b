@@ -19,7 +19,7 @@
   },
   "home": {
     "topBar": "Principal Fabricante de Bonés Premium da China • Fundada em 2014",
-    "subtitle": "Supply Chain & Manufacturing Partner",
+    "subtitle": "Sócio de Fabricação e Cadeia de Suprimentos",
     "banners": {
       "0": {
         "label": "Soluções B2B Direto da Fábrica",
@@ -158,6 +158,83 @@
           "role": "Comprador de Rede Varejista, Austrália"
         }
       ]
+    },
+    "q4Schedule": "Calendário de Produção Q4 2026 Ativo",
+    "programsBadge": "Linhas OEM / ODM",
+    "programsTitle": "Programas Especializados de Produção B2B",
+    "programsSub": "Programas de manufatura sob encomenda direto da fábrica para fundadores de marcas, distribuidores e importadores em grandes volumes. MOQ 200 peças.",
+    "programs": {
+      "0": { "title": "Bonés Personalizados de 5 Painéis", "desc": "Perfis streetwear e camper, misturas leves de algodão-nylon, aba plana e fechamentos de latão.", "tag": "Alta Demanda" },
+      "1": { "title": "Manufatura OEM de Bonés", "desc": "Manufatura por encomenda completa de headwear. Digitalização total de tech pack e escalonamento de marca.", "tag": "Serviço Completo" },
+      "2": { "title": "Gorros de Tricô Personalizados", "desc": "Tricô canelado, gorros com babado, jacquard e apliques de couro genuino para programas de inverno.", "tag": "Sazonal" },
+      "3": { "title": "Dad Hats Personalizados", "desc": "Bonés 6 painéis vintage sem estrutura, lavagem enzimática intensa, aba curvada e fivelas antigas.", "tag": "Estilo de Vida" },
+      "4": { "title": "Snapbacks Atacarejo", "desc": "Bonés clássicos de coroa alta e aba plana, frente estruturada com bufete e bordado 3D de alta densidade.", "tag": "Streetwear" },
+      "5": { "title": "Bonés Trucker Personalizados", "desc": "Costas respiráveis em malha de poliéster, frentes em espuma ou sarja pesada de algodão, personalizados para campanhas promocionais.", "tag": "Promo e Outdoor" },
+      "6": { "title": "Bonés em Branco no Atacado", "desc": "Estoque de armazém imediato, pronto para gráficas e oficinas de bordado locais.", "tag": "Despacho Rápido" },
+      "7": { "title": "Headwear Private Label", "desc": "Pacote de marca dedicado: etiquetas bordadas personalizadas, fita de costura impressa, hangtags e caixas sob medida.", "tag": "Turnkey" },
+      "8": { "title": "Headwear Uniforme Corporativo", "desc": "Programas corporativos duráveis de alta repetição e pedidos em massa de bonés de uniforme.", "tag": "Uniformes" },
+      "9": { "title": "Bucket Hats Personalizados", "desc": "Bucket hats de aba larga para festival e outdoor, tecidos com proteção solar, cordões mentoneiros e construção reversível.", "tag": "Outdoor" },
+      "10": { "title": "Produção em Massa por Contêiner", "desc": "Produção em contêineres 20GP e 40HQ para distribuidores e importadores internacionais.", "tag": "Escala 10.000+" },
+      "11": { "title": "Preços Atacarejo por Níveis", "desc": "Níveis FOB transparentes a partir de $5.20/un com MOQ 200; piso em escala de contêiner a partir de $3.50/un. Com detalhamento de custos.", "tag": "Tarifas Transparentes" }
+    },
+    "sectorsBadge": "Programas por Perfil de Comprador",
+    "sectorsTitle": "Programas de Manufatura Sob Medida por Segmento de Comprador",
+    "sectorsSub": "Soluções de produção direto da fábrica, otimizadas para os requisitos específicos e curvas de volume de cada setor de compras.",
+    "sectors": {
+      "0": { "tag": "Moda e Drops", "moq": "MOQ 200", "title": "Marcas Streetwear e de Moda", "desc": "Camper de 5 painéis, dad hats vintage lavados a enzima, bordado 3D puff de alta densidade e forro interno damasco personalizado.", "foot": "100% do Reembolso da Amostra ≥500" },
+      "1": { "tag": "Uniforme e Workwear", "moq": "500 – 5.000+", "title": "Programas Corporativos e de Uniformes", "desc": "Bonés 6 painéis em sarja pesada e estruturados, alta solidez de cor, galões refletivos e inspeção QC peça por peça antes do envio.", "foot": "Cotações BOM Detalhadas" },
+      "2": { "tag": "Esportivo de Desempenho", "moq": "MOQ 200", "title": "Golfe e Esporte de Alto Desempenho", "desc": "Painéis de ventilação perfurados a laser, nylon leve com acabamento DWR repelente à água, faixas CoolMax que conduzem a umidade e fechamentos de silicone.", "foot": "Tecnologia CoolMax Pronta" },
+      "3": { "tag": "Escala de Contêiner FCL", "moq": "10.000+ Pcs", "title": "Grande Volume por Contêiner e Distribuidores", "desc": "Truckers de malha e snapbacks de aba plana em grande volume. Otimização de carga 20GP e 40HQ e preço FOB de fábrica a partir de $3.50.", "foot": "A partir de $3.50 FOB" }
+    },
+    "explore": "Explorar",
+    "headwearTitle": "Headwear Personalizado",
+    "headwear": [
+      "Snapbacks no Atacado",
+      "Bonés Trucker Personalizados",
+      "Dad Hats Personalizados",
+      "Bonés de 5 Painéis Personalizados",
+      "Gorros de Tricô Personalizados",
+      "Bucket Hats Personalizados",
+      "Pedidos em Massa e Corporativos"
+    ],
+    "guidesTitle": "Guias de Sourcing B2B",
+    "guides": [
+      "Guia de Tech Pack Vetorial",
+      "Índice de Custos de Bonés 2026",
+      "Principais Fabricantes de Bonés",
+      "5 Painéis vs 6 Painéis",
+      "Bordado Plano vs 3D Puff",
+      "Sarja de Algodão vs Lona",
+      "China vs Vietnam vs Bangladesh"
+    ],
+    "freeBadge": "AI/PDF Grátis",
+    "factoryDirect": "Super Fábrica Direta · OEM/ODM",
+    "exporting": "Exportando para EUA, UE e AU desde 2014",
+    "backToTop": "Voltar ao topo ↑",
+    "assets": {
+      "badge1a": "Recurso de Design B2B Grátis",
+      "badge1b": "Flats AI / PDF / EPS",
+      "title1": "Baixe Grátis: Templates de Tech Pack Vetorial de Boné (Escala 1:1)",
+      "desc1": "Flats prontos para produção com medidas de fábrica para 5 painéis, 6 painéis, truckers e gorros, com limites de escala de bordado.",
+      "cta1": "Baixar Templates Vetoriais",
+      "badge2a": "Ferramenta Interativa de Logística",
+      "badge2b": "Especificação 60×45×40cm",
+      "title2": "Calculadora B2B de Caixas de Exportação e CBM",
+      "desc2": "Calcule o número de caixas (100 un/caixa), peso bruto (~12kg) e volume CBM para cargas aéreas e contêineres FCL (20GP/40HQ).",
+      "cta2": "Abrir Calculadora CBM"
+    },
+    "milestone": {
+      "title": "Registro Multimídia de Produção ao Vivo",
+      "updates": "Atualizações a cada 2 dias",
+      "desc": "Acompanhamento transparente em cada fase: ① Amostragem e corte do tecido ② Bordado em máquina Barudan ③ Montagem da faixa ④ Inspeção peça por peça e embalagem.",
+      "cta": "Falar com Eileen",
+      "samplesBulk": "Amostras em 7 dias · Massa em 15-20 dias"
+    },
+    "intents": {
+      "techpackTitle": "Baixar Tech Pack em Branco (AI/PDF)",
+      "techpackSub": "Templates vetoriais 2D com especificações de costura",
+      "mockupTitle": "Mockup Digital 3D Grátis (24h)",
+      "mockupSub": "Envie seu logo e receba um render 3D"
     }
   },
   "catalog": {

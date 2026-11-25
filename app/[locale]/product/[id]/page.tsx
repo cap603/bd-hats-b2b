@@ -101,7 +101,19 @@ export default function ProductDetail() {
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
   };
 
-  const productSchema = {
+  // Seller belongs on the Offer, not the Product: Schema.org defines no
+  // Product.seller property, so emitting it at Product level fails validation.
+  const sellerSchema = {
+    "@type": "Organization",
+    "name": "Baoding Junyang Hat Manufacturing Co., Ltd.",
+    "url": "https://bdjunyang.com",
+  };
+  // Numeric prices are emitted only for products with a published FOB band.
+  // Quote-on-request products omit the offers block entirely: an AggregateOffer
+  // without lowPrice is invalid, and we do not publish numbers the factory has
+  // not confirmed.
+  const priceBand = priceRange(hat.price);
+  const productSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": hat.name,
@@ -117,26 +129,23 @@ export default function ProductDetail() {
       "@type": "Organization",
       "name": "Baoding Junyang Hat Manufacturing Co., Ltd."
     },
-    "offers": {
-      "@type": "AggregateOffer",
-      // Numeric prices are emitted only for products with a published FOB band.
-      // Quote-on-request products omit them rather than advertising a number
-      // the factory has not confirmed.
-      "lowPrice": priceRange(hat.price)?.low,
-      "highPrice": priceRange(hat.price)?.high,
-      "priceCurrency": "USD",
-      // offerCount removed (2026-11-23): "1" contradicted the low–high price
-      // band and was a string. AggregateOffer permits omission; Google can
-      // still build the product snippet from the band.
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "url": `https://bdjunyang.com/${lang}/product/${hat.id}`,
-    },
-    "seller": {
-      "@type": "Organization",
-      "name": "Baoding Junyang Hat Manufacturing Co., Ltd.",
-      "url": "https://bdjunyang.com",
-    },
+    ...(priceBand
+      ? {
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": priceBand.low,
+            "highPrice": priceBand.high,
+            "priceCurrency": "USD",
+            // offerCount removed (2026-11-23): "1" contradicted the low–high
+            // price band and was a string. AggregateOffer permits omission;
+            // Google can still build the product snippet from the band.
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition",
+            "url": `https://bdjunyang.com/${lang}/product/${hat.id}`,
+            "seller": sellerSchema,
+          },
+        }
+      : {}),
     "material": hat.specs.material,
     "category": hat.category || "Baseball Caps"
   };

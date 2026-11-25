@@ -19,7 +19,7 @@
   },
   "home": {
     "topBar": "Fabricante Líder de Gorras Personalizadas en China • Desde 2014",
-    "subtitle": "Supply Chain & Manufacturing Partner",
+    "subtitle": "Socio de Fabricación y Cadena de Suministro",
     "banners": {
       "0": {
         "label": "Fábrica Directa · Baoding, China · Auditada por SGS y BSCI",
@@ -158,6 +158,83 @@
           "role": "Etiquetas y Fornituras a Medida · Protegido por NDA"
         }
       ]
+    },
+    "q4Schedule": "Calendario de producción Q4 2026 activo",
+    "programsBadge": "Líneas OEM / ODM",
+    "programsTitle": "Programas Especializados de Producción B2B",
+    "programsSub": "Programas de manufactura por encargo directos de fábrica para fundadores de marcas, distribuidores e importadores mayoristas. MOQ 200 uds.",
+    "programs": {
+      "0": { "title": "Gorras Personalizadas de 5 Paneles", "desc": "Perfiles streetwear y camper, mezclas ligeras de algodón-nylon, visera plana y cierres de latón.", "tag": "Alta Demanda" },
+      "1": { "title": "Manufactura OEM de Gorras", "desc": "Manufactura por encargo completa de headwear. Digitalización total de tech pack y escalado de marca.", "tag": "Servicio Completo" },
+      "2": { "title": "Gorros de Punto Personalizados", "desc": "Gorros de canalícula, con vuelta, jacquard y parches de cuero genuino para programas de invierno.", "tag": "Estacional" },
+      "3": { "title": "Dad Hats Personalizados", "desc": "Gorras 6 paneles vintage sin estructura, lavado enzyme intenso, visera curvada y hebillas vintage.", "tag": "Estilo de Vida" },
+      "4": { "title": "Snapbacks al Por Mayor", "desc": "Gorras clásicas de corona alta y visera plana, frente estructurado con bufete y bordado 3D de alta densidad.", "tag": "Streetwear" },
+      "5": { "title": "Gorras Trucker Personalizadas", "desc": "Espaldas transpirables de malla poliéster, frentes de espuma o sarga pesada de algodón, personalizadas para campañas promocionales.", "tag": "Promo y Outdoor" },
+      "6": { "title": "Gorras Blancas al Por Mayor", "desc": "Inventario de bodega inmediato, listo para imprentas y talleres de bordado locales.", "tag": "Despacho Rápido" },
+      "7": { "title": "Headwear Private Label", "desc": "Paquete de marca dedicado: etiquetas tejidas personalizadas, cinta de costura impresa, hangtags y cajas a medida.", "tag": "Clave en Mano" },
+      "8": { "title": "Headwear Uniforme Corporativo", "desc": "Programas corporativos duraderos de alta repetición y pedidos masivos de gorras de uniforme.", "tag": "Uniformes" },
+      "9": { "title": "Bucket Hats Personalizados", "desc": "Bucket hats de ala ancha para festival y outdoor, tejidos con protección solar, cordones mentoneros y construcción reversible.", "tag": "Outdoor" },
+      "10": { "title": "Producción Masiva por Contenedor", "desc": "Producción a contenedor 20GP y 40HQ para distribuidores e importadores internacionales.", "tag": "Escala 10.000+" },
+      "11": { "title": "Precios Mayoristas por Niveles", "desc": "Niveles FOB transparentes desde $5.20/ud con MOQ 200; piso a escala contenedor desde $3.50/ud. Con desglose de costos.", "tag": "Tarifas Transparentes" }
+    },
+    "sectorsBadge": "Programas por Perfil de Comprador",
+    "sectorsTitle": "Programas de Manufactura a Medida por Segmento de Comprador",
+    "sectorsSub": "Soluciones de producción directas de fábrica, optimizadas para los requisitos específicos y curvas de volumen de cada sector de adquisiciones.",
+    "sectors": {
+      "0": { "tag": "Moda y Drops", "moq": "MOQ 200", "title": "Marcas Streetwear y de Ropa", "desc": "Camper de 5 paneles, dad hats vintage lavados con enzima, bordado 3D puff de alta densidad y forro interior damasco personalizado.", "foot": "100% Reembolso de Muestra ≥500" },
+      "1": { "tag": "Uniforme y Workwear", "moq": "500 – 5.000+", "title": "Programas Corporativos y de Uniformes", "desc": "Gorras 6 paneles de sarga pesada y estructuradas, alta solidez del color, ribetes reflectantes e inspección QC pieza por pieza antes del envío.", "foot": "Cotizaciones BOM Detalladas" },
+      "2": { "tag": "Deportivo de Rendimiento", "moq": "MOQ 200", "title": "Golf y Deporte de Alto Rendimiento", "desc": "Paneles de ventilación perforados a láser, nailon ligero repelente al agua DWR, badanas CoolMax que evacúan la humedad y cierres de silicona.", "foot": "Tecnología CoolMax Lista" },
+      "3": { "tag": "Escala Contenedor FCL", "moq": "10.000+ Uds", "title": "Granel por Contenedor y Distribuidores", "desc": "Truckers de malla y snapbacks de visera plana en gran volumen. Optimización de carga 20GP y 40HQ y precio FOB de fábrica desde $3.50.", "foot": "Desde $3.50 FOB" }
+    },
+    "explore": "Explorar",
+    "headwearTitle": "Headwear Personalizado",
+    "headwear": [
+      "Snapbacks al Por Mayor",
+      "Gorras Trucker Personalizadas",
+      "Dad Hats Personalizados",
+      "Gorras de 5 Paneles Personalizadas",
+      "Gorros de Punto Personalizados",
+      "Bucket Hats Personalizados",
+      "Pedidos Masivos y Corporativos"
+    ],
+    "guidesTitle": "Guías de Sourcing B2B",
+    "guides": [
+      "Guía de Tech Pack Vectorial",
+      "Índice de Costos de Gorras 2026",
+      "Principales Fabricantes de Gorras",
+      "5 Paneles vs 6 Paneles",
+      "Bordado Plano vs 3D Puff",
+      "Sarga de Algodón vs Lona",
+      "China vs Vietnam vs Bangladesh"
+    ],
+    "freeBadge": "AI/PDF Gratis",
+    "factoryDirect": "Super Fábrica Directa · OEM/ODM",
+    "exporting": "Exportando a EE. UU., UE y AU desde 2014",
+    "backToTop": "Volver arriba ↑",
+    "assets": {
+      "badge1a": "Recurso de Diseño B2B Gratis",
+      "badge1b": "Planos AI / PDF / EPS",
+      "title1": "Descarga Gratis: Plantillas Tech Pack Vectoriales (Escala 1:1)",
+      "desc1": "Patrones listos para producción con cotas de fábrica para 5 paneles, 6 paneles, truckers y gorros con límites de bordado.",
+      "cta1": "Descargar Plantillas Vectoriales",
+      "badge2a": "Herramienta de Logística Interactiva",
+      "badge2b": "Especificación 60×45×40cm",
+      "title2": "Calculadora B2B de Cajas de Exportación y CBM",
+      "desc2": "Calcule número de cajas (100 uds/caja), peso bruto (~12kg) y volumen CBM para envíos aéreos y contenedores FCL (20GP/40HQ).",
+      "cta2": "Abrir Calculadora CBM"
+    },
+    "milestone": {
+      "title": "Bitácora Multimedia de Producción en Vivo",
+      "updates": "Actualizaciones cada 2 días",
+      "desc": "Seguimiento transparente en cada fase: ① Muestra de tela y corte ② Bordado en máquina Barudan ③ Confección de badana ④ Inspección pieza por pieza y empaque.",
+      "cta": "Consultar con Eileen",
+      "samplesBulk": "Muestras en 7 días · Volumen en 15-20 días"
+    },
+    "intents": {
+      "techpackTitle": "Descargar Ficha Técnica en Blanco (AI/PDF)",
+      "techpackSub": "Plantillas vectoriales con cotas de costura",
+      "mockupTitle": "Maqueta 3D Digital Gratuita (24h)",
+      "mockupSub": "Envía tu logo, te devolvemos render 3D"
     }
   },
   "catalog": {

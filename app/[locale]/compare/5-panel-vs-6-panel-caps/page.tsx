@@ -278,6 +278,23 @@ const CONTENT = {
   },
 };
 
+// Paragraph-style decision guide, kept as a module-level constant so it ships
+// in the JS bundle rather than the RSC flight payload (lighter HTML per char).
+const DECISION_GUIDE = {
+  en: [
+    "The choice between 5-panel and 6-panel comes down to three questions: how large is your logo, what decoration technique will it use, and how should the cap sit on the head? If the artwork is large or three-dimensional, the 5-panel's single continuous front gives you an unbroken canvas — no centre seam cutting through a 3D puff crest is the difference between a clean retail shelf presence and a compromised design. If your logo is small to medium and you want the classic baseball silhouette that customers recognize instantly, the 6-panel is the safer default, with the added flexibility of structured or unstructured crowns within one construction family.",
+    "Decoration technique interacts with panel count more than most buyers expect. High-density 3D puff on a 6-panel requires the digitizer to split the artwork around the centre seam, and any element that crosses the seam — a letter in the middle of a word, an animal's body — will show a visible break. On a 5-panel the same artwork runs uninterrupted edge to edge. For flat, small logos the seam is rarely visible once stitched, so either construction works; for combined techniques (puff plus laser cut, or embroidery plus a centre leather patch), the 5-panel removes an entire class of digitizing compromises.",
+    "Fit and profile are the second axis. The 5-panel dominates streetwear and ski-camper silhouettes: a lower, flatter A-frame profile that sits close to the head. The 6-panel carries the rounder, taller classic baseball profile that team sport, corporate uniform and retail basics programs expect. Both constructions support flat or curved brims and every closure type we run — snapback, strapback, flexfit or buckle — so closure preference should not decide the panel count; the logo and the silhouette should.",
+    "Commercially, the two constructions sit in the same factory band: the same MOQ of 200 pieces per style and colour, and the same $3.50–$7.00 FOB range, because fabric usage and machine time are comparable. Where the budget moves is decoration, not panels — a dense 3D puff logo adds more to the unit cost than the panel count does. If you are deciding between the two for a launch, send us the artwork and we will return a written comparison: stitch plan for each construction, where the seam would fall on your logo, and a physical sample of whichever you approve, in 7 days, with the sample fee fully credited against the bulk order from 500 pieces.",
+  ],
+  es: [
+    "La elección entre 5 paneles y 6 paneles se reduce a tres preguntas: ¿qué tan grande es tu logo, qué técnica de decoración usará y cómo debe quedar la gorra en la cabeza? Si el arte es grande o tridimensional, el panel frontal continuo del 5 paneles te da un lienzo sin interrupciones: que una cresta 3D puff no sea cortada por una costura central es la diferencia entre una presencia impecable en estante y un diseño comprometido. Si tu logo es pequeño o mediano y buscas la silueta clásica de béisbol que los clientes reconocen al instante, el 6 paneles es la opción segura, con la flexibilidad adicional de coronas estructuradas o no dentro de una misma familia constructiva.",
+    "La técnica de decoración interactúa con el número de paneles más de lo que los compradores esperan. El 3D puff de alta densidad sobre un 6 paneles obliga al digitalizador a dividir el arte alrededor de la costura central, y cualquier elemento que la cruce —una letra en medio de una palabra, el cuerpo de un animal— mostrará un corte visible. En un 5 paneles el mismo arte corre de borde a borde sin interrupciones. Para logos pequeños y planos, la costura apenas se nota una vez bordada, así que cualquiera de las dos construcciones funciona; para técnicas combinadas (puff más corte láser, o bordado más parche central de cuero), el 5 paneles elimina una clase entera de compromisos de digitalización.",
+    "El ajuste y el perfil son el segundo eje. El 5 paneles domina las siluetas streetwear y ski camper: un perfil A-frame más bajo y plano que queda cerca de la cabeza. El 6 paneles lleva el perfil clásico de béisbol, más redondeado y alto, que esperan los programas de deportes de equipo, uniformes corporativos y básicos de retail. Ambas construcciones soportan viseras planas o curvas y todos los cierres que operamos —snapback, strapback, flexfit o hebilla—, así que la preferencia de cierre no debería decidir el número de paneles: que decidan el logo y la silueta.",
+    "En lo comercial, ambas construcciones están en la misma banda de fábrica: el mismo MOQ de 200 unidades por estilo y color, y el mismo rango FOB de $3.50–$7.00, porque el uso de tela y el tiempo de máquina son comparables. Donde sí se mueve el presupuesto es en la decoración, no en los paneles: un logo 3D puff denso suma más al coste unitario que el número de paneles. Si estás decidiendo entre ambas para un lanzamiento, envíanos el arte y te devolveremos una comparación por escrito: plan de puntadas para cada construcción, dónde caería la costura sobre tu logo y una muestra física de la que apruebes, en 7 días, con el costo de la muestra descontado íntegro del pedido masivo a partir de 500 unidades.",
+  ],
+};
+
 export default function Page() {
   const lang = useLang();
   const c = CONTENT[lang === "es" ? "es" : "en"];
@@ -382,6 +399,21 @@ export default function Page() {
             ))}
           </div>
           <p className="text-gray-600 mt-8 leading-relaxed">{c.facts.note}</p>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight mb-8">
+            {lang === "es" ? "Guía de Decisión: Cómo Elegir" : "Decision Guide: How to Choose"}
+          </h2>
+          <div className="space-y-5">
+            {DECISION_GUIDE[lang === "es" ? "es" : "en"].map((p, i) => (
+              <p key={i} className="text-gray-600 text-sm leading-relaxed">
+                {p}
+              </p>
+            ))}
+          </div>
         </div>
       </section>
 

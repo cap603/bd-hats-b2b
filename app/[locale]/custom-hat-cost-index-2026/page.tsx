@@ -158,6 +158,23 @@ const CONTENT = {
   }
 };
 
+// Paragraph-style reading guide, kept as a module-level constant so it ships in
+// the JS bundle rather than the RSC flight payload (lighter HTML per text char).
+const COST_GUIDE = {
+  en: [
+    "Every figure in this index is a factory FOB band, not a retail estimate: it covers the cap as constructed, embroidered and packed for export from a Chinese port, excluding ocean freight, insurance and your market's duties. Bands rather than single prices are deliberate — a structured 6-panel snapback and an unstructured dad hat use different fabric weights, different buckram and different labor time, so quoting one number would mislead you. When you send a spec, we place it inside the band and itemize every layer, which is why our written quotes come back within 2 working hours instead of a vague range.",
+    "The single biggest driver inside any band is decoration. Flat embroidery on a one-color logo sits at the base; high-density 3D puff with foam underlay, laser-cut detail, multi-color thread schemes or combined techniques move you up. Fabric is the second lever: 108*56 heavy cotton twill costs more than brushed cotton but holds structure and takes dense puff cleanly, while canvas and corduroy sit higher still. If you are cost-down without hurting the product, the three moves that actually work are reducing stitch count slightly, consolidating thread colors, and standardizing on stock fabric rather than a bespoke weave.",
+    "Quantity drives the band down because setup costs amortize: embroidery digitizing is paid once per logo, cutting waste falls as the fabric lot grows, and packing labor per unit drops. That is why the container-scale floor exists at all, and why multi-color programs split evenly across colorways without surcharges — splitting 200 pieces into four colors costs almost the same as one. If your volumes sit between tiers, ask us to quote both: the per-unit math sometimes favors producing a larger batch and holding stock.",
+    "Two costs sit outside the FOB band but decide your landed price: freight and duties. Ocean freight charges by CBM, and our export cartons are standardized at 60×45×40cm with 100 pieces, so you can compute freight volume precisely before committing — the CBM calculator in our tools menu does exactly that. Air express at 5–8 days is worth its premium for samples and urgent replenishment only. On the compliance side, finished products carry CE certification, and per-order REACH, RoHS, OEKO-TEX or GRS testing is arranged with third-party laboratories when your market requires it; the reports travel with the shipment so clearance is not where you discover a problem.",
+  ],
+  es: [
+    "Cada cifra de este índice es una banda FOB de fábrica, no una estimación de retail: cubre la gorra tal como se construye, borda y embala para exportar desde un puerto chino, excluyendo flete marítimo, seguro y los derechos de tu mercado. Usamos bandas y no precios únicos de propósito: una snapback de 6 paneles estructurada y un dad hat sin estructura usan pesos de tela distintos, cartulina distinta y tiempos de mano de obra distintos, así que citar una sola cifra te engañaría. Cuando envías una especificación, la ubicamos dentro de la banda y desglosamos cada capa; por eso nuestras cotizaciones escritas llegan en menos de 2 horas hábiles en lugar de un rango vago.",
+    "El mayor motor dentro de cualquier banda es la decoración. El bordado plano sobre un logo de un color está en la base; el 3D puff de alta densidad con base de espuma, el detalle de corte láser, los esquemas multicolor de hilo o las técnicas combinadas te suben. La tela es la segunda palanca: la sarga de algodón pesada 108*56 cuesta más que el algodón cepillado pero sostiene la estructura y acepta el puff denso sin defectos, mientras que lona y pana se ubican aún más arriba. Si buscas reducir coste sin dañar el producto, los tres movimientos que de verdad funcionan son reducir ligeramente el número de puntadas, consolidar colores de hilo y estandarizar una tela de stock en lugar de un tejido a medida.",
+    "La cantidad baja la banda porque los costes de arranque se amortizan: la digitalización del bordado se paga una vez por logo, el desperdicio de corte cae al crecer el lote de tela y la mano de obra de embalaje por unidad desciende. Por eso existe el piso a escala de contenedor, y por qué los programas multicolor se dividen equitativamente entre colores sin recargos: dividir 200 unidades en cuatro colores cuesta casi lo mismo que uno solo. Si tus volúmenes quedan entre tarifas, pídenos cotizar ambas: el cálculo por unidad a veces favorece producir un lote mayor y mantener stock.",
+    "Dos costes quedan fuera de la banda FOB pero deciden tu precio de llegada: flete y derechos. El flete marítimo se cobra por CBM, y nuestras cajas de exportación están estandarizadas a 60×45×40cm con 100 unidades, así que puedes calcular el volumen de flete con precisión antes de comprometerte —la calculadora CBM de nuestro menú de herramientas hace exactamente eso. El exprés aéreo de 5–8 días solo justifica su premium para muestras y repones urgentes. En el frente de cumplimiento, los productos terminados cuentan con certificación CE, y las pruebas REACH, RoHS, OEKO-TEX o GRS por pedido se gestionan con laboratorios de terceros cuando tu mercado lo exige; los informes viajan con el envío para que el despacho de aduana no sea donde descubre un problema.",
+  ],
+};
+
 export default function CustomHatCostIndexPage() {
   const lang = useLang();
   const c = CONTENT[lang as keyof typeof CONTENT] || CONTENT.en;
@@ -445,6 +462,22 @@ export default function CustomHatCostIndexPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+      </section>
+
+      {/* How to read this index */}
+      <section className="py-20 px-4 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-black text-black tracking-tight mb-8">
+            {lang === "es" ? "Cómo Leer este Índice de Costos" : "How to Read This Cost Index"}
+          </h2>
+          <div className="space-y-5">
+            {COST_GUIDE[lang === "es" ? "es" : "en"].map((p, i) => (
+              <p key={i} className="text-gray-600 text-sm leading-relaxed">
+                {p}
+              </p>
+            ))}
           </div>
         </div>
       </section>

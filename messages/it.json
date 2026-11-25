@@ -19,7 +19,7 @@
   },
   "home": {
     "topBar": "Principale Produttore di Cappellini Premium in Cina • Fondato nel 2014",
-    "subtitle": "Supply Chain & Manufacturing Partner",
+    "subtitle": "Partner di Produzione e Supply Chain",
     "banners": {
       "0": {
         "label": "Soluzioni B2B Dirette di Fabbrica",
@@ -158,6 +158,83 @@
           "role": "Buyer Catena Negozi, Australia"
         }
       ]
+    },
+    "q4Schedule": "Calendario di Produzione Q4 2026 Attivo",
+    "programsBadge": "Linee OEM / ODM",
+    "programsTitle": "Programmi Specializzati di Produzione B2B",
+    "programsSub": "Programmi di produzione su commessa direttamente dalla fabbrica per fondatori di marchi, distributori e importatori all'ingrosso. MOQ 200 pezzi.",
+    "programs": {
+      "0": { "title": "Cappellini Personalizzati a 5 Pannelli", "desc": "Profili streetwear e camper, miscelle leggere cotone-nylon, visiera piatta e chiusure in ottone.", "tag": "Alta Richiesta" },
+      "1": { "title": "Produzione OEM di Cappellini", "desc": "Produzione su commessa completa di headwear. Digitalizzazione completa del tech pack e scalabilità del brand.", "tag": "Servizio Completo" },
+      "2": { "title": "Berretti Personalizzati a Maglia", "desc": "Maglia a costine, berretti con risvolto, jacquard e applicazioni in vera pelle per programmi invernali.", "tag": "Stagionale" },
+      "3": { "title": "Dad Hat Personalizzati", "desc": "Cappellini 6 pannelli vintage senza struttura, lavaggio enzimatico intenso, visiera curva e fibbie vintage.", "tag": "Lifestyle" },
+      "4": { "title": "Snapback all'Ingrosso", "desc": "Cappellini classici ad alta corona con visiera piatta, davanti strutturato con telaiera e ricamo 3D ad alta densità.", "tag": "Streetwear" },
+      "5": { "title": "Cappellini Trucker Personalizzati", "desc": "Reti posteriori traspiranti in poliestere, davanti in schiuma o sergé pesante di cotone, personalizzati per campagne promozionali.", "tag": "Promo e Outdoor" },
+      "6": { "title": "Cappellini Neutrali all'Ingrosso", "desc": "Scorte di magazzino immediate, pronte per stampatori e laboratori di ricamo locali.", "tag": "Spedizione Rapida" },
+      "7": { "title": "Headwear Private Label", "desc": "Pacchetto di brand dedicato: etichette tessute personalizzate, nastro di cucitura stampato, hangtag e scatole su misura.", "tag": "Chiave in Mano" },
+      "8": { "title": "Headwear Uniforme Corporativo", "desc": "Programmi corporate durevoli ad alta ripetizione e ordini in blocco di cappellini da uniforme.", "tag": "Uniformi" },
+      "9": { "title": "Bucket Hat Personalizzati", "desc": "Bucket hat dalla tesa larga per festival e outdoor, tessuti con protezione solare, cordoncini mento e costruzione reversibile.", "tag": "Outdoor" },
+      "10": { "title": "Produzione in Blocco su Container", "desc": "Produzione su container 20GP e 40HQ per distributori e importatori internazionali.", "tag": "Scala 10.000+" },
+      "11": { "title": "Prezzi all'Ingrosso a Scaglioni", "desc": "Scaglioni FOB trasparenti da $5.20/pz con MOQ 200; pavimento su scala container da $3.50/pz. Con analisi dei costi.", "tag": "Tariffe Trasparenti" }
+    },
+    "sectorsBadge": "Programmi per Profilo di Acquirente",
+    "sectorsTitle": "Programmi di Produzione su Misura per Segmento di Acquirente",
+    "sectorsSub": "Soluzioni di produzione diretto dalla fabbrica, ottimizzate per i requisiti specifici e le curve di volume di ogni settore procurement.",
+    "sectors": {
+      "0": { "tag": "Moda e Drop", "moq": "MOQ 200", "title": "Marchi Streetwear e Apparel", "desc": "Camper a 5 pannelli, dad hat vintage lavati a enzimi, ricamo 3D puff ad alta densità e fodera interna damasco personalizzata.", "foot": "100% Rimborso Campione ≥500" },
+      "1": { "tag": "Uniformi e Workwear", "moq": "500 – 5.000+", "title": "Programmi Corporate e Uniformi", "desc": "Cappellini 6 pannelli in sergé pesante strutturati, alta solidità cromatica, piping riflettente e ispezione QC pezzo per pezzo prima della spedizione.", "foot": "Preventivi BOM Dettagliati" },
+      "2": { "tag": "Sportivo ad Alte Prestazioni", "moq": "MOQ 200", "title": "Golf e Sport ad Alte Prestazioni", "desc": "Pannelli di ventilazione forati a laser, nylon leggero idrorepellente DWR, fasce CoolMax che allontanano l'umidità e chiusure in silicone.", "foot": "Tecnologia CoolMax Pronta" },
+      "3": { "tag": "Scala Container FCL", "moq": "10.000+ Pz", "title": "Ingrosso su Container e Distributori", "desc": "Trucker in rete e snapback a visiera piatta in grandi volumi. Ottimizzazione del carico 20GP e 40HQ e prezzi FOB di fabbrica da $3.50.", "foot": "Da $3.50 FOB" }
+    },
+    "explore": "Esplora",
+    "headwearTitle": "Headwear Personalizzato",
+    "headwear": [
+      "Snapback all'Ingrosso",
+      "Cappellini Trucker Personalizzati",
+      "Dad Hat Personalizzati",
+      "Cappellini a 5 Pannelli Personalizzati",
+      "Berretti Personalizzati a Maglia",
+      "Bucket Hat Personalizzati",
+      "Ordini in Blocco e Corporate"
+    ],
+    "guidesTitle": "Guide di Sourcing B2B",
+    "guides": [
+      "Guida al Tech Pack Vettoriale",
+      "Indice dei Costi dei Cappellini 2026",
+      "Migliori Produttori di Cappellini",
+      "5 Pannelli vs 6 Pannelli",
+      "Ricamo Piatto vs 3D Puff",
+      "Sergé di Cotone vs Tele",
+      "Cina vs Vietnam vs Bangladesh"
+    ],
+    "freeBadge": "AI/PDF Gratis",
+    "factoryDirect": "Super Fabbrica Diretta · OEM/ODM",
+    "exporting": "Esportazione verso USA, UE e AU dal 2014",
+    "backToTop": "Torna su ↑",
+    "assets": {
+      "badge1a": "Risorsa di Design B2B Gratuita",
+      "badge1b": "Flats AI / PDF / EPS",
+      "title1": "Scarica Gratis: Template Tech Pack Vettoriale per Cappellini (Scala 1:1)",
+      "desc1": "Flats pronti per la produzione con quote di fabbrica per 5 pannelli, 6 pannelli, trucker e berretti, con limiti di scala del ricamo.",
+      "cta1": "Scarica i Template Vettoriali",
+      "badge2a": "Strumento di Logistica Interattivo",
+      "badge2b": "Specifica 60×45×40cm",
+      "title2": "Calcolatrice B2B di Casse di Esportazione e CBM",
+      "desc2": "Calcola il numero di casse (100 pz/cassa), peso lordo (~12kg) e volume CBM per spedizioni aeree e container FCL (20GP/40HQ).",
+      "cta2": "Apri la Calcolatrice CBM"
+    },
+    "milestone": {
+      "title": "Diario Multimediale di Produzione in Diretta",
+      "updates": "Aggiornamenti ogni 2 giorni",
+      "desc": "Monitoraggio trasparente in ogni fase: ① Campionatura e taglio del tessuto ② Ricamo su macchina Barudan ③ Montaggio della fascia ④ Ispezione pezzo per pezzo e imballaggio.",
+      "cta": "Contatta Eileen",
+      "samplesBulk": "Campioni in 7 giorni · Serie in 15-20 giorni"
+    },
+    "intents": {
+      "techpackTitle": "Scarica Tech Pack Vuoto (AI/PDF)",
+      "techpackSub": "Template vettoriali 2D con specifiche di cucitura",
+      "mockupTitle": "Mockup Digitale 3D Gratuito (24h)",
+      "mockupSub": "Invia il tuo logo, ricevi un render 3D"
     }
   },
   "catalog": {

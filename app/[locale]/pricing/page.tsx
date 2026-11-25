@@ -120,6 +120,27 @@ const FAQS = [
   }
 ];
 
+// Paragraph-style guide kept as a module-level constant so it ships in the JS
+// bundle rather than the RSC flight payload (lighter HTML per text char).
+const PRICING_GUIDE = {
+  en: [
+    "The tiers above reflect real factory FOB bands for structured custom caps in 2026, and they exist because unit cost genuinely falls as quantity rises: fabric is cut with less waste, embroidery setups are amortized over more heads, and packing labor per unit drops. Within each tier the spread between the base and premium column is driven by construction — fabric weight and type, decoration technique and stitch count, closure and hardware — not by negotiation. When you send us your spec, we place it in the right column and itemize every layer, so the number you see is explainable line by line rather than a rounded figure.",
+    "A common mistake is comparing a tier-1 quote from one factory against a tier-3 quote from another and assuming the difference is efficiency. It usually is not: it is construction. A $4.20 cap and a $6.50 cap can look identical in a photo yet differ in twill count, stitch density, buckram quality and hardware. Our quotes list the bill of materials — fabric count, decoration, closure, packing — so you can compare like with like. If a competitor's price sits far below the band for the same construction, the difference will show up in your product, not in the invoice.",
+    "Decoration is the biggest lever inside any tier. Flat embroidery on a simple logo keeps you at the base of the column; high-density 3D puff with foam underlay, laser-cut details, multiple colorways of thread or combined techniques (embroidery plus leather patch, plus foil) move you up. If your margin is tight, the most effective moves are usually reducing stitch count slightly, choosing a single-color thread scheme, or standardizing on our stock 108*56 twill instead of a bespoke weave — each of these saves real money without visibly degrading the finished cap.",
+    "Beyond the unit price, three costs decide your landed economics: sampling, freight and duties. Our sampling fee is fully credited against the bulk order at 500 pieces or more, so for most programs it is a non-event. Freight is where planning pays off: ocean containers charge by CBM, and a 40HQ carries roughly double a 20GP at less than double the cost, which is why the container-scale floor exists at all. Air express at 5–8 days is worth its premium for samples and urgent replenishment only. Duties depend on your market, and the commercial invoice, packing list and certificates of origin we provide are exactly what your customs broker needs to classify the shipment correctly the first time.",
+    "Payment structure affects your risk more than your price. First orders through Alibaba Trade Assurance carry platform payment protection on top of our own QC commitment: funds are held until you confirm the shipment matches the order. Established programs can move to T/T through verified business accounts, with milestone-based schedules if you prefer. We never request transfers to personal accounts, and we never ask for full payment before sampling — a factory confident in its production line does not need to.",
+    "If your program is seasonal or recurring, the pricing conversation changes: repeat buyers hold their digitizing files and colorways on record, skip the sampling stage on reorders, and gain earlier access to container-scale pricing as the quarter's capacity is planned. Tell us your expected volumes per season and your launch dates, and we will show you where your program sits across the tiers — including whether splitting a large order into scheduled productions makes more economic sense than one container.",
+  ],
+  es: [
+    "Las tarifas anteriores reflejan bandas FOB reales de fábrica para gorras personalizadas estructuradas en 2026, y existen porque el coste unitario baja de verdad al subir la cantidad: la tela se corta con menos desperdicio, el ajuste de bordado se amortiza sobre más unidades y la mano de obra de embalaje por pieza desciende. Dentro de cada tarifa, la diferencia entre la columna base y la premium la marca la construcción —peso y tipo de tela, técnica de decoración y número de puntadas, cierre y herrajes—, no la negociación. Cuando nos envías tu especificación, la ubicamos en la columna correcta y desglosamos cada capa, para que el número que ves sea explicable línea por línea y no una cifra redondeada.",
+    "Un error habitual es comparar una cotización de tarifa 1 de una fábrica contra una de tarifa 3 de otra y asumir que la diferencia es eficiencia. Normalmente no lo es: es construcción. Una gorra de $4,20 y una de $6,50 pueden parecer idénticas en una foto y diferir en conteo de sarga, densidad de puntadas, calidad de cartulina y herrajes. Nuestras cotizaciones listan el listado de materiales —conteo de tela, decoración, cierre, embalaje— para que compares igual con igual. Si el precio de un competidor está muy por debajo de la banda para la misma construcción, la diferencia aparecerá en tu producto, no en la factura.",
+    "La decoración es la palanca más grande dentro de cualquier tarifa. El bordado plano sobre un logo sencillo te mantiene en la base de la columna; el 3D puff de alta densidad con base de espuma, los detalles de corte láser, los múltiples colores de hilo o las técnicas combinadas (bordado más parche de cuero, más foil) te suben. Si tu margen es ajustado, los movimientos más eficaces suelen ser reducir ligeramente el número de puntadas, elegir un esquema de hilo de un color o estandarizar nuestra sarga 108*56 de stock en lugar de un tejido a medida: cada uno ahorra dinero real sin degradar visiblemente la gorra terminada.",
+    "Más allá del precio unitario, tres costes deciden tu economía de llegada: muestra, flete y derechos. Nuestro costo de muestra se descuenta íntegro del pedido masivo a partir de 500 unidades, así que para la mayoría de los programas no es un gasto neto. El flete es donde conviene planificar: los contenedores marítimos se cobran por CBM, y un 40HQ carga aproximadamente el doble que un 20GP por menos del doble del coste, que es la razón de ser del piso a escala de contenedor. El exprés aéreo de 5–8 días solo justifica su premium para muestras y repones urgentes. Los derechos dependen de tu mercado, y la factura comercial, la lista de embalaje y los certificados de origen que proporcionamos son exactamente lo que tu agente de aduana necesita para clasificar el envío correctamente a la primera.",
+    "La estructura de pago afecta más a tu riesgo que a tu precio. Los primeros pedidos a través de Alibaba Trade Assurance suman protección de pago de la plataforma sobre nuestro propio compromiso de QC: los fondos quedan retenidos hasta que confirmas que el envío coincide con el pedido. Los programas consolidados pueden pasar a T/T mediante cuentas empresarias verificadas, con calendarios por hitos si lo prefieres. Nunca solicitamos transferencias a cuentas personales y nunca pedimos el pago completo antes de la muestra: una fábrica segura de su línea de producción no lo necesita.",
+    "Si tu programa es estacional o recurrente, la conversación de precio cambia: los compradores con repeticiones mantienen sus archivos de digitalización y colores en registro, saltan la etapa de muestra en los reaprovisionamientos y acceden antes a precios de contenedor cuando se planifica la capacidad del trimestre. Cuéntanos tus volúmenes esperados por temporada y tus fechas de lanzamiento, y te mostraremos en qué punto de las tarifas se ubica tu programa, incluyendo si dividir un pedido grande en producciones programadas tiene más sentido económico que un solo contenedor.",
+  ],
+};
+
 export default function PricingPage() {
   const lang = useLang();
   const faqSchema = {
@@ -327,6 +348,21 @@ export default function PricingPage() {
                 Explore Cost Index <ArrowRight size={14} />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-white border-b border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight mb-6">
+            {lang === "es" ? "Cómo Funciona el Precio de Fábrica" : "How Factory Pricing Actually Works"}
+          </h2>
+          <div className="space-y-5">
+            {PRICING_GUIDE[lang === "es" ? "es" : "en"].map((p, i) => (
+              <p key={i} className="text-gray-600 text-sm leading-relaxed">
+                {p}
+              </p>
+            ))}
           </div>
         </div>
       </section>
