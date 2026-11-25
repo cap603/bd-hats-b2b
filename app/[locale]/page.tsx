@@ -679,6 +679,7 @@ export default function Home() {
             <a href="#factory" className="hover:text-black transition">{n("factory")}</a>
             <a href="#qc" className="hover:text-black transition">{n("qualityControl")}</a>
             <NavCompareMenu />
+            <Link href={`/${lang}/blog`} className="hover:text-black transition">Blog</Link>
             <a href="#inquiry" className="hover:text-black transition">{n("inquiry")}</a>
           </nav>
           {/* Action buttons (Desktop + Mobile) */}

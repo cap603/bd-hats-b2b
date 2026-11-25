@@ -191,6 +191,17 @@ export function MobileNav() {
                 <ChevronRight size={14} className="text-slate-300" />
               </Link>
               <Link
+                href={`/${lang}/blog`}
+                onClick={() => setIsOpen(false)}
+                className="flex items-center justify-between p-2.5 rounded-lg text-slate-800 hover:bg-slate-50 font-bold text-xs transition"
+              >
+                <span className="flex items-center gap-2.5">
+                  <BookOpen size={14} className="text-yellow-600" />
+                  <span>Blog & Factory Journal</span>
+                </span>
+                <ChevronRight size={14} className="text-slate-300" />
+              </Link>
+              <Link
                 href={`/${lang}/about`}
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-between p-2.5 rounded-lg text-slate-800 hover:bg-slate-50 font-bold text-xs transition"
