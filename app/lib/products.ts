@@ -338,7 +338,7 @@ export const HATS: Product[] = [
     name: "Vintage Flat Brim Snapback Cap",
     desc: "6-panel flat-brim snapback in polyester with an adjustable buckle closure. Heat-transfer print or embroidery across 14 stock colours.",
     fullDesc: "A 6-panel flat-brim snapback for streetwear, hip-hop and casual ranges. The polyester shell keeps the flat brim crisp, and the adjustable buckle closure fits a 56-60cm head. Heat-transfer printing suits full-colour graphics, while flat embroidery gives a raised logo; artwork can be placed on the front panel, brim, side panels and back. 14 stock colours are available for sampling and bulk. Custom design files are prepared in 3 days and a physical sample in 7 days.",
-    price: "$4.20 - $6.20",
+    price: "$4.50 - $6.20",
     moq: 200,
     img: "/images/products/vintage-flat-brim-snapback-cap.webp",
     images: [
@@ -451,44 +451,6 @@ export const HATS: Product[] = [
     ]
   },
   {
-    id: "cotton-front-5-panel-mesh-trucker-cap",
-    name: "Cotton Front 5 Panel Mesh Trucker Cap",
-    desc: "Combed cotton front with a breathable mesh back — a seamless panel for 3D embroidery.",
-    fullDesc: "A 5-panel trucker with a 100% high-density combed cotton front and visor, paired with a reinforced mesh back for ventilation. The seamless front panel gives a flat, wide canvas that takes 3D embroidery, silk screen or heat-transfer logos without distortion, and a stiffening process keeps the crown from collapsing after shipping. Adjustable plastic snapback closure for a one-size-fits-most fit.",
-    price: "$3.80 - $5.20",
-    moq: 200,
-    img: "/images/products/cotton-front-5-panel-mesh-trucker-cap.webp",
-    images: [
-      "/images/products/cotton-front-5-panel-mesh-trucker-cap.webp",
-      "/images/products/cotton-front-5-panel-mesh-trucker-cap-2.webp",
-      "/images/products/cotton-front-5-panel-mesh-trucker-cap-3.webp",
-      "/images/products/cotton-front-5-panel-mesh-trucker-cap-4.webp"
-    ],
-    badge: "new",
-    category: "Trucker Hats",
-    specs: {
-      material: "100% Combed Cotton (Mesh Back)",
-      style: "Structured 5-Panel Trucker",
-      logo: "3D Embroidery / Silk Screen / Heat Transfer",
-      closure: "Adjustable plastic snapback",
-      panels: "5-Panel",
-      size: "56-58cm · One size"
-    },
-    customization: {
-      title: "Our Customization Capabilities",
-      options: [
-        "3D embroidery, silk screen printing and heat-transfer printing",
-        "Fabric colours matched to your Pantone reference",
-        "Care label, hang tag and main label options from 500 pcs",
-        "Full OEM/ODM service from fabric to packaging"
-      ]
-    },
-    faqs: [
-      { q: "Is the front panel cotton or polyester?", a: "The front panels and visor are 100% high-density combed cotton; only the back is mesh. That keeps a cotton handfeel where the logo sits while the back stays breathable." },
-      { q: "Will the crown lose its shape in shipping?", a: "The front panels are stiffened during production so the cap holds its profile through long-distance shipping and repeated wear." }
-    ]
-  },
-  {
     id: "silk-lined-pompom-knitted-beanie",
     name: "Silk Lined Pompom Knitted Beanie",
     desc: "Cuffed acrylic beanie with a satin lining and pompom, finished with your embroidered logo.",
@@ -564,82 +526,6 @@ export const HATS: Product[] = [
     faqs: [
       { q: "What is an A-frame cap?", a: "The A-frame is a 5-panel construction where the two front panels meet in a shallow peak, giving a taller, more angular crown than a standard curve-brim cap." },
       { q: "Is heavyweight cotton harder to embroider?", a: "No — the heavier fabric actually supports dense 3D puff embroidery better because the front panel resists distortion. We confirm stitch density on the sample." }
-    ]
-  },
-  {
-    id: "womens-3d-letter-embroidered-cap",
-    name: "Women's 3D Letter Embroidered Cap",
-    desc: "White 6-panel curved-brim cap in 100% cotton with raised 3D lettering and a metal buckle.",
-    fullDesc: "A clean white 6-panel cap cut for women's fashion and athleisure ranges. The 100% cotton crown takes raised 3D lettering or logo embroidery, and the metal buckle closure adjusts to fit a 56-58cm head. A curved visor gives a softer profile than a flat brim. Embroidery and heat-transfer decoration are both available, with additional colourways on request.",
-    price: "$3.80 - $5.50",
-    moq: 200,
-    img: "/images/products/womens-3d-letter-embroidered-cap.webp",
-    images: [
-      "/images/products/womens-3d-letter-embroidered-cap.webp",
-      "/images/products/womens-3d-letter-embroidered-cap-2.webp",
-      "/images/products/womens-3d-letter-embroidered-cap-3.webp",
-      "/images/products/womens-3d-letter-embroidered-cap-4.webp"
-    ],
-    badge: "new",
-    category: "Baseball Caps",
-    specs: {
-      material: "100% Cotton",
-      style: "6-Panel Curved Brim",
-      logo: "3D Letter Embroidery",
-      closure: "Metal buckle",
-      panels: "6-Panel",
-      size: "56-58cm"
-    },
-    customization: {
-      title: "Our Customization Capabilities",
-      options: [
-        "Raised 3D lettering or logo embroidery on the front panel",
-        "Heat-transfer printing for full-colour graphics",
-        "Brass, plastic or metal buckle closures",
-        "Additional colourways to your palette"
-      ]
-    },
-    faqs: [
-      { q: "Can you embroider my own lettering?", a: "Yes. Send the lettering or logo artwork and we digitise it for raised 3D embroidery, then confirm stitch height on the sample." },
-      { q: "Which closures are available?", a: "This style uses a metal buckle by default. Brass and plastic buckle options are also available — tell us which you want and we will confirm on the quotation." }
-    ]
-  },
-  {
-    id: "curved-brim-6-panel-mesh-trucker-cap",
-    name: "Curved Brim 6 Panel Mesh Trucker Cap",
-    desc: "Breathable 6-panel trucker in a cotton-polyester blend with a curved brim and mesh back.",
-    fullDesc: "A 6-panel mesh trucker in a breathable cotton-polyester blend, with a curved visor for sport and casual wear. The mesh back vents heat in summer, and the front panel takes 3D embroidery, silk screen or heat-transfer logos. Logo positions include the front panel, brim, side panels and back. Adjustable fit for a 56-58cm head.",
-    price: "$3.60 - $4.90",
-    moq: 200,
-    img: "/images/products/curved-brim-6-panel-mesh-trucker-cap.webp",
-    images: [
-      "/images/products/curved-brim-6-panel-mesh-trucker-cap.webp",
-      "/images/products/curved-brim-6-panel-mesh-trucker-cap-2.webp",
-      "/images/products/curved-brim-6-panel-mesh-trucker-cap-3.webp",
-      "/images/products/curved-brim-6-panel-mesh-trucker-cap-4.webp"
-    ],
-    badge: "new",
-    category: "Trucker Hats",
-    specs: {
-      material: "Cotton / Polyester Blend (Mesh Back)",
-      style: "6-Panel Curved Brim Trucker",
-      logo: "3D Embroidery / Silk Screen / Heat Transfer",
-      closure: "Classic 7-Hole Plastic Snapback",
-      panels: "6-Panel",
-      size: "56-58cm · Adjustable"
-    },
-    customization: {
-      title: "Our Customization Capabilities",
-      options: [
-        "3D embroidery, silk screen printing and heat-transfer printing",
-        "Six-panel front for wide, centred logos",
-        "Logo placement on front panel, brim, side panels or back",
-        "Full OEM/ODM service from fabric to packaging"
-      ]
-    },
-    faqs: [
-      { q: "What is the difference between a 5-panel and 6-panel trucker?", a: "A 5-panel trucker has an unbroken front panel, which suits very wide logos and 3D puff. A 6-panel has a centre seam and gives a taller, rounder crown — better for centred, medium-size embroidery." },
-      { q: "Is the whole cap mesh?", a: "No. Only the back panels are mesh for ventilation; the front and visor are solid fabric so the logo sits on a stable surface." }
     ]
   },
   {

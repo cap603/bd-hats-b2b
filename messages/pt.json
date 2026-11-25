@@ -18,14 +18,14 @@
     "home": "Início"
   },
   "home": {
-    "topBar": "Principal Fabricante de Bonés Premium da China • Fundada em 2014",
-    "subtitle": "Sócio de Fabricação e Cadeia de Suprimentos",
+    "topBar": "Parceiro de Sourcing e Qualidade em Bonés Personalizados • Desde 2014",
+    "subtitle": "Parceiro de Sourcing & Controle de Qualidade",
     "banners": {
       "0": {
-        "label": "Soluções B2B Direto da Fábrica",
+        "label": "Polo Industrial Têxtil na China · Sourcing Direto",
         "title": "Fabricação de Bonés de Nível Internacional",
-        "sub": "Mais de 100 máquinas Barudan. 200+ artesãos qualificados. Atacado direto de fábrica na China.",
-        "cta": "Preços Direto da Fábrica"
+        "sub": "Gerenciado pela Baoding Junyang junto a fábricas parceiras auditadas na China. Construções de média a alta qualidade. MOQ 200 pcs · Amostra em 7 dias · Produção 15–20 dias · Orçamento em 2h.",
+        "cta": "Orçamento Detalhado em 2h"
       },
       "1": {
         "label": "Soluções B2B Direto da Fábrica",
@@ -60,36 +60,36 @@
       "eu": "EUROPA OCIDENTAL (25%)"
     },
     "factory": {
-      "label": "Controle de Qualidade Próprio",
+      "label": "Sourcing & Controle de Qualidade",
       "heading": "Acompanhe a Fabricação do Seu Boné — ao Vivo.",
-      "p1": "Diferente de intermediários, a Baoding Junyang opera linhas de produção especializadas próprias. Empregamos mais de 200 costureiros qualificados e operamos mais de 100 máquinas de bordar Barudan de última geração.",
+      "p1": "A Baoding Junyang é sua parceira de sourcing e controle de qualidade para bonés. Conectamos seu projeto a fábricas parceiras verificadas na China, coordenando amostragem, produção e inspeção com um único ponto de contato.",
       "p2Pre": "Nossa Política de Transparência:",
       "p2": "Enviamos fotos e atualizações em vídeo (corte de tecidos, precisão de bordado, costura de painéis, passadoria a vapor) durante toda a produção. Você acompanha como se estivesse dentro da fábrica.",
-      "qcStandard": "Controle de Qualidade Interno",
+      "qcStandard": "Equipe de QC Própria",
       "qcStandardDesc": "Inspecionado em cada etapa produtiva.",
       "samples": "Amostras em 7 Dias",
       "samplesDesc": "Envio rápido de protótipos físicos.",
-      "videoCta": "Solicitar Tour em Vídeo da Fábrica",
+      "videoCta": "Solicitar Acompanhamento em Vídeo",
       "videoTitle": "Assistir Vídeo de Produção (2026)",
       "videoSub": "Máquinas de bordado automatizadas e costura artesanal profissional."
     },
     "trust": {
-      "label": "Confiada por Marcas Globais",
+      "label": "Por Que Grandes Marcas Escolhem Sourcing Conosco",
       "heading": "Por Que Grandes Marcas Escolhem a BD Hats",
-      "sub": "Somos a fábrica parceira de centenas de marcas de streetwear, corporativas e lifestyle no mundo inteiro.",
-      "brands": "300+",
-      "brandsLabel": "Marcas Atendidas no Mundo",
-      "brandsDesc": "De marcas streetwear americanas a programas corporativos de uniformes europeus.",
-      "caps": "5M+",
-      "capsLabel": "Bonés Produzidos por Ano",
-      "capsDesc": "Capacidade industrial em larga escala com qualidade premium constante.",
-      "retention": "98%",
-      "retentionLabel": "Taxa de Retenção de Clientes",
-      "retentionDesc": "Nossa pontualidade e rigor técnico trazem as marcas de volta a cada coleção.",
-      "sgsSupplier": "Fornecedor Auditado pela SGS",
-      "goldSupplier": "Instalação Certificada ISO 9001:2015",
-      "certifications": "Certificados CE · REACH · RoHS",
-      "qcStandard": "Controle de Qualidade em Linha"
+      "sub": "Somos o parceiro de sourcing e qualidade por trás de marcas de streetwear, corporativas e lifestyle na América do Norte e Europa.",
+      "brands": "12+",
+      "brandsLabel": "Anos no Comércio de Bonés",
+      "brandsDesc": "Sourcing e exportação de bonés sob medida desde 2014.",
+      "caps": "200",
+      "capsLabel": "MOQ por Modelo e Cor",
+      "capsDesc": "Construções de média a alta qualidade, do streetwear aos uniformes.",
+      "retention": "2h",
+      "retentionLabel": "Orçamento Escrito e Detalhado",
+      "retentionDesc": "Cotação FOB discriminada item por item (tecido, bordado, aviamentos, embalagem) em 2 horas.",
+      "sgsSupplier": "Rede de Fábricas Auditadas",
+      "goldSupplier": "Proteção Alibaba Trade Assurance",
+      "certifications": "Testes REACH, RoHS, OEKO-TEX e GRS por pedido · Inspeção SGS/BV disponível",
+      "qcStandard": "Inspeção Peça por Peça Antes do Embarque"
     },
     "catalog": {
       "label": "Categorias de Bonés Premium",
@@ -131,31 +131,28 @@
       "a0": "Nossa quantidade mínima padrão é de 200 peças por modelo/cor. Também aceitamos pedidos de teste para lançamentos de novas marcas.",
       "q1": "Posso solicitar uma amostra antes da produção em massa?",
       "a1": "Sim, com certeza! Produzimos amostras físicas completas de pré-produção para você validar material, caimento e bordado antes da produção em lote.",
-      "q2": "Vocês fabricam bonés com base em nossos designs exclusivos (OEM/ODM)?",
-      "a2": "Sim. A Baoding Junyang é uma fábrica completa de OEM/ODM. Desenvolvemos a partir de croquis, fichas técnicas ou amostras físicas de referência.",
+      "q2": "Vocês são uma fábrica ou uma empresa de comércio exterior?",
+      "a2": "Somos um parceiro de sourcing e controle de qualidade — abertamente uma trading. Selecionamos fábricas parceiras auditadas conforme seu projeto, gerenciamos amostras e produção e inspecionamos cada peça antes do envio. Um contrato, um ponto de contato, um padrão de qualidade.",
       "q3": "Quais são os prazos médios de produção e entrega?",
       "a3": "A produção de amostras leva cerca de 7 dias. A produção em massa leva de 15 a 20 dias conforme o volume. O frete aéreo expresso mundial leva de 5 a 8 dias."
     },
     "inquiry": {
-      "heading": "Solicitar Orçamento de Fábrica",
-      "sub": "Envie suas especificações (modelos, artes, quantidades). Nossos especialistas em B2B respondem em até 12 horas.",
-      "trustLabel": "100% Direto de Fábrica · Auditado SGS · 12 Anos OEM/ODM",
-      "testimonialTitle": "O Que Nossos Parceiros Dizem",
-      "testimonials": [
+      "heading": "Solicitar Orçamento Personalizado",
+      "sub": "Envie suas especificações (modelos, artes, quantidades). Nossos especialistas em B2B respondem em até 2 horas.",
+      "trustLabel": "Sourcing Direto · Testes por Pedido · 12 Anos de Experiência",
+      "testimonialTitle": "O Que Você Recebe em Cada Pedido",
+      "commitments": [
         {
-          "quote": "Eles acertaram nosso bordado 3D em relevo logo na primeira amostra. A fábrica manda atualizações em foto de cada etapa — é como estar na linha de produção.",
-          "name": "Marcus T.",
-          "role": "Fundador de Marca Streetwear, EUA"
+          "title": "Orçamento Detalhado em 2 Horas",
+          "desc": "Cotação FOB item por item com lista de materiais completa (tecido, bordado, fechos, embalagem) para comparação transparente."
         },
         {
-          "quote": "MOQ de 200 peças com essa qualidade é raro. Nosso primeiro pedido de 2.000 bonés foi enviado em 18 dias e passou em todas as inspeções.",
-          "name": "Sophie L.",
-          "role": "Importadora de Roupas, Alemanha"
+          "title": "Inspeção Peça por Peça",
+          "desc": "Nossa própria equipe de controle de qualidade verifica cada boné antes do envio: bordado, costura, medidas e acabamento. Inspeção de terceiros disponível."
         },
         {
-          "quote": "A comunicação é ágil via WhatsApp. As amostras físicas chegaram em exatamente 7 dias, conforme combinado.",
-          "name": "Daniel R.",
-          "role": "Comprador de Rede Varejista, Austrália"
+          "title": "Proteção de Pagamento",
+          "desc": "Alibaba Trade Assurance ou conta de custódia (escrow) para primeiros pedidos, com acompanhamento de fotos e vídeos em cada etapa."
         }
       ]
     },
@@ -226,7 +223,7 @@
     "milestone": {
       "title": "Registro Multimídia de Produção ao Vivo",
       "updates": "Atualizações a cada 2 dias",
-      "desc": "Acompanhamento transparente em cada fase: ① Amostragem e corte do tecido ② Bordado em máquina Barudan ③ Montagem da faixa ④ Inspeção peça por peça e embalagem.",
+      "desc": "Transparência total em cada fase: ① Corte do tecido e verificação de cor ② Vídeo ao vivo da inspeção de bordado ③ Montagem da faixa ④ Inspeção peça por peça e embalagem.",
       "cta": "Falar com Eileen",
       "samplesBulk": "Amostras em 7 dias · Massa em 15-20 dias"
     },
@@ -329,7 +326,7 @@
     "sendAnother": "Enviar outra solicitação"
   },
   "footer": {
-    "about": "A Baoding Junyang Hat Manufacturing Co., Ltd. é uma fábrica de bonés premium especializada em bordado OEM/ODM de bonés de beisebol, gorros e bonés trucker desde 2014.",
+    "about": "A Baoding Junyang Import & Export Trading Co., Ltd. é uma parceira de sourcing e controle de qualidade especializada em bonés de qualidade média a alta, gorros e truckers desde 2014.",
     "navigation": "Navegação",
     "products": "Produtos",
     "aboutLink": "Sobre Nós",
@@ -340,8 +337,10 @@
     "contact": "Contato",
     "whatsapp": "WhatsApp: +86 15933930830",
     "email": "E-mail: admin@bdjunyang.com",
-    "office": "Fábrica: Baoding, Hebei, China",
-    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Todos os direitos reservados."
+    "office": "Escritório: Baoding, Hebei, China",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "copyright": "© 2026 Baoding Junyang Import & Export Trading Co., Ltd. Todos os direitos reservados."
   },
   "breadcrumb": {
     "home": "Início",

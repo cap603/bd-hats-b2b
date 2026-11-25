@@ -18,14 +18,14 @@
     "home": "Accueil"
   },
   "home": {
-    "topBar": "Premier Fabricant Chinois de Casquettes Haut de Gamme • Fondé en 2014",
-    "subtitle": "Supply Chain & Manufacturing Partner",
+    "topBar": "Partenaire Sourcing et Qualité en Casquettes Sur-Mesure • Depuis 2014",
+    "subtitle": "Partenaire Sourcing & Contrôle Qualité",
     "banners": {
       "0": {
-        "label": "Solutions B2B Direct Usine",
+        "label": "Bassin Industriel Textile en Chine · Sourcing Direct",
         "title": "Fabrication de Casquettes de Classe Mondiale",
-        "sub": "Plus de 100 brodeuses Barudan. 200+ artisans qualifiés. Vente en gros direct usine depuis la Chine.",
-        "cta": "Obtenir les Prix Usine"
+        "sub": "Coordonné par Baoding Junyang via des usines partenaires auditées en Chine. Confections de moyenne à haute qualité. MOQ 200 pcs · Échantillon en 7 jours · Production 15–20 jours · Devis en 2h.",
+        "cta": "Devis Détaillé en 2h"
       },
       "1": {
         "label": "Solutions B2B Direct Usine",
@@ -60,36 +60,36 @@
       "eu": "EUROPE DE L'OUEST (25 %)"
     },
     "factory": {
-      "label": "Contrôle Qualité Intégré",
+      "label": "Sourcing & Contrôle Qualité",
       "heading": "Suivez la Fabrication de vos Casquettes — en Direct.",
-      "p1": "Contrairement aux simples intermédiaires, Baoding Junyang gère ses propres lignes de production spécialisées. Nous employons plus de 200 couturiers qualifiés et exploitons plus de 100 brodeuses Barudan à la pointe de la technologie.",
+      "p1": "Baoding Junyang est votre partenaire de sourcing et de contrôle qualité pour casquettes et couvre-chefs. Nous associons vos exigences à des usines partenaires vérifiées en Chine, et gérons l'échantillonnage, la production et l'inspection via un interlocuteur unique.",
       "p2Pre": "Notre Politique de Transparence :",
       "p2": "Nous vous envoyons des photos et vidéos à chaque étape de votre commande (découpe, précision de broderie, assemblage des panneaux, repassage vapeur). Vous êtes virtuellement au cœur de nos ateliers.",
-      "qcStandard": "Contrôle Qualité Interne",
-      "qcStandardDesc": "Inspection rigoureuse à chaque phase de production.",
+      "qcStandard": "Équipe QC Dédiée",
+      "qcStandardDesc": "Contrôle rigoureux à chaque phase de production.",
       "samples": "Échantillons en 7 Jours",
       "samplesDesc": "Expédition rapide de prototypes physiques.",
-      "videoCta": "Demander une Visite Vidéo de l'Usine",
+      "videoCta": "Demander un Suivi Vidéo",
       "videoTitle": "Voir la Vidéo de Production (2026)",
       "videoSub": "Brodeuses multi-têtes et assemblage professionnel à la main."
     },
     "trust": {
       "label": "Reconnu par les Marques Internationales",
       "heading": "Pourquoi les Marques Choisissent BD Hats",
-      "sub": "Nous sommes le fabricant industriel derrière des centaines de marques streetwear, corporate et lifestyle à travers le monde.",
-      "brands": "300+",
-      "brandsLabel": "Marques Servies dans le Monde",
-      "brandsDesc": "Des jeunes marques streetwear américaines aux grands programmes d'uniformes d'entreprises européennes.",
-      "caps": "5M+",
-      "capsLabel": "Casquettes Produites par An",
-      "capsDesc": "Capacité industrielle de grande série avec une qualité premium irréprochable.",
-      "retention": "98 %",
-      "retentionLabel": "Taux de Fidélité Client",
-      "retentionDesc": "Notre exigence de qualité et notre rigueur commerciale incitent nos clients à recommander saison après saison.",
-      "sgsSupplier": "Fournisseur Vérifié SGS",
-      "goldSupplier": "Site Industriel Audité ISO 9001:2015",
-      "certifications": "Certifié CE · REACH · RoHS",
-      "qcStandard": "Contrôle Qualité Interne Strict"
+      "sub": "Nous sommes le partenaire de sourcing et de qualité derrière des programmes streetwear, corporate et lifestyle en Amérique du Nord et en Europe.",
+      "brands": "12+",
+      "brandsLabel": "Années dans le Commerce de Couvre-Chefs",
+      "brandsDesc": "Sourcing et export de casquettes sur-mesure depuis 2014.",
+      "caps": "200",
+      "capsLabel": "MOQ par Modèle et Coloris",
+      "capsDesc": "Confections de moyenne à haute qualité, du streetwear aux uniformes.",
+      "retention": "2h",
+      "retentionLabel": "Devis Écrit et Détaillé",
+      "retentionDesc": "Chiffrage FOB poste par poste (matière, broderie, accessoires, conditionnement) en moins de 2 heures.",
+      "sgsSupplier": "Réseau d'Usines Auditées",
+      "goldSupplier": "Protection Alibaba Trade Assurance",
+      "certifications": "Tests REACH, RoHS, OEKO-TEX et GRS par commande · Inspection SGS/BV disponible",
+      "qcStandard": "Contrôle Pièce par Pièce Avant Expédition"
     },
     "catalog": {
       "label": "Catégories de Casquettes Premium",
@@ -131,31 +131,28 @@
       "a0": "Notre MOQ standard est de 200 pièces par modèle/couleur. Nous acceptons également de petits ordres tests pour les lancements de nouvelles marques.",
       "q1": "Puis-je commander un échantillon avant la production de masse ?",
       "a1": "Oui, tout à fait ! Nous réalisons des prototypes physiques complets afin que vous puissiez valider la coupe, la matière et les finitions avant la production série.",
-      "q2": "Fabriquez-vous des modèles selon nos créations sur-mesure (OEM/ODM) ?",
-      "a2": "Oui. Baoding Junyang est une usine intégrée OEM/ODM. Nous concevons vos casquettes à partir de croquis, dossiers techniques ou prototypes physiques existants.",
+      "q2": "Êtes-vous une usine ou une société de négoce ?",
+      "a2": "Nous sommes un partenaire de sourcing et de contrôle qualité — en toute transparence, une société commerciale. Nous sélectionnons des usines partenaires auditées selon vos spécifications, gérons l'échantillonnage et la production, et inspectons chaque pièce avant expédition. Un seul contrat, un seul interlocuteur, un niveau de qualité constant.",
       "q3": "Quels sont vos délais habituels de fabrication et de livraison ?",
       "a3": "Nos échantillons nécessitent environ 7 jours. La production série prend 15 à 20 jours selon les volumes. Le fret aérien express mondial prend 5 à 8 jours."
     },
     "inquiry": {
-      "heading": "Demander un Devis Usine",
-      "sub": "Envoyez-nous votre cahier des charges (modèles, logos, quantités). Nos experts B2B vous répondent sous 12 heures.",
-      "trustLabel": "100 % Direct Usine · Vérifié SGS · 12 Ans d'Expérience OEM/ODM",
-      "testimonialTitle": "Témoignages de nos Marques Partenaires",
-      "testimonials": [
+      "heading": "Demander un Devis Sur-Mesure",
+      "sub": "Envoyez-nous votre cahier des charges (modèles, logos, quantités). Nos experts B2B vous répondent sous 2 heures.",
+      "trustLabel": "Sourcing Direct · Tests par Commande · 12 Ans d'Expérience",
+      "testimonialTitle": "Ce que vous obtenez avec chaque commande",
+      "commitments": [
         {
-          "quote": "Leur broderie 3D en relief était parfaite dès le premier échantillon. L'usine nous envoie des photos à chaque étape — on a l'impression d'être dans l'atelier.",
-          "name": "Marcus T.",
-          "role": "Fondateur de Marque Streetwear, USA"
+          "title": "Devis Détaillé en 2 Heures",
+          "desc": "Chiffrage FOB poste par poste avec nomenclature complète (tissu, broderie, fermoirs, emballage) pour comparer en toute transparence."
         },
         {
-          "quote": "Une MOQ de 200 pièces avec une telle qualité de finition est rare en Europe. Notre commande de 2 000 casquettes a été expédiée en 18 jours sans aucun défaut.",
-          "name": "Sophie L.",
-          "role": "Importatrice Textile, Allemagne"
+          "title": "Contrôle Qualité Pièce par Pièce",
+          "desc": "Notre propre équipe d'inspection contrôle chaque casquette avant expédition : broderie, coutures, mesures et finitions. Inspection tierce partie disponible."
         },
         {
-          "quote": "La communication sur WhatsApp est ultra-rapide. Les échantillons sont arrivés en 7 jours chrono, exactement comme convenu.",
-          "name": "Daniel R.",
-          "role": "Acheteur Réseau de Boutiques, Australie"
+          "title": "Protection des Paiements",
+          "desc": "Alibaba Trade Assurance ou compte séquestre pour les premières commandes, avec suivi photo et vidéo à chaque étape."
         }
       ]
     },
@@ -226,7 +223,7 @@
     "milestone": {
       "title": "Milestone Photo & Video Proof Protocol",
       "updates": "Updates Every 2 Days",
-      "desc": "Full production transparency: ① Fabric roll cutting & color check ② Barudan embroidery live video ③ 4-needle sweatband assembly ④ Piece-by-piece final inspection & export carton packing.",
+      "desc": "Full production transparency: ① Fabric roll cutting & color check ② Live embroidery inspection video ③ 4-needle sweatband assembly ④ Piece-by-piece final inspection & export carton packing.",
       "cta": "Inquire with Eileen",
       "samplesBulk": "Standard 7-Day Samples · 15-20 Days Bulk"
     },
@@ -329,7 +326,7 @@
     "sendAnother": "Envoyer une autre demande"
   },
   "footer": {
-    "about": "Baoding Junyang Hat Manufacturing Co., Ltd. est une manufacture industrielle spécialisée dans la broderie OEM/ODM de casquettes de baseball, bonnets et casquettes trucker depuis 2014.",
+    "about": "Baoding Junyang Import & Export Trading Co., Ltd. est un partenaire de sourcing et de contrôle qualité spécialisé dans les casquettes de qualité moyenne à haute, bonnets et casquettes trucker depuis 2014.",
     "navigation": "Navigation",
     "products": "Produits",
     "aboutLink": "À Propos",
@@ -340,8 +337,10 @@
     "contact": "Contact",
     "whatsapp": "WhatsApp : +86 15933930830",
     "email": "Email : admin@bdjunyang.com",
-    "office": "Ateliers : Baoding, Hebei, Chine",
-    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Tous droits réservés."
+    "office": "Bureaux : Baoding, Hebei, Chine",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "copyright": "© 2026 Baoding Junyang Import & Export Trading Co., Ltd. Tous droits réservés."
   },
   "breadcrumb": {
     "home": "Accueil",

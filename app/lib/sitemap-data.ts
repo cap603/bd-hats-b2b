@@ -82,6 +82,8 @@ const CORE_PAGES: Array<{
   { path: "/resources/custom-hat-moq-guide", priority: 0.85, freq: "monthly" },
   { path: "/resources/import-hats-us-compliance", priority: 0.85, freq: "monthly" },
   { path: "/resources/safe-sourcing-trade-assurance", priority: 0.85, freq: "monthly" },
+  { path: "/privacy", priority: 0.3, freq: "monthly" },
+  { path: "/terms", priority: 0.3, freq: "monthly" },
 ];
 
 export interface SitemapUrl {

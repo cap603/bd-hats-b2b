@@ -18,14 +18,14 @@
     "home": "Home"
   },
   "home": {
-    "topBar": "China's Leading Premium Baseball Cap Manufacturer • Est. 2014",
-    "subtitle": "Supply Chain & Manufacturing Partner",
+    "topBar": "Custom Headwear Sourcing & Quality Partner • Est. 2014",
+    "subtitle": "Headwear Sourcing & Quality Partner",
     "banners": {
       "0": {
-        "label": "Direct Factory · Baoding, China · SGS & BSCI Audited",
+        "label": "Premium Hat Belt of China · One Sourcing Partner",
         "title": "Custom caps built to your spec, from 200 pieces.",
-        "sub": "Made by Baoding Junyang in Baoding, China. 100+ precision Barudan embroidery machines, 5M+ annual capacity. MOQ 200 pcs · Sample 7 days · Bulk 15–20 days · Written quote in 2h.",
-        "cta": "Get Itemised Factory Quote (2h)"
+        "sub": "Sourced by Baoding Junyang from vetted partner factories in China's premium hat belt. Mid-to-high quality constructions only. MOQ 200 pcs · Sample 7 days · Bulk 15–20 days · Written quote in 2h.",
+        "cta": "Get Itemised Quote (2h)"
       },
       "1": {
         "label": "Engineered to Spec • Bespoke OEM/ODM",
@@ -47,49 +47,49 @@
     },
     "stats": {
       "years": "12+ Years",
-      "yearsLabel": "OEM/ODM Experience",
+      "yearsLabel": "Headwear Sourcing & Export",
       "moq": "200 Pcs",
       "moqLabel": "MOQ Starting from 200 Pcs",
-      "sgs": "SGS Verified Factory"
+      "sgs": "OEKO-TEX & REACH Compliant"
     },
     "compliance": {
       "title": "Compliance Standards",
-      "certified": "Certified Product",
+      "certified": "Standard 100 Ready",
       "markets": "Main Markets",
       "na": "NORTH AMERICA (70%)",
       "eu": "WESTERN EUROPE (25%)"
     },
     "factory": {
-      "label": "In-House Quality Control",
+      "label": "Sourcing & Quality Control",
       "heading": "See Your Cap Being Made — Live.",
-      "p1": "Unlike general agents, Baoding Junyang runs its own specialized production lines. We employ over 200 skilled tailors and run 100+ state-of-the-art Barudan embroidery machines.",
+      "p1": "Baoding Junyang is a headwear sourcing and quality partner. We match your requirements to vetted partner factories in China's premium hat belt, then manage sampling, production and inspection from one point of contact.",
       "p2Pre": "Our Transparency Policy:",
       "p2": "We send you direct photos and video updates (fabric cutting, embroidery precision, sewing structure, final ironing) throughout your production. You are virtually inside the factory floor.",
-      "qcStandard": "In-House QC",
-      "qcStandardDesc": "Checked at each production stage.",
+      "qcStandard": "Own QC Team",
+      "qcStandardDesc": "Piece-by-piece inspection before shipment.",
       "samples": "7-Day Samples",
       "samplesDesc": "Fast physical prototype delivery.",
-      "videoCta": "Request Factory Video Tour",
+      "videoCta": "Request Production Video Updates",
       "videoTitle": "Watch Production Reel (2026)",
       "videoSub": "Multi-head computer embroidery machines & professional hand-sewing."
     },
     "trust": {
-      "label": "Trusted by Global Brands",
+      "label": "Why Global Brands Source With Us",
       "heading": "Why Brands Choose BD Hats",
-      "sub": "We are the factory behind hundreds of streetwear, corporate, and lifestyle brands worldwide.",
-      "brands": "300+",
-      "brandsLabel": "Brands Served Worldwide",
-      "brandsDesc": "From US streetwear startups to European corporate uniform programs.",
-      "caps": "5M+",
-      "capsLabel": "Caps Produced Annually",
-      "capsDesc": "Industrial-scale capacity with consistent premium quality.",
-      "retention": "98%",
-      "retentionLabel": "Client Retention Rate",
-      "retentionDesc": "Our quality and service bring brands back season after season.",
-      "sgsSupplier": "SGS Verified Supplier",
-      "goldSupplier": "ISO 9001:2015 Audited Facility",
-      "certifications": "CE Certified Finished Goods · REACH, RoHS, OEKO-TEX & GRS Testing Per Order",
-      "qcStandard": "In-House Quality Control"
+      "sub": "We are the sourcing and quality partner behind streetwear, corporate, and lifestyle headwear programs in North America and Europe.",
+      "brands": "12+",
+      "brandsLabel": "Years in Headwear Trade",
+      "brandsDesc": "Sourcing and exporting custom hats since 2014.",
+      "caps": "200",
+      "capsLabel": "MOQ per Style & Color",
+      "capsDesc": "Mid-to-high quality constructions, from streetwear to corporate programs.",
+      "retention": "2h",
+      "retentionLabel": "Written Itemized Quote",
+      "retentionDesc": "Line-by-line FOB quotation within 2 hours of your spec.",
+      "sgsSupplier": "Audited Partner Factories",
+      "goldSupplier": "Alibaba Trade Assurance Supported",
+      "certifications": "REACH, RoHS, OEKO-TEX & GRS Testing Per Order · SGS/BV Inspection Available",
+      "qcStandard": "Piece-by-Piece QC Before Shipment"
     },
     "catalog": {
       "label": "Premium Hat Categories",
@@ -131,31 +131,28 @@
       "a0": "Our standard MOQ is 200 pieces per style/color. We also accommodate smaller test orders for initial brand startups and custom embroidery trials.",
       "q1": "Can I get a sample before bulk production?",
       "a1": "Yes, absolutely! We provide physical pre-production samples so you can verify quality and fit before bulk production.",
-      "q2": "Do you manufacture hats based on custom designs (OEM/ODM)?",
-      "a2": "Yes. Baoding Junyang is a full-service OEM/ODM factory. We can construct caps from your sketches, spec sheets, or reverse-engineer physical original samples.",
+      "q2": "Are you a factory or a trading company?",
+      "a2": "We are a headwear sourcing and quality partner — openly a trading company. We match your spec to vetted partner factories, manage sampling and production, and inspect every piece before shipment. One contract, one point of contact, one QC standard.",
       "q3": "What is your standard production lead time?",
       "a3": "Our sample production takes 7 days. Bulk mass production takes 15-20 days depending on the quantity and complexity. Global shipping via air takes 5-8 days."
     },
     "inquiry": {
-      "heading": "Request Factory Quote",
+      "heading": "Request Custom Quote",
       "sub": "Send us your cap requirements (styles, logos, quantities). Our B2B hat specialists will deliver your quote within 2 hours.",
-      "trustLabel": "100% Factory Direct · SGS Verified · 12 Years OEM/ODM",
-      "testimonialTitle": "What Our Brand Partners Say",
-      "testimonials": [
+      "trustLabel": "Direct Sourcing · Tested Per Order · 12 Years in Headwear Trade",
+      "testimonialTitle": "What You Get With Every Order",
+      "commitments": [
         {
-          "quote": "They nailed our high-density 3D puff embroidery on the first sample. Daily video updates at cutting, stitching, and ironing: 2,000 custom 5-panels delivered in 18 days.",
-          "name": "US Streetwear Brand (2,000 Pcs Order)",
-          "role": "Verified 18-Day Delivery · Mutual NDA Protected"
+          "title": "Itemized Quote in 2 Hours",
+          "desc": "Line-by-line FOB quotation with bill of materials — fabric, decoration, hardware, packing — so you can compare like with like."
         },
         {
-          "quote": "Direct factory FOB pricing with complete BOM transparency. Our 5,000-piece seasonal program passed all rigorous piece-by-piece quality control checks with zero defect rejections.",
-          "name": "European Corporate & Uniform Importer (5,000 Pcs)",
-          "role": "Piece-by-Piece Quality Audit · Mutual NDA Protected"
+          "title": "Piece-by-Piece QC",
+          "desc": "Our own inspection team checks every cap before shipment: embroidery alignment, stitching, measurements and finish. Third-party inspection can be arranged per order."
         },
         {
-          "quote": "Seamless WhatsApp engineering communication. Blank vector tech pack review was turned into signed physical pre-production samples in 7 days exactly.",
-          "name": "Australian Lifestyle Label (1,500 Pcs Corduroy)",
-          "role": "Custom Hardware & Woven Labels · Mutual NDA Protected"
+          "title": "Payment Protection",
+          "desc": "Alibaba Trade Assurance or escrow for first orders, with milestone photos and video updates every step from sampling to bulk."
         }
       ]
     },
@@ -175,7 +172,11 @@
       "8": { "title": "Corporate Uniform Headwear", "desc": "Durable, high-repeat corporate identity programs and company uniform cap bulk orders.", "tag": "Uniforms" },
       "9": { "title": "Custom Bucket Hats", "desc": "Wide-brim festival and outdoor bucket hats, sun shading fabrics, chin cords and reversible builds.", "tag": "Outdoor" },
       "10": { "title": "Container Bulk Production", "desc": "20GP and 40HQ container load manufacturing for international distributors and importers.", "tag": "10,000+ Scale" },
-      "11": { "title": "Tiered Wholesale Pricing", "desc": "Transparent FOB volume tiers from $5.20/pc at MOQ 200; container-scale floor from $3.50/pc. Cost breakdowns included.", "tag": "Transparent Rates" }
+      "11": {
+        "title": "Tiered Wholesale Pricing",
+        "desc": "Transparent FOB volume tiers from $4.50/pc at MOQ 200; container-scale programs quoted per project. Cost breakdowns included.",
+        "tag": "Transparent Rates"
+      }
     },
     "sectorsBadge": "Buyer Sourcing Programs",
     "sectorsTitle": "Tailored Manufacturing Programs by Buyer Segment",
@@ -184,7 +185,13 @@
       "0": { "tag": "Fashion & Drops", "moq": "MOQ 200", "title": "Streetwear & Apparel Labels", "desc": "5-panel campers, vintage enzyme-washed dad hats, high-density 3D puff embroidery, and custom branded damask inner taping.", "foot": "100% Sample Refund ≥500" },
       "1": { "tag": "Uniform & Workwear", "moq": "500 – 5,000+", "title": "Corporate & Uniform Programs", "desc": "Heavy-duty structured 6-panel twill caps, high colorfastness, reflective piping, and piece-by-piece pre-shipment QC inspection.", "foot": "Itemized BOM Quotes" },
       "2": { "tag": "Performance Active", "moq": "MOQ 200", "title": "Golf & Performance Athletic", "desc": "Laser-perforated airflow panels, lightweight DWR water-repellent nylon, moisture-wicking CoolMax sweatbands, and silicone closures.", "foot": "CoolMax Tech Ready" },
-      "3": { "tag": "Container FCL Scale", "moq": "10,000+ Pcs", "title": "Container Bulk & Distributors", "desc": "High-volume mesh truckers and flat-brim snapbacks. 20GP & 40HQ container load optimization and factory floor FOB rates from $3.50.", "foot": "From $3.50 FOB" }
+      "3": {
+        "tag": "Container FCL Scale",
+        "moq": "10,000+ Pcs",
+        "title": "Container Bulk & Distributors",
+        "desc": "High-volume mesh truckers and flat-brim snapbacks. 20GP & 40HQ container load optimization with itemized container-scale FOB quotes.",
+        "foot": "Itemized Container Quotes"
+      }
     },
     "explore": "Explore",
     "headwearTitle": "Custom Headwear",
@@ -208,7 +215,7 @@
       "China vs Vietnam vs Bangladesh"
     ],
     "freeBadge": "Free AI/PDF",
-    "factoryDirect": "Direct Super Factory · OEM/ODM",
+    "factoryDirect": "Direct Sourcing Partner · OEM/ODM Programs",
     "exporting": "Exporting to US, EU & AU since 2014",
     "backToTop": "Back to Top ↑",
     "assets": {
@@ -226,7 +233,7 @@
     "milestone": {
       "title": "Milestone Photo & Video Proof Protocol",
       "updates": "Updates Every 2 Days",
-      "desc": "Full production transparency: ① Fabric roll cutting & color check ② Barudan embroidery live video ③ 4-needle sweatband assembly ④ Piece-by-piece final inspection & export carton packing.",
+      "desc": "Full production transparency: ① Fabric roll cutting & color check ② Live embroidery inspection video ③ 4-needle sweatband assembly ④ Piece-by-piece final inspection & export carton packing.",
       "cta": "Inquire with Eileen",
       "samplesBulk": "Standard 7-Day Samples · 15-20 Days Bulk"
     },
@@ -252,7 +259,7 @@
     "sortPriceAsc": "Price: Low → High",
     "sortPriceDesc": "Price: High → Low",
     "moq": "MOQ: {count} Pcs",
-    "factoryDirect": "Factory Direct",
+    "factoryDirect": "FOB Price Shown",
     "viewDetails": "View Details",
     "quote": "Quote",
     "details": "Details",
@@ -283,7 +290,7 @@
     },
     "getQuote": "Get Factory Quote",
     "orderSample": "Order Sample",
-    "urgencyStrip": "Factory Direct Manufacturing · MOQ 200 Pcs · Written Quote in 2h · 7d Sample Dispatch",
+    "urgencyStrip": "Direct Sourcing · MOQ 200 Pcs · Written Quote in 2h · 7d Sample Dispatch",
     "related": "Continue Exploring",
     "relatedTitle": "Related Products",
     "faqHeading": "FAQ",
@@ -314,22 +321,22 @@
     "phonePlaceholder": "+1 (555) 000-0000",
     "message": "Message / Requirements",
     "messagePlaceholder": "Tell us about the styles, quantities, or specific customization (e.g. 3D Puff Embroidery, Woven Labels)...",
-    "privacyNote": "Your inquiry is sent directly to our factory sales engineering team (admin@bdjunyang.com). Written quotation delivered within 2 hours.",
+    "privacyNote": "Your inquiry is sent directly to our sourcing team (admin@bdjunyang.com). Written quotation delivered within 2 hours.",
     "intentSample": "Hi Baoding Junyang! I would like to order a physical sample before bulk production. Can you provide details?",
     "intentBulk": "Hi Baoding Junyang! I'm interested in bulk production. Can you provide a quotation?",
     "intentTest": "Hi Baoding Junyang! I'd like to place a small test order. Can you provide details?",
     "intentTechpack": "Hi Baoding Junyang! Please send me the blank vector tech pack templates (AI/PDF) and standard sewing specification sheets for our design team. My brand/company is: ",
     "intentMockup": "Hi Baoding Junyang! I would like to request a free 3D digital mockup and embroidery feasibility review for our logo artwork. Style interested: ",
-    "submit": "Send Inquiry to Factory",
-    "submitting": "Transmitting to Sales Team...",
+    "submit": "Send Inquiry",
+    "submitting": "Transmitting to Sourcing Team...",
     "thanks": "Inquiry Received Successfully!",
-    "thanksMsg": "Your specifications have been safely delivered to our factory sales engineering team (admin@bdjunyang.com). We will review your details and reply to your email shortly.",
+    "thanksMsg": "Your specifications have been safely delivered to our sourcing team (admin@bdjunyang.com). We will review your details and reply to your email shortly.",
     "whatsappFallback": "Need an immediate reply? You can also connect with our sales specialist on WhatsApp:",
     "chatWhatsApp": "Chat on WhatsApp (+86 159 3393 0830)",
     "sendAnother": "Submit another inquiry"
   },
   "footer": {
-    "about": "Baoding Junyang Hat Manufacturing Co., Ltd. is a premium custom hat factory specializing in OEM/ODM embroidery baseball caps, beanies, and trucker hats since 2014.",
+    "about": "Baoding Junyang Import & Export Trading Co., Ltd. is a headwear sourcing and quality partner specializing in mid-to-high quality custom baseball caps, beanies, and trucker hats since 2014.",
     "navigation": "Navigation",
     "products": "Products",
     "aboutLink": "About",
@@ -341,21 +348,23 @@
     "whatsapp": "WhatsApp: +86 15933930830",
     "email": "Email: admin@bdjunyang.com",
     "office": "Office: Baoding, Hebei, China",
-    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved."
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 Baoding Junyang Import & Export Trading Co., Ltd. All rights reserved."
   },
   "breadcrumb": {
     "home": "Home",
-    "about": "About Our Factory",
+    "about": "About Us",
     "guide": "B2B Buyer's Guide",
     "materials": "Materials & Fabrics",
     "pricing": "Pricing & Shipping",
     "products": "Products"
   },
   "meta": {
-    "homeTitle": "BD Hats | Custom Hat Manufacturer & Wholesale",
-    "homeDesc": "Get premium custom hats directly from the factory. OEM/ODM since 2014. Custom embroidery, MOQ 200pcs, 7-day samples. SGS verified factory in Baoding, China.",
-    "aboutTitle": "About BD Hats | 12-Year Custom Hat Factory in Baoding, China",
-    "aboutDesc": "From a 15-person workshop to a 50,000sqm facility serving 300+ global brands. Learn about Baoding Junyang's journey, mission, team, and factory capabilities since 2014.",
+    "homeTitle": "BD Hats | Custom Hat Sourcing Partner & Wholesale",
+    "homeDesc": "Premium mid-to-high quality custom hats, sourced and QC'd by Baoding Junyang since 2014. Custom embroidery, MOQ 200pcs, 7-day samples, written quote in 2h.",
+    "aboutTitle": "About BD Hats | Headwear Sourcing Partner in Baoding, China",
+    "aboutDesc": "Baoding Junyang Import & Export Trading Co., Ltd. — 12 years of hat sourcing and export experience, vetted partner factories, and piece-by-piece QC since 2014.",
     "guideTitle": "B2B Custom Hat Manufacturing Guide | How to Source Wholesale Caps from China",
     "guideDesc": "Complete guide for B2B buyers: how to choose a custom hat factory, embroidery types explained, MOQ negotiation, quality control, and shipping logistics.",
     "materialsTitle": "Custom Hat Materials Guide | Cotton, Wool, Polyester & More | BD Hats",
@@ -364,12 +373,12 @@
     "pricingDesc": "Transparent pricing guide for custom hats: how much do custom caps cost, FOB vs CIF explained, MOQ 200pcs, air freight vs sea freight costs, sample fees, and volume discounts."
   },
   "popup": {
-    "badge": "Factory Direct · Est. 2014",
+    "badge": "Sourcing Partner · Est. 2014",
     "heading": "Need Custom Hats for Your Brand?",
-    "sub": "Get a factory quote within 2 hours — no obligation, physical samples in 7 days.",
+    "sub": "Get an itemized quote within 2 hours — no obligation, physical samples in 7 days.",
     "whatsappBtn": "Chat on WhatsApp",
     "formBtn": "Send Inquiry",
-    "note": "100% factory direct · SGS verified · 300+ brands served"
+    "note": "Direct sourcing · Tested per order · Piece-by-piece QC"
   },
   "chat": {
     "cta": "Chat with Us",

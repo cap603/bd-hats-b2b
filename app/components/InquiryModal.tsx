@@ -172,46 +172,46 @@ export function InquiryModal() {
   const isJa = lang === "ja";
 
   const badgeText = isEs
-    ? "FÁBRICA DIRECTA ISO 9001 · MOQ 200 UDS"
+    ? "SOURCING DIRECTO · MOQ 200 UDS"
     : isDe
-    ? "ISO 9001 DIREKT AB WERK · MOQ 200 STK."
+    ? "DIREKTER SOURCING-PARTNER · MOQ 200 STK."
     : isFr
-    ? "USINE DIRECTE ISO 9001 · MOQ 200 PCS"
+    ? "PARTENAIRE SOURCING DIRECT · MOQ 200 PCS"
     : isPt
-    ? "DIRETO DA FÁBRICA ISO 9001 · MOQ 200 PEÇAS"
+    ? "PARCEIRO DE SOURCING DIRETO · MOQ 200 PEÇAS"
     : isIt
-    ? "DIRETTO DALLA FABBRICA ISO 9001 · MOQ 200 PZ"
+    ? "PARTNER SOURCING DIRETTO · MOQ 200 PZ"
     : isJa
-    ? "ISO 9001 認証工場直販 · MOQ 200個〜"
-    : "ISO 9001 FACTORY DIRECT · MOQ 200 PCS";
+    ? "厳選サプライチェーン提携 · MOQ 200個〜"
+    : "DIRECT SOURCING PARTNER · MOQ 200 PCS";
 
   const headingText = isEs
-    ? "Cotización Directa de Fábrica"
+    ? "Cotización Personalizada al Por Mayor"
     : isDe
-    ? "Sofortiges Fabrikangebot anfordern"
+    ? "Individuelles Großhandelsangebot anfordern"
     : isFr
-    ? "Demandez Votre Devis Direct d'Usine"
+    ? "Demandez Votre Devis Grossiste Personnalisé"
     : isPt
-    ? "Solicitar Orçamento Direto da Fábrica"
+    ? "Solicitar Orçamento Personalizado no Atacado"
     : isIt
-    ? "Richiedi Preventivo Diretto di Fabbrica"
+    ? "Richiedi Preventivo all'Ingrosso"
     : isJa
-    ? "工場直販・量産お見積り依頼"
-    : "Get Factory Direct Quote & Pricing";
+    ? "カスタム生産・卸売お見積り依頼"
+    : "Get Custom Wholesale Quote & Pricing";
 
   const subText = isEs
-    ? "Respuesta rápida <2h, 100+ máquinas Barudan, muestras físicas en 7 días."
+    ? "Respuesta rápida <2h, fábricas asociadas verificadas, muestras físicas en 7 días."
     : isDe
-    ? "2-Std.-Antwort, 100+ Barudan-Stickköpfe, physische Muster in 7 Tagen."
+    ? "2-Std.-Antwort, geprüfte Partnerfabriken, physische Muster in 7 Tagen."
     : isFr
-    ? "Réponse en 2h, 100+ têtes de broderie Barudan, échantillons en 7 jours."
+    ? "Réponse en 2h, usines partenaires vérifiées, échantillons en 7 jours."
     : isPt
-    ? "Resposta em 2h, 100+ máquinas Barudan, amostras físicas em 7 dias."
+    ? "Resposta em 2h, fábricas parceiras verificadas, amostras físicas em 7 dias."
     : isIt
-    ? "Risposta rapida <2h, 100+ macchine da ricamo Barudan, campioni in 7 giorni."
+    ? "Risposta rapida <2h, fabbriche partner verificate, campioni in 7 giorni."
     : isJa
-    ? "2時間以内見積り回答、百霊達高速刺繍機100台、7日間サンプル作成。"
-    : "2h rapid turnaround, 100+ Barudan embroidery heads, 7-day physical samples.";
+    ? "2時間以内見積り回答、厳選された提携工場、7日間サンプル作成。"
+    : "2h rapid turnaround, audited partner factories, 7-day physical samples.";
 
   const whatsappBtnText = isEs
     ? "Chatear por WhatsApp Directo"

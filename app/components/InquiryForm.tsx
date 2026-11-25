@@ -216,7 +216,7 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
           </div>
           <div className="flex items-start gap-2.5 text-xs text-slate-700">
             <span className="font-black text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded text-[10px]">04</span>
-            <span>{isEs ? "Producción en masa en 15–20 días, con bitácora multimedia (corte, bordado Barudan, inspección pieza a pieza y empaque)." : "Bulk production in 15–20 days, with milestone photo/video logs at fabric cutting, Barudan embroidery, piece-by-piece QC and packing."}</span>
+            <span>{isEs ? "Producción en masa en 15–20 días, con bitácora multimedia (corte, bordado de precisión, inspección pieza a pieza y empaque)." : "Bulk production in 15–20 days, with milestone photo/video logs at fabric cutting, precision embroidery, piece-by-piece QC and packing."}</span>
           </div>
         </div>
 
@@ -372,9 +372,9 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
           </div>
           <div className="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100">
             <div className="font-black text-emerald-950 mb-0.5">2,000+ Pcs</div>
-            <div className="text-[10px] font-bold text-emerald-700 uppercase mb-1">{isEs ? "Escala Contenedor FCL" : "Container Scale (Floor Rate)"}</div>
+            <div className="text-[10px] font-bold text-emerald-700 uppercase mb-1">{isEs ? "Escala Contenedor FCL" : "Container Scale (Volume Optimization)"}</div>
             <p className="text-slate-600 leading-snug">
-              {isEs ? "Líneas Barudan dedicadas, teñido Pantone en pieza, precio suelo desde $3.50 FOB." : "Dedicated Barudan lines, mill-run dyeing, container packaging from $3.50 FOB."}
+              {isEs ? "Líneas dedicadas, teñido Pantone en pieza, cotización optimizada por proyecto." : "Dedicated line allocation, custom Pantone mill dyeing, project-optimized container quotes."}
             </p>
           </div>
         </div>

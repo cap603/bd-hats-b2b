@@ -18,14 +18,14 @@
     "home": "Startseite"
   },
   "home": {
-    "topBar": "Chinas führender Hersteller von Premium-Kappen • Gegründet 2014",
-    "subtitle": "Supply Chain & Manufacturing Partner",
+    "topBar": "Kappen-Sourcing- und Qualitätspartner • Gegründet 2014",
+    "subtitle": "Sourcing- & Qualitätspartner",
     "banners": {
       "0": {
-        "label": "Direkt ab Werk · Baoding, China · SGS & BSCI auditiert",
+        "label": "Chinas Kappen-Cluster · Direkter Sourcing-Partner",
         "title": "Maßgefertigte Kappen nach Ihren Vorgaben, ab 200 Stück.",
-        "sub": "Gefertigt von Baoding Junyang in China. 100+ Barudan-Stickmaschinen · 5M+ Jahreskapazität. MOQ 200 Stk. · Muster in 7 Tagen · Serie in 15–20 Tagen · Angebot in 12 Std.",
-        "cta": "Detailliertes Fabrikangebot anfordern"
+        "sub": "Koordiniert von Baoding Junyang über geprüfte Partnerfabriken in China. Fokus auf mittlere bis gehobene Qualität. MOQ 200 Stk. · Muster in 7 Tagen · Serie in 15–20 Tagen · Angebot in 2 Std.",
+        "cta": "Detailliertes Angebot in 2h"
       },
       "1": {
         "label": "Direkte B2B-Fabriklösungen",
@@ -60,36 +60,36 @@
       "eu": "WESTEUROPA (25 %)"
     },
     "factory": {
-      "label": "Werkseigene Qualitätskontrolle",
+      "label": "Sourcing & Qualitätskontrolle",
       "heading": "Erleben Sie die Fertigung Ihrer Kappen — live.",
-      "p1": "Im Gegensatz zu reinen Handelsagenturen betreibt Baoding Junyang eigene spezialisierte Produktionslinien. Wir beschäftigen über 200 qualifizierte Schneider und betreiben mehr als 100 hochmoderne Barudan-Stickmaschinen.",
+      "p1": "Baoding Junyang ist Ihr Sourcing- und Qualitätspartner für Kopfbedeckungen. Wir stimmen Ihre Anforderungen mit geprüften Partnerfabriken in Chinas Kappen-Zentren ab und steuern Bemusterung, Produktion und Endkontrolle über einen zentralen Ansprechpartner.",
       "p2Pre": "Unser Transparenzversprechen:",
       "p2": "Wir senden Ihnen während der gesamten Produktion direkte Foto- und Video-Updates (Zuschnitt, Stickpräzision, Nahtstruktur, Dämpfen). Sie sind virtuell direkt in der Produktionshalle dabei.",
-      "qcStandard": "Werkseigene QS",
+      "qcStandard": "Eigenes QS-Team",
       "qcStandardDesc": "Prüfung auf jeder Produktionsstufe.",
       "samples": "Muster in 7 Tagen",
       "samplesDesc": "Schnelle Lieferung physischer Prototypen.",
-      "videoCta": "Fabrik-Videotour anfordern",
+      "videoCta": "Video-Updates anfordern",
       "videoTitle": "Produktionsvideo ansehen (2026)",
       "videoSub": "Automatisierte Mehrkopf-Stickmaschinen & professionelle Handarbeit."
     },
     "trust": {
-      "label": "Weltweit von Marken geschätzt",
+      "label": "Warum internationale Marken uns vertrauen",
       "heading": "Warum Marken auf BD Hats vertrauen",
-      "sub": "Wir sind der Hersteller hinter Hunderten von Streetwear-, Corporate- und Lifestyle-Marken weltweit.",
-      "brands": "300+",
-      "brandsLabel": "Betreute Marken weltweit",
-      "brandsDesc": "Von US-amerikanischen Streetwear-Startups bis zu europäischen Firmenkappen-Programmen.",
-      "caps": "5 Mio.+",
-      "capsLabel": "Jährlich produzierte Kappen",
-      "capsDesc": "Industrielle Großserienkapazität bei gleichbleibender Premium-Qualität.",
-      "retention": "98 %",
-      "retentionLabel": "Kundenbindungsrate",
-      "retentionDesc": "Unsere Qualität und Verlässlichkeit bringen Marken Saison für Saison zurück.",
-      "sgsSupplier": "SGS-geprüfter Lieferant",
-      "goldSupplier": "ISO 9001:2015 zertifizierte Betriebsstätte",
-      "certifications": "CE-zertifizierte Fertigwaren · REACH-, RoHS-, OEKO-TEX- & GRS-Prüfung auftragsbezogen",
-      "qcStandard": "Werkseigene Qualitätskontrolle"
+      "sub": "Wir sind der Sourcing- und Qualitätspartner hinter Streetwear-, Corporate- und Lifestyle-Kappenprogrammen in Nordamerika und Europa.",
+      "brands": "12+",
+      "brandsLabel": "Jahre im Kappenhandel",
+      "brandsDesc": "Sourcing und Export maßgefertigter Kappen seit 2014.",
+      "caps": "200",
+      "capsLabel": "MOQ pro Modell & Farbe",
+      "capsDesc": "Konstruktionen mittlerer bis hoher Qualität, von Streetwear bis Corporate.",
+      "retention": "2h",
+      "retentionLabel": "Schriftliches Festpreisangebot",
+      "retentionDesc": "FOB-Aufschlüsselung nach Material, Veredelung und Verpackung innerhalb von 2 Stunden.",
+      "sgsSupplier": "Geprüfte Partnerfabriken",
+      "goldSupplier": "Alibaba Trade Assurance Absicherung",
+      "certifications": "REACH, RoHS, OEKO-TEX & GRS Prüfung auftragsbezogen · SGS/BV Inspektion möglich",
+      "qcStandard": "Stück-für-Stück-Endkontrolle vor Versand"
     },
     "catalog": {
       "label": "Premium Kappen-Kategorien",
@@ -131,31 +131,28 @@
       "a0": "Unsere Standard-MOQ beträgt 200 Stück pro Modell/Farbe. Für Markeneinführungen und Design-Tests bieten wir flexible Einstiegsoptionen.",
       "q1": "Kann ich vor der Serienproduktion ein physisches Muster erhalten?",
       "a1": "Ja, absolut! Wir fertigen physische Vorproduktionsmuster, damit Sie Material, Passform und Stickqualität vor dem Serienstart prüfen können.",
-      "q2": "Fertigen Sie Kappen nach unseren individuellen Designs (OEM/ODM)?",
-      "a2": "Ja. Baoding Junyang ist ein vollwertiger OEM/ODM-Hersteller. Wir produzieren nach Skizzen, Tech Packs oder physischen Originalmustern.",
+      "q2": "Sind Sie eine Fabrik oder ein Handelsunternehmen?",
+      "a2": "Wir sind ein spezialisierter Sourcing- und Qualitätspartner für Kopfbedeckungen — offen gesagt ein Handelsunternehmen. Wir stimmen Ihr Projekt mit auditierten Partnerfabriken ab, steuern Muster und Fertigung und prüfen jedes Teil vor dem Versand. Ein Vertrag, ein Ansprechpartner, ein Qualitätsstandard.",
       "q3": "Wie lang sind die Standard-Produktions- und Lieferzeiten?",
       "a3": "Muster benötigen ca. 7 Tage. Die Serienproduktion dauert je nach Menge und Ausführung 15–20 Tage. Der weltweite Express-Luftversand benötigt 5–8 Tage."
     },
     "inquiry": {
-      "heading": "Fabrikangebot anfordern",
-      "sub": "Senden Sie uns Ihre Kappen-Anforderungen (Modelle, Logos, Stückzahlen). Unsere B2B-Spezialisten antworten innerhalb von 12 Stunden.",
-      "trustLabel": "100 % Direkt ab Werk · SGS-geprüft · 12 Jahre OEM/ODM",
-      "testimonialTitle": "Was unsere Markenpartner sagen",
-      "testimonials": [
+      "heading": "Individuelles Angebot anfordern",
+      "sub": "Senden Sie uns Ihre Kappen-Anforderungen (Modelle, Logos, Stückzahlen). Unsere B2B-Spezialisten antworten innerhalb von 2 Stunden.",
+      "trustLabel": "Direktes Sourcing · Prüfung auftragsbezogen · 12 Jahre im Kappenhandel",
+      "testimonialTitle": "Ihre Vorteile bei jeder Bestellung",
+      "commitments": [
         {
-          "quote": "Hochdichte 3D-Puff-Stickerei bereits beim ersten Muster perfekt umgesetzt. Tägliche Video-Updates aus Zuschnitt, Stickerei und Endbügeln: 2.000 Kappen in 18 Tagen geliefert.",
-          "name": "US-Streetwear-Marke (2.000 Stk. Auftrag)",
-          "role": "Lieferung in 18 Tagen · Durch Geheimhaltungsvereinbarung (NDA) geschützt"
+          "title": "Detailliertes Angebot in 2 Stunden",
+          "desc": "Transparente FOB-Kalkulation mit Materialaufschlüsselung (Stoff, Stick, Beschläge, Verpackung) für verlässlichen Kostenvergleich."
         },
         {
-          "quote": "Direkte Fabrikpreise mit lückenloser Stücklisten-Transparenz. Unser 5.000-Stück-Auftrag bestand alle strengen Stück-für-Stück Qualitätsprüfungen ohne Ausschuss.",
-          "name": "Europäischer Berufsbekleidungs-Importeur (5.000 Stk.)",
-          "role": "Lückenlose Qualitätsprüfung · Durch Geheimhaltungsvereinbarung (NDA) geschützt"
+          "title": "Stück-für-Stück-Qualitätskontrolle",
+          "desc": "Unser eigenes Prüfteam kontrolliert jede Kappe vor dem Versand: Stickpräzision, Nähte, Maße und Finish. Drittanbieter-Inspektionen möglich."
         },
         {
-          "quote": "Effiziente technische Abstimmung via WhatsApp. Aus dem Blanko-Tech-Pack entstanden innerhalb von exakt 7 Tagen freigegebene Vorproduktionsmuster.",
-          "name": "Australisches Lifestyle-Label (1.500 Stk. Cordkappen)",
-          "role": "Individuelle Weblabel & Beschläge · Durch NDA geschützt"
+          "title": "Zahlungssicherheit",
+          "desc": "Alibaba Trade Assurance oder Treuhandabwicklung für Erstbestellungen, mit Foto- und Video-Updates bei jedem Produktionsschritt."
         }
       ]
     },
@@ -175,7 +172,11 @@
       "8": { "title": "Corporate Uniform Headwear", "desc": "Durable, high-repeat corporate identity programs and company uniform cap bulk orders.", "tag": "Uniforms" },
       "9": { "title": "Custom Bucket Hats", "desc": "Wide-brim festival and outdoor bucket hats, sun shading fabrics, chin cords and reversible builds.", "tag": "Outdoor" },
       "10": { "title": "Container Bulk Production", "desc": "20GP and 40HQ container load manufacturing for international distributors and importers.", "tag": "10,000+ Scale" },
-      "11": { "title": "Tiered Wholesale Pricing", "desc": "Transparent FOB volume tiers from $5.20/pc at MOQ 200; container-scale floor from $3.50/pc. Cost breakdowns included.", "tag": "Transparent Rates" }
+      "11": {
+        "title": "Tiered Wholesale Pricing",
+        "desc": "Transparent FOB volume tiers from $4.50/pc at MOQ 200; container-scale programs quoted per project. Cost breakdowns included.",
+        "tag": "Transparent Rates"
+      }
     },
     "sectorsBadge": "Buyer Sourcing Programs",
     "sectorsTitle": "Tailored Manufacturing Programs by Buyer Segment",
@@ -226,7 +227,7 @@
     "milestone": {
       "title": "Milestone Photo & Video Proof Protocol",
       "updates": "Updates Every 2 Days",
-      "desc": "Full production transparency: ① Fabric roll cutting & color check ② Barudan embroidery live video ③ 4-needle sweatband assembly ④ Piece-by-piece final inspection & export carton packing.",
+      "desc": "Full production transparency: ① Fabric roll cutting & color check ② Live embroidery inspection video ③ 4-needle sweatband assembly ④ Piece-by-piece final inspection & export carton packing.",
       "cta": "Inquire with Eileen",
       "samplesBulk": "Standard 7-Day Samples · 15-20 Days Bulk"
     },
@@ -329,7 +330,7 @@
     "sendAnother": "Weitere Anfrage senden"
   },
   "footer": {
-    "about": "Baoding Junyang Hat Manufacturing Co., Ltd. ist eine führende Kappenfabrik, spezialisiert auf OEM/ODM-Stickerei von Baseballkappen, Beanies und Trucker-Hüten seit 2014.",
+    "about": "Baoding Junyang Import & Export Trading Co., Ltd. ist ein spezialisierter Sourcing- und Qualitätspartner für hochwertige Kappen, Beanies und Trucker Hats seit 2014.",
     "navigation": "Navigation",
     "products": "Produkte",
     "aboutLink": "Über uns",
@@ -341,7 +342,37 @@
     "whatsapp": "WhatsApp: +86 15933930830",
     "email": "E-Mail: admin@bdjunyang.com",
     "office": "Standort: Baoding, Hebei, China",
-    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Alle Rechte vorbehalten."
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "copyright": "© 2026 Baoding Junyang Import & Export Trading Co., Ltd. Alle Rechte vorbehalten."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "guide": "B2B-Einkaufsführer",
+    "materials": "Materialien & Stoffe",
+    "pricing": "Preise & Versand",
+    "products": "Produkte"
+  },
+  "meta": {
+    "homeTitle": "BD Hats | Kappen Sourcing-Partner & B2B-Großhandel",
+    "homeDesc": "Hochwertige individuelle Kappen, gesteuert mit Qualitätskontrolle durch Baoding Junyang seit 2014. Individuelle Stickerei, MOQ 200 Stk., 7-Tage-Muster, Angebot in 2h.",
+    "aboutTitle": "Über BD Hats | Kappen Sourcing-Partner in Baoding, China",
+    "aboutDesc": "Baoding Junyang Import & Export Trading Co., Ltd. — 12 Jahre Erfahrung im Kappen-Sourcing und Export, geprüfte Partnerfabriken und Stück-für-Stück Qualitätskontrolle.",
+    "guideTitle": "B2B-Leitfaden Kappenherstellung | Großhandel Kappen aus China beschaffen",
+    "guideDesc": "Kompletter B2B-Ratgeber: Auswahl der richtigen Partnerfabriken, Stickereiverfahren im Vergleich, MOQ-Verhandlungen, Qualitätskontrolle und Logistik.",
+    "materialsTitle": "Kappen-Materialführer | Baumwolle, Wolle, Polyester & mehr | BD Hats",
+    "materialsDesc": "Vollständiger Leitfaden für Kappen-Materialien: Baumwolltwill, gebürstete Baumwolle, Wolle, Polyester, Nylon, Canvas. Panel-Konstruktionen für Ihren Großauftrag.",
+    "pricingTitle": "Kappen-Preise, MOQ & Versand | Kostenaufschlüsselung Großhandel | BD Hats",
+    "pricingDesc": "Transparenter Preisleitfaden: Was kosten individuelle Kappen, FOB vs. CIF, MOQ 200 Stk., Luft- vs. Seefrachtkosten und Mengenrabatte."
+  },
+  "popup": {
+    "badge": "Sourcing-Partner · Gegr. 2014",
+    "heading": "Individuelle Kappen für Ihre Marke?",
+    "sub": "Erhalten Sie ein aufgeschlüsseltes Angebot innerhalb von 2 Stunden — unverbindlich, physische Muster in 7 Tagen.",
+    "whatsappBtn": "Auf WhatsApp chatten",
+    "formBtn": "Anfrage senden",
+    "note": "Direktes Sourcing · Prüfung auftragsbezogen · Stück-für-Stück QS"
   },
   "breadcrumb": {
     "home": "Startseite",

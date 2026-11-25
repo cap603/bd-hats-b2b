@@ -18,14 +18,14 @@
     "home": "Home"
   },
   "home": {
-    "topBar": "Principale Produttore di Cappellini Premium in Cina • Fondato nel 2014",
-    "subtitle": "Partner di Produzione e Supply Chain",
+    "topBar": "Partner di Sourcing e Qualità per Cappellini • Fondato nel 2014",
+    "subtitle": "Partner di Sourcing & Controllo Qualità",
     "banners": {
       "0": {
-        "label": "Soluzioni B2B Dirette di Fabbrica",
+        "label": "Distretto Manifatturiero in Cina · Sourcing Diretto",
         "title": "Produzione di Cappellini di Livello Mondiale",
-        "sub": "Oltre 100 macchine da ricamo Barudan. 200+ artigiani specializzati. Ingrosso diretto di fabbrica dalla Cina.",
-        "cta": "Richiedi Prezzi di Fabbrica"
+        "sub": "Coordinato da Baoding Junyang tramite fabbriche partner verificate in Cina. Confezioni di qualità medio-alta. MOQ 200 pz · Campione in 7 giorni · Produzione 15–20 giorni · Preventivo in 2h.",
+        "cta": "Preventivo Dettagliato in 2h"
       },
       "1": {
         "label": "Soluzioni B2B Dirette di Fabbrica",
@@ -60,36 +60,36 @@
       "eu": "EUROPA OCCIDENTALE (25%)"
     },
     "factory": {
-      "label": "Controllo Qualità Diretto",
+      "label": "Sourcing & Controllo Qualità",
       "heading": "Segui la Produzione dei Tuoi Cappellini — dal Vivo.",
-      "p1": "A differenza dei semplici intermediari commerciali, Baoding Junyang gestisce proprie linee di produzione dedicate. Impieghiamo oltre 200 sarti qualificati e operiamo con oltre 100 macchine da ricamo Barudan all'avanguardia.",
+      "p1": "Baoding Junyang è il vostro partner di sourcing e controllo qualità per cappellini. Selezioniamo le migliori fabbriche partner verificate in Cina, gestendo campionatura, produzione e collaudo tramite un unico referente.",
       "p2Pre": "La Nostra Politica di Trasparenza:",
       "p2": "Inviamo aggiornamenti fotografici e video continui (taglio tessuti, precisione di ricamo, cucitura dei pannelli, stiratura a vapore) durante l'intera produzione. È come essere direttamente nei nostri reparti.",
-      "qcStandard": "Controllo Qualità Interno",
+      "qcStandard": "Controllo Qualità Dedicato",
       "qcStandardDesc": "Ispezione accurata ad ogni fase produttiva.",
       "samples": "Campioni in 7 Giorni",
       "samplesDesc": "Spedizione rapida di prototipi fisici.",
-      "videoCta": "Richiedi Video Tour della Fabbrica",
+      "videoCta": "Richiedi Aggiornamenti Video",
       "videoTitle": "Guarda il Video di Produzione (2026)",
       "videoSub": "Macchine da ricamo automatizzate e cucitura artigianale professionale."
     },
     "trust": {
       "label": "Scelto da Brand Internazionali",
       "heading": "Perché i Marchi Scelgono BD Hats",
-      "sub": "Siamo la fabbrica dietro centinaia di marchi di streetwear, moda e abbigliamento aziendale in tutto il mondo.",
-      "brands": "300+",
-      "brandsLabel": "Marchi Serviti nel Mondo",
-      "brandsDesc": "Dalle startup streetwear americane ai programmi di uniformi aziendali europei.",
-      "caps": "5M+",
-      "capsLabel": "Cappellini Prodotti all'Anno",
-      "capsDesc": "Capacità industriale su larga scala con costante qualità di livello premium.",
-      "retention": "98%",
-      "retentionLabel": "Tasso di Fedeltà dei Clienti",
-      "retentionDesc": "La nostra puntualità e affidabilità tecnica convincono i brand a rinnovare gli ordini stagione dopo stagione.",
-      "sgsSupplier": "Fornitore Verificato SGS",
-      "goldSupplier": "Stabilimento Certificato ISO 9001:2015",
-      "certifications": "Certificazioni CE · REACH · RoHS",
-      "qcStandard": "Controllo Qualità Integrato"
+      "sub": "Siamo il partner di sourcing e qualità dietro a collezioni streetwear, aziendali e lifestyle in Nord America ed Europa.",
+      "brands": "12+",
+      "brandsLabel": "Anni nel Commercio di Cappellini",
+      "brandsDesc": "Sourcing ed esportazione di cappellini personalizzati dal 2014.",
+      "caps": "200",
+      "capsLabel": "MOQ per Modello e Colore",
+      "capsDesc": "Costruzioni di qualità medio-alta, dallo streetwear alle forniture aziendali.",
+      "retention": "2h",
+      "retentionLabel": "Preventivo Scritto e Dettagliato",
+      "retentionDesc": "Calcolo FOB voce per voce (tessuto, ricamo, minuterie, imballo) entro 2 ore.",
+      "sgsSupplier": "Rete di Fabbriche Verificate",
+      "goldSupplier": "Protezione Alibaba Trade Assurance",
+      "certifications": "Test REACH, RoHS, OEKO-TEX e GRS su richiesta · Ispezioni SGS/BV disponibili",
+      "qcStandard": "Controllo Qualità Pezzo per Pezzo"
     },
     "catalog": {
       "label": "Categorie di Cappellini Premium",
@@ -131,31 +131,28 @@
       "a0": "Il nostro MOQ standard è di 200 pezzi per modello/colore. Accettiamo anche piccoli ordini di prova per il lancio di nuovi brand.",
       "q1": "Posso ricevere un campione prima della produzione in serie?",
       "a1": "Sì, assolutamente! Realizziamo campioni fisici di pre-produzione completi affinché possiate verificare vestibilità, tessuti e ricami prima del lotto.",
-      "q2": "Producete cappellini basati sui nostri design esclusivi (OEM/ODM)?",
-      "a2": "Sì. Baoding Junyang è una fabbrica completa OEM/ODM. Sviluppiamo su disegni, schede tecniche o campioni fisici originali.",
+      "q2": "Siete una fabbrica o una società commerciale?",
+      "a2": "Siamo un partner di sourcing e controllo qualità — apertamente una società commerciale. Selezioniamo fabbriche partner auditate in base alle vostre specifiche, gestiamo campionatura e produzione e controlliamo ogni pezzo prima della spedizione. Un solo contratto, un unico interlocutore, uno standard di qualità.",
       "q3": "Quali sono i tempi medi di produzione e spedizione?",
       "a3": "I campioni richiedono circa 7 giorni. La produzione in serie richiede 15-20 giorni in base ai volumi. La spedizione aerea espressa globale richiede 5-8 giorni."
     },
     "inquiry": {
-      "heading": "Richiedi Preventivo di Fabbrica",
-      "sub": "Inviaci le tue specifiche (modelli, loghi, quantità). I nostri specialisti B2B risponderanno entro 12 ore.",
-      "trustLabel": "100% Diretto dalla Fabbrica · Verificato SGS · 12 Anni OEM/ODM",
-      "testimonialTitle": "Cosa Dicono i Nostri Partner Commerciali",
-      "testimonials": [
+      "heading": "Richiedi Preventivo all'Ingrosso",
+      "sub": "Inviaci le tue specifiche (modelli, loghi, quantità). I nostri specialisti B2B risponderanno entro 2 ore.",
+      "trustLabel": "Sourcing Diretto · Test per Ordine · 12 Anni di Esperienza",
+      "testimonialTitle": "Le Nostre Garanzie su Ogni Ordine",
+      "commitments": [
         {
-          "quote": "Hanno azzeccato il nostro ricamo 3D in rilievo già al primo campione. La fabbrica invia foto ad ogni fase: ti senti davvero dentro la linea di produzione.",
-          "name": "Marcus T.",
-          "role": "Proprietario Brand Streetwear, USA"
+          "title": "Preventivo Dettagliato in 2 Ore",
+          "desc": "Calcolo FOB voce per voce con distinta base completa (tessuto, decorazione, minuterie, imballo) per un confronto trasparente."
         },
         {
-          "quote": "Un MOQ di 200 pezzi con questa qualità sartoriale è raro in Europa. Il nostro primo ordine di 2.000 cappellini è partito in 18 giorni senza difetti.",
-          "name": "Sophie L.",
-          "role": "Importatrice di Abbigliamento, Germania"
+          "title": "Controllo Qualità Pezzo per Pezzo",
+          "desc": "Il nostro team di ispezione verifica ogni cappellino prima della spedizione: ricami, cuciture, misure e finiture. Ispezioni terze parti su richiesta."
         },
         {
-          "quote": "Comunicazione velocissima su WhatsApp. I campioni fisici sono arrivati in esattamente 7 giorni, proprio come promesso.",
-          "name": "Daniel R.",
-          "role": "Buyer Catena Negozi, Australia"
+          "title": "Protezione dei Pagamenti",
+          "desc": "Alibaba Trade Assurance o conto escrow per i primi ordini, con aggiornamenti fotografici e video a ogni fase."
         }
       ]
     },
@@ -226,7 +223,7 @@
     "milestone": {
       "title": "Diario Multimediale di Produzione in Diretta",
       "updates": "Aggiornamenti ogni 2 giorni",
-      "desc": "Monitoraggio trasparente in ogni fase: ① Campionatura e taglio del tessuto ② Ricamo su macchina Barudan ③ Montaggio della fascia ④ Ispezione pezzo per pezzo e imballaggio.",
+      "desc": "Monitoraggio trasparente in ogni fase: ① Campionatura e taglio del tessuto ② Video di ispezione ricamo in diretta ③ Montaggio della fascia ④ Ispezione pezzo per pezzo e imballaggio.",
       "cta": "Contatta Eileen",
       "samplesBulk": "Campioni in 7 giorni · Serie in 15-20 giorni"
     },
@@ -329,7 +326,7 @@
     "sendAnother": "Invia un'altra richiesta"
   },
   "footer": {
-    "about": "Baoding Junyang Hat Manufacturing Co., Ltd. è una manifattura industriale specializzata nel ricamo OEM/ODM di cappellini da baseball, berretti in maglia e cappelli trucker dal 2014.",
+    "about": "Baoding Junyang Import & Export Trading Co., Ltd. è un partner di sourcing e controllo qualità specializzato in cappellini di qualità medio-alta, beanies e trucker dal 2014.",
     "navigation": "Navigazione",
     "products": "Prodotti",
     "aboutLink": "Chi Siamo",
@@ -340,8 +337,10 @@
     "contact": "Contatti",
     "whatsapp": "WhatsApp: +86 15933930830",
     "email": "Email: admin@bdjunyang.com",
-    "office": "Stabilimento: Baoding, Hebei, Cina",
-    "copyright": "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Tutti i diritti riservati."
+    "office": "Ufficio: Baoding, Hebei, Cina",
+    "privacy": "Informativa sulla Privacy",
+    "terms": "Termini di Servizio",
+    "copyright": "© 2026 Baoding Junyang Import & Export Trading Co., Ltd. Tutti i diritti riservati."
   },
   "breadcrumb": {
     "home": "Home",
