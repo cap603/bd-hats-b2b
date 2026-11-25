@@ -442,6 +442,57 @@ export default function GuidePage() {
             </Link>
 
             <Link
+              href={`/${lang}/top-hat-manufacturers-in-china`}
+              className="border border-gray-200 rounded-2xl p-5 hover:border-black hover:shadow-md transition bg-gray-50/50 block"
+            >
+              <span className="text-xs font-black text-rose-600 uppercase tracking-wider block mb-1">
+                {lang === "es" ? "Directorio Industrial" : "Cluster Benchmark"}
+              </span>
+              <h3 className="font-bold text-gray-900 mb-2">
+                {lang === "es" ? "Top Fabricantes de Gorras en China" : "Top Hat Manufacturers in China"}
+              </h3>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                {lang === "es"
+                  ? "Comparativa de clústeres en Hebei, Guangdong y Zhejiang, MOQ y auditoría de calidad."
+                  : "Industrial belt comparison (Hebei, Guangdong, Zhejiang), MOQ benchmarks, and factory audit SOP."}
+              </p>
+            </Link>
+
+            <Link
+              href={`/${lang}/guide/custom-hat-logo-size-placement-guide`}
+              className="border border-gray-200 rounded-2xl p-5 hover:border-black hover:shadow-md transition bg-gray-50/50 block"
+            >
+              <span className="text-xs font-black text-blue-600 uppercase tracking-wider block mb-1">
+                {lang === "es" ? "Especificaciones de Logo" : "Logo Sizing Specs"}
+              </span>
+              <h3 className="font-bold text-gray-900 mb-2">
+                {lang === "es" ? "Guía de Tamaños y Ubicación de Logo" : "Hat Logo Size & Placement Guide"}
+              </h3>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                {lang === "es"
+                  ? "Medidas máximas en frontales lisos, laterales y cierres para snapback, trucker y beanies."
+                  : "Standard plain cap logo front size limits, embroidery fields, and vector decal placement rules."}
+              </p>
+            </Link>
+
+            <Link
+              href={`/${lang}/guide/importing-custom-hats-from-china`}
+              className="border border-gray-200 rounded-2xl p-5 hover:border-black hover:shadow-md transition bg-gray-50/50 block"
+            >
+              <span className="text-xs font-black text-emerald-600 uppercase tracking-wider block mb-1">
+                {lang === "es" ? "Aduanas y Fletes" : "Logistics & Tariffs"}
+              </span>
+              <h3 className="font-bold text-gray-900 mb-2">
+                {lang === "es" ? "Cómo Importar Gorras de China" : "Importing Custom Hats from China"}
+              </h3>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                {lang === "es"
+                  ? "Aranceles código HS 6505.00, tiempos de transporte aéreo/marítimo y condiciones FOB vs DDP."
+                  : "US tariffs, HS Code 6505.00 regulations, ocean vs air transit times, and FOB vs DDP Incoterms."}
+              </p>
+            </Link>
+
+            <Link
               href={`/${lang}/pricing`}
               className="border border-gray-200 rounded-2xl p-5 hover:border-black hover:shadow-md transition bg-gray-50/50 block"
             >

@@ -36,6 +36,9 @@
 
 ## B2B Technical Decision & Material Comparison Guides
 
+- [Top Custom Hat Manufacturers in China 2026](https://bdjunyang.com/en/top-hat-manufacturers-in-china): Sourcing benchmark of China headwear industrial belts (Hebei, Guangdong, Zhejiang), MOQ comparison, and factory audit protocol.
+- [Custom Hat Logo Size & Placement Guide](https://bdjunyang.com/en/guide/custom-hat-logo-size-placement-guide): Plain cap logo front size standards, embroidery dimensions, side panel placements, and vector decal tolerances.
+- [Importing Custom Hats from China Guide](https://bdjunyang.com/en/guide/importing-custom-hats-from-china): US tariffs, HS Code 6505.00 regulations, ocean vs air transit times, and FOB vs DDP trade terms.
 - [2026 Custom Hat Manufacturing Cost Index](https://bdjunyang.com/en/custom-hat-cost-index-2026): Factory FOB pricing benchmarks ($3.50 - $7.80), BOM cost breakdowns, volume scaling curves, and Barudan embroidery technique surcharges.
 - [B2B Export Carton & CBM Freight Calculator](https://bdjunyang.com/en/tools/carton-calculator): Master export carton calculations (60x45x40cm, 100 pcs/ctn), gross weight, and 20GP/40HQ ocean freight container load estimates.
 - [Merino Wool vs Acrylic Beanies B2B Guide](https://bdjunyang.com/en/compare/merino-wool-vs-acrylic-beanies): Technical cost comparison, micron count, pilling resistance, and retail tier recommendations.
