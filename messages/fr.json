@@ -156,10 +156,10 @@
         }
       ]
     },
-    "q4Schedule": "Active Q4 2026 Production Schedule",
+    "q4Schedule": "2026 Production & Sourcing Schedule Active",
     "programsBadge": "OEM / ODM Lines",
     "programsTitle": "Specialized B2B Production Programs",
-    "programsSub": "Direct-to-factory contract programs for brand founders, distributors, and bulk importers. MOQ 200 pcs.",
+    "programsSub": "End-to-end custom contract programs for brand founders, distributors, and bulk importers. MOQ 200 pcs.",
     "programs": {
       "0": { "title": "Custom 5-Panel Caps", "desc": "Streetwear & camper profiles, lightweight cotton-nylon blends, flat brim and brass closures.", "tag": "High Demand" },
       "1": { "title": "OEM Hat Manufacturing", "desc": "Complete custom headwear contract manufacturing. Full tech pack digitizing and brand scaling.", "tag": "Full Service" },
@@ -176,7 +176,7 @@
     },
     "sectorsBadge": "Buyer Sourcing Programs",
     "sectorsTitle": "Tailored Manufacturing Programs by Buyer Segment",
-    "sectorsSub": "Engineered factory-direct supply programs matching the exact specifications and volume curves of global procurement sectors.",
+    "sectorsSub": "Tailored headwear supply programs matching the exact specifications and volume curves of global procurement sectors.",
     "sectors": {
       "0": { "tag": "Fashion & Drops", "moq": "MOQ 200", "title": "Streetwear & Apparel Labels", "desc": "5-panel campers, vintage enzyme-washed dad hats, high-density 3D puff embroidery, and custom branded damask inner taping.", "foot": "100% Sample Refund ≥500" },
       "1": { "tag": "Uniform & Workwear", "moq": "500 – 5,000+", "title": "Corporate & Uniform Programs", "desc": "Heavy-duty structured 6-panel twill caps, high colorfastness, reflective piping, and piece-by-piece pre-shipment QC inspection.", "foot": "Itemized BOM Quotes" },

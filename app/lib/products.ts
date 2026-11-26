@@ -78,9 +78,9 @@ export const HATS: Product[] = [
   { 
     id: "custom-3d-embroidered-5-panel-gorras", 
     name: "Custom 3D Embroidered 5 Panel Gorras", 
-    desc: "Top performing factory-direct 5-panel cap featuring high-definition 3D embroidered logos. Professional sports quality.",
-    fullDesc: "Our signature factory-engineered 5-panel silhouette, built with premium 108*56 heavy cotton twill for intricate 3D puff embroidery. The seamless front panel provides a large, clean canvas for bold branding without seam distortion.",
-    price: "$4.20 - $6.20",
+    desc: "Top performing custom 5-panel cap featuring high-definition 3D embroidered logos. Professional sports quality.",
+    fullDesc: "Our signature precision-engineered 5-panel silhouette, built with premium 108*56 heavy cotton twill for intricate 3D puff embroidery. The seamless front panel provides a large, clean canvas for bold branding without seam distortion.",
+    price: "$4.50 - $6.20",
     moq: 200,
     img: "/images/products/custom-3d-embroidered-5-panel-gorras.webp",
     badge: "bestseller",
