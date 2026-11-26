@@ -36,7 +36,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       readTime: "7 min read",
       published: "2026-11-24",
       updated: "2026-11-24",
-      heroBadge: "Factory Technical Guide · Physical Proof Protocol",
+      heroBadge: "B2B Technical Guide · Physical Proof Protocol",
       title: "Custom Hat Sample Approval: From Proto to Pre-Production Sign-Off",
       subtitle:
         "How professional headwear brands review, measure, and approve custom cap samples before authorizing bulk production. Step-by-step checklist from stitch-out density to crown symmetry.",
@@ -51,7 +51,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         "Sample fee policy: 1–5 sample caps run at $50–$80 USD; 100% of the sample cost is credited back on orders ≥500 pcs."
       ],
       tableTitle: "Pre-Production Sample (PPS) vs Bulk Production Standards",
-      tableHead: ["Quality Parameter", "Pre-Production Sample Spec", "Mass Production Bulk Standard", "Factory Tolerance"],
+      tableHead: ["Quality Parameter", "Pre-Production Sample Spec", "Mass Production Bulk Standard", "Production Tolerance"],
       tableRows: [
         ["Crown Circumference", "58.0 cm (Medium adult baseline)", "58.0 cm across 100% of carton lots", "±0.5 cm"],
         ["Visor Projection Length", "7.0 cm pre-curved / flat", "7.0 cm matching approved PPS board die", "±0.2 cm"],
@@ -63,14 +63,14 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         {
           heading: "Step 1: Vector Artwork Review & Embroidery Digitizing",
           paragraphs: [
-            "At our Baoding facility, sample development begins in our computer-aided pattern department. We review your vector artwork (Adobe Illustrator .AI or vector PDF) at true 1:1 scale to verify line thickness and stroke spacing. For 3D puff embroidery, strokes must maintain a minimum 5mm width to accommodate internal high-density EVA foam without collapsing.",
-            "Our digitizing engineers generate DST machine files specifically calibrated for our Japanese Barudan embroidery equipment. We program custom underlay stitching that anchors the fabric before the top satin column executes, eliminating fabric puckering around high-density embroidery elements."
+            "Sample development begins in our in-house pattern and digitizing department. We review your vector artwork (Adobe Illustrator .AI or vector PDF) at true 1:1 scale to verify line thickness and stroke spacing. For 3D puff embroidery, strokes must maintain a minimum 5mm width to accommodate internal high-density EVA foam without collapsing.",
+            "Our digitizing engineers generate DST machine files specifically calibrated for Japanese Barudan embroidery equipment — the machine standard we verify at every partner factory. We program custom underlay stitching that anchors the fabric before the top satin column executes, eliminating fabric puckering around high-density embroidery elements."
           ]
         },
         {
           heading: "Step 2: The 7-Day Physical Prototype Build",
           paragraphs: [
-            "While trading companies rely on outsourced sample rooms that take 3–4 weeks, our factory operates a dedicated 12-person rapid prototyping sample room. We pull exact fabric rolls from our 48+ stocked chino twill, brushed cotton, and performance nylon inventories.",
+            "While opaque intermediaries rely on outsourced sample rooms that take 3–4 weeks, our in-house rapid prototyping team of 12 specialists builds your physical sample in 7 business days. We pull exact fabric rolls from 48+ stocked chino twill, brushed cotton, and performance nylon inventories.",
             "Within 7 business days, the physical sample is assembled: crown panels cut, embroidery stitched, buckram front fused, visor board molded, interior sweatband attached, and closure hardware riveted. The cap then undergoes steam molding over custom aluminum head blocks to fix the silhouette."
           ]
         },
@@ -93,7 +93,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         },
         {
           q: "How do you ensure bulk production matches the approved sample exactly?",
-          a: "We produce duplicate 'golden samples' during the sampling stage. One is dispatched to you for sign-off, and the second remains locked in our quality control office. Our floor line managers cross-check carton lots against this master sample every 500 units."
+          a: "We produce duplicate 'golden samples' during the sampling stage. One is dispatched to you for sign-off, and the second stays with our in-house QC team, which cross-checks every production carton lot against this master sample every 500 units."
         }
       ],
       interlinks: [
@@ -122,13 +122,13 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         "Confirm essential QC equipment: industrial steam pressing blocks and continuous tunnel needle detectors are non-negotiable.",
         "Demand payment security: reliable factories accept Alibaba Trade Assurance escrow or LC terms for first-time orders."
       ],
-      tableTitle: "Direct Factory vs Trading Intermediary Comparison",
-      tableHead: ["Audit Dimension", "Direct Factory (Baoding Junyang)", "Trading Agent / Sourcing Company"],
+      tableTitle: "Audited Sourcing Partner vs Opaque Trading Agent",
+      tableHead: ["Audit Dimension", "Audited Sourcing Partner (Baoding Junyang)", "Opaque Trading Agent"],
       tableRows: [
-        ["Pricing Structure", "Direct factory FOB floor rates ($3.50 – $7.00/pc)", "30% – 50% commission markup baked into unit price"],
-        ["Machine Transparency", "100+ Barudan machines visible via live video tour", "Cannot display live floor operations; relies on stock photos"],
-        ["Sample Lead Time", "7 business days via dedicated sample room", "15–25 business days due to third-party subcontracting"],
-        ["Technical Resolution", "Direct access to master pattern makers and digitizers", "Account managers relay messages with technical friction"],
+        ["Pricing Structure", "Direct supply FOB rates ($3.50 – $7.00/pc)", "30% – 50% commission markup baked into unit price"],
+        ["Machine & Floor Transparency", "Partner factory floors open to live video audits and on-site visits", "Cannot display live floor operations; relies on stock photos"],
+        ["Sample Lead Time", "7 business days via in-house sampling team", "15–25 business days due to third-party subcontracting"],
+        ["Technical Resolution", "Direct access to in-house pattern makers and digitizing engineers", "Account managers relay messages with technical friction"],
         ["Quality Control", "Piece-by-piece inspection + tunnel metal detection", "Random batch sampling or blind dropshipping without local QC"],
         ["Payment Terms", "Alibaba Trade Assurance, T/T with milestones, L/C", "Often requests high upfront wire transfers without escrow"]
       ],
@@ -137,14 +137,14 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "1. Verify Ownership of Industrial Machinery & Factory Floor",
           paragraphs: [
             "In China's headwear manufacturing clusters (principally Baoding in Hebei province and Dongguan in Guangdong), thousands of trading companies market themselves as 'direct manufacturers.' The simplest way to verify true manufacturing status is to request a live video tour during local business hours (09:00–18:00 UTC+8).",
-            "At our Baoding Junyang plant, we openly display our workshop running 100+ multi-head Japanese Barudan embroidery machines. Watch for computerized embroidery tension, fabric bolt cutting tables, and specialized steam-shaping crown molds. Trading companies will invent excuses to decline live walk-throughs."
+            "As a sourcing partner, we hold our entire network to this standard: vetted partner factories run multi-head Japanese Barudan or Tajima embroidery lines, and we open them to live video walk-throughs during local business hours (09:00–18:00 UTC+8). Watch for computerized embroidery tension, fabric bolt cutting tables, and specialized steam-shaping crown molds. Intermediaries without real factory access will invent excuses to decline live walk-throughs."
           ]
         },
         {
           heading: "2. Audit Third-Party Certifications & Social Compliance",
           paragraphs: [
             "Legitimate manufacturers undergo annual on-site audits by accredited inspection bureaus such as SGS, Bureau Veritas, or TÜV Rheinland. Ask for their official audit report PDF and cross-reference the registered corporate name and facility address.",
-            "If your brand retails in the US or Europe, ensure the manufacturer complies with social and environmental standards. We maintain BSCI social compliance and ISO 9001:2015 quality management systems, guaranteeing ethical labor standards and consistent procedural oversight."
+            "If your brand retails in the US or Europe, ensure the manufacturer complies with social and environmental standards. We require BSCI-level social compliance and ISO 9001:2015 quality management from every partner facility in our network, guaranteeing ethical labor standards and consistent procedural oversight."
           ]
         },
         {
@@ -172,7 +172,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       interlinks: [
         { href: "/top-hat-manufacturers-in-china", label: "Top Hat Manufacturers in China", desc: "Comparative analysis of regional manufacturing hubs." },
         { href: "/guide", label: "B2B Hat Manufacturing Guide", desc: "Comprehensive sourcing and quality control overview." },
-        { href: "/pricing", label: "Factory FOB Price Tiers", desc: "Transparent volume discount curves from 200 pieces." }
+        { href: "/pricing", label: "FOB Price Tiers", desc: "Transparent volume discount curves from 200 pieces." }
       ]
     },
     "custom-hat-moq-guide": {
@@ -209,7 +209,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "The Technical Reason Behind the 200-Piece Factory MOQ",
           paragraphs: [
             "Many emerging brand founders ask: 'If you have computerized Barudan machines, why can't you just embroider 20 caps for me?' The answer lies in the physics of textile manufacturing and assembly line balancing.",
-            "Our automated multi-head Barudan machines run up to 20 heads simultaneously. Setting up a new custom run requires threading up to 15 needle positions per head with your designated Pantone thread spools, calibrating bobbin tension, and stitching sacrificial fabric strike-offs to balance thread loft. Running fewer than 200 units means setup time exceeds actual stitching time, resulting in unviable factory labor costs."
+            "Multi-head Barudan embroidery machines run up to 20 heads simultaneously. Setting up a new custom run requires threading up to 15 needle positions per head with your designated Pantone thread spools, calibrating bobbin tension, and stitching sacrificial fabric strike-offs to balance thread loft. Running fewer than 200 units means setup time exceeds actual stitching time, resulting in unviable factory labor costs."
           ]
         },
         {
@@ -243,7 +243,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       ],
       interlinks: [
         { href: "/custom-hat-cost-index-2026", label: "2026 Hat Cost Index", desc: "Complete BOM and labor cost breakdowns." },
-        { href: "/pricing", label: "Factory Wholesale Pricing", desc: "Detailed volume discounts and FOB terms." },
+        { href: "/pricing", label: "Wholesale Pricing", desc: "Detailed volume discounts and FOB terms." },
         { href: "/wholesale-blank-caps-supplier", label: "Wholesale Blank Caps", desc: "Stock blank caps available with low order minimums." }
       ]
     },
@@ -280,7 +280,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "1. US Customs Classification: HTS Code 6505.00",
           paragraphs: [
             "When importing custom headwear into the United States, your commercial invoice, packing list, and bill of lading must declare the correct Harmonized Tariff Schedule (HTS) code. Chapter 65 covers hats, headgear, and parts thereof.",
-            "Subheading 6505.00 governs hats made from fabric piece goods, lace, felt, or knitted textiles. Base duties vary according to whether the predominant material is cotton, synthetic fibers (polyester/acrylic), or wool. As an experienced exporter shipping 70% of our production to North America, Baoding Junyang provides correctly classified commercial paperwork with each shipment."
+            "Subheading 6505.00 governs hats made from fabric piece goods, lace, felt, or knitted textiles. Base duties vary according to whether the predominant material is cotton, synthetic fibers (polyester/acrylic), or wool. As an experienced exporter with North America accounting for 70% of our shipments, Baoding Junyang provides correctly classified commercial paperwork with each shipment."
           ]
         },
         {
@@ -314,7 +314,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       ],
       interlinks: [
         { href: "/tools/carton-calculator", label: "Carton & Freight CBM Calculator", desc: "Calculate carton dimensions, gross weights, and container packing volumes." },
-        { href: "/custom-hat-cost-index-2026", label: "Custom Hat Cost Index 2026", desc: "Factory FOB pricing and landed cost estimation." },
+        { href: "/custom-hat-cost-index-2026", label: "Custom Hat Cost Index 2026", desc: "FOB pricing and landed cost estimation." },
         { href: "/pricing", label: "Wholesale Hat Pricing & Shipping", desc: "Air and sea freight lead times and terms." }
       ]
     },
@@ -358,7 +358,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "2. Standard Manufacturing Milestone Payment Terms",
           paragraphs: [
             "In legitimate Chinese OEM headwear manufacturing, standard commercial terms are 30% deposit upon digital proof sign-off, with the remaining 70% balance payable after bulk production completion and quality audit.",
-            "At Baoding Junyang, we document the completion of your order with comprehensive 4K media: macro stitching photos, crown structure videos, and master carton packing lists. You inspect the completed production visually before releasing the final balance."
+            "At our Baoding QC & export hub, we document the completion of your order with comprehensive 4K media: macro stitching photos, crown structure videos, and master carton packing lists. You inspect the completed production visually before releasing the final balance."
           ]
         },
         {
@@ -380,13 +380,13 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         },
         {
           q: "Can I hire a third-party inspector before paying the balance?",
-          a: "Absolutely. We welcome third-party inspection firms (such as SGS, Intertek, or your appointed local agent) at our Baoding facility. We provide a dedicated inspection table and testing equipment for piece-by-piece or AQL 2.5 lot checks."
+          a: "Absolutely. We welcome third-party inspection firms (such as SGS, Intertek, or your appointed local agent) at our Baoding QC and export hub, with a dedicated inspection table and testing equipment for piece-by-piece checks or lot sampling."
         }
       ],
       interlinks: [
         { href: "/guide", label: "B2B Hat Manufacturing Guide", desc: "Master sourcing checklist and factory vetting rules." },
-        { href: "/pricing", label: "Factory Wholesale Pricing", desc: "FOB volume tiers and sample terms." },
-        { href: "/about", label: "About Baoding Junyang Factory", desc: "Audit certificates, factory floor tour, and corporate background." }
+        { href: "/pricing", label: "Wholesale Pricing", desc: "FOB volume tiers and sample terms." },
+        { href: "/about", label: "About Baoding Junyang", desc: "Sourcing & quality network, compliance standards, and corporate background." }
       ]
     },
     "puff-foam-vs-silicone-heat-transfer-trucker-hats": {
@@ -398,7 +398,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       heroBadge: "Trucker Cap Decoration · 3D Engineering Benchmark",
       title: "Puff Foam vs Silicone Heat Transfer: Choosing 3D Effects for Trucker Hats",
       subtitle:
-        "High-density EVA foam embroidery vs raised silicone heat transfer on custom trucker caps. In-depth analysis of stroke tolerances, foam crown compression, wash durability, and factory unit costs.",
+        "High-density EVA foam embroidery vs raised silicone heat transfer on custom trucker caps. In-depth analysis of stroke tolerances, foam crown compression, wash durability, and FOB unit costs.",
       metaDesc:
         "3D puff foam embroidery vs high-density silicone heat transfer on trucker hats: stroke limits, foam compression, wash durability, and FOB cost impact.",
       takeawaysTitle: "Key 3D Decoration Benchmarks",
@@ -407,10 +407,10 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         "3D puff embroidery delivers maximum height (2.5mm–3.0mm) but requires thick strokes (≥3.0mm) to prevent foam exposure.",
         "Silicone transfers achieve razor-sharp, geometric 3D edges (0.8mm–1.2mm) and resolve micro-typography down to 0.8mm lines.",
         "Heat press precaution: silicone application on laminated polyester foam must strictly observe 155°C / 4.5 bar limits to avoid crown indentation.",
-        "Factory MOQ & Economics: Both techniques supported at Baoding Junyang starting from 200 pcs per style."
+        "MOQ & Economics: Both techniques supported by Baoding Junyang starting from 200 pcs per style."
       ],
       tableTitle: "3D Puff Foam Embroidery vs Raised Silicone Transfer on Trucker Caps",
-      tableHead: ["Technical Parameter", "3D Puff Foam Embroidery", "High-Density Silicone Transfer", "Factory Recommendation"],
+      tableHead: ["Technical Parameter", "3D Puff Foam Embroidery", "High-Density Silicone Transfer", "Our Recommendation"],
       tableRows: [
         ["Relief Height", "2.5 mm – 3.0 mm high-loft foam", "0.8 mm – 1.2 mm uniform raised silicone", "3D puff for bold lettering; silicone for tech logos"],
         ["Minimum Stroke Width", "≥ 3.0 mm (to wrap internal EVA foam)", "≥ 0.8 mm (laser-cut silicone precision)", "Silicone handles complex serifs; 3D puff drops fine accents"],
@@ -438,9 +438,9 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           ]
         },
         {
-          heading: "3. Factory Quality Control & Abrasion Benchmarks",
+          heading: "3. Quality Control & Abrasion Benchmarks Before Shipment",
           paragraphs: [
-            "At Baoding Junyang, every 3D trucker batch undergoes rigorous physical testing before packing. For 3D puff embroidery, samples are inspected under 10x magnification to confirm zero thread breakage and 100% foam coverage around acute corners.",
+            "At our Baoding QC hub, every 3D trucker batch undergoes rigorous physical testing before packing. For 3D puff embroidery, samples are inspected under 10x magnification to confirm zero thread breakage and 100% foam coverage around acute corners.",
             "For silicone transfers, we perform cross-hatch tape adhesion tests and 40°C accelerated wash cycle simulations. We use custom silicone bonding primers specifically engineered for porous polyester knit meshes and high-loft foam face fabrics, ensuring your logos withstand rigorous wear."
           ]
         }
@@ -452,7 +452,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         },
         {
           q: "Will the heat press for silicone transfers crush the trucker hat foam?",
-          a: "Not when executed properly. In our Baoding factory, we utilize custom-machined aluminum curved platen inserts that support the trucker crown from behind, distributing pneumatic pressure evenly and preventing heat marks or foam flattening."
+          a: "Not when executed properly. Our vetted production partners use custom-machined aluminum curved platen inserts that support the trucker crown from behind, distributing pneumatic pressure evenly and preventing heat marks or foam flattening."
         },
         {
           q: "How does the mold charge compare between the two techniques?",
@@ -473,7 +473,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       readTime: "7 min de lectura",
       published: "2026-11-24",
       updated: "2026-11-24",
-      heroBadge: "Guía Técnica de Fábrica · Protocolo de Muestra Física",
+      heroBadge: "Guía Técnica B2B · Protocolo de Muestra Física",
       title: "Aprobación de Muestras de Gorras: Del Prototipo al Visto Bueno",
       subtitle:
         "Cómo las marcas profesionales de sombrerería revisan, miden y aprueban muestras de gorras personalizadas antes de autorizar la producción en masa. Lista de control paso a paso.",
@@ -488,7 +488,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         "Política de muestras: prototipos de 1 a 5 piezas por $50–$80 USD; el 100% se abona en pedidos ≥500 pzs."
       ],
       tableTitle: "Muestra de Pre-Producción vs Estándares de Volumen",
-      tableHead: ["Parámetro de Calidad", "Especificación en Muestra", "Estándar en Producción en Masa", "Tolerancia de Fábrica"],
+      tableHead: ["Parámetro de Calidad", "Especificación en Muestra", "Estándar en Producción en Masa", "Tolerancia de Producción"],
       tableRows: [
         ["Circunferencia de Copa", "58.0 cm (adulto estándar)", "58.0 cm en el 100% de los lotes", "±0.5 cm"],
         ["Proyección de Visera", "7.0 cm pre-curvada / plana", "7.0 cm según troquel de cartón aprobado", "±0.2 cm"],
@@ -500,14 +500,14 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         {
           heading: "Paso 1: Revisión Vectorial y Digitalizado de Bordado",
           paragraphs: [
-            "En nuestras instalaciones de Baoding, el desarrollo de muestras comienza en el departamento de patronaje asistido por ordenador. Revisamos su diseño vectorial (archivos AI o PDF) a escala real 1:1 para verificar el grosor de trazo y el espaciado. Para bordado 3D puff, los trazos deben mantener al menos 5mm de ancho para alojar la espuma EVA sin deformaciones.",
-            "Nuestros ingenieros de digitalizado generan archivos DST calibrados para nuestras máquinas japonesas Barudan, programando capas de anclaje previas que evitan fruncidos en el tejido."
+            "El desarrollo de muestras comienza en nuestro departamento interno de patronaje asistido por ordenador. Revisamos su diseño vectorial (archivos AI o PDF) a escala real 1:1 para verificar el grosor de trazo y el espaciado. Para bordado 3D puff, los trazos deben mantener al menos 5mm de ancho para alojar la espuma EVA sin deformaciones.",
+            "Nuestros ingenieros de digitalizado generan archivos DST calibrados para máquinas japonesas Barudan —el estándar de equipo que verificamos en cada fábrica colaboradora—, programando capas de anclaje previas que evitan fruncidos en el tejido."
           ]
         },
         {
           heading: "Paso 2: Confección del Prototipo Físico en 7 Días",
           paragraphs: [
-            "A diferencia de intermediarios que tardan 3–4 semanas, operamos una sala de muestreo rápido con 12 especialistas. Disponemos de rollos de tejido en más de 48 colores en sarga chino, algodón cepillado y nailon técnico.",
+            "Mientras los intermediarios tardan 3–4 semanas al externalizar el muestreo, nuestro equipo interno de prototipado rápido cuenta con 12 especialistas. Trabajamos con rollos de más de 48 tejidos en stock: sarga chino, algodón cepillado y nailon técnico.",
             "En 7 días laborables la gorra queda confeccionada: paneles cortados, bordado ejecutado, entretela buckram fijada, badana colocada y cierre remachado. Posteriormente se somete a planchado con vapor sobre hormas de aluminio para asentar la silueta."
           ]
         },
@@ -530,7 +530,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         },
         {
           q: "¿Cómo garantizan que la producción en masa coincida con la muestra aprobada?",
-          a: "Producimos muestras maestras duplicadas: una se envía al cliente y otra se custodia en nuestra oficina de control de calidad para contrastar los lotes de producción."
+          a: "Preparamos muestras maestras duplicadas: una se envía al cliente para su aprobación y otra se custodia en nuestra oficina de control de calidad; nuestro equipo de QC contrasta cada lote de producción contra esta muestra maestra cada 500 unidades."
         }
       ],
       interlinks: [
@@ -559,13 +559,13 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         "Compruebe equipamiento esencial de control de calidad: hormas de vapor industriales y túneles detectores de agujas continuos.",
         "Exija seguridad de pago: las fábricas serias admiten custodia de fondos como Alibaba Trade Assurance o cartas de crédito."
       ],
-      tableTitle: "Fábrica Directa vs Intermediario Comercial",
-      tableHead: ["Dimensión de Auditoría", "Fábrica Directa (Baoding Junyang)", "Agente Comercial / Intermediario"],
+      tableTitle: "Socio de Sourcing Auditado vs Intermediario Opaco",
+      tableHead: ["Dimensión de Auditoría", "Socio de Sourcing Auditado (Baoding Junyang)", "Agente Comercial Opaco"],
       tableRows: [
-        ["Estructura de Precios", "Precios directos de fábrica ($3.50 – $7.00/ud)", "Comisión del 30% al 50% integrada en el precio unitario"],
-        ["Transparencia de Maquinaria", "Más de 100 máquinas Barudan visibles en videollamada", "No puede mostrar taller en vivo; fotos genéricas"],
-        ["Plazo de Muestras", "7 días laborables en sala de muestras propia", "15–25 días laborables por subcontratación"],
-        ["Soporte Técnico", "Contacto directo con patronistas y digitalizadores", "Comerciales que trasladan mensajes con fricción técnica"],
+        ["Estructura de Precios", "Precios FOB de suministro directo ($3.50 – $7.00/ud)", "Comisión del 30% al 50% integrada en el precio unitario"],
+        ["Transparencia de Planta", "Fábricas colaboradoras abiertas a videollamada y visita in situ", "No puede mostrar taller en vivo; fotos genéricas"],
+        ["Plazo de Muestras", "7 días laborables con equipo interno de muestras", "15–25 días laborables por subcontratación"],
+        ["Soporte Técnico", "Contacto directo con ingenieros de patronaje y digitalizado", "Comerciales que trasladan mensajes con fricción técnica"],
         ["Control de Calidad", "Inspección pieza por pieza + detector de metales", "Muestreo aleatorio o envío directo sin control local"],
         ["Condiciones de Pago", "Alibaba Trade Assurance, T/T escalonado, L/C", "A menudo exigen transferencias íntegras por adelantado"]
       ],
@@ -574,14 +574,14 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "1. Verifique la Maquinaria y la Planta de Producción",
           paragraphs: [
             "En los polos de sombrerería de China (principalmente Baoding en Hebei y Dongguan en Guangdong), miles de intermediarios se anuncian como fabricantes directos. La comprobación más sencilla es solicitar una videollamada en vivo en horario laboral local (09:00–18:00 UTC+8).",
-            "En nuestras instalaciones de Baoding Junyang mostramos abiertamente nuestras líneas con más de 100 máquinas automáticas japonesas Barudan, mesas de corte y prensas de vapor. Los intermediarios declinarán la llamada en directo con diversos pretextos."
+            "Como socia de sourcing, aplicamos este estándar a toda nuestra red: las fábricas colaboradoras seleccionadas cuentan con líneas de bordado japonesas Barudan o Tajima multicabezal, mesas de corte y prensas de vapor, y las abrimos a videollamadas en directo en horario laboral (09:00–18:00 UTC+8). Los intermediarios sin acceso real a planta declinarán la llamada con diversos pretextos."
           ]
         },
         {
           heading: "2. Audite Certificaciones de Terceros y Cumplimiento Social",
           paragraphs: [
             "Los fabricantes consolidados se someten a inspecciones anuales por entidades acreditadas como SGS o TÜV Rheinland. Solicite el informe oficial en PDF y compruebe razón social y dirección.",
-            "Cumplimos con las normativas sociales BSCI y sistemas de gestión de calidad ISO 9001:2015, garantizando condiciones laborales éticas y trazabilidad en cada lote."
+            "Exigimos a todas las fábricas colaboradoras de nuestra red auditorías sociales BSCI y sistemas de gestión de calidad ISO 9001:2015, garantizando condiciones laborales éticas y trazabilidad en cada lote."
           ]
         },
         {
@@ -609,7 +609,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       interlinks: [
         { href: "/top-hat-manufacturers-in-china", label: "Fabricantes de Gorras en China", desc: "Análisis comparativo de polos industriales." },
         { href: "/guide", label: "Guía B2B de Gorras", desc: "Visión general de compra y control de calidad." },
-        { href: "/pricing", label: "Precios FOB de Fábrica", desc: "Descuentos por volumen a partir de 200 piezas." }
+        { href: "/pricing", label: "Precios FOB", desc: "Descuentos por volumen a partir de 200 piezas." }
       ]
     },
     "custom-hat-moq-guide": {
@@ -646,7 +646,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "La Razón Técnica Tras el MOQ de 200 Piezas",
           paragraphs: [
             "Muchos creadores de marca se preguntan por qué no es posible bordar 20 gorras con máquinas automáticas. La respuesta reside en los tiempos de preparación y en el calibrado de las líneas.",
-            "Nuestras máquinas Barudan operan hasta 20 cabezales a la vez. Preparar un nuevo diseño implica enhebrar hasta 15 agujas por cabezal con los colores Pantone correspondientes, calibrar la tensión del hilo inferior y realizar pruebas en tejido de descarte. En series inferiores a 200 unidades, el tiempo de preparación supera el de costura real, encareciendo la mano de obra."
+            "Una máquina de bordado multicabezal Barudan puede operar hasta 20 cabezales a la vez. Preparar un nuevo diseño implica enhebrar hasta 15 agujas por cabezal con los colores Pantone correspondientes, calibrar la tensión del hilo inferior y realizar pruebas en tejido de descarte. En series inferiores a 200 unidades, el tiempo de preparación supera el de costura real, encareciendo la mano de obra."
           ]
         },
         {
@@ -680,7 +680,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       ],
       interlinks: [
         { href: "/custom-hat-cost-index-2026", label: "Índice de Costes de Gorras 2026", desc: "Desglose de costes de materiales y mano de obra." },
-        { href: "/pricing", label: "Precios de Fábrica", desc: "Descuentos por volumen y condiciones FOB." },
+        { href: "/pricing", label: "Precios Mayoristas", desc: "Descuentos por volumen y condiciones FOB." },
         { href: "/wholesale-blank-caps-supplier", label: "Gorras en Blanco al por Mayor", desc: "Modelos lisos en stock con mínimos reducidos." }
       ]
     },
@@ -751,7 +751,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       ],
       interlinks: [
         { href: "/tools/carton-calculator", label: "Calculadora de Cajas y CBM", desc: "Cálculo de medidas de caja, peso bruto y cubicaje de contenedor." },
-        { href: "/custom-hat-cost-index-2026", label: "Índice de Costes de Gorras 2026", desc: "Precios FOB de fábrica y estimación de costes en destino." },
+        { href: "/custom-hat-cost-index-2026", label: "Índice de Costes de Gorras 2026", desc: "Precios FOB y estimación de costes en destino." },
         { href: "/pricing", label: "Precios Mayoristas y Envíos", desc: "Tiempos de tránsito marítimo y aéreo." }
       ]
     },
@@ -795,7 +795,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "2. Condiciones Comerciales por Hitos en Fabricación",
           paragraphs: [
             "En la fabricación OEM de gorras en China, las condiciones habituales son un 30% de depósito tras la aprobación del diseño digital y el 70% restante al término de la producción y validación de calidad.",
-            "En Baoding Junyang documentamos el acabado de su pedido con material multimedia en 4K: fotografías macro de costuras, vídeos de la estructura de copa y listas de empaque de las cajas. El comprador inspecciona visualmente el lote antes de liberar el saldo."
+            "En nuestro centro de control de calidad y exportación de Baoding documentamos el acabado de su pedido con material multimedia en 4K: fotografías macro de costuras, vídeos de la estructura de copa y listas de empaque de las cajas. El comprador inspecciona visualmente el lote antes de liberar el saldo."
           ]
         },
         {
@@ -817,13 +817,13 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         },
         {
           q: "¿Puedo contratar un inspector externo antes de abonar el saldo?",
-          a: "Por supuesto. Recibimos en nuestra planta de Baoding a inspectores de agencias externas (SGS, Intertek, QIMA o su agente local), disponiendo mesas de inspección para muestreo AQL 2.5."
+          a: "Por supuesto. Recibimos en nuestro centro de inspección y exportación de Baoding a inspectores de agencias externas (SGS, Intertek, QIMA o su agente local), con mesas de inspección dedicadas para revisión pieza por pieza o muestreo por lotes."
         }
       ],
       interlinks: [
         { href: "/guide", label: "Guía B2B de Gorras", desc: "Lista de control y pautas de selección de fábrica." },
-        { href: "/pricing", label: "Precios Mayoristas de Fábrica", desc: "Escalones FOB y condiciones de muestreo." },
-        { href: "/about", label: "Sobre la Fábrica Baoding Junyang", desc: "Certificados de auditoría y visita a la planta." }
+        { href: "/pricing", label: "Precios Mayoristas", desc: "Escalones FOB y condiciones de muestreo." },
+        { href: "/about", label: "Sobre Baoding Junyang", desc: "Red de sourcing y calidad, estándares de cumplimiento y antecedentes corporativos." }
       ]
     },
     "puff-foam-vs-silicone-heat-transfer-trucker-hats": {
@@ -837,17 +837,17 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       subtitle:
         "Bordado en espuma EVA de alta densidad frente a transfer de silicona en relieve sobre gorras trucker. Tolerancias de trazo, compresión de la corona de espuma, resistencia al lavado y costes FOB.",
       metaDesc:
-        "Bordado 3D puff frente a transfer de silicona en gorras trucker: límites de trazo, compresión de espuma, resistencia al lavado y costes FOB de fábrica.",
+        "Bordado 3D puff frente a transfer de silicona en gorras trucker: límites de trazo, compresión de espuma, resistencia al lavado y costes FOB.",
       takeawaysTitle: "Puntos Clave de la Decoración 3D",
       takeaways: [
         "Las coronas de espuma en gorras trucker requieren métodos distintos: el bordado 3D usa tensión de puntada mecánica, mientras que la silicona exige termotransfer.",
         "El bordado 3D puff ofrece máximo relieve (2.5mm–3.0mm) pero requiere trazos anchos (≥3.0mm) para no dejar visible la espuma EVA.",
         "Los transfers de silicona logran bordes 3D geométricos nítidos (0.8mm–1.2mm) y reproducen tipografías finas de hasta 0.8mm de trazo.",
         "Precaución en planchado: la aplicación térmica sobre espuma laminada debe calibrarse estrictamente a 155°C / 4.5 bar para evitar marcas de aplastamiento.",
-        "MOQ y economía de fábrica: ambas técnicas disponibles en Baoding Junyang a partir de 200 piezas por modelo."
+        "MOQ y economía: ambas técnicas disponibles a través de Baoding Junyang a partir de 200 piezas por modelo."
       ],
       tableTitle: "Bordado 3D Puff vs Transfer de Silicona en Gorras Trucker",
-      tableHead: ["Parámetro Técnico", "Bordado 3D Puff en Espuma", "Transfer de Silicona en Relieve", "Recomendación de Fábrica"],
+      tableHead: ["Parámetro Técnico", "Bordado 3D Puff en Espuma", "Transfer de Silicona en Relieve", "Nuestra Recomendación"],
       tableRows: [
         ["Altura de Relieve", "2.5 mm – 3.0 mm de relieve mullido", "0.8 mm – 1.2 mm de silicona uniforme", "3D puff para letras grandes; silicona para logos técnicos"],
         ["Grosor Mínimo de Trazo", "≥ 3.0 mm (para envolver la espuma EVA)", "≥ 0.8 mm (precisión de molde CNC)", "La silicona resuelve detalles finos; el 3D puff los omite"],
@@ -875,9 +875,9 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           ]
         },
         {
-          heading: "3. Control de Calidad y Ensayos de Fricción en Fábrica",
+          heading: "3. Control de Calidad y Ensayos de Fricción antes del Embarque",
           paragraphs: [
-            "En Baoding Junyang, cada lote de gorras trucker 3D se somete a ensayos físicos antes de su embalaje. En el bordado 3D puff, las muestras se examinan con lupa 10x para garantizar una cobertura total de la espuma en ángulos cerrados.",
+            "En nuestro centro de calidad de Baoding, cada lote de gorras trucker 3D se somete a ensayos físicos antes de su embalaje. En el bordado 3D puff, las muestras se examinan con lupa 10x para garantizar una cobertura total de la espuma en ángulos cerrados.",
             "Para los transfers de silicona, realizamos pruebas de adherencia por corte en cuadrícula y ciclos de lavado acelerado a 40°C. Utilizamos imprimaciones de anclaje específicas para poliéster poroso y espuma, garantizando que el relieve permanezca intacto durante el uso intensivo."
           ]
         }
@@ -889,7 +889,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         },
         {
           q: "¿Aplastará la plancha térmica la espuma de la gorra trucker?",
-          a: "No si se realiza con el utillaje adecuado. En nuestra planta de Baoding utilizamos hormas de aluminio curvadas mecanizadas a medida que soportan la corona desde el interior, distribuyendo la presión neumática de forma homogénea."
+          a: "No si se realiza con el utillaje adecuado. En nuestras fábricas colaboradoras se emplean hormas de aluminio curvadas mecanizadas a medida que soportan la corona desde el interior, distribuyendo la presión neumática de forma homogénea."
         },
         {
           q: "¿Cuál es la diferencia de coste de molde entre ambas técnicas?",
