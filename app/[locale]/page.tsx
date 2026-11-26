@@ -5,14 +5,14 @@ import Link from "next/link";
 import { useT, useLang } from "../lib/i18n";
 import { attributionTag } from "../lib/attribution";
 import { trackWhatsAppClick } from "../lib/tracking";
-import { NavCompareMenu } from "../components/NavCompareMenu";
+import { NavGuideMenu } from "../components/NavGuideMenu";
 import { NavProductsMenu } from "../components/NavProductsMenu";
 import { MobileNav } from "../components/MobileNav";
 import { HatCatalog } from "../components/HatCatalog";
 import { InquiryForm } from "../components/InquiryForm";
 import { LanguageSwitcher } from "../components/LanguageSwitcher";
 import { MobileStickyBar } from "../components/MobileStickyBar";
-import { MessageCircle, ShieldCheck, Zap, Globe, Cpu, Play, ChevronLeft, ChevronRight, ArrowRight, ChevronDown, CheckCircle2, Facebook, Linkedin, FileDown, Sparkles, Package } from "lucide-react";
+import { MessageCircle, ShieldCheck, Globe, Cpu, ChevronLeft, ChevronRight, ArrowRight, ChevronDown, CheckCircle2, Facebook, Linkedin, FileDown, Sparkles, Package } from "lucide-react";
 
 // Program card copy lives in messages/*.json under home.programs ("0".."11");
 // only the link targets are language-neutral and stay in code.
@@ -536,7 +536,6 @@ export default function Home() {
   const n = useT("nav");
   const ft = useT("footer");
   const lang = useLang();
-  const [isPlaying, setIsPlaying] = useState(false);
   const [currentBanner, setCurrentBanner] = useState(0);
 
   const BANNERS = [
@@ -670,20 +669,13 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
             <NavProductsMenu />
             <a href="#advantages" className="hover:text-black transition">{n("advantages")}</a>
-            <a href="#factory" className="hover:text-black transition">{n("factory")}</a>
-            <a href="#qc" className="hover:text-black transition">{n("qualityControl")}</a>
-            <NavCompareMenu />
+            <Link href={`/${lang}/about`} className="hover:text-black transition">{n("about")}</Link>
+            <NavGuideMenu />
             <Link href={`/${lang}/blog`} className="hover:text-black transition">Blog</Link>
             <a href="#inquiry" className="hover:text-black transition">{n("inquiry")}</a>
           </nav>
           {/* Action buttons (Desktop + Mobile) */}
           <div className="flex items-center gap-2 sm:gap-3">
-            <button 
-              onClick={() => handleWhatsApp("header")}
-              className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 sm:py-2.5 px-3.5 sm:px-5 rounded-full text-xs md:text-sm flex items-center gap-1.5 sm:gap-2 transition shadow-xs cursor-pointer"
-            >
-              <MessageCircle size={15} /> <span className="hidden sm:inline">{n("whatsappQuote")}</span><span className="sm:hidden">Quote</span>
-            </button>
             <div className="hidden sm:block">
               <LanguageSwitcher />
             </div>
@@ -863,81 +855,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Inside Our Factory / live update section */}
-      <section id="factory" className="py-8 sm:py-16 md:py-24 bg-gray-50 border-b border-gray-100 scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-[11px] sm:text-xs font-black uppercase tracking-widest text-gray-500">{t("factory.label")}</span>
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight mt-1 mb-2 sm:mb-6">{t("factory.heading")}</h2>
-              <p className="text-gray-600 text-xs sm:text-base md:text-lg leading-relaxed mb-3 sm:mb-6">
-                {t("factory.p1")}
-              </p>
-              <p className="hidden sm:block text-gray-600 text-base md:text-lg leading-relaxed mb-8">
-                <strong>{t("factory.p2Pre")}</strong> {t("factory.p2")}
-              </p>
-              <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-4 sm:mb-8">
-                <div className="flex items-start gap-2.5 sm:gap-3 p-2.5 sm:p-0 rounded-xl sm:rounded-none bg-white sm:bg-transparent border sm:border-0 border-gray-200/60">
-                  <ShieldCheck className="text-green-500 shrink-0 mt-0.5 sm:mt-1 w-5 h-5 sm:w-6 sm:h-6" />
-                  <div>
-                    <h3 className="font-bold text-black text-xs sm:text-sm md:text-base">{t("factory.qcStandard")}</h3>
-                    <p className="text-[11px] sm:text-xs text-gray-500 line-clamp-1 sm:line-clamp-none">{t("factory.qcStandardDesc")}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2.5 sm:gap-3 p-2.5 sm:p-0 rounded-xl sm:rounded-none bg-white sm:bg-transparent border sm:border-0 border-gray-200/60">
-                  <Zap className="text-green-500 shrink-0 mt-0.5 sm:mt-1 w-5 h-5 sm:w-6 sm:h-6" />
-                  <div>
-                    <h3 className="font-bold text-black text-xs sm:text-sm md:text-base">{t("factory.samples")}</h3>
-                    <p className="text-[11px] sm:text-xs text-gray-500 line-clamp-1 sm:line-clamp-none">{t("factory.samplesDesc")}</p>
-                  </div>
-                </div>
-              </div>
-              <button 
-                onClick={() => handleWhatsApp("factory-section")}
-                className="bg-black hover:bg-gray-800 text-white font-bold py-2.5 sm:py-4 px-5 sm:px-8 rounded-full transition flex items-center justify-center gap-2 text-xs sm:text-sm uppercase tracking-wider w-full sm:w-auto"
-              >
-                <MessageCircle size={14} className="sm:w-4 sm:h-4" /> {t("factory.videoCta")}
-              </button>
-            </div>
-            {/* Visual Factory Video Player */}
-            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-video lg:aspect-square bg-gray-900 shadow-xl group max-h-[260px] sm:max-h-none">
-              {isPlaying ? (
-                <video 
-                  src="https://github.com/cap603/bd-hats-b2b/releases/download/v1.0.0/factory-video.mp4"
-                  poster="/images/site/video-cap-production-cover.webp"
-                  controls
-                  autoPlay
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <div className="relative w-full h-full cursor-pointer" onClick={() => setIsPlaying(true)}>
-                  <picture className="w-full h-full block">
-                    <source media="(max-width: 768px)" srcSet="/images/site/video-cap-production-cover-mobile.webp" type="image/webp" />
-                    <img 
-                      src="/images/site/video-cap-production-cover.webp" 
-                      alt="Baoding Junyang Custom Hat Manufacturing Line" 
-                      className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-700"
-                      width="1024"
-                      height="1024" 
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </picture>
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                    <div className="bg-white text-black h-12 w-12 sm:h-16 sm:w-16 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition">
-                      <Play size={20} className="ml-0.5 text-black sm:w-6 sm:h-6" fill="currentColor" />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-3 sm:bottom-6 left-3 sm:left-6 right-3 sm:right-6 text-white bg-gradient-to-t from-black/80 to-transparent p-2.5 sm:p-4 rounded-lg sm:rounded-xl">
-                    <p className="font-bold text-xs sm:text-base">{t("factory.videoTitle")}</p>
-                    <p className="text-[10px] sm:text-xs text-gray-300 line-clamp-1">{t("factory.videoSub")}</p>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Trusted By / Social Proof Section */}
       <section className="py-8 sm:py-16 md:py-24 px-4 bg-white border-b border-gray-100">
@@ -1179,68 +1096,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* QC Protocol Section — High-Density 2-Column Balanced View */}
-      <section id="qc" className="py-6 sm:py-12 md:py-16 bg-white border-b border-slate-200/80 scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-8 items-center">
-            {/* Left 7 cols: 5 QC Inspection Checkpoints in 2-col compact grid */}
-            <div className="lg:col-span-7">
-              <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-slate-500 bg-slate-100 px-2 sm:px-2.5 py-0.5 rounded-full inline-block mb-1.5">
-                {t("qc.label")}
-              </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-slate-900 mb-3 sm:mb-6">
-                {t("qc.heading")}
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
-                {[
-                  { num: "01", title: t("qc.step1Title"), desc: t("qc.step1Desc") },
-                  { num: "02", title: t("qc.step2Title"), desc: t("qc.step2Desc") },
-                  { num: "03", title: t("qc.step3Title"), desc: t("qc.step3Desc") },
-                  { num: "04", title: t("qc.step4Title"), desc: t("qc.step4Desc") },
-                  { num: "05", title: t("qc.step5Title"), desc: t("qc.step5Desc") },
-                ].map((qcItem, qIdx) => (
-                  <div key={qIdx} className={`p-2.5 sm:p-3.5 rounded-lg sm:rounded-xl border border-slate-200/80 bg-slate-50/60 ${qIdx === 4 ? "sm:col-span-2" : ""}`}>
-                    <div className="flex items-center gap-2 mb-0.5 sm:mb-1">
-                      <span className="h-4.5 w-4.5 sm:h-5 sm:w-5 rounded bg-slate-900 text-white flex items-center justify-center text-[9px] sm:text-[10px] font-black shrink-0">
-                        {qcItem.num}
-                      </span>
-                      <h3 className="font-bold text-xs sm:text-sm text-slate-900 line-clamp-1">{qcItem.title}</h3>
-                    </div>
-                    <p className="text-slate-500 text-[10px] sm:text-xs leading-relaxed line-clamp-2 pl-6 sm:pl-7">{qcItem.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right 5 cols: Compact Factory QC Card */}
-            <div className="lg:col-span-5 relative">
-              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg border border-slate-200 bg-slate-50">
-                <img 
-                  src="/images/site/af4c92eab3b8f4bd68fcb467865c9d3512.webp" 
-                  alt="Quality Control Factory Floor" 
-                  className="w-full h-36 sm:h-56 object-cover"
-                />
-                <div className="p-4 bg-white flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <span className="h-2.5 w-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <div>
-                      <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 block">{t("qc.liveStatus")}</span>
-                      <p className="text-slate-900 font-bold text-xs">{t("qc.qcPassed")}</p>
-                    </div>
-                  </div>
-                   <div className="flex items-center gap-3 text-slate-400 font-black text-xs">
-                     <span>OEM / ODM</span>
-                     <span>•</span>
-                     <span>MOQ 200</span>
-                     <span>•</span>
-                     <span>2H QUOTE</span>
-                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Section — Compact 2-Column Accordion */}
       <section className="py-6 sm:py-10 md:py-14 bg-slate-50 border-b border-slate-200/80">

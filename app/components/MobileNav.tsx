@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronRight, MessageCircle, Layers, Tag, BookOpen, ShieldCheck, Factory, Info } from "lucide-react";
@@ -19,6 +20,7 @@ const CORE_CATEGORIES = [
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const lang = useLang();
   const tNav = useT("nav");
   const pathname = usePathname();
@@ -36,6 +38,11 @@ export function MobileNav() {
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
+
+  // Portals need document.body, which only exists after hydration.
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -74,13 +81,18 @@ export function MobileNav() {
         {isOpen ? <X size={22} /> : <Menu size={22} />}
       </button>
 
-      {/* Backdrop */}
-      {isOpen && (
-        <div
-          onClick={() => setIsOpen(false)}
-          className="fixed inset-0 bg-black/60 backdrop-blur-xs z-[70] transition-opacity duration-300"
-        />
-      )}
+      {/* Backdrop + drawer are portalled to <body>: the header's backdrop-filter
+          would otherwise become their containing block and squash the fixed
+          drawer to the header's height. */}
+      {mounted &&
+        createPortal(
+          <>
+            {isOpen && (
+              <div
+                onClick={() => setIsOpen(false)}
+                className="fixed inset-0 bg-black/60 backdrop-blur-xs z-[70] transition-opacity duration-300"
+              />
+            )}
 
       {/* Slide-in Drawer from Right */}
       <div
@@ -233,11 +245,14 @@ export function MobileNav() {
             <span>Language:</span>
             <LanguageSwitcher />
           </div>
-          <div className="text-[10px] text-slate-400 text-center">
-            Est. 2014 · Sourcing & Quality Partner · MOQ 200pcs
+            <div className="text-[10px] text-slate-400 text-center">
+              Est. 2014 · Sourcing & Quality Partner · MOQ 200pcs
+            </div>
           </div>
         </div>
+          </>,
+        document.body
+      )}
       </div>
-    </div>
-  );
-}
+    );
+  }

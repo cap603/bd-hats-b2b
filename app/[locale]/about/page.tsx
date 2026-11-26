@@ -3,7 +3,7 @@
 import { ArrowRight, Facebook, Linkedin, ShieldCheck, Factory, Award, Users } from "lucide-react";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { useLang } from "../../lib/i18n";
-import { NavCompareMenu } from "../../components/NavCompareMenu";
+import { NavGuideMenu } from "../../components/NavGuideMenu";
 import { NavProductsMenu } from "../../components/NavProductsMenu";
 
 /**
@@ -213,10 +213,9 @@ export default function AboutPage() {
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
             <a href={`/${lang}/#advantages`} className="hover:text-black transition">{c.nav.advantages}</a>
-            <a href={`/${lang}/#factory`} className="hover:text-black transition">{c.nav.factory}</a>
             <NavProductsMenu />
             <a href={`/${lang}/about`} className="text-black border-b-2 border-black pb-1">{c.nav.about}</a>
-            <NavCompareMenu />
+            <NavGuideMenu />
             <a href={`/${lang}/#inquiry`} className="hover:text-black transition">{c.nav.inquiry}</a>
           </nav>
           <a
@@ -332,7 +331,7 @@ export default function AboutPage() {
       </section>
 
       {/* Transparency & Traceability */}
-      <section className="py-24 px-4 bg-gray-50 border-y border-gray-100">
+      <section id="quality-control" className="py-24 px-4 bg-gray-50 border-y border-gray-100 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-xs font-black uppercase tracking-widest text-gray-500">{c.transpLabel}</span>
