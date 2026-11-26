@@ -16,7 +16,7 @@ const CONTENT = {
       h1Pre: "Wholesale ",
       h1Highlight: "Snapback Hats",
       h1Post: " — Custom, From the Factory",
-      subtitle: "Flat brims, 3D puff embroidery, and buckram-structured fronts — snapbacks built for streetwear and sports brands, shipped direct from our SGS-verified factory.",
+      subtitle: "Flat brims, 3D puff embroidery, and buckram-structured fronts — snapbacks built for streetwear and sports brands, shipped direct from our partner factories.",
       pills: ["From $3.50 FOB", "MOQ 200 Pcs", "15-Day Production", "In-House QC"]
     },
     features: [
@@ -62,7 +62,7 @@ const CONTENT = {
     qcBody:
       "Structured caps fail differently from soft crowns: we check crown symmetry left to right after fusing, delamination of the fused front (it must not bubble after steam finishing), crown height consistency across the run, and snap tape function — every closure must snap and release cleanly. Delamination shows up at steam finishing, which is why our final inspection sits after ironing rather than before.",
     qcBody2:
-      "Before packing we verify the approved sample against the bulk cartons: logo placement distance from the brim edge, logo height, snap tape colour, visor type (flat or curved) and carton count. Bulk is checked piece by piece rather than sampled, because a single misaligned front panel on a structured cap is visible to the retail customer immediately.",
+      "Before packing we verify the approved sample against the bulk cartons: logo placement distance from the brim edge, logo height, snap tape colour, visor type (flat or curved) and carton count. Bulk is checked carton by carton against the approved sample, because a single misaligned front panel on a structured cap is visible to the retail customer immediately.",
     checklistTitle: "Snapback Brief Checklist",
     checklist: [
       "Crown profile: high, mid or low profile, plus the target front height",
@@ -104,7 +104,7 @@ const CONTENT = {
       h1Pre: "",
       h1Highlight: "Snapbacks al por mayor",
       h1Post: " — personalizados, directo de fábrica",
-      subtitle: "Viseras planas, bordado 3D puff y frentes estructurados con buckram — snapbacks hechos para marcas de streetwear y deportivas, enviados directo de nuestra fábrica verificada por SGS.",
+      subtitle: "Viseras planas, bordado 3D puff y frentes estructurados con buckram — snapbacks hechos para marcas de streetwear y deportivas, enviados directo de nuestras fábricas asociadas.",
       pills: ["Desde $3.50 FOB", "MOQ 200 pzs", "Producción en 15 días", "QC interno"]
     },
     features: [
@@ -150,7 +150,7 @@ const CONTENT = {
     qcBody:
       "Las gorras estructuradas fallan de forma distinta a las de copa blanda: revisamos simetría de copa de izquierda a derecha tras el entretelado, deslaminación del frente (no debe formar burbujas tras el planchado con vapor), consistencia de altura de copa en toda la corrida y funcionamiento del snap — cada cierre debe abrochar y soltar con limpieza. La deslaminación aparece en el planchado con vapor, por eso la inspección final va después del planchado y no antes.",
     qcBody2:
-      "Antes de embalar contrastamos la muestra aprobada contra las cajas del volumen: distancia del logo al borde de la visera, altura del logo, color de la cinta snap, tipo de visera y conteo por caja. El volumen se revisa pieza por pieza y no por muestreo, porque un solo panel frontal desalineado en una gorra estructurada lo ve el cliente final de inmediato.",
+      "Antes de embalar contrastamos la muestra aprobada contra las cajas del volumen: distancia del logo al borde de la visera, altura del logo, color de la cinta snap, tipo de visera y conteo por caja. La inspección del volumen se realiza caja a caja contra la muestra aprobada, porque un solo panel frontal desalineado en una gorra estructurada lo ve el cliente final de inmediato.",
     checklistTitle: "Lista de datos para su brief de snapback",
     checklist: [
       "Perfil de copa: alto, medio o bajo, más la altura de frente deseada",
@@ -201,7 +201,7 @@ export default function SnapbacksPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Wholesale Snapback Hats from Factory — Custom Snapback Manufacturer",
-    "description": "Factory-direct wholesale snapbacks: styles, 3D puff embroidery, buckram structure, pricing and MOQ. SGS verified snapback manufacturer in China.",
+    "description": "Factory-direct wholesale snapbacks: styles, 3D puff embroidery, buckram structure, pricing and MOQ. Custom snapback manufacturer in China.",
     "author": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "publisher": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "datePublished": "2026-08-25",

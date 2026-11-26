@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Fabricante de gorras de pana personalizadas en China. Pana vintage 8W, 14W y 21W, bordado 3D, MOQ 200uds, FOB desde $4.50. Muestras en 7 días y SGS verificado."
-        : "Custom corduroy caps manufacturer in China. 8W, 14W & 21W vintage corduroy hats, 3D embroidery, MOQ 200pcs, FOB from $4.50. 7-day samples & SGS verified.",
+        ? "Fabricante de gorras de pana personalizadas en China. Pana vintage 8W, 14W y 21W, bordado 3D, MOQ 200uds, FOB desde $4.50. Muestras en 7 días y cotización en 2h."
+        : "Custom corduroy caps manufacturer in China. 8W, 14W & 21W vintage corduroy hats, 3D embroidery, MOQ 200pcs, FOB from $4.50. 7-day samples, written quote in 2h.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

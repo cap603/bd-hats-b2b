@@ -16,13 +16,13 @@ const CONTENT = {
       h1Pre: "Your OEM ",
       h1Highlight: "Hat Manufacturer",
       h1Post: " in China",
-      subtitle: "From sketch to shipped — a full-service factory behind 300+ brands in 50+ countries since 2014. SGS verified, samples in 7 days.",
-      pills: ["Scalable B2B Volume", "Multi-Head Embroidery", "SGS · OEKO-TEX · REACH", "Est. 2014"]
+      subtitle: "From sketch to shipped — a full-service sourcing partner behind 300+ brands in 50+ countries since 2014. Samples in 7 days, written quote in 2h.",
+      pills: ["Scalable B2B Volume", "Multi-Head Embroidery", "OEM / ODM Service", "Est. 2014"]
     },
     capabilitiesTitle: "Production & Sourcing Capabilities",
     capabilities: [
-      { title: "Production Capacity", desc: "Coordinating audited partner factory lines with precision multi-head embroidery and in-house QC teams. Scalable capacity for volume container orders — with dedicated production lines for snapbacks, 5-panel caps, trucker hats and beanies." },
-      { title: "Certifications & Compliance", desc: "SGS facility verification and full REACH SVHC and OEKO-TEX Standard 100 compliance documentation for the international market. Our quality system is documented at each production stage." },
+      { title: "Production Capacity", desc: "Coordinating selected partner factory lines with precision multi-head embroidery and in-house QC teams. Scalable capacity for volume container orders — with dedicated production lines for snapbacks, 5-panel caps, trucker hats and beanies." },
+      { title: "Quality & Compliance Support", desc: "Third-party material testing and inspection can be arranged per order for the international market. Our quality workflow is documented at each production stage." },
       { title: "OEM / ODM Service", desc: "Send us sketches, spec sheets, or a reference product and our in-house design team turns it into production-ready files. We handle embroidery digitizing, color matching, and engineering for your exact cap style." },
       { title: "Sample & Approval Process", desc: "Physical pre-production samples in 7 days. Sample fees range $50-100 including courier and are fully credited against your bulk order — so sampling a new style is low-risk for first-time partners." },
       { title: "Quality Control", desc: "Every production stage is documented with photo and video updates: raw material check, embroidery precision, stitching integrity, a final check before packing, and a packing audit before shipment." },
@@ -46,13 +46,13 @@ const CONTENT = {
       h1Pre: "Su ",
       h1Highlight: "socio de abastecimiento de gorras OEM",
       h1Post: " en China",
-      subtitle: "Del boceto al envío — un socio integral detrás de más de 300 marcas en más de 50 países desde 2014. Verificados por SGS, muestras en 7 días.",
-      pills: ["Capacidad Escalable", "Bordado Multicabezal", "SGS · OEKO-TEX · REACH", "Desde 2014"]
+      subtitle: "Del boceto al envío — un socio integral detrás de más de 300 marcas en más de 50 países desde 2014. Muestras en 7 días y cotización en 2h.",
+      pills: ["Capacidad Escalable", "Bordado Multicabezal", "Servicio OEM / ODM", "Desde 2014"]
     },
     capabilitiesTitle: "Capacidades de abastecimiento",
     capabilities: [
-      { title: "Capacidad de producción", desc: "Líneas de fabricación asociadas auditadas con bordado computarizado multicabezal y equipo propio de control de calidad. Capacidad escalable para pedidos por contenedor con líneas dedicadas para snapbacks, 5 paneles, truckers y beanies." },
-      { title: "Certificaciones y cumplimiento", desc: "Auditoría de instalaciones por SGS y pleno cumplimiento de REACH SVHC y OEKO-TEX Standard 100 para el mercado internacional. Nuestro sistema de calidad se documenta en cada etapa de producción." },
+      { title: "Capacidad de producción", desc: "Líneas de fabricación asociadas seleccionadas con bordado computarizado multicabezal y equipo propio de control de calidad. Capacidad escalable para pedidos por contenedor con líneas dedicadas para snapbacks, 5 paneles, truckers y beanies." },
+      { title: "Calidad y cumplimiento", desc: "Las pruebas e inspecciones de materiales de terceros se gestionan por pedido para el mercado internacional. Nuestro sistema de calidad se documenta en cada etapa de producción." },
       { title: "Servicio OEM / ODM", desc: "Envíenos bocetos, fichas técnicas o un producto de referencia y nuestro equipo de diseño interno lo convierte en archivos listos para producción. Nos encargamos del digitalizado del bordado, la igualación de colores y la ingeniería de su estilo exacto de gorra." },
       { title: "Proceso de muestra y aprobación", desc: "Muestras físicas de preproducción en 7 días. Las tarifas de muestra van de $50-100, incluyen el mensajero y se acreditan por completo contra su pedido en masa, por lo que probar un nuevo estilo es de bajo riesgo para socios nuevos." },
       { title: "Control de calidad", desc: "Cada etapa de producción se documenta con fotos y videos: verificación de materia prima, precisión del bordado, integridad de las costuras, revisión final antes del empaque y auditoría de empaque antes del envío." },
@@ -80,7 +80,7 @@ export default function OemPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "OEM Headwear Sourcing Partner in China — Private Label Custom Caps Since 2014",
-    "description": "Full-service OEM/ODM headwear sourcing partner: audited partner network, multi-head embroidery, SGS/OEKO-TEX/REACH compliant, samples in 7 days. Serving 300+ brands worldwide.",
+    "description": "Full-service OEM/ODM headwear sourcing partner: vetted partner network, multi-head embroidery, pre-shipment QC, samples in 7 days. Serving 300+ brands worldwide.",
     "author": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "publisher": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "datePublished": "2026-08-25",

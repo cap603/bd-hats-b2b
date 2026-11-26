@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Gorras de 5 paneles directo de fábrica: A-frame y camper, bordado 3D puff, más de 30 colores. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días y SGS verificado."
-        : "Custom 5-panel caps direct from factory: A-frame & camper styles, 3D puff embroidery, 30+ colors. MOQ 200pcs, $3.50-$7.00 FOB, 7-day samples, SGS verified.",
+        ? "Gorras de 5 paneles directo de fábrica: A-frame y camper, bordado 3D puff, más de 30 colores. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días y cotización en 2h."
+        : "Custom 5-panel caps direct from factory: A-frame & camper styles, 3D puff embroidery, 30+ colors. MOQ 200pcs, $3.50-$7.00 FOB, 7-day samples, written quote in 2h.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

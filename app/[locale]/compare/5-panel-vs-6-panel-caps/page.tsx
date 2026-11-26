@@ -109,7 +109,7 @@ const CONTENT = {
         { k: "15–20 days", v: "Bulk production after sample approval" },
         { k: "In-House", v: "Quality control at each stage" },
       ],
-      note: "Baoding Junyang has manufactured custom caps since 2014, running 100+ precision Barudan embroidery machines and a 200-person production team.",
+      note: "Baoding Junyang has been sourcing custom caps since 2014 through a dedicated partner network in Hebei, with precision Barudan embroidery lines and in-house quality control.",
     },
     faq: {
       heading: "5-panel and 6-panel cap FAQ",
@@ -243,7 +243,7 @@ const CONTENT = {
         { k: "15–20 días", v: "Producción en masa tras aprobar muestra" },
         { k: "Interno", v: "Control de calidad en cada etapa" },
       ],
-      note: "Baoding Junyang fabrica gorras personalizadas desde 2014, con más de 100 máquinas de bordado japonesas Barudan y un equipo de producción de 200 personas.",
+      note: "Baoding Junyang abastece gorras personalizadas desde 2014 a través de su red de fabricación asociada en Hebei, con líneas de bordado japonesas Barudan y control de calidad interno.",
     },
     faq: {
       heading: "Preguntas frecuentes: gorras de 5 y 6 paneles",

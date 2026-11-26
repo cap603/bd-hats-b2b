@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         : "Custom Trucker Hats Wholesale | Factory Direct",
     description:
       locale === "es"
-        ? "Gorras trucker personalizadas directo de fábrica en China. Frente de espuma y malla, bordado 3D, MOQ 200uds, $3.50-$6.50 FOB, muestras en 7 días y SGS verificado."
-        : "Custom trucker hats factory direct from China. Foam front & mesh back, 3D embroidery & print, MOQ 200pcs, $3.50-$6.50 FOB, 7-day samples. SGS verified since 2014.",
+        ? "Gorras trucker personalizadas directo de fábrica en China. Frente de espuma y malla, bordado 3D, MOQ 200uds, $3.50-$6.50 FOB, muestras en 7 días y cotización en 2h."
+        : "Custom trucker hats factory direct from China. Foam front & mesh back, 3D embroidery & print, MOQ 200pcs, $3.50-$6.50 FOB, 7-day samples, written quote in 2h.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

@@ -200,18 +200,18 @@ export function InquiryModal() {
     : "Get Custom Wholesale Quote & Pricing";
 
   const subText = isEs
-    ? "Respuesta rápida <2h, fábricas asociadas verificadas, muestras físicas en 7 días."
+    ? "Respuesta rápida <2h, fábricas asociadas seleccionadas, muestras físicas en 7 días."
     : isDe
-    ? "2-Std.-Antwort, geprüfte Partnerfabriken, physische Muster in 7 Tagen."
+    ? "2-Std.-Antwort, ausgewählte Partnerfabriken, physische Muster in 7 Tagen."
     : isFr
-    ? "Réponse en 2h, usines partenaires vérifiées, échantillons en 7 jours."
+    ? "Réponse en 2h, usines partenaires sélectionnées, échantillons en 7 jours."
     : isPt
-    ? "Resposta em 2h, fábricas parceiras verificadas, amostras físicas em 7 dias."
+    ? "Resposta em 2h, fábricas parceiras selecionadas, amostras físicas em 7 dias."
     : isIt
-    ? "Risposta rapida <2h, fabbriche partner verificate, campioni in 7 giorni."
+    ? "Risposta rapida <2h, fabbriche partner selezionate, campioni in 7 giorni."
     : isJa
     ? "2時間以内見積り回答、厳選された提携工場、7日間サンプル作成。"
-    : "2h rapid turnaround, audited partner factories, 7-day physical samples.";
+    : "2h rapid turnaround, vetted partner factories, 7-day physical samples.";
 
   const whatsappBtnText = isEs
     ? "Chatear por WhatsApp Directo"

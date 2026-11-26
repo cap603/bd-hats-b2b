@@ -112,7 +112,7 @@ const CONTENT = {
       {
         heading: "3. Knit Gauge Selection: 3GG vs 5GG vs 7GG",
         paragraphs: [
-          "Both acrylic and Merino yarns can be knitted on our computerized Shima Seiki and flat knitting machines across three primary gauges:",
+          "Both acrylic and Merino yarns can be knitted on computerized Shima Seiki and flat knitting machines across three primary gauges:",
           "• 7GG (Fine Gauge): Dense, clean, and lightweight. The gold standard for sleek cuffed beanies worn under jackets or in mild urban winter.",
           "• 5GG (Medium Ribbed): The classic fisherman and chunky rib profile. High elasticity, deep foldover cuffs, and maximum surface area for front patches.",
           "• 3GG (Chunky Cable Knit): Heavyweight, rustic texture. Ideal for heavy winter mountain beanies and holiday gift programs.",
@@ -254,7 +254,7 @@ const CONTENT = {
       {
         heading: "3. Elección de Galgas: 3GG, 5GG y 7GG",
         paragraphs: [
-          "Tejemos ambos hilados en nuestras máquinas computarizadas Shima Seiki en tres densidades principales:",
+          "Se tejen ambos hilados en máquinas computarizadas Shima Seiki en tres densidades principales:",
           "• Galga 7GG (Punto Fino): Tejido compacto y ligero. Perfecto para gorros urbanos ajustados y uso bajo chaquetas.",
           "• Galga 5GG (Punto Medio Acanalado): La clásica textura acanalada de pescador. Gran elasticidad y doblado marcado.",
           "• Galga 3GG (Punto Grueso): Estilo rústico de invierno pesado y montaña.",
@@ -354,7 +354,7 @@ export default function MerinoVsAcrylicPage() {
         <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
           {lang === "es"
             ? "Muestras físicas en 7 días, galgas 3GG/5GG/7GG, forros de satén y bordados 3D. Pedido mínimo 200 unidades."
-            : "From 100% soft acrylic to certified extra-fine Merino wool blends. 7-day samples, Shima Seiki computerized knitting, and 200 pcs MOQ."}
+            : "From 100% soft acrylic to extra-fine Merino wool blends. 7-day samples, Shima Seiki computerized knitting, and 200 pcs MOQ."}
         </p>
         <Link
           href={`/${lang}/custom-beanies-manufacturer`}

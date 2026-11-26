@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: { locale: string; i
   const path = `/product/${hat.id}`;
   const canonical = `https://bdjunyang.com/${locale}${path}`;
   const languages = getAlternateLanguages(path);
-  const description = `Custom wholesale ${hat.name}. High-density 3D embroidery, MOQ ${hat.moq}pcs, ${priceLabel(hat.price)}. 7-day samples & SGS verified. Get factory quote.`;
+  const description = `Custom wholesale ${hat.name}. High-density 3D embroidery, MOQ ${hat.moq}pcs, ${priceLabel(hat.price)}. 7-day samples & pre-shipment QC. Get factory quote.`;
 
   const shortName = hat.name.length > 36 ? hat.name.substring(0, 36).trim() : hat.name;
 

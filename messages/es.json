@@ -1,381 +1,456 @@
 {
-  "nav": {
-    "advantages": "Ventajas",
-    "factory": "Nuestra Fábrica",
-    "qualityControl": "Control de Calidad",
-    "products": "Gorras de Béisbol",
-    "inquiry": "Consultar",
-    "about": "Nosotros",
-    "guide": "Guía para Compradores",
-    "materials": "Materiales y Tejidos",
-    "pricing": "Precios y Envíos",
-    "getQuote": "Solicitar Cotización",
-    "categories": "Categorías de gorras",
-    "viewAllProducts": "Ver todos los productos →",
-    "viewAllCount": "Ver los {count} →",
-    "stylesCount": "{count} estilos",
-    "whatsappQuote": "Cotizar por WhatsApp",
-    "home": "Inicio"
-  },
-  "home": {
-    "topBar": "Socio de Sourcing y Calidad en Gorras Personalizadas • Desde 2014",
-    "subtitle": "Socio de Sourcing y Control de Calidad",
-    "banners": {
-      "0": {
-        "label": "Cinturón Premium de Gorras en China · Sourcing Directo",
-        "title": "Gorras a medida según tus especificaciones, desde 200 unidades.",
-        "sub": "Gestionado por Baoding Junyang con fábricas asociadas verificadas en China. Confección de calidad media a alta. MOQ 200 uds · Muestra en 7 días · Producción 15–20 días · Cotización escrita en 2h.",
-        "cta": "Cotización Desglosada en 2h"
-      },
-      "1": {
-        "label": "Soluciones B2B Directo de Fábrica",
-        "title": "Personalización Premium Integral",
-        "sub": "Opciones ilimitadas: tejidos premium, colores personalizados, bordado 3D puff y perfiles de gorra a medida.",
-        "cta": "Comenzar a Personalizar"
-      },
-      "2": {
-        "label": "Soluciones B2B Directo de Fábrica",
-        "title": "Tu Visión, Cualquier Estilo",
-        "sub": "Desde gorras de 5 y 6 paneles hasta Truckers, Dad Hats, Gorros y Bucket Hats. Todo fabricado a medida.",
-        "cta": "Solicitar Muestras"
-      }
-    },
-    "pills": {
-      "moq": "MOQ 200 Uds",
-      "samples": "Muestras en 7 Días",
-      "market": "70% Norteamérica"
-    },
-    "stats": {
-      "years": "12+ Años",
-      "yearsLabel": "Experiencia en Producción",
-      "moq": "200 Uds",
-      "moqLabel": "MOQ desde 200 Uds",
-      "sgs": "OEKO-TEX y REACH"
-    },
-    "compliance": {
-      "title": "Estándares de Cumplimiento",
-      "certified": "Standard 100",
-      "markets": "Mercados Principales",
-      "na": "NORTEAMÉRICA (70%)",
-      "eu": "EUROPA OCCIDENTAL (25%)"
-    },
-    "factory": {
-      "label": "Sourcing y Control de Calidad",
-      "heading": "Ve Cómo se Fabrica Tu Gorra — En Vivo.",
-      "p1": "Baoding Junyang es un socio de sourcing y control de calidad de gorras. Emparejamos tus requisitos con fábricas asociadas verificadas en el cinturón de gorras de China, gestionando muestreo, producción e inspección desde un único punto de contacto.",
-      "p2Pre": "Nuestra Política de Transparencia:",
-      "p2": "Te enviamos fotos y videos directos (corte de tela, precisión del bordado, estructura de costura, planchado final) durante toda tu producción. Estás virtualmente dentro de la fábrica.",
-      "qcStandard": "Equipo de QC Propio",
-      "qcStandardDesc": "Inspección pieza por pieza antes del envío.",
-      "samples": "Muestras en 7 Días",
-      "samplesDesc": "Entrega rápida de prototipo físico.",
-      "videoCta": "Solicitar Actualizaciones de Video",
-      "videoTitle": "Ver Video de Producción (2026)",
-      "videoSub": "Máquinas de bordado automatizadas y costura profesional a mano."
-    },
-    "trust": {
-      "label": "Por Qué Compradores Globales Eligen Sourcing con Nosotros",
-      "heading": "Por Qué las Marcas Eligen BD Hats",
-      "sub": "Somos el socio de sourcing y calidad detrás de programas de gorras streetwear, corporativas y lifestyle en Norteamérica y Europa.",
-      "brands": "12+",
-      "brandsLabel": "Años en Comercio de Gorras",
-      "brandsDesc": "Sourcing y exportación de gorras personalizadas desde 2014.",
-      "caps": "200",
-      "capsLabel": "MOQ por Modelo y Color",
-      "capsDesc": "Confecciones de calidad media a alta, desde streetwear hasta programas corporativos.",
-      "retention": "2h",
-      "retentionLabel": "Cotización Formal Desglosada",
-      "retentionDesc": "Presupuesto FOB línea por línea en menos de 2 horas tras recibir tu especificación.",
-      "sgsSupplier": "Red de Fábricas Verificadas",
-      "goldSupplier": "Respaldo Alibaba Trade Assurance",
-      "certifications": "Ensayos REACH, OEKO-TEX y GRS según pedido · Inspección SGS/BV disponible",
-      "qcStandard": "Inspección Pieza por Pieza Antes del Envío"
-    },
-    "catalog": {
-      "label": "Categorías Premium de Gorras",
-      "heading": "Nuestra Serie de Gorras de Béisbol",
-      "sub": "Elige entre nuestras gorras base de alta conversión pre-desarrolladas o envía tu propio paquete técnico para personalización completa."
-    },
-    "process": {
-      "label": "Proceso de Personalización Paso a Paso",
-      "heading": "Cómo Trabajamos con las Marcas",
-      "step1Title": "Selecciona Estilo y Tejido",
-      "step1Desc": "Elige entre estructuras rígidas o suaves, y especifica tejidos desde algodón pesado hasta lona o terciopelo.",
-      "step2Title": "Recibe Cotización Detallada",
-      "step2Desc": "Envía tus requisitos y diseño. Nuestro equipo comercial te entrega una cotización completa con precios y plazos en 2 horas.",
-      "step3Title": "Aprobación de Muestra",
-      "step3Desc": "Producimos una muestra física y te enviamos videos y fotos detalladas para aprobación final de ajustes.",
-      "step4Title": "Producción y Actualizaciones",
-      "step4Desc": "Fabricamos el pedido al por mayor y enviamos actualizaciones periódicas con fotos y videos. Revisado antes del envío."
-    },
-    "qc": {
-      "label": "Garantía de Calidad",
-      "heading": "Nuestro Proceso de Control de Calidad en 5 Etapas",
-      "step1Title": "Verificación de Materia Prima",
-      "step1Desc": "Los rollos de sarga de algodón pesado, lona orgánica e hilo de bordado se verifican por consistencia de color y resistencia a la tracción antes del corte.",
-      "step2Title": "Control de Precisión de Bordado",
-      "step2Desc": "Monitoreo en tiempo real de la altura del bordado 3D puff y densidad de puntada. Las piezas con bordes deshilachados o logotipos desalineados se rechazan en esta etapa.",
-      "step3Title": "Auditoría de Integridad de Costura",
-      "step3Desc": "Enfoque en la estructura de la corona y cinta de costura. Las bandas de sudor internas se alinean con precisión de 1mm para máxima comodidad y durabilidad.",
-      "step4Title": "Revisión Final Antes del Empaque",
-      "step4Desc": "Las gorras se revisan, se recortan los hilos y se planchan a vapor antes de llegar a la línea de empaque.",
-      "step5Title": "Auditoría de Empaque y Etiquetado",
-      "step5Desc": "Verificación final del conteo contra la lista de empaque y auditoría de etiquetas de envío para respaldar la precisión en logística internacional.",
-      "liveStatus": "Estado en Vivo",
-      "qcPassed": "QC Aprobado"
-    },
-    "faq": {
-      "heading": "Preguntas Frecuentes",
-      "sub": "Todo lo que necesitas saber sobre nuestro proceso de fabricación personalizada.",
-      "q0": "¿Cuál es su Cantidad Mínima de Pedido (MOQ) para gorras de béisbol personalizadas?",
-      "a0": "Nuestro MOQ estándar es de 200 piezas por estilo/color. También aceptamos pedidos de prueba más pequeños para startups de marca y pruebas de bordado personalizado.",
-      "q1": "¿Puedo obtener una muestra antes de la producción en masa?",
-      "a1": "¡Sí, por supuesto! Proporcionamos muestras físicas de pre-producción para que verifiques calidad y ajuste antes de la producción en masa.",
-      "q2": "¿Son una fábrica o una empresa comercial?",
-      "a2": "Somos un socio de sourcing y control de calidad, abiertamente una empresa comercial. Emparejamos tu proyecto con fábricas asociadas auditadas, gestionamos muestras y producción, e inspeccionamos cada pieza antes del envío. Un solo contrato, un solo interlocutor y un estándar de calidad.",
-      "q3": "¿Cuál es su tiempo de producción estándar?",
-      "a3": "Nuestra producción de muestras toma 7 días. La producción en masa toma de 15 a 20 días según la cantidad y complejidad. El envío global por vía aérea toma de 5 a 8 días."
-    },
-    "inquiry": {
-      "heading": "Solicitar Cotización Personalizada",
-      "sub": "Envíanos los requisitos de tus gorras (estilos, logotipos, cantidades). Nuestros especialistas B2B te entregarán tu cotización en 2 horas.",
-      "trustLabel": "Sourcing Directo · Ensayos por Pedido · 12 Años en Comercio Textil",
-      "testimonialTitle": "Lo Que Obtienes con Cada Pedido",
-      "commitments": [
-        {
-          "title": "Cotización Desglosada en 2 Horas",
-          "desc": "Cotización FOB línea por línea con desglose de materiales (tela, decoración, herrajes, empaque) para comparar con total transparencia."
-        },
-        {
-          "title": "Control de Calidad Pieza por Pieza",
-          "desc": "Nuestro propio equipo de inspección verifica cada gorra antes del envío: bordado, costura, medidas y acabado. Inspección de terceros disponible por pedido."
-        },
-        {
-          "title": "Protección de Pago",
-          "desc": "Alibaba Trade Assurance o cuenta de custodia para primeros pedidos, con actualizaciones de fotos y videos en cada etapa."
-        }
-      ]
-    },
-    "q4Schedule": "Programa de Producción y Sourcing 2026 Activo",
-    "programsBadge": "Líneas OEM / ODM",
-    "programsTitle": "Programas Especializados de Producción B2B",
-    "programsSub": "Programas de manufactura por encargo directos de fábrica para fundadores de marcas, distribuidores e importadores mayoristas. MOQ 200 uds.",
-    "programs": {
-      "0": { "title": "Gorras Personalizadas de 5 Paneles", "desc": "Perfiles streetwear y camper, mezclas ligeras de algodón-nylon, visera plana y cierres de latón.", "tag": "Alta Demanda" },
-      "1": { "title": "Manufactura OEM de Gorras", "desc": "Manufactura por encargo completa de headwear. Digitalización total de tech pack y escalado de marca.", "tag": "Servicio Completo" },
-      "2": { "title": "Gorros de Punto Personalizados", "desc": "Gorros de canalícula, con vuelta, jacquard y parches de cuero genuino para programas de invierno.", "tag": "Estacional" },
-      "3": { "title": "Dad Hats Personalizados", "desc": "Gorras 6 paneles vintage sin estructura, lavado enzyme intenso, visera curvada y hebillas vintage.", "tag": "Estilo de Vida" },
-      "4": { "title": "Snapbacks al Por Mayor", "desc": "Gorras clásicas de corona alta y visera plana, frente estructurado con bufete y bordado 3D de alta densidad.", "tag": "Streetwear" },
-      "5": { "title": "Gorras Trucker Personalizadas", "desc": "Espaldas transpirables de malla poliéster, frentes de espuma o sarga pesada de algodón, personalizadas para campañas promocionales.", "tag": "Promo y Outdoor" },
-      "6": { "title": "Gorras Blancas al Por Mayor", "desc": "Inventario de bodega inmediato, listo para imprentas y talleres de bordado locales.", "tag": "Despacho Rápido" },
-      "7": { "title": "Headwear Private Label", "desc": "Paquete de marca dedicado: etiquetas tejidas personalizadas, cinta de costura impresa, hangtags y cajas a medida.", "tag": "Clave en Mano" },
-      "8": { "title": "Headwear Uniforme Corporativo", "desc": "Programas corporativos duraderos de alta repetición y pedidos masivos de gorras de uniforme.", "tag": "Uniformes" },
-      "9": { "title": "Bucket Hats Personalizados", "desc": "Bucket hats de ala ancha para festival y outdoor, tejidos con protección solar, cordones mentoneros y construcción reversible.", "tag": "Outdoor" },
-      "10": { "title": "Producción Masiva por Contenedor", "desc": "Producción a contenedor 20GP y 40HQ para distribuidores e importadores internacionales.", "tag": "Escala 10.000+" },
-      "11": { "title": "Precios Mayoristas por Niveles", "desc": "Niveles FOB transparentes desde $5.20/ud con MOQ 200; piso a escala contenedor desde $3.50/ud. Con desglose de costos.", "tag": "Tarifas Transparentes" }
-    },
-    "sectorsBadge": "Programas por Perfil de Comprador",
-    "sectorsTitle": "Programas de Manufactura a Medida por Segmento de Comprador",
-    "sectorsSub": "Soluciones de producción directas de fábrica, optimizadas para los requisitos específicos y curvas de volumen de cada sector de adquisiciones.",
-    "sectors": {
-      "0": { "tag": "Moda y Drops", "moq": "MOQ 200", "title": "Marcas Streetwear y de Ropa", "desc": "Camper de 5 paneles, dad hats vintage lavados con enzima, bordado 3D puff de alta densidad y forro interior damasco personalizado.", "foot": "100% Reembolso de Muestra ≥500" },
-      "1": { "tag": "Uniforme y Workwear", "moq": "500 – 5.000+", "title": "Programas Corporativos y de Uniformes", "desc": "Gorras 6 paneles de sarga pesada y estructuradas, alta solidez del color, ribetes reflectantes e inspección QC pieza por pieza antes del envío.", "foot": "Cotizaciones BOM Detalladas" },
-      "2": { "tag": "Deportivo de Rendimiento", "moq": "MOQ 200", "title": "Golf y Deporte de Alto Rendimiento", "desc": "Paneles de ventilación perforados a láser, nailon ligero repelente al agua DWR, badanas CoolMax que evacúan la humedad y cierres de silicona.", "foot": "Tecnología CoolMax Lista" },
-      "3": { "tag": "Escala Contenedor FCL", "moq": "10.000+ Uds", "title": "Granel por Contenedor y Distribuidores", "desc": "Truckers de malla y snapbacks de visera plana en gran volumen. Optimización de carga 20GP y 40HQ y precio FOB de fábrica desde $3.50.", "foot": "Desde $3.50 FOB" }
-    },
-    "explore": "Explorar",
-    "headwearTitle": "Headwear Personalizado",
-    "headwear": [
-      "Snapbacks al Por Mayor",
-      "Gorras Trucker Personalizadas",
-      "Dad Hats Personalizados",
-      "Gorras de 5 Paneles Personalizadas",
-      "Gorros de Punto Personalizados",
-      "Bucket Hats Personalizados",
-      "Pedidos Masivos y Corporativos"
-    ],
-    "guidesTitle": "Guías de Sourcing B2B",
-    "guides": [
-      "Guía de Tech Pack Vectorial",
-      "Índice de Costos de Gorras 2026",
-      "Principales Fabricantes de Gorras",
-      "5 Paneles vs 6 Paneles",
-      "Bordado Plano vs 3D Puff",
-      "Sarga de Algodón vs Lona",
-      "China vs Vietnam vs Bangladesh"
-    ],
-    "freeBadge": "AI/PDF Gratis",
-    "factoryDirect": "Super Fábrica Directa · OEM/ODM",
-    "exporting": "Exportando a EE. UU., UE y AU desde 2014",
-    "backToTop": "Volver arriba ↑",
-    "assets": {
-      "badge1a": "Recurso de Diseño B2B Gratis",
-      "badge1b": "Planos AI / PDF / EPS",
-      "title1": "Descarga Gratis: Plantillas Tech Pack Vectoriales (Escala 1:1)",
-      "desc1": "Patrones listos para producción con cotas de fábrica para 5 paneles, 6 paneles, truckers y gorros con límites de bordado.",
-      "cta1": "Descargar Plantillas Vectoriales",
-      "badge2a": "Herramienta de Logística Interactiva",
-      "badge2b": "Especificación 60×45×40cm",
-      "title2": "Calculadora B2B de Cajas de Exportación y CBM",
-      "desc2": "Calcule número de cajas (100 uds/caja), peso bruto (~12kg) y volumen CBM para envíos aéreos y contenedores FCL (20GP/40HQ).",
-      "cta2": "Abrir Calculadora CBM"
-    },
-    "milestone": {
-      "title": "Bitácora Multimedia de Producción en Vivo",
-      "updates": "Actualizaciones cada 2 días",
-      "desc": "Seguimiento transparente en cada fase: ① Muestra de tela y corte ② Video en vivo del bordado ③ Confección de badana ④ Inspección pieza por pieza y empaque.",
-      "cta": "Consultar con Eileen",
-      "samplesBulk": "Muestras en 7 días · Volumen en 15-20 días"
-    },
-    "intents": {
-      "techpackTitle": "Descargar Ficha Técnica en Blanco (AI/PDF)",
-      "techpackSub": "Plantillas vectoriales con cotas de costura",
-      "mockupTitle": "Maqueta 3D Digital Gratuita (24h)",
-      "mockupSub": "Envía tu logo, te devolvemos render 3D"
-    }
-  },
-  "catalog": {
-    "filterAll": "Todos",
-    "filterBaseballCaps": "Gorras de Béisbol",
-    "filterVintage": "Serie Vintage",
-    "filterSports": "Deportivas",
-    "filterTruckerHats": "Gorras Trucker",
-    "filterSnapbacks": "Snapbacks",
-    "filterBucketHats": "Gorros Bucket",
-    "filterBeanies": "Gorros de Punto",
-    "panelLabel": "Panel:",
-    "panelAll": "Todos",
-    "sortDefault": "Predeterminado",
-    "sortPriceAsc": "Precio: Menor → Mayor",
-    "sortPriceDesc": "Precio: Mayor → Menor",
-    "moq": "MOQ: {count} Uds",
-    "factoryDirect": "Directo de Fábrica",
-    "viewDetails": "Ver Detalles",
-    "quote": "Cotizar",
-    "details": "Detalles",
-    "showing": "Mostrando {shown} de {total} productos",
-    "noResults": "Ningún producto coincide con los filtros actuales.",
-    "resetFilters": "Restablecer todos los filtros",
-    "badgeBestSeller": "Más Vendido",
-    "badgeTrending": "Tendencia",
-    "badgeNew": "Nuevo"
-  },
-  "product": {
-    "backToCatalog": "Volver al Catálogo",
-    "whatsappQuote": "Cotizar por WhatsApp",
-    "topSeller": "Más Vendido",
-    "qc": "Interno",
-    "qcSub": "Equipo QC",
-    "production": "15 Días",
-    "productionSub": "Producción",
-    "moq": "200 Uds",
-    "moqSub": "MOQ",
-    "shipping": "Global",
-    "shippingSub": "Envío Exprés",
-    "unit": "/ Unidad (FOB)",
-    "tabs": {
-      "specs": "Especificaciones",
-      "custom": "Personalización",
-      "faq": "FAQ del Producto"
-    },
-    "getQuote": "Solicitar Cotización",
-    "orderSample": "Pedir Muestra",
-    "urgencyStrip": "Fabricación Directa de Fábrica · MOQ 200 Uds · Cotización Escrita en 2h · Muestras en 7 Días",
-    "related": "Seguir Explorando",
-    "relatedTitle": "Productos Relacionados",
-    "faqHeading": "Preguntas frecuentes",
-    "moreInfo": "Sigue investigando",
-    "moreInfoTitle": "Guías y comparativas relacionadas",
-    "moreInfoCategory": "Esta categoría",
-    "moreInfoCompare": "Comparar opciones",
-    "moreInfoGuides": "Guías de compra",
-    "trustBar": "Estándares Globales de Fabricación",
-    "notFound": "Producto No Encontrado",
-    "backLink": "Volver al Catálogo",
-    "devToolsBadge": "Herramientas para Diseñadores y Marcas",
-    "devToolsTitle": "Plantillas Vectoriales y Revisión Técnica Lista para Producción",
-    "devToolsSub": "Acelera el lanzamiento de tu colección con plantillas vectoriales directas de fábrica y evaluación 3D.",
-    "techpackTitle": "Descargar Ficha Técnica en Blanco (AI / PDF)",
-    "techpackDesc": "Plantillas vectoriales 2D con medidas exactas de corona, visera curva/plana y costuras de 5 y 6 paneles.",
-    "techpackBtn": "Obtener Plantilla Vectorial",
-    "mockupTitle": "Vista Previa 3D y Revisión de Viabilidad en 2 Horas (Gratis)",
-    "mockupDesc": "Envía tu logotipo — nuestro equipo técnico revisa la densidad de puntadas, soporte Tatami y genera una vista 3D.",
-    "mockupBtn": "Solicitar Mockup Gratis"
-  },
-  "form": {
-    "name": "Tu Nombre",
-    "namePlaceholder": "Juan Pérez",
-    "email": "Correo Electrónico",
-    "emailPlaceholder": "tu@empresa.com",
-    "phone": "Teléfono / WhatsApp (Opcional)",
-    "phonePlaceholder": "+34 600 000 000",
-    "message": "Mensaje / Requisitos",
-    "messagePlaceholder": "Cuéntanos sobre los estilos, cantidades o personalización específica (ej. Bordado 3D Puff, Etiquetas Tejidas)...",
-    "privacyNote": "Tu consulta se envía directamente al equipo técnico comercial (admin@bdjunyang.com). Cotización formal por escrito en 2 horas.",
-    "intentSample": "¡Hola Baoding Junyang! Quisiera pedir una muestra física antes de la producción en masa. ¿Pueden darme detalles?",
-    "intentBulk": "¡Hola Baoding Junyang! Me interesa la producción en masa. ¿Pueden proporcionarme una cotización?",
-    "intentTest": "¡Hola Baoding Junyang! Quisiera hacer un pedido de prueba pequeño. ¿Pueden darme detalles?",
-    "intentTechpack": "¡Hola Baoding Junyang! Por favor envíenme las plantillas vectoriales en blanco (Tech Pack en AI/PDF) y hojas de especificaciones de costura para nuestro equipo de diseño. Mi marca/empresa es: ",
-    "intentMockup": "¡Hola Baoding Junyang! Me gustaría solicitar una vista previa digital en 3D y evaluación de viabilidad de bordado gratuita para nuestro logotipo. Estilo de interés: ",
-    "submit": "Enviar Consulta Técnica",
-    "submitting": "Transmitiendo al Equipo de Ventas...",
-    "thanks": "¡Consulta Recibida con Éxito!",
-    "thanksMsg": "Tus especificaciones han sido entregadas al equipo comercial (admin@bdjunyang.com). Revisaremos tus detalles y responderemos a tu correo en breve.",
-    "whatsappFallback": "¿Necesitas una respuesta inmediata? También puedes conectar con nuestro especialista en WhatsApp:",
-    "chatWhatsApp": "Chatear por WhatsApp (+86 159 3393 0830)",
-    "sendAnother": "Enviar otra consulta"
-  },
-  "footer": {
-    "about": "Baoding Junyang Import and Export Trade Co., Ltd. es un socio de sourcing y control de calidad especializado en gorras de calidad media a alta, beanies y truckers desde 2014.",
-    "navigation": "Navegación",
-    "products": "Productos",
-    "aboutLink": "Nosotros",
-    "guideLink": "Guía para Compradores",
-    "materialsLink": "Materiales y Tejidos",
-    "pricingLink": "Precios y Envíos",
-    "requestQuote": "Solicitar Cotización",
-    "contact": "Contacto",
-    "whatsapp": "WhatsApp: +86 15933930830",
-    "email": "Email: admin@bdjunyang.com",
-    "office": "Oficina: Baoding, Hebei, China",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos del Servicio",
-    "copyright": "© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Todos los derechos reservados."
-  },
-  "breadcrumb": {
-    "home": "Inicio",
-    "about": "Nosotros",
-    "guide": "Guía para Compradores",
-    "materials": "Materiales y Tejidos",
-    "pricing": "Precios y Envíos",
-    "products": "Productos"
-  },
-  "meta": {
-    "homeTitle": "BD Hats | Socio de Abastecimiento de Gorras Personalizadas",
-    "homeDesc": "Gorras personalizadas de calidad media a alta con control de calidad pieza a pieza desde 2014. Bordado personalizado, MOQ 200uds, muestras en 7 días, cotización en 2h. Baoding, China.",
-    "aboutTitle": "Sobre BD Hats | Socio de Abastecimiento de Gorras en Baoding, China",
-    "aboutDesc": "Baoding Junyang Import and Export Trade Co., Ltd. — 12 años conectando marcas globales con fabricantes de headwear y control de calidad pieza a pieza desde 2014.",
-    "guideTitle": "Guía B2B de Fabricación de Gorras | Cómo Comprar Gorras al por Mayor desde China",
-    "guideDesc": "Guía completa para compradores B2B: cómo elegir una fábrica de gorras, tipos de bordado, negociación de MOQ, control de calidad y logística de envío.",
-    "materialsTitle": "Guía de Materiales para Gorras | Algodón, Lana, Poliéster y Más | BD Hats",
-    "materialsDesc": "Guía completa de materiales para gorras personalizadas: sarga de algodón, algodón cepillado, lana, poliéster, nylon, lona. Aprende tipos de cierre y construcción de paneles para tu pedido al por mayor.",
-    "pricingTitle": "Guía de Precios, MOQ y Envíos | Desglose de Costos al por Mayor | BD Hats",
-    "pricingDesc": "Guía de precios transparente para gorras personalizadas: ¿cuánto cuestan las gorras?, FOB vs CIF explicado, MOQ 200uds, costos de flete aéreo vs marítimo, tarifas de muestras y descuentos por volumen."
-  },
-  "popup": {
-    "badge": "Directo de Fábrica · Desde 2014",
-    "heading": "¿Necesitas Gorras Personalizadas para Tu Marca?",
-    "sub": "Obtén una cotización de fábrica en 2 horas — sin compromiso, muestras físicas en 7 días.",
-    "whatsappBtn": "Chatear por WhatsApp",
-    "formBtn": "Enviar Consulta",
-    "note": "100% directo de fábrica · Verificado SGS · Más de 300 marcas"
-  },
-  "chat": {
-    "cta": "Chatea con Nosotros",
-    "tip": "⚡ Cotización escrita en 2h"
-  },
-  "language": {
-    "switchTo": "English",
-    "label": "ES"
-  }
+     "nav": {
+          "advantages": "Ventajas",
+          "factory": "Nuestra Fábrica",
+          "qualityControl": "Control de Calidad",
+          "products": "Gorras de Béisbol",
+          "inquiry": "Consultar",
+          "about": "Nosotros",
+          "guide": "Guía para Compradores",
+          "materials": "Materiales y Tejidos",
+          "pricing": "Precios y Envíos",
+          "getQuote": "Solicitar Cotización",
+          "categories": "Categorías de gorras",
+          "viewAllProducts": "Ver todos los productos →",
+          "viewAllCount": "Ver los {count} →",
+          "stylesCount": "{count} estilos",
+          "whatsappQuote": "Cotizar por WhatsApp",
+          "home": "Inicio"
+     },
+     "home": {
+          "topBar": "Socio de Sourcing y Calidad en Gorras Personalizadas • Desde 2014",
+          "subtitle": "Socio de Sourcing y Control de Calidad",
+          "banners": {
+               "0": {
+                    "label": "Cinturón Premium de Gorras en China · Sourcing Directo",
+                    "title": "Gorras a medida según tus especificaciones, desde 200 unidades.",
+                    "sub": "Gestionado por Baoding Junyang con fábricas asociadas seleccionadas en China. Confección de calidad media a alta. MOQ 200 uds · Muestra en 7 días · Producción 15–20 días · Cotización escrita en 2h.",
+                    "cta": "Cotización Desglosada en 2h"
+               },
+               "1": {
+                    "label": "Soluciones B2B Directo de Fábrica",
+                    "title": "Personalización Premium Integral",
+                    "sub": "Opciones ilimitadas: tejidos premium, colores personalizados, bordado 3D puff y perfiles de gorra a medida.",
+                    "cta": "Comenzar a Personalizar"
+               },
+               "2": {
+                    "label": "Soluciones B2B Directo de Fábrica",
+                    "title": "Tu Visión, Cualquier Estilo",
+                    "sub": "Desde gorras de 5 y 6 paneles hasta Truckers, Dad Hats, Gorros y Bucket Hats. Todo fabricado a medida.",
+                    "cta": "Solicitar Muestras"
+               }
+          },
+          "pills": {
+               "moq": "MOQ 200 Uds",
+               "samples": "Muestras en 7 Días",
+               "market": "70% Norteamérica"
+          },
+          "stats": {
+               "years": "12+ Años",
+               "yearsLabel": "Experiencia en Producción",
+               "moq": "200 Uds",
+               "moqLabel": "MOQ desde 200 Uds",
+               "sgs": "Control de Calidad Pre-envío"
+          },
+          "compliance": {
+               "title": "Abastecimiento Directo de Fábrica",
+               "certified": "MOQ 200+ uds",
+               "markets": "Mercados Principales",
+               "na": "NORTEAMÉRICA (70%)",
+               "eu": "EUROPA OCCIDENTAL (25%)",
+               "a": "OEM / ODM",
+               "b": "Diseños a Medida",
+               "c": "Marca Privada"
+          },
+          "factory": {
+               "label": "Sourcing y Control de Calidad",
+               "heading": "Ve Cómo se Fabrica Tu Gorra — En Vivo.",
+               "p1": "Baoding Junyang es un socio de sourcing y control de calidad de gorras. Emparejamos tus requisitos con fábricas asociadas seleccionadas en el cinturón de gorras de China, gestionando muestreo, producción e inspección desde un único punto de contacto.",
+               "p2Pre": "Nuestra Política de Transparencia:",
+               "p2": "Te enviamos fotos y videos directos (corte de tela, precisión del bordado, estructura de costura, planchado final) durante toda tu producción. Estás virtualmente dentro de la fábrica.",
+               "qcStandard": "Equipo de QC Propio",
+               "qcStandardDesc": "Controles de calidad por etapas antes del envío.",
+               "samples": "Muestras en 7 Días",
+               "samplesDesc": "Entrega rápida de prototipo físico.",
+               "videoCta": "Solicitar Actualizaciones de Video",
+               "videoTitle": "Ver Video de Producción (2026)",
+               "videoSub": "Máquinas de bordado automatizadas y costura profesional a mano."
+          },
+          "trust": {
+               "label": "Por Qué Compradores Globales Eligen Sourcing con Nosotros",
+               "heading": "Por Qué las Marcas Eligen BD Hats",
+               "sub": "Somos el socio de sourcing y calidad detrás de programas de gorras streetwear, corporativas y lifestyle en Norteamérica y Europa.",
+               "brands": "12+",
+               "brandsLabel": "Años en Comercio de Gorras",
+               "brandsDesc": "Sourcing y exportación de gorras personalizadas desde 2014.",
+               "caps": "200",
+               "capsLabel": "MOQ por Modelo y Color",
+               "capsDesc": "Confecciones de calidad media a alta, desde streetwear hasta programas corporativos.",
+               "retention": "2h",
+               "retentionLabel": "Cotización Formal Desglosada",
+               "retentionDesc": "Presupuesto FOB línea por línea en menos de 2 horas tras recibir tu especificación.",
+               "sgsSupplier": "Red de Fábricas Asociadas Seleccionadas",
+               "goldSupplier": "Respaldo Alibaba Trade Assurance",
+               "certifications": "Pruebas e Inspección de Terceros bajo Solicitud",
+               "qcStandard": "Inspección de Calidad antes del Envío"
+          },
+          "catalog": {
+               "label": "Categorías Premium de Gorras",
+               "heading": "Nuestra Serie de Gorras de Béisbol",
+               "sub": "Elige entre nuestras gorras base de alta conversión pre-desarrolladas o envía tu propio paquete técnico para personalización completa."
+          },
+          "process": {
+               "label": "Proceso de Personalización Paso a Paso",
+               "heading": "Cómo Trabajamos con las Marcas",
+               "step1Title": "Selecciona Estilo y Tejido",
+               "step1Desc": "Elige entre estructuras rígidas o suaves, y especifica tejidos desde algodón pesado hasta lona o terciopelo.",
+               "step2Title": "Recibe Cotización Detallada",
+               "step2Desc": "Envía tus requisitos y diseño. Nuestro equipo comercial te entrega una cotización completa con precios y plazos en 2 horas.",
+               "step3Title": "Aprobación de Muestra",
+               "step3Desc": "Producimos una muestra física y te enviamos videos y fotos detalladas para aprobación final de ajustes.",
+               "step4Title": "Producción y Actualizaciones",
+               "step4Desc": "Fabricamos el pedido al por mayor y enviamos actualizaciones periódicas con fotos y videos. Revisado antes del envío."
+          },
+          "qc": {
+               "label": "Garantía de Calidad",
+               "heading": "Nuestro Proceso de Control de Calidad en 5 Etapas",
+               "step1Title": "Verificación de Materia Prima",
+               "step1Desc": "Los rollos de sarga de algodón pesado, lona orgánica e hilo de bordado se verifican por consistencia de color y resistencia a la tracción antes del corte.",
+               "step2Title": "Control de Precisión de Bordado",
+               "step2Desc": "Monitoreo en tiempo real de la altura del bordado 3D puff y densidad de puntada. Las piezas con bordes deshilachados o logotipos desalineados se rechazan en esta etapa.",
+               "step3Title": "Auditoría de Integridad de Costura",
+               "step3Desc": "Enfoque en la estructura de la corona y cinta de costura. Las bandas de sudor internas se alinean con precisión de 1mm para máxima comodidad y durabilidad.",
+               "step4Title": "Revisión Final Antes del Empaque",
+               "step4Desc": "Las gorras se revisan, se recortan los hilos y se planchan a vapor antes de llegar a la línea de empaque.",
+               "step5Title": "Auditoría de Empaque y Etiquetado",
+               "step5Desc": "Verificación final del conteo contra la lista de empaque y auditoría de etiquetas de envío para respaldar la precisión en logística internacional.",
+               "liveStatus": "Estado en Vivo",
+               "qcPassed": "QC Pre-envío"
+          },
+          "faq": {
+               "heading": "Preguntas Frecuentes",
+               "sub": "Todo lo que necesitas saber sobre nuestro proceso de fabricación personalizada.",
+               "q0": "¿Cuál es su Cantidad Mínima de Pedido (MOQ) para gorras de béisbol personalizadas?",
+               "a0": "Nuestro MOQ estándar es de 200 piezas por estilo/color. También aceptamos pedidos de prueba más pequeños para startups de marca y pruebas de bordado personalizado.",
+               "q1": "¿Puedo obtener una muestra antes de la producción en masa?",
+               "a1": "¡Sí, por supuesto! Proporcionamos muestras físicas de pre-producción para que verifiques calidad y ajuste antes de la producción en masa.",
+               "q2": "¿Son una fábrica o una empresa comercial?",
+               "a2": "Somos un socio de sourcing y control de calidad, abiertamente una empresa comercial. Emparejamos tu proyecto con fábricas asociadas seleccionadas, gestionamos muestras y producción, y realizamos inspecciones de calidad antes del envío. Un solo contrato, un solo interlocutor y un estándar de calidad.",
+               "q3": "¿Cuál es su tiempo de producción estándar?",
+               "a3": "Nuestra producción de muestras toma 7 días. La producción en masa toma de 15 a 20 días según la cantidad y complejidad. El envío global por vía aérea toma de 5 a 8 días."
+          },
+          "inquiry": {
+               "heading": "Solicitar Cotización Personalizada",
+               "sub": "Envíanos los requisitos de tus gorras (estilos, logotipos, cantidades). Nuestros especialistas B2B te entregarán tu cotización en 2 horas.",
+               "trustLabel": "Sourcing Directo · Ensayos por Pedido · 12 Años en Comercio Textil",
+               "testimonialTitle": "Lo Que Obtienes con Cada Pedido",
+               "commitments": [
+                    {
+                         "title": "Cotización Desglosada en 2 Horas",
+                         "desc": "Cotización FOB línea por línea con desglose de materiales (tela, decoración, herrajes, empaque) para comparar con total transparencia."
+                    },
+                    {
+                         "title": "Control de Calidad Pre-envío",
+                         "desc": "Nuestro propio equipo de inspección verifica las gorras antes del envío: bordado, costura, medidas y acabado. Inspección de terceros disponible por pedido."
+                    },
+                    {
+                         "title": "Protección de Pago",
+                         "desc": "Alibaba Trade Assurance o cuenta de custodia para primeros pedidos, con actualizaciones de fotos y videos en cada etapa."
+                    }
+               ]
+          },
+          "q4Schedule": "Programa de Producción y Sourcing 2026 Activo",
+          "programsBadge": "Líneas OEM / ODM",
+          "programsTitle": "Programas Especializados de Producción B2B",
+          "programsSub": "Programas de manufactura por encargo directos de fábrica para fundadores de marcas, distribuidores e importadores mayoristas. MOQ 200 uds.",
+          "programs": {
+               "0": {
+                    "title": "Gorras Personalizadas de 5 Paneles",
+                    "desc": "Perfiles streetwear y camper, mezclas ligeras de algodón-nylon, visera plana y cierres de latón.",
+                    "tag": "Alta Demanda"
+               },
+               "1": {
+                    "title": "Manufactura OEM de Gorras",
+                    "desc": "Manufactura por encargo completa de headwear. Digitalización total de tech pack y escalado de marca.",
+                    "tag": "Servicio Completo"
+               },
+               "2": {
+                    "title": "Gorros de Punto Personalizados",
+                    "desc": "Gorros de canalícula, con vuelta, jacquard y parches de cuero genuino para programas de invierno.",
+                    "tag": "Estacional"
+               },
+               "3": {
+                    "title": "Dad Hats Personalizados",
+                    "desc": "Gorras 6 paneles vintage sin estructura, lavado enzyme intenso, visera curvada y hebillas vintage.",
+                    "tag": "Estilo de Vida"
+               },
+               "4": {
+                    "title": "Snapbacks al Por Mayor",
+                    "desc": "Gorras clásicas de corona alta y visera plana, frente estructurado con bufete y bordado 3D de alta densidad.",
+                    "tag": "Streetwear"
+               },
+               "5": {
+                    "title": "Gorras Trucker Personalizadas",
+                    "desc": "Espaldas transpirables de malla poliéster, frentes de espuma o sarga pesada de algodón, personalizadas para campañas promocionales.",
+                    "tag": "Promo y Outdoor"
+               },
+               "6": {
+                    "title": "Gorras Blancas al Por Mayor",
+                    "desc": "Inventario de bodega inmediato, listo para imprentas y talleres de bordado locales.",
+                    "tag": "Despacho Rápido"
+               },
+               "7": {
+                    "title": "Headwear Private Label",
+                    "desc": "Paquete de marca dedicado: etiquetas tejidas personalizadas, cinta de costura impresa, hangtags y cajas a medida.",
+                    "tag": "Clave en Mano"
+               },
+               "8": {
+                    "title": "Headwear Uniforme Corporativo",
+                    "desc": "Programas corporativos duraderos de alta repetición y pedidos masivos de gorras de uniforme.",
+                    "tag": "Uniformes"
+               },
+               "9": {
+                    "title": "Bucket Hats Personalizados",
+                    "desc": "Bucket hats de ala ancha para festival y outdoor, tejidos con protección solar, cordones mentoneros y construcción reversible.",
+                    "tag": "Outdoor"
+               },
+               "10": {
+                    "title": "Producción Masiva por Contenedor",
+                    "desc": "Producción a contenedor 20GP y 40HQ para distribuidores e importadores internacionales.",
+                    "tag": "Escala 10.000+"
+               },
+               "11": {
+                    "title": "Precios Mayoristas por Niveles",
+                    "desc": "Niveles FOB transparentes desde $5.20/ud con MOQ 200; piso a escala contenedor desde $3.50/ud. Con desglose de costos.",
+                    "tag": "Tarifas Transparentes"
+               }
+          },
+          "sectorsBadge": "Programas por Perfil de Comprador",
+          "sectorsTitle": "Programas de Manufactura a Medida por Segmento de Comprador",
+          "sectorsSub": "Soluciones de producción directas de fábrica, optimizadas para los requisitos específicos y curvas de volumen de cada sector de adquisiciones.",
+          "sectors": {
+               "0": {
+                    "tag": "Moda y Drops",
+                    "moq": "MOQ 200",
+                    "title": "Marcas Streetwear y de Ropa",
+                    "desc": "Camper de 5 paneles, dad hats vintage lavados con enzima, bordado 3D puff de alta densidad y forro interior damasco personalizado.",
+                    "foot": "100% Reembolso de Muestra ≥500"
+               },
+               "1": {
+                    "tag": "Uniforme y Workwear",
+                    "moq": "500 – 5.000+",
+                    "title": "Programas Corporativos y de Uniformes",
+                    "desc": "Gorras 6 paneles de sarga pesada y estructuradas, alta solidez del color, ribetes reflectantes e inspección de calidad antes del envío.",
+                    "foot": "Cotizaciones BOM Detalladas"
+               },
+               "2": {
+                    "tag": "Deportivo de Rendimiento",
+                    "moq": "MOQ 200",
+                    "title": "Golf y Deporte de Alto Rendimiento",
+                    "desc": "Paneles de ventilación perforados a láser, nailon ligero repelente al agua DWR, badanas CoolMax que evacúan la humedad y cierres de silicona.",
+                    "foot": "Tecnología CoolMax Lista"
+               },
+               "3": {
+                    "tag": "Escala Contenedor FCL",
+                    "moq": "10.000+ Uds",
+                    "title": "Granel por Contenedor y Distribuidores",
+                    "desc": "Truckers de malla y snapbacks de visera plana en gran volumen. Optimización de carga 20GP y 40HQ y precio FOB de fábrica desde $3.50.",
+                    "foot": "Desde $3.50 FOB"
+               }
+          },
+          "explore": "Explorar",
+          "headwearTitle": "Headwear Personalizado",
+          "headwear": [
+               "Snapbacks al Por Mayor",
+               "Gorras Trucker Personalizadas",
+               "Dad Hats Personalizados",
+               "Gorras de 5 Paneles Personalizadas",
+               "Gorros de Punto Personalizados",
+               "Bucket Hats Personalizados",
+               "Pedidos Masivos y Corporativos"
+          ],
+          "guidesTitle": "Guías de Sourcing B2B",
+          "guides": [
+               "Guía de Tech Pack Vectorial",
+               "Índice de Costos de Gorras 2026",
+               "Principales Fabricantes de Gorras",
+               "5 Paneles vs 6 Paneles",
+               "Bordado Plano vs 3D Puff",
+               "Sarga de Algodón vs Lona",
+               "China vs Vietnam vs Bangladesh"
+          ],
+          "freeBadge": "AI/PDF Gratis",
+          "factoryDirect": "Super Fábrica Directa · OEM/ODM",
+          "exporting": "Exportando a EE. UU., UE y AU desde 2014",
+          "backToTop": "Volver arriba ↑",
+          "assets": {
+               "badge1a": "Recurso de Diseño B2B Gratis",
+               "badge1b": "Planos AI / PDF / EPS",
+               "title1": "Descarga Gratis: Plantillas Tech Pack Vectoriales (Escala 1:1)",
+               "desc1": "Patrones listos para producción con cotas de fábrica para 5 paneles, 6 paneles, truckers y gorros con límites de bordado.",
+               "cta1": "Descargar Plantillas Vectoriales",
+               "badge2a": "Herramienta de Logística Interactiva",
+               "badge2b": "Especificación 60×45×40cm",
+               "title2": "Calculadora B2B de Cajas de Exportación y CBM",
+               "desc2": "Calcule número de cajas (100 uds/caja), peso bruto (~12kg) y volumen CBM para envíos aéreos y contenedores FCL (20GP/40HQ).",
+               "cta2": "Abrir Calculadora CBM"
+          },
+          "milestone": {
+               "title": "Bitácora Multimedia de Producción en Vivo",
+               "updates": "Actualizaciones cada 2 días",
+               "desc": "Seguimiento transparente en cada fase: ① Muestra de tela y corte ② Video en vivo del bordado ③ Confección de badana ④ Inspección final de calidad y empaque.",
+               "cta": "Consultar con Eileen",
+               "samplesBulk": "Muestras en 7 días · Volumen en 15-20 días"
+          },
+          "intents": {
+               "techpackTitle": "Descargar Ficha Técnica en Blanco (AI/PDF)",
+               "techpackSub": "Plantillas vectoriales con cotas de costura",
+               "mockupTitle": "Maqueta 3D Digital Gratuita (24h)",
+               "mockupSub": "Envía tu logo, te devolvemos render 3D"
+          }
+     },
+     "catalog": {
+          "filterAll": "Todos",
+          "filterBaseballCaps": "Gorras de Béisbol",
+          "filterVintage": "Serie Vintage",
+          "filterSports": "Deportivas",
+          "filterTruckerHats": "Gorras Trucker",
+          "filterSnapbacks": "Snapbacks",
+          "filterBucketHats": "Gorros Bucket",
+          "filterBeanies": "Gorros de Punto",
+          "panelLabel": "Panel:",
+          "panelAll": "Todos",
+          "sortDefault": "Predeterminado",
+          "sortPriceAsc": "Precio: Menor → Mayor",
+          "sortPriceDesc": "Precio: Mayor → Menor",
+          "moq": "MOQ: {count} Uds",
+          "factoryDirect": "Directo de Fábrica",
+          "viewDetails": "Ver Detalles",
+          "quote": "Cotizar",
+          "details": "Detalles",
+          "showing": "Mostrando {shown} de {total} productos",
+          "noResults": "Ningún producto coincide con los filtros actuales.",
+          "resetFilters": "Restablecer todos los filtros",
+          "badgeBestSeller": "Más Vendido",
+          "badgeTrending": "Tendencia",
+          "badgeNew": "Nuevo"
+     },
+     "product": {
+          "backToCatalog": "Volver al Catálogo",
+          "whatsappQuote": "Cotizar por WhatsApp",
+          "topSeller": "Más Vendido",
+          "qc": "Interno",
+          "qcSub": "Equipo QC",
+          "production": "15 Días",
+          "productionSub": "Producción",
+          "moq": "200 Uds",
+          "moqSub": "MOQ",
+          "shipping": "Global",
+          "shippingSub": "Envío Exprés",
+          "unit": "/ Unidad (FOB)",
+          "tabs": {
+               "specs": "Especificaciones",
+               "custom": "Personalización",
+               "faq": "FAQ del Producto"
+          },
+          "getQuote": "Solicitar Cotización",
+          "orderSample": "Pedir Muestra",
+          "urgencyStrip": "Fabricación Directa de Fábrica · MOQ 200 Uds · Cotización Escrita en 2h · Muestras en 7 Días",
+          "related": "Seguir Explorando",
+          "relatedTitle": "Productos Relacionados",
+          "faqHeading": "Preguntas frecuentes",
+          "moreInfo": "Sigue investigando",
+          "moreInfoTitle": "Guías y comparativas relacionadas",
+          "moreInfoCategory": "Esta categoría",
+          "moreInfoCompare": "Comparar opciones",
+          "moreInfoGuides": "Guías de compra",
+          "trustBar": "Socio de Abastecimiento B2B de Confianza",
+          "notFound": "Producto No Encontrado",
+          "backLink": "Volver al Catálogo",
+          "devToolsBadge": "Herramientas para Diseñadores y Marcas",
+          "devToolsTitle": "Plantillas Vectoriales y Revisión Técnica Lista para Producción",
+          "devToolsSub": "Acelera el lanzamiento de tu colección con plantillas vectoriales directas de fábrica y evaluación 3D.",
+          "techpackTitle": "Descargar Ficha Técnica en Blanco (AI / PDF)",
+          "techpackDesc": "Plantillas vectoriales 2D con medidas exactas de corona, visera curva/plana y costuras de 5 y 6 paneles.",
+          "techpackBtn": "Obtener Plantilla Vectorial",
+          "mockupTitle": "Vista Previa 3D y Revisión de Viabilidad en 2 Horas (Gratis)",
+          "mockupDesc": "Envía tu logotipo — nuestro equipo técnico revisa la densidad de puntadas, soporte Tatami y genera una vista 3D.",
+          "mockupBtn": "Solicitar Mockup Gratis"
+     },
+     "form": {
+          "name": "Tu Nombre",
+          "namePlaceholder": "Juan Pérez",
+          "email": "Correo Electrónico",
+          "emailPlaceholder": "tu@empresa.com",
+          "phone": "Teléfono / WhatsApp (Opcional)",
+          "phonePlaceholder": "+34 600 000 000",
+          "message": "Mensaje / Requisitos",
+          "messagePlaceholder": "Cuéntanos sobre los estilos, cantidades o personalización específica (ej. Bordado 3D Puff, Etiquetas Tejidas)...",
+          "privacyNote": "Tu consulta se envía directamente al equipo técnico comercial (admin@bdjunyang.com). Cotización formal por escrito en 2 horas.",
+          "intentSample": "¡Hola Baoding Junyang! Quisiera pedir una muestra física antes de la producción en masa. ¿Pueden darme detalles?",
+          "intentBulk": "¡Hola Baoding Junyang! Me interesa la producción en masa. ¿Pueden proporcionarme una cotización?",
+          "intentTest": "¡Hola Baoding Junyang! Quisiera hacer un pedido de prueba pequeño. ¿Pueden darme detalles?",
+          "intentTechpack": "¡Hola Baoding Junyang! Por favor envíenme las plantillas vectoriales en blanco (Tech Pack en AI/PDF) y hojas de especificaciones de costura para nuestro equipo de diseño. Mi marca/empresa es: ",
+          "intentMockup": "¡Hola Baoding Junyang! Me gustaría solicitar una vista previa digital en 3D y evaluación de viabilidad de bordado gratuita para nuestro logotipo. Estilo de interés: ",
+          "submit": "Enviar Consulta Técnica",
+          "submitting": "Transmitiendo al Equipo de Ventas...",
+          "thanks": "¡Consulta Recibida con Éxito!",
+          "thanksMsg": "Tus especificaciones han sido entregadas al equipo comercial (admin@bdjunyang.com). Revisaremos tus detalles y responderemos a tu correo en breve.",
+          "whatsappFallback": "¿Necesitas una respuesta inmediata? También puedes conectar con nuestro especialista en WhatsApp:",
+          "chatWhatsApp": "Chatear por WhatsApp (+86 159 3393 0830)",
+          "sendAnother": "Enviar otra consulta"
+     },
+     "footer": {
+          "about": "Baoding Junyang Import and Export Trade Co., Ltd. es un socio de sourcing y control de calidad especializado en gorras de calidad media a alta, beanies y truckers desde 2014.",
+          "navigation": "Navegación",
+          "products": "Productos",
+          "aboutLink": "Nosotros",
+          "guideLink": "Guía para Compradores",
+          "materialsLink": "Materiales y Tejidos",
+          "pricingLink": "Precios y Envíos",
+          "requestQuote": "Solicitar Cotización",
+          "contact": "Contacto",
+          "whatsapp": "WhatsApp: +86 15933930830",
+          "email": "Email: admin@bdjunyang.com",
+          "office": "Oficina: Baoding, Hebei, China",
+          "privacy": "Política de Privacidad",
+          "terms": "Términos del Servicio",
+          "copyright": "© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Todos los derechos reservados."
+     },
+     "breadcrumb": {
+          "home": "Inicio",
+          "about": "Nosotros",
+          "guide": "Guía para Compradores",
+          "materials": "Materiales y Tejidos",
+          "pricing": "Precios y Envíos",
+          "products": "Productos"
+     },
+     "meta": {
+          "homeTitle": "BD Hats | Socio de Abastecimiento de Gorras Personalizadas",
+          "homeDesc": "Gorras personalizadas de calidad media a alta con control de calidad desde 2014. Bordado personalizado, MOQ 200uds, muestras en 7 días, cotización en 2h. Baoding, China.",
+          "aboutTitle": "Sobre BD Hats | Socio de Abastecimiento de Gorras en Baoding, China",
+          "aboutDesc": "Baoding Junyang Import and Export Trade Co., Ltd. — 12 años conectando marcas globales con fabricantes de headwear y control de calidad pre-envío desde 2014.",
+          "guideTitle": "Guía B2B de Fabricación de Gorras | Cómo Comprar Gorras al por Mayor desde China",
+          "guideDesc": "Guía completa para compradores B2B: cómo elegir una fábrica de gorras, tipos de bordado, negociación de MOQ, control de calidad y logística de envío.",
+          "materialsTitle": "Guía de Materiales para Gorras | Algodón, Lana, Poliéster y Más | BD Hats",
+          "materialsDesc": "Guía completa de materiales para gorras personalizadas: sarga de algodón, algodón cepillado, lana, poliéster, nylon, lona. Aprende tipos de cierre y construcción de paneles para tu pedido al por mayor.",
+          "pricingTitle": "Guía de Precios, MOQ y Envíos | Desglose de Costos al por Mayor | BD Hats",
+          "pricingDesc": "Guía de precios transparente para gorras personalizadas: ¿cuánto cuestan las gorras?, FOB vs CIF explicado, MOQ 200uds, costos de flete aéreo vs marítimo, tarifas de muestras y descuentos por volumen."
+     },
+     "popup": {
+          "badge": "Directo de Fábrica · Desde 2014",
+          "heading": "¿Necesitas Gorras Personalizadas para Tu Marca?",
+          "sub": "Obtén una cotización de fábrica en 2 horas — sin compromiso, muestras físicas en 7 días.",
+          "whatsappBtn": "Chatear por WhatsApp",
+          "formBtn": "Enviar Consulta",
+          "note": "Abastecimiento directo · Control de calidad por etapas · Inspección pre-envío"
+     },
+     "chat": {
+          "cta": "Chatea con Nosotros",
+          "tip": "⚡ Cotización escrita en 2h"
+     },
+     "language": {
+          "switchTo": "English",
+          "label": "ES"
+     }
 }

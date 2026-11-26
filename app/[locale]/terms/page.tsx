@@ -33,8 +33,8 @@ export default function TermsPage() {
               </h2>
               <p>
                 {isEs
-                  ? "Baoding Junyang Import & Export Trading Co., Ltd. actúa como socio integral de abastecimiento, coordinación de producción y control de calidad para programas de gorras y accesorios personalizados. Gestionamos contratos individualizados por proyecto con fábricas asociadas verificadas bajo un estándar unificado de inspección y entrega."
-                  : "Baoding Junyang Import & Export Trading Co., Ltd. serves as an end-to-end headwear sourcing, production coordination, and quality control partner for custom headwear programs. We operate on a per-order contract model with audited partner factories under unified inspection and delivery standards."}
+                  ? "Baoding Junyang Import & Export Trading Co., Ltd. actúa como socio integral de abastecimiento, coordinación de producción y control de calidad para programas de gorras y accesorios personalizados. Gestionamos contratos individualizados por proyecto con fábricas asociadas seleccionadas bajo un estándar unificado de inspección y entrega."
+                  : "Baoding Junyang Import & Export Trading Co., Ltd. serves as an end-to-end headwear sourcing, production coordination, and quality control partner for custom headwear programs. We operate on a per-order contract model with vetted partner factories under unified inspection and delivery standards."}
               </p>
             </div>
 
@@ -66,8 +66,8 @@ export default function TermsPage() {
               </h2>
               <p>
                 {isEs
-                  ? "Cada pedido pasa por una inspección pieza por pieza antes del embalaje de exportación. Si a la llegada de la mercancía se detecta alguna discrepancia con la muestra aprobada, el cliente dispone de un período de inspección de 14 días para reportarlo con evidencia gráfica o técnica. Nuestro equipo resolverá la reclamación mediante reposición prioritaria o compensación proporcional."
-                  : "Every order undergoes piece-by-piece inspection before final export packaging. If any defect or specification deviation is observed upon delivery relative to the signed sample, clients have a 14-day inspection window to file a formal claim with photo/video evidence. We resolve valid discrepancies via priority re-manufacturing or direct invoice credits."}
+                  ? "Cada pedido pasa por un control de calidad antes del embalaje de exportación. Si a la llegada de la mercancía se detecta alguna discrepancia con la muestra aprobada, el cliente dispone de un período de inspección de 14 días para reportarlo con evidencia gráfica o técnica. Nuestro equipo resolverá la reclamación mediante reposición prioritaria o compensación proporcional."
+                  : "Every order undergoes quality inspection before final export packaging. If any defect or specification deviation is observed upon delivery relative to the signed sample, clients have a 14-day inspection window to file a formal claim with photo/video evidence. We resolve valid discrepancies via priority re-manufacturing or direct invoice credits."}
               </p>
             </div>
 

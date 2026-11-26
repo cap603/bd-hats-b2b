@@ -11,8 +11,8 @@ const CONTENT = {
       title: "Bulk Custom",
       accent: "Hats Manufacturer",
       subtitle:
-        "Industrial-scale cap production: 5 million pieces a year, 100+ embroidery machines and dedicated lines — with tiered pricing that rewards volume.",
-      pills: ["5M+ Caps / Year", "100+ Machines", "In-House QC", "FOB or CIF"],
+        "Industrial-scale cap production with dedicated partner lines and tiered pricing that rewards volume.",
+      pills: ["MOQ 200+ Pcs", "Tiered Volume Pricing", "Pre-Shipment QC", "FOB or CIF"],
     },
     featuresTitle: "Why Volume Buyers Work With Us",
     featuresIntro:
@@ -20,7 +20,7 @@ const CONTENT = {
     features: [
       {
         title: "Capacity That Absorbs Spikes",
-        desc: "Vetted partner production network, multi-head computerized embroidery, piece-by-piece in-house QC, and scalable capacity for volume export. A 50,000-piece order runs on dedicated lines rather than competing with small jobs for machine time.",
+        desc: "Vetted partner production network, multi-head computerized embroidery, in-house QC, and scalable capacity for volume export. A 50,000-piece order runs on dedicated lines rather than competing with small jobs for machine time.",
       },
       {
         title: "Tiered Volume Pricing",
@@ -32,7 +32,7 @@ const CONTENT = {
       },
       {
         title: "Audit-Ready Documentation",
-        desc: "SGS factory verification, CE product certification and REACH SVHC compliance documents available for your compliance team. We support third-party inspections by SGS, Intertek or Bureau Veritas at any production stage.",
+        desc: "Compliance documentation support: third-party material testing and inspection can be arranged per order at any production stage, with reports shared before shipment for your compliance team.",
       },
       {
         title: "Payment & Trade Terms",
@@ -92,8 +92,8 @@ const CONTENT = {
       title: "Fabricante de Gorras",
       accent: "al por Mayor",
       subtitle:
-        "Producción de gorras a escala industrial: 5 millones de unidades al año, más de 100 máquinas de bordado y líneas dedicadas, con precios escalonados que premian el volumen.",
-      pills: ["5M+ gorras al año", "Más de 100 máquinas", "QC interno", "FOB o CIF"],
+        "Producción de gorras a escala industrial con líneas asociadas dedicadas y precios escalonados que premian el volumen.",
+      pills: ["MOQ 200+ uds", "Precios por Volumen", "Control de Calidad Pre-envío", "FOB o CIF"],
     },
     featuresTitle: "Por qué los grandes compradores trabajan con nosotros",
     featuresIntro:
@@ -101,7 +101,7 @@ const CONTENT = {
     features: [
       {
         title: "Capacidad para absorber picos",
-        desc: "Red de fabricantes asociados auditados, bordado computarizado multicabezal, control de calidad propio pieza a pieza y capacidad escalable para exportación masiva. Un pedido de 50.000 unidades se fabrica en líneas dedicadas en lugar de competir por tiempo de máquina con pedidos pequeños.",
+        desc: "Red de fabricantes asociados seleccionados, bordado computarizado multicabezal, control de calidad interno por etapas y capacidad escalable para exportación masiva. Un pedido de 50.000 unidades se fabrica en líneas dedicadas en lugar de competir por tiempo de máquina con pedidos pequeños.",
       },
       {
         title: "Precios escalonados por volumen",
@@ -113,7 +113,7 @@ const CONTENT = {
       },
       {
         title: "Documentación lista para auditoría",
-        desc: "Verificación de fábrica SGS, certificación de producto CE y documentos de cumplimiento REACH SVHC a disposición de tu equipo de cumplimiento. Facilitamos inspecciones de terceros (SGS, Intertek o Bureau Veritas) en cualquier etapa de la producción.",
+        desc: "Apoyamos la documentación de cumplimiento: pruebas e inspecciones de materiales de terceros pueden gestionarse por pedido en cualquier etapa de la producción, con informes compartidos antes del envío para tu equipo de cumplimiento.",
       },
       {
         title: "Condiciones comerciales y de pago",
@@ -177,7 +177,7 @@ export default function BulkHatsPage() {
     "@type": "Article",
     headline: "Bulk Custom Hats Manufacturer — Large Volume Cap Production",
     description:
-      "Large-volume custom hat production: 5M+ caps per year, 100+ embroidery machines, volume tier pricing from 500 to 10,000+ pcs, in-house QC, FOB or CIF.",
+      "Large-volume custom hat production with dedicated partner lines, volume tier pricing from 500 to 10,000+ pcs, pre-shipment QC, FOB or CIF.",
     author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",

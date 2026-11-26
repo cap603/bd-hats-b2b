@@ -234,7 +234,7 @@ export default function PrivateLabelPage() {
     "@type": "Article",
     headline: "Private Label Hat Manufacturer — Custom Branded Caps China",
     description:
-      "Private label hat manufacturing: woven labels, care labels, hang tags, retail packaging and barcode application. MOQ 200pcs, samples in 7 days, SGS verified factory.",
+      "Private label hat manufacturing: woven labels, care labels, hang tags, retail packaging and barcode application. MOQ 200pcs, samples in 7 days, pre-shipment QC.",
     author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",

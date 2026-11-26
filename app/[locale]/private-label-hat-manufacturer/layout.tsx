@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Fabricación de gorras de marca privada: etiquetas tejidas, colgantes, bolsas y empaque retail. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días y SGS verificado."
-        : "Private label hat manufacturing: woven labels, custom hang tags & retail packaging. MOQ 200pcs, $3.50-$7.00 FOB, 7-day samples. SGS verified factory in China.",
+        ? "Fabricación de gorras de marca privada: etiquetas tejidas, colgantes, bolsas y empaque retail. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días y cotización en 2h."
+        : "Private label hat manufacturing: woven labels, custom hang tags & retail packaging. MOQ 200pcs, $3.50-$7.00 FOB, 7-day samples. Custom hat factory partner in China.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

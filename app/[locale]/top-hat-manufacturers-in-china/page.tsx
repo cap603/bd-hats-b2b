@@ -97,7 +97,7 @@ const CONTENT = {
         moq: "200 pcs",
         fob: "$3.20 - $7.80",
         sampling: "7 Days",
-        cert: "SGS, ISO 9001, CE",
+        cert: "Alibaba Trade Assurance",
         bestFor: "Streetwear labels, boutique DTC brands, agile custom programs",
       },
       {
@@ -162,8 +162,8 @@ const CONTENT = {
       },
       {
         num: "04",
-        title: "Require Written Piece-by-Piece Quality Control Inspection",
-        desc: "Ensure your commercial contract explicitly specifies piece-by-piece inspection standards for critical and major details, covering seam alignment, color consistency, and needle hole integrity before packing.",
+        title: "Require Written Quality Inspection Standards",
+        desc: "Ensure your commercial contract explicitly specifies inspection coverage for critical and major details, covering seam alignment, color consistency, and needle hole integrity before packing.",
       },
       {
         num: "05",
@@ -180,12 +180,12 @@ const CONTENT = {
     junyangDesc:
       "Founded in 2014, Baoding Junyang Import and Export Trade Co., Ltd. bridges the gap between high-overhead multinational factories and low-end promotional mills. We offer enterprise-grade craftsmanship with startup-friendly agility:",
     highlights: [
-      { label: "100+ Barudan Heads", detail: "Automated multi-head embroidery lines ensuring micro-millimeter stitch precision across 3D puff, flat, and tatami textures." },
+      { label: "Multi-Head Barudan Lines", detail: "Automated multi-head embroidery lines ensuring micro-millimeter stitch precision across 3D puff, flat, and tatami textures." },
       { label: "Strict MOQ 200 Pcs", detail: "Boutique drop volume flexibility, enabling fashion streetwear and lifestyle brands to test new colorways without excessive inventory risk." },
       { label: "Transparent FOB Pricing", detail: "Real factory floor pricing ($3.20 - $7.80) with full Bill of Materials (BOM) cost breakdowns." },
       { label: "7-Day Sample Turnaround", detail: "Rapid prototyping supported by in-house pattern digitizers, custom laser cutters, and over 50 stock fabric colors." },
       { label: "Complete Private Labeling", detail: "Turnkey internal branding: custom woven sweatband labels, 6-line printed seam tape, embossed leather patches, and retail barcode packaging." },
-      { label: "International Compliance", detail: "SGS verified facility, CE certified, ISO 9001 quality management, adhering to EU REACH and US CPSIA textile safety standards." },
+      { label: "Quality & Compliance Support", detail: "Pre-shipment quality inspection, and third-party material testing arranged per order — aligned to your target market's requirements." },
     ],
     faqs: [
       {
@@ -214,7 +214,7 @@ const CONTENT = {
       },
       {
         q: "How do verified cap manufacturers in China handle quality audits before export?",
-        a: "Top cap manufacturers in China enforce piece-by-piece inspection protocols covering crown panel symmetry, sweatband stitch density, embroidery line accuracy, and needle-hole security. Look for facilities with ISO 9001 and third-party SGS audits to ensure export compliance.",
+        a: "Top cap manufacturers in China enforce multi-stage inspection protocols covering crown panel symmetry, sweatband stitch density, embroidery line accuracy, and needle-hole security. Look for facilities with documented quality systems and third-party audit reports to ensure export compliance.",
       },
     ],
   },
@@ -288,7 +288,7 @@ const CONTENT = {
         moq: "200 uds",
         fob: "$3.20 - $7.80",
         sampling: "7 Días",
-        cert: "SGS, ISO 9001, CE",
+        cert: "Alibaba Trade Assurance",
         bestFor: "Marcas streetwear, firmas DTC boutique, pedidos personalizados ágiles",
       },
       {
@@ -353,8 +353,8 @@ const CONTENT = {
       },
       {
         num: "04",
-        title: "Especifica Control de Calidad Pieza por Pieza por Escrito",
-        desc: "Asegúrate de que el contrato comercial estipule inspección rigurosa pieza por pieza para evitar defectos antes del empaquetado final.",
+        title: "Especifica Estándares de Inspección de Calidad por Escrito",
+        desc: "Asegúrate de que el contrato comercial estipule la cobertura de inspección para detalles críticos y principales, y evite defectos antes del empaquetado final.",
       },
       {
         num: "05",
@@ -371,12 +371,12 @@ const CONTENT = {
     junyangDesc:
       "Fundada en 2014, Baoding Junyang Import and Export Trade Co., Ltd. combina la precisión de una gran fábrica con la flexibilidad que necesitan las marcas en crecimiento:",
     highlights: [
-      { label: "Más de 100 Cabezales Barudan", detail: "Líneas automáticas japonesas para bordados planos, 3D puff y texturas tatami milimétricas." },
+      { label: "Líneas Barudan Multicabezal", detail: "Líneas automáticas japonesas para bordados planos, 3D puff y texturas tatami milimétricas." },
       { label: "MOQ Estricto de 200 Uds", detail: "Flexibilidad para lanzar colecciones limitadas de streetwear sin asumir riesgos de inventario masivo." },
       { label: "Precios FOB Claros de Fábrica", detail: "Precios directos de fábrica ($3.20 - $7.80) con desglose transparente de materiales y confección." },
       { label: "Muestras Físicas en 7 Días", detail: "Digitalización técnica in-house y corte láser con más de 50 colores de tela en stock permanente." },
       { label: "Personalización Integral de Marca", detail: "Etiquetas tejidas en badana, cintas interiores estampadas, parches de cuero y bolsas retail." },
-      { label: "Certificación Internacional", detail: "Fábrica verificada por SGS, certificada CE e ISO 9001, cumpliendo con la normativa textil europea REACH y estadounidense CPSIA." },
+      { label: "Calidad y Apoyo de Cumplimiento", detail: "Inspección de calidad antes del envío y pruebas de materiales de terceros gestionadas por pedido, según los requisitos de tu mercado objetivo." },
     ],
     faqs: [
       {
@@ -405,7 +405,7 @@ const CONTENT = {
       },
       {
         q: "¿Cómo aseguran el control de calidad los fabricantes de gorras verificados?",
-        a: "Las fábricas de primer nivel aplican protocolos de inspección pieza por pieza revisando la simetría de la corona, la tensión de la badana y la precisión del bordado antes del embalaje, respaldados por certificaciones ISO 9001 y auditorías SGS.",
+        a: "Las fábricas de primer nivel aplican protocolos de inspección por etapas revisando la simetría de la corona, la tensión de la badana y la precisión del bordado antes del embalaje, respaldados por sistemas de calidad documentados y auditorías de terceros.",
       },
     ],
   },

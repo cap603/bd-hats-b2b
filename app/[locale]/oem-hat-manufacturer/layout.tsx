@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         : "OEM Hat Manufacturer China | Factory Direct",
     description:
       locale === "es"
-        ? "Fabricante OEM/ODM de gorras en China. líneas de bordado multicabezal de precisión, auditoría de instalaciones SGS. Gorras de béisbol, snapbacks, gorros. MOQ 200uds, muestras en 7 días."
-        : "OEM/ODM hat manufacturer in China. precision multi-head embroidery lines, SGS audited partner facilities. Custom baseball caps, snapbacks, beanies, MOQ 200pcs, 7-day samples.",
+        ? "Fabricante OEM/ODM de gorras en China. líneas de bordado multicabezal de precisión, fábricas asociadas seleccionadas. Gorras de béisbol, snapbacks, gorros. MOQ 200uds, muestras en 7 días."
+        : "OEM/ODM hat manufacturer in China. precision multi-head embroidery lines, vetted partner facilities. Custom baseball caps, snapbacks, beanies, MOQ 200pcs, 7-day samples.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

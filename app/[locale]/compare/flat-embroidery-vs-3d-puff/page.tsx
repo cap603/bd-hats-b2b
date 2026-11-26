@@ -16,7 +16,7 @@ const CONTENT = {
       title: "Flat vs 3D Embroidery",
       accent: "on Custom Hats",
       subtitle:
-        "Both decorations run on our Barudan multi-head machines, but solve distinct design challenges. Flat embroidery preserves fine lines and complex typography, while 3D puff delivers raised dimensional impact. Here is how flat embroidery vs 3D embroidery compares on stitch count, stroke limits, and FOB unit cost.",
+        "Both decorations run on Barudan multi-head machines, but solve distinct design challenges. Flat embroidery preserves fine lines and complex typography, while 3D puff delivers raised dimensional impact. Here is how flat embroidery vs 3D embroidery compares on stitch count, stroke limits, and FOB unit cost.",
       quickAnswerLabel: "Short answer",
       quickAnswer:
         "Choose flat embroidery for small text, fine detail and a lower unit cost: one pass, no foam. Choose 3D puff when you want a raised, high-impact logo on a cap with a flat front panel. Both run on the same machines, at MOQ 200 pcs per style and colour.",
@@ -156,7 +156,7 @@ const CONTENT = {
         { k: "15–20 days", v: "Bulk production after sample approval" },
         { k: "In-House", v: "Quality control at each stage" },
       ],
-      note: "Baoding Junyang has manufactured custom caps since 2014, coordinating audited partner lines with precision multi-head embroidery and in-house QC teams. Partner facilities are SGS audited, with 70% of shipments sent to North America.",
+      note: "Baoding Junyang has supplied custom caps since 2014, coordinating selected partner lines with precision multi-head embroidery and in-house QC teams, with 70% of shipments sent to North America.",
     },
     faq: {
       heading: "Flat embroidery and 3D puff FAQ",
@@ -200,7 +200,7 @@ const CONTENT = {
       title: "Bordado Plano vs 3D Puff",
       accent: "en Gorras Personalizadas",
       subtitle:
-        "Ambas decoraciones se bordan en nuestras máquinas automáticas Barudan, pero resuelven necesidades técnicas distintas. El bordado plano preserva líneas finas y letras pequeñas, mientras que el bordado 3D puff ofrece impacto volumétrico en relieve. Aquí comparamos densidad de puntada, límites de trazo y coste FOB.",
+        "Ambas decoraciones se bordan en máquinas automáticas Barudan multicabezal, pero resuelven necesidades técnicas distintas. El bordado plano preserva líneas finas y letras pequeñas, mientras que el bordado 3D puff ofrece impacto volumétrico en relieve. Aquí comparamos densidad de puntada, límites de trazo y coste FOB.",
       quickAnswerLabel: "Respuesta corta",
       quickAnswer:
         "Elige bordado plano para textos pequeños, detalle fino y un costo unitario menor: una sola pasada y sin foam. Elige bordado 3D puff si quieres un logo en relieve y de alto impacto sobre un frente plano. Ambos usan las mismas máquinas, con MOQ de 200 uds por estilo y color.",
@@ -340,7 +340,7 @@ const CONTENT = {
         { k: "15–20 días", v: "Producción en masa tras aprobar muestra" },
         { k: "Interno", v: "Control de calidad en cada etapa" },
       ],
-      note: "Baoding Junyang fabrica gorras personalizadas desde 2014, coordinando líneas de fabricación auditadas con bordado multicabezal de precisión y equipo propio de control de calidad. Las instalaciones están auditadas por SGS y el 70% de los envíos se destina a Norteamérica.",
+      note: "Baoding Junyang suministra gorras personalizadas desde 2014, coordinando líneas de fabricación seleccionadas con bordado multicabezal de precisión y equipo propio de control de calidad; el 70% de los envíos se destina a Norteamérica.",
     },
     faq: {
       heading: "Preguntas frecuentes: bordado plano y 3D puff",

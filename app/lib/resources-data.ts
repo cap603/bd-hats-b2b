@@ -53,11 +53,11 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       tableTitle: "Pre-Production Sample (PPS) vs Bulk Production Standards",
       tableHead: ["Quality Parameter", "Pre-Production Sample Spec", "Mass Production Bulk Standard", "Production Tolerance"],
       tableRows: [
-        ["Crown Circumference", "58.0 cm (Medium adult baseline)", "58.0 cm across 100% of carton lots", "±0.5 cm"],
+        ["Crown Circumference", "58.0 cm (Medium adult baseline)", "Consistent 58.0 cm across carton lots", "±0.5 cm"],
         ["Visor Projection Length", "7.0 cm pre-curved / flat", "7.0 cm matching approved PPS board die", "±0.2 cm"],
         ["3D Puff Height", "2.5 mm – 3.0 mm high-density foam loft", "Consistent loft across all multi-head positions", "±0.2 mm"],
-        ["Stitch Density", "0.38 mm – 0.42 mm satin spacing", "Identical Barudan DST stitch file execution", "Zero variation"],
-        ["Needle Detection", "Pass continuous tunnel detector test", "100% piece-by-piece metal detector scan", "Zero metal fragments"]
+        ["Stitch Density", "0.38 mm – 0.42 mm satin spacing", "Identical Barudan DST stitch file execution", "Minimal variation"],
+        ["Needle Detection", "Pass continuous tunnel detector test", "Continuous tunnel metal detector scan on bulk lots", "No metal fragments"]
       ],
       sections: [
         {
@@ -122,14 +122,14 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         "Confirm essential QC equipment: industrial steam pressing blocks and continuous tunnel needle detectors are non-negotiable.",
         "Demand payment security: reliable factories accept Alibaba Trade Assurance escrow or LC terms for first-time orders."
       ],
-      tableTitle: "Audited Sourcing Partner vs Opaque Trading Agent",
-      tableHead: ["Audit Dimension", "Audited Sourcing Partner (Baoding Junyang)", "Opaque Trading Agent"],
+      tableTitle: "Vetted Sourcing Partner vs Opaque Trading Agent",
+      tableHead: ["Audit Dimension", "Vetted Sourcing Partner (Baoding Junyang)", "Opaque Trading Agent"],
       tableRows: [
         ["Pricing Structure", "Direct supply FOB rates ($3.50 – $7.00/pc)", "30% – 50% commission markup baked into unit price"],
         ["Machine & Floor Transparency", "Partner factory floors open to live video audits and on-site visits", "Cannot display live floor operations; relies on stock photos"],
         ["Sample Lead Time", "7 business days via in-house sampling team", "15–25 business days due to third-party subcontracting"],
         ["Technical Resolution", "Direct access to in-house pattern makers and digitizing engineers", "Account managers relay messages with technical friction"],
-        ["Quality Control", "Piece-by-piece inspection + tunnel metal detection", "Random batch sampling or blind dropshipping without local QC"],
+        ["Quality Control", "Multi-stage quality checks + tunnel metal detection", "Random batch sampling or blind dropshipping without local QC"],
         ["Payment Terms", "Alibaba Trade Assurance, T/T with milestones, L/C", "Often requests high upfront wire transfers without escrow"]
       ],
       sections: [
@@ -144,7 +144,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "2. Audit Third-Party Certifications & Social Compliance",
           paragraphs: [
             "Legitimate manufacturers undergo annual on-site audits by accredited inspection bureaus such as SGS, Bureau Veritas, or TÜV Rheinland. Ask for their official audit report PDF and cross-reference the registered corporate name and facility address.",
-            "If your brand retails in the US or Europe, ensure the manufacturer complies with social and environmental standards. We require BSCI-level social compliance and ISO 9001:2015 quality management from every partner facility in our network, guaranteeing ethical labor standards and consistent procedural oversight."
+            "If your brand retails in the US or Europe, ensure the manufacturer complies with social and environmental standards. Our partner facilities are selected and reviewed by our sourcing team across quality systems, capacity and social compliance, and third-party audits or inspections can be arranged per order for your target market."
           ]
         },
         {
@@ -380,7 +380,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         },
         {
           q: "Can I hire a third-party inspector before paying the balance?",
-          a: "Absolutely. We welcome third-party inspection firms (such as SGS, Intertek, or your appointed local agent) at our Baoding QC and export hub, with a dedicated inspection table and testing equipment for piece-by-piece checks or lot sampling."
+          a: "Absolutely. We welcome third-party inspection firms (such as SGS, Intertek, or your appointed local agent) at our Baoding QC and export hub, with a dedicated inspection table and testing equipment for detailed checks or lot sampling."
         }
       ],
       interlinks: [
@@ -490,11 +490,11 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       tableTitle: "Muestra de Pre-Producción vs Estándares de Volumen",
       tableHead: ["Parámetro de Calidad", "Especificación en Muestra", "Estándar en Producción en Masa", "Tolerancia de Producción"],
       tableRows: [
-        ["Circunferencia de Copa", "58.0 cm (adulto estándar)", "58.0 cm en el 100% de los lotes", "±0.5 cm"],
+        ["Circunferencia de Copa", "58.0 cm (adulto estándar)", "58.0 cm constante en todos los lotes", "±0.5 cm"],
         ["Proyección de Visera", "7.0 cm pre-curvada / plana", "7.0 cm según troquel de cartón aprobado", "±0.2 cm"],
         ["Altura de 3D Puff", "2.5 mm – 3.0 mm de relieve", "Relieve uniforme en todos los cabezales", "±0.2 mm"],
-        ["Densidad de Puntada", "Espaciado satén 0.38 mm – 0.42 mm", "Ejecución idéntica del archivo DST Barudan", "Cero variación"],
-        ["Detección de Metales", "Paso por túnel detector continuo", "Inspección 100% pieza por pieza", "Cero fragmentos metálicos"]
+        ["Densidad de Puntada", "Espaciado satén 0.38 mm – 0.42 mm", "Ejecución idéntica del archivo DST Barudan", "Variación mínima"],
+        ["Detección de Metales", "Paso por túnel detector continuo", "Escaneo continuo por túnel detector de metales", "Sin fragmentos metálicos"]
       ],
       sections: [
         {
@@ -559,14 +559,14 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         "Compruebe equipamiento esencial de control de calidad: hormas de vapor industriales y túneles detectores de agujas continuos.",
         "Exija seguridad de pago: las fábricas serias admiten custodia de fondos como Alibaba Trade Assurance o cartas de crédito."
       ],
-      tableTitle: "Socio de Sourcing Auditado vs Intermediario Opaco",
-      tableHead: ["Dimensión de Auditoría", "Socio de Sourcing Auditado (Baoding Junyang)", "Agente Comercial Opaco"],
+      tableTitle: "Socio de Sourcing Seleccionado vs Intermediario Opaco",
+      tableHead: ["Dimensión de Auditoría", "Socio de Sourcing Seleccionado (Baoding Junyang)", "Agente Comercial Opaco"],
       tableRows: [
         ["Estructura de Precios", "Precios FOB de suministro directo ($3.50 – $7.00/ud)", "Comisión del 30% al 50% integrada en el precio unitario"],
         ["Transparencia de Planta", "Fábricas colaboradoras abiertas a videollamada y visita in situ", "No puede mostrar taller en vivo; fotos genéricas"],
         ["Plazo de Muestras", "7 días laborables con equipo interno de muestras", "15–25 días laborables por subcontratación"],
         ["Soporte Técnico", "Contacto directo con ingenieros de patronaje y digitalizado", "Comerciales que trasladan mensajes con fricción técnica"],
-        ["Control de Calidad", "Inspección pieza por pieza + detector de metales", "Muestreo aleatorio o envío directo sin control local"],
+        ["Control de Calidad", "Controles de calidad por etapas + detector de metales", "Muestreo aleatorio o envío directo sin control local"],
         ["Condiciones de Pago", "Alibaba Trade Assurance, T/T escalonado, L/C", "A menudo exigen transferencias íntegras por adelantado"]
       ],
       sections: [
@@ -581,7 +581,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "2. Audite Certificaciones de Terceros y Cumplimiento Social",
           paragraphs: [
             "Los fabricantes consolidados se someten a inspecciones anuales por entidades acreditadas como SGS o TÜV Rheinland. Solicite el informe oficial en PDF y compruebe razón social y dirección.",
-            "Exigimos a todas las fábricas colaboradoras de nuestra red auditorías sociales BSCI y sistemas de gestión de calidad ISO 9001:2015, garantizando condiciones laborales éticas y trazabilidad en cada lote."
+            "Las fábricas colaboradoras de nuestra red son seleccionadas y revisadas por nuestro equipo de sourcing en sistemas de calidad, capacidad y responsabilidad social, y las auditorías e inspecciones de terceros se gestionan por pedido para tu mercado."
           ]
         },
         {
@@ -817,7 +817,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         },
         {
           q: "¿Puedo contratar un inspector externo antes de abonar el saldo?",
-          a: "Por supuesto. Recibimos en nuestro centro de inspección y exportación de Baoding a inspectores de agencias externas (SGS, Intertek, QIMA o su agente local), con mesas de inspección dedicadas para revisión pieza por pieza o muestreo por lotes."
+          a: "Por supuesto. Recibimos en nuestro centro de inspección y exportación de Baoding a inspectores de agencias externas (SGS, Intertek, QIMA o su agente local), con mesas de inspección dedicadas para revisiones detalladas o muestreo por lotes."
         }
       ],
       interlinks: [
@@ -855,7 +855,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
         ["Riesgo Térmico en Tejido", "Cero calor aplicado (perforación mecánica)", "Exige plato térmico curvado a 150°C–160°C", "Uso de almohadillas especiales para no marcar la espuma"],
         ["Capacidad Cromática", "Hasta 6 colores de hilo por cabezal", "Monocromo o gradientes 3D en relieve", "Ambos teñidos bajo carta Pantone personalizada"],
         ["Sobrecoste Unitario FOB (200 pzs)", "+$0.40 – $0.65 / pz", "+$0.55 – $0.85 / pz (molde reembolsado en ≥500 pzs)", "El 3D puff es más económico en tiradas inferiores a 500 pzs"],
-        ["Vida Útil al Lavado", "50+ lavados industriales (no se despega)", "Certificado para 30+ lavados domésticos suaves", "El 3D puff cuenta con mayor fijación mecánica por hilo"]
+        ["Vida Útil al Lavado", "50+ lavados industriales (no se despega)", "Diseñado para 30+ lavados domésticos suaves", "El 3D puff cuenta con mayor fijación mecánica por hilo"]
       ],
       sections: [
         {

@@ -170,8 +170,8 @@ const CONTENT = {
         a: "Our MOQ is strictly 200 pieces per style / colorway. Physical pre-production sample turnaround is 7 business days, and bulk orders ship in 15–20 business days.",
       },
       {
-        q: "Do you offer anti-pilling and itch-free yarn certifications for EU and North American markets?",
-        a: "Yes. All our acrylic, core-spun, and Merino wool blended yarns meet OEKO-TEX Standard 100 and REACH environmental standards with zero skin-irritation and verified anti-pilling treatments.",
+        q: "Do you offer anti-pilling, soft-touch yarns for EU and North American markets?",
+        a: "Yes. Our acrylic, core-spun, and Merino wool blended yarns are selected for soft hand-feel and anti-pilling performance. Third-party material testing can be arranged per order if your market requires documentation.",
       },
     ],
   },
@@ -339,8 +339,8 @@ const CONTENT = {
         a: "El pedido mínimo es de 200 unidades por modelo y color. El muestreo físico de preproducción tarda 7 días laborables y la producción en masa se completa en 15 a 20 días hábiles.",
       },
       {
-        q: "¿Los hilos cuentan con certificación antipilling y son suaves sin picazón?",
-        a: "Sí. Todos nuestros hilos acrílicos y mezclas de lana merino cuentan con certificación OEKO-TEX Standard 100 y cumplen con las normativas REACH, garantizando un tacto suave sin picazón ni formación de bolitas.",
+        q: "¿Los hilos son antipilling y suaves sin picazón?",
+        a: "Sí. Nuestros hilos acrílicos y mezclas de lana merino se seleccionan por su tacto suave y rendimiento antipilling. Si tu mercado requiere documentación, podemos gestionar pruebas de materiales de terceros por pedido.",
       },
     ],
   },

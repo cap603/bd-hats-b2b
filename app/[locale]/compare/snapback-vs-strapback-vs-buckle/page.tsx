@@ -178,7 +178,7 @@ const CONTENT = {
         { k: "15–20 days", v: "Bulk production after sample approval" },
         { k: "In-House", v: "Quality control at each stage" },
       ],
-      note: "Baoding Junyang has manufactured custom caps since 2014, coordinating audited partner lines with precision multi-head embroidery, piece-by-piece in-house QC, and SGS verification.",
+      note: "Baoding Junyang has supplied custom caps since 2014, coordinating selected partner lines with precision multi-head embroidery and in-house QC.",
     },
     faq: {
       heading: "Which closure should you choose? Common buyer questions",
@@ -376,7 +376,7 @@ const CONTENT = {
         { k: "15–20 días", v: "Producción en masa tras aprobar muestra" },
         { k: "Interno", v: "Control de calidad en cada etapa" },
       ],
-      note: "Baoding Junyang fabrica gorras personalizadas desde 2014, coordinando líneas de fabricación auditadas con bordado multicabezal de precisión, control de calidad propio pieza a pieza y verificación SGS.",
+      note: "Baoding Junyang suministra gorras personalizadas desde 2014, coordinando líneas de fabricación seleccionadas con bordado multicabezal de precisión y control de calidad propio.",
     },
     faq: {
       heading: "¿Qué cierre elegir? Preguntas frecuentes de compradores",

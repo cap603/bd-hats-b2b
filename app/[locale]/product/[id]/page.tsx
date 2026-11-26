@@ -833,12 +833,12 @@ export default function ProductDetail() {
       <section className="bg-gray-50 py-16 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 text-center">
            <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-10">{t("trustBar")}</p>
-           <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 opacity-60 grayscale hover:grayscale-0 transition duration-500">
-              <span className="font-black text-xl sm:text-2xl italic">OEKO-TEX®</span>
-              <span className="font-black text-xl sm:text-2xl italic">REACH</span>
-              <span className="font-black text-xl sm:text-2xl italic">GRS</span>
-              <span className="font-bold text-xs uppercase tracking-widest text-slate-500">Tested Per Order · SGS/BV Available</span>
-           </div>
+            <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+               <span className="font-black text-xl sm:text-2xl italic">OEM / ODM</span>
+               <span className="font-black text-xl sm:text-2xl italic">MOQ 200 Pcs</span>
+               <span className="font-black text-xl sm:text-2xl italic">7-Day Samples</span>
+               <span className="font-bold text-xs uppercase tracking-widest text-slate-500">Pre-Shipment QC · Third-Party Inspection on Request</span>
+            </div>
         </div>
       </section>
 

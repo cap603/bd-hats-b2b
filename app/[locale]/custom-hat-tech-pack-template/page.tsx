@@ -167,7 +167,7 @@ const CONTENT = {
       },
       {
         q: "What is your factory Minimum Order Quantity (MOQ) for custom hats?",
-        a: "Our strict factory-direct MOQ is 200 pieces per style/colorway. This guarantees optimal fabric yield from standard textile bolts and amortizes setup time on our automated precision embroidery machines.",
+        a: "Our strict factory-direct MOQ is 200 pieces per style/colorway. This guarantees optimal fabric yield from standard textile bolts and amortizes setup time on automated precision embroidery lines.",
       },
       {
         q: "How fast can you deliver physical pre-production samples from a tech pack?",
@@ -273,7 +273,7 @@ const CONTENT = {
     ],
     limitsTitle: "3. Tolerancias Técnicas de Bordado y Decoración de Fábrica",
     limitsIntro:
-      "Para garantizar un bordado limpio sin fruncir la tela, sigue las tolerancias de nuestras máquinas de bordado computarizado de precisión:",
+      "Para garantizar un bordado limpio sin fruncir la tela, sigue las tolerancias de las líneas de bordado computarizado de precisión:",
     limits: [
       { technique: "Bordado Frontal 3D Puff (Relieve)", maxDim: "13.0cm Ancho × 5.5cm Alto", minLine: "3.0mm (0.12 in)", note: "Requiere base de espuma EVA. Detalles menores a 3mm deben pasar a bordado plano." },
       { technique: "Bordado Frontal Plano Directo", maxDim: "14.0cm Ancho × 6.0cm Alto", minLine: "1.0mm (0.04 in)", note: "Ideal para letras finas y escudos con hasta 15.000 puntadas." },
@@ -319,7 +319,7 @@ const CONTENT = {
       },
       {
         q: "¿Cuál es la Cantidad Mínima de Pedido (MOQ) de fábrica?",
-        a: "Nuestro MOQ estricto directo de fábrica es de 200 unidades por modelo/color. Esto garantiza un aprovechamiento óptimo de la tela y amortiza los tiempos de preparación de nuestras máquinas de bordado de precisión.",
+        a: "Nuestro MOQ estricto directo de fábrica es de 200 unidades por modelo/color. Esto garantiza un aprovechamiento óptimo de la tela y amortiza los tiempos de preparación de las líneas de bordado de precisión.",
       },
       {
         q: "¿Cuánto tardan en enviar muestras físicas basadas en el tech pack?",

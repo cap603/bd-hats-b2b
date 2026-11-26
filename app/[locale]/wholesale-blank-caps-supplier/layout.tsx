@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Gorras lisas al por mayor directo de fábrica: más de 50 colores, algodón 100%, sin logo desde $3.50 FOB. MOQ 200uds, muestras en 7 días y verificación SGS."
+        ? "Gorras lisas al por mayor directo de fábrica: más de 50 colores, algodón 100%, sin logo desde $3.50 FOB. MOQ 200uds, muestras en 7 días y cotización en 2h."
         : "Bulk blank caps direct from factory: 50+ stock colors, 100% cotton twill, unbranded from $3.50 FOB. MOQ 200pcs, 7-day samples for embroidery & print brands.",
     alternates: { canonical, languages },
     openGraph: {

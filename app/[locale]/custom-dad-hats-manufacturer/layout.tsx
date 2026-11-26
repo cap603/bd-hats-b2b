@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Gorras dad personalizadas directo de fábrica: 6 paneles sin estructura, lavado vintage. MOQ 200uds, $3.50-$6.80 FOB, muestras en 7 días y SGS verificado."
-        : "Custom dad hats factory direct: unstructured 6-panel, vintage enzyme wash & pigment dye. MOQ 200pcs, $3.50-$6.80 FOB, 7-day samples. SGS verified manufacturer.",
+        ? "Gorras dad personalizadas directo de fábrica: 6 paneles sin estructura, lavado vintage. MOQ 200uds, $3.50-$6.80 FOB, muestras en 7 días y cotización en 2h."
+        : "Custom dad hats factory direct: unstructured 6-panel, vintage enzyme wash & pigment dye. MOQ 200pcs, $3.50-$6.80 FOB, 7-day samples. Written quote in 2h.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",

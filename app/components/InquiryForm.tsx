@@ -216,7 +216,7 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
           </div>
           <div className="flex items-start gap-2.5 text-xs text-slate-700">
             <span className="font-black text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded text-[10px]">04</span>
-            <span>{isEs ? "Producción en masa en 15–20 días, con bitácora multimedia (corte, bordado de precisión, inspección pieza a pieza y empaque)." : "Bulk production in 15–20 days, with milestone photo/video logs at fabric cutting, precision embroidery, piece-by-piece QC and packing."}</span>
+            <span>{isEs ? "Producción en masa en 15–20 días, con bitácora multimedia (corte, bordado de precisión, inspección de calidad y empaque)." : "Bulk production in 15–20 days, with milestone photo/video logs at fabric cutting, precision embroidery, quality inspection and packing."}</span>
           </div>
         </div>
 
@@ -277,11 +277,11 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
               </li>
               <li className="flex items-start gap-1.5">
                 <span className="text-emerald-600 font-bold">•</span>
-                <span>{isEs ? "Coordinación de producción dedicada, cotización desglosada y muestra previa firmada" : "Audited partner production lines, itemised quotes and a signed pre-production sample"}</span>
+                <span>{isEs ? "Coordinación de producción dedicada, cotización desglosada y muestra previa firmada" : "Vetted partner production lines, itemised quotes and a signed pre-production sample"}</span>
               </li>
               <li className="flex items-start gap-1.5">
                 <span className="text-emerald-600 font-bold">•</span>
-                <span>{isEs ? "Fábricas asociadas auditadas, control de calidad pieza a pieza y embalaje de exportación" : "Audited partner factory execution, piece-by-piece QC and export packing specs"}</span>
+                <span>{isEs ? "Fábricas asociadas seleccionadas, control de calidad pre-envío y embalaje de exportación" : "Vetted partner factory execution, pre-shipment QC and export packing specs"}</span>
               </li>
             </ul>
           </div>

@@ -1,381 +1,456 @@
 {
-  "nav": {
-    "advantages": "Vantaggi",
-    "factory": "La Nostra Fabbrica",
-    "qualityControl": "Controllo Qualità",
-    "products": "Cappellini da Baseball",
-    "inquiry": "Richiesta Preventivo",
-    "about": "Chi Siamo",
-    "guide": "Guida all'Acquisto B2B",
-    "materials": "Materiali e Tessuti",
-    "pricing": "Prezzi e Spedizione",
-    "getQuote": "Richiedi Preventivo",
-    "categories": "Categorie Cappellini",
-    "viewAllProducts": "Vedi tutti i modelli →",
-    "viewAllCount": "Vedi tutti i {count} modelli →",
-    "stylesCount": "{count} modelli",
-    "whatsappQuote": "Preventivo WhatsApp",
-    "home": "Home"
-  },
-  "home": {
-    "topBar": "Partner di Sourcing e Qualità per Cappellini • Fondato nel 2014",
-    "subtitle": "Partner di Sourcing & Controllo Qualità",
-    "banners": {
-      "0": {
-        "label": "Distretto Manifatturiero in Cina · Sourcing Diretto",
-        "title": "Produzione di Cappellini di Livello Mondiale",
-        "sub": "Coordinato da Baoding Junyang tramite fabbriche partner verificate in Cina. Confezioni di qualità medio-alta. MOQ 200 pz · Campione in 7 giorni · Produzione 15–20 giorni · Preventivo in 2h.",
-        "cta": "Preventivo Dettagliato in 2h"
-      },
-      "1": {
-        "label": "Soluzioni B2B Dirette di Fabbrica",
-        "title": "Personalizzazione Premium Chiavi in Mano",
-        "sub": "Opzioni illimitate: Tessuti pregiati, colori su misura, ricamo 3D in rilievo e profili di cappelli personalizzati.",
-        "cta": "Inizia la Personalizzazione"
-      },
-      "2": {
-        "label": "Soluzioni B2B Dirette di Fabbrica",
-        "title": "La Tua Visione, Qualsiasi Stile",
-        "sub": "Dai modelli 5-Panel e 6-Panel a Trucker, Dad Hat, Berretti in Maglia e Bucket Hat. Tutto realizzato su misura.",
-        "cta": "Richiedi Campioni"
-      }
-    },
-    "pills": {
-      "moq": "MOQ 200 Pezzi",
-      "samples": "Campioni in 7 Giorni",
-      "market": "70% Nord America, 25% Europa Occidentale"
-    },
-    "stats": {
-      "years": "12+ Anni",
-      "yearsLabel": "Esperienza Produttiva",
-      "moq": "200 Pz",
-      "moqLabel": "MOQ a partire da 200 Pezzi",
-      "sgs": "Fabbrica Verificata da SGS"
-    },
-    "compliance": {
-      "title": "Standard di Conformità",
-      "certified": "Prodotto Certificato",
-      "markets": "Mercati Principali",
-      "na": "NORD AMERICA (70%)",
-      "eu": "EUROPA OCCIDENTALE (25%)"
-    },
-    "factory": {
-      "label": "Sourcing & Controllo Qualità",
-      "heading": "Segui la Produzione dei Tuoi Cappellini — dal Vivo.",
-      "p1": "Baoding Junyang è il vostro partner di sourcing e controllo qualità per cappellini. Selezioniamo le migliori fabbriche partner verificate in Cina, gestendo campionatura, produzione e collaudo tramite un unico referente.",
-      "p2Pre": "La Nostra Politica di Trasparenza:",
-      "p2": "Inviamo aggiornamenti fotografici e video continui (taglio tessuti, precisione di ricamo, cucitura dei pannelli, stiratura a vapore) durante l'intera produzione. È come essere direttamente nei nostri reparti.",
-      "qcStandard": "Controllo Qualità Dedicato",
-      "qcStandardDesc": "Ispezione accurata ad ogni fase produttiva.",
-      "samples": "Campioni in 7 Giorni",
-      "samplesDesc": "Spedizione rapida di prototipi fisici.",
-      "videoCta": "Richiedi Aggiornamenti Video",
-      "videoTitle": "Guarda il Video di Produzione (2026)",
-      "videoSub": "Macchine da ricamo automatizzate e cucitura artigianale professionale."
-    },
-    "trust": {
-      "label": "Scelto da Brand Internazionali",
-      "heading": "Perché i Marchi Scelgono BD Hats",
-      "sub": "Siamo il partner di sourcing e qualità dietro a collezioni streetwear, aziendali e lifestyle in Nord America ed Europa.",
-      "brands": "12+",
-      "brandsLabel": "Anni nel Commercio di Cappellini",
-      "brandsDesc": "Sourcing ed esportazione di cappellini personalizzati dal 2014.",
-      "caps": "200",
-      "capsLabel": "MOQ per Modello e Colore",
-      "capsDesc": "Costruzioni di qualità medio-alta, dallo streetwear alle forniture aziendali.",
-      "retention": "2h",
-      "retentionLabel": "Preventivo Scritto e Dettagliato",
-      "retentionDesc": "Calcolo FOB voce per voce (tessuto, ricamo, minuterie, imballo) entro 2 ore.",
-      "sgsSupplier": "Rete di Fabbriche Verificate",
-      "goldSupplier": "Protezione Alibaba Trade Assurance",
-      "certifications": "Test REACH, OEKO-TEX e GRS su richiesta · Ispezioni SGS/BV disponibili",
-      "qcStandard": "Controllo Qualità Pezzo per Pezzo"
-    },
-    "catalog": {
-      "label": "Categorie di Cappellini Premium",
-      "heading": "Le Nostre Collezioni di Cappellini",
-      "sub": "Scegli tra i nostri modelli collaudati ad alta richiesta o invia la tua scheda tecnica per una personalizzazione completa."
-    },
-    "process": {
-      "label": "Costruzione su misura passo dopo passo",
-      "heading": "Come Lavoriamo con i Marchi",
-      "step1Title": "Seleziona Modello e Tessuto",
-      "step1Desc": "Scegli strutture rigide o destrutturate, e seleziona tessuti dal twill di cotone pesante alla tela canvas o velluto a coste.",
-      "step2Title": "Ricevi un Preventivo Dettagliato",
-      "step2Desc": "Invia le tue specifiche e file grafici. Il nostro team commerciale fornisce un preventivo completo di prezzi e tempi entro 12 ore.",
-      "step3Title": "Approvazione del Campione",
-      "step3Desc": "Realizziamo un prototipo fisico e inviamo foto e video dettagliati per la tua approvazione finale prima della produzione in serie.",
-      "step4Title": "Produzione in Serie e Aggiornamenti",
-      "step4Desc": "Avviamo la produzione di massa fornendo regolari aggiornamenti visivi. Controllo finale approfondito prima della spedizione."
-    },
-    "qc": {
-      "label": "Garanzia di Qualità",
-      "heading": "Il Nostro Processo di Controllo Qualità in 5 Fasi",
-      "step1Title": "Verifica delle Materie Prime",
-      "step1Desc": "I rotoli di twill pesante, tela bio e filati da ricamo vengono controllati per tenuta del colore e resistenza prima del taglio.",
-      "step2Title": "Precisione del Ricamo",
-      "step2Desc": "Monitoraggio in tempo reale del rilievo 3D e della densità dei punti. Eventuali difetti o sbavature vengono scartati all'istante.",
-      "step3Title": "Controllo Integrità delle Cuciture",
-      "step3Desc": "Massima attenzione alla calotta e ai nastri di rinforzo. I fascioni parasudore interni sono allineati con tolleranza di 1mm.",
-      "step4Title": "Controllo Finale Pre-Confezionamento",
-      "step4Desc": "I cappellini vengono spulciati (fili tagliati), ispezionati e stirati a vapore prima del confezionamento nei sacchetti.",
-      "step5Title": "Imballaggio Export e Verifica Etichette",
-      "step5Desc": "Conteggio accurato rispetto alla distinta colli e verifica delle etichette di spedizione per velocizzare lo sdoganamento.",
-      "liveStatus": "Stato in Tempo Reale",
-      "qcPassed": "CQ Superato"
-    },
-    "faq": {
-      "heading": "Domande Frequenti",
-      "sub": "Tutto quello che devi sapere sulla nostra produzione B2B diretta di fabbrica.",
-      "q0": "Qual è il Quantitativo Minimo d'Ordine (MOQ) per cappellini personalizzati?",
-      "a0": "Il nostro MOQ standard è di 200 pezzi per modello/colore. Accettiamo anche piccoli ordini di prova per il lancio di nuovi brand.",
-      "q1": "Posso ricevere un campione prima della produzione in serie?",
-      "a1": "Sì, assolutamente! Realizziamo campioni fisici di pre-produzione completi affinché possiate verificare vestibilità, tessuti e ricami prima del lotto.",
-      "q2": "Siete una fabbrica o una società commerciale?",
-      "a2": "Siamo un partner di sourcing e controllo qualità — apertamente una società commerciale. Selezioniamo fabbriche partner auditate in base alle vostre specifiche, gestiamo campionatura e produzione e controlliamo ogni pezzo prima della spedizione. Un solo contratto, un unico interlocutore, uno standard di qualità.",
-      "q3": "Quali sono i tempi medi di produzione e spedizione?",
-      "a3": "I campioni richiedono circa 7 giorni. La produzione in serie richiede 15-20 giorni in base ai volumi. La spedizione aerea espressa globale richiede 5-8 giorni."
-    },
-    "inquiry": {
-      "heading": "Richiedi Preventivo all'Ingrosso",
-      "sub": "Inviaci le tue specifiche (modelli, loghi, quantità). I nostri specialisti B2B risponderanno entro 2 ore.",
-      "trustLabel": "Sourcing Diretto · Test per Ordine · 12 Anni di Esperienza",
-      "testimonialTitle": "Le Nostre Garanzie su Ogni Ordine",
-      "commitments": [
-        {
-          "title": "Preventivo Dettagliato in 2 Ore",
-          "desc": "Calcolo FOB voce per voce con distinta base completa (tessuto, decorazione, minuterie, imballo) per un confronto trasparente."
-        },
-        {
-          "title": "Controllo Qualità Pezzo per Pezzo",
-          "desc": "Il nostro team di ispezione verifica ogni cappellino prima della spedizione: ricami, cuciture, misure e finiture. Ispezioni terze parti su richiesta."
-        },
-        {
-          "title": "Protezione dei Pagamenti",
-          "desc": "Alibaba Trade Assurance o conto escrow per i primi ordini, con aggiornamenti fotografici e video a ogni fase."
-        }
-      ]
-    },
-    "q4Schedule": "Programma di Produzione e Sourcing 2026 Attivo",
-    "programsBadge": "Linee OEM / ODM",
-    "programsTitle": "Programmi Specializzati di Produzione B2B",
-    "programsSub": "Programmi di produzione su commessa direttamente dalla fabbrica per fondatori di marchi, distributori e importatori all'ingrosso. MOQ 200 pezzi.",
-    "programs": {
-      "0": { "title": "Cappellini Personalizzati a 5 Pannelli", "desc": "Profili streetwear e camper, miscelle leggere cotone-nylon, visiera piatta e chiusure in ottone.", "tag": "Alta Richiesta" },
-      "1": { "title": "Produzione OEM di Cappellini", "desc": "Produzione su commessa completa di headwear. Digitalizzazione completa del tech pack e scalabilità del brand.", "tag": "Servizio Completo" },
-      "2": { "title": "Berretti Personalizzati a Maglia", "desc": "Maglia a costine, berretti con risvolto, jacquard e applicazioni in vera pelle per programmi invernali.", "tag": "Stagionale" },
-      "3": { "title": "Dad Hat Personalizzati", "desc": "Cappellini 6 pannelli vintage senza struttura, lavaggio enzimatico intenso, visiera curva e fibbie vintage.", "tag": "Lifestyle" },
-      "4": { "title": "Snapback all'Ingrosso", "desc": "Cappellini classici ad alta corona con visiera piatta, davanti strutturato con telaiera e ricamo 3D ad alta densità.", "tag": "Streetwear" },
-      "5": { "title": "Cappellini Trucker Personalizzati", "desc": "Reti posteriori traspiranti in poliestere, davanti in schiuma o sergé pesante di cotone, personalizzati per campagne promozionali.", "tag": "Promo e Outdoor" },
-      "6": { "title": "Cappellini Neutrali all'Ingrosso", "desc": "Scorte di magazzino immediate, pronte per stampatori e laboratori di ricamo locali.", "tag": "Spedizione Rapida" },
-      "7": { "title": "Headwear Private Label", "desc": "Pacchetto di brand dedicato: etichette tessute personalizzate, nastro di cucitura stampato, hangtag e scatole su misura.", "tag": "Chiave in Mano" },
-      "8": { "title": "Headwear Uniforme Corporativo", "desc": "Programmi corporate durevoli ad alta ripetizione e ordini in blocco di cappellini da uniforme.", "tag": "Uniformi" },
-      "9": { "title": "Bucket Hat Personalizzati", "desc": "Bucket hat dalla tesa larga per festival e outdoor, tessuti con protezione solare, cordoncini mento e costruzione reversibile.", "tag": "Outdoor" },
-      "10": { "title": "Produzione in Blocco su Container", "desc": "Produzione su container 20GP e 40HQ per distributori e importatori internazionali.", "tag": "Scala 10.000+" },
-      "11": { "title": "Prezzi all'Ingrosso a Scaglioni", "desc": "Scaglioni FOB trasparenti da $5.20/pz con MOQ 200; pavimento su scala container da $3.50/pz. Con analisi dei costi.", "tag": "Tariffe Trasparenti" }
-    },
-    "sectorsBadge": "Programmi per Profilo di Acquirente",
-    "sectorsTitle": "Programmi di Produzione su Misura per Segmento di Acquirente",
-    "sectorsSub": "Soluzioni di produzione diretto dalla fabbrica, ottimizzate per i requisiti specifici e le curve di volume di ogni settore procurement.",
-    "sectors": {
-      "0": { "tag": "Moda e Drop", "moq": "MOQ 200", "title": "Marchi Streetwear e Apparel", "desc": "Camper a 5 pannelli, dad hat vintage lavati a enzimi, ricamo 3D puff ad alta densità e fodera interna damasco personalizzata.", "foot": "100% Rimborso Campione ≥500" },
-      "1": { "tag": "Uniformi e Workwear", "moq": "500 – 5.000+", "title": "Programmi Corporate e Uniformi", "desc": "Cappellini 6 pannelli in sergé pesante strutturati, alta solidità cromatica, piping riflettente e ispezione QC pezzo per pezzo prima della spedizione.", "foot": "Preventivi BOM Dettagliati" },
-      "2": { "tag": "Sportivo ad Alte Prestazioni", "moq": "MOQ 200", "title": "Golf e Sport ad Alte Prestazioni", "desc": "Pannelli di ventilazione forati a laser, nylon leggero idrorepellente DWR, fasce CoolMax che allontanano l'umidità e chiusure in silicone.", "foot": "Tecnologia CoolMax Pronta" },
-      "3": { "tag": "Scala Container FCL", "moq": "10.000+ Pz", "title": "Ingrosso su Container e Distributori", "desc": "Trucker in rete e snapback a visiera piatta in grandi volumi. Ottimizzazione del carico 20GP e 40HQ e prezzi FOB di fabbrica da $3.50.", "foot": "Da $3.50 FOB" }
-    },
-    "explore": "Esplora",
-    "headwearTitle": "Headwear Personalizzato",
-    "headwear": [
-      "Snapback all'Ingrosso",
-      "Cappellini Trucker Personalizzati",
-      "Dad Hat Personalizzati",
-      "Cappellini a 5 Pannelli Personalizzati",
-      "Berretti Personalizzati a Maglia",
-      "Bucket Hat Personalizzati",
-      "Ordini in Blocco e Corporate"
-    ],
-    "guidesTitle": "Guide di Sourcing B2B",
-    "guides": [
-      "Guida al Tech Pack Vettoriale",
-      "Indice dei Costi dei Cappellini 2026",
-      "Migliori Produttori di Cappellini",
-      "5 Pannelli vs 6 Pannelli",
-      "Ricamo Piatto vs 3D Puff",
-      "Sergé di Cotone vs Tele",
-      "Cina vs Vietnam vs Bangladesh"
-    ],
-    "freeBadge": "AI/PDF Gratis",
-    "factoryDirect": "Super Fabbrica Diretta · OEM/ODM",
-    "exporting": "Esportazione verso USA, UE e AU dal 2014",
-    "backToTop": "Torna su ↑",
-    "assets": {
-      "badge1a": "Risorsa di Design B2B Gratuita",
-      "badge1b": "Flats AI / PDF / EPS",
-      "title1": "Scarica Gratis: Template Tech Pack Vettoriale per Cappellini (Scala 1:1)",
-      "desc1": "Flats pronti per la produzione con quote di fabbrica per 5 pannelli, 6 pannelli, trucker e berretti, con limiti di scala del ricamo.",
-      "cta1": "Scarica i Template Vettoriali",
-      "badge2a": "Strumento di Logistica Interattivo",
-      "badge2b": "Specifica 60×45×40cm",
-      "title2": "Calcolatrice B2B di Casse di Esportazione e CBM",
-      "desc2": "Calcola il numero di casse (100 pz/cassa), peso lordo (~12kg) e volume CBM per spedizioni aeree e container FCL (20GP/40HQ).",
-      "cta2": "Apri la Calcolatrice CBM"
-    },
-    "milestone": {
-      "title": "Diario Multimediale di Produzione in Diretta",
-      "updates": "Aggiornamenti ogni 2 giorni",
-      "desc": "Monitoraggio trasparente in ogni fase: ① Campionatura e taglio del tessuto ② Video di ispezione ricamo in diretta ③ Montaggio della fascia ④ Ispezione pezzo per pezzo e imballaggio.",
-      "cta": "Contatta Eileen",
-      "samplesBulk": "Campioni in 7 giorni · Serie in 15-20 giorni"
-    },
-    "intents": {
-      "techpackTitle": "Scarica Tech Pack Vuoto (AI/PDF)",
-      "techpackSub": "Template vettoriali 2D con specifiche di cucitura",
-      "mockupTitle": "Mockup Digitale 3D Gratuito (24h)",
-      "mockupSub": "Invia il tuo logo, ricevi un render 3D"
-    }
-  },
-  "catalog": {
-    "filterAll": "Tutti",
-    "filterBaseballCaps": "Cappellini da Baseball",
-    "filterVintage": "Serie Vintage",
-    "filterSports": "Sport e Performance",
-    "filterTruckerHats": "Cappellini Trucker",
-    "filterSnapbacks": "Cappellini Snapback",
-    "filterBucketHats": "Cappelli da Pescatore",
-    "filterBeanies": "Berretti in Maglia",
-    "panelLabel": "Pannelli:",
-    "panelAll": "Tutti",
-    "sortDefault": "Predefinito",
-    "sortPriceAsc": "Prezzo: Crescente",
-    "sortPriceDesc": "Prezzo: Decrescente",
-    "moq": "MOQ: {count} Pz",
-    "factoryDirect": "Diretto di Fabbrica",
-    "viewDetails": "Vedi Dettagli",
-    "quote": "Preventivo",
-    "details": "Dettagli",
-    "showing": "Visualizzati {shown} di {total} prodotti",
-    "noResults": "Nessun prodotto corrisponde ai filtri selezionati.",
-    "resetFilters": "Reimposta filtri",
-    "badgeBestSeller": "Più Venduto",
-    "badgeTrending": "Di Tendenza",
-    "badgeNew": "Nuovo"
-  },
-  "product": {
-    "backToCatalog": "Torna al Catalogo",
-    "whatsappQuote": "Preventivo WhatsApp",
-    "topSeller": "Top Seller",
-    "qc": "Interno",
-    "qcSub": "Team CQ",
-    "production": "15 Giorni",
-    "productionSub": "Produzione",
-    "moq": "200 Pz",
-    "moqSub": "MOQ",
-    "shipping": "Globale",
-    "shippingSub": "Aereo Espresso",
-    "unit": "/ Pezzo (FOB)",
-    "tabs": {
-      "specs": "Scheda Tecnica",
-      "custom": "Personalizzazione",
-      "faq": "FAQ Prodotto"
-    },
-    "getQuote": "Richiedi Preventivo",
-    "orderSample": "Ordina Campione",
-    "urgencyStrip": "Approvvigionamento diretto · MOQ 200 pz · Preventivo scritto in 2 ore · Campioni in 7 giorni",
-    "related": "Continua a Esplorare",
-    "relatedTitle": "Prodotti Correlati",
-    "faqHeading": "FAQ",
-    "moreInfo": "Approfondisci",
-    "moreInfoTitle": "Guide e confronti correlati",
-    "moreInfoCategory": "Questa categoria",
-    "moreInfoCompare": "Confronta materiali",
-    "moreInfoGuides": "Guide all'acquisto",
-    "trustBar": "Standard Industriali Globali Certificati",
-    "notFound": "Prodotto Non Trovato",
-    "backLink": "Torna al Catalogo",
-    "devToolsBadge": "Strumenti per Sviluppatori di Brand B2B",
-    "devToolsTitle": "Modelli Vettoriali e Valutazione Tecnica Pronti per la Produzione",
-    "devToolsSub": "Accelera il lancio della tua collezione con schede tecniche vettoriali e anteprima 3D.",
-    "techpackTitle": "Scarica Scheda Tecnica Neutra (AI / PDF)",
-    "techpackDesc": "Modelli vettoriali 2D con quote esatte di altezza cupola, curvatura visiera e cuciture 5/6 pannelli.",
-    "techpackBtn": "Ottieni Modelli Vettoriali",
-    "mockupTitle": "Mockup 3D Gratuito e Valutazione in 2 Ore",
-    "mockupDesc": "Invia il tuo logo: il nostro ufficio tecnico verifica densità dei punti, supporto Tatami e invia il mockup 3D in 2 ore.",
-    "mockupBtn": "Richiedi Mockup 3D Gratuito"
-  },
-  "form": {
-    "name": "Tuo Nome",
-    "namePlaceholder": "Mario Rossi",
-    "email": "Indirizzo Email",
-    "emailPlaceholder": "mario@azienda.it",
-    "phone": "Telefono / WhatsApp (Opzionale)",
-    "phonePlaceholder": "+39 300 0000000",
-    "message": "Messaggio / Specifiche",
-    "messagePlaceholder": "Descrivi modelli, quantità o lavorazioni speciali (es. ricamo 3D in rilievo, etichette tessute, fibbie in metallo)...",
-    "privacyNote": "La tua richiesta viene inviata direttamente al nostro team commerciale (admin@bdjunyang.com). Preventivo scritto entro 2 ore.",
-    "intentSample": "Salve Baoding Junyang! Vorrei ordinare un campione fisico prima della produzione in serie. Potete fornirmi i dettagli?",
-    "intentBulk": "Salve Baoding Junyang! Sono interessato alla produzione in serie. Potete inviarmi un preventivo formale?",
-    "intentTest": "Salve Baoding Junyang! Vorrei effettuare un piccolo ordine di prova. Potete inviarmi le condizioni?",
-    "intentTechpack": "Salve Baoding Junyang! Vi prego di inviarmi i modelli vettoriali neutri (Tech Pack AI/PDF) e le schede di cucitura per il nostro team di design. Il mio brand è: ",
-    "intentMockup": "Salve Baoding Junyang! Vorrei richiedere un mockup 3D gratuito e un'analisi di fattibilità del ricamo per il nostro logo. Modello interessato: ",
-    "submit": "Invia Richiesta",
-    "submitting": "Trasmissione al team commerciale...",
-    "thanks": "Richiesta Ricevuta con Successo!",
-    "thanksMsg": "Le tue specifiche sono state recapitate al nostro team commerciale e tecnico (admin@bdjunyang.com). Esamineremo i dettagli e ti risponderemo via email al più presto.",
-    "whatsappFallback": "Hai bisogno di una risposta immediata? Contatta direttamente il nostro responsabile B2B su WhatsApp:",
-    "chatWhatsApp": "Chatta su WhatsApp (+86 159 3393 0830)",
-    "sendAnother": "Invia un'altra richiesta"
-  },
-  "footer": {
-    "about": "Baoding Junyang Import and Export Trade Co., Ltd. è un partner di sourcing e controllo qualità specializzato in cappellini di qualità medio-alta, beanies e trucker dal 2014.",
-    "navigation": "Navigazione",
-    "products": "Prodotti",
-    "aboutLink": "Chi Siamo",
-    "guideLink": "Guida B2B",
-    "materialsLink": "Materiali e Tessuti",
-    "pricingLink": "Prezzi e Spedizione",
-    "requestQuote": "Richiedi Preventivo",
-    "contact": "Contatti",
-    "whatsapp": "WhatsApp: +86 15933930830",
-    "email": "Email: admin@bdjunyang.com",
-    "office": "Ufficio: Baoding, Hebei, Cina",
-    "privacy": "Informativa sulla Privacy",
-    "terms": "Termini di Servizio",
-    "copyright": "© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Tutti i diritti riservati."
-  },
-  "breadcrumb": {
-    "home": "Home",
-    "about": "Chi Siamo",
-    "guide": "Guida B2B",
-    "materials": "Materiali e Tessuti",
-    "pricing": "Prezzi e Spedizione",
-    "products": "Prodotti"
-  },
-  "meta": {
-    "homeTitle": "BD Hats | Partner di Sourcing Cappellini Personalizzati B2B",
-    "homeDesc": "Cappellini personalizzati di qualità medio-alta con controllo qualità pezzo per pezzo dal 2014. Ricamo su misura, MOQ 200 pz, campioni in 7 giorni, preventivo in 2h.",
-    "aboutTitle": "Chi Siamo | Partner di Sourcing a Baoding, Cina | BD Hats",
-    "aboutDesc": "Baoding Junyang Import and Export Trade Co., Ltd. — 12 anni di esperienza in sourcing ed export di cappellini, fabbriche partner verificate e controllo qualità pezzo per pezzo dal 2014.",
-    "guideTitle": "Guida B2B Sourcing Cappellini | Come Acquistare all'Ingrosso dalla Cina",
-    "guideDesc": "Guida completa per buyer B2B: come scegliere il partner giusto, tecniche di ricamo a confronto, negoziazione del MOQ, controllo qualità e logistica internazionale.",
-    "materialsTitle": "Guida ai Materiali per Cappellini | Cotone, Lana, Poliestere e Altro | BD Hats",
-    "materialsDesc": "Panoramica completa dei tessuti per cappellini: twill di cotone, cotone spazzolato, lana, nylon, tela canvas. Tipologie di chiusure e costruzione dei pannelli spiegate nel dettaglio.",
-    "pricingTitle": "Prezzi, MOQ e Spedizione Cappellini | Struttura Costi all'Ingrosso | BD Hats",
-    "pricingDesc": "Guida trasparente ai costi dei cappellini: FOB vs CIF, MOQ 200 pz, costi di trasporto aereo e marittimo, costi di campionatura e sconti per quantità."
-  },
-  "popup": {
-    "badge": "Partner Sourcing · Dal 2014",
-    "heading": "Cerchi Cappellini Personalizzati per il Tuo Brand?",
-    "sub": "Ricevi un preventivo dettagliato entro 2 ore — campioni fisici in 7 giorni.",
-    "whatsappBtn": "Chatta su WhatsApp",
-    "formBtn": "Invia Richiesta",
-    "note": "Fornitura diretta · Controllo pezzo per pezzo · Verificato SGS"
-  },
-  "chat": {
-    "cta": "Parla con Noi",
-    "tip": "Ciao! Ricevi un preventivo in 12 ore."
-  },
-  "language": {
-    "switchTo": "Italiano",
-    "label": "IT"
-  }
+     "nav": {
+          "advantages": "Vantaggi",
+          "factory": "La Nostra Fabbrica",
+          "qualityControl": "Controllo Qualità",
+          "products": "Cappellini da Baseball",
+          "inquiry": "Richiesta Preventivo",
+          "about": "Chi Siamo",
+          "guide": "Guida all'Acquisto B2B",
+          "materials": "Materiali e Tessuti",
+          "pricing": "Prezzi e Spedizione",
+          "getQuote": "Richiedi Preventivo",
+          "categories": "Categorie Cappellini",
+          "viewAllProducts": "Vedi tutti i modelli →",
+          "viewAllCount": "Vedi tutti i {count} modelli →",
+          "stylesCount": "{count} modelli",
+          "whatsappQuote": "Preventivo WhatsApp",
+          "home": "Home"
+     },
+     "home": {
+          "topBar": "Partner di Sourcing e Qualità per Cappellini • Fondato nel 2014",
+          "subtitle": "Partner di Sourcing & Controllo Qualità",
+          "banners": {
+               "0": {
+                    "label": "Distretto Manifatturiero in Cina · Sourcing Diretto",
+                    "title": "Produzione di Cappellini di Livello Mondiale",
+                    "sub": "Coordinato da Baoding Junyang tramite fabbriche partner selezionate in Cina. Confezioni di qualità medio-alta. MOQ 200 pz · Campione in 7 giorni · Produzione 15–20 giorni · Preventivo in 2h.",
+                    "cta": "Preventivo Dettagliato in 2h"
+               },
+               "1": {
+                    "label": "Soluzioni B2B Dirette di Fabbrica",
+                    "title": "Personalizzazione Premium Chiavi in Mano",
+                    "sub": "Opzioni illimitate: Tessuti pregiati, colori su misura, ricamo 3D in rilievo e profili di cappelli personalizzati.",
+                    "cta": "Inizia la Personalizzazione"
+               },
+               "2": {
+                    "label": "Soluzioni B2B Dirette di Fabbrica",
+                    "title": "La Tua Visione, Qualsiasi Stile",
+                    "sub": "Dai modelli 5-Panel e 6-Panel a Trucker, Dad Hat, Berretti in Maglia e Bucket Hat. Tutto realizzato su misura.",
+                    "cta": "Richiedi Campioni"
+               }
+          },
+          "pills": {
+               "moq": "MOQ 200 Pezzi",
+               "samples": "Campioni in 7 Giorni",
+               "market": "70% Nord America, 25% Europa Occidentale"
+          },
+          "stats": {
+               "years": "12+ Anni",
+               "yearsLabel": "Esperienza Produttiva",
+               "moq": "200 Pz",
+               "moqLabel": "MOQ a partire da 200 Pezzi",
+               "sgs": "Controllo di Qualità Pre-spedizione"
+          },
+          "compliance": {
+               "title": "Sourcing Diretto dalla Fabbrica",
+               "certified": "MOQ 200+ pz",
+               "markets": "Mercati Principali",
+               "na": "NORD AMERICA (70%)",
+               "eu": "EUROPA OCCIDENTALE (25%)",
+               "a": "OEM / ODM",
+               "b": "Design su Misura",
+               "c": "Private Label"
+          },
+          "factory": {
+               "label": "Sourcing & Controllo Qualità",
+               "heading": "Segui la Produzione dei Tuoi Cappellini — dal Vivo.",
+               "p1": "Baoding Junyang è il vostro partner di sourcing e controllo qualità per cappellini. Selezioniamo le migliori fabbriche partner verificate in Cina, gestendo campionatura, produzione e collaudo tramite un unico referente.",
+               "p2Pre": "La Nostra Politica di Trasparenza:",
+               "p2": "Inviamo aggiornamenti fotografici e video continui (taglio tessuti, precisione di ricamo, cucitura dei pannelli, stiratura a vapore) durante l'intera produzione. È come essere direttamente nei nostri reparti.",
+               "qcStandard": "Controllo Qualità Dedicato",
+               "qcStandardDesc": "Ispezione accurata ad ogni fase produttiva.",
+               "samples": "Campioni in 7 Giorni",
+               "samplesDesc": "Spedizione rapida di prototipi fisici.",
+               "videoCta": "Richiedi Aggiornamenti Video",
+               "videoTitle": "Guarda il Video di Produzione (2026)",
+               "videoSub": "Macchine da ricamo automatizzate e cucitura artigianale professionale."
+          },
+          "trust": {
+               "label": "Scelto da Brand Internazionali",
+               "heading": "Perché i Marchi Scelgono BD Hats",
+               "sub": "Siamo il partner di sourcing e qualità dietro a collezioni streetwear, aziendali e lifestyle in Nord America ed Europa.",
+               "brands": "12+",
+               "brandsLabel": "Anni nel Commercio di Cappellini",
+               "brandsDesc": "Sourcing ed esportazione di cappellini personalizzati dal 2014.",
+               "caps": "200",
+               "capsLabel": "MOQ per Modello e Colore",
+               "capsDesc": "Costruzioni di qualità medio-alta, dallo streetwear alle forniture aziendali.",
+               "retention": "2h",
+               "retentionLabel": "Preventivo Scritto e Dettagliato",
+               "retentionDesc": "Calcolo FOB voce per voce (tessuto, ricamo, minuterie, imballo) entro 2 ore.",
+               "sgsSupplier": "Rete di Fabbriche Partner Selezionate",
+               "goldSupplier": "Protezione Alibaba Trade Assurance",
+               "certifications": "Test e Ispezioni di Terze Parti su Richiesta",
+               "qcStandard": "Ispezione di Qualità pre-Spedizione"
+          },
+          "catalog": {
+               "label": "Categorie di Cappellini Premium",
+               "heading": "Le Nostre Collezioni di Cappellini",
+               "sub": "Scegli tra i nostri modelli collaudati ad alta richiesta o invia la tua scheda tecnica per una personalizzazione completa."
+          },
+          "process": {
+               "label": "Costruzione su misura passo dopo passo",
+               "heading": "Come Lavoriamo con i Marchi",
+               "step1Title": "Seleziona Modello e Tessuto",
+               "step1Desc": "Scegli strutture rigide o destrutturate, e seleziona tessuti dal twill di cotone pesante alla tela canvas o velluto a coste.",
+               "step2Title": "Ricevi un Preventivo Dettagliato",
+               "step2Desc": "Invia le tue specifiche e file grafici. Il nostro team commerciale fornisce un preventivo completo di prezzi e tempi entro 12 ore.",
+               "step3Title": "Approvazione del Campione",
+               "step3Desc": "Realizziamo un prototipo fisico e inviamo foto e video dettagliati per la tua approvazione finale prima della produzione in serie.",
+               "step4Title": "Produzione in Serie e Aggiornamenti",
+               "step4Desc": "Avviamo la produzione di massa fornendo regolari aggiornamenti visivi. Controllo finale approfondito prima della spedizione."
+          },
+          "qc": {
+               "label": "Garanzia di Qualità",
+               "heading": "Il Nostro Processo di Controllo Qualità in 5 Fasi",
+               "step1Title": "Verifica delle Materie Prime",
+               "step1Desc": "I rotoli di twill pesante, tela bio e filati da ricamo vengono controllati per tenuta del colore e resistenza prima del taglio.",
+               "step2Title": "Precisione del Ricamo",
+               "step2Desc": "Monitoraggio in tempo reale del rilievo 3D e della densità dei punti. Eventuali difetti o sbavature vengono scartati all'istante.",
+               "step3Title": "Controllo Integrità delle Cuciture",
+               "step3Desc": "Massima attenzione alla calotta e ai nastri di rinforzo. I fascioni parasudore interni sono allineati con tolleranza di 1mm.",
+               "step4Title": "Controllo Finale Pre-Confezionamento",
+               "step4Desc": "I cappellini vengono spulciati (fili tagliati), ispezionati e stirati a vapore prima del confezionamento nei sacchetti.",
+               "step5Title": "Imballaggio Export e Verifica Etichette",
+               "step5Desc": "Conteggio accurato rispetto alla distinta colli e verifica delle etichette di spedizione per velocizzare lo sdoganamento.",
+               "liveStatus": "Stato in Tempo Reale",
+               "qcPassed": "QC pre-spedizione"
+          },
+          "faq": {
+               "heading": "Domande Frequenti",
+               "sub": "Tutto quello che devi sapere sulla nostra produzione B2B diretta di fabbrica.",
+               "q0": "Qual è il Quantitativo Minimo d'Ordine (MOQ) per cappellini personalizzati?",
+               "a0": "Il nostro MOQ standard è di 200 pezzi per modello/colore. Accettiamo anche piccoli ordini di prova per il lancio di nuovi brand.",
+               "q1": "Posso ricevere un campione prima della produzione in serie?",
+               "a1": "Sì, assolutamente! Realizziamo campioni fisici di pre-produzione completi affinché possiate verificare vestibilità, tessuti e ricami prima del lotto.",
+               "q2": "Siete una fabbrica o una società commerciale?",
+               "a2": "Siamo un partner di sourcing e controllo qualità — apertamente una società commerciale. Selezioniamo fabbriche partner in base alle vostre specifiche, gestiamo campionatura e produzione ed effettuiamo ispezioni di qualità prima della spedizione. Un solo contratto, un unico interlocutore, uno standard di qualità.",
+               "q3": "Quali sono i tempi medi di produzione e spedizione?",
+               "a3": "I campioni richiedono circa 7 giorni. La produzione in serie richiede 15-20 giorni in base ai volumi. La spedizione aerea espressa globale richiede 5-8 giorni."
+          },
+          "inquiry": {
+               "heading": "Richiedi Preventivo all'Ingrosso",
+               "sub": "Inviaci le tue specifiche (modelli, loghi, quantità). I nostri specialisti B2B risponderanno entro 2 ore.",
+               "trustLabel": "Sourcing Diretto · Test per Ordine · 12 Anni di Esperienza",
+               "testimonialTitle": "Le Nostre Garanzie su Ogni Ordine",
+               "commitments": [
+                    {
+                         "title": "Preventivo Dettagliato in 2 Ore",
+                         "desc": "Calcolo FOB voce per voce con distinta base completa (tessuto, decorazione, minuterie, imballo) per un confronto trasparente."
+                    },
+                    {
+                         "title": "Controllo di Qualità Pre-spedizione",
+                         "desc": "Il nostro team di ispezione verifica i cappellini prima della spedizione: ricami, cuciture, misure e finiture. Ispezioni terze parti su richiesta."
+                    },
+                    {
+                         "title": "Protezione dei Pagamenti",
+                         "desc": "Alibaba Trade Assurance o conto escrow per i primi ordini, con aggiornamenti fotografici e video a ogni fase."
+                    }
+               ]
+          },
+          "q4Schedule": "Programma di Produzione e Sourcing 2026 Attivo",
+          "programsBadge": "Linee OEM / ODM",
+          "programsTitle": "Programmi Specializzati di Produzione B2B",
+          "programsSub": "Programmi di produzione su commessa direttamente dalla fabbrica per fondatori di marchi, distributori e importatori all'ingrosso. MOQ 200 pezzi.",
+          "programs": {
+               "0": {
+                    "title": "Cappellini Personalizzati a 5 Pannelli",
+                    "desc": "Profili streetwear e camper, miscelle leggere cotone-nylon, visiera piatta e chiusure in ottone.",
+                    "tag": "Alta Richiesta"
+               },
+               "1": {
+                    "title": "Produzione OEM di Cappellini",
+                    "desc": "Produzione su commessa completa di headwear. Digitalizzazione completa del tech pack e scalabilità del brand.",
+                    "tag": "Servizio Completo"
+               },
+               "2": {
+                    "title": "Berretti Personalizzati a Maglia",
+                    "desc": "Maglia a costine, berretti con risvolto, jacquard e applicazioni in vera pelle per programmi invernali.",
+                    "tag": "Stagionale"
+               },
+               "3": {
+                    "title": "Dad Hat Personalizzati",
+                    "desc": "Cappellini 6 pannelli vintage senza struttura, lavaggio enzimatico intenso, visiera curva e fibbie vintage.",
+                    "tag": "Lifestyle"
+               },
+               "4": {
+                    "title": "Snapback all'Ingrosso",
+                    "desc": "Cappellini classici ad alta corona con visiera piatta, davanti strutturato con telaiera e ricamo 3D ad alta densità.",
+                    "tag": "Streetwear"
+               },
+               "5": {
+                    "title": "Cappellini Trucker Personalizzati",
+                    "desc": "Reti posteriori traspiranti in poliestere, davanti in schiuma o sergé pesante di cotone, personalizzati per campagne promozionali.",
+                    "tag": "Promo e Outdoor"
+               },
+               "6": {
+                    "title": "Cappellini Neutrali all'Ingrosso",
+                    "desc": "Scorte di magazzino immediate, pronte per stampatori e laboratori di ricamo locali.",
+                    "tag": "Spedizione Rapida"
+               },
+               "7": {
+                    "title": "Headwear Private Label",
+                    "desc": "Pacchetto di brand dedicato: etichette tessute personalizzate, nastro di cucitura stampato, hangtag e scatole su misura.",
+                    "tag": "Chiave in Mano"
+               },
+               "8": {
+                    "title": "Headwear Uniforme Corporativo",
+                    "desc": "Programmi corporate durevoli ad alta ripetizione e ordini in blocco di cappellini da uniforme.",
+                    "tag": "Uniformi"
+               },
+               "9": {
+                    "title": "Bucket Hat Personalizzati",
+                    "desc": "Bucket hat dalla tesa larga per festival e outdoor, tessuti con protezione solare, cordoncini mento e costruzione reversibile.",
+                    "tag": "Outdoor"
+               },
+               "10": {
+                    "title": "Produzione in Blocco su Container",
+                    "desc": "Produzione su container 20GP e 40HQ per distributori e importatori internazionali.",
+                    "tag": "Scala 10.000+"
+               },
+               "11": {
+                    "title": "Prezzi all'Ingrosso a Scaglioni",
+                    "desc": "Scaglioni FOB trasparenti da $5.20/pz con MOQ 200; pavimento su scala container da $3.50/pz. Con analisi dei costi.",
+                    "tag": "Tariffe Trasparenti"
+               }
+          },
+          "sectorsBadge": "Programmi per Profilo di Acquirente",
+          "sectorsTitle": "Programmi di Produzione su Misura per Segmento di Acquirente",
+          "sectorsSub": "Soluzioni di produzione diretto dalla fabbrica, ottimizzate per i requisiti specifici e le curve di volume di ogni settore procurement.",
+          "sectors": {
+               "0": {
+                    "tag": "Moda e Drop",
+                    "moq": "MOQ 200",
+                    "title": "Marchi Streetwear e Apparel",
+                    "desc": "Camper a 5 pannelli, dad hat vintage lavati a enzimi, ricamo 3D puff ad alta densità e fodera interna damasco personalizzata.",
+                    "foot": "100% Rimborso Campione ≥500"
+               },
+               "1": {
+                    "tag": "Uniformi e Workwear",
+                    "moq": "500 – 5.000+",
+                    "title": "Programmi Corporate e Uniformi",
+                    "desc": "Cappellini 6 pannelli in sergé pesante strutturati, alta solidità cromatica, piping riflettente e ispezione di qualità prima della spedizione.",
+                    "foot": "Preventivi BOM Dettagliati"
+               },
+               "2": {
+                    "tag": "Sportivo ad Alte Prestazioni",
+                    "moq": "MOQ 200",
+                    "title": "Golf e Sport ad Alte Prestazioni",
+                    "desc": "Pannelli di ventilazione forati a laser, nylon leggero idrorepellente DWR, fasce CoolMax che allontanano l'umidità e chiusure in silicone.",
+                    "foot": "Tecnologia CoolMax Pronta"
+               },
+               "3": {
+                    "tag": "Scala Container FCL",
+                    "moq": "10.000+ Pz",
+                    "title": "Ingrosso su Container e Distributori",
+                    "desc": "Trucker in rete e snapback a visiera piatta in grandi volumi. Ottimizzazione del carico 20GP e 40HQ e prezzi FOB di fabbrica da $3.50.",
+                    "foot": "Da $3.50 FOB"
+               }
+          },
+          "explore": "Esplora",
+          "headwearTitle": "Headwear Personalizzato",
+          "headwear": [
+               "Snapback all'Ingrosso",
+               "Cappellini Trucker Personalizzati",
+               "Dad Hat Personalizzati",
+               "Cappellini a 5 Pannelli Personalizzati",
+               "Berretti Personalizzati a Maglia",
+               "Bucket Hat Personalizzati",
+               "Ordini in Blocco e Corporate"
+          ],
+          "guidesTitle": "Guide di Sourcing B2B",
+          "guides": [
+               "Guida al Tech Pack Vettoriale",
+               "Indice dei Costi dei Cappellini 2026",
+               "Migliori Produttori di Cappellini",
+               "5 Pannelli vs 6 Pannelli",
+               "Ricamo Piatto vs 3D Puff",
+               "Sergé di Cotone vs Tele",
+               "Cina vs Vietnam vs Bangladesh"
+          ],
+          "freeBadge": "AI/PDF Gratis",
+          "factoryDirect": "Super Fabbrica Diretta · OEM/ODM",
+          "exporting": "Esportazione verso USA, UE e AU dal 2014",
+          "backToTop": "Torna su ↑",
+          "assets": {
+               "badge1a": "Risorsa di Design B2B Gratuita",
+               "badge1b": "Flats AI / PDF / EPS",
+               "title1": "Scarica Gratis: Template Tech Pack Vettoriale per Cappellini (Scala 1:1)",
+               "desc1": "Flats pronti per la produzione con quote di fabbrica per 5 pannelli, 6 pannelli, trucker e berretti, con limiti di scala del ricamo.",
+               "cta1": "Scarica i Template Vettoriali",
+               "badge2a": "Strumento di Logistica Interattivo",
+               "badge2b": "Specifica 60×45×40cm",
+               "title2": "Calcolatrice B2B di Casse di Esportazione e CBM",
+               "desc2": "Calcola il numero di casse (100 pz/cassa), peso lordo (~12kg) e volume CBM per spedizioni aeree e container FCL (20GP/40HQ).",
+               "cta2": "Apri la Calcolatrice CBM"
+          },
+          "milestone": {
+               "title": "Diario Multimediale di Produzione in Diretta",
+               "updates": "Aggiornamenti ogni 2 giorni",
+               "desc": "Monitoraggio trasparente in ogni fase: ① Campionatura e taglio del tessuto ② Video di ispezione ricamo in diretta ③ Montaggio della fascia ④ Ispezione finale di qualità e imballaggio.",
+               "cta": "Contatta Eileen",
+               "samplesBulk": "Campioni in 7 giorni · Serie in 15-20 giorni"
+          },
+          "intents": {
+               "techpackTitle": "Scarica Tech Pack Vuoto (AI/PDF)",
+               "techpackSub": "Template vettoriali 2D con specifiche di cucitura",
+               "mockupTitle": "Mockup Digitale 3D Gratuito (24h)",
+               "mockupSub": "Invia il tuo logo, ricevi un render 3D"
+          }
+     },
+     "catalog": {
+          "filterAll": "Tutti",
+          "filterBaseballCaps": "Cappellini da Baseball",
+          "filterVintage": "Serie Vintage",
+          "filterSports": "Sport e Performance",
+          "filterTruckerHats": "Cappellini Trucker",
+          "filterSnapbacks": "Cappellini Snapback",
+          "filterBucketHats": "Cappelli da Pescatore",
+          "filterBeanies": "Berretti in Maglia",
+          "panelLabel": "Pannelli:",
+          "panelAll": "Tutti",
+          "sortDefault": "Predefinito",
+          "sortPriceAsc": "Prezzo: Crescente",
+          "sortPriceDesc": "Prezzo: Decrescente",
+          "moq": "MOQ: {count} Pz",
+          "factoryDirect": "Diretto di Fabbrica",
+          "viewDetails": "Vedi Dettagli",
+          "quote": "Preventivo",
+          "details": "Dettagli",
+          "showing": "Visualizzati {shown} di {total} prodotti",
+          "noResults": "Nessun prodotto corrisponde ai filtri selezionati.",
+          "resetFilters": "Reimposta filtri",
+          "badgeBestSeller": "Più Venduto",
+          "badgeTrending": "Di Tendenza",
+          "badgeNew": "Nuovo"
+     },
+     "product": {
+          "backToCatalog": "Torna al Catalogo",
+          "whatsappQuote": "Preventivo WhatsApp",
+          "topSeller": "Top Seller",
+          "qc": "Interno",
+          "qcSub": "Team CQ",
+          "production": "15 Giorni",
+          "productionSub": "Produzione",
+          "moq": "200 Pz",
+          "moqSub": "MOQ",
+          "shipping": "Globale",
+          "shippingSub": "Aereo Espresso",
+          "unit": "/ Pezzo (FOB)",
+          "tabs": {
+               "specs": "Scheda Tecnica",
+               "custom": "Personalizzazione",
+               "faq": "FAQ Prodotto"
+          },
+          "getQuote": "Richiedi Preventivo",
+          "orderSample": "Ordina Campione",
+          "urgencyStrip": "Approvvigionamento diretto · MOQ 200 pz · Preventivo scritto in 2 ore · Campioni in 7 giorni",
+          "related": "Continua a Esplorare",
+          "relatedTitle": "Prodotti Correlati",
+          "faqHeading": "FAQ",
+          "moreInfo": "Approfondisci",
+          "moreInfoTitle": "Guide e confronti correlati",
+          "moreInfoCategory": "Questa categoria",
+          "moreInfoCompare": "Confronta materiali",
+          "moreInfoGuides": "Guide all'acquisto",
+          "trustBar": "Partner di Sourcing B2B Affidabile",
+          "notFound": "Prodotto Non Trovato",
+          "backLink": "Torna al Catalogo",
+          "devToolsBadge": "Strumenti per Sviluppatori di Brand B2B",
+          "devToolsTitle": "Modelli Vettoriali e Valutazione Tecnica Pronti per la Produzione",
+          "devToolsSub": "Accelera il lancio della tua collezione con schede tecniche vettoriali e anteprima 3D.",
+          "techpackTitle": "Scarica Scheda Tecnica Neutra (AI / PDF)",
+          "techpackDesc": "Modelli vettoriali 2D con quote esatte di altezza cupola, curvatura visiera e cuciture 5/6 pannelli.",
+          "techpackBtn": "Ottieni Modelli Vettoriali",
+          "mockupTitle": "Mockup 3D Gratuito e Valutazione in 2 Ore",
+          "mockupDesc": "Invia il tuo logo: il nostro ufficio tecnico verifica densità dei punti, supporto Tatami e invia il mockup 3D in 2 ore.",
+          "mockupBtn": "Richiedi Mockup 3D Gratuito"
+     },
+     "form": {
+          "name": "Tuo Nome",
+          "namePlaceholder": "Mario Rossi",
+          "email": "Indirizzo Email",
+          "emailPlaceholder": "mario@azienda.it",
+          "phone": "Telefono / WhatsApp (Opzionale)",
+          "phonePlaceholder": "+39 300 0000000",
+          "message": "Messaggio / Specifiche",
+          "messagePlaceholder": "Descrivi modelli, quantità o lavorazioni speciali (es. ricamo 3D in rilievo, etichette tessute, fibbie in metallo)...",
+          "privacyNote": "La tua richiesta viene inviata direttamente al nostro team commerciale (admin@bdjunyang.com). Preventivo scritto entro 2 ore.",
+          "intentSample": "Salve Baoding Junyang! Vorrei ordinare un campione fisico prima della produzione in serie. Potete fornirmi i dettagli?",
+          "intentBulk": "Salve Baoding Junyang! Sono interessato alla produzione in serie. Potete inviarmi un preventivo formale?",
+          "intentTest": "Salve Baoding Junyang! Vorrei effettuare un piccolo ordine di prova. Potete inviarmi le condizioni?",
+          "intentTechpack": "Salve Baoding Junyang! Vi prego di inviarmi i modelli vettoriali neutri (Tech Pack AI/PDF) e le schede di cucitura per il nostro team di design. Il mio brand è: ",
+          "intentMockup": "Salve Baoding Junyang! Vorrei richiedere un mockup 3D gratuito e un'analisi di fattibilità del ricamo per il nostro logo. Modello interessato: ",
+          "submit": "Invia Richiesta",
+          "submitting": "Trasmissione al team commerciale...",
+          "thanks": "Richiesta Ricevuta con Successo!",
+          "thanksMsg": "Le tue specifiche sono state recapitate al nostro team commerciale e tecnico (admin@bdjunyang.com). Esamineremo i dettagli e ti risponderemo via email al più presto.",
+          "whatsappFallback": "Hai bisogno di una risposta immediata? Contatta direttamente il nostro responsabile B2B su WhatsApp:",
+          "chatWhatsApp": "Chatta su WhatsApp (+86 159 3393 0830)",
+          "sendAnother": "Invia un'altra richiesta"
+     },
+     "footer": {
+          "about": "Baoding Junyang Import and Export Trade Co., Ltd. è un partner di sourcing e controllo qualità specializzato in cappellini di qualità medio-alta, beanies e trucker dal 2014.",
+          "navigation": "Navigazione",
+          "products": "Prodotti",
+          "aboutLink": "Chi Siamo",
+          "guideLink": "Guida B2B",
+          "materialsLink": "Materiali e Tessuti",
+          "pricingLink": "Prezzi e Spedizione",
+          "requestQuote": "Richiedi Preventivo",
+          "contact": "Contatti",
+          "whatsapp": "WhatsApp: +86 15933930830",
+          "email": "Email: admin@bdjunyang.com",
+          "office": "Ufficio: Baoding, Hebei, Cina",
+          "privacy": "Informativa sulla Privacy",
+          "terms": "Termini di Servizio",
+          "copyright": "© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Tutti i diritti riservati."
+     },
+     "breadcrumb": {
+          "home": "Home",
+          "about": "Chi Siamo",
+          "guide": "Guida B2B",
+          "materials": "Materiali e Tessuti",
+          "pricing": "Prezzi e Spedizione",
+          "products": "Prodotti"
+     },
+     "meta": {
+          "homeTitle": "BD Hats | Partner di Sourcing Cappellini Personalizzati B2B",
+          "homeDesc": "Cappellini personalizzati di qualità medio-alta con controllo di qualità dal 2014. Ricamo su misura, MOQ 200 pz, campioni in 7 giorni, preventivo in 2h.",
+          "aboutTitle": "Chi Siamo | Partner di Sourcing a Baoding, Cina | BD Hats",
+          "aboutDesc": "Baoding Junyang Import and Export Trade Co., Ltd. — 12 anni di esperienza in sourcing ed export di cappellini, fabbriche partner selezionate e controllo di qualità pre-spedizione dal 2014.",
+          "guideTitle": "Guida B2B Sourcing Cappellini | Come Acquistare all'Ingrosso dalla Cina",
+          "guideDesc": "Guida completa per buyer B2B: come scegliere il partner giusto, tecniche di ricamo a confronto, negoziazione del MOQ, controllo qualità e logistica internazionale.",
+          "materialsTitle": "Guida ai Materiali per Cappellini | Cotone, Lana, Poliestere e Altro | BD Hats",
+          "materialsDesc": "Panoramica completa dei tessuti per cappellini: twill di cotone, cotone spazzolato, lana, nylon, tela canvas. Tipologie di chiusure e costruzione dei pannelli spiegate nel dettaglio.",
+          "pricingTitle": "Prezzi, MOQ e Spedizione Cappellini | Struttura Costi all'Ingrosso | BD Hats",
+          "pricingDesc": "Guida trasparente ai costi dei cappellini: FOB vs CIF, MOQ 200 pz, costi di trasporto aereo e marittimo, costi di campionatura e sconti per quantità."
+     },
+     "popup": {
+          "badge": "Partner Sourcing · Dal 2014",
+          "heading": "Cerchi Cappellini Personalizzati per il Tuo Brand?",
+          "sub": "Ricevi un preventivo dettagliato entro 2 ore — campioni fisici in 7 giorni.",
+          "whatsappBtn": "Chatta su WhatsApp",
+          "formBtn": "Invia Richiesta",
+          "note": "Sourcing diretto · Controllo qualità multi-fase · Ispezione pre-spedizione"
+     },
+     "chat": {
+          "cta": "Parla con Noi",
+          "tip": "Ciao! Ricevi un preventivo in 12 ore."
+     },
+     "language": {
+          "switchTo": "Italiano",
+          "label": "IT"
+     }
 }

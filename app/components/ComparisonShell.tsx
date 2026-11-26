@@ -263,7 +263,7 @@ export function ComparisonShell({
             <p className="text-white font-black mb-3">BD Hats · JUNYANG</p>
             <p className="leading-relaxed">
               Baoding Junyang Import and Export Trade Co., Ltd. — custom headwear sourcing partner since 2014. MOQ
-              200 pcs · Samples in 7 days · SGS verified.
+              200 pcs · Samples in 7 days · Pre-shipment QC.
             </p>
           </div>
           <div>

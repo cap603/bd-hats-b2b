@@ -103,7 +103,7 @@ const CONTENT = {
           ],
         },
       ],
-      note: "Baoding Junyang is a Chinese factory, so the China column reflects our own verified terms. Figures for Vietnam and Bangladesh are deliberately left open: minimums, lead times and costs are set factory by factory, and those numbers should come from the suppliers you are actually evaluating. Compare like for like — same artwork, same decoration count, same quantity, same fabric.",
+      note: "Baoding Junyang is a China-based sourcing partner, so the China column reflects our own terms. Figures for Vietnam and Bangladesh are deliberately left open: minimums, lead times and costs are set factory by factory, and those numbers should come from the suppliers you are actually evaluating. Compare like for like — same artwork, same decoration count, same quantity, same fabric.",
     },
     country: {
       title: "Which country should you source custom hats from?",
@@ -159,7 +159,7 @@ const CONTENT = {
         { k: "15–20 days", v: "Bulk production after sample approval" },
         { k: "In-House", v: "Quality control at each stage" },
       ],
-      note: "Baoding Junyang has manufactured custom caps since 2014, coordinating audited partner lines with precision multi-head embroidery, piece-by-piece in-house QC, container export capability and SGS verification.",
+      note: "Baoding Junyang has supplied custom caps since 2014, coordinating selected partner lines with precision multi-head embroidery, in-house QC and container export capability.",
     },
     faq: {
       heading: "Sourcing custom hats: common buyer questions",
@@ -286,7 +286,7 @@ const CONTENT = {
           ],
         },
       ],
-      note: "Baoding Junyang es una fábrica china, así que la columna de China refleja nuestras propias condiciones verificadas. Los datos de Vietnam y Bangladés se dejan deliberadamente abiertos: los mínimos, plazos y costos los fija cada fábrica, y esas cifras deben venir de los proveedores que realmente estés evaluando. Compara en igualdad de condiciones: mismo diseño, mismas decoraciones, misma cantidad y misma tela.",
+      note: "Baoding Junyang es un socio de sourcing con base en China, así que la columna de China refleja nuestras propias condiciones. Los datos de Vietnam y Bangladés se dejan deliberadamente abiertos: los mínimos, plazos y costos los fija cada fábrica, y esas cifras deben venir de los proveedores que realmente estés evaluando. Compara en igualdad de condiciones: mismo diseño, mismas decoraciones, misma cantidad y misma tela.",
     },
     country: {
       title: "¿En qué país debería fabricar tus gorras personalizadas?",
@@ -342,7 +342,7 @@ const CONTENT = {
         { k: "15–20 días", v: "Producción en masa tras aprobar muestra" },
         { k: "Interno", v: "Control de calidad en cada etapa" },
       ],
-      note: "Baoding Junyang fabrica gorras personalizadas desde 2014, coordinando líneas de fabricación auditadas con bordado multicabezal de precisión, control de calidad propio pieza a pieza, capacidad de exportación por contenedor y verificación SGS.",
+      note: "Baoding Junyang suministra gorras personalizadas desde 2014, coordinando líneas de fabricación seleccionadas con bordado multicabezal de precisión, control de calidad propio y capacidad de exportación por contenedor.",
     },
     faq: {
       heading: "Abastecimiento de gorras: preguntas frecuentes de compradores",

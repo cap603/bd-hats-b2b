@@ -46,7 +46,7 @@ const CONTENT = {
       { component: "Embroidery & Branding", share: "20% - 28%", details: "Digitizing fees, stitch density run time on multi-head embroidery machines, 3D puff foam, and thread spool consumption." },
       { component: "Hardware & Closures", share: "10% - 15%", details: "Antique brass metal buckles, 7-hole snapbacks, custom embossed metal eyelets, and nylon webbing straps." },
       { component: "Internal Sweatband & Taping", share: "8% - 12%", details: "Cotton/terrycloth sweatbands, custom branded seam tape, woven brand and care labels." },
-      { component: "Labor, Cutting & Quality Control", share: "15% - 20%", details: "Precision pattern cutting, skilled panel assembly, visor molding, steam shaping, and piece-by-piece final quality inspection." }
+      { component: "Labor, Cutting & Quality Control", share: "15% - 20%", details: "Precision pattern cutting, skilled panel assembly, visor molding, steam shaping, and multi-stage final quality inspection." }
     ],
     table3Title: "3. Volume Discount & Economy of Scale Tiers",
     table3Intro: "How production run size directly impacts manufacturing costs at our Baoding facility.",
@@ -118,7 +118,7 @@ const CONTENT = {
       { component: "Bordado y Personalización", share: "20% - 28%", details: "Digitalización de puntadas, tiempo en máquinas de bordado, espuma 3D y consumo de hilo." },
       { component: "Herrajes y Cierres", share: "10% - 15%", details: "Hebillas de latón envejecido, cierres plásticos snapback de 7 orificios y correas de nailon." },
       { component: "Banda Antisudor y Cintas Internas", share: "8% - 12%", details: "Bandas de sudor acolchadas, cintas interiores personalizadas y etiquetas tejidas." },
-      { component: "Mano de Obra y Control de Calidad", share: "15% - 20%", details: "Corte de patrones de precisión, ensamblaje de paneles, moldeado a vapor e inspección rigurosa pieza por pieza." }
+      { component: "Mano de Obra y Control de Calidad", share: "15% - 20%", details: "Corte de patrones de precisión, ensamblaje de paneles, moldeado a vapor e inspección rigurosa en varias etapas." }
     ],
     table3Title: "3. Descuentos por Escala y Volumen de Producción",
     table3Intro: "Impacto del tamaño del lote en el costo unitario de fabricación en nuestra planta de Baoding.",
@@ -328,7 +328,7 @@ export default function CustomHatCostIndexPage() {
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-sm text-black mb-1">
-                  {lang === "es" ? "Control de Calidad Propio Pieza a Pieza" : "In-House Piece-by-Piece QC"}
+                  {lang === "es" ? "Control de Calidad Interno Pre-envío" : "In-House Pre-Shipment QC"}
                 </h3>
                 <p className="text-xs text-gray-500">
                   {lang === "es" ? "Inspección de preembarque, planchado a vapor y empaque en cajas reforzadas." : "Dedicated staging bays, steam shaping machines, and final pre-shipment inspection."}

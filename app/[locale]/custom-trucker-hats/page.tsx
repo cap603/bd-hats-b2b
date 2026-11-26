@@ -17,7 +17,7 @@ const CONTENT = {
       h1Highlight: "Trucker Hats",
       h1Post: ", Wholesale from the Factory",
       subtitle: "Foam fronts, breathable mesh backs, and your logo done right — custom trucker hats for promo, beverage, and outdoor brands, made in our factory.",
-      pills: ["From $3.50 FOB", "MOQ 200 Pcs", "15-20 Day Production", "SGS Verified"]
+      pills: ["From $3.50 FOB", "MOQ 200 Pcs", "15-20 Day Production", "Written Quote in 2h"]
     },
     sections: [
       {
@@ -98,7 +98,7 @@ const CONTENT = {
       h1Highlight: "Gorras trucker personalizadas",
       h1Post: ", al por mayor directo de fábrica",
       subtitle: "Frentes de espuma, espaldas de malla transpirable y su logo bien hecho — gorras trucker personalizadas para marcas de promocionales, bebidas y actividades al aire libre, fabricadas en nuestra fábrica.",
-      pills: ["Desde $3.50 FOB", "MOQ 200 pzs", "Producción en 15-20 días", "Verificado por SGS"]
+      pills: ["Desde $3.50 FOB", "MOQ 200 pzs", "Producción en 15-20 días", "Cotización en 2h"]
     },
     sections: [
       {

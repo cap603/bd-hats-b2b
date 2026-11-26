@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         : "About BD Hats | Headwear Sourcing & Quality Partner",
     description:
       locale === "es"
-        ? "Baoding Junyang Import and Export Trade Co., Ltd. — 12 años conectando marcas globales con fábricas especializadas en China. Control de calidad pieza a pieza desde 2014."
-        : "Baoding Junyang Import and Export Trade Co., Ltd. — 12 years connecting global apparel brands with vetted headwear makers. Piece-by-piece QC and direct sourcing since 2014.",
+        ? "Baoding Junyang Import and Export Trade Co., Ltd. — 12 años conectando marcas globales con fábricas especializadas en China. Control de calidad antes del envío desde 2014."
+        : "Baoding Junyang Import and Export Trade Co., Ltd. — 12 years connecting global apparel brands with vetted headwear makers. Pre-shipment QC and direct sourcing since 2014.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       description:
         locale === "es"
           ? "Socio integral de abastecimiento de gorras personalizadas desde 2014. Más de 300 marcas atendidas en 50+ países con control de calidad riguroso."
-          : "Dedicated headwear sourcing partner since 2014. Serving 300+ brands across 50+ countries with piece-by-piece QC.",
+          : "Dedicated headwear sourcing partner since 2014. Serving 300+ brands across 50+ countries with pre-shipment QC.",
     },
   };
 }

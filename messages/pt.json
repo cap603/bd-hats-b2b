@@ -24,7 +24,7 @@
       "0": {
         "label": "Polo Industrial Têxtil na China · Sourcing Direto",
         "title": "Fabricação de Bonés de Nível Internacional",
-        "sub": "Gerenciado pela Baoding Junyang junto a fábricas parceiras auditadas na China. Construções de média a alta qualidade. MOQ 200 pcs · Amostra em 7 dias · Produção 15–20 dias · Orçamento em 2h.",
+        "sub": "Gerenciado pela Baoding Junyang junto a fábricas parceiras selecionadas na China. Construções de média a alta qualidade. MOQ 200 pcs · Amostra em 7 dias · Produção 15–20 dias · Orçamento em 2h.",
         "cta": "Orçamento Detalhado em 2h"
       },
       "1": {
@@ -50,19 +50,22 @@
       "yearsLabel": "Experiência de Produção",
       "moq": "200 Pcs",
       "moqLabel": "MOQ a partir de 200 Peças",
-      "sgs": "Fábrica Auditada pela SGS"
+      "sgs": "Controle de Qualidade Pré-envio"
     },
     "compliance": {
-      "title": "Normas de Conformidade",
-      "certified": "Produto Certificado",
+      "title": "Sourcing Direto da Fábrica",
+      "certified": "MOQ 200+ pçs",
       "markets": "Mercados Principais",
       "na": "AMÉRICA DO NORTE (70%)",
-      "eu": "EUROPA OCIDENTAL (25%)"
+      "eu": "EUROPA OCIDENTAL (25%)",
+      "a": "OEM / ODM",
+      "b": "Designs Personalizados",
+      "c": "Marca Própria"
     },
     "factory": {
       "label": "Sourcing & Controle de Qualidade",
       "heading": "Acompanhe a Fabricação do Seu Boné — ao Vivo.",
-      "p1": "A Baoding Junyang é sua parceira de sourcing e controle de qualidade para bonés. Conectamos seu projeto a fábricas parceiras verificadas na China, coordenando amostragem, produção e inspeção com um único ponto de contato.",
+      "p1": "A Baoding Junyang é sua parceira de sourcing e controle de qualidade para bonés. Conectamos seu projeto a fábricas parceiras selecionadas na China, coordenando amostragem, produção e inspeção com um único ponto de contato.",
       "p2Pre": "Nossa Política de Transparência:",
       "p2": "Enviamos fotos e atualizações em vídeo (corte de tecidos, precisão de bordado, costura de painéis, passadoria a vapor) durante toda a produção. Você acompanha como se estivesse dentro da fábrica.",
       "qcStandard": "Equipe de QC Própria",
@@ -86,10 +89,10 @@
       "retention": "2h",
       "retentionLabel": "Orçamento Escrito e Detalhado",
       "retentionDesc": "Cotação FOB discriminada item por item (tecido, bordado, aviamentos, embalagem) em 2 horas.",
-      "sgsSupplier": "Rede de Fábricas Auditadas",
+      "sgsSupplier": "Rede de Fábricas Parceiras Selecionadas",
       "goldSupplier": "Proteção Alibaba Trade Assurance",
-      "certifications": "Testes REACH, OEKO-TEX e GRS por pedido · Inspeção SGS/BV disponível",
-      "qcStandard": "Inspeção Peça por Peça Antes do Embarque"
+      "certifications": "Testes e Inspeção de Terceiros sob Pedido",
+      "qcStandard": "Inspeção de Qualidade pré-Envio"
     },
     "catalog": {
       "label": "Categorias de Bonés Premium",
@@ -118,11 +121,11 @@
       "step3Title": "Auditoria de Estrutura e Costura",
       "step3Desc": "Foco na estrutura da copa e fitas de costura. Faixas internas antitranspiração são alinhadas com tolerância de até 1mm.",
       "step4Title": "Inspeção Final Pré-Embalagem",
-      "step4Desc": "Todos os bonés são limpos (fios aparados), revisados e passados a vapor antes da embalagem individual.",
+      "step4Desc": "Os bonés são limpos (fios aparados), revisados e passados a vapor antes da embalagem individual.",
       "step5Title": "Embalagem de Exportação e Auditoria de Etiquetas",
       "step5Desc": "Contagem exata com a lista de embarque e checagem de etiquetas para garantir desembaraço aduaneiro rápido.",
       "liveStatus": "Status em Tempo Real",
-      "qcPassed": "QC Aprovado"
+      "qcPassed": "QC pré-envio"
     },
     "faq": {
       "heading": "Perguntas Frequentes",
@@ -132,7 +135,7 @@
       "q1": "Posso solicitar uma amostra antes da produção em massa?",
       "a1": "Sim, com certeza! Produzimos amostras físicas completas de pré-produção para você validar material, caimento e bordado antes da produção em lote.",
       "q2": "Vocês são uma fábrica ou uma empresa de comércio exterior?",
-      "a2": "Somos um parceiro de sourcing e controle de qualidade — abertamente uma trading. Selecionamos fábricas parceiras auditadas conforme seu projeto, gerenciamos amostras e produção e inspecionamos cada peça antes do envio. Um contrato, um ponto de contato, um padrão de qualidade.",
+      "a2": "Somos um parceiro de sourcing e controle de qualidade — abertamente uma trading. Selecionamos fábricas parceiras conforme seu projeto, gerenciamos amostras e produção e realizamos inspeções de qualidade antes do envio. Um contrato, um ponto de contato, um padrão de qualidade.",
       "q3": "Quais são os prazos médios de produção e entrega?",
       "a3": "A produção de amostras leva cerca de 7 dias. A produção em massa leva de 15 a 20 dias conforme o volume. O frete aéreo expresso mundial leva de 5 a 8 dias."
     },
@@ -147,8 +150,8 @@
           "desc": "Cotação FOB item por item com lista de materiais completa (tecido, bordado, fechos, embalagem) para comparação transparente."
         },
         {
-          "title": "Inspeção Peça por Peça",
-          "desc": "Nossa própria equipe de controle de qualidade verifica cada boné antes do envio: bordado, costura, medidas e acabamento. Inspeção de terceiros disponível."
+          "title": "Controle de Qualidade Pré-envio",
+          "desc": "Nossa própria equipe de controle de qualidade verifica os bonés antes do envio: bordado, costura, medidas e acabamento. Inspeção de terceiros disponível."
         },
         {
           "title": "Proteção de Pagamento",
@@ -161,27 +164,99 @@
     "programsTitle": "Programas Especializados de Produção B2B",
     "programsSub": "Programas de manufatura sob encomenda direto da fábrica para fundadores de marcas, distribuidores e importadores em grandes volumes. MOQ 200 peças.",
     "programs": {
-      "0": { "title": "Bonés Personalizados de 5 Painéis", "desc": "Perfis streetwear e camper, misturas leves de algodão-nylon, aba plana e fechamentos de latão.", "tag": "Alta Demanda" },
-      "1": { "title": "Manufatura OEM de Bonés", "desc": "Manufatura por encomenda completa de headwear. Digitalização total de tech pack e escalonamento de marca.", "tag": "Serviço Completo" },
-      "2": { "title": "Gorros de Tricô Personalizados", "desc": "Tricô canelado, gorros com babado, jacquard e apliques de couro genuino para programas de inverno.", "tag": "Sazonal" },
-      "3": { "title": "Dad Hats Personalizados", "desc": "Bonés 6 painéis vintage sem estrutura, lavagem enzimática intensa, aba curvada e fivelas antigas.", "tag": "Estilo de Vida" },
-      "4": { "title": "Snapbacks Atacarejo", "desc": "Bonés clássicos de coroa alta e aba plana, frente estruturada com bufete e bordado 3D de alta densidade.", "tag": "Streetwear" },
-      "5": { "title": "Bonés Trucker Personalizados", "desc": "Costas respiráveis em malha de poliéster, frentes em espuma ou sarja pesada de algodão, personalizados para campanhas promocionais.", "tag": "Promo e Outdoor" },
-      "6": { "title": "Bonés em Branco no Atacado", "desc": "Estoque de armazém imediato, pronto para gráficas e oficinas de bordado locais.", "tag": "Despacho Rápido" },
-      "7": { "title": "Headwear Private Label", "desc": "Pacote de marca dedicado: etiquetas bordadas personalizadas, fita de costura impressa, hangtags e caixas sob medida.", "tag": "Turnkey" },
-      "8": { "title": "Headwear Uniforme Corporativo", "desc": "Programas corporativos duráveis de alta repetição e pedidos em massa de bonés de uniforme.", "tag": "Uniformes" },
-      "9": { "title": "Bucket Hats Personalizados", "desc": "Bucket hats de aba larga para festival e outdoor, tecidos com proteção solar, cordões mentoneiros e construção reversível.", "tag": "Outdoor" },
-      "10": { "title": "Produção em Massa por Contêiner", "desc": "Produção em contêineres 20GP e 40HQ para distribuidores e importadores internacionais.", "tag": "Escala 10.000+" },
-      "11": { "title": "Preços Atacarejo por Níveis", "desc": "Níveis FOB transparentes a partir de $5.20/un com MOQ 200; piso em escala de contêiner a partir de $3.50/un. Com detalhamento de custos.", "tag": "Tarifas Transparentes" }
+      "0": {
+        "title": "Bonés Personalizados de 5 Painéis",
+        "desc": "Perfis streetwear e camper, misturas leves de algodão-nylon, aba plana e fechamentos de latão.",
+        "tag": "Alta Demanda"
+      },
+      "1": {
+        "title": "Manufatura OEM de Bonés",
+        "desc": "Manufatura por encomenda completa de headwear. Digitalização total de tech pack e escalonamento de marca.",
+        "tag": "Serviço Completo"
+      },
+      "2": {
+        "title": "Gorros de Tricô Personalizados",
+        "desc": "Tricô canelado, gorros com babado, jacquard e apliques de couro genuino para programas de inverno.",
+        "tag": "Sazonal"
+      },
+      "3": {
+        "title": "Dad Hats Personalizados",
+        "desc": "Bonés 6 painéis vintage sem estrutura, lavagem enzimática intensa, aba curvada e fivelas antigas.",
+        "tag": "Estilo de Vida"
+      },
+      "4": {
+        "title": "Snapbacks Atacarejo",
+        "desc": "Bonés clássicos de coroa alta e aba plana, frente estruturada com bufete e bordado 3D de alta densidade.",
+        "tag": "Streetwear"
+      },
+      "5": {
+        "title": "Bonés Trucker Personalizados",
+        "desc": "Costas respiráveis em malha de poliéster, frentes em espuma ou sarja pesada de algodão, personalizados para campanhas promocionais.",
+        "tag": "Promo e Outdoor"
+      },
+      "6": {
+        "title": "Bonés em Branco no Atacado",
+        "desc": "Estoque de armazém imediato, pronto para gráficas e oficinas de bordado locais.",
+        "tag": "Despacho Rápido"
+      },
+      "7": {
+        "title": "Headwear Private Label",
+        "desc": "Pacote de marca dedicado: etiquetas bordadas personalizadas, fita de costura impressa, hangtags e caixas sob medida.",
+        "tag": "Turnkey"
+      },
+      "8": {
+        "title": "Headwear Uniforme Corporativo",
+        "desc": "Programas corporativos duráveis de alta repetição e pedidos em massa de bonés de uniforme.",
+        "tag": "Uniformes"
+      },
+      "9": {
+        "title": "Bucket Hats Personalizados",
+        "desc": "Bucket hats de aba larga para festival e outdoor, tecidos com proteção solar, cordões mentoneiros e construção reversível.",
+        "tag": "Outdoor"
+      },
+      "10": {
+        "title": "Produção em Massa por Contêiner",
+        "desc": "Produção em contêineres 20GP e 40HQ para distribuidores e importadores internacionais.",
+        "tag": "Escala 10.000+"
+      },
+      "11": {
+        "title": "Preços Atacarejo por Níveis",
+        "desc": "Níveis FOB transparentes a partir de $5.20/un com MOQ 200; piso em escala de contêiner a partir de $3.50/un. Com detalhamento de custos.",
+        "tag": "Tarifas Transparentes"
+      }
     },
     "sectorsBadge": "Programas por Perfil de Comprador",
     "sectorsTitle": "Programas de Manufatura Sob Medida por Segmento de Comprador",
     "sectorsSub": "Soluções de produção direto da fábrica, otimizadas para os requisitos específicos e curvas de volume de cada setor de compras.",
     "sectors": {
-      "0": { "tag": "Moda e Drops", "moq": "MOQ 200", "title": "Marcas Streetwear e de Moda", "desc": "Camper de 5 painéis, dad hats vintage lavados a enzima, bordado 3D puff de alta densidade e forro interno damasco personalizado.", "foot": "100% do Reembolso da Amostra ≥500" },
-      "1": { "tag": "Uniforme e Workwear", "moq": "500 – 5.000+", "title": "Programas Corporativos e de Uniformes", "desc": "Bonés 6 painéis em sarja pesada e estruturados, alta solidez de cor, galões refletivos e inspeção QC peça por peça antes do envio.", "foot": "Cotações BOM Detalhadas" },
-      "2": { "tag": "Esportivo de Desempenho", "moq": "MOQ 200", "title": "Golfe e Esporte de Alto Desempenho", "desc": "Painéis de ventilação perfurados a laser, nylon leve com acabamento DWR repelente à água, faixas CoolMax que conduzem a umidade e fechamentos de silicone.", "foot": "Tecnologia CoolMax Pronta" },
-      "3": { "tag": "Escala de Contêiner FCL", "moq": "10.000+ Pcs", "title": "Grande Volume por Contêiner e Distribuidores", "desc": "Truckers de malha e snapbacks de aba plana em grande volume. Otimização de carga 20GP e 40HQ e preço FOB de fábrica a partir de $3.50.", "foot": "A partir de $3.50 FOB" }
+      "0": {
+        "tag": "Moda e Drops",
+        "moq": "MOQ 200",
+        "title": "Marcas Streetwear e de Moda",
+        "desc": "Camper de 5 painéis, dad hats vintage lavados a enzima, bordado 3D puff de alta densidade e forro interno damasco personalizado.",
+        "foot": "100% do Reembolso da Amostra ≥500"
+      },
+      "1": {
+        "tag": "Uniforme e Workwear",
+        "moq": "500 – 5.000+",
+        "title": "Programas Corporativos e de Uniformes",
+        "desc": "Bonés 6 painéis em sarja pesada e estruturados, alta solidez de cor, galões refletivos e inspeção de qualidade antes do envio.",
+        "foot": "Cotações BOM Detalhadas"
+      },
+      "2": {
+        "tag": "Esportivo de Desempenho",
+        "moq": "MOQ 200",
+        "title": "Golfe e Esporte de Alto Desempenho",
+        "desc": "Painéis de ventilação perfurados a laser, nylon leve com acabamento DWR repelente à água, faixas CoolMax que conduzem a umidade e fechamentos de silicone.",
+        "foot": "Tecnologia CoolMax Pronta"
+      },
+      "3": {
+        "tag": "Escala de Contêiner FCL",
+        "moq": "10.000+ Pcs",
+        "title": "Grande Volume por Contêiner e Distribuidores",
+        "desc": "Truckers de malha e snapbacks de aba plana em grande volume. Otimização de carga 20GP e 40HQ e preço FOB de fábrica a partir de $3.50.",
+        "foot": "A partir de $3.50 FOB"
+      }
     },
     "explore": "Explorar",
     "headwearTitle": "Headwear Personalizado",
@@ -223,7 +298,7 @@
     "milestone": {
       "title": "Registro Multimídia de Produção ao Vivo",
       "updates": "Atualizações a cada 2 dias",
-      "desc": "Transparência total em cada fase: ① Corte do tecido e verificação de cor ② Vídeo ao vivo da inspeção de bordado ③ Montagem da faixa ④ Inspeção peça por peça e embalagem.",
+      "desc": "Transparência total em cada fase: ① Corte do tecido e verificação de cor ② Vídeo ao vivo da inspeção de bordado ③ Montagem da faixa ④ Inspeção final de qualidade e embalagem.",
       "cta": "Falar com Eileen",
       "samplesBulk": "Amostras em 7 dias · Massa em 15-20 dias"
     },
@@ -289,7 +364,7 @@
     "moreInfoCategory": "Esta categoria",
     "moreInfoCompare": "Comparar opções",
     "moreInfoGuides": "Guias de compra",
-    "trustBar": "Padrões Internacionais de Fabricação Certificados",
+    "trustBar": "Parceiro de Sourcing B2B de Confiança",
     "notFound": "Produto Não Encontrado",
     "backLink": "Voltar ao Catálogo",
     "devToolsBadge": "Ferramentas para Criadores de Marcas B2B",
@@ -352,9 +427,9 @@
   },
   "meta": {
     "homeTitle": "BD Hats | Parceiro de Sourcing de Bonés Personalizados B2B",
-    "homeDesc": "Bonés personalizados de média a alta qualidade com controle de qualidade peça por peça desde 2014. Bordado sob medida, MOQ 200 pçs, amostras em 7 dias, orçamento em 2h.",
+    "homeDesc": "Bonés personalizados de média a alta qualidade com controle de qualidade desde 2014. Bordado sob medida, MOQ 200 pçs, amostras em 7 dias, orçamento em 2h.",
     "aboutTitle": "Sobre a BD Hats | Parceiro de Sourcing em Baoding, China",
-    "aboutDesc": "Baoding Junyang Import and Export Trade Co., Ltd. — 12 anos de experiência em sourcing e exportação de bonés, fábricas parceiras auditadas e controle de qualidade rigoroso desde 2014.",
+    "aboutDesc": "Baoding Junyang Import and Export Trade Co., Ltd. — 12 anos de experiência em sourcing e exportação de bonés, fábricas parceiras selecionadas e controle de qualidade pré-envio desde 2014.",
     "guideTitle": "Guia B2B de Sourcing de Bonés | Como Importar Bonés no Atacado da China",
     "guideDesc": "Guia completo para compradores B2B: como selecionar o parceiro certo, tipos de bordado explicados, negociação de MOQ, controle de qualidade e logística.",
     "materialsTitle": "Guia de Tecidos para Bonés | Algodão, Lã, Poliéster e Mais | BD Hats",
@@ -368,7 +443,7 @@
     "sub": "Receba um orçamento detalhado em até 2 horas — amostras físicas em 7 dias.",
     "whatsappBtn": "Falar no WhatsApp",
     "formBtn": "Enviar Solicitação",
-    "note": "Fornecimento direto · Controle peça por peça · Auditado SGS"
+    "note": "Sourcing direto · Controle de qualidade em etapas · Inspeção pré-envio"
   },
   "chat": {
     "cta": "Fale Conosco",

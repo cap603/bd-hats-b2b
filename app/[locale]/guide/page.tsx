@@ -13,7 +13,7 @@ const SECTIONS_DATA = {
       id: "factory-selection",
       title: "1. How to Vet a Custom Hat Factory in China: 10-Point Checklist",
       content:
-        "Selecting the right sourcing and quality partner is the single most critical decision in your custom headwear project. At Baoding Junyang, we coordinate dedicated partner lines in Baoding, Hebei with precision multi-head computerized embroidery, piece-by-piece in-house QC, and transparent milestone tracking.",
+        "Selecting the right sourcing and quality partner is the single most critical decision in your custom headwear project. At Baoding Junyang, we coordinate dedicated partner lines in Baoding, Hebei with precision multi-head computerized embroidery, in-house QC, and transparent milestone tracking.",
       tips: [
         "Demand verifiable third-party facility audits: look for SGS, BSCI, or ISO inspection reports",
         "Request real-time live video calls showing active multi-head embroidery lines",
@@ -82,7 +82,7 @@ const SECTIONS_DATA = {
       id: "factory-selection",
       title: "1. Cómo Evaluar un Proveedor de Gorras en China: 10 Verificaciones Clave",
       content:
-        "Elegir el socio de abastecimiento y calidad adecuado es la decisión más crítica en su proyecto de gorras personalizadas. En Baoding Junyang coordinamos líneas de confección asociadas y auditadas en Baoding, Hebei, con bordado multicabezal de alta precisión, control de calidad propio pieza a pieza y seguimiento transparente.",
+        "Elegir el socio de abastecimiento y calidad adecuado es la decisión más crítica en su proyecto de gorras personalizadas. En Baoding Junyang coordinamos líneas de confección asociadas y seleccionadas en Baoding, Hebei, con bordado multicabezal de alta precisión, control de calidad propio y seguimiento transparente.",
       tips: [
         "Exija auditorías independientes: verifique informes de inspección SGS, BSCI o ISO",
         "Solicite videollamadas en vivo para comprobar las líneas de bordado en funcionamiento",
@@ -198,7 +198,7 @@ export default function GuidePage() {
         "name": "How do you protect international buyers against manufacturing defects or fraud?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We coordinate audited partner facilities with SGS inspection verification. We provide piece-by-piece in-house QC and live video/photo updates at each milestone (cutting, embroidery, sewing, final inspection). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
+          "text": "We coordinate selected partner facilities and welcome third-party inspection. We provide in-house QC and live video/photo updates at each milestone (cutting, embroidery, sewing, final inspection). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
         }
       },
       {
@@ -239,7 +239,7 @@ export default function GuidePage() {
     },
     {
       q: "How do you protect international buyers against manufacturing defects or fraud?",
-      a: "We coordinate audited partner facilities with SGS inspection verification. We provide piece-by-piece in-house QC and live video/photo updates at each milestone (cutting, embroidery, sewing, final inspection). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
+      a: "We coordinate selected partner facilities and welcome third-party inspection. We provide in-house QC and live video/photo updates at each milestone (cutting, embroidery, sewing, final inspection). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
     },
     {
       q: "What is the typical FOB price range for custom baseball caps and truckers?",
@@ -517,7 +517,7 @@ export default function GuidePage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-xs font-black uppercase tracking-[0.2em] text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-              Verified Factory Direct FAQs
+              Factory Direct FAQs
             </span>
             <h2 className="text-3xl md:text-4xl font-black text-gray-950 mt-4 tracking-tight">
               Frequently Asked Questions for B2B Cap Buyers
