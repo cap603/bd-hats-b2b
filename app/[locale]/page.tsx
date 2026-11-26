@@ -541,20 +541,13 @@ export default function Home() {
 
   const BANNERS = [
     {
-      image: "/images/site/banner-1-premier-manufacturer.webp",
-      mobileImage: "/images/site/banner-1-premier-manufacturer-mobile.webp",
+      image: "/images/site/banner-2-customize-detail.webp",
+      mobileImage: "/images/site/banner-2-customize-detail-mobile.webp",
       title: t("banners.0.title"),
       sub: t("banners.0.sub"),
       cta: t("banners.0.cta"),
+      label: t("banners.0.label"),
       link: "whatsapp"
-    },
-    {
-      image: "/images/site/banner-2-customize-detail.webp",
-      mobileImage: "/images/site/banner-2-customize-detail-mobile.webp",
-      title: t("banners.1.title"),
-      sub: t("banners.1.sub"),
-      cta: t("banners.1.cta"),
-      link: "#inquiry?intent=bulk"
     },
     {
       image: "/images/site/banner-3-trusted-supplier.webp",
@@ -562,7 +555,8 @@ export default function Home() {
       title: t("banners.2.title"),
       sub: t("banners.2.sub"),
       cta: t("banners.2.cta"),
-      link: "#inquiry?intent=sample"
+      label: t("banners.2.label"),
+      link: "#inquiry?intent=bulk"
     }
   ];
 
@@ -727,7 +721,7 @@ export default function Home() {
                   <h2>{banner.title}</h2>
                 )}
                 <p>{banner.sub}</p>
-                <span>{t(`banners.${currentBanner}.label`)}</span>
+                <span>{banner.label}</span>
                 <span>{banner.cta}</span>
               </div>
             </div>
