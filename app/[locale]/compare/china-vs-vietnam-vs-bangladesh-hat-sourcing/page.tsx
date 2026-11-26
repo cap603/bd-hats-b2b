@@ -159,7 +159,7 @@ const CONTENT = {
         { k: "15–20 days", v: "Bulk production after sample approval" },
         { k: "In-House", v: "Quality control at each stage" },
       ],
-      note: "Baoding Junyang has manufactured custom caps since 2014, running 100+ precision Barudan embroidery machines and a 200-person production team, with capacity above 5M caps per year and SGS verification.",
+      note: "Baoding Junyang has manufactured custom caps since 2014, coordinating audited partner lines with precision multi-head embroidery, piece-by-piece in-house QC, container export capability and SGS verification.",
     },
     faq: {
       heading: "Sourcing custom hats: common buyer questions",
@@ -342,7 +342,7 @@ const CONTENT = {
         { k: "15–20 días", v: "Producción en masa tras aprobar muestra" },
         { k: "Interno", v: "Control de calidad en cada etapa" },
       ],
-      note: "Baoding Junyang fabrica gorras personalizadas desde 2014, con más de 100 máquinas de bordado japonesas Barudan, un equipo de producción de 200 personas, capacidad superior a 5 millones de gorras al año y verificación SGS.",
+      note: "Baoding Junyang fabrica gorras personalizadas desde 2014, coordinando líneas de fabricación auditadas con bordado multicabezal de precisión, control de calidad propio pieza a pieza, capacidad de exportación por contenedor y verificación SGS.",
     },
     faq: {
       heading: "Abastecimiento de gorras: preguntas frecuentes de compradores",
@@ -394,12 +394,12 @@ export default function Page() {
     dateModified: "2026-09-16",
     author: {
       "@type": "Organization",
-      name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+      name: "Baoding Junyang Import and Export Trade Co., Ltd.",
       url: "https://bdjunyang.com",
     },
     publisher: {
       "@type": "Organization",
-      name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+      name: "Baoding Junyang Import and Export Trade Co., Ltd.",
       logo: {
         "@type": "ImageObject",
         url: "/images/brand/junyang-logo.png",

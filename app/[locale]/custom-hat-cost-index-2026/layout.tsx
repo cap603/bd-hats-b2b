@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     openGraph: {
       type: "article",
       url: canonical,
-      title: "2026 Custom Hat Manufacturing Cost Index | BD Hats",
+      title: "2026 Custom Hat Sourcing Cost Index | BD Hats",
       description: "Direct factory economics and FOB cost benchmarks for global apparel brands and streetwear labels.",
     },
   };

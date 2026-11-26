@@ -40,11 +40,11 @@ export default function BlogArticlePage({
     description: article.metaDesc,
     author: {
       "@type": "Organization",
-      name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+      name: "Baoding Junyang Import and Export Trade Co., Ltd.",
     },
     publisher: {
       "@type": "Organization",
-      name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+      name: "Baoding Junyang Import and Export Trade Co., Ltd.",
       logo: {
         "@type": "ImageObject",
         url: "https://bdjunyang.com/images/brand/junyang-logo.png",

@@ -216,8 +216,8 @@ export default function CorporateHatsPage() {
     headline: "Corporate Custom Hats Supplier — Branded Caps for Companies",
     description:
       "Corporate custom hats direct from the factory: logo embroidery, Pantone matching, individual packaging and phased deliveries. MOQ 200pcs, samples in 7 days.",
-    author: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    publisher: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
+    publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",
     dateModified: "2026-09-10",
     mainEntityOfPage: "https://bdjunyang.com/corporate-custom-hats-supplier",

@@ -1,7 +1,7 @@
 {
   "nav": {
     "advantages": "Advantages",
-    "factory": "Our Factory",
+    "factory": "Sourcing & Quality",
     "qualityControl": "Quality Control",
     "products": "Baseball Caps",
     "inquiry": "Inquiry",
@@ -88,7 +88,7 @@
       "retentionDesc": "Line-by-line FOB quotation within 2 hours of your spec.",
       "sgsSupplier": "Audited Partner Factories",
       "goldSupplier": "Alibaba Trade Assurance Supported",
-      "certifications": "REACH, RoHS, OEKO-TEX & GRS Testing Per Order · SGS/BV Inspection Available",
+      "certifications": "REACH, OEKO-TEX & GRS Testing Per Order · SGS/BV Inspection Available",
       "qcStandard": "Piece-by-Piece QC Before Shipment"
     },
     "catalog": {
@@ -288,7 +288,7 @@
       "custom": "Customization",
       "faq": "Product FAQ"
     },
-    "getQuote": "Get Factory Quote",
+    "getQuote": "Get Custom Quote",
     "orderSample": "Order Sample",
     "urgencyStrip": "Direct Sourcing · MOQ 200 Pcs · Written Quote in 2h · 7d Sample Dispatch",
     "related": "Continue Exploring",
@@ -336,7 +336,7 @@
     "sendAnother": "Submit another inquiry"
   },
   "footer": {
-    "about": "Baoding Junyang Import & Export Trading Co., Ltd. is a headwear sourcing and quality partner specializing in mid-to-high quality custom baseball caps, beanies, and trucker hats since 2014.",
+    "about": "Baoding Junyang Import and Export Trade Co., Ltd. is a headwear sourcing and quality partner specializing in mid-to-high quality custom baseball caps, beanies, and trucker hats since 2014.",
     "navigation": "Navigation",
     "products": "Products",
     "aboutLink": "About",
@@ -350,7 +350,7 @@
     "office": "Office: Baoding, Hebei, China",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "copyright": "© 2026 Baoding Junyang Import & Export Trading Co., Ltd. All rights reserved."
+    "copyright": "© 2026 Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved."
   },
   "breadcrumb": {
     "home": "Home",
@@ -364,8 +364,8 @@
     "homeTitle": "BD Hats | Custom Hat Sourcing Partner & Wholesale",
     "homeDesc": "Premium mid-to-high quality custom hats, sourced and QC'd by Baoding Junyang since 2014. Custom embroidery, MOQ 200pcs, 7-day samples, written quote in 2h.",
     "aboutTitle": "About BD Hats | Headwear Sourcing Partner in Baoding, China",
-    "aboutDesc": "Baoding Junyang Import & Export Trading Co., Ltd. — 12 years of hat sourcing and export experience, vetted partner factories, and piece-by-piece QC since 2014.",
-    "guideTitle": "B2B Custom Hat Manufacturing Guide | How to Source Wholesale Caps from China",
+    "aboutDesc": "Baoding Junyang Import and Export Trade Co., Ltd. — 12 years of hat sourcing and export experience, vetted partner factories, and piece-by-piece QC since 2014.",
+    "guideTitle": "B2B Custom Hat Sourcing Guide | How to Source Wholesale Caps from China",
     "guideDesc": "Complete guide for B2B buyers: how to choose a custom hat factory, embroidery types explained, MOQ negotiation, quality control, and shipping logistics.",
     "materialsTitle": "Custom Hat Materials Guide | Cotton, Wool, Polyester & More | BD Hats",
     "materialsDesc": "Complete guide to custom hat materials: cotton twill, brushed cotton, wool, polyester, nylon, canvas. Learn closure types and panel construction for your wholesale cap order.",

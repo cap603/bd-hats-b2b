@@ -194,13 +194,13 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
         <p className="text-slate-600 text-xs sm:text-sm max-w-md mx-auto leading-relaxed mb-6">
           {isEs
             ? "Tus especificaciones técnicas han sido asignadas a nuestro equipo de ingeniería comercial (admin@bdjunyang.com)."
-            : "Your technical specifications have been safely delivered to our factory engineering sales team (admin@bdjunyang.com)."}
+            : "Your technical specifications have been safely delivered to our technical sales team (admin@bdjunyang.com)."}
         </p>
 
         {/* 4-Step Factory SLA Tracking Box */}
         <div className="bg-white border border-emerald-200/90 rounded-2xl p-5 max-w-lg mx-auto mb-6 text-left space-y-3 shadow-xs">
           <p className="text-xs font-black uppercase tracking-wider text-slate-900 mb-2 border-b border-slate-100 pb-2">
-            {isEs ? "SLA y Próximos Pasos de Producción:" : "Factory SLA & Next Steps:"}
+            {isEs ? "SLA y Próximos Pasos de Producción:" : "SLA & Next Steps:"}
           </p>
           <div className="flex items-start gap-2.5 text-xs text-slate-700">
             <span className="font-black text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded text-[10px]">01</span>
@@ -262,7 +262,7 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
       <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-4 sm:p-5 text-left shadow-2xs">
         <h4 className="text-xs sm:text-sm font-black text-slate-900 tracking-tight flex items-center gap-2 mb-3">
           <ShieldCheck size={16} className="text-blue-600 shrink-0" />
-          <span>{isEs ? "¿Es Baoding Junyang la fábrica adecuada para su pedido?" : "Is BD Hats the right factory for your order?"}</span>
+          <span>{isEs ? "¿Es Baoding Junyang el socio adecuado para su pedido?" : "Is BD Hats the right sourcing partner for your order?"}</span>
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs leading-relaxed">
           <div className="bg-white p-3.5 rounded-xl border border-emerald-200/80 shadow-2xs">
@@ -277,11 +277,11 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
               </li>
               <li className="flex items-start gap-1.5">
                 <span className="text-emerald-600 font-bold">•</span>
-                <span>{isEs ? "Líneas de producción dedicadas, cotización desglosada y muestra previa firmada" : "Your own production lines, itemised quotes and a signed pre-production sample"}</span>
+                <span>{isEs ? "Coordinación de producción dedicada, cotización desglosada y muestra previa firmada" : "Audited partner production lines, itemised quotes and a signed pre-production sample"}</span>
               </li>
               <li className="flex items-start gap-1.5">
                 <span className="text-emerald-600 font-bold">•</span>
-                <span>{isEs ? "Instalaciones auditadas por SGS, control de calidad pieza a pieza y embalaje de exportación" : "SGS-audited facility evidence, piece-by-piece QC and export packing specs"}</span>
+                <span>{isEs ? "Fábricas asociadas auditadas, control de calidad pieza a pieza y embalaje de exportación" : "Audited partner factory execution, piece-by-piece QC and export packing specs"}</span>
               </li>
             </ul>
           </div>
@@ -338,7 +338,7 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
         <div className="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto shrink-0 border-t sm:border-t-0 pt-2 sm:pt-0 border-slate-700/60 text-[10px] text-slate-300 gap-1">
           <span className="flex items-center gap-1 text-amber-300 font-bold">
             <ShieldCheck size={12} className="text-amber-400" />
-            {isEs ? "Revisión Directa de Fábrica" : "Direct Factory Review"}
+            {isEs ? "Revisión Técnica B2B" : "Sourcing & Quality Review"}
           </span>
           <span className="text-slate-400">admin@bdjunyang.com</span>
         </div>
@@ -406,7 +406,7 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
                 : "Our server did not confirm receipt. Please try again, or send via WhatsApp."}
             </p>
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi BD Hats! My website inquiry failed to submit. I would like a factory quote for custom caps (MOQ 200 pcs).")}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi BD Hats! My website inquiry failed to submit. I would like a wholesale quote for custom caps (MOQ 200 pcs).")}`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackWhatsAppClick({ button: "form_error_fallback", label: "Inquiry Form Error WhatsApp Fallback" })}
@@ -626,7 +626,7 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
           ) : (
             <>
               <Send size={15} />
-              <span>{isEs ? "Enviar Especificaciones a Fábrica" : "Submit Technical RFQ to Factory"}</span>
+              <span>{isEs ? "Enviar Especificaciones para Cotización" : "Submit Technical RFQ for Quotation"}</span>
             </>
           )}
         </button>

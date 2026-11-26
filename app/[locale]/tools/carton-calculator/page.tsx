@@ -218,7 +218,7 @@ export default function CartonCalculatorPage() {
 
       {/* Footer Minimal */}
       <footer className="bg-white border-t border-slate-200/80 py-8 text-center text-xs text-slate-500">
-        <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Direct Factory B2B Export Solutions.</p>
+        <p>© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Direct Factory B2B Export Solutions.</p>
         <p className="mt-1 text-[11px] text-slate-400">Written quotations delivered within 2 hours · admin@bdjunyang.com</p>
       </footer>
     </div>

@@ -82,7 +82,7 @@ const CONTENT = {
       { value: "200 Pcs", label: "Per style / color" },
       { value: "No Tooling Fee", label: "On labels & tags" },
     ],
-    faqsTitle: "Private Label Hat Manufacturing FAQs",
+    faqsTitle: "Private Label Headwear Sourcing FAQs",
     faqs: [
       {
         q: "How does private label differ from buying generic blanks?",
@@ -235,8 +235,8 @@ export default function PrivateLabelPage() {
     headline: "Private Label Hat Manufacturer — Custom Branded Caps China",
     description:
       "Private label hat manufacturing: woven labels, care labels, hang tags, retail packaging and barcode application. MOQ 200pcs, samples in 7 days, SGS verified factory.",
-    author: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    publisher: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
+    publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",
     dateModified: "2026-09-10",
     mainEntityOfPage: "https://bdjunyang.com/private-label-hat-manufacturer",

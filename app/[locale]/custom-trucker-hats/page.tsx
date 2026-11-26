@@ -190,8 +190,8 @@ export default function TruckerPage() {
     "@type": "Article",
     "headline": "Custom Trucker Hats Wholesale — Mesh Back Caps Factory Direct",
     "description": "Wholesale custom trucker hats: foam front, mesh back, embroidery and printing options, materials, pricing and MOQ from a Chinese factory.",
-    "author": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    "publisher": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    "author": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
+    "publisher": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "datePublished": "2026-08-25",
     "dateModified": "2026-11-24",
     "mainEntityOfPage": `https://bdjunyang.com/${lang}/custom-trucker-hats`
@@ -375,7 +375,7 @@ export default function TruckerPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
             <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-16 w-auto object-contain mb-4" />
-            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Hat Manufacturing Co., Ltd. — premium custom hat factory since 2014.</p>
+            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Import and Export Trade Co., Ltd. — headwear sourcing and quality partner since 2014.</p>
           </div>
           <div className="grid grid-cols-2 gap-12">
             <div>
@@ -405,7 +405,7 @@ export default function TruckerPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
-          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+          <p>© 2026 Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved.</p>
         </div>
       </footer>
     </main>

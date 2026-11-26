@@ -20,7 +20,7 @@ const CONTENT = {
     features: [
       {
         title: "Capacity That Absorbs Spikes",
-        desc: "50,000 sqm of production space, 200+ tailors and 100+ precision Barudan embroidery machines, with annual output above 5 million caps. A 50,000-piece order runs on dedicated lines rather than competing with small jobs for machine time.",
+        desc: "Vetted partner production network, multi-head computerized embroidery, piece-by-piece in-house QC, and scalable capacity for volume export. A 50,000-piece order runs on dedicated lines rather than competing with small jobs for machine time.",
       },
       {
         title: "Tiered Volume Pricing",
@@ -32,7 +32,7 @@ const CONTENT = {
       },
       {
         title: "Audit-Ready Documentation",
-        desc: "SGS factory verification, CE product certification and REACH/RoHS compliance documents available for your compliance team. We support third-party inspections by SGS, Intertek or Bureau Veritas at any production stage.",
+        desc: "SGS factory verification, CE product certification and REACH SVHC compliance documents available for your compliance team. We support third-party inspections by SGS, Intertek or Bureau Veritas at any production stage.",
       },
       {
         title: "Payment & Trade Terms",
@@ -101,7 +101,7 @@ const CONTENT = {
     features: [
       {
         title: "Capacidad para absorber picos",
-        desc: "50.000 m² de superficie productiva, más de 200 costureros y más de 100 máquinas de bordado japonesas Barudan, con una producción anual superior a 5 millones de gorras. Un pedido de 50.000 unidades se fabrica en líneas dedicadas en lugar de competir por tiempo de máquina con pedidos pequeños.",
+        desc: "Red de fabricantes asociados auditados, bordado computarizado multicabezal, control de calidad propio pieza a pieza y capacidad escalable para exportación masiva. Un pedido de 50.000 unidades se fabrica en líneas dedicadas en lugar de competir por tiempo de máquina con pedidos pequeños.",
       },
       {
         title: "Precios escalonados por volumen",
@@ -113,7 +113,7 @@ const CONTENT = {
       },
       {
         title: "Documentación lista para auditoría",
-        desc: "Verificación de fábrica SGS, certificación de producto CE y documentos de cumplimiento REACH/RoHS a disposición de tu equipo de cumplimiento. Facilitamos inspecciones de terceros (SGS, Intertek o Bureau Veritas) en cualquier etapa de la producción.",
+        desc: "Verificación de fábrica SGS, certificación de producto CE y documentos de cumplimiento REACH SVHC a disposición de tu equipo de cumplimiento. Facilitamos inspecciones de terceros (SGS, Intertek o Bureau Veritas) en cualquier etapa de la producción.",
       },
       {
         title: "Condiciones comerciales y de pago",
@@ -178,8 +178,8 @@ export default function BulkHatsPage() {
     headline: "Bulk Custom Hats Manufacturer — Large Volume Cap Production",
     description:
       "Large-volume custom hat production: 5M+ caps per year, 100+ embroidery machines, volume tier pricing from 500 to 10,000+ pcs, in-house QC, FOB or CIF.",
-    author: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    publisher: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
+    publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",
     dateModified: "2026-09-10",
     mainEntityOfPage: "https://bdjunyang.com/bulk-custom-hats-manufacturer",

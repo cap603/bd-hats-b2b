@@ -10,24 +10,24 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     title:
       locale === "es"
-        ? "Acerca de BD Hats | Fábrica de Gorras Personalizadas en Baoding, China"
-        : "About BD Hats | 12-Year Custom Hat Factory",
+        ? "Acerca de BD Hats | Socio de Abastecimiento y Calidad en Baoding, China"
+        : "About BD Hats | Headwear Sourcing & Quality Partner",
     description:
       locale === "es"
-        ? "De un taller de 15 personas a una instalación de 50.000m² que sirve a más de 300 marcas globales. Conoce la trayectoria, misión, equipo y capacidades de Baoding Junyang desde 2014."
-        : "From a 15-person workshop to a 50,000sqm facility serving 300+ global brands. Learn about Baoding Junyang's journey, mission, team, and factory capabilities since 2014.",
+        ? "Baoding Junyang Import and Export Trade Co., Ltd. — 12 años conectando marcas globales con fábricas especializadas en China. Control de calidad pieza a pieza desde 2014."
+        : "Baoding Junyang Import and Export Trade Co., Ltd. — 12 years connecting global apparel brands with vetted headwear makers. Piece-by-piece QC and direct sourcing since 2014.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
       url: canonical,
       title:
         locale === "es"
-          ? "Acerca de BD Hats | Nuestra Historia y Misión de Fábrica"
-          : "About BD Hats | Our Factory Story & Mission",
+          ? "Acerca de BD Hats | Historia y Compromiso de Calidad"
+          : "About BD Hats | Sourcing Partner Story & Quality Mission",
       description:
         locale === "es"
-          ? "12 años de excelencia en fabricación de gorras personalizadas. Más de 300 marcas, 50 países, 5M+ gorras producidas anualmente."
-          : "12 years of custom hat manufacturing excellence. 300+ brands, 50+ countries, 5M+ caps produced annually.",
+          ? "Socio integral de abastecimiento de gorras personalizadas desde 2014. Más de 300 marcas atendidas en 50+ países con control de calidad riguroso."
+          : "Dedicated headwear sourcing partner since 2014. Serving 300+ brands across 50+ countries with piece-by-piece QC.",
     },
   };
 }

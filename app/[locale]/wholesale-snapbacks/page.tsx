@@ -57,7 +57,7 @@ const CONTENT = {
     puffBody:
       "High-density 3D puff is the reason most brands choose snapbacks, and it is also where rejections happen. Puff foam sits under the satin stitch column; the loft is controlled by foam thickness and stitch density together. Too open a density and the foam shows through the stitching; too tight and the column perforates the buckram-backed front and the panel puckers. We set density against the fabric and buckram combination on a strike-off before bulk, and we keep the puff mark inside one front panel so the crown seam never runs through the raised area. Large lettering blocks hold up better than thin serifs; heavy block letters with a satin border clean up well, while hairline serifs and gradients do not survive the puff process. If your artwork combines a puff wordmark with small flat-stitch text, we digitize them as separate files so the small text stays flat and crisp.",
     puffBody2:
-      "Colour count also drives cost more than logo size does. Thread colour changes on a multi-head Barudan run are thread changes on every head, and a six-colour logo costs more machine time than a two-colour logo of the same physical size. Buyers comparing quotes should normalize colour count before comparing unit price.",
+      "Colour count also drives cost more than logo size does. Thread colour changes on a multi-head precision embroidery run are thread changes on every head, and a six-colour logo costs more machine time than a two-colour logo of the same physical size. Buyers comparing quotes should normalize colour count before comparing unit price.",
     qcTitle: "How We Inspect Structured Caps Before Shipment",
     qcBody:
       "Structured caps fail differently from soft crowns: we check crown symmetry left to right after fusing, delamination of the fused front (it must not bubble after steam finishing), crown height consistency across the run, and snap tape function — every closure must snap and release cleanly. Delamination shows up at steam finishing, which is why our final inspection sits after ironing rather than before.",
@@ -145,7 +145,7 @@ const CONTENT = {
     puffBody:
       "El 3D puff de alta densidad es la razón por la que muchas marcas eligen snapbacks, y también donde ocurren los rechazos. La espuma puff va bajo la columna de puntada satén; el relieve lo controlan juntos el espesor de la espuma y la densidad de puntada. Con densidad demasiado abierta la espuma asoma entre las puntadas; con densidad excesiva la columna perfora el frente con buckram y el panel se frunce. Ajustamos la densidad según la combinación de tela y buckram en una prueba previa al volumen, y mantenemos la marca puff dentro de un solo panel frontal para que la costura de la copa nunca atraviese la zona en relieve. Las letras de bloque gruesas se comportan mejor que las serifas finas; los degradados no sobreviven al proceso puff. Si su diseño combina un logotipo puff con texto pequeño en puntada plana, los digitalizamos como archivos separados para que el texto pequeño quede nítido.",
     puffBody2:
-      "El número de colores también encarece más que el tamaño del logo. En una máquina Barudan multi-cabeza, cada cambio de color es un cambio de hilo en todos los cabezales, y un logo de seis colores consume más tiempo de máquina que uno de dos colores del mismo tamaño. Al comparar cotizaciones conviene normalizar el número de colores antes de comparar el precio unitario.",
+      "El número de colores también encarece más que el tamaño del logo. En una máquina de bordado multi-cabezal, cada cambio de color es un cambio de hilo en todos los cabezales, y un logo de seis colores consume más tiempo de máquina que uno de dos colores del mismo tamaño. Al comparar cotizaciones conviene normalizar el número de colores antes de comparar el precio unitario.",
     qcTitle: "Cómo inspeccionamos las gorras estructuradas antes del embarque",
     qcBody:
       "Las gorras estructuradas fallan de forma distinta a las de copa blanda: revisamos simetría de copa de izquierda a derecha tras el entretelado, deslaminación del frente (no debe formar burbujas tras el planchado con vapor), consistencia de altura de copa en toda la corrida y funcionamiento del snap — cada cierre debe abrochar y soltar con limpieza. La deslaminación aparece en el planchado con vapor, por eso la inspección final va después del planchado y no antes.",
@@ -202,8 +202,8 @@ export default function SnapbacksPage() {
     "@type": "Article",
     "headline": "Wholesale Snapback Hats from Factory — Custom Snapback Manufacturer",
     "description": "Factory-direct wholesale snapbacks: styles, 3D puff embroidery, buckram structure, pricing and MOQ. SGS verified snapback manufacturer in China.",
-    "author": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    "publisher": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    "author": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
+    "publisher": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "datePublished": "2026-08-25",
     "dateModified": "2026-11-24",
     "mainEntityOfPage": `https://bdjunyang.com/${lang}/wholesale-snapbacks`
@@ -421,7 +421,7 @@ export default function SnapbacksPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
             <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-16 w-auto object-contain mb-4" />
-            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Hat Manufacturing Co., Ltd. — premium custom hat factory since 2014.</p>
+            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Import and Export Trade Co., Ltd. — headwear sourcing and quality partner since 2014.</p>
           </div>
           <div className="grid grid-cols-2 gap-12">
             <div>
@@ -451,7 +451,7 @@ export default function SnapbacksPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
-          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+          <p>© 2026 Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved.</p>
         </div>
       </footer>
     </main>

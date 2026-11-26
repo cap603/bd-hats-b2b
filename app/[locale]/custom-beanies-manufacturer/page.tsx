@@ -171,7 +171,7 @@ const CONTENT = {
       },
       {
         q: "Do you offer anti-pilling and itch-free yarn certifications for EU and North American markets?",
-        a: "Yes. All our acrylic, core-spun, and Merino wool blended yarns meet OEKO-TEX Standard 100, REACH, and RoHS environmental standards with zero skin-irritation and verified anti-pilling treatments.",
+        a: "Yes. All our acrylic, core-spun, and Merino wool blended yarns meet OEKO-TEX Standard 100 and REACH environmental standards with zero skin-irritation and verified anti-pilling treatments.",
       },
     ],
   },
@@ -356,8 +356,8 @@ export default function BeaniesPage() {
     headline: "Custom Beanies Manufacturer — Wholesale Knit Hats China",
     description:
       "Custom knit beanies direct from the factory: cuffed, pom-pom, jacquard and patch styles in wool blends or acrylic. MOQ 200pcs, 7-day samples.",
-    author: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    publisher: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
+    publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",
     dateModified: "2026-10-08",
     mainEntityOfPage: "https://bdjunyang.com/custom-beanies-manufacturer",

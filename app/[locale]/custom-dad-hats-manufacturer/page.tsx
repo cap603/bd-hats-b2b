@@ -174,8 +174,8 @@ export default function DadHatsPage() {
     headline: "Custom Dad Hats Manufacturer — Wholesale Unstructured Caps",
     description:
       "Factory-direct custom dad hats: unstructured 6-panel construction, acid wash and vintage finishes, leather patches. MOQ 200pcs, samples in 7 days.",
-    author: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    publisher: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
+    publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",
     dateModified: "2026-09-10",
     mainEntityOfPage: "https://bdjunyang.com/custom-dad-hats-manufacturer",

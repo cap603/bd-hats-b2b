@@ -69,7 +69,7 @@ const TIERS = [
     desc: "Direct-to-factory container load production for multinational brands and international procurement groups.",
     features: [
       "Direct factory floor price from $3.50/pc FOB",
-      "Dedicated multi-head Barudan line allocation",
+      "Dedicated multi-head precision line allocation",
       "20GP (35,000+ pcs) & 40HQ (85,000+ pcs) container packing",
       "Letter of Credit (L/C) & milestone payment support",
       "Annual supply agreement & buffer stock reservation"
@@ -158,8 +158,8 @@ export default function PricingPage() {
     "@type": "Article",
     "headline": "Custom Hat Pricing, MOQ & Shipping Guide — Complete Wholesale Cost Breakdown",
     "description": "Transparent guide covering custom hat costs ($3.50-$7.00 FOB), MOQ requirements (200pcs), shipping methods and costs, FOB vs CIF, volume discounts, sample fees, and payment terms.",
-    "author": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    "publisher": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    "author": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
+    "publisher": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "datePublished": "2026-07-31",
     "dateModified": "2026-07-31",
     "mainEntityOfPage": "https://bdjunyang.com/pricing"
@@ -329,7 +329,7 @@ export default function PricingPage() {
           <div className="mt-8 bg-gradient-to-r from-gray-900 to-black text-white rounded-2xl p-6 md:p-8 border border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
             <div>
               <span className="text-yellow-400 text-xs font-black uppercase tracking-widest">Industry Benchmark Data</span>
-              <h3 className="text-lg md:text-xl font-bold mt-1">2026 Custom Hat Manufacturing Cost Breakdown Index</h3>
+              <h3 className="text-lg md:text-xl font-bold mt-1">2026 Custom Hat Cost Breakdown Index</h3>
               <p className="text-gray-400 text-xs md:text-sm mt-2 max-w-xl">
                 See exact line-item material, embroidery, labor and logistics cost models ($3.50 - $7.80 FOB) across 6 cap silhouettes.
               </p>
@@ -415,7 +415,7 @@ export default function PricingPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
             <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-16 w-auto object-contain mb-4" />
-            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Hat Manufacturing Co., Ltd. — premium custom hat factory since 2014.</p>
+            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Import and Export Trade Co., Ltd. — headwear sourcing and quality partner since 2014.</p>
           </div>
           <div className="grid grid-cols-2 gap-12">
             <div>
@@ -439,7 +439,7 @@ export default function PricingPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
-          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+          <p>© 2026 Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved.</p>
         </div>
       </footer>
     </main>

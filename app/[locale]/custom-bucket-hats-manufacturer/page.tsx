@@ -196,8 +196,8 @@ export default function BucketHatsPage() {
     headline: "Custom Bucket Hats Manufacturer — Wholesale Fisherman Hats",
     description:
       "Custom bucket hats direct from the factory: cotton twill, corduroy, ripstop and reversible builds with embroidery, patches or print. MOQ 200pcs, 7-day samples.",
-    author: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    publisher: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
+    publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",
     dateModified: "2026-09-10",
     mainEntityOfPage: "https://bdjunyang.com/custom-bucket-hats-manufacturer",

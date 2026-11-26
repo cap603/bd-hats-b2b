@@ -61,13 +61,13 @@ export default function ProductDetail() {
       ? [
           "Lote de prueba o test multicolor; amortiza digitalización y preparación de bordado.",
           "100% de devolución del costo de muestra · etiquetas tejidas y de cuidado personalizadas gratis.",
-          "Corte por rollo completo y programación continua en líneas Barudan de 20 cabezales.",
+          "Corte por rollo completo y programación continua en líneas de bordado de precisión multicabezal.",
           "Teñido Pantone a medida, tejido a medida y optimización de carga en contenedor completo.",
         ]
       : [
           "Starter / multi-colour test batch; amortises embroidery digitizing & setup.",
           "100% sample fee credit · free custom woven brand & care labels.",
-          "Full-roll fabric cutting and continuous scheduling on 20-head Barudan lines.",
+          "Full-roll fabric cutting and continuous scheduling on precision multi-head embroidery lines.",
           "Custom Pantone mill dyeing, bespoke weaving and full-container load optimisation.",
         ];
 
@@ -80,7 +80,7 @@ export default function ProductDetail() {
     const isEs = lang === "es";
     const text = encodeURIComponent(
       isEs
-        ? `¡Hola Baoding Junyang! Me gustaría solicitar cotización de fábrica y ficha técnica para [${sku}] "${hat.name}". MOQ ${hat.moq} uds.`
+        ? `¡Hola Baoding Junyang! Me gustaría solicitar cotización B2B y ficha técnica para [${sku}] "${hat.name}". MOQ ${hat.moq} uds.`
         : `Hi Baoding Junyang! I would like to get a wholesale quote and spec sheet for [${sku}] "${hat.name}". MOQ ${hat.moq}pcs.`
     );
     window.open(`https://wa.me/8615933930830?text=${text}`, "_blank");
@@ -105,7 +105,7 @@ export default function ProductDetail() {
   // Product.seller property, so emitting it at Product level fails validation.
   const sellerSchema = {
     "@type": "Organization",
-    "name": "Baoding Junyang Hat Manufacturing Co., Ltd.",
+    "name": "Baoding Junyang Import and Export Trade Co., Ltd.",
     "url": "https://bdjunyang.com",
   };
   // Numeric prices are emitted only for products with a published FOB band.
@@ -127,7 +127,7 @@ export default function ProductDetail() {
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "Baoding Junyang Hat Manufacturing Co., Ltd."
+      "name": "Baoding Junyang Import and Export Trade Co., Ltd."
     },
     ...(priceBand
       ? {
@@ -265,18 +265,18 @@ export default function ProductDetail() {
                  <span className="flex items-center justify-center w-7 h-7 rounded-xl bg-blue-50 text-blue-600">
                    <ShieldCheck size={18} />
                  </span>
-                 <span className="text-xs font-black uppercase tracking-widest text-blue-600">
-                   {lang === "es" ? "Criterios de Ingeniería B2B" : "Factory Engineering Advisory"}
-                 </span>
-               </div>
-               <h3 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2">
-                 {lang === "es" ? "Puntos Clave de Producción para Evitar Errores" : "Production Feasibility & Anti-Deformation Standards"}
-               </h3>
-               <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">
-                 {lang === "es"
-                   ? "Recomendaciones directas del equipo de patronaje y bordado Barudan para optimizar calidad y reducir mermas."
-                   : "Direct manufacturing guidelines from our Baoding Barudan embroidery and pattern-making floor."}
-               </p>
+                <span className="text-xs font-black uppercase tracking-widest text-blue-600">
+                  {lang === "es" ? "Criterios de Ingeniería B2B" : "Sourcing & Quality Engineering Advisory"}
+                </span>
+              </div>
+              <h3 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2">
+                {lang === "es" ? "Puntos Clave de Producción para Evitar Errores" : "Production Feasibility & Anti-Deformation Standards"}
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">
+                {lang === "es"
+                  ? "Recomendaciones directas del equipo de patronaje y bordado de precisión para optimizar calidad y reducir mermas."
+                  : "Direct manufacturing guidelines from our partner embroidery and pattern-making engineering teams."}
+              </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
                  <div className="p-4 bg-white rounded-2xl border border-slate-200">
@@ -833,14 +833,11 @@ export default function ProductDetail() {
       <section className="bg-gray-50 py-16 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 text-center">
            <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-10">{t("trustBar")}</p>
-           <div className="flex flex-wrap items-center justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition duration-500">
-              <span className="font-black text-2xl italic">REACH</span>
-              <span className="font-black text-2xl italic">ISO 9001</span>
-              <div className="flex items-center gap-2 border-2 border-black px-4 py-1.5 rounded-lg">
-                 <span className="font-black text-2xl italic">CE</span>
-              </div>
-              <span className="font-black text-2xl italic">SGS VERIFIED</span>
-              <span className="font-black text-2xl italic">RoHS</span>
+           <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+              <span className="font-black text-xl sm:text-2xl italic">OEKO-TEX®</span>
+              <span className="font-black text-xl sm:text-2xl italic">REACH</span>
+              <span className="font-black text-xl sm:text-2xl italic">GRS</span>
+              <span className="font-bold text-xs uppercase tracking-widest text-slate-500">Tested Per Order · SGS/BV Available</span>
            </div>
         </div>
       </section>
@@ -854,7 +851,7 @@ export default function ProductDetail() {
               className="h-12 w-auto mb-8 opacity-50"
             />
             <p className="text-gray-500 text-xs font-bold uppercase tracking-[0.3em]">
-              © 2026 Baoding Junyang Hat Manufacturing Co., Ltd.
+              © 2026 Baoding Junyang Import and Export Trade Co., Ltd.
             </p>
          </div>
       </footer>

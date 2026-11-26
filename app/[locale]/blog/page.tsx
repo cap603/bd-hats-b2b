@@ -71,7 +71,7 @@ export default function BlogHubPage() {
             description: meta.subtitle,
             publisher: {
               "@type": "Organization",
-              name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+              name: "Baoding Junyang Import and Export Trade Co., Ltd.",
               url: "https://bdjunyang.com",
               logo: {
                 "@type": "ImageObject",

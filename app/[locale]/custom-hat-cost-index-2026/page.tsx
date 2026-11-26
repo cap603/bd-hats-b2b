@@ -17,9 +17,9 @@ const CONTENT = {
       badge: "2026 Headwear Sourcing Benchmarks · Direct Factory Data",
       title: "2026 Custom Hat Manufacturing",
       accent: "Cost Index & Sourcing Guide",
-      subtitle: "Transparent factory-floor economics for global apparel brands, streetwear labels, and corporate buyers. Real FOB cost breakdowns across fabric tiers, Barudan embroidery techniques, order volumes (MOQ 200), and lead times.",
+      subtitle: "Transparent factory-floor economics for global apparel brands, streetwear labels, and corporate buyers. Real FOB cost breakdowns across fabric tiers, precision embroidery techniques, order volumes (MOQ 200), and lead times.",
       quickSummaryTitle: "Executive Summary & Benchmark Takeaways",
-      quickSummary: "In 2026, bulk custom hat manufacturing in China ranges between $5.20 and $7.80 per unit FOB for standard minimum orders of 200 pieces. Base cotton twill caps anchor the entry tier ($5.20 - $6.80), while textured 8-wale corduroy and laser-perforated performance golf hats sit in the upper tier ($4.50 - $7.80). Scaling order volume from 200 to 1,000 units reduces per-cap production costs by 22% to 28% due to fabric yield efficiency and setup amortization across automated Barudan embroidery lines."
+      quickSummary: "In 2026, bulk custom hat manufacturing in China ranges between $5.20 and $7.80 per unit FOB for standard minimum orders of 200 pieces. Base cotton twill caps anchor the entry tier ($5.20 - $6.80), while textured 8-wale corduroy and laser-perforated performance golf hats sit in the upper tier ($4.50 - $7.80). Scaling order volume from 200 to 1,000 units reduces per-cap production costs by 22% to 28% due to fabric yield efficiency and setup amortization across automated precision embroidery lines."
     },
     stats: [
       { value: "$3.50 - $7.80", label: "FOB Factory Price Range" },
@@ -43,7 +43,7 @@ const CONTENT = {
     table2Intro: "Understanding where your production dollars go helps optimize tech packs without sacrificing garment-grade quality.",
     bom: [
       { component: "Shell Fabric & Lining", share: "35% - 42%", details: "Premium chino twill, heavyweight corduroy, technical DWR nylon, or merino-blend yarns." },
-      { component: "Embroidery & Branding", share: "20% - 28%", details: "Digitizing fees, stitch density run time on Barudan machines, 3D puff foam, and thread spool consumption." },
+      { component: "Embroidery & Branding", share: "20% - 28%", details: "Digitizing fees, stitch density run time on multi-head embroidery machines, 3D puff foam, and thread spool consumption." },
       { component: "Hardware & Closures", share: "10% - 15%", details: "Antique brass metal buckles, 7-hole snapbacks, custom embossed metal eyelets, and nylon webbing straps." },
       { component: "Internal Sweatband & Taping", share: "8% - 12%", details: "Cotton/terrycloth sweatbands, custom branded seam tape, woven brand and care labels." },
       { component: "Labor, Cutting & Quality Control", share: "15% - 20%", details: "Precision pattern cutting, skilled panel assembly, visor molding, steam shaping, and piece-by-piece final quality inspection." }
@@ -72,7 +72,7 @@ const CONTENT = {
       },
       {
         q: "Why is the MOQ set strictly at 200 pieces?",
-        a: "Our facility runs 100+ precision Barudan multi-head automated embroidery machines. A 200-piece production run ensures optimal fabric cutting yields from standard textile bolts and amortizes thread setup time without excessive overhead."
+        a: "Our partner network operates high-speed multi-head automated embroidery lines. A 200-piece production run ensures optimal fabric cutting yields from standard textile bolts and amortizes thread setup time without excessive overhead."
       },
       {
         q: "How much does physical pre-production sampling cost?",
@@ -89,9 +89,9 @@ const CONTENT = {
       badge: "Métricas de Costos 2026 · Datos Reales Directos de Fábrica",
       title: "Índice de Costos de Fabricación de Gorras 2026",
       accent: "Guía de Precios al por Mayor",
-      subtitle: "Economía de producción transparente para marcas de ropa urbana, corporativas y distribuidores internacionales. Desglose detallado de precios FOB por tipos de tejido, bordado Barudan, volúmenes (MOQ 200) y tiempos de entrega.",
+      subtitle: "Economía de producción transparente para marcas de ropa urbana, corporativas y distribuidores internacionales. Desglose detallado de precios FOB por tipos de tejido, bordado de precisión, volúmenes (MOQ 200) y tiempos de entrega.",
       quickSummaryTitle: "Resumen Ejecutivo y Métricas Clave",
-      quickSummary: "En 2026, la fabricación de gorras personalizadas al por mayor en China se sitúa entre $5.20 y $7.80 USD por unidad FOB para pedidos mínimos de 200 piezas. Las gorras básicas de sarga de algodón representan la escala de entrada ($5.20 - $6.80), mientras que el tejido de pana gruesa de 8 cordones y las gorras de golf con perforación láser se ubican en la escala superior ($4.50 - $7.80). Aumentar el volumen de 200 a 1,000 unidades reduce el costo por unidad entre un 22% y un 28% gracias a la optimización de corte y amortización en líneas de bordado Barudan."
+      quickSummary: "En 2026, la fabricación de gorras personalizadas al por mayor en China se sitúa entre $5.20 y $7.80 USD por unidad FOB para pedidos mínimos de 200 piezas. Las gorras básicas de sarga de algodón representan la escala de entrada ($5.20 - $6.80), mientras que el tejido de pana gruesa de 8 cordones y las gorras de golf con perforación láser se ubican en la escala superior ($4.50 - $7.80). Aumentar el volumen de 200 a 1,000 unidades reduce el costo por unidad entre un 22% y un 28% gracias a la optimización de corte y amortización en líneas de bordado computarizado."
     },
     stats: [
       { value: "$3.50 - $7.80", label: "Rango de Precios FOB" },
@@ -115,7 +115,7 @@ const CONTENT = {
     table2Intro: "Conocer la distribución exacta de costos permite optimizar su ficha técnica manteniendo la máxima calidad.",
     bom: [
       { component: "Tejido Principal y Forro", share: "35% - 42%", details: "Sarga de algodón peinado, pana gruesa, nailon técnico DWR o hilados con lana merino." },
-      { component: "Bordado y Personalización", share: "20% - 28%", details: "Digitalización de puntadas, tiempo en máquinas Barudan, espuma 3D y consumo de hilo." },
+      { component: "Bordado y Personalización", share: "20% - 28%", details: "Digitalización de puntadas, tiempo en máquinas de bordado, espuma 3D y consumo de hilo." },
       { component: "Herrajes y Cierres", share: "10% - 15%", details: "Hebillas de latón envejecido, cierres plásticos snapback de 7 orificios y correas de nailon." },
       { component: "Banda Antisudor y Cintas Internas", share: "8% - 12%", details: "Bandas de sudor acolchadas, cintas interiores personalizadas y etiquetas tejidas." },
       { component: "Mano de Obra y Control de Calidad", share: "15% - 20%", details: "Corte de patrones de precisión, ensamblaje de paneles, moldeado a vapor e inspección rigurosa pieza por pieza." }
@@ -144,7 +144,7 @@ const CONTENT = {
       },
       {
         q: "¿Por qué el pedido mínimo está fijado en 200 unidades?",
-        a: "Nuestra fábrica opera más de 100 máquinas japonesas Barudan. Un lote de 200 piezas optimiza el rendimiento del tejido en rollos estándar y amortiza el tiempo de calibración sin encarecer el producto."
+        a: "Nuestras líneas de confección operan máquinas computarizadas multicabezal de alta precisión. Un lote de 200 piezas optimiza el rendimiento del tejido en rollos estándar y amortiza el tiempo de calibración sin encarecer el producto."
       },
       {
         q: "¿Cuánto cuesta la muestra física de preproducción?",
@@ -165,13 +165,13 @@ const COST_GUIDE = {
     "Every figure in this index is a factory FOB band, not a retail estimate: it covers the cap as constructed, embroidered and packed for export from a Chinese port, excluding ocean freight, insurance and your market's duties. Bands rather than single prices are deliberate — a structured 6-panel snapback and an unstructured dad hat use different fabric weights, different buckram and different labor time, so quoting one number would mislead you. When you send a spec, we place it inside the band and itemize every layer, which is why our written quotes come back within 2 working hours instead of a vague range.",
     "The single biggest driver inside any band is decoration. Flat embroidery on a one-color logo sits at the base; high-density 3D puff with foam underlay, laser-cut detail, multi-color thread schemes or combined techniques move you up. Fabric is the second lever: 108*56 heavy cotton twill costs more than brushed cotton but holds structure and takes dense puff cleanly, while canvas and corduroy sit higher still. If you are cost-down without hurting the product, the three moves that actually work are reducing stitch count slightly, consolidating thread colors, and standardizing on stock fabric rather than a bespoke weave.",
     "Quantity drives the band down because setup costs amortize: embroidery digitizing is paid once per logo, cutting waste falls as the fabric lot grows, and packing labor per unit drops. That is why the container-scale floor exists at all, and why multi-color programs split evenly across colorways without surcharges — splitting 200 pieces into four colors costs almost the same as one. If your volumes sit between tiers, ask us to quote both: the per-unit math sometimes favors producing a larger batch and holding stock.",
-    "Two costs sit outside the FOB band but decide your landed price: freight and duties. Ocean freight charges by CBM, and our export cartons are standardized at 60×45×40cm with 100 pieces, so you can compute freight volume precisely before committing — the CBM calculator in our tools menu does exactly that. Air express at 5–8 days is worth its premium for samples and urgent replenishment only. On the compliance side, finished products carry CE certification, and per-order REACH, RoHS, OEKO-TEX or GRS testing is arranged with third-party laboratories when your market requires it; the reports travel with the shipment so clearance is not where you discover a problem.",
+    "Two costs sit outside the FOB band but decide your landed price: freight and duties. Ocean freight charges by CBM, and our export cartons are standardized at 60×45×40cm with 100 pieces, so you can compute freight volume precisely before committing — the CBM calculator in our tools menu does exactly that. Air express at 5–8 days is worth its premium for samples and urgent replenishment only. On the compliance side, per-order REACH SVHC, OEKO-TEX Standard 100 or GRS testing is arranged with third-party laboratories when your market requires it; the reports travel with the shipment so clearance is seamless.",
   ],
   es: [
-    "Cada cifra de este índice es una banda FOB de fábrica, no una estimación de retail: cubre la gorra tal como se construye, borda y embala para exportar desde un puerto chino, excluyendo flete marítimo, seguro y los derechos de tu mercado. Usamos bandas y no precios únicos de propósito: una snapback de 6 paneles estructurada y un dad hat sin estructura usan pesos de tela distintos, cartulina distinta y tiempos de mano de obra distintos, así que citar una sola cifra te engañaría. Cuando envías una especificación, la ubicamos dentro de la banda y desglosamos cada capa; por eso nuestras cotizaciones escritas llegan en menos de 2 horas hábiles en lugar de un rango vago.",
+    "Cada cifra de este índice es una banda FOB mayorista, no una estimación de retail: cubre la gorra tal como se construye, borda y embala para exportar desde un puerto chino, excluyendo flete marítimo, seguro y los derechos de tu mercado. Usamos bandas y no precios únicos de propósito: una snapback de 6 paneles estructurada y un dad hat sin estructura usan pesos de tela distintos, entretela distinta y tiempos de mano de obra distintos, así que citar una sola cifra te engañaría. Cuando envías una especificación, la ubicamos dentro de la banda y desglosamos cada capa; por eso nuestras cotizaciones escritas llegan en menos de 2 horas hábiles en lugar de un rango vago.",
     "El mayor motor dentro de cualquier banda es la decoración. El bordado plano sobre un logo de un color está en la base; el 3D puff de alta densidad con base de espuma, el detalle de corte láser, los esquemas multicolor de hilo o las técnicas combinadas te suben. La tela es la segunda palanca: la sarga de algodón pesada 108*56 cuesta más que el algodón cepillado pero sostiene la estructura y acepta el puff denso sin defectos, mientras que lona y pana se ubican aún más arriba. Si buscas reducir coste sin dañar el producto, los tres movimientos que de verdad funcionan son reducir ligeramente el número de puntadas, consolidar colores de hilo y estandarizar una tela de stock en lugar de un tejido a medida.",
     "La cantidad baja la banda porque los costes de arranque se amortizan: la digitalización del bordado se paga una vez por logo, el desperdicio de corte cae al crecer el lote de tela y la mano de obra de embalaje por unidad desciende. Por eso existe el piso a escala de contenedor, y por qué los programas multicolor se dividen equitativamente entre colores sin recargos: dividir 200 unidades en cuatro colores cuesta casi lo mismo que uno solo. Si tus volúmenes quedan entre tarifas, pídenos cotizar ambas: el cálculo por unidad a veces favorece producir un lote mayor y mantener stock.",
-    "Dos costes quedan fuera de la banda FOB pero deciden tu precio de llegada: flete y derechos. El flete marítimo se cobra por CBM, y nuestras cajas de exportación están estandarizadas a 60×45×40cm con 100 unidades, así que puedes calcular el volumen de flete con precisión antes de comprometerte —la calculadora CBM de nuestro menú de herramientas hace exactamente eso. El exprés aéreo de 5–8 días solo justifica su premium para muestras y repones urgentes. En el frente de cumplimiento, los productos terminados cuentan con certificación CE, y las pruebas REACH, RoHS, OEKO-TEX o GRS por pedido se gestionan con laboratorios de terceros cuando tu mercado lo exige; los informes viajan con el envío para que el despacho de aduana no sea donde descubre un problema.",
+    "Dos costes quedan fuera de la banda FOB pero deciden tu precio de llegada: flete y derechos. El flete marítimo se cobra por CBM, y nuestras cajas de exportación están estandarizadas a 60×45×40cm con 100 unidades, así que puedes calcular el volumen de flete con precisión antes de comprometerte —la calculadora CBM de nuestro menú de herramientas hace exactamente eso. El exprés aéreo de 5–8 días solo justifica su premium para muestras y repones urgentes. En el frente de cumplimiento, las pruebas REACH SVHC, OEKO-TEX Standard 100 o GRS por pedido se gestionan con laboratorios de terceros certificados cuando tu mercado lo exige; los informes viajan con el envío para que el despacho de aduana sea fluido.",
   ],
 };
 
@@ -187,8 +187,8 @@ export default function CustomHatCostIndexPage() {
     const isEs = lang === "es";
     const text = encodeURIComponent(
       isEs
-        ? "¡Hola Baoding Junyang! He revisado el Índice de Costos de Fabricación 2026 y me gustaría solicitar una cotización formal para nuestro pedido (MOQ 200 uds)."
-        : "Hi Baoding Junyang! I reviewed your 2026 Hat Manufacturing Cost Index and would like to request an official factory quote for our production run (MOQ 200pcs)."
+        ? "¡Hola Baoding Junyang! He revisado el Índice de Costos de Gorras 2026 y me gustaría solicitar una cotización formal para nuestra producción (MOQ 200 uds)."
+        : "Hi Baoding Junyang! I reviewed your 2026 Hat Sourcing Cost Index and would like to request an official wholesale quote for our production run (MOQ 200pcs)."
     );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
   };
@@ -286,16 +286,16 @@ export default function CustomHatCostIndexPage() {
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src="/images/site/factory-barudan-embroidery-line.jpg"
-                  alt="Barudan Automated Multi-Head Embroidery Line"
+                  alt="Automated Multi-Head Embroidery Line"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-sm text-black mb-1">
-                  {lang === "es" ? "Líneas de Bordado Barudan" : "Automated Barudan Lines"}
+                  {lang === "es" ? "Líneas de Bordado Multicabezal" : "Automated Multi-Head Lines"}
                 </h3>
                 <p className="text-xs text-gray-500">
-                  {lang === "es" ? "Más de 100 cabezales de bordado de alta precisión con registro milimétrico." : "100+ high-precision automated embroidery heads for 3D puff and Tatami flat stitching."}
+                  {lang === "es" ? "Cabezales de bordado de alta precisión con registro milimétrico." : "High-precision automated embroidery heads for 3D puff and Tatami flat stitching."}
                 </p>
               </div>
             </div>
@@ -313,7 +313,7 @@ export default function CustomHatCostIndexPage() {
                   {lang === "es" ? "Costura y Ensamblaje de Paneles" : "Skilled Crown Assembly"}
                 </h3>
                 <p className="text-xs text-gray-500">
-                  {lang === "es" ? "Costura de 6 paneles y fijación de visera con acabado industrial impecable." : "Handcrafted panel alignment and curved visor stitching by 200+ seasoned artisans."}
+                  {lang === "es" ? "Costura de 6 paneles y fijación de visera con acabado industrial impecable." : "Handcrafted panel alignment and curved visor stitching by seasoned artisans."}
                 </p>
               </div>
             </div>
@@ -322,13 +322,13 @@ export default function CustomHatCostIndexPage() {
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src="/images/site/factory-assembly-workshop-hall.png"
-                  alt="50,000 sqm Manufacturing Workshop Floor"
+                  alt="Manufacturing & Quality Control Floor"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-sm text-black mb-1">
-                  {lang === "es" ? "Planta de 50.000㎡ y Control Pieza por Pieza" : "50,000㎡ Facility & Piece-by-Piece QC"}
+                  {lang === "es" ? "Control de Calidad Propio Pieza a Pieza" : "In-House Piece-by-Piece QC"}
                 </h3>
                 <p className="text-xs text-gray-500">
                   {lang === "es" ? "Inspección de preembarque, planchado a vapor y empaque en cajas reforzadas." : "Dedicated staging bays, steam shaping machines, and final pre-shipment inspection."}
@@ -531,7 +531,7 @@ export default function CustomHatCostIndexPage() {
 
       {/* Footer */}
       <footer className="bg-black text-gray-500 py-12 px-4 border-t border-gray-900 text-center text-xs">
-        <p className="font-bold text-gray-400 mb-2">Baoding Junyang Hat Manufacturing Co., Ltd.</p>
+        <p className="font-bold text-gray-400 mb-2">Baoding Junyang Import and Export Trade Co., Ltd.</p>
         <p>© 2026 BD Hats. All rights reserved.</p>
       </footer>
 

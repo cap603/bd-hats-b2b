@@ -121,7 +121,7 @@ const CONTENT = {
     ],
     limitsTitle: "3. Factory Embroidery & Decoration Engineering Limits",
     limitsIntro:
-      "To ensure your artwork stitches cleanly without thread fraying or fabric puckering, follow our precision Barudan machine tolerances:",
+      "To ensure your artwork stitches cleanly without thread fraying or fabric puckering, follow our precision multi-head embroidery tolerances:",
     limits: [
       { technique: "Front Panel 3D Puff Embroidery", maxDim: "13.0cm W × 5.5cm H", minLine: "3.0mm (0.12 in)", note: "Requires EVA foam underlay. Fine details under 3mm must be converted to flat stitch." },
       { technique: "Front Panel Flat Direct Embroidery", maxDim: "14.0cm W × 6.0cm H", minLine: "1.0mm (0.04 in)", note: "Ideal for detailed typography and crests up to 15,000 stitches." },
@@ -167,7 +167,7 @@ const CONTENT = {
       },
       {
         q: "What is your factory Minimum Order Quantity (MOQ) for custom hats?",
-        a: "Our strict factory-direct MOQ is 200 pieces per style/colorway. This guarantees optimal fabric yield from standard textile bolts and amortizes setup time on our automated Barudan embroidery machines.",
+        a: "Our strict factory-direct MOQ is 200 pieces per style/colorway. This guarantees optimal fabric yield from standard textile bolts and amortizes setup time on our automated precision embroidery machines.",
       },
       {
         q: "How fast can you deliver physical pre-production samples from a tech pack?",
@@ -273,7 +273,7 @@ const CONTENT = {
     ],
     limitsTitle: "3. Tolerancias Técnicas de Bordado y Decoración de Fábrica",
     limitsIntro:
-      "Para garantizar un bordado limpio sin fruncir la tela, sigue las tolerancias de nuestras máquinas japonesas Barudan:",
+      "Para garantizar un bordado limpio sin fruncir la tela, sigue las tolerancias de nuestras máquinas de bordado computarizado de precisión:",
     limits: [
       { technique: "Bordado Frontal 3D Puff (Relieve)", maxDim: "13.0cm Ancho × 5.5cm Alto", minLine: "3.0mm (0.12 in)", note: "Requiere base de espuma EVA. Detalles menores a 3mm deben pasar a bordado plano." },
       { technique: "Bordado Frontal Plano Directo", maxDim: "14.0cm Ancho × 6.0cm Alto", minLine: "1.0mm (0.04 in)", note: "Ideal para letras finas y escudos con hasta 15.000 puntadas." },
@@ -319,7 +319,7 @@ const CONTENT = {
       },
       {
         q: "¿Cuál es la Cantidad Mínima de Pedido (MOQ) de fábrica?",
-        a: "Nuestro MOQ estricto directo de fábrica es de 200 unidades por modelo/color. Esto garantiza un aprovechamiento óptimo de la tela y amortiza los tiempos de preparación de nuestras máquinas Barudan.",
+        a: "Nuestro MOQ estricto directo de fábrica es de 200 unidades por modelo/color. Esto garantiza un aprovechamiento óptimo de la tela y amortiza los tiempos de preparación de nuestras máquinas de bordado de precisión.",
       },
       {
         q: "¿Cuánto tardan en enviar muestras físicas basadas en el tech pack?",
@@ -370,12 +370,12 @@ export default function TechPackPage() {
             description: c.hero.subtitle,
             author: {
               "@type": "Organization",
-              name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+              name: "Baoding Junyang Import and Export Trade Co., Ltd.",
               url: "https://bdjunyang.com",
             },
             publisher: {
               "@type": "Organization",
-              name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+              name: "Baoding Junyang Import and Export Trade Co., Ltd.",
               logo: {
                 "@type": "ImageObject",
                 url: "https://bdjunyang.com/images/brand/junyang-logo.png",
@@ -815,7 +815,7 @@ export default function TechPackPage() {
           <div className="max-w-sm">
             <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-14 w-auto object-contain mb-4" />
             <p className="text-xs md:text-sm leading-relaxed">
-              Baoding Junyang Hat Manufacturing Co., Ltd. — 12-year direct custom hat factory specializing in high-density embroidery, private label caps, and B2B volume headwear.
+              Baoding Junyang Import and Export Trade Co., Ltd. — 12-year custom hat sourcing and quality partner specializing in high-density embroidery, private label caps, and B2B volume headwear.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-10">
@@ -842,7 +842,7 @@ export default function TechPackPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest text-gray-600 font-bold">
-          © {new Date().getFullYear()} Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.
+          © {new Date().getFullYear()} Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved.
         </div>
       </footer>
     </main>

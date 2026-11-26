@@ -176,8 +176,8 @@ export default function FivePanelPage() {
     headline: "Custom 5-Panel Caps Manufacturer — Wholesale 5 Panel Hats",
     description:
       "Custom 5-panel caps from the factory: A-frame and camper styles, seamless front panel for 3D puff embroidery, 30+ colors, MOQ 200pcs, samples in 7 days.",
-    author: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    publisher: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
+    publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",
     dateModified: "2026-09-10",
     mainEntityOfPage: "https://bdjunyang.com/custom-5-panel-caps-manufacturer",

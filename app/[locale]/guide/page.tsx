@@ -13,14 +13,14 @@ const SECTIONS_DATA = {
       id: "factory-selection",
       title: "1. How to Vet a Custom Hat Factory in China: 10-Point Checklist",
       content:
-        "Selecting the right manufacturing partner is the single most critical decision in your custom headwear project. Intermediaries and trading agents often markup costs by 30–50% while obscuring production delays. A genuine manufacturer operates dedicated cutting, embroidery, and assembly lines. At Baoding Junyang, our specialized facility in Baoding, Hebei houses 100+ precision Japanese Barudan multi-head embroidery machines, supported by 200+ seasoned tailors producing over 5 million caps annually.",
+        "Selecting the right sourcing and quality partner is the single most critical decision in your custom headwear project. At Baoding Junyang, we coordinate dedicated partner lines in Baoding, Hebei with precision multi-head computerized embroidery, piece-by-piece in-house QC, and transparent milestone tracking.",
       tips: [
-        "Demand verifiable third-party facility audits: look for SGS, BSCI, or ISO 9001:2015 inspection reports",
-        "Request real-time live video calls from the factory floor showing active Barudan embroidery lines",
-        "Verify machine infrastructure: high-density 3D puff embroidery requires industrial multi-head machinery (e.g., Barudan / Tajima), not domestic single-needle setups",
+        "Demand verifiable third-party facility audits: look for SGS, BSCI, or ISO inspection reports",
+        "Request real-time live video calls showing active multi-head embroidery lines",
+        "Verify machine infrastructure: high-density 3D puff embroidery requires industrial multi-head machinery, not domestic single-needle setups",
         "Require in-house needle detection (metal detector conveyor) to ensure zero broken needle fragments in finished goods",
-        "Confirm raw material compliance: ensure fabrics meet REACH, RoHS, OEKO-TEX standard 100, and CPSIA safety limits",
-        "Check manufacturer operational longevity: 12+ years of continuous operation demonstrates fiscal stability and supply chain resilience"
+        "Confirm raw material compliance: ensure fabrics meet REACH SVHC, OEKO-TEX Standard 100, and CPSIA safety limits",
+        "Check partner operational longevity: 12+ years of continuous operation demonstrates fiscal stability and supply chain resilience"
       ]
     },
     {
@@ -56,7 +56,7 @@ const SECTIONS_DATA = {
       content:
         "Factory Minimum Order Quantities (MOQs) exist to balance computer embroidery machine setup times, fabric mill dyeing minimums, and manual assembly line balancing. Our standard production MOQ is 200 pieces per style and colorway. This allows automated embroidery lines to run cost-effectively while offering emerging brands direct access to factory-floor FOB rates ($3.50 – $7.00/pc).",
       tips: [
-        "Why 200 pcs: sets up 100-head Barudan machines efficiently without excessive setup waste",
+        "Why 200 pcs: sets up multi-head computerized embroidery machines efficiently without excessive setup waste",
         "Trial Orders: prototype and promotional micro-runs of 1–5 pieces available via dedicated sample room lines",
         "Volume Discount Curves: significant price breaks occur at 500 pcs (sample refund threshold), 1,000 pcs, and 5,000+ container scales",
         "Color Splits: multiple colorways possible under the same embroidery tooling if thread colors remain constant",
@@ -80,16 +80,16 @@ const SECTIONS_DATA = {
   es: [
     {
       id: "factory-selection",
-      title: "1. Cómo Evaluar una Fábrica de Gorras en China: 10 Verificaciones Clave",
+      title: "1. Cómo Evaluar un Proveedor de Gorras en China: 10 Verificaciones Clave",
       content:
-        "Elegir el socio de fabricación adecuado es la decisión más crítica en su proyecto de gorras personalizadas. Los intermediarios y agentes suelen encarecer los costes un 30–50% y ocultar retrasos. Un fabricante auténtico opera sus propias líneas de corte, bordado y confección. En Baoding Junyang, nuestras instalaciones en Baoding, Hebei cuentan con más de 100 máquinas japonesas Barudan y más de 200 sastres especializados que producen más de 5 millones de gorras al año.",
+        "Elegir el socio de abastecimiento y calidad adecuado es la decisión más crítica en su proyecto de gorras personalizadas. En Baoding Junyang coordinamos líneas de confección asociadas y auditadas en Baoding, Hebei, con bordado multicabezal de alta precisión, control de calidad propio pieza a pieza y seguimiento transparente.",
       tips: [
-        "Exija auditorías independientes: verifique informes de inspección SGS, BSCI o ISO 9001:2015",
-        "Solicite videollamadas en vivo desde la planta de producción para comprobar las máquinas Barudan en funcionamiento",
+        "Exija auditorías independientes: verifique informes de inspección SGS, BSCI o ISO",
+        "Solicite videollamadas en vivo para comprobar las líneas de bordado en funcionamiento",
         "Verifique la infraestructura de maquinaria: el bordado 3D puff requiere maquinaria industrial multicabezal, no máquinas domésticas",
         "Exija detección de agujas interna (detector de metales continuo) para garantizar cero restos metálicos en el producto final",
-        "Confirme el cumplimiento de materias primas: telas conforme a REACH, RoHS, OEKO-TEX Standard 100 y límites CPSIA",
-        "Compruebe la trayectoria: más de 12 años de fabricación ininterrumpida demuestran solidez financiera y fiabilidad de suministro"
+        "Confirme el cumplimiento de materias primas: telas conforme a REACH SVHC, OEKO-TEX Standard 100 y límites CPSIA",
+        "Compruebe la trayectoria: más de 12 años de experiencia en abastecimiento demuestran solidez y fiabilidad de suministro"
       ]
     },
     {
@@ -125,7 +125,7 @@ const SECTIONS_DATA = {
       content:
         "Los pedidos mínimos de fábrica (MOQ) existen para amortizar la preparación de máquinas de bordado, los tintes de tejido y el equilibrado de líneas de confección. Nuestro MOQ estándar es de 200 piezas por estilo y combinación de color. Esto permite operar con eficiencia industrial y ofrecer precios directos de fábrica ($3.50 – $7.00 FOB).",
       tips: [
-        "Por qué 200 piezas: permite programar cabezales Barudan eficientemente sin mermas desproporcionadas",
+        "Por qué 200 piezas: permite programar líneas de bordado multicabezal eficientemente sin mermas desproporcionadas",
         "Series de Prueba: prototipos y pedidos de prueba de 1 a 5 piezas disponibles a través de nuestra sala de muestras",
         "Escalones de Descuento: reducciones significativas de precio a partir de 500 pzs (reintegro de muestra), 1.000 pzs y escala contenedor 5.000+ pzs",
         "Variantes de Color: es posible producir varios colores bajo el mismo utillaje si se mantienen los colores de hilo",
@@ -163,8 +163,8 @@ export default function GuidePage() {
       lang === "es"
         ? "Guía para compradores B2B que compran gorras en China: evaluación de fábricas, técnicas de bordado, negociación de MOQ y control de calidad."
         : "Expert guide for B2B buyers sourcing custom caps from China. Covers factory verification, embroidery techniques, MOQ negotiation, and QC protocols.",
-    "author": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    "publisher": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd.", "logo": { "@type": "ImageObject", "url": "/images/brand/junyang-logo.webp" } },
+    "author": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
+    "publisher": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd.", "logo": { "@type": "ImageObject", "url": "/images/brand/junyang-logo.webp" } },
     "datePublished": "2026-07-27",
     "dateModified": "2026-11-24",
     "mainEntityOfPage": `https://bdjunyang.com/${lang}/guide`
@@ -198,7 +198,7 @@ export default function GuidePage() {
         "name": "How do you protect international buyers against manufacturing defects or fraud?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We operate a 50,000 sqm SGS-audited facility with ISO 9001:2015 certification. We provide live video and photo updates at each stage (cutting, embroidery, sewing, steam ironing). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
+          "text": "We coordinate audited partner facilities with SGS inspection verification. We provide piece-by-piece in-house QC and live video/photo updates at each milestone (cutting, embroidery, sewing, final inspection). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
         }
       },
       {
@@ -206,7 +206,7 @@ export default function GuidePage() {
         "name": "What is the typical FOB price range for custom baseball caps and truckers?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Direct factory FOB prices generally range from $3.50 to $7.00 per unit, depending on fabric (heavy cotton twill, organic canvas, nylon ripstop, or vintage corduroy), panel construction, and embroidery complexity (flat vs 3D puff embroidery)."
+          "text": "Direct wholesale FOB prices generally range from $3.50 to $7.00 per unit, depending on fabric (heavy cotton twill, organic canvas, nylon ripstop, or vintage corduroy), panel construction, and embroidery complexity (flat vs 3D puff embroidery)."
         }
       },
       {
@@ -239,7 +239,7 @@ export default function GuidePage() {
     },
     {
       q: "How do you protect international buyers against manufacturing defects or fraud?",
-      a: "We operate a 50,000 sqm SGS-audited facility with ISO 9001:2015 certification. We provide live video and photo updates at each stage (cutting, embroidery, sewing, steam ironing). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
+      a: "We coordinate audited partner facilities with SGS inspection verification. We provide piece-by-piece in-house QC and live video/photo updates at each milestone (cutting, embroidery, sewing, final inspection). For first-time buyers, we fully support Alibaba Trade Assurance and escrow terms for secure cross-border payment protection."
     },
     {
       q: "What is the typical FOB price range for custom baseball caps and truckers?",
@@ -289,18 +289,18 @@ export default function GuidePage() {
           </span>
           <h1 className="text-3xl md:text-6xl font-extrabold mt-6 mb-6 tracking-tight leading-tight">
             {lang === "es" ? (
-              <>Guía Completa de <span className="text-yellow-400">Fabricación de Gorras</span></>
+              <>Guía Completa de <span className="text-yellow-400">Sourcing de Gorras</span></>
             ) : (
-              <>The Complete Guide to <span className="text-yellow-400">Custom Hat Manufacturing</span></>
+              <>The Complete Guide to <span className="text-yellow-400">Custom Hat Sourcing</span></>
             )}
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             {lang === "es"
-              ? "Todo lo que un comprador B2B necesita saber antes de encargar gorras: evaluación de fábricas, técnicas de bordado, negociación de MOQ y control de calidad."
-              : "Everything B2B buyers need to know before ordering custom caps — from factory selection and embroidery techniques to MOQ negotiation and quality control."}
+              ? "Todo lo que un comprador B2B necesita saber antes de encargar gorras: evaluación de proveedores, técnicas de bordado, negociación de MOQ y control de calidad."
+              : "Everything B2B buyers need to know before ordering custom caps — from supplier vetting and embroidery techniques to MOQ negotiation and quality control."}
           </p>
           <p className="text-gray-500 text-sm mt-6">
-            {lang === "es" ? "Actualizado Noviembre 2026 · Equipo de Fábrica Baoding Junyang" : "Updated November 2026 · By Baoding Junyang Factory Team"}
+            {lang === "es" ? "Actualizado Noviembre 2026 · Equipo de Baoding Junyang" : "Updated November 2026 · By Baoding Junyang Sourcing Team"}
           </p>
         </div>
       </section>
@@ -385,7 +385,7 @@ export default function GuidePage() {
               </h3>
               <p className="text-xs text-gray-600 leading-relaxed">
                 {lang === "es"
-                  ? "Estructura de precios desglosada: tela, bordado Barudan, mano de obra y transporte."
+                  ? "Estructura de precios desglosada: tela, bordado de precisión, mano de obra y transporte."
                   : "Itemized FOB manufacturing breakdown: fabric yield, stitch count, trims, labor and freight CBM."}
               </p>
             </Link>
@@ -562,15 +562,15 @@ export default function GuidePage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
             <img src="/images/brand/junyang-logo.webp" alt="JUNYANG Logo" className="h-16 w-auto object-contain mb-4" />
-            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Hat Manufacturing Co., Ltd. — premium custom hat factory since 2014.</p>
+            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Import and Export Trade Co., Ltd. — headwear sourcing and quality partner since 2014.</p>
           </div>
           <div className="grid grid-cols-2 gap-12">
             <div>
               <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wider">Resources</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href={`/${lang}/guide`} className="hover:text-white">B2B Hat Manufacturing Guide</Link></li>
+                <li><Link href={`/${lang}/guide`} className="hover:text-white">B2B Hat Sourcing Guide</Link></li>
                 <li><Link href={`/${lang}/#catalog`} className="hover:text-white">Product Catalog</Link></li>
-                <li><Link href={`/${lang}/about`} className="hover:text-white">About Our Factory</Link></li>
+                <li><Link href={`/${lang}/about`} className="hover:text-white">About Us</Link></li>
                 <li><Link href={`/${lang}/#inquiry`} className="hover:text-white">Request Quote</Link></li>
               </ul>
             </div>
@@ -585,7 +585,7 @@ export default function GuidePage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
-          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+          <p>© 2026 Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved.</p>
         </div>
       </footer>
     </main>

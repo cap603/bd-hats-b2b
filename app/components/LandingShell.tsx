@@ -23,29 +23,29 @@ interface Faq {
 // the Semrush text/HTML ratio of the thin category pages above the 0.10 floor.
 export const FACTORY_FACTS = {
   en: {
-    title: "Factory at a Glance",
+    title: "Sourcing & Quality at a Glance",
     intro:
-      "Every program on this page is manufactured under one roof by Baoding Junyang in Baoding, Hebei. The facts below are the ones professional buyers verify first — and each can be documented on request before you commit an order.",
+      "Every program on this page is coordinated and quality-controlled by Baoding Junyang in Baoding, Hebei. The facts below are the ones professional buyers verify first — and each can be documented on request before you commit an order.",
     paragraphs: [
-      "Our 50,000 sqm production floor is verified by SGS, and audit summaries plus production records are shared with buyers on request. We host factory visits to the cutting floor, the embroidery room, the sewing lines, the QC station and export packing — and we run video tours for buyers who cannot travel, so you can inspect the facility that will actually make your caps instead of relying on stock photos.",
-      "All embroidery runs in-house on 100+ Barudan flatbed and curved-head machines; nothing is outsourced to local workshops, which is what keeps stitch quality, color matching and schedules under one management. With 200+ tailors across cutting, sewing, embroidery and QC we ship over five million caps a year, and reserve capacity each quarter for repeat programs so a seasonal reorder does not queue behind a first-time buyer.",
-      "Finished products carry CE certification for the European market. Where your market or retailer requires more, we arrange third-party testing to REACH, RoHS, OEKO-TEX Standard 100 and GRS per order, and the test reports travel with the shipment so your compliance team can verify before customs clearance. Production records are archived per order, so any unit can be traced back to its sewing line and QC station during an audit.",
-      "Quality control is piece-by-piece rather than statistical: every cap is individually inspected for embroidery alignment, stitch density, stitching integrity, measurements and finish before it is packed. Milestone photos and video are shared at fabric cutting, embroidery, assembly and packing, and the sample fee for a physical pre-production sample is fully refunded against the bulk order once it reaches 500 pieces.",
-      "Commercial terms are straightforward: MOQ 200 pieces per style and color with multi-color programs split evenly without surcharges, written itemized FOB quotations within 2 working hours, physical samples in 7 days, bulk production in 15–20 days against a dated schedule, and EXW, FOB or CIF shipping with full export documentation. Payment runs through Alibaba Trade Assurance for platform buyer protection or T/T via verified business accounts — never personal accounts.",
-      "Communication runs in English or Spanish with a single project contact from quote through customs clearance, so specifications do not get lost in translation. Every order gets a written comparison sheet before sampling that lists each specification — panel count, profile height, fabric count, decoration, closure — and how the sample meets it, which removes the ambiguity that causes most disputes between buyers and hat factories. If a question arises mid-production, you reach the engineer who scheduled your run rather than a sales intermediary, and milestone reports arrive on the schedule we committed to, not when someone remembers to send them.",
+      "Our vetted partner manufacturing network is verified by SGS, and audit summaries plus production records are shared with buyers on request. We coordinate factory visits across cutting, embroidery, sewing, QC and export packing — and we provide live video walkthroughs so you can inspect the actual lines producing your caps.",
+      "All embroidery runs on high-speed multi-head computerized machines with custom digitized punch files, maintaining strict stitch density and color matching under single-point quality management. Dedicated partner lines provide scalable capacity for volume container orders without delaying seasonal repeat drops.",
+      "All materials and finished headwear meet international safety requirements. Where your retailer requires documentation, we coordinate third-party testing for REACH SVHC, OEKO-TEX Standard 100 and GRS TC per order, with test reports traveling with the shipment before customs clearance.",
+      "Quality control is piece-by-piece rather than statistical: every cap is individually inspected for embroidery alignment, stitch density, seam integrity, measurements and finish before packing. Milestone photos and videos are shared at fabric cutting, embroidery, assembly and packing, and the sample fee is fully refunded against bulk orders of 500+ pieces.",
+      "Commercial terms are straightforward: MOQ 200 pieces per style and color with multi-color programs split evenly without surcharges, written itemized FOB quotations within 2 working hours, physical samples in 7 days, bulk production in 15–20 days against a dated schedule, and EXW, FOB or CIF shipping with full export documentation. Payment runs through Alibaba Trade Assurance or direct T/T business accounts.",
+      "Communication runs in English or Spanish with a single dedicated project specialist from initial quotation through customs delivery. Every order receives a written comparison sheet before sampling that details each technical specification, eliminating ambiguity.",
     ],
   },
   es: {
-    title: "La Fábrica de un vistazo",
+    title: "Abastecimiento y Calidad de un Vistazo",
     intro:
-      "Todos los programas de esta página los fabrica Baoding Junyang bajo un mismo techo en Baoding, Hebei. Los datos siguientes son los que los compradores profesionales verifican primero, y cada uno puede documentarse bajo solicitud antes de que te comprometas.",
+      "Todos los programas de esta página están coordinados y controlados por Baoding Junyang en Baoding, Hebei. Los siguientes datos son los que los compradores profesionales verifican primero, y cada uno puede documentarse bajo solicitud.",
     paragraphs: [
-      "Nuestra planta de 50.000 m² está verificada por SGS, y los resúmenes de auditoría y los registros de producción se comparten con los compradores bajo solicitud. Recibimos visitas a la planta: piso de corte, sala de bordado, líneas de costura, estación de QC y embalaje de exportación; y ofrecemos recorridos en video para quienes no pueden viajar, para que inspecciones la instalación que realmente fabricará tus gorras en vez de confiar en fotos genéricas.",
-      "Todo el bordado se realiza en casa en más de 100 máquinas Barudan de mesa plana y cabeza curva; nada se subcontrata a talleres locales, y eso es lo que mantiene la calidad de puntada, el ajuste de color y los calendarios bajo una sola gestión. Con más de 200 sastres entre corte, costura, bordado y QC enviamos más de cinco millones de gorras al año, y reservamos capacidad cada trimestre para programas de repetición, de modo que un reaprovisionamiento estacional no quede detrás de un comprador primerizo.",
-      "Los productos terminados cuentan con certificación CE para el mercado europeo. Cuando tu mercado o retailer lo requiere, gestionamos pruebas de terceros según REACH, RoHS, OEKO-TEX Standard 100 y GRS por pedido, y los informes viajan con el envío para que tu equipo de cumplimiento los verifique antes del despacho de aduana. Los registros de producción se archivan por pedido, así que cualquier unidad se puede rastrear hasta su línea de costura y estación de QC durante una auditoría.",
-      "El control de calidad es pieza por pieza y no estadístico: cada gorra se inspecciona individualmente por alineación del bordado, densidad de puntadas, integridad de costuras, medidas y acabado antes de embalarse. Se comparten fotos y vídeo en el corte de tela, el bordado, el ensamble y el embalaje, y el costo de la muestra preproductiva física se descuenta íntegro del pedido masivo una vez que alcanza las 500 unidades.",
-      "Las condiciones comerciales son directas: MOQ de 200 piezas por estilo y color con programas multicolor repartidos sin recargos, cotización FOB escrita y desglosada en menos de 2 horas hábiles, muestras físicas en 7 días, producción masiva en 15–20 días contra un calendario con fechas, y envío EXW, FOB o CIF con documentación de exportación completa. El pago pasa por Alibaba Trade Assurance con protección de la plataforma o por T/T mediante cuentas empresarias verificadas, nunca cuentas personales.",
-      "La comunicación se lleva en inglés o español con un contacto único de proyecto, desde la cotización hasta el despacho de aduana, para que las especificaciones no se pierdan en la traducción. Cada pedido recibe una ficha comparativa por escrito antes de la muestra que lista cada especificación —número de paneles, altura del perfil, conteo de tela, decoración, cierre— y cómo la muestra la cumple, lo que elimina la ambigüedad que causa la mayoría de los conflictos entre compradores y fábricas de gorras. Si surge una duda a mitad de la producción, hablas con el ingeniero que programó tu pedido y no con un intermediario comercial, y los informes por hitos llegan según el calendario al que nos comprometimos, no cuando alguien se acuerda de enviarlos.",
+      "Nuestra red de fabricantes asociados está verificada por SGS, y los resúmenes de auditoría y registros de producción se comparten con los compradores bajo solicitud. Coordinamos visitas a las líneas de corte, bordado, costura, control de calidad y empaque, además de ofrecer recorridos en video en directo.",
+      "Todo el bordado se realiza en líneas computarizadas multicabezal de alta precisión, garantizando consistencia de puntada y calibración de color bajo una gestión de calidad unificada. Nuestras líneas asociadas ofrecen capacidad escalable para pedidos por contenedor.",
+      "Todos los materiales cumplen con normativas internacionales de seguridad química y textil. Gestionamos pruebas de terceros bajo REACH SVHC, OEKO-TEX Standard 100 y certificados GRS (TC) por pedido, viajando los informes técnicos junto con la mercancía.",
+      "El control de calidad es pieza por pieza y no estadístico: cada gorra se inspecciona individualmente por alineación de bordado, densidad de puntadas, integridad de costuras, medidas y acabados. Se comparten fotos y vídeo en corte, bordado, confección y embalaje, reembolsando la muestra al 100% en pedidos ≥500 piezas.",
+      "Condiciones comerciales directas: MOQ de 200 piezas por estilo y color, cotización FOB formal y desglosada por escrito en menos de 2 horas hábiles, muestras físicas en 7 días, producción en 15–20 días y documentación aduanera completa. Pagos protegidos mediante Alibaba Trade Assurance o T/T corporativo.",
+      "Comunicación fluida en inglés o español con un responsable dedicado de proyecto desde la cotización hasta la entrega final, eliminando intermediarios y ambigüedades técnicas.",
     ],
   },
 };
@@ -58,7 +58,7 @@ export const DEFAULT_FAQS: Record<"en" | "es", Faq[]> = {
     { q: "Do you support OEM and ODM orders?", a: "Yes. For OEM you supply the tech pack or a reference cap and we manufacture to spec. For ODM our team develops the construction, digitizing and bill of materials with you from a sketch or mood board, and you approve every stage before bulk." },
     { q: "What payment methods do you accept?", a: "Alibaba Trade Assurance orders carry platform payment protection and are our recommended route for first-time buyers. T/T through verified business accounts is available for established programs. We never request transfers to personal accounts." },
     { q: "How is quality controlled?", a: "Every piece passes individual inspection for embroidery alignment, stitch density, stitching integrity, measurements and finish. Milestone photos and video are shared at cutting, embroidery, assembly and packing, and production records are kept for audit traceability." },
-    { q: "Which markets do you ship to?", a: "Around 70% of our output ships to North America and 25% to Western Europe, with the remainder across Oceania and the Middle East. CE certification is standard for EU-bound goods, and per-order REACH, RoHS, OEKO-TEX or GRS testing is arranged on request." },
+    { q: "Which markets do you ship to?", a: "Around 70% of our output ships to North America and 25% to Western Europe, with the remainder across Oceania and the Middle East. All programs comply with REACH SVHC, OEKO-TEX Standard 100 and GRS specifications on request." },
   ],
   es: [
     { q: "¿Cuál es el MOQ para gorras personalizadas?", a: "Nuestra cantidad mínima de pedido es de 200 piezas por estilo y color. Los programas multicolor se reparten equitativamente entre colores sin recargos, y los programas de gorras en blanco para compradores habituales pueden comenzar aún más abajo." },
@@ -66,7 +66,7 @@ export const DEFAULT_FAQS: Record<"en" | "es", Faq[]> = {
     { q: "¿Aceptan pedidos OEM y ODM?", a: "Sí. Para OEM tú suministras el tech pack o una gorra de referencia y fabricamos según la especificación. Para ODM nuestro equipo desarrolla la construcción, la digitalización y el listado de materiales contigo a partir de un boceto o mood board, y apruebas cada etapa antes del pedido masivo." },
     { q: "¿Qué métodos de pago aceptan?", a: "Los pedidos con Alibaba Trade Assurance cuentan con protección de pago de la plataforma y son nuestra vía recomendada para compradores primerizos. El T/T mediante cuentas empresarias verificadas está disponible para programas consolidados. Nunca solicitamos transferencias a cuentas personales." },
     { q: "¿Cómo controlan la calidad?", a: "Cada pieza pasa una inspección individual de alineación del bordado, densidad de puntadas, integridad de costuras, medidas y acabado. Se comparten fotos y vídeo en el corte, el bordado, el ensamble y el embalaje, y se conservan registros de producción para trazabilidad en auditorías." },
-    { q: "¿A qué mercados envían?", a: "Alrededor del 70% de nuestra producción viaja a Norteamérica y el 25% a Europa occidental, con el resto hacia Oceanía y Oriente Medio. La certificación CE es estándar para mercancía destinada a la UE, y las pruebas REACH, RoHS, OEKO-TEX o GRS por pedido se gestionan bajo solicitud." },
+    { q: "¿A qué mercados envían?", a: "Alrededor del 70% de nuestra producción viaja a Norteamérica y el 25% a Europa occidental, con el resto hacia Oceanía y Oriente Medio. Todos los programas cumplen con normativas REACH SVHC, OEKO-TEX Standard 100 y GRS bajo solicitud." },
   ],
 };
 
@@ -436,7 +436,7 @@ export function LandingShell({
               className="h-16 w-auto object-contain mb-4"
             />
             <p className="text-sm mt-3 leading-relaxed">
-              Baoding Junyang Hat Manufacturing Co., Ltd. — premium custom hat factory since 2014.
+              Baoding Junyang Import and Export Trade Co., Ltd. — headwear sourcing and quality partner since 2014.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
@@ -497,7 +497,7 @@ export function LandingShell({
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
-          <p>{lang === "es" ? "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. Todos los derechos reservados." : "© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved."}</p>
+          <p>{lang === "es" ? "© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Todos los derechos reservados." : "© 2026 Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved."}</p>
         </div>
       </footer>
       <MobileStickyBar pageName={`Landing: ${title}`} />

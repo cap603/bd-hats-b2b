@@ -88,7 +88,7 @@
       "retentionDesc": "Presupuesto FOB línea por línea en menos de 2 horas tras recibir tu especificación.",
       "sgsSupplier": "Red de Fábricas Verificadas",
       "goldSupplier": "Respaldo Alibaba Trade Assurance",
-      "certifications": "Ensayos REACH, RoHS, OEKO-TEX y GRS según pedido · Inspección SGS/BV disponible",
+      "certifications": "Ensayos REACH, OEKO-TEX y GRS según pedido · Inspección SGS/BV disponible",
       "qcStandard": "Inspección Pieza por Pieza Antes del Envío"
     },
     "catalog": {
@@ -311,22 +311,22 @@
     "phonePlaceholder": "+34 600 000 000",
     "message": "Mensaje / Requisitos",
     "messagePlaceholder": "Cuéntanos sobre los estilos, cantidades o personalización específica (ej. Bordado 3D Puff, Etiquetas Tejidas)...",
-    "privacyNote": "Tu consulta se envía directamente al equipo técnico comercial de nuestra fábrica (admin@bdjunyang.com). Cotización formal por escrito en 2 horas.",
+    "privacyNote": "Tu consulta se envía directamente al equipo técnico comercial (admin@bdjunyang.com). Cotización formal por escrito en 2 horas.",
     "intentSample": "¡Hola Baoding Junyang! Quisiera pedir una muestra física antes de la producción en masa. ¿Pueden darme detalles?",
     "intentBulk": "¡Hola Baoding Junyang! Me interesa la producción en masa. ¿Pueden proporcionarme una cotización?",
     "intentTest": "¡Hola Baoding Junyang! Quisiera hacer un pedido de prueba pequeño. ¿Pueden darme detalles?",
     "intentTechpack": "¡Hola Baoding Junyang! Por favor envíenme las plantillas vectoriales en blanco (Tech Pack en AI/PDF) y hojas de especificaciones de costura para nuestro equipo de diseño. Mi marca/empresa es: ",
     "intentMockup": "¡Hola Baoding Junyang! Me gustaría solicitar una vista previa digital en 3D y evaluación de viabilidad de bordado gratuita para nuestro logotipo. Estilo de interés: ",
-    "submit": "Enviar Consulta a la Fábrica",
+    "submit": "Enviar Consulta Técnica",
     "submitting": "Transmitiendo al Equipo de Ventas...",
     "thanks": "¡Consulta Recibida con Éxito!",
-    "thanksMsg": "Tus especificaciones han sido entregadas al equipo de ventas de nuestra fábrica (admin@bdjunyang.com). Revisaremos tus detalles y responderemos a tu correo en breve.",
+    "thanksMsg": "Tus especificaciones han sido entregadas al equipo comercial (admin@bdjunyang.com). Revisaremos tus detalles y responderemos a tu correo en breve.",
     "whatsappFallback": "¿Necesitas una respuesta inmediata? También puedes conectar con nuestro especialista en WhatsApp:",
     "chatWhatsApp": "Chatear por WhatsApp (+86 159 3393 0830)",
     "sendAnother": "Enviar otra consulta"
   },
   "footer": {
-    "about": "Baoding Junyang Import & Export Trading Co., Ltd. es un socio de sourcing y control de calidad especializado en gorras de calidad media a alta, beanies y truckers desde 2014.",
+    "about": "Baoding Junyang Import and Export Trade Co., Ltd. es un socio de sourcing y control de calidad especializado en gorras de calidad media a alta, beanies y truckers desde 2014.",
     "navigation": "Navegación",
     "products": "Productos",
     "aboutLink": "Nosotros",
@@ -340,7 +340,7 @@
     "office": "Oficina: Baoding, Hebei, China",
     "privacy": "Política de Privacidad",
     "terms": "Términos del Servicio",
-    "copyright": "© 2026 Baoding Junyang Import & Export Trading Co., Ltd. Todos los derechos reservados."
+    "copyright": "© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Todos los derechos reservados."
   },
   "breadcrumb": {
     "home": "Inicio",
@@ -351,38 +351,10 @@
     "products": "Productos"
   },
   "meta": {
-    "homeTitle": "BD Hats | Socio de Sourcing de Gorras y Mayorista B2B",
-    "homeDesc": "Gorras personalizadas de calidad media a alta, gestionadas con control de calidad por Baoding Junyang desde 2014. Bordado personalizado, MOQ 200 uds, muestras en 7 días, cotización en 2h.",
-    "aboutTitle": "Sobre BD Hats | Socio de Sourcing de Gorras en Baoding, China",
-    "aboutDesc": "Baoding Junyang Import & Export Trading Co., Ltd. — 12 años de experiencia en sourcing y exportación de gorras, fábricas asociadas verificadas y control de calidad pieza por pieza.",
-    "guideTitle": "Guía B2B de Fabricación de Gorras | Cómo Comprar Gorras al por Mayor desde China",
-    "guideDesc": "Guía completa para compradores B2B: cómo elegir una fábrica de gorras, tipos de bordado, negociación de MOQ, control de calidad y logística de envío.",
-    "materialsTitle": "Guía de Materiales de Gorras | Algodón, Lana, Poliéster y Más | BD Hats",
-    "materialsDesc": "Guía completa de materiales: sarga de algodón, algodón cepillado, lana, poliéster, nailon, lona. Conoce tipos de cierres y construcción de paneles para tu pedido mayorista.",
-    "pricingTitle": "Guía de Precios, MOQ y Envíos de Gorras | Desglose de Costos | BD Hats",
-    "pricingDesc": "Guía de precios transparentes: cuánto cuestan las gorras personalizadas, FOB vs CIF, MOQ 200 uds, costos de flete aéreo vs marítimo y descuentos por volumen."
-  },
-  "popup": {
-    "badge": "Socio de Sourcing · Est. 2014",
-    "heading": "¿Necesitas Gorras Personalizadas para Tu Marca?",
-    "sub": "Recibe una cotización desglosada en menos de 2 horas — sin compromiso, muestras físicas en 7 días.",
-    "whatsappBtn": "Chatear por WhatsApp",
-    "formBtn": "Enviar Consulta",
-    "note": "Sourcing directo · Ensayos por pedido · Control de calidad pieza por pieza"
-  },
-  "breadcrumb": {
-    "home": "Inicio",
-    "about": "Nuestra Fábrica",
-    "guide": "Guía para Compradores",
-    "materials": "Materiales y Tejidos",
-    "pricing": "Precios y Envíos",
-    "products": "Productos"
-  },
-  "meta": {
-    "homeTitle": "BD Hats | Fábrica de Gorras Personalizadas",
-    "homeDesc": "Obtén gorras personalizadas premium directamente de fábrica. OEM/ODM desde 2014. Bordado personalizado, MOQ 200uds, muestras en 7 días. Fábrica verificada SGS en Baoding, China.",
-    "aboutTitle": "Sobre BD Hats | Fábrica de Gorras con 12 Años de Experiencia en Baoding, China",
-    "aboutDesc": "De un taller de 15 personas a una instalación de 50,000m² sirviendo a más de 300 marcas globales. Conoce la trayectoria, misión, equipo y capacidades de Baoding Junyang desde 2014.",
+    "homeTitle": "BD Hats | Socio de Abastecimiento de Gorras Personalizadas",
+    "homeDesc": "Gorras personalizadas de calidad media a alta con control de calidad pieza a pieza desde 2014. Bordado personalizado, MOQ 200uds, muestras en 7 días, cotización en 2h. Baoding, China.",
+    "aboutTitle": "Sobre BD Hats | Socio de Abastecimiento de Gorras en Baoding, China",
+    "aboutDesc": "Baoding Junyang Import and Export Trade Co., Ltd. — 12 años conectando marcas globales con fabricantes de headwear y control de calidad pieza a pieza desde 2014.",
     "guideTitle": "Guía B2B de Fabricación de Gorras | Cómo Comprar Gorras al por Mayor desde China",
     "guideDesc": "Guía completa para compradores B2B: cómo elegir una fábrica de gorras, tipos de bordado, negociación de MOQ, control de calidad y logística de envío.",
     "materialsTitle": "Guía de Materiales para Gorras | Algodón, Lana, Poliéster y Más | BD Hats",

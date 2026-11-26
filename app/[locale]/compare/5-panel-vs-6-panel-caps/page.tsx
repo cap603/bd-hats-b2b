@@ -312,12 +312,12 @@ export default function Page() {
     dateModified: "2026-09-16",
     author: {
       "@type": "Organization",
-      name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+      name: "Baoding Junyang Import and Export Trade Co., Ltd.",
       url: "https://bdjunyang.com",
     },
     publisher: {
       "@type": "Organization",
-      name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+      name: "Baoding Junyang Import and Export Trade Co., Ltd.",
       logo: {
         "@type": "ImageObject",
         url: "/images/brand/junyang-logo.png",

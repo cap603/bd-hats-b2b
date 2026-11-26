@@ -57,7 +57,7 @@ const CONTENT = {
           "Full in-house supply chain: fabric weaving, dyeing, laser cutting, and steam shaping",
         ],
         idealFor: "Streetwear labels, outdoor lifestyle brands, sports clubs, and mid-volume corporate programs.",
-        representative: "Baoding Junyang Hat Manufacturing Co., Ltd. (BD Hats)",
+        representative: "Baoding Junyang Import and Export Trade Co., Ltd. (BD Hats)",
       },
       {
         id: "guangdong",
@@ -91,7 +91,7 @@ const CONTENT = {
       "Benchmark key operational criteria across China's leading headwear suppliers and cap manufacturers in China to select the right partner for your brand's growth stage:",
     matrix: [
       {
-        factory: "Baoding Junyang Hat Manufacturing (BD Hats)",
+        factory: "Baoding Junyang Import and Export Trade (BD Hats)",
         region: "Baoding, Hebei",
         specialty: "High-density 3D puff embroidery, vintage dad hats, corduroy, beanies",
         moq: "200 pcs",
@@ -178,7 +178,7 @@ const CONTENT = {
     ],
     junyangTitle: "4. Why Baoding Junyang (BD Hats) is the Preferred Partner for Agile Brands",
     junyangDesc:
-      "Founded in 2014, Baoding Junyang Hat Manufacturing Co., Ltd. bridges the gap between high-overhead multinational factories and low-end promotional mills. We offer enterprise-grade craftsmanship with startup-friendly agility:",
+      "Founded in 2014, Baoding Junyang Import and Export Trade Co., Ltd. bridges the gap between high-overhead multinational factories and low-end promotional mills. We offer enterprise-grade craftsmanship with startup-friendly agility:",
     highlights: [
       { label: "100+ Barudan Heads", detail: "Automated multi-head embroidery lines ensuring micro-millimeter stitch precision across 3D puff, flat, and tatami textures." },
       { label: "Strict MOQ 200 Pcs", detail: "Boutique drop volume flexibility, enabling fashion streetwear and lifestyle brands to test new colorways without excessive inventory risk." },
@@ -248,7 +248,7 @@ const CONTENT = {
           "Cadena de suministro integrada: tejido, tintorería, corte láser y hormado a vapor",
         ],
         idealFor: "Marcas de streetwear, moda outdoor, clubes deportivos y programas corporativos medianos.",
-        representative: "Baoding Junyang Hat Manufacturing Co., Ltd. (BD Hats)",
+        representative: "Baoding Junyang Import and Export Trade Co., Ltd. (BD Hats)",
       },
       {
         id: "guangdong",
@@ -282,7 +282,7 @@ const CONTENT = {
       "Compara los criterios operativos clave de los principales proveedores para elegir el socio adecuado para tu marca:",
     matrix: [
       {
-        factory: "Baoding Junyang Hat Manufacturing (BD Hats)",
+        factory: "Baoding Junyang Import and Export Trade (BD Hats)",
         region: "Baoding, Hebei",
         specialty: "Bordado 3D puff de alta densidad, dad hats vintage, pana, beanies",
         moq: "200 uds",
@@ -369,7 +369,7 @@ const CONTENT = {
     ],
     junyangTitle: "4. Por Qué Baoding Junyang (BD Hats) es la Fábrica Elegida por Marcas Ágiles",
     junyangDesc:
-      "Fundada en 2014, Baoding Junyang Hat Manufacturing Co., Ltd. combina la precisión de una gran fábrica con la flexibilidad que necesitan las marcas en crecimiento:",
+      "Fundada en 2014, Baoding Junyang Import and Export Trade Co., Ltd. combina la precisión de una gran fábrica con la flexibilidad que necesitan las marcas en crecimiento:",
     highlights: [
       { label: "Más de 100 Cabezales Barudan", detail: "Líneas automáticas japonesas para bordados planos, 3D puff y texturas tatami milimétricas." },
       { label: "MOQ Estricto de 200 Uds", detail: "Flexibilidad para lanzar colecciones limitadas de streetwear sin asumir riesgos de inventario masivo." },
@@ -447,12 +447,12 @@ export default function TopManufacturersPage() {
             description: c.hero.subtitle,
             author: {
               "@type": "Organization",
-              name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+              name: "Baoding Junyang Import and Export Trade Co., Ltd.",
               url: "https://bdjunyang.com",
             },
             publisher: {
               "@type": "Organization",
-              name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+              name: "Baoding Junyang Import and Export Trade Co., Ltd.",
               logo: {
                 "@type": "ImageObject",
                 url: "https://bdjunyang.com/images/brand/junyang-logo.png",
@@ -842,7 +842,7 @@ export default function TopManufacturersPage() {
           <div className="max-w-sm">
             <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-14 w-auto object-contain mb-4" />
             <p className="text-xs md:text-sm leading-relaxed">
-              Baoding Junyang Hat Manufacturing Co., Ltd. — 12-year direct custom hat factory specializing in high-density embroidery, private label caps, and B2B volume headwear.
+              Baoding Junyang Import and Export Trade Co., Ltd. — 12-year custom hat sourcing and quality partner specializing in high-density embroidery, private label caps, and B2B volume headwear.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-10">
@@ -868,7 +868,7 @@ export default function TopManufacturersPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest text-gray-600 font-bold">
-          © {new Date().getFullYear()} Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.
+          © {new Date().getFullYear()} Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved.
         </div>
       </footer>
     </main>

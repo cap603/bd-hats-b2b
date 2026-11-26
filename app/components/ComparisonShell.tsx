@@ -262,7 +262,7 @@ export function ComparisonShell({
           <div>
             <p className="text-white font-black mb-3">BD Hats · JUNYANG</p>
             <p className="leading-relaxed">
-              Baoding Junyang Hat Manufacturing Co., Ltd. — custom hat factory since 2014. MOQ
+              Baoding Junyang Import and Export Trade Co., Ltd. — custom headwear sourcing partner since 2014. MOQ
               200 pcs · Samples in 7 days · SGS verified.
             </p>
           </div>
@@ -333,7 +333,7 @@ export function ComparisonShell({
           </div>
         </div>
         <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-gray-800 text-xs">
-          © 2026 Baoding Junyang Hat Manufacturing Co., Ltd.
+          © 2026 Baoding Junyang Import and Export Trade Co., Ltd.
         </div>
       </footer>
       <MobileStickyBar pageName="Comparison Guide" />

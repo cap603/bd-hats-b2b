@@ -88,7 +88,7 @@
       "retentionDesc": "Cotação FOB discriminada item por item (tecido, bordado, aviamentos, embalagem) em 2 horas.",
       "sgsSupplier": "Rede de Fábricas Auditadas",
       "goldSupplier": "Proteção Alibaba Trade Assurance",
-      "certifications": "Testes REACH, RoHS, OEKO-TEX e GRS por pedido · Inspeção SGS/BV disponível",
+      "certifications": "Testes REACH, OEKO-TEX e GRS por pedido · Inspeção SGS/BV disponível",
       "qcStandard": "Inspeção Peça por Peça Antes do Embarque"
     },
     "catalog": {
@@ -278,9 +278,9 @@
       "custom": "Personalização",
       "faq": "Dúvidas Frequentes"
     },
-    "getQuote": "Obter Orçamento de Fábrica",
+    "getQuote": "Obter Orçamento",
     "orderSample": "Pedir Amostra",
-    "urgencyStrip": "A capacidade produtiva para esta temporada está preenchendo rápido — garanta sua linha de produção hoje",
+    "urgencyStrip": "Fornecimento direto · MOQ 200 pçs · Orçamento escrito em 2h · Amostras em 7 dias",
     "related": "Continuar Explorando",
     "relatedTitle": "Produtos Relacionados",
     "faqHeading": "FAQ",
@@ -294,7 +294,7 @@
     "backLink": "Voltar ao Catálogo",
     "devToolsBadge": "Ferramentas para Criadores de Marcas B2B",
     "devToolsTitle": "Molde Vetorial Pronto para Produção e Análise Técnica",
-    "devToolsSub": "Acelere o lançamento da sua coleção com moldes vetoriais direto da fábrica e avaliação 3D de bordado.",
+    "devToolsSub": "Acelere o lançamento da sua coleção com moldes vetoriais e avaliação 3D de bordado.",
     "techpackTitle": "Baixar Ficha Técnica em Branco (AI / PDF)",
     "techpackDesc": "Moldes vetoriais 2D com medidas exatas de altura de copa, curvatura de aba e costura 5/6 gomos.",
     "techpackBtn": "Obter Moldes Vetoriais",
@@ -311,13 +311,13 @@
     "phonePlaceholder": "+55 (11) 90000-0000",
     "message": "Mensagem / Especificações",
     "messagePlaceholder": "Informe modelos, quantidades ou personalizações desejadas (ex.: Bordado 3D em relevo, etiquetas tecidas)...",
-    "privacyNote": "Sua solicitação é enviada diretamente ao nosso departamento comercial (admin@bdjunyang.com). Retorno ágil em 2-4 horas.",
+    "privacyNote": "Sua solicitação é enviada diretamente ao nosso departamento comercial (admin@bdjunyang.com). Orçamento detalhado em 2 horas.",
     "intentSample": "Olá Baoding Junyang! Gostaria de pedir uma amostra física antes da produção em massa. Podem me passar os detalhes?",
     "intentBulk": "Olá Baoding Junyang! Tenho interesse em produção em massa. Podem enviar um orçamento formal?",
     "intentTest": "Olá Baoding Junyang! Gostaria de fazer um pedido de teste menor. Podem informar as condições?",
     "intentTechpack": "Olá Baoding Junyang! Por favor, enviem os moldes vetoriais em branco (Tech Pack AI/PDF) e fichas de costura para nossa equipe de design. Minha marca é: ",
     "intentMockup": "Olá Baoding Junyang! Gostaria de solicitar uma simulação digital 3D gratuita e análise de bordado para nosso logo. Modelo de interesse: ",
-    "submit": "Enviar Pedido para a Fábrica",
+    "submit": "Enviar Solicitação",
     "submitting": "Transmitindo para a equipe comercial...",
     "thanks": "Solicitação Recebida com Sucesso!",
     "thanksMsg": "Suas especificações foram entregues à nossa equipe de vendas e engenharia (admin@bdjunyang.com). Analisaremos os dados e responderemos por e-mail em breve.",
@@ -326,7 +326,7 @@
     "sendAnother": "Enviar outra solicitação"
   },
   "footer": {
-    "about": "A Baoding Junyang Import & Export Trading Co., Ltd. é uma parceira de sourcing e controle de qualidade especializada em bonés de qualidade média a alta, gorros e truckers desde 2014.",
+    "about": "A Baoding Junyang Import and Export Trade Co., Ltd. é uma parceira de sourcing e controle de qualidade especializada em bonés de qualidade média a alta, gorros e truckers desde 2014.",
     "navigation": "Navegação",
     "products": "Produtos",
     "aboutLink": "Sobre Nós",
@@ -340,35 +340,35 @@
     "office": "Escritório: Baoding, Hebei, China",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "copyright": "© 2026 Baoding Junyang Import & Export Trading Co., Ltd. Todos os direitos reservados."
+    "copyright": "© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Todos os direitos reservados."
   },
   "breadcrumb": {
     "home": "Início",
-    "about": "Sobre Nossa Fábrica",
+    "about": "Sobre Nós",
     "guide": "Guia de Compra B2B",
     "materials": "Materiais e Tecidos",
     "pricing": "Preços e Envio",
     "products": "Produtos"
   },
   "meta": {
-    "homeTitle": "BD Hats | Fábrica de Bonés Premium e Atacado B2B Direto da Fábrica",
-    "homeDesc": "Bonés personalizados premium direto da fábrica. OEM/ODM desde 2014. Bordado personalizado, MOQ 200 pçs, amostras em 7 dias. Fábrica auditada pela SGS em Baoding, China.",
-    "aboutTitle": "Sobre a BD Hats | 12 Anos de Fabricação de Bonés em Baoding, China",
-    "aboutDesc": "De uma oficina de 15 pessoas a um parque fabril de 50.000m² atendendo mais de 300 marcas mundiais. Conheça a infraestrutura da Baoding Junyang desde 2014.",
-    "guideTitle": "Guia B2B de Fabricação de Bonés | Como Importar Bonés no Atacado da China",
-    "guideDesc": "Guia completo para compradores B2B: como selecionar a fábrica certa, tipos de bordado explicados, negociação de MOQ, controle de qualidade e logística.",
+    "homeTitle": "BD Hats | Parceiro de Sourcing de Bonés Personalizados B2B",
+    "homeDesc": "Bonés personalizados de média a alta qualidade com controle de qualidade peça por peça desde 2014. Bordado sob medida, MOQ 200 pçs, amostras em 7 dias, orçamento em 2h.",
+    "aboutTitle": "Sobre a BD Hats | Parceiro de Sourcing em Baoding, China",
+    "aboutDesc": "Baoding Junyang Import and Export Trade Co., Ltd. — 12 anos de experiência em sourcing e exportação de bonés, fábricas parceiras auditadas e controle de qualidade rigoroso desde 2014.",
+    "guideTitle": "Guia B2B de Sourcing de Bonés | Como Importar Bonés no Atacado da China",
+    "guideDesc": "Guia completo para compradores B2B: como selecionar o parceiro certo, tipos de bordado explicados, negociação de MOQ, controle de qualidade e logística.",
     "materialsTitle": "Guia de Tecidos para Bonés | Algodão, Lã, Poliéster e Mais | BD Hats",
     "materialsDesc": "Panorama completo de tecidos para bonés: sarja de algodão, algodão peletizado, lã, nylon e lona. Tipos de fechos e construção de painéis detalhados.",
     "pricingTitle": "Preços, MOQ e Envio de Bonés | Estrutura de Custos Atacado | BD Hats",
     "pricingDesc": "Estrutura transparente de preços para bonés: FOB vs CIF, MOQ 200 pçs, custos de frete aéreo e marítimo, taxas de amostragem e descontos progressivos."
   },
   "popup": {
-    "badge": "Direto de Fábrica · Desde 2014",
+    "badge": "Parceiro de Sourcing · Desde 2014",
     "heading": "Precisa de Bonés Personalizados para Sua Marca?",
-    "sub": "Receba um orçamento de fábrica em até 12 horas — sem compromisso, amostras físicas em 7 dias.",
+    "sub": "Receba um orçamento detalhado em até 2 horas — amostras físicas em 7 dias.",
     "whatsappBtn": "Falar no WhatsApp",
     "formBtn": "Enviar Solicitação",
-    "note": "100% direto de fábrica · Auditado SGS · 300+ marcas atendidas"
+    "note": "Fornecimento direto · Controle peça por peça · Auditado SGS"
   },
   "chat": {
     "cta": "Fale Conosco",

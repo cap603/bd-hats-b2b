@@ -37,7 +37,7 @@ const CONTENT = {
           ],
         },
         {
-          label: "Unit FOB Factory Cost (MOQ 200+)",
+          label: "Unit FOB Wholesale Cost (MOQ 200+)",
           values: [
             "$3.20 – $4.50 FOB (Highly economical; predictable raw material pricing)",
             "$5.50 – $9.20 FOB (Reflects raw wool global commodity cost and specialized spinning)",
@@ -179,7 +179,7 @@ const CONTENT = {
           ],
         },
         {
-          label: "Coste Unitario FOB Fábrica (MOQ 200+)",
+          label: "Coste Unitario FOB Mayorista (MOQ 200+)",
           values: [
             "$3.20 – $4.50 FOB (Muy económico; precio de materia prima predecible y estable)",
             "$5.50 – $9.20 FOB (Refleja el coste de la lana en el mercado mundial y el hilado técnico)",

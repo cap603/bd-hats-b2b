@@ -25,10 +25,10 @@ export default function ResourceArticlePage({
     "@type": "Article",
     headline: article.title,
     description: article.metaDesc,
-    author: { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    author: { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     publisher: {
       "@type": "Organization",
-      name: "Baoding Junyang Hat Manufacturing Co., Ltd.",
+      name: "Baoding Junyang Import and Export Trade Co., Ltd.",
       logo: { "@type": "ImageObject", url: "/images/brand/junyang-logo.webp" },
     },
     datePublished: article.published,
@@ -260,7 +260,7 @@ export default function ResourceArticlePage({
           <div className="max-w-sm">
             <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-16 w-auto object-contain mb-4" />
             <p className="text-sm mt-3 leading-relaxed">
-              Baoding Junyang Hat Manufacturing Co., Ltd. — 12-year direct custom hat factory in Baoding, China.
+              Baoding Junyang Import and Export Trade Co., Ltd. — 12-year custom hat sourcing and quality partner in Baoding, China.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-12">
@@ -284,7 +284,7 @@ export default function ResourceArticlePage({
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
-          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+          <p>© 2026 Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved.</p>
         </div>
       </footer>
     </main>

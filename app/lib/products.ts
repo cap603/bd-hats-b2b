@@ -39,8 +39,8 @@ export interface Product {
 // confirmed band declare `fobTiers: []` and show the quote-on-request state.
 export const CAP_FOB_TIERS: { qty: string; price: string }[] = [
   { qty: "200 Pcs", price: "$5.20 – $6.80 FOB" },
-  { qty: "500 Pcs", price: "$4.20 – $5.20 FOB" },
-  { qty: "1,000 Pcs", price: "$3.80 – $4.20 FOB" },
+  { qty: "500 Pcs", price: "$4.80 – $5.80 FOB" },
+  { qty: "1,000 Pcs", price: "$4.50 – $5.20 FOB" },
   { qty: "5,000+ Pcs", price: "Dedicated Quote" },
 ];
 

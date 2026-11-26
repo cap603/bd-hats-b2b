@@ -234,7 +234,7 @@ export function MobileNav() {
             <LanguageSwitcher />
           </div>
           <div className="text-[10px] text-slate-400 text-center">
-            Est. 2014 · 50,000㎡ Super Factory · MOQ 200pcs
+            Est. 2014 · Sourcing & Quality Partner · MOQ 200pcs
           </div>
         </div>
       </div>

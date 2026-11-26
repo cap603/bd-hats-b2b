@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       absolute:
         locale === "es"
           ? "Guía B2B de Gorras Personalizadas | BD Hats"
-          : "Custom Hat Manufacturing Guide for B2B Buyers | BD Hats",
+          : "Custom Hat Sourcing Guide for B2B Buyers | BD Hats",
     },
     description:
       locale === "es"

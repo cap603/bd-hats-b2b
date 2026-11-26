@@ -17,12 +17,12 @@ const CONTENT = {
       h1Highlight: "Hat Manufacturer",
       h1Post: " in China",
       subtitle: "From sketch to shipped — a full-service factory behind 300+ brands in 50+ countries since 2014. SGS verified, samples in 7 days.",
-      pills: ["5M+ Caps / Year", "100+ Embroidery Machines", "SGS · CE · REACH", "Est. 2014"]
+      pills: ["Scalable B2B Volume", "Multi-Head Embroidery", "SGS · OEKO-TEX · REACH", "Est. 2014"]
     },
-    capabilitiesTitle: "Factory Capabilities",
+    capabilitiesTitle: "Production & Sourcing Capabilities",
     capabilities: [
-      { title: "Production Capacity", desc: "50,000 sqm factory floor, 200+ skilled tailors and 100+ precision Barudan embroidery machines. Annual output exceeds 5 million caps — with dedicated production lines for snapbacks, 5-panel caps, trucker hats and beanies." },
-      { title: "Certifications & Compliance", desc: "SGS factory verification, CE product certification, and full REACH and RoHS compliance for the European market. Our quality system is documented at each production stage." },
+      { title: "Production Capacity", desc: "Coordinating audited partner factory lines with precision multi-head embroidery and in-house QC teams. Scalable capacity for volume container orders — with dedicated production lines for snapbacks, 5-panel caps, trucker hats and beanies." },
+      { title: "Certifications & Compliance", desc: "SGS facility verification and full REACH SVHC and OEKO-TEX Standard 100 compliance documentation for the international market. Our quality system is documented at each production stage." },
       { title: "OEM / ODM Service", desc: "Send us sketches, spec sheets, or a reference product and our in-house design team turns it into production-ready files. We handle embroidery digitizing, color matching, and engineering for your exact cap style." },
       { title: "Sample & Approval Process", desc: "Physical pre-production samples in 7 days. Sample fees range $50-100 including courier and are fully credited against your bulk order — so sampling a new style is low-risk for first-time partners." },
       { title: "Quality Control", desc: "Every production stage is documented with photo and video updates: raw material check, embroidery precision, stitching integrity, a final check before packing, and a packing audit before shipment." },
@@ -35,24 +35,24 @@ const CONTENT = {
       { n: "03", t: "Approve the Sample", d: "Physical pre-production sample in 7 days for your final approval." },
       { n: "04", t: "Bulk Production", d: "15-20 days production with weekly photo/video progress updates and final QC." }
     ],
-    ctaTitle: "Build Your Brand on Our Factory",
+    ctaTitle: "Build Your Brand With Our Sourcing Team",
     ctaDesc: "Tell us about your project — get a quote within 2 hours and a sample in 7 days.",
-    ctaPrimary: "Request Factory Quote",
+    ctaPrimary: "Request Written Quote",
     ctaSecondary: "Browse Full Catalog"
   },
   es: {
     hero: {
       badge: "OEM · ODM · Marca privada",
       h1Pre: "Su ",
-      h1Highlight: "fabricante de gorras OEM",
+      h1Highlight: "socio de abastecimiento de gorras OEM",
       h1Post: " en China",
-      subtitle: "Del boceto al envío — una fábrica integral detrás de más de 300 marcas en más de 50 países desde 2014. Verificados por SGS, muestras en 7 días.",
-      pills: ["5M+ gorras al año", "100+ máquinas de bordado", "SGS · CE · REACH", "Desde 2014"]
+      subtitle: "Del boceto al envío — un socio integral detrás de más de 300 marcas en más de 50 países desde 2014. Verificados por SGS, muestras en 7 días.",
+      pills: ["Capacidad Escalable", "Bordado Multicabezal", "SGS · OEKO-TEX · REACH", "Desde 2014"]
     },
-    capabilitiesTitle: "Capacidades de la fábrica",
+    capabilitiesTitle: "Capacidades de abastecimiento",
     capabilities: [
-      { title: "Capacidad de producción", desc: "50,000 m² de planta, más de 200 costureros especializados y más de 100 máquinas de bordado japonesas Barudan. La producción anual supera los 5 millones de gorras, con líneas de producción dedicadas para snapbacks, gorras de 5 paneles, gorras trucker y beanies." },
-      { title: "Certificaciones y cumplimiento", desc: "Verificación de fábrica por SGS, certificación de producto CE y pleno cumplimiento de REACH y RoHS para el mercado europeo. Nuestro sistema de calidad se documenta en cada etapa de producción." },
+      { title: "Capacidad de producción", desc: "Líneas de fabricación asociadas auditadas con bordado computarizado multicabezal y equipo propio de control de calidad. Capacidad escalable para pedidos por contenedor con líneas dedicadas para snapbacks, 5 paneles, truckers y beanies." },
+      { title: "Certificaciones y cumplimiento", desc: "Auditoría de instalaciones por SGS y pleno cumplimiento de REACH SVHC y OEKO-TEX Standard 100 para el mercado internacional. Nuestro sistema de calidad se documenta en cada etapa de producción." },
       { title: "Servicio OEM / ODM", desc: "Envíenos bocetos, fichas técnicas o un producto de referencia y nuestro equipo de diseño interno lo convierte en archivos listos para producción. Nos encargamos del digitalizado del bordado, la igualación de colores y la ingeniería de su estilo exacto de gorra." },
       { title: "Proceso de muestra y aprobación", desc: "Muestras físicas de preproducción en 7 días. Las tarifas de muestra van de $50-100, incluyen el mensajero y se acreditan por completo contra su pedido en masa, por lo que probar un nuevo estilo es de bajo riesgo para socios nuevos." },
       { title: "Control de calidad", desc: "Cada etapa de producción se documenta con fotos y videos: verificación de materia prima, precisión del bordado, integridad de las costuras, revisión final antes del empaque y auditoría de empaque antes del envío." },
@@ -65,9 +65,9 @@ const CONTENT = {
       { n: "03", t: "Apruebe la muestra", d: "Muestra física de preproducción en 7 días para su aprobación final." },
       { n: "04", t: "Producción en masa", d: "15-20 días de producción con actualizaciones semanales en foto/video y QC final." }
     ],
-    ctaTitle: "Construya su Marca Sobre Nuestra Fábrica",
+    ctaTitle: "Construya su Marca con Nuestro Equipo",
     ctaDesc: "Cuéntenos sobre su proyecto — reciba una cotización en 2 horas y una muestra en 7 días.",
-    ctaPrimary: "Solicite cotización de fábrica",
+    ctaPrimary: "Solicite cotización por escrito",
     ctaSecondary: "Ver catálogo completo"
   }
 };
@@ -79,10 +79,10 @@ export default function OemPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "OEM Hat Manufacturer in China — Private Label Hat Factory Since 2014",
-    "description": "Full-service OEM/ODM hat manufacturer: 50,000sqm factory, 100+ embroidery machines, SGS/CE/REACH certified, samples in 7 days. Serving 300+ brands worldwide.",
-    "author": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    "publisher": { "@type": "Organization", "name": "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    "headline": "OEM Headwear Sourcing Partner in China — Private Label Custom Caps Since 2014",
+    "description": "Full-service OEM/ODM headwear sourcing partner: audited partner network, multi-head embroidery, SGS/OEKO-TEX/REACH compliant, samples in 7 days. Serving 300+ brands worldwide.",
+    "author": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
+    "publisher": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "datePublished": "2026-08-25",
     "dateModified": "2026-08-25",
     "mainEntityOfPage": "https://bdjunyang.com/oem-hat-manufacturer"
@@ -226,7 +226,7 @@ export default function OemPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 items-start">
           <div className="max-w-sm">
             <img src="/images/brand/junyang-logo.webp" alt="JUNYANG" className="h-16 w-auto object-contain mb-4" />
-            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Hat Manufacturing Co., Ltd. — premium custom hat factory since 2014.</p>
+            <p className="text-sm mt-3 leading-relaxed">Baoding Junyang Import and Export Trade Co., Ltd. — headwear sourcing and quality partner since 2014.</p>
           </div>
           <div className="grid grid-cols-2 gap-12">
             <div>
@@ -256,7 +256,7 @@ export default function OemPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-900 text-center text-[10px] uppercase tracking-widest font-bold">
-          <p>© 2026 Baoding Junyang Hat Manufacturing Co., Ltd. All rights reserved.</p>
+          <p>© 2026 Baoding Junyang Import and Export Trade Co., Ltd. All rights reserved.</p>
         </div>
       </footer>
     </main>

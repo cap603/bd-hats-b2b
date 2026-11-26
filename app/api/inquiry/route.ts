@@ -148,7 +148,7 @@ export async function POST(req: NextRequest) {
         ` : ""}
 
         <div style="text-align: center; margin-top: 25px; padding-top: 15px; border-top: 1px solid #e2e8f0; font-size: 12px; color: #94a3b8;">
-          Baoding Junyang Hat Manufacturing Co., Ltd. • 官方询盘自动分发系统
+          Baoding Junyang Import and Export Trade Co., Ltd. • 官方询盘自动分发系统
         </div>
       </div>
     `;

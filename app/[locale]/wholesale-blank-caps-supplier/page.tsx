@@ -195,8 +195,8 @@ export default function BlankCapsPage() {
     headline: "Wholesale Blank Caps Supplier — Plain Hat Manufacturer China",
     description:
       "Bulk blank caps direct from the factory: 50+ stock colors, 100% cotton twill, no-logo pricing from $3.50 FOB, MOQ 200pcs, 7-day samples.",
-    author: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
-    publisher: { "@type": "Organization", name: "Baoding Junyang Hat Manufacturing Co., Ltd." },
+    author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
+    publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",
     dateModified: "2026-09-10",
     mainEntityOfPage: "https://bdjunyang.com/wholesale-blank-caps-supplier",
