@@ -81,7 +81,7 @@ const CONTENT = {
         {
           label: "Logistics",
           values: [
-            "Inland factory (Baoding, Hebei): truck to port, then sea or air; 70% of our output ships to North America and 25% to Western Europe",
+            "Inland factory (Baoding, Hebei): truck to port, then sea or air; we ship worldwide across North America, Europe, Asia Pacific and the Middle East",
             "Coastal manufacturing hubs with direct sea lanes to the US and EU",
             "Coastal manufacturing hubs with direct sea lanes to the EU and US",
           ],
@@ -264,7 +264,7 @@ const CONTENT = {
         {
           label: "Logística",
           values: [
-            "Fábrica en el interior (Baoding, Hebei): camión al puerto y luego mar o aire; el 70% de nuestra producción va a Norteamérica y el 25% a Europa Occidental",
+            "Fábrica en el interior (Baoding, Hebei): camión al puerto y luego mar o aire; enviamos a todo el mundo: Norteamérica, Europa, Asia-Pacífico y Oriente Medio",
             "Hubs costeros con rutas marítimas directas a EE. UU. y la UE",
             "Hubs costeros con rutas marítimas directas a la UE y EE. UU.",
           ],

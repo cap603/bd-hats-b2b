@@ -3,7 +3,7 @@
           "advantages": "Ventajas",
           "factory": "Nuestra Fábrica",
           "qualityControl": "Control de Calidad",
-          "products": "Gorras de Béisbol",
+          "products": "Gorras y Gorros",
           "inquiry": "Consultar",
           "about": "Nosotros",
           "guide": "Guía para Compradores",
@@ -43,7 +43,7 @@
           "pills": {
                "moq": "MOQ 200 Uds",
                "samples": "Muestras en 7 Días",
-               "market": "70% Norteamérica"
+               "market": "Envío a Todo el Mundo"
           },
           "stats": {
                "years": "12+ Años",
@@ -55,9 +55,9 @@
           "compliance": {
                "title": "Abastecimiento Directo de Fábrica",
                "certified": "MOQ 200+ uds",
-               "markets": "Mercados Principales",
-               "na": "NORTEAMÉRICA (70%)",
-               "eu": "EUROPA OCCIDENTAL (25%)",
+               "markets": "Mercados Globales",
+               "na": "NORTAMÉRICA · EUROPA",
+               "eu": "ASIA · ORIENTE MEDIO · OCÉANO",
                "a": "OEM / ODM",
                "b": "Diseños a Medida",
                "c": "Marca Privada"
@@ -72,14 +72,14 @@
                "qcStandardDesc": "Controles de calidad por etapas antes del envío.",
                "samples": "Muestras en 7 Días",
                "samplesDesc": "Entrega rápida de prototipo físico.",
-               "videoCta": "Solicitar Actualizaciones de Video",
+               "videoCta": "Contáctanos Ahora por WhatsApp",
                "videoTitle": "Ver Video de Producción (2026)",
                "videoSub": "Máquinas de bordado automatizadas y costura profesional a mano."
           },
           "trust": {
                "label": "Por Qué Compradores Globales Eligen Sourcing con Nosotros",
                "heading": "Por Qué las Marcas Eligen BD Hats",
-               "sub": "Somos el socio de sourcing y calidad detrás de programas de gorras streetwear, corporativas y lifestyle en Norteamérica y Europa.",
+               "sub": "Somos el socio de sourcing y calidad detrás de programas de gorras streetwear, corporativas y lifestyle en todo el mundo.",
                "brands": "12+",
                "brandsLabel": "Años en Comercio de Gorras",
                "brandsDesc": "Sourcing y exportación de gorras personalizadas desde 2014.",
@@ -96,7 +96,7 @@
           },
           "catalog": {
                "label": "Categorías Premium de Gorras",
-               "heading": "Nuestra Serie de Gorras de Béisbol",
+               "heading": "Nuestra Colección Premium de Gorras",
                "sub": "Elige entre nuestras gorras base de alta conversión pre-desarrolladas o envía tu propio paquete técnico para personalización completa."
           },
           "process": {

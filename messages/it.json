@@ -3,7 +3,7 @@
           "advantages": "Vantaggi",
           "factory": "La Nostra Fabbrica",
           "qualityControl": "Controllo Qualità",
-          "products": "Cappellini da Baseball",
+          "products": "Cappelli",
           "inquiry": "Richiesta Preventivo",
           "about": "Chi Siamo",
           "guide": "Guida all'Acquisto B2B",
@@ -43,7 +43,7 @@
           "pills": {
                "moq": "MOQ 200 Pezzi",
                "samples": "Campioni in 7 Giorni",
-               "market": "70% Nord America, 25% Europa Occidentale"
+               "market": "Spedizione in Tutto il Mondo"
           },
           "stats": {
                "years": "12+ Anni",
@@ -55,9 +55,9 @@
           "compliance": {
                "title": "Sourcing Diretto dalla Fabbrica",
                "certified": "MOQ 200+ pz",
-               "markets": "Mercati Principali",
-               "na": "NORD AMERICA (70%)",
-               "eu": "EUROPA OCCIDENTALE (25%)",
+               "markets": "Mercati Globali",
+               "na": "NORD AMERICA · EUROPA",
+               "eu": "ASIA · MEDIO ORIENTE · OCEANIA",
                "a": "OEM / ODM",
                "b": "Design su Misura",
                "c": "Private Label"
@@ -72,14 +72,14 @@
                "qcStandardDesc": "Ispezione accurata ad ogni fase produttiva.",
                "samples": "Campioni in 7 Giorni",
                "samplesDesc": "Spedizione rapida di prototipi fisici.",
-               "videoCta": "Richiedi Aggiornamenti Video",
+               "videoCta": "Contattaci Ora su WhatsApp",
                "videoTitle": "Guarda il Video di Produzione (2026)",
                "videoSub": "Macchine da ricamo automatizzate e cucitura artigianale professionale."
           },
           "trust": {
                "label": "Scelto da Brand Internazionali",
                "heading": "Perché i Marchi Scelgono BD Hats",
-               "sub": "Siamo il partner di sourcing e qualità dietro a collezioni streetwear, aziendali e lifestyle in Nord America ed Europa.",
+               "sub": "Siamo il partner di sourcing e qualità dietro a collezioni streetwear, aziendali e lifestyle in tutto il mondo.",
                "brands": "12+",
                "brandsLabel": "Anni nel Commercio di Cappellini",
                "brandsDesc": "Sourcing ed esportazione di cappellini personalizzati dal 2014.",

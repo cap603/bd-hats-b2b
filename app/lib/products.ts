@@ -684,38 +684,5 @@ export const HATS: Product[] = [
       { q: "Can I combine several colours in one beanie?", a: "Yes. This is a multi-colour knit, so send us the colour combination you want and we will produce a sample for approval before bulk." },
       { q: "What is the delivery time?", a: "Delivery runs 7-15 working days after payment is confirmed, depending on quantity. We confirm the exact window with your quotation." }
     ]
-  },
-  {
-    id: "polar-fleece-winter-5-panel-camp-cap",
-    name: "Polar Fleece Winter 5-Panel Camp Cap",
-    desc: "Insulating polar fleece 5-panel camper cap with flat visor, nylon webbing strapback, and moisture-wicking sweatband for cold-weather outdoor lines.",
-    fullDesc: "Engineered for winter outdoor, ski, and streetwear apparel drops. Made from ultra-soft, anti-pilling 280gsm polar fleece that locks in warmth while maintaining lightweight breathability. Features a low-profile 5-panel camper silhouette, flexible flat visor, and an adjustable nylon webbing strapback with quick-release buckle. MOQ 200 pcs per colorway.",
-    price: "$4.80 - $7.20",
-    moq: 200,
-    badge: "new",
-    category: "5-Panel Caps",
-    img: "/images/products/outdoor-performance-5-panel-cap.webp",
-    specs: {
-      material: "280gsm Anti-Pilling Polar Fleece",
-      style: "Low-Profile 5-Panel Camper Cap",
-      logo: "Woven Label / Rubber Patch / Embroidered Front",
-      closure: "Nylon Webbing Strap with Quick-Release Buckle",
-      panels: "5-Panel Flat Visor",
-      size: "58cm · Adjustable (55-61cm)",
-      colour: "Charcoal Heather, Olive Night, Deep Navy, Burnt Orange"
-    },
-    customization: {
-      title: "Our Customization Capabilities",
-      options: [
-        "High-definition damask woven labels and micro-injection rubber patches",
-        "Nylon webbing strap in matching or contrast military colorways",
-        "Thermal polar fleece crown with nylon ripstop visor contrast option",
-        "OEM/ODM custom embroidery and private label hangtags"
-      ]
-    },
-    faqs: [
-      { q: "Is the polar fleece anti-pilling treated?", a: "Yes, our polar fleece uses grade-4 anti-pilling finishing, ensuring the fabric retains its soft texture through prolonged winter use and washing." },
-      { q: "What is the MOQ for custom fleece 5-panel caps?", a: "Our standard MOQ is strictly 200 pieces per style/colorway, supporting fast turnaround for seasonal apparel drops." }
-    ]
   }
 ];

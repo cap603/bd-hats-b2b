@@ -896,7 +896,7 @@ export default function Home() {
                 onClick={() => handleWhatsApp("factory-section")}
                 className="bg-black hover:bg-gray-800 text-white font-bold py-2.5 sm:py-4 px-5 sm:px-8 rounded-full transition flex items-center justify-center gap-2 text-xs sm:text-sm uppercase tracking-wider w-full sm:w-auto"
               >
-                <Play size={14} className="sm:w-4 sm:h-4" /> {t("factory.videoCta")}
+                <MessageCircle size={14} className="sm:w-4 sm:h-4" /> {t("factory.videoCta")}
               </button>
             </div>
             {/* Visual Factory Video Player */}
@@ -990,9 +990,6 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-1.5 sm:gap-3 px-3 sm:px-6 py-1.5 sm:py-3 border border-gray-200 rounded-full">
               <span className="text-[10px] sm:text-sm font-bold">{t("trust.certifications")}</span>
-            </div>
-            <div className="flex items-center gap-1.5 sm:gap-3 px-3 sm:px-6 py-1.5 sm:py-3 border border-gray-200 rounded-full">
-              <span className="text-[10px] sm:text-sm font-bold">{t("trust.qcStandard")}</span>
             </div>
           </div>
         </div>

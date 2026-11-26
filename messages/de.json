@@ -3,7 +3,7 @@
     "advantages": "Vorteile",
     "factory": "Unsere Fabrik",
     "qualityControl": "Qualitätskontrolle",
-    "products": "Baseballkappen",
+    "products": "Kopfbedeckungen",
     "inquiry": "Anfrage",
     "about": "Über uns",
     "guide": "B2B-Einkaufsführer",
@@ -43,7 +43,7 @@
     "pills": {
       "moq": "MOQ 200 Stück",
       "samples": "Muster in 7 Tagen",
-      "market": "70 % Nordamerika, 25 % Westeuropa"
+      "market": "Weltweiter Versand"
     },
     "stats": {
       "years": "12+ Jahre",
@@ -55,9 +55,9 @@
     "compliance": {
       "title": "Sourcing Direkt ab Werk",
       "certified": "MOQ 200+ Stk.",
-      "markets": "Hauptmärkte",
-      "na": "NORDAMERIKA (70 %)",
-      "eu": "WESTEUROPA (25 %)",
+      "markets": "Globale Märkte",
+      "na": "NORDAMERIKA · EUROPA",
+      "eu": "ASIEN · NAHER OSTEN · OZEANIEN",
       "a": "OEM / ODM",
       "b": "Individuelle Designs",
       "c": "Private Label"
@@ -72,14 +72,14 @@
       "qcStandardDesc": "Prüfung auf jeder Produktionsstufe.",
       "samples": "Muster in 7 Tagen",
       "samplesDesc": "Schnelle Lieferung physischer Prototypen.",
-      "videoCta": "Video-Updates anfordern",
+      "videoCta": "Jetzt per WhatsApp kontaktieren",
       "videoTitle": "Produktionsvideo ansehen (2026)",
       "videoSub": "Automatisierte Mehrkopf-Stickmaschinen & professionelle Handarbeit."
     },
     "trust": {
       "label": "Warum internationale Marken uns vertrauen",
       "heading": "Warum Marken auf BD Hats vertrauen",
-      "sub": "Wir sind der Sourcing- und Qualitätspartner hinter Streetwear-, Corporate- und Lifestyle-Kappenprogrammen in Nordamerika und Europa.",
+      "sub": "Wir sind der Sourcing- und Qualitätspartner hinter Streetwear-, Corporate- und Lifestyle-Kappenprogrammen weltweit.",
       "brands": "12+",
       "brandsLabel": "Jahre im Kappenhandel",
       "brandsDesc": "Sourcing und Export maßgefertigter Kappen seit 2014.",

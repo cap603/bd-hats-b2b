@@ -58,7 +58,7 @@ export const DEFAULT_FAQS: Record<"en" | "es", Faq[]> = {
     { q: "Do you support OEM and ODM orders?", a: "Yes. For OEM you supply the tech pack or a reference cap and we manufacture to spec. For ODM our team develops the construction, digitizing and bill of materials with you from a sketch or mood board, and you approve every stage before bulk." },
     { q: "What payment methods do you accept?", a: "Alibaba Trade Assurance orders carry platform payment protection and are our recommended route for first-time buyers. T/T through verified business accounts is available for established programs. We never request transfers to personal accounts." },
     { q: "How is quality controlled?", a: "Caps are inspected for embroidery alignment, stitch density, stitching integrity, measurements and finish before packing. Milestone photos and video are shared at cutting, embroidery, assembly and packing, and production records are kept for traceability." },
-    { q: "Which markets do you ship to?", a: "Around 70% of our output ships to North America and 25% to Western Europe, with the remainder across Oceania and the Middle East. Third-party testing and inspection can be arranged per order for your market's requirements." },
+    { q: "Which markets do you ship to?", a: "We ship worldwide — our buyers span North America, Europe, Asia Pacific, the Middle East and Oceania. Third-party testing and inspection can be arranged per order for your market's requirements." },
   ],
   es: [
     { q: "¿Cuál es el MOQ para gorras personalizadas?", a: "Nuestra cantidad mínima de pedido es de 200 piezas por estilo y color. Los programas multicolor se reparten equitativamente entre colores sin recargos, y los programas de gorras en blanco para compradores habituales pueden comenzar aún más abajo." },
@@ -66,7 +66,7 @@ export const DEFAULT_FAQS: Record<"en" | "es", Faq[]> = {
     { q: "¿Aceptan pedidos OEM y ODM?", a: "Sí. Para OEM tú suministras el tech pack o una gorra de referencia y fabricamos según la especificación. Para ODM nuestro equipo desarrolla la construcción, la digitalización y el listado de materiales contigo a partir de un boceto o mood board, y apruebas cada etapa antes del pedido masivo." },
     { q: "¿Qué métodos de pago aceptan?", a: "Los pedidos con Alibaba Trade Assurance cuentan con protección de pago de la plataforma y son nuestra vía recomendada para compradores primerizos. El T/T mediante cuentas empresarias verificadas está disponible para programas consolidados. Nunca solicitamos transferencias a cuentas personales." },
     { q: "¿Cómo controlan la calidad?", a: "Las gorras se inspeccionan por alineación del bordado, densidad de puntadas, integridad de costuras, medidas y acabado antes de embalar. Se comparten fotos y vídeo en el corte, el bordado, el ensamble y el embalaje, y se conservan registros de producción para trazabilidad." },
-    { q: "¿A qué mercados envían?", a: "Alrededor del 70% de nuestra producción viaja a Norteamérica y el 25% a Europa occidental, con el resto hacia Oceanía y Oriente Medio. Las pruebas e inspecciones de terceros se gestionan por pedido según los requisitos de tu mercado." },
+    { q: "¿A qué mercados envían?", a: "Enviamos a todo el mundo: nuestros compradores están en Norteamérica, Europa, Asia-Pacífico, Oriente Medio y Oceanía. Las pruebas e inspecciones de terceros se gestionan por pedido según los requisitos de tu mercado." },
   ],
 };
 

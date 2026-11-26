@@ -280,7 +280,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "1. US Customs Classification: HTS Code 6505.00",
           paragraphs: [
             "When importing custom headwear into the United States, your commercial invoice, packing list, and bill of lading must declare the correct Harmonized Tariff Schedule (HTS) code. Chapter 65 covers hats, headgear, and parts thereof.",
-            "Subheading 6505.00 governs hats made from fabric piece goods, lace, felt, or knitted textiles. Base duties vary according to whether the predominant material is cotton, synthetic fibers (polyester/acrylic), or wool. As an experienced exporter with North America accounting for 70% of our shipments, Baoding Junyang provides correctly classified commercial paperwork with each shipment."
+            "Subheading 6505.00 governs hats made from fabric piece goods, lace, felt, or knitted textiles. Base duties vary according to whether the predominant material is cotton, synthetic fibers (polyester/acrylic), or wool. As an experienced exporter shipping worldwide, Baoding Junyang provides correctly classified commercial paperwork with each shipment."
           ]
         },
         {
@@ -717,7 +717,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
           heading: "1. Clasificación Arancelaria en EEUU: Código HTS 6505.00",
           paragraphs: [
             "Al importar gorras a Estados Unidos, su factura comercial, lista de empaque y conocimiento de embarque deben declarar el código HTS correcto. El capítulo 65 abarca sombreros, demás tocados y sus partes.",
-            "La subpartida 6505.00 comprende sombreros confeccionados con tejidos en pieza, fieltro o géneros de punto. Como exportador habitual que envía el 70% de su producción a Norteamérica, Baoding Junyang emite documentación comercial clasificada reglamentariamente con cada despacho."
+            "La subpartida 6505.00 comprende sombreros confeccionados con tejidos en pieza, fieltro o géneros de punto. Como exportador habitual con envíos a todo el mundo, Baoding Junyang emite documentación comercial clasificada reglamentariamente con cada despacho."
           ]
         },
         {

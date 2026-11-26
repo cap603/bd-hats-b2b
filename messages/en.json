@@ -3,7 +3,7 @@
           "advantages": "Advantages",
           "factory": "Sourcing & Quality",
           "qualityControl": "Quality Control",
-          "products": "Baseball Caps",
+          "products": "Headwear",
           "inquiry": "Inquiry",
           "about": "About",
           "guide": "B2B Buyer's Guide",
@@ -43,7 +43,7 @@
           "pills": {
                "moq": "MOQ 200 Pcs",
                "samples": "7-Day Samples",
-               "market": "70% North America"
+               "market": "Worldwide Shipping"
           },
           "stats": {
                "years": "12+ Years",
@@ -55,9 +55,9 @@
           "compliance": {
                "title": "Factory-Direct Sourcing",
                "certified": "MOQ 200+ Pcs",
-               "markets": "Main Markets",
-               "na": "NORTH AMERICA (70%)",
-               "eu": "WESTERN EUROPE (25%)",
+               "markets": "Global Markets",
+               "na": "NORTH AMERICA · EUROPE",
+               "eu": "ASIA · MIDDLE EAST · OCEANIA",
                "a": "OEM / ODM",
                "b": "Custom Designs",
                "c": "Private Label"
@@ -72,14 +72,14 @@
                "qcStandardDesc": "Multi-stage quality checks before shipment.",
                "samples": "7-Day Samples",
                "samplesDesc": "Fast physical prototype delivery.",
-               "videoCta": "Request Production Video Updates",
+               "videoCta": "Contact Us Now on WhatsApp",
                "videoTitle": "Watch Production Reel (2026)",
                "videoSub": "Multi-head computer embroidery machines & professional hand-sewing."
           },
           "trust": {
                "label": "Why Global Brands Source With Us",
                "heading": "Why Brands Choose BD Hats",
-               "sub": "We are the sourcing and quality partner behind streetwear, corporate, and lifestyle headwear programs in North America and Europe.",
+               "sub": "We are the sourcing and quality partner behind streetwear, corporate, and lifestyle headwear programs worldwide.",
                "brands": "12+",
                "brandsLabel": "Years in Headwear Trade",
                "brandsDesc": "Sourcing and exporting custom hats since 2014.",
@@ -96,8 +96,8 @@
           },
           "catalog": {
                "label": "Premium Hat Categories",
-               "heading": "Our Baseball Cap Series",
-               "sub": "Choose from our pre-developed high-converting base caps or send your own technical package for full customization."
+               "heading": "Our Premium Hat Collection",
+               "sub": "Choose from our pre-developed best-selling hat styles or send your own technical package for full customization."
           },
           "process": {
                "label": "Step-by-step custom build",

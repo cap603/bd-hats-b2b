@@ -3,7 +3,7 @@
     "advantages": "Vantagens",
     "factory": "Nossa Fábrica",
     "qualityControl": "Controle de Qualidade",
-    "products": "Bonés de Beisebol",
+    "products": "Chapéus & Bonés",
     "inquiry": "Solicitar Orçamento",
     "about": "Sobre Nós",
     "guide": "Guia de Compra B2B",
@@ -43,7 +43,7 @@
     "pills": {
       "moq": "MOQ 200 Peças",
       "samples": "Amostras em 7 Dias",
-      "market": "70% América do Norte, 25% Europa Ocidental"
+      "market": "Envio para Todo o Mundo"
     },
     "stats": {
       "years": "12+ Anos",
@@ -55,9 +55,9 @@
     "compliance": {
       "title": "Sourcing Direto da Fábrica",
       "certified": "MOQ 200+ pçs",
-      "markets": "Mercados Principais",
-      "na": "AMÉRICA DO NORTE (70%)",
-      "eu": "EUROPA OCIDENTAL (25%)",
+      "markets": "Mercados Globais",
+      "na": "AMÉRICA DO NORTE · EUROPA",
+      "eu": "ÁSIA · ORIENTE MÉDIO · OCEANIA",
       "a": "OEM / ODM",
       "b": "Designs Personalizados",
       "c": "Marca Própria"
@@ -72,14 +72,14 @@
       "qcStandardDesc": "Inspecionado em cada etapa produtiva.",
       "samples": "Amostras em 7 Dias",
       "samplesDesc": "Envio rápido de protótipos físicos.",
-      "videoCta": "Solicitar Acompanhamento em Vídeo",
+      "videoCta": "Fale Conosco Agora no WhatsApp",
       "videoTitle": "Assistir Vídeo de Produção (2026)",
       "videoSub": "Máquinas de bordado automatizadas e costura artesanal profissional."
     },
     "trust": {
       "label": "Por Que Grandes Marcas Escolhem Sourcing Conosco",
       "heading": "Por Que Grandes Marcas Escolhem a BD Hats",
-      "sub": "Somos o parceiro de sourcing e qualidade por trás de marcas de streetwear, corporativas e lifestyle na América do Norte e Europa.",
+      "sub": "Somos o parceiro de sourcing e qualidade por trás de marcas de streetwear, corporativas e lifestyle em todo o mundo.",
       "brands": "12+",
       "brandsLabel": "Anos no Comércio de Bonés",
       "brandsDesc": "Sourcing e exportação de bonés sob medida desde 2014.",

@@ -201,7 +201,7 @@ const CONTENT = {
         { k: "15–20 days", v: "Bulk production after sample approval" },
         { k: "In-House", v: "Quality control at each stage" },
       ],
-      note: "Baoding Junyang has supplied custom caps since 2014, coordinating selected partner lines with precision multi-head embroidery and in-house QC teams, with 70% of shipments sent to North America.",
+      note: "Baoding Junyang has supplied custom caps since 2014, coordinating selected partner lines with precision multi-head embroidery and in-house QC teams, shipping worldwide across North America, Europe, Asia Pacific and the Middle East.",
     },
     faq: {
       heading: "Cotton twill, brushed cotton and canvas FAQ",
@@ -426,7 +426,7 @@ const CONTENT = {
         { k: "15–20 días", v: "Producción en masa tras aprobar muestra" },
         { k: "Interno", v: "Control de calidad en cada etapa" },
       ],
-      note: "Baoding Junyang suministra gorras personalizadas desde 2014, coordinando líneas de fabricación seleccionadas con bordado multicabezal de precisión y equipo propio de control de calidad; el 70% de los envíos se destina a Norteamérica.",
+      note: "Baoding Junyang suministra gorras personalizadas desde 2014, coordinando líneas de fabricación seleccionadas con bordado multicabezal de precisión y equipo propio de control de calidad; envíos a todo el mundo: Norteamérica, Europa, Asia-Pacífico y Oriente Medio.",
     },
     faq: {
       heading: "Preguntas frecuentes: sarga de algodón, algodón cepillado y canvas",

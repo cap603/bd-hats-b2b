@@ -3,7 +3,7 @@
     "advantages": "Avantages",
     "factory": "Notre Usine",
     "qualityControl": "Contrôle Qualité",
-    "products": "Casquettes de Baseball",
+    "products": "Chapeaux & Casquettes",
     "inquiry": "Demande de Devis",
     "about": "À Propos",
     "guide": "Guide d'Achat B2B",
@@ -43,7 +43,7 @@
     "pills": {
       "moq": "MOQ 200 Pièces",
       "samples": "Échantillons en 7 Jours",
-      "market": "70 % Amérique du Nord, 25 % Europe de l'Ouest"
+      "market": "Livraison Mondiale"
     },
     "stats": {
       "years": "12+ Ans",
@@ -55,9 +55,9 @@
     "compliance": {
       "title": "Sourcing Direct Usine",
       "certified": "MOQ 200+ pcs",
-      "markets": "Marchés Principaux",
-      "na": "AMÉRIQUE DU NORD (70 %)",
-      "eu": "EUROPE DE L'OUEST (25 %)",
+      "markets": "Marchés Mondiaux",
+      "na": "AMÉRIQUE DU NORD · EUROPE",
+      "eu": "ASIE · MOYEN-ORIENT · OCÉANIE",
       "a": "OEM / ODM",
       "b": "Designs Sur-Mesure",
       "c": "Marque Privée"
@@ -72,14 +72,14 @@
       "qcStandardDesc": "Contrôle rigoureux à chaque phase de production.",
       "samples": "Échantillons en 7 Jours",
       "samplesDesc": "Expédition rapide de prototypes physiques.",
-      "videoCta": "Demander un Suivi Vidéo",
+      "videoCta": "Contactez-nous sur WhatsApp",
       "videoTitle": "Voir la Vidéo de Production (2026)",
       "videoSub": "Brodeuses multi-têtes et assemblage professionnel à la main."
     },
     "trust": {
       "label": "Reconnu par les Marques Internationales",
       "heading": "Pourquoi les Marques Choisissent BD Hats",
-      "sub": "Nous sommes le partenaire de sourcing et de qualité derrière des programmes streetwear, corporate et lifestyle en Amérique du Nord et en Europe.",
+      "sub": "Nous sommes le partenaire de sourcing et de qualité derrière des programmes streetwear, corporate et lifestyle à travers le monde.",
       "brands": "12+",
       "brandsLabel": "Années dans le Commerce de Couvre-Chefs",
       "brandsDesc": "Sourcing et export de casquettes sur-mesure depuis 2014.",
