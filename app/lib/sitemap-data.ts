@@ -54,6 +54,8 @@ export const CONTENT_UPDATED: Record<string, string> = {
   "/es/blog/safe-sourcing-trade-assurance": "2026-11-26",
   "/en/resources/safe-sourcing-trade-assurance": "2026-11-26",
   "/es/resources/safe-sourcing-trade-assurance": "2026-11-26",
+  "/en/blog/hat-master-carton-specs-20gp-40hq-freight": "2026-11-27",
+  "/es/blog/hat-master-carton-specs-20gp-40hq-freight": "2026-11-27",
 };
 
 const CORE_PAGES: Array<{
@@ -96,6 +98,7 @@ const CORE_PAGES: Array<{
   { path: "/blog/import-hats-us-compliance", priority: 0.85, freq: "monthly" },
   { path: "/blog/safe-sourcing-trade-assurance", priority: 0.85, freq: "monthly" },
   { path: "/blog/puff-foam-vs-silicone-heat-transfer-trucker-hats", priority: 0.85, freq: "monthly" },
+  { path: "/blog/hat-master-carton-specs-20gp-40hq-freight", priority: 0.85, freq: "monthly" },
   { path: "/resources", priority: 0.9, freq: "weekly" },
   { path: "/resources/hat-sample-approval-guide", priority: 0.85, freq: "monthly" },
   { path: "/resources/vet-hat-manufacturer-checklist", priority: 0.85, freq: "monthly" },

@@ -462,10 +462,101 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       interlinks: [
         { href: "/compare/flat-embroidery-vs-3d-puff", label: "Flat vs 3D Puff Embroidery", desc: "Technical stitch density parameters and stroke width limits." },
         { href: "/custom-trucker-hats", label: "Custom Trucker Hats Manufacturer", desc: "Explore 5-panel foam crowns and breathable mesh back options." },
-        { href: "/guide/custom-hat-logo-size-placement-guide", label: "Hat Logo Size & Placement Guide", desc: "Front panel maximum height and width limits for trucker caps." }
-      ]
-    }
-  },
+         { href: "/guide/custom-hat-logo-size-placement-guide", label: "Hat Logo Size & Placement Guide", desc: "Front panel maximum height and width limits for trucker caps." }
+       ]
+     },
+     "hat-master-carton-specs-20gp-40hq-freight": {
+       slug: "hat-master-carton-specs-20gp-40hq-freight",
+       category: "Compliance & Logistics",
+       readTime: "9 min read",
+       published: "2026-11-27",
+       updated: "2026-11-27",
+       heroBadge: "Ocean Freight Engineering · Carton & Loading Spec",
+       title: "Custom Hat Master Carton Specs: 20GP vs 40HQ Loading",
+       subtitle:
+         "The carton geometry behind custom headwear freight: 600×450×400 mm, 100 caps, 12 kg gross, 0.108 CBM. Tier-by-tier floor-loading math for 20GP and 40HQ containers, and why hats always cube out.",
+       metaDesc:
+         "Master carton specs for custom hats: 600×450×400 mm, 100 pcs, 12 kg gross, 0.108 CBM. Exact 20GP vs 40HQ loading math and per-cap freight impact.",
+       takeawaysTitle: "Freight Loading Benchmarks",
+       takeaways: [
+         "A 100-cap master carton occupies 0.108 CBM and weighs 12.0 kg — headwear cubes out at every volume tier and never reaches a container payload ceiling.",
+         "A 20GP floor-loads 260–280 cartons (26,000–28,000 caps) in five tiers; a 40HQ takes 630–680 cartons (63,000–68,000 caps) in six, at 52 and 104 cartons per tier.",
+         "Palletising the same carton cuts the load roughly in half: about 128 cartons on eight pallets instead of 260 floor-loaded in a 20GP.",
+         "Air freight bills the 0.108 CBM carton at 18.0 kg volumetric against 12.0 kg actual — every carton you fly pays a 50% volume penalty before the rate applies.",
+         "Our standard export packing spec holds outer dims to ±5 mm and gross weight to ±0.3 kg, because a 10 mm carton drift silently deletes a column per tier."
+       ],
+       tableTitle: "Custom Headwear Carton & Container Loading Parameters",
+       tableHead: ["Freight & Packing Parameter", "20GP Container", "40HQ High-Cube", "Basis / Note"],
+       tableRows: [
+         ["Internal Dimensions", "5,900 × 2,350 × 2,390 mm", "12,030 × 2,350 × 2,690 mm", "Nominal, before stowage loss"],
+         ["Door Opening (W × H)", "2,340 × 2,280 mm", "2,340 × 2,580 mm", "Constrains pass-through, not carton size"],
+         ["Usable Cargo Volume", "~28 CBM of 33.2 nominal", "~68 CBM of 76.3 nominal", "84–89% stowage efficiency, floor-loaded"],
+         ["Master Carton (outer)", "600 × 450 × 400 mm / 0.108 CBM", "600 × 450 × 400 mm / 0.108 CBM", "5-ply double-wall, ±5 mm tolerance"],
+         ["Caps per Carton", "100 pcs (4 inner × 25)", "100 pcs (4 inner × 25)", "Individual polybag + kraft crown support"],
+         ["Gross Weight per Carton", "12.0 kg ± 0.3", "12.0 kg ± 0.3", "11.2 kg product + 0.5 kg inners + 0.3 kg board"],
+         ["Cartons per Tier", "52 (mixed orientation)", "104 (mixed orientation)", "3 columns × 450 mm + 1 × 600 mm across 2,350 mm"],
+         ["Tiers / Cartons Loaded", "5 tiers / 260 – 280", "6 tiers / 630 – 680", "400 mm carton height; header space reused"],
+         ["Total Caps Loaded", "26,000 – 28,000", "63,000 – 68,000", "At 100 pcs per carton"],
+         ["Knit Beanie Equivalent", "52,000 – 56,000", "126,000 – 136,000", "200 pcs per carton at ~14 kg gross"],
+         ["Payload Ceiling", "~28,200 kg", "~26,500 kg", "Never the binding constraint for headwear"],
+         ["Palletised Load", "~128 cartons (8 pallets)", "~320 cartons (20 pallets)", "1,200 × 1,000 mm pallet, 16 cartons, single tier"]
+       ],
+       sections: [
+         {
+           heading: "1. Why Headwear Cubes Out: Volume Sets the Bill, Not Weight",
+           paragraphs: [
+             "A hundred finished caps in our standard export carton weigh about 12 kg and occupy 0.108 CBM. That ratio — roughly 111 kg per cubic metre — sits far below every freight break point, and it is the single fact that governs headwear logistics. Your caps will never approach a container payload ceiling; they run out of cubic metres first, on every order, on every lane.",
+             "Ocean LCL is billed on a chargeable weight of 1,000 kg per CBM. A 12 kg carton at 0.108 CBM therefore bills as 108 kg — nine times its physical weight. Air freight is worse: at the industry volumetric divisor of 167 kg per CBM, the same carton bills at 18.0 kg volumetric against 12.0 kg actual, a 50% penalty applied before the rate is even quoted.",
+             "The practical consequence is that freight optimisation in headwear is a packing-spec discipline, not a purchasing one. Shaving 40 grams off a cap changes nothing; shaving 8 mm off the carton height changes the load count. When our sourcing team takes over a repeat programme, the first document we ask for is the packing spec — not the unit price."
+           ]
+         },
+         {
+           heading: "2. Anatomy of the 600 × 450 × 400 mm Export Carton",
+           paragraphs: [
+             "Our standard export packing spec, executed at our Baoding QC and export hub, uses a 5-ply double-wall corrugated master carton of 600 × 450 × 400 mm outer and 585 × 435 × 385 mm internal usable, held to ±5 mm on the outer dimensions so that container plans computed eight weeks earlier still hold at stuffing. Board grade carries an edge crush test of at least 32 lb/in and a burst strength of at least 200 psi — the floor we accept for a five-tier stack.",
+             "Inside, caps travel in individual polybags, grouped into four inner boxes of 25 pieces, each inner box carrying a die-cut kraft crown support so the front panel does not flatten under its own stack. Gross weight is 12.0 kg ± 0.3: roughly 11.2 kg of product at a 112 g average per cap, 0.5 kg of inner boxes, 0.3 kg of master board. Cartons are sealed with an H-pattern tape run plus two polypropylene straps and marked with shipping marks, style-colour-size ratio breakdown, N.W./G.W., CBM and country of origin.",
+             "Two constraints explain those numbers. The first is manual handling: a 12 kg carton is a one-person lift at every port and 3PL touchpoint, and staying under 15 kg avoids the two-person handling surcharge some warehouses levy. The second is compression: five tiers at 12 kg puts 60 kg on the bottom carton for the full 30-day ocean leg, which a 5-ply board with crown supports absorbs comfortably. Push the carton to 20 kg and you are limited to four tiers — losing a fifth of your floor before a single cap is loaded."
+           ]
+         },
+         {
+           heading: "3. 20GP vs 40HQ: The Tier-by-Tier Loading Math",
+           paragraphs: [
+             "A 20GP measures 5,900 × 2,350 × 2,390 mm internally with a 2,340 × 2,280 mm door; a 40HQ measures 12,030 × 2,350 × 2,690 mm with a 2,340 × 2,580 mm door. Nominal volumes are 33.2 and 76.3 CBM, but floor loading never reaches nominal: with 400 mm cartons stacked five high in the 20GP and six high in the 40HQ, usable volume lands near 28 and 68 CBM.",
+             "The footprint is where the count is won. Turning the 450 mm face against the 2,350 mm width fits five columns at 2,250 mm, but mixing orientations fits more: three columns at 450 mm plus one at 600 mm occupies 1,950 mm and leaves 400 mm of dunnage space. Thirteen rows of 450 mm fit the 5,900 mm floor length, giving 52 cartons per tier — 260 cartons, or 26,000 caps. In the 40HQ the same cross-section repeats over 26 rows for 104 cartons per tier and 624 cartons at six tiers; reclaiming the 290 mm of header space and re-orienting the last two rows takes practical loads to 630–680 cartons, or 63,000–68,000 caps.",
+             "Weight never binds. A fully loaded 40HQ of 680 cartons comes to 8.2 tonnes against a payload ceiling near 26.5 tonnes. What does bind is palletisation: the same carton on a 1,200 × 1,000 mm pallet fits four per layer and sixteen per single-tier pallet, so the 20GP that floor-loads 260 cartons carries only about 128 on eight pallets. Pallets are a receiving-dock requirement, not a freight saving — if your 3PL cannot break bulk, budget for roughly half the carton count and price it into the landed cost before you compare suppliers."
+           ]
+         },
+         {
+           heading: "4. Packing Controls We Enforce Before the Container Is Sealed",
+           paragraphs: [
+             "The packing spec is issued as a controlled document with the purchase order, and the vetted partner factory packs to that document rather than to habit. Our in-house QC team verifies it at the four inspection nodes we run on every order: pre-production, in-line, pre-shipment and container stuffing. At pre-shipment we measure ten percent of cartons against the spec, spot-weigh ten percent within ±0.3 kg, count pieces against the packing list at 100%, and open cartons to confirm crown supports and polybag integrity after 48 hours under stack.",
+             "Two failure modes account for most carton-related claims we see on arrival. The first is dimensional drift: a supplier who quietly moves to a 610 mm carton loses a full column per tier, and your 260-carton plan silently becomes 240. The second is humidity: cartons packed at 75% relative humidity in a southern Chinese summer arrive with softened board and crushed crowns after 30 days at sea. We specify 5 g of silica per carton and 1 kg desiccant bags in the container on tropical lanes, and we photograph every seal number at stuffing so the record survives the voyage.",
+             "Material declarations travel on the same paperwork discipline: OEKO-TEX Standard 100 for shell fabric and sweatband, REACH SVHC declarations for EU-bound orders, GRS transaction certificates where recycled polyester is claimed, and ISO 105 colourfastness reports where dye-lot consistency matters. Testing is arranged per order with accredited laboratories, and the commercial invoice, packing list with dimensions and CBM, and certificate of origin are issued so classification at your port is straightforward. Accurate declarations in, predictable clearance out."
+           ]
+         }
+       ],
+       faqs: [
+         {
+           q: "How many custom hats fit in a 20GP container?",
+           a: "At our standard 100-piece carton, a 20GP floor-loads 260 to 280 master cartons, which is 26,000 to 28,000 finished caps. Knit beanies pack at 200 pieces per carton, so the same container carries 52,000 to 56,000 beanies. These figures assume floor loading in five tiers; a palletised load drops to roughly 128 cartons on eight pallets."
+         },
+         {
+           q: "Can a smaller carton reduce my ocean freight?",
+           a: "Yes, provided it stays inside the manual handling limit. A low-crown 5-panel programme compresses to 600 × 450 × 370 mm at 10.3 kg gross, which adds a sixth tier inside a 20GP and lifts the load from 260 to 312 cartons — a 20% gain in caps per container. The limit is 15 kg per carton: beyond that you lose a tier to handling and the saving reverses."
+         },
+         {
+           q: "What is the CBM of a single cap, and why does it matter for LCL?",
+           a: "One cap occupies 0.00108 CBM at 100 pieces per 0.108 CBM carton. Because LCL is billed at 1,000 kg per CBM, a 12 kg carton bills as 108 kg chargeable. Below roughly 25,000 pieces, compare the LCL per-CBM rate against a full 20GP before deciding: consolidation is convenient, but you pay for empty space at the same rate as for cargo."
+         }
+       ],
+       interlinks: [
+         { href: "/tools/carton-calculator", label: "Export Carton & CBM Calculator", desc: "Run your own quantity, carton count and container recommendation." },
+         { href: "/custom-trucker-hats", label: "Custom Trucker Hats Manufacturer", desc: "Mesh-back 5-panel programmes and how their lower crown packs denser." },
+         { href: "/wholesale-snapbacks", label: "Wholesale Snapbacks", desc: "Structured 6-panel caps — the carton reference used in this loading plan." },
+         { href: "/guide/importing-custom-hats-from-china", label: "Importing Custom Hats from China", desc: "Incoterms, HS 6505.00 classification and clearance documentation." }
+       ]
+     }
+   },
   es: {
     "hat-sample-approval-guide": {
       slug: "hat-sample-approval-guide",
@@ -899,8 +990,99 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       interlinks: [
         { href: "/compare/flat-embroidery-vs-3d-puff", label: "Bordado Plano vs 3D Puff", desc: "Parámetros técnicos de densidad de puntada y límites de grosor." },
         { href: "/custom-trucker-hats", label: "Fabricante de Gorras Trucker", desc: "Coronas de espuma de 5 paneles y opciones de malla transpirable." },
-        { href: "/guide/custom-hat-logo-size-placement-guide", label: "Guía de Tamaño y Ubicación de Logo", desc: "Dimensiones máximas de altura y anchura en paneles frontales." }
-      ]
-    }
-  }
-};
+         { href: "/guide/custom-hat-logo-size-placement-guide", label: "Guía de Tamaño y Ubicación de Logo", desc: "Dimensiones máximas de altura y anchura en paneles frontales." }
+       ]
+     },
+     "hat-master-carton-specs-20gp-40hq-freight": {
+       slug: "hat-master-carton-specs-20gp-40hq-freight",
+       category: "Compliance & Logistics",
+       readTime: "9 min de lectura",
+       published: "2026-11-27",
+       updated: "2026-11-27",
+       heroBadge: "Ingeniería de Flete Marítimo · Especificación de Caja y Carga",
+       title: "Caja Máster para Gorras: Carga en 20GP vs 40HQ",
+       subtitle:
+         "La geometría de embalaje detrás del flete de gorras personalizadas: 600×450×400 mm, 100 unidades, 12 kg brutos, 0,108 CBM. Cálculo de carga capa por capa en contenedores 20GP y 40HQ, y por qué la gorra siempre cubica.",
+       metaDesc:
+         "Caja máster para gorras: 600×450×400 mm, 100 uds, 12 kg, 0,108 CBM. Cálculo de carga 20GP vs 40HQ y su impacto en el flete por gorra.",
+       takeawaysTitle: "Referencias de Carga y Flete",
+       takeaways: [
+         "Una caja máster de 100 gorras ocupa 0,108 CBM y pesa 12,0 kg: la gorra cubica en todos los tramos de volumen y nunca alcanza el límite de carga útil del contenedor.",
+         "Un 20GP carga 260–280 cajas en cinco capas (26.000–28.000 gorras); un 40HQ admite 630–680 cajas en seis capas (63.000–68.000 gorras), con 52 y 104 cajas por capa.",
+         "Paletizar la misma caja reduce la carga a la mitad: unas 128 cajas en ocho palés frente a 260 cargadas a piso en un 20GP.",
+         "El flete aéreo factura la caja de 0,108 CBM como 18,0 kg volumétricos frente a 12,0 kg reales: cada caja volada paga un 50% de penalización por volumen.",
+         "Nuestra especificación estándar de exportación mantiene dimensiones exteriores a ±5 mm y peso bruto a ±0,3 kg, porque una desviación de 10 mm elimina una columna por capa."
+       ],
+       tableTitle: "Parámetros de Embalaje y Carga de Gorras Personalizadas",
+       tableHead: ["Parámetro de Flete y Embalaje", "Contenedor 20GP", "40HQ High-Cube", "Base / Nota"],
+       tableRows: [
+         ["Dimensiones Interiores", "5.900 × 2.350 × 2.390 mm", "12.030 × 2.350 × 2.690 mm", "Nominales, antes de pérdida de estiba"],
+         ["Abertura de Puerta (An × Al)", "2.340 × 2.280 mm", "2.340 × 2.580 mm", "Limita el paso, no el tamaño de caja"],
+         ["Volumen Útil de Carga", "~28 CBM de 33,2 nominales", "~68 CBM de 76,3 nominales", "84–89% de eficiencia de estiba a piso"],
+         ["Caja Máster (exterior)", "600 × 450 × 400 mm / 0,108 CBM", "600 × 450 × 400 mm / 0,108 CBM", "Corrugado 5 capas, tolerancia ±5 mm"],
+         ["Gorras por Caja", "100 uds (4 interiores × 25)", "100 uds (4 interiores × 25)", "Polibolsa individual + soporte de corona"],
+         ["Peso Bruto por Caja", "12,0 kg ± 0,3", "12,0 kg ± 0,3", "11,2 kg producto + 0,5 kg interiores + 0,3 kg cartón"],
+         ["Cajas por Capa", "52 (orientación mixta)", "104 (orientación mixta)", "3 columnas × 450 mm + 1 × 600 mm en 2.350 mm"],
+         ["Capas / Cajas Cargadas", "5 capas / 260 – 280", "6 capas / 630 – 680", "Altura de caja 400 mm; se reutiliza el hueco superior"],
+         ["Total de Gorras Cargadas", "26.000 – 28.000", "63.000 – 68.000", "Con 100 uds por caja"],
+         ["Equivalente en Gorros de Punto", "52.000 – 56.000", "126.000 – 136.000", "200 uds por caja con ~14 kg brutos"],
+         ["Límite de Carga Útil", "~28.200 kg", "~26.500 kg", "Nunca es el factor limitante en sombrerería"],
+         ["Carga Paletizada", "~128 cajas (8 palés)", "~320 cajas (20 palés)", "Palé 1.200 × 1.000 mm, 16 cajas, una altura"]
+       ],
+       sections: [
+         {
+           heading: "1. Por Qué la Gorra Cubica: Manda el Volumen, No el Peso",
+           paragraphs: [
+             "Cien gorras terminadas en nuestra caja de exportación estándar pesan unos 12 kg y ocupan 0,108 CBM. Esa relación —aproximadamente 111 kg por metro cúbico— está muy por debajo de cualquier umbral de facturación, y es el hecho que gobierna toda la logística de sombrerería. Tus gorras nunca se acercarán al límite de carga útil: se acaban los metros cúbicos primero, en cada pedido y en cada ruta.",
+             "El LCL marítimo se factura con un peso tasable de 1.000 kg por CBM. Una caja de 12 kg y 0,108 CBM se factura por tanto como 108 kg: nueve veces su peso físico. El flete aéreo es peor: con el divisor volumétrico del sector de 167 kg por CBM, la misma caja se factura como 18,0 kg volumétricos frente a 12,0 kg reales, una penalización del 50% aplicada antes incluso de cotizar la tarifa.",
+             "La consecuencia práctica es que optimizar el flete en sombrerería es una disciplina de especificación de embalaje, no de compras. Rebajar 40 gramos a una gorra no cambia nada; rebajar 8 mm a la altura de la caja cambia el número de unidades por contenedor. Cuando nuestro equipo de sourcing asume un programa recurrente, el primer documento que pide es la especificación de embalaje, no el precio unitario."
+           ]
+         },
+         {
+           heading: "2. Anatomía de la Caja de Exportación de 600 × 450 × 400 mm",
+           paragraphs: [
+             "Nuestra especificación estándar de exportación, ejecutada en nuestro centro de calidad y embarque de Baoding, utiliza una caja máster de corrugado doble de 5 capas de 600 × 450 × 400 mm exteriores y 585 × 435 × 385 mm útiles interiores, con tolerancia de ±5 mm en las dimensiones exteriores para que los planes de contenedor calculados ocho semanas antes sigan siendo válidos al estibar. El grado de cartón soporta un ensayo de compresión vertical (ECT) de al menos 32 lb/in y una resistencia al estallido de al menos 200 psi: el mínimo que aceptamos para un apilado de cinco capas.",
+             "En el interior, las gorras viajan en polibolsa individual, agrupadas en cuatro cajas interiores de 25 unidades, y cada caja interior lleva un soporte de corona troquelado en kraft para que el panel frontal no se aplaste bajo su propio peso. El peso bruto es de 12,0 kg ± 0,3: unos 11,2 kg de producto con una media de 112 g por gorra, 0,5 kg de cajas interiores y 0,3 kg de cartón máster. Las cajas se sellan con cinta en patrón H y dos flejes de polipropileno, y se marcan con shipping marks, desglose de ratio estilo-color-talla, N.W./G.W., CBM y país de origen.",
+             "Dos restricciones explican esas cifras. La primera es la manipulación manual: una caja de 12 kg es una elevación de una sola persona en cada puerto y en cada punto de contacto con el 3PL, y mantenerse por debajo de 15 kg evita el recargo por manipulación de dos personas que aplican algunos almacenes. La segunda es la compresión: cinco capas a 12 kg ejercen 60 kg sobre la caja inferior durante los 30 días de travesía, algo que un cartón de 5 capas con soportes de corona absorbe sin problema. Si llevas la caja a 20 kg quedas limitado a cuatro capas: pierdes un quinto de la superficie antes de cargar una sola gorra."
+           ]
+         },
+         {
+           heading: "3. 20GP vs 40HQ: el Cálculo Capa por Capa",
+           paragraphs: [
+             "Un 20GP mide 5.900 × 2.350 × 2.390 mm interiores con puerta de 2.340 × 2.280 mm; un 40HQ mide 12.030 × 2.350 × 2.690 mm con puerta de 2.340 × 2.580 mm. Los volúmenes nominales son 33,2 y 76,3 CBM, pero la carga a piso nunca llega al nominal: con cajas de 400 mm apiladas a cinco capas en el 20GP y a seis en el 40HQ, el volumen útil se queda en unos 28 y 68 CBM.",
+             "La huella es donde se gana el conteo. Girar la cara de 450 mm contra los 2.350 mm de ancho permite cinco columnas a 2.250 mm, pero mezclar orientaciones permite más: tres columnas de 450 mm más una de 600 mm ocupan 1.950 mm y dejan 400 mm para material de estiba. Trece filas de 450 mm caben en los 5.900 mm de longitud, lo que da 52 cajas por capa: 260 cajas, o 26.000 gorras. En el 40HQ la misma sección se repite en 26 filas y da 104 cajas por capa y 624 cajas a seis capas; recuperando los 290 mm de hueco superior y reorientando las dos últimas filas, la carga práctica llega a 630–680 cajas, es decir 63.000–68.000 gorras.",
+             "El peso nunca limita. Un 40HQ completo con 680 cajas suma 8,2 toneladas frente a un límite de carga útil cercano a 26,5 toneladas. Lo que sí limita es la paletización: la misma caja sobre un palé de 1.200 × 1.000 mm admite cuatro por nivel y dieciséis por palé de una sola altura, de modo que el 20GP que carga 260 cajas a piso solo transporta unas 128 en ocho palés. Los palés son una exigencia del muelle de recepción, no un ahorro de flete: si tu 3PL no puede desconsolidar, presupuesta la mitad del conteo de cajas y llévalo al coste de llegada antes de comparar proveedores."
+           ]
+         },
+         {
+           heading: "4. Controles de Embalaje que Exigimos Antes de Sellar el Contenedor",
+           paragraphs: [
+             "La especificación de embalaje se emite como documento controlado junto con la orden de compra, y la fábrica colaboradora homologada embala según ese documento, no según su costumbre. Nuestro equipo de calidad interno lo verifica en los cuatro puntos de inspección que aplicamos en cada pedido: pre-producción, en línea, pre-embarque y estiba del contenedor. En pre-embarque medimos el diez por ciento de las cajas contra la especificación, pesamos al azar el diez por ciento con tolerancia de ±0,3 kg, contamos las piezas contra la lista de embalaje al 100% y abrimos cajas para confirmar soportes de corona e integridad de las polibolsa tras 48 horas apiladas.",
+             "Dos modos de fallo explican la mayoría de las reclamaciones de cajas que vemos a la llegada. El primero es la deriva dimensional: un proveedor que cambia en silencio a una caja de 610 mm pierde una columna completa por capa, y tu plan de 260 cajas pasa a 240 sin avisar. El segundo es la humedad: cajas embaladas al 75% de humedad relativa en un verano del sur de China llegan con cartón reblandecido y coronas aplastadas tras 30 días de mar. Especificamos 5 g de sílice por caja y bolsas desecantes de 1 kg en el contenedor en rutas tropicales, y fotografiamos cada número de precinto en la estiba para que el registro sobreviva a la travesía.",
+             "Las declaraciones de materiales viajan con la misma disciplina documental: OEKO-TEX Standard 100 para tejido exterior y banda de sudor, declaraciones REACH SVHC para pedidos destinados a la UE, certificados de transacción GRS cuando se declara poliéster reciclado e informes de solidez del color ISO 105 cuando la consistencia de baño de tinte es crítica. Los ensayos se contratan por pedido con laboratorios acreditados, y la factura comercial, la lista de embalaje con dimensiones y CBM, y el certificado de origen se emiten para que la clasificación en tu puerto sea directa. Declaraciones exactas de entrada, despacho previsible de salida."
+           ]
+         }
+       ],
+       faqs: [
+         {
+           q: "¿Cuántas gorras personalizadas caben en un contenedor 20GP?",
+           a: "Con nuestra caja estándar de 100 unidades, un 20GP carga a piso de 260 a 280 cajas máster, es decir de 26.000 a 28.000 gorras terminadas. Los gorros de punto se embalan a 200 unidades por caja, así que el mismo contenedor lleva de 52.000 a 56.000 gorros. Estas cifras suponen carga a piso en cinco capas; con carga paletizada bajan a unas 128 cajas en ocho palés."
+         },
+         {
+           q: "¿Puede una caja más pequeña reducir mi flete marítimo?",
+           a: "Sí, siempre que se mantenga dentro del límite de manipulación manual. Un programa de 5 paneles de corona baja se comprime a 600 × 450 × 370 mm con 10,3 kg brutos, lo que añade una sexta capa dentro de un 20GP y eleva la carga de 260 a 312 cajas: un 20% más de gorras por contenedor. El límite son 15 kg por caja; por encima se pierde una capa por manipulación y el ahorro se invierte."
+         },
+         {
+           q: "¿Cuál es el CBM de una sola gorra y por qué importa en LCL?",
+           a: "Una gorra ocupa 0,00108 CBM con 100 unidades por caja de 0,108 CBM. Como el LCL se factura a 1.000 kg por CBM, una caja de 12 kg se factura como 108 kg tasables. Por debajo de unas 25.000 unidades conviene comparar la tarifa LCL por CBM con un 20GP completo antes de decidir: la consolidación es cómoda, pero el espacio vacío se paga a la misma tarifa que la carga."
+         }
+       ],
+       interlinks: [
+         { href: "/tools/carton-calculator", label: "Calculadora de Embalaje y CBM", desc: "Calcula tu cantidad, número de cajas y contenedor recomendado." },
+         { href: "/custom-trucker-hats", label: "Fabricante de Gorras Trucker", desc: "Programas de 5 paneles con malla y cómo su corona baja embala más denso." },
+         { href: "/wholesale-snapbacks", label: "Snapbacks al Por Mayor", desc: "Gorras estructuradas de 6 paneles: la referencia de caja de este plan." },
+         { href: "/guide/importing-custom-hats-from-china", label: "Importar Gorras desde China", desc: "Incoterms, clasificación HS 6505.00 y documentación de despacho." }
+       ]
+     }
+   }
+ };
