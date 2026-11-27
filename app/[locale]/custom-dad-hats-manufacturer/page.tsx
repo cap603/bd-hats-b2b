@@ -20,7 +20,7 @@ const CONTENT = {
     features: [
       {
         title: "Unstructured 6-Panel Construction",
-        desc: "The defining trait of a dad hat is a soft, unstructured crown that collapses flat when not worn. We build ours with lightweight buckram-free front panels and a pre-curved visor, so the cap keeps a relaxed profile but still holds its shape on the shelf.",
+        desc: "The defining trait of a dad hat is a soft, unstructured crown that collapses flat when not worn. Ours are built with lightweight buckram-free front panels and a pre-curved visor, so the cap keeps a relaxed profile but still holds its shape on the shelf.",
       },
       {
         title: "Washed & Vintage Finishes",
@@ -99,7 +99,7 @@ const CONTENT = {
     features: [
       {
         title: "Construcción sin estructura de 6 paneles",
-        desc: "El rasgo que define a una gorra dad es su corona suave y sin estructura, que se aplasta cuando no se lleva puesta. Las fabricamos con paneles frontales ligeros sin buckram y una visera precurvada, para que la gorra mantenga un perfil relajado pero conserve su forma en el anaquel.",
+        desc: "El rasgo que define a una gorra dad es su corona suave y sin estructura, que se aplasta cuando no se lleva puesta. Se fabrican con paneles frontales ligeros sin buckram y una visera precurvada, para que la gorra mantenga un perfil relajado pero conserve su forma en el anaquel.",
       },
       {
         title: "Acabados lavados y vintage",

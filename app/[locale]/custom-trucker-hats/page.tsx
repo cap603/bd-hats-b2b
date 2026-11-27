@@ -39,7 +39,7 @@ const CONTENT = {
     ],
     deepTitle: "Trucker Construction: Foam Front vs Cotton Front",
     deepIntro:
-      "The single decision that changes price, feel and decoration limits more than any other on a trucker program is the front panel. Below is how we build both versions on our own lines, and what each one allows you to do with your artwork.",
+      "The single decision that changes price, feel and decoration limits more than any other on a trucker program is the front panel. Below is how both versions are produced on our partner lines, and what each one allows you to do with your artwork.",
     frontTable: {
       head: ["Build", "Foam front (classic promo trucker)", "Cotton twill front (premium trucker)"],
       rows: [
@@ -53,7 +53,7 @@ const CONTENT = {
     },
     meshTitle: "Mesh Back Options and What They Change",
     meshBody:
-      "We build mesh backs in three constructions: standard polyester mesh, two-tone mesh (contrast upper/lower panels) and a performance mesh used on active programs. The choice is not cosmetic. Standard mesh is the most open construction and gives the strongest classic trucker look. Two-tone mesh lets you carry a second brand colour without adding a cut-and-sew panel, which is how most promo programs hit a lower unit price. Performance mesh is tighter and sits closer to the head, which active buyers choose when the cap must stay put during movement. All three are available with the same closure options: plastic snap, hook-and-loop, or a metal buckle with a fabric strap.",
+      "Mesh backs come in three constructions: standard polyester mesh, two-tone mesh (contrast upper/lower panels) and a performance mesh used on active programs. The choice is not cosmetic. Standard mesh is the most open construction and gives the strongest classic trucker look. Two-tone mesh lets you carry a second brand colour without adding a cut-and-sew panel, which is how most promo programs hit a lower unit price. Performance mesh is tighter and sits closer to the head, which active buyers choose when the cap must stay put during movement. All three are available with the same closure options: plastic snap, hook-and-loop, or a metal buckle with a fabric strap.",
     decorationTitle: "Decoration Limits You Should Design Around",
     decorationBody:
       "Two constraints matter on truckers more than on closed-panel caps. First, the foam front has a seam down the centre of the crown on most 5-panel builds — a logo that crosses that seam will distort, so we advise keeping the main mark inside one front panel and art-proving it before sampling. Second, mesh cannot carry embroidery directly: the needle perforates the open structure and the stitches sink into the holes. To brand the mesh side or back, we apply a woven or embroidered patch first, patch onto mesh, then close the panel. If your artwork has fine serifs or a gradient, send it as vector art so our studio can redraw it for stitch files rather than scaling a raster logo.",
@@ -120,7 +120,7 @@ const CONTENT = {
     ],
     deepTitle: "Construcción trucker: frente de espuma vs frente de algodón",
     deepIntro:
-      "La decisión que más cambia el precio, el tacto y los límites de decoración en un programa trucker es el panel frontal. Así fabricamos ambas versiones en nuestras propias líneas y lo que cada una permite hacer con su diseño.",
+      "La decisión que más cambia el precio, el tacto y los límites de decoración en un programa trucker es el panel frontal. Así se producen ambas versiones en nuestras líneas asociadas y lo que cada una permite hacer con su diseño.",
     frontTable: {
       head: ["Aspecto", "Frente de espuma (trucker promocional clásico)", "Frente de sarga de algodón (trucker premium)"],
       rows: [
@@ -134,7 +134,7 @@ const CONTENT = {
     },
     meshTitle: "Opciones de malla trasera y qué cambia cada una",
     meshBody:
-      "Fabricamos la malla trasera en tres construcciones: malla de poliéster estándar, malla bicolor (paneles superior e inferior en contraste) y malla performance para programas deportivos. La elección no es cosmética. La malla estándar es la más abierta y da el look trucker clásico más marcado. La malla bicolor permite llevar un segundo color de marca sin añadir un panel de corte y confección, que es como la mayoría de los programas promocionales bajan el precio unitario. La malla performance es más cerrada y se ajusta más a la cabeza, la eligen los compradores deportivos cuando la gorra debe mantenerse firme en movimiento. Las tres admiten los mismos cierres: snap plástico, velcro o hebilla metálica con correa de tela.",
+      "La malla trasera está disponible en tres construcciones: malla de poliéster estándar, malla bicolor (paneles superior e inferior en contraste) y malla performance para programas deportivos. La elección no es cosmética. La malla estándar es la más abierta y da el look trucker clásico más marcado. La malla bicolor permite llevar un segundo color de marca sin añadir un panel de corte y confección, que es como la mayoría de los programas promocionales bajan el precio unitario. La malla performance es más cerrada y se ajusta más a la cabeza, la eligen los compradores deportivos cuando la gorra debe mantenerse firme en movimiento. Las tres admiten los mismos cierres: snap plástico, velcro o hebilla metálica con correa de tela.",
     decorationTitle: "Límites de decoración que debe considerar al diseñar",
     decorationBody:
       "Dos restricciones importan más en una trucker que en una gorra de panel cerrado. Primera: el frente de espuma lleva una costura en el centro de la copa en la mayoría de las construcciones de 5 paneles — un logo que cruce esa costura se deformará, por eso recomendamos mantener la marca principal dentro de un solo panel frontal y validarla antes de la muestra. Segunda: la malla no admite bordado directo: la aguja perfora la estructura abierta y los puntos se hunden en los agujeros. Para marcar la malla lateral o trasera aplicamos primero un parche tejido o bordado y luego cerramos el panel. Si su diseño tiene serifas finas o degradados, envíelo en vectorial para que nuestro estudio lo redibuje como archivo de bordado en lugar de escalar un logo rasterizado.",

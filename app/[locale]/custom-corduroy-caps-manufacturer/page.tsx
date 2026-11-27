@@ -126,7 +126,7 @@ const CONTENT = {
     },
     featuresTitle: "Por qué las Marcas Eligen BD Hats para Gorras de Pana",
     featuresIntro:
-      "La pana requiere técnicas especiales de corte y estabilización para evitar la deformación de las nervaduras. Así fabricamos cada pedido en nuestra planta:",
+      "La pana requiere técnicas especiales de corte y estabilización para evitar la deformación de las nervaduras. Así es como nuestro equipo desarrolla cada pedido de pana:",
     features: [
       {
         title: "Variedad de Pana: 8, 14 y 21 Cordones (Wales)",
@@ -272,7 +272,7 @@ export default function CorduroyCapsPage() {
       pricingTitle={c.pricingTitle}
       stats={c.stats}
       faqs={c.faqs}
-      productsTitle={lang === "es" ? "Siluetas y Modelos Complementarios" : "Complementary Factory Silhouettes"}
+      productsTitle={lang === "es" ? "Siluetas y Modelos Complementarios" : "Complementary Silhouettes"}
       productsIntro={
         lang === "es"
           ? "Explore nuestras gorras vintage y modelos urbanos disponibles para producción simultánea."

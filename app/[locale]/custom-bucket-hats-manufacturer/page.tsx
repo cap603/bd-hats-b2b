@@ -14,7 +14,7 @@ const CONTENT = {
         "Soft-brim bucket hats in cotton twill, corduroy, ripstop and reversible builds — decorated with embroidery, patches or print at our partner lines.",
       pills: ["MOQ 200 Pcs", "From $3.50 FOB", "Reversible Options", "7-Day Samples"],
     },
-    featuresTitle: "How We Build a Bucket Hat",
+    featuresTitle: "How a Bucket Hat Is Built",
     featuresIntro:
       "Bucket hats have no structure to hide behind — the brim shape, panel symmetry and fabric weight are all visible at a glance. These are the details we hold to spec.",
     features: [
@@ -104,7 +104,7 @@ const CONTENT = {
         "Gorros bucket de ala suave en sarga de algodón, pana, ripstop y versiones reversibles, decorados con bordado, parches o impresión en nuestras líneas asociadas.",
       pills: ["MOQ 200 uds", "Desde $3.50 FOB", "Opción reversible", "Muestras en 7 días"],
     },
-    featuresTitle: "Cómo fabricamos un gorro bucket",
+    featuresTitle: "Cómo se fabrica un gorro bucket",
     featuresIntro:
       "El gorro bucket no tiene estructura que lo disimule: la forma del ala, la simetría de los paneles y el gramaje de la tela se ven a simple vista. Estos son los detalles que respetamos.",
     features: [

@@ -124,7 +124,7 @@ const CONTENT = {
       },
       {
         q: "Do custom embroidered hats from China require Country of Origin labels?",
-        a: "Yes. US Customs (CBP) and EU trade authorities strictly require permanent Country of Origin marking on all imported textiles. At Baoding Junyang, we sew a discreet woven 'Made in China' label into the interior sweatband seam alongside your custom brand tag.",
+        a: "Yes. US Customs (CBP) and EU trade authorities strictly require permanent Country of Origin marking on all imported textiles. At Baoding Junyang, a discreet woven 'Made in China' label is sewn into the interior sweatband seam alongside your custom brand tag.",
       },
       {
         q: "How does Baoding Junyang ship hats to US and European buyers?",
@@ -236,7 +236,7 @@ const CONTENT = {
       },
       {
         q: "¿Las gorras personalizadas necesitan etiqueta de País de Origen obligatoria?",
-        a: "Sí. Las normativas aduaneras internacionales exigen que las prendas lleven marcado permanente de origen. En Baoding Junyang cosemos una etiqueta discreta 'Made in China' en la badana interior junto a la etiqueta de tu marca.",
+        a: "Sí. Las normativas aduaneras internacionales exigen que las prendas lleven marcado permanente de origen. En Baoding Junyang, una etiqueta discreta 'Made in China' se cose en la badana interior junto a la etiqueta de tu marca.",
       },
       {
         q: "¿Cómo envía Baoding Junyang los pedidos a clientes de Europa y América?",

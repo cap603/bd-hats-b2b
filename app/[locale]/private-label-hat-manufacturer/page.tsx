@@ -49,7 +49,7 @@ const CONTENT = {
       {
         model: "Private label",
         design: "You own the design and brand",
-        factory: "We build your existing specs",
+        factory: "We produce to your existing specs",
         moq: "200 pcs",
         best: "Retail brands scaling a proven style",
       },
@@ -168,7 +168,7 @@ const CONTENT = {
       {
         model: "Private label",
         design: "Tú eres dueño del diseño y la marca",
-        factory: "Fabricamos según tus especificaciones actuales",
+        factory: "Producimos según tus especificaciones actuales",
         moq: "200 pcs",
         best: "Marcas retail que escalan un estilo probado",
       },

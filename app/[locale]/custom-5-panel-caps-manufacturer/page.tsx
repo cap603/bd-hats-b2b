@@ -24,7 +24,7 @@ const CONTENT = {
       },
       {
         title: "A-Frame & Camper Profiles",
-        desc: "We build both the A-frame (mid to high profile, flat brim) and the camper / runner style (lower profile, shorter brim). Profile height, brim length and crown depth are all adjustable to your reference sample.",
+        desc: "We offer both the A-frame (mid to high profile, flat brim) and the camper / runner style (lower profile, shorter brim). Profile height, brim length and crown depth are all adjustable to your reference sample.",
       },
       {
         title: "The Ideal 3D Puff Canvas",
@@ -104,7 +104,7 @@ const CONTENT = {
       },
       {
         title: "Perfiles A-frame y camper",
-        desc: "Fabricamos tanto el A-frame (perfil medio a alto, visera plana) como el estilo camper / runner (perfil más bajo, visera más corta). La altura del perfil, el largo de la visera y la profundidad de la corona se ajustan a tu muestra de referencia.",
+        desc: "Ofrecemos tanto el A-frame (perfil medio a alto, visera plana) como el estilo camper / runner (perfil más bajo, visera más corta). La altura del perfil, el largo de la visera y la profundidad de la corona se ajustan a tu muestra de referencia.",
       },
       {
         title: "El lienzo ideal para bordado 3D puff",

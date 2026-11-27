@@ -109,7 +109,7 @@ const CONTENT = {
     },
     features: [
       {
-        title: "Estilos de snapback que fabricamos",
+        title: "Estilos de snapback en nuestros programas",
         desc: "Snapbacks de visera plana, visera curva, perfil alto, perfil bajo y perfil medio, todos en construcción de 6 o 5 paneles. Nuestra gama de snapbacks cubre programas de streetwear, deportes, corporativos y ropa de trabajo, con más de 30 colores de tela en stock e igualación completa de colores Pantone."
       },
       {

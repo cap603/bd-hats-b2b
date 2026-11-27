@@ -19,7 +19,7 @@ const CONTENT = {
         "Acrylic dominates high-volume streetwear and promotional runs; Merino wool commands premium margins in alpine and luxury outdoor retail. Understanding the exact yarn cost, thermal performance, itch threshold, and washability differences is the difference between a high-return drop and unsold inventory.",
       quickAnswerLabel: "Short answer",
       quickAnswer:
-        "Choose acrylic beanies for budget-friendly retail drops ($3.20 - $4.50 FOB, MOQ 200 pcs): it is soft, machine-washable, completely itch-free, and holds vibrant yarn dyes. Choose Merino wool (or 50/50 Merino-acrylic blends) for premium outdoor and luxury collections ($5.50 - $9.20 FOB): it delivers superior natural warmth, odor resistance, and breathability with zero synthetic shine. Both run on our computerized flat knitting machines in 5GG and 7GG gauges.",
+        "Choose acrylic beanies for budget-friendly retail drops ($3.20 - $4.50 FOB, MOQ 200 pcs): it is soft, machine-washable, completely itch-free, and holds vibrant yarn dyes. Choose Merino wool (or 50/50 Merino-acrylic blends) for premium outdoor and luxury collections ($5.50 - $9.20 FOB): it delivers superior natural warmth, odor resistance, and breathability with zero synthetic shine. Both run on computerized flat knitting machines in 5GG and 7GG gauges.",
     },
     table: {
       caption: "Material, Technical & Commercial Comparison",
@@ -247,7 +247,7 @@ const CONTENT = {
       {
         heading: "2. El Secreto Comercial: El Híbrido 50% Merino / 50% Acrílico",
         paragraphs: [
-          "Para marcas que desean promocionar las propiedades prémium de la lana merino sin encarecer excesivamente la prenda, fabricamos con frecuencia hilados con mezcla 50/50.",
+          "Para marcas que desean promocionar las propiedades prémium de la lana merino sin encarecer excesivamente la prenda, se fabrican con frecuencia hilados con mezcla 50/50.",
           "Esta combinación proporciona la transpirabilidad y el prestigio de la lana natural, reforzados por la memoria elástica y la resistencia al lavado del acrílico. Con un coste FOB aproximado de $4.80 a $6.50, es la opción con mayor margen comercial para marcas europeas y americanas.",
         ],
       },

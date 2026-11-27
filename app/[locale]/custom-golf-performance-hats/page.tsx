@@ -125,7 +125,7 @@ const CONTENT = {
     },
     featuresTitle: "Diseñadas para Rendir en los 18 Hoyos Bajo Cualquier Clima",
     featuresIntro:
-      "Las gorras de golf y alto rendimiento exigen tejidos técnicos, repelencia al agua y máxima ventilación. Así fabricamos cada modelo en nuestra factoría:",
+      "Las gorras de golf y alto rendimiento exigen tejidos técnicos, repelencia al agua y máxima ventilación. Así es como nuestro equipo construye cada modelo de alto rendimiento:",
     features: [
       {
         title: "Tejido Hidrófugo DWR y Elasticidad en 4 Direcciones",

@@ -158,7 +158,7 @@ const SOURCING_GUIDE = {
     title: "Fabricación de Gorras Personalizadas: Materiales, Cumplimiento y Pedidos",
     intro:
       "La mayoría de los pedidos de gorras fallidos se deben a especificaciones poco claras, no a malas fábricas. Esta sección resume cómo organizamos la producción, con qué materiales trabajamos, cómo gestionamos el cumplimiento y cómo es un pedido fluido, del tech pack al contenedor: así puedes compararnos con otros proveedores con hechos.",
-    materialsTitle: "Materiales con los que Fabricamos",
+    materialsTitle: "Materiales con los que Trabajamos",
     materials: [
       { name: "Sarga de Algodón Pesada 108*56", desc: "Nuestra tela de gorras más vendida: un tejido sarga denso que mantiene la estructura, conserva la forma de la corona tras el lavado y acepta bordado 3D puff de alta densidad sin defectos. La opción predeterminada para programas streetwear de 5 paneles y 6 paneles estructurados." },
       { name: "Algodón Cepillado", desc: "Toque más suave con superficie mate sutil; la opción popular para dad hats vintage y gorras de estilo de vida. Disponibles opciones precoseídas para acabados lavados con enzima y ácido." },
@@ -248,7 +248,7 @@ const SOURCING_GUIDE = {
     title: "Fabricação de Bonés Personalizados: Materiais, Conformidade e Pedidos",
     intro:
       "A maioria dos pedidos de bonés que falham é culpa de especificações pouco claras, não de fábricas ruins. Esta seção resume como organizamos a produção, com quais materiais trabalhamos, como a conformidade é tratada e como funciona um pedido fluido, do tech pack ao contêiner — para você nos comparar a outros fornecedores com fatos.",
-    materialsTitle: "Materiais com os quais Fabricamos",
+    materialsTitle: "Materiais com os quais Trabalhamos",
     materials: [
       { name: "Sarja de Algodão Pesada 108*56", desc: "Nosso tecido de boné mais vendido: trama diagonal densa que mantém a estrutura, preserva a forma da coroa após a lavagem e aceita bordado 3D puff de alta densidade sem defeitos. A escolha padrão para programas streetwear de 5 painéis e 6 painéis estruturados." },
       { name: "Algodão Escovado", desc: "Toque mais suave com superfície fosca sutil; a opção popular para dad hats vintage e bonés de estilo de vida. Opções pré-encolhidas disponíveis para acabamentos lavados com enzima e ácido." },
