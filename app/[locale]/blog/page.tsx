@@ -39,7 +39,7 @@ export default function BlogHubPage() {
       : articles.filter((a) => a.category === selectedCategory);
 
   const meta = {
-    badge: lang === "es" ? "Blog de Fábrica B2B · Datos 2026" : "Factory Technical Blog · 2026 Edition",
+    badge: lang === "es" ? "Blog Técnico B2B · Datos 2026" : "Technical Blog · 2026 Edition",
     title: lang === "es" ? "Artículos Técnicos y Guías de Fabricación" : "Headwear Sourcing & Engineering Journal",
     subtitle:
       lang === "es"
@@ -119,7 +119,7 @@ export default function BlogHubPage() {
             </Link>
             <NavCompareMenu />
             <Link href={`/${lang}/about`} className="hover:text-black transition">
-              About Factory
+              About Us
             </Link>
             <Link href={`/${lang}/blog`} className="text-black border-b-2 border-black pb-0.5">
               Blog
@@ -268,14 +268,14 @@ export default function BlogHubPage() {
             Have a Specific Headwear Engineering Question?
           </h2>
           <p className="text-gray-300 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed mb-8">
-            Our Baoding factory pattern makers and international trade specialists review tech packs, calculate fabric yields, and verify embroidery tolerances within 2 hours.
+            Our Baoding-based pattern makers and international trade specialists review tech packs, calculate fabric yields, and verify embroidery tolerances within 2 hours.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href={`/${lang}/#inquiry`}
               className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold py-3.5 px-8 rounded-full text-xs transition"
             >
-              Submit Factory RFQ
+              Submit RFQ
             </Link>
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappText)}`}

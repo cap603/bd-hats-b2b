@@ -231,7 +231,7 @@ const CONTENT = {
     cta: {
       title: "Send your logo — we will advise on fabric and quote it",
       text: "Tell us the cap style and the feel you want, and we will recommend cotton twill, brushed cotton or canvas and quote within 2 hours. MOQ 200 pcs, physical samples in 7 days.",
-      button: "Get Factory Quote",
+      button: "Get Quote",
     },
   },
   es: {

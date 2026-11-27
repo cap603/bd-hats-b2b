@@ -208,7 +208,7 @@ const CONTENT = {
     cta: {
       title: "Send your artwork — we will match it to the right closure",
       text: "We assess your logo and shape, recommend the closure and crown profile, then quote with a production plan. MOQ 200 pcs, physical samples in 7 days.",
-      button: "Get Factory Quote",
+      button: "Get Quote",
     },
   },
   es: {

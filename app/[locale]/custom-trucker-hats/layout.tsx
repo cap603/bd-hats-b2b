@@ -10,20 +10,20 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     title:
       locale === "es"
-        ? "Gorras Trucker Personalizadas al por Mayor | Fábrica de Malla"
-        : "Custom Trucker Hats Wholesale | Factory Direct",
+        ? "Gorras Trucker Personalizadas al por Mayor | Malla Transpirable"
+        : "Custom Trucker Hats Wholesale | Direct Sourcing",
     description:
       locale === "es"
-        ? "Gorras trucker personalizadas directo de fábrica en China. Frente de espuma y malla, bordado 3D, MOQ 200uds, $3.50-$6.50 FOB, muestras en 7 días y cotización en 2h."
-        : "Custom trucker hats factory direct from China. Foam front & mesh back, 3D embroidery & print, MOQ 200pcs, $3.50-$6.50 FOB, 7-day samples, written quote in 2h.",
+        ? "Gorras trucker personalizadas con sourcing directo en China. Frente de espuma y malla, bordado 3D, MOQ 200uds, $3.50-$6.50 FOB, muestras en 7 días y cotización en 2h."
+        : "Custom trucker hats, direct sourcing from China. Foam front & mesh back, 3D embroidery & print, MOQ 200pcs, $3.50-$6.50 FOB, 7-day samples, written quote in 2h.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
       url: canonical,
       title:
         locale === "es"
-          ? "Gorras Trucker Personalizadas: Fábrica al por Mayor de Espalda de Malla | BD Hats"
-          : "Custom Trucker Hats — Mesh Back Wholesale Factory | BD Hats",
+          ? "Gorras Trucker Personalizadas: Mayorista de Espalda de Malla | BD Hats"
+          : "Custom Trucker Hats — Mesh Back Wholesale | BD Hats",
       description:
         locale === "es"
           ? "Gorras trucker personalizadas con frente de espuma y espalda de malla transpirable. Ideales para marcas promocionales, de bebidas y outdoor. MOQ 200uds, producción en 15 días."

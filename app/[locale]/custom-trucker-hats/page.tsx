@@ -15,8 +15,8 @@ const CONTENT = {
       badge: "Mesh Back Caps · Wholesale",
       h1Pre: "Custom ",
       h1Highlight: "Trucker Hats",
-      h1Post: ", Wholesale from the Factory",
-      subtitle: "Foam fronts, breathable mesh backs, and your logo done right — custom trucker hats for promo, beverage, and outdoor brands, made in our factory.",
+      h1Post: ", Wholesale · Direct Sourcing",
+      subtitle: "Foam fronts, breathable mesh backs, and your logo done right — custom trucker hats for promo, beverage, and outdoor brands, made by our vetted partner lines.",
       pills: ["From $3.50 FOB", "MOQ 200 Pcs", "15-20 Day Production", "Written Quote in 2h"]
     },
     sections: [
@@ -88,7 +88,7 @@ const CONTENT = {
     rangeTitle: "Our Trucker Hat Range",
     ctaTitle: "Launch Your Trucker Program",
     ctaDesc: "Send us your artwork — get a factory quote within 2 hours and a physical sample in 7 days.",
-    ctaPrimary: "Request Factory Quote",
+    ctaPrimary: "Request Quote",
     ctaSecondary: "Browse Full Catalog"
   },
   es: {
@@ -96,8 +96,8 @@ const CONTENT = {
       badge: "Gorras con malla atrás · Al por mayor",
       h1Pre: "",
       h1Highlight: "Gorras trucker personalizadas",
-      h1Post: ", al por mayor directo de fábrica",
-      subtitle: "Frentes de espuma, espaldas de malla transpirable y su logo bien hecho — gorras trucker personalizadas para marcas de promocionales, bebidas y actividades al aire libre, fabricadas en nuestra fábrica.",
+      h1Post: ", al por mayor · sourcing directo",
+      subtitle: "Frentes de espuma, espaldas de malla transpirable y su logo bien hecho — gorras trucker personalizadas para marcas de promocionales, bebidas y actividades al aire libre, producidas por nuestras líneas asociadas.",
       pills: ["Desde $3.50 FOB", "MOQ 200 pzs", "Producción en 15-20 días", "Cotización en 2h"]
     },
     sections: [
@@ -169,7 +169,7 @@ const CONTENT = {
     rangeTitle: "Nuestra línea de gorras trucker",
     ctaTitle: "Lance su programa de gorras trucker",
     ctaDesc: "Envíenos su diseño — reciba una cotización de fábrica en 2 horas y una muestra física en 7 días.",
-    ctaPrimary: "Solicite cotización de fábrica",
+    ctaPrimary: "Solicite cotización",
     ctaSecondary: "Ver catálogo completo"
   }
 };
@@ -188,8 +188,8 @@ export default function TruckerPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Custom Trucker Hats Wholesale — Mesh Back Caps Factory Direct",
-    "description": "Wholesale custom trucker hats: foam front, mesh back, embroidery and printing options, materials, pricing and MOQ from a Chinese factory.",
+    "headline": "Custom Trucker Hats Wholesale — Mesh Back Caps",
+    "description": "Wholesale custom trucker hats: foam front, mesh back, embroidery and printing options, materials, pricing and MOQ from our China sourcing partner.",
     "author": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "publisher": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "datePublished": "2026-08-25",

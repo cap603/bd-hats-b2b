@@ -14,7 +14,7 @@ const WHATSAPP_NUMBER = "8615933930830";
 const CONTENT = {
   en: {
     hero: {
-      badge: "2026 Headwear Sourcing Benchmarks · Direct Factory Data",
+      badge: "2026 Headwear Sourcing Benchmarks · Direct Sourcing Data",
       title: "2026 Custom Hat Manufacturing",
       accent: "Cost Index & Sourcing Guide",
       subtitle: "Transparent factory-floor economics for global apparel brands, streetwear labels, and corporate buyers. Real FOB cost breakdowns across fabric tiers, precision embroidery techniques, order volumes (MOQ 200), and lead times.",
@@ -49,7 +49,7 @@ const CONTENT = {
       { component: "Labor, Cutting & Quality Control", share: "15% - 20%", details: "Precision pattern cutting, skilled panel assembly, visor molding, steam shaping, and multi-stage final quality inspection." }
     ],
     table3Title: "3. Volume Discount & Economy of Scale Tiers",
-    table3Intro: "How production run size directly impacts manufacturing costs at our Baoding facility.",
+    table3Intro: "How production run size directly impacts manufacturing costs across our Baoding partner lines.",
     tiers: [
       { qty: "200 Pcs (Base MOQ)", factor: "Baseline FOB ($1.00x)", benefit: "Ideal for boutique streetwear drops and seasonal testing with low inventory risk." },
       { qty: "500 Pcs", factor: "-12% to -18%", benefit: "Amortizes embroidery machine setup and pattern digitizing; optimal balance for core collections." },
@@ -86,7 +86,7 @@ const CONTENT = {
   },
   es: {
     hero: {
-      badge: "Métricas de Costos 2026 · Datos Reales Directos de Fábrica",
+      badge: "Métricas de Costos 2026 · Datos Reales de Producción",
       title: "Índice de Costos de Fabricación de Gorras 2026",
       accent: "Guía de Precios al por Mayor",
       subtitle: "Economía de producción transparente para marcas de ropa urbana, corporativas y distribuidores internacionales. Desglose detallado de precios FOB por tipos de tejido, bordado de precisión, volúmenes (MOQ 200) y tiempos de entrega.",
@@ -231,7 +231,7 @@ export default function CustomHatCostIndexPage() {
               className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 transition shadow-sm"
             >
               <MessageCircle size={15} />
-              <span>{lang === "es" ? "WhatsApp Directo" : "WhatsApp Factory"}</span>
+              <span>{lang === "es" ? "WhatsApp Directo" : "WhatsApp Us"}</span>
             </button>
             <MobileNav />
           </div>

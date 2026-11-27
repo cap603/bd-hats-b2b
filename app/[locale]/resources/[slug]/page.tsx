@@ -108,7 +108,7 @@ export default function ResourceArticlePage({
               {article.subtitle}
             </p>
             <div className="text-xs text-gray-400 font-semibold mt-6 pt-4 border-t border-gray-100">
-              {lang === "es" ? "Actualizado el" : "Updated on"} {article.updated} · {lang === "es" ? "Por el Equipo de Fábrica Baoding Junyang" : "By Baoding Junyang Factory Team"}
+              {lang === "es" ? "Actualizado el" : "Updated on"} {article.updated} · {lang === "es" ? "Por el Equipo Baoding Junyang" : "By the Baoding Junyang Team"}
             </div>
           </div>
 
@@ -203,7 +203,7 @@ export default function ResourceArticlePage({
           {/* Related Factory Guides & Interlinks */}
           <div className="border-t border-gray-200 pt-12 mb-16">
             <h2 className="text-xl font-black text-gray-950 mb-6 uppercase tracking-wider text-xs">
-              {lang === "es" ? "Herramientas y Guías Relacionadas" : "Related Factory Engineering Guides"}
+              {lang === "es" ? "Herramientas y Guías Relacionadas" : "Related Engineering Guides"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {article.interlinks.map((link, lIdx) => (
@@ -227,7 +227,7 @@ export default function ResourceArticlePage({
           {/* Direct CTA */}
           <div className="bg-black text-white rounded-3xl p-8 md:p-12 text-center">
             <span className="text-xs font-bold text-yellow-400 uppercase tracking-widest">
-              {lang === "es" ? "Contacto Directo con Fábrica" : "Direct Factory Inquiry"}
+              {lang === "es" ? "Contacto Directo" : "Direct Inquiry"}
             </span>
             <h2 className="text-2xl md:text-3xl font-black mt-2 mb-4 tracking-tight">
               {lang === "es" ? "¿Listo para cotizar su programa de gorras?" : "Ready to Engineer Your Custom Hat Program?"}
@@ -242,7 +242,7 @@ export default function ResourceArticlePage({
                 href={`/${lang}/#inquiry`}
                 className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-sm transition"
               >
-                {lang === "es" ? "Solicitar Cotización FOB" : "Request Factory Quote"}
+                {lang === "es" ? "Solicitar Cotización FOB" : "Request FOB Quote"}
               </Link>
               <Link
                 href={`/${lang}/custom-hat-tech-pack-template`}

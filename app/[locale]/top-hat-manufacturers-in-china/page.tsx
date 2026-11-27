@@ -37,7 +37,7 @@ const CONTENT = {
       quickStats: [
         { label: "Core Manufacturing Belts", value: "3 Major Hubs" },
         { label: "Direct FOB Cost Range", value: "$3.20 - $7.80" },
-        { label: "Agile Factory MOQ", value: "200 Pcs / Style" },
+        { label: "Agile Production MOQ", value: "200 Pcs / Style" },
         { label: "Sampling Turnaround", value: "7 Business Days" },
       ],
     },
@@ -210,7 +210,7 @@ const CONTENT = {
       },
       {
         q: "Which headwear manufacturers in China are best for boutique streetwear and low MOQ?",
-        a: "For emerging streetwear brands, boutique DTC labels, and corporate programs needing 200 to 1,000 pieces, specialized headwear manufacturers in China like Baoding Junyang (Hebei cluster) provide the optimal balance. They operate automated Japanese Barudan embroidery equipment without imposing the 1,000+ unit minimums typical of multinational southern factories.",
+        a: "For emerging streetwear brands, boutique DTC labels, and corporate programs needing 200 to 1,000 pieces, specialized headwear manufacturers in China's Hebei cluster — coordinated by sourcing partners like Baoding Junyang — provide the optimal balance. They operate automated Japanese Barudan embroidery equipment without imposing the 1,000+ unit minimums typical of multinational southern factories.",
       },
       {
         q: "How do verified cap manufacturers in China handle quality audits before export?",
@@ -367,9 +367,9 @@ const CONTENT = {
         desc: "Solicita presupuestos FOB desglosados separando la confección, el pack de etiquetas personalizadas y los costes de transporte aéreo o marítimo.",
       },
     ],
-    junyangTitle: "4. Por Qué Baoding Junyang (BD Hats) es la Fábrica Elegida por Marcas Ágiles",
+    junyangTitle: "4. Por Qué Baoding Junyang (BD Hats) es el Socio de Sourcing Elegido por Marcas Ágiles",
     junyangDesc:
-      "Fundada en 2014, Baoding Junyang Import and Export Trade Co., Ltd. combina la precisión de una gran fábrica con la flexibilidad que necesitan las marcas en crecimiento:",
+      "Fundada en 2014, Baoding Junyang Import and Export Trade Co., Ltd. combina la precisión industrial con la flexibilidad que necesitan las marcas en crecimiento:",
     highlights: [
       { label: "Líneas Barudan Multicabezal", detail: "Líneas automáticas japonesas para bordados planos, 3D puff y texturas tatami milimétricas." },
       { label: "MOQ Estricto de 200 Uds", detail: "Flexibilidad para lanzar colecciones limitadas de streetwear sin asumir riesgos de inventario masivo." },
@@ -529,7 +529,7 @@ export default function TopManufacturersPage() {
             </Link>
             <NavCompareMenu />
             <Link href={`/${lang}/about`} className="hover:text-black transition">
-              About Factory
+              About Us
             </Link>
           </nav>
           <div className="flex items-center gap-3">
@@ -538,7 +538,7 @@ export default function TopManufacturersPage() {
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold py-2 px-4 rounded-full text-xs transition flex items-center gap-1.5 shadow-sm"
             >
               <FileText size={13} />
-              <span>Request Factory Quote</span>
+              <span>Request Quote</span>
             </button>
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappText)}`}
@@ -588,14 +588,14 @@ export default function TopManufacturersPage() {
               className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm md:text-base py-3.5 px-8 rounded-full transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20"
             >
               <MessageCircle size={18} />
-              <span>Connect with Factory Engineering (+86 159 3393 0830)</span>
+              <span>Connect with Our Sourcing Team (+86 159 3393 0830)</span>
             </a>
             <button
               onClick={() => handleOpenInquiryModal("top_mfg_hero_quote")}
               className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold text-sm md:text-base py-3.5 px-8 rounded-full transition flex items-center justify-center gap-2 shadow-lg shadow-yellow-400/20"
             >
               <FileText size={18} />
-              <span>Get Direct Factory Pricing (MOQ 200)</span>
+              <span>Get Direct Sourcing Pricing (MOQ 200)</span>
             </button>
           </div>
 
@@ -684,7 +684,7 @@ export default function TopManufacturersPage() {
             <table className="w-full text-left text-xs md:text-sm">
               <thead className="bg-gray-900 text-white font-bold uppercase tracking-wider text-[11px]">
                 <tr>
-                  <th className="py-4 px-4 md:px-6">Manufacturer / Hub</th>
+                  <th className="py-4 px-4 md:px-6">Supplier / Hub</th>
                   <th className="py-4 px-4 md:px-6">Region</th>
                   <th className="py-4 px-4 md:px-6">Core Specialization</th>
                   <th className="py-4 px-4 md:px-6">MOQ</th>
@@ -752,7 +752,7 @@ export default function TopManufacturersPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="bg-yellow-400 text-black text-[11px] font-black uppercase tracking-widest px-3 py-1 rounded-full inline-block mb-3">
-              Direct Factory Advantage
+              Direct Sourcing Advantage
             </span>
             <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-4">
               {c.junyangTitle}
@@ -857,7 +857,7 @@ export default function TopManufacturersPage() {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-4">Factory Contact</h4>
+              <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-4">Contact</h4>
               <ul className="space-y-2 text-xs">
                 <li>WhatsApp: +86 159 3393 0830</li>
                 <li>Email: admin@bdjunyang.com</li>

@@ -9,7 +9,7 @@ const CONTENT = {
       crumb: "Bulk Custom Hats",
       badge: "Large Volume · 10,000+ Pcs",
       title: "Bulk Custom",
-      accent: "Hats Manufacturer",
+      accent: "Hats",
       subtitle:
         "Industrial-scale cap production with dedicated partner lines and tiered pricing that rewards volume.",
       pills: ["MOQ 200+ Pcs", "Tiered Volume Pricing", "Pre-Shipment QC", "FOB or CIF"],
@@ -89,7 +89,7 @@ const CONTENT = {
     hero: {
       crumb: "Gorras al por Mayor",
       badge: "Grandes Volúmenes · 10.000+ uds",
-      title: "Fabricante de Gorras",
+      title: "Gorras",
       accent: "al por Mayor",
       subtitle:
         "Producción de gorras a escala industrial con líneas asociadas dedicadas y precios escalonados que premian el volumen.",
@@ -175,7 +175,7 @@ export default function BulkHatsPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Bulk Custom Hats Manufacturer — Large Volume Cap Production",
+    headline: "Bulk Custom Hats — Large Volume Cap Production",
     description:
       "Large-volume custom hat production with dedicated partner lines, volume tier pricing from 500 to 10,000+ pcs, pre-shipment QC, FOB or CIF.",
     author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },

@@ -243,27 +243,27 @@ export function InquiryModal() {
 
   const submitBtnText = isSubmitting
     ? isEs
-      ? "Enviando a Fábrica..."
+      ? "Enviando..."
       : isDe
-      ? "Wird an Fabrik gesendet..."
+      ? "Wird gesendet..."
       : isFr
       ? "Envoi en cours..."
       : isJa
       ? "送信中..."
-      : "Sending to Factory..."
+      : "Sending..."
     : isEs
-    ? "⚡ Enviar Consulta a Fábrica"
+    ? "⚡ Enviar Consulta"
     : isDe
-    ? "⚡ Anfrage an Fabrik senden"
+    ? "⚡ Anfrage senden"
     : isFr
-    ? "⚡ Envoyer la Demande à l'Usine"
+    ? "⚡ Envoyer la Demande"
     : isPt
-    ? "⚡ Enviar Consulta para a Fábrica"
+    ? "⚡ Enviar Consulta"
     : isIt
     ? "⚡ Invia Richiesta alla Fabbrica"
     : isJa
     ? "⚡ 工場担当者へ見積り依頼を送信"
-    : "⚡ Send Inquiry to Factory";
+    : "⚡ Send Inquiry";
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-4 md:p-6 overflow-y-auto animate-[fadeIn_.2s_ease]">
@@ -409,7 +409,7 @@ export function InquiryModal() {
               </button>
 
               <div className="flex items-center justify-between text-[10px] text-slate-400 font-medium px-1">
-                <span>🔒 {isEs ? "Tus datos son 100% confidenciales" : isJa ? "秘密厳守・直接工場見積り" : "100% confidential factory quote"}</span>
+                <span>🔒 {isEs ? "Tus datos son 100% confidenciales" : isJa ? "秘密厳守・直接見積り" : "100% confidential quote"}</span>
                 <span>⚡ {isEs ? "Respuesta < 2h" : isJa ? "2h以内回答" : "Direct response < 2h"}</span>
               </div>
             </form>

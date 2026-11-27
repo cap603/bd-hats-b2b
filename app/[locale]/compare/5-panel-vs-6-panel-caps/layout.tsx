@@ -16,17 +16,17 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Comparativa de gorras de 5 y 6 paneles: construcción del frente, superficie para logo, compatibilidad con bordado 3D puff, costo y cuál vende más. Datos de fábrica, MOQ 200 uds."
-        : "5-panel vs 6-panel caps compared: front panel construction, logo area, 3D puff suitability, cost differences and which style sells better. Factory data, MOQ 200 pcs, samples in 7 days.",
+        ? "Comparativa de gorras de 5 y 6 paneles: construcción del frente, superficie para logo, compatibilidad con bordado 3D puff, costo y cuál vende más. Datos de producción, MOQ 200 uds."
+        : "5-panel vs 6-panel caps compared: front panel construction, logo area, 3D puff suitability, cost differences and which style sells better. Production data, MOQ 200 pcs, samples in 7 days.",
     alternates: { canonical, languages },
     openGraph: {
       type: "article",
       url: canonical,
-      siteName: "BD Hats Factory",
+      siteName: "BD Hats",
       title:
         locale === "es"
-          ? "Gorras de 5 Paneles vs 6 Paneles — Comparativa de Fábrica"
-          : "5-Panel vs 6-Panel Caps — A Factory Comparison",
+          ? "Gorras de 5 Paneles vs 6 Paneles — Comparativa B2B"
+          : "5-Panel vs 6-Panel Caps — A B2B Comparison",
       description:
         locale === "es"
           ? "Diferencias reales de construcción, superficie de logo y costos entre gorras de 5 y 6 paneles."

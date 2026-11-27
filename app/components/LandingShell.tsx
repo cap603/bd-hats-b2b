@@ -55,7 +55,7 @@ export const DEFAULT_FAQS: Record<"en" | "es", Faq[]> = {
   en: [
     { q: "What is the MOQ for custom caps?", a: "Our minimum order quantity is 200 pieces per style and colour. Multi-colour programs split evenly across colourways without surcharges, and blank-cap programs for returning buyers can start even lower." },
     { q: "How long does sampling take?", a: "Physical pre-production samples are produced in 7 days, with photos and video at every milestone. The sample fee is fully refunded against the bulk order once it reaches 500 pieces." },
-    { q: "Do you support OEM and ODM orders?", a: "Yes. For OEM you supply the tech pack or a reference cap and we manufacture to spec. For ODM our team develops the construction, digitizing and bill of materials with you from a sketch or mood board, and you approve every stage before bulk." },
+    { q: "Do you support OEM and ODM orders?", a: "Yes. For OEM you supply the tech pack or a reference cap and we produce to spec. For ODM our team develops the construction, digitizing and bill of materials with you from a sketch or mood board, and you approve every stage before bulk." },
     { q: "What payment methods do you accept?", a: "Alibaba Trade Assurance orders carry platform payment protection and are our recommended route for first-time buyers. T/T through verified business accounts is available for established programs. We never request transfers to personal accounts." },
     { q: "How is quality controlled?", a: "Caps are inspected for embroidery alignment, stitch density, stitching integrity, measurements and finish before packing. Milestone photos and video are shared at cutting, embroidery, assembly and packing, and production records are kept for traceability." },
     { q: "Which markets do you ship to?", a: "We ship worldwide — our buyers span North America, Europe, Asia Pacific, the Middle East and Oceania. Third-party testing and inspection can be arranged per order for your market's requirements." },
@@ -389,7 +389,7 @@ export function LandingShell({
       <section className="py-24 px-4 bg-black text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-4">
-            {lang === "es" ? "Solicite su Cotización de Fábrica Hoy" : "Get Your Factory Quote Today"}
+            {lang === "es" ? "Solicite su Cotización Hoy" : "Get Your Quote Today"}
           </h2>
           <p className="text-gray-400 text-lg mb-8">
             {lang === "es"

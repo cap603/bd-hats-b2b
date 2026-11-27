@@ -11,13 +11,13 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: {
       absolute:
         locale === "es"
-          ? "Fabricante de Gorros Bucket al por Mayor | BD Hats"
-          : "Custom Bucket Hats Manufacturer & Wholesale | BD Hats",
+          ? "Gorros Bucket al por Mayor | BD Hats"
+          : "Custom Bucket Hats & Wholesale | BD Hats",
     },
     description:
       locale === "es"
-        ? "Gorros bucket personalizados directo de fábrica: sarga de algodón, pana, ripstop y reversibles. Bordado, parches e impresión. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días."
-        : "Custom bucket hats direct from the factory: cotton twill, corduroy, ripstop and reversible styles. Embroidery, patches and print. MOQ 200pcs, $3.50-$7.00 FOB, samples in 7 days.",
+        ? "Gorros bucket personalizados, sourcing directo: sarga de algodón, pana, ripstop y reversibles. Bordado, parches e impresión. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días."
+        : "Custom bucket hats, direct sourcing: cotton twill, corduroy, ripstop and reversible styles. Embroidery, patches and print. MOQ 200pcs, $3.50-$7.00 FOB, samples in 7 days.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       title:
         locale === "es"
           ? "Gorros Bucket Personalizados al por Mayor | BD Hats"
-          : "Custom Bucket Hats Wholesale — Factory Direct | BD Hats",
+          : "Custom Bucket Hats Wholesale — Direct Sourcing | BD Hats",
       description:
         locale === "es"
           ? "Sombreros de pescador con tu marca: varias telas, ala reversible y bordado 3D. MOQ 200uds."

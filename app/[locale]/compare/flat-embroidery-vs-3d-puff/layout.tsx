@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     openGraph: {
       type: "article",
       url: canonical,
-      siteName: "BD Hats Factory",
+      siteName: "BD Hats",
       title:
         locale === "es"
-          ? "Bordado Plano vs Bordado 3D Puff — Comparativa de Fábrica"
-          : "Flat Embroidery vs 3D Puff — A Factory Comparison",
+          ? "Bordado Plano vs Bordado 3D Puff — Comparativa B2B"
+          : "Flat Embroidery vs 3D Puff — A B2B Comparison",
       description:
         locale === "es"
           ? "Diferencias reales de costo, relieve y durabilidad entre bordado plano y bordado 3D puff."
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       images: [
         {
           url: "/images/brand/junyang-logo.png",
-          alt: "BD Hats · JUNYANG custom cap factory",
+          alt: "BD Hats · JUNYANG custom caps",
         },
       ],
     },

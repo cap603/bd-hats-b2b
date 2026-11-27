@@ -13,14 +13,14 @@ export default function ResourcesHubPage() {
   const articles = Object.values(RESOURCES[lang]);
 
   const meta = {
-    badge: lang === "es" ? "Centro de Recursos B2B" : "Factory Knowledge Hub",
+    badge: lang === "es" ? "Centro de Recursos B2B" : "Sourcing Knowledge Hub",
     title: lang === "es" ? "Guías Técnicas y Recursos de Fabricación" : "Headwear Engineering & Sourcing Hub",
     subtitle:
       lang === "es"
         ? "Especificaciones directas de fábrica, protocolos de muestreo, guías de aranceles y normativas comerciales para compradores internacionales."
         : "Direct factory specifications, sampling protocols, US tariff classifications, and safe sourcing frameworks for global apparel brands.",
     readGuide: lang === "es" ? "Leer guía técnica" : "Read Technical Guide",
-    publishedBy: lang === "es" ? "Publicado por el Equipo de Fábrica Baoding Junyang" : "Published by Baoding Junyang Factory Engineering Team",
+    publishedBy: lang === "es" ? "Publicado por el Equipo Baoding Junyang" : "Published by the Baoding Junyang Team",
   };
 
   return (
@@ -47,7 +47,7 @@ export default function ResourcesHubPage() {
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
-          { label: lang === "es" ? "Recursos de Fábrica" : "Engineering Resources" },
+          { label: lang === "es" ? "Recursos Técnicos" : "Engineering Resources" },
         ]}
       />
 

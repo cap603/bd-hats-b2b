@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     title:
       locale === "es"
-        ? "Índice de Costes de Gorras 2026 | Guía de Fábrica B2B"
+        ? "Índice de Costes de Gorras 2026 | Guía B2B"
         : "Custom Hat Cost Index 2026 | B2B Sourcing Guide",
     description:
       locale === "es"

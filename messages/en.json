@@ -54,7 +54,7 @@
                "sgs": "Pre-Shipment Quality Check"
           },
           "compliance": {
-               "title": "Factory-Direct Sourcing",
+               "title": "Direct Sourcing",
                "certified": "MOQ 200+ Pcs",
                "markets": "Global Markets",
                "na": "NORTH AMERICA · EUROPE",
@@ -110,7 +110,7 @@
                "step3Title": "Sample Approval",
                "step3Desc": "We produce a physical sample and send you detailed videos/photos for final adjustment approval.",
                "step4Title": "Bulk & Quality Updates",
-               "step4Desc": "We manufacture bulk orders and send regular progress media updates. Checked before shipping."
+               "step4Desc": "We coordinate bulk production through our vetted partner network and share regular progress media updates. Checked before shipping."
           },
           "qc": {
                "label": "Quality Assurance",

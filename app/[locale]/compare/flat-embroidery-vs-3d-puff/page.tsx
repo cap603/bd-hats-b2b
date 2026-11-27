@@ -190,7 +190,7 @@ const CONTENT = {
     cta: {
       title: "Send your artwork — we will recommend the decoration and quote it",
       text: "We assess your logo, advise between flat embroidery and 3D puff, and quote within 2 hours. MOQ 200 pcs, physical samples in 7 days.",
-      button: "Get Factory Quote",
+      button: "Get Quote",
     },
   },
   es: {

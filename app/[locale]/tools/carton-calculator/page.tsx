@@ -82,7 +82,7 @@ export default function CartonCalculatorPage() {
               className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl transition shadow-xs cursor-pointer"
             >
               <MessageCircle size={14} />
-              <span>{isEs ? "WhatsApp Fábrica" : "WhatsApp Factory"}</span>
+              <span>{isEs ? "WhatsApp Directo" : "WhatsApp Us"}</span>
             </button>
             <MobileNav />
           </div>
@@ -218,7 +218,7 @@ export default function CartonCalculatorPage() {
 
       {/* Footer Minimal */}
       <footer className="bg-white border-t border-slate-200/80 py-8 text-center text-xs text-slate-500">
-        <p>© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Direct Factory B2B Export Solutions.</p>
+        <p>© 2026 Baoding Junyang Import and Export Trade Co., Ltd. Direct B2B Export Solutions.</p>
         <p className="mt-1 text-[11px] text-slate-400">Written quotations delivered within 2 hours · admin@bdjunyang.com</p>
       </footer>
     </div>

@@ -117,7 +117,7 @@ export default function BlogArticlePage({
             </Link>
             <NavCompareMenu />
             <Link href={`/${lang}/about`} className="hover:text-black transition">
-              About Factory
+              About Us
             </Link>
             <Link href={`/${lang}/blog`} className="text-black border-b-2 border-black pb-0.5">
               Blog
@@ -251,7 +251,7 @@ export default function BlogArticlePage({
               <span>Frequently Asked Questions</span>
             </div>
             <h3 className="text-2xl font-black text-gray-950 mb-6">
-              Factory Q&A on This Topic
+              Q&A on This Topic
             </h3>
             <div className="space-y-4">
               {article.faqs.map((faq, idx) => (
@@ -303,7 +303,7 @@ export default function BlogArticlePage({
               href={`/${lang}/#inquiry`}
               className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-black font-extrabold py-3.5 px-8 rounded-full text-xs transition"
             >
-              Request Factory FOB Quote
+              Request FOB Quote
             </Link>
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappText)}`}

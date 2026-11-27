@@ -239,7 +239,7 @@ export default function MaterialsPage() {
           <p className="text-gray-400 text-lg mb-8">Tell us your fabric and closure preferences — get a factory quote with your exact specifications.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href={`/${lang}/#inquiry`} className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition">
-              Request Factory Quote <ArrowRight size={20} />
+              Request Quote <ArrowRight size={20} />
             </Link>
             <Link href={`/${lang}/#catalog`} className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-full text-lg transition border border-white/20">
               Browse Products
@@ -262,7 +262,7 @@ export default function MaterialsPage() {
                 <li><Link href={`/${lang}/custom-hat-cost-index-2026`} className="hover:text-white">2026 Hat Cost Index</Link></li>
                 <li><Link href={`/${lang}/guide`} className="hover:text-white">B2B Manufacturing Guide</Link></li>
                 <li><Link href={`/${lang}/pricing`} className="hover:text-white">Pricing & Shipping</Link></li>
-                <li><Link href={`/${lang}/about`} className="hover:text-white">About Our Factory</Link></li>
+                <li><Link href={`/${lang}/about`} className="hover:text-white">About Our Team</Link></li>
               </ul>
             </div>
             <div>

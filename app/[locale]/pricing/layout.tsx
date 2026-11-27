@@ -18,16 +18,16 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Guía de precios transparente para gorras personalizadas: cuánto cuestan las gorras a medida, FOB vs CIF, MOQ 200uds, costos de flete aéreo vs marítimo, tarifas de muestras y descuentos por volumen. Directo de fábrica desde China."
-        : "Transparent pricing guide for custom hats: how much do custom caps cost, FOB vs CIF explained, MOQ 200pcs, air freight vs sea freight costs, sample fees, and volume discounts. Factory-direct from China.",
+        ? "Guía de precios transparente para gorras personalizadas: cuánto cuestan las gorras a medida, FOB vs CIF, MOQ 200uds, costos de flete aéreo vs marítimo, tarifas de muestras y descuentos por volumen. Sourcing directo desde China."
+        : "Transparent pricing guide for custom hats: how much do custom caps cost, FOB vs CIF explained, MOQ 200pcs, air freight vs sea freight costs, sample fees, and volume discounts. Direct sourcing from China.",
     alternates: { canonical, languages },
     openGraph: {
       type: "article",
       url: canonical,
       title:
         locale === "es"
-          ? "Guía de Precios y Envío de Gorras Personalizadas | Fábrica BD Hats"
-          : "Custom Hat Pricing & Shipping Guide | BD Hats Factory",
+          ? "Guía de Precios y Envío de Gorras Personalizadas | BD Hats"
+          : "Custom Hat Pricing & Shipping Guide | BD Hats",
       description:
         locale === "es"
           ? "Desglose completo de costos para pedidos de gorras personalizadas: precios al por mayor, MOQ, métodos de envío, costos de muestras y descuentos por volumen."

@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     description:
       locale === "es"
         ? "Comparativa de producción de gorras 2026: costos FOB, tiempos de entrega y MOQ real entre China, Vietnam y Bangladés. Guía para compradores B2B, fábrica MOQ 200 uds."
-        : "2026 custom hat sourcing benchmark: FOB cost comparison, production lead times and realistic MOQs across China, Vietnam and Bangladesh. Factory direct MOQ 200pcs.",
+        : "2026 custom hat sourcing benchmark: FOB cost comparison, production lead times and realistic MOQs across China, Vietnam and Bangladesh. Direct sourcing MOQ 200pcs.",
     alternates: { canonical, languages },
     openGraph: {
       type: "article",
       url: canonical,
-      siteName: "BD Hats Factory",
+      siteName: "BD Hats",
       title:
         locale === "es"
           ? "China vs Vietnam vs Bangladés — Comparativa de Abastecimiento de Gorras"

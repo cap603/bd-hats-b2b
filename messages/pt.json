@@ -1,7 +1,7 @@
 {
   "nav": {
     "advantages": "Vantagens",
-    "factory": "Nossa Fábrica",
+    "factory": "Abastecimento e Qualidade",
     "qualityControl": "Controle de Qualidade",
     "products": "Chapéus & Bonés",
     "inquiry": "Solicitar Orçamento",
@@ -29,13 +29,13 @@
         "cta": "Orçamento Detalhado em 2h"
       },
       "1": {
-        "label": "Soluções B2B Direto da Fábrica",
+        "label": "Soluções B2B de Sourcing Direto",
         "title": "Personalização Premium Completa",
         "sub": "Opções ilimitadas: Tecidos premium, cores sob medida, bordado 3D em alto relevo e formatos personalizados.",
         "cta": "Iniciar Personalização"
       },
       "2": {
-        "label": "Soluções B2B Direto da Fábrica",
+        "label": "Soluções B2B de Sourcing Direto",
         "title": "Sua Visão, Todos os Estilos",
         "sub": "De bonés 5-Panel e 6-Panel a Truckers, Dad Hats, Gorros e Bucket Hats. Tudo sob medida.",
         "cta": "Pedir Amostras"
@@ -54,7 +54,7 @@
       "sgs": "Controle de Qualidade Pré-envio"
     },
     "compliance": {
-      "title": "Sourcing Direto da Fábrica",
+      "title": "Sourcing Direto",
       "certified": "MOQ 200+ pçs",
       "markets": "Mercados Globais",
       "na": "AMÉRICA DO NORTE · EUROPA",
@@ -163,7 +163,7 @@
     "q4Schedule": "Programa de Produção e Sourcing 2026 Ativo",
     "programsBadge": "Linhas OEM / ODM",
     "programsTitle": "Programas Especializados de Produção B2B",
-    "programsSub": "Programas de manufatura sob encomenda direto da fábrica para fundadores de marcas, distribuidores e importadores em grandes volumes. MOQ 200 peças.",
+    "programsSub": "Programas de manufatura sob encomenda para fundadores de marcas, distribuidores e importadores em grandes volumes. MOQ 200 peças.",
     "programs": {
       "0": {
         "title": "Bonés Personalizados de 5 Painéis",
@@ -228,7 +228,7 @@
     },
     "sectorsBadge": "Programas por Perfil de Comprador",
     "sectorsTitle": "Programas de Manufatura Sob Medida por Segmento de Comprador",
-    "sectorsSub": "Soluções de produção direto da fábrica, otimizadas para os requisitos específicos e curvas de volume de cada setor de compras.",
+    "sectorsSub": "Soluções de produção otimizadas para os requisitos específicos e curvas de volume de cada setor de compras.",
     "sectors": {
       "0": {
         "tag": "Moda e Drops",
@@ -281,7 +281,7 @@
       "China vs Vietnam vs Bangladesh"
     ],
     "freeBadge": "AI/PDF Grátis",
-    "factoryDirect": "Super Fábrica Direta · OEM/ODM",
+    "factoryDirect": "Parceiro de Sourcing Direto · Programas OEM/ODM",
     "exporting": "Exportando para EUA, UE e AU desde 2014",
     "backToTop": "Voltar ao topo ↑",
     "assets": {
@@ -325,7 +325,7 @@
     "sortPriceAsc": "Preço: Menor → Maior",
     "sortPriceDesc": "Preço: Maior → Menor",
     "moq": "MOQ: {count} Pcs",
-    "factoryDirect": "Direto da Fábrica",
+    "factoryDirect": "Preço FOB",
     "viewDetails": "Ver Detalhes",
     "quote": "Cotação",
     "details": "Detalhes",

@@ -235,7 +235,7 @@ export const HATS: Product[] = [
     id: "custom-embroidery-knitted-beanie",
     name: "Custom Embroidery Knitted Beanie",
     desc: "Warm winter beanie knitted from 100% acrylic, finished with your embroidered or 3D puff logo. Unisex 56-58cm fit, 61 stock colours for bulk programs.",
-    fullDesc: "A wholesale winter beanie built for logo programs. The acrylic rib knit holds its structure through repeated wear, and the front accepts flat embroidery, 3D puff or a woven patch. Unisex 56-58cm fit, 61 stock colours with custom yarn dyeing available on request. Samples dispatch from our Baoding factory in 3-5 working days.",
+    fullDesc: "A wholesale winter beanie built for logo programs. The acrylic rib knit holds its structure through repeated wear, and the front accepts flat embroidery, 3D puff or a woven patch. Unisex 56-58cm fit, 61 stock colours with custom yarn dyeing available on request. Samples dispatch from our Baoding production partners in 3-5 working days.",
     price: "Custom Quote",
     moq: 200,
     fobTiers: [], // knitwear: no published FOB band, pricing confirmed per project

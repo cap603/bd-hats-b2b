@@ -11,21 +11,21 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: {
       absolute:
         locale === "es"
-          ? "Fabricante de Gorras Marca Privada | BD Hats"
-          : "Private Label Hat Manufacturer in China | BD Hats",
+          ? "Gorras de Marca Privada | BD Hats"
+          : "Private Label Hats in China | BD Hats",
     },
     description:
       locale === "es"
         ? "Fabricación de gorras de marca privada: etiquetas tejidas, colgantes, bolsas y empaque retail. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días y cotización en 2h."
-        : "Private label hat manufacturing: woven labels, custom hang tags & retail packaging. MOQ 200pcs, $3.50-$7.00 FOB, 7-day samples. Custom hat factory partner in China.",
+        : "Private label hat manufacturing: woven labels, custom hang tags & retail packaging. MOQ 200pcs, $3.50-$7.00 FOB, 7-day samples. Custom hat sourcing partner in China.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
       url: canonical,
       title:
         locale === "es"
-          ? "Gorras de Marca Privada — Fábrica Directa | BD Hats"
-          : "Private Label Hats — Factory Direct | BD Hats",
+          ? "Gorras de Marca Privada — Sourcing Directo | BD Hats"
+          : "Private Label Hats — Direct Sourcing | BD Hats",
       description:
         locale === "es"
           ? "Etiquetas tejidas, colgantes, empaque retail y bordado para tu marca. Más de 300 marcas atendidas desde 2014."

@@ -1,7 +1,7 @@
 {
   "nav": {
     "advantages": "Avantages",
-    "factory": "Notre Usine",
+    "factory": "Approvisionnement & Qualité",
     "qualityControl": "Contrôle Qualité",
     "products": "Chapeaux & Casquettes",
     "inquiry": "Demande de Devis",
@@ -29,13 +29,13 @@
         "cta": "Devis Détaillé en 2h"
       },
       "1": {
-        "label": "Solutions B2B Direct Usine",
+        "label": "Solutions B2B de Sourcing Direct",
         "title": "Personnalisation Haut de Gamme Clé en Main",
         "sub": "Options illimitées : Tissus premium, coloris sur-mesure, broderie 3D en relief et profils de casquettes personnalisés.",
         "cta": "Commencer la Création"
       },
       "2": {
-        "label": "Solutions B2B Direct Usine",
+        "label": "Solutions B2B de Sourcing Direct",
         "title": "Votre Vision, Tous les Styles",
         "sub": "Des modèles 5-Panel et 6-Panel aux Truckers, Dad Hats, Bonnets et Bobs. Fabrication 100 % sur-mesure.",
         "cta": "Demander des Échantillons"
@@ -54,7 +54,7 @@
       "sgs": "Contrôle Qualité avant Expédition"
     },
     "compliance": {
-      "title": "Sourcing Direct Usine",
+      "title": "Sourcing Direct",
       "certified": "MOQ 200+ pcs",
       "markets": "Marchés Mondiaux",
       "na": "AMÉRIQUE DU NORD · EUROPE",
@@ -281,7 +281,7 @@
       "China vs Vietnam vs Bangladesh"
     ],
     "freeBadge": "Free AI/PDF",
-    "factoryDirect": "Direct Super Factory · OEM/ODM",
+    "factoryDirect": "Partenaire de Sourcing Direct · OEM/ODM",
     "exporting": "Exporting to US, EU & AU since 2014",
     "backToTop": "Back to Top ↑",
     "assets": {
@@ -325,7 +325,7 @@
     "sortPriceAsc": "Prix : Croissant",
     "sortPriceDesc": "Prix : Décroissant",
     "moq": "MOQ : {count} Pcs",
-    "factoryDirect": "Direct Usine",
+    "factoryDirect": "Prix FOB",
     "viewDetails": "Voir Détails",
     "quote": "Devis",
     "details": "Détails",
@@ -387,13 +387,13 @@
     "phonePlaceholder": "+33 6 00 00 00 00",
     "message": "Message / Cahier des Charges",
     "messagePlaceholder": "Décrivez les modèles, volumes ou techniques souhaitées (ex. broderie 3D en relief, étiquettes tissées, boucle métal)...",
-    "privacyNote": "Votre demande est transmise directement au bureau commercial de notre usine (admin@bdjunyang.com). Réponse rapide sous 2 à 4 heures.",
+    "privacyNote": "Votre demande est transmise directement à notre bureau commercial (admin@bdjunyang.com). Réponse rapide sous 2 à 4 heures.",
     "intentSample": "Bonjour Baoding Junyang ! Je souhaite commander un échantillon physique avant de lancer la production série. Pouvez-vous me transmettre les modalités ?",
     "intentBulk": "Bonjour Baoding Junyang ! Je suis intéressé par une production de série. Pouvez-vous me faire parvenir un devis chiffré ?",
     "intentTest": "Bonjour Baoding Junyang ! J'aimerais passer une commande test. Pouvez-vous me donner les détails ?",
     "intentTechpack": "Bonjour Baoding Junyang ! Merci de m'envoyer les patrons vectoriels vierges (Tech Pack AI/PDF) et les fiches techniques pour notre équipe de design. Ma marque/société est : ",
     "intentMockup": "Bonjour Baoding Junyang ! Je souhaite demander une simulation 3D gratuite et une analyse de faisabilité de broderie pour notre logo. Modèle visé : ",
-    "submit": "Envoyer la Demande à l'Usine",
+    "submit": "Envoyer la Demande",
     "submitting": "Transmission à l'équipe commerciale...",
     "thanks": "Demande Reçue avec Succès !",
     "thanksMsg": "Votre cahier des charges a bien été réceptionné par notre équipe technique et commerciale (admin@bdjunyang.com). Nous étudions votre demande et vous répondrons par email dans les plus brefs délais.",
@@ -420,15 +420,15 @@
   },
   "breadcrumb": {
     "home": "Accueil",
-    "about": "Notre Usine",
+    "about": "À propos",
     "guide": "Guide d'Achat B2B",
     "materials": "Matières & Tissus",
     "pricing": "Prix & Expédition",
     "products": "Produits"
   },
   "meta": {
-    "homeTitle": "BD Hats | Fabricant de Casquettes Haut de Gamme & Vente en Gros Direct Usine",
-    "homeDesc": "Casquettes personnalisées de qualité supérieure direct usine. OEM/ODM depuis 2014. Broderie sur-mesure, MOQ 200 pcs, échantillons en 7 jours. Votre partenaire sourcing à Baoding, Chine.",
+    "homeTitle": "BD Hats | Casquettes Haut de Gamme & Vente en Gros · Sourcing Direct",
+    "homeDesc": "Casquettes personnalisées de qualité supérieure — sourcing direct. OEM/ODM depuis 2014. Broderie sur-mesure, MOQ 200 pcs, échantillons en 7 jours. Votre partenaire sourcing à Baoding, Chine.",
     "aboutTitle": "À Propos de BD Hats | 12 Ans de Fabrication de Casquettes à Baoding, Chine",
     "aboutDesc": "D'un atelier de 15 artisans à un partenaire de sourcing servant plus de 300 marques mondiales. Découvrez l'histoire de Baoding Junyang depuis 2014.",
     "guideTitle": "Guide de Fabrication de Casquettes B2B | Sourcing Grossiste en Chine",
@@ -439,9 +439,9 @@
     "pricingDesc": "Structure tarifaire transparente pour casquettes : FOB vs CIF, MOQ 200 pcs, coûts de fret aérien et maritime, frais d'échantillonnage et remises par paliers."
   },
   "popup": {
-    "badge": "Direct Usine · Fondé en 2014",
+    "badge": "Partenaire de Sourcing · Est. 2014",
     "heading": "Des Casquettes Sur-Mesure pour Votre Marque ?",
-    "sub": "Recevez votre chiffrage usine sous 2 heures — sans engagement, prototypes physiques en 7 jours.",
+    "sub": "Recevez votre devis sous 2 heures — sans engagement, prototypes physiques en 7 jours.",
     "whatsappBtn": "Discuter sur WhatsApp",
     "formBtn": "Envoyer une Demande",
     "note": "Sourcing direct · Contrôle qualité multi-étapes · Inspection avant expédition"

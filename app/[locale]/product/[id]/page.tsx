@@ -125,10 +125,6 @@ export default function ProductDetail() {
       "@type": "Brand",
       "name": "BD Hats"
     },
-    "manufacturer": {
-      "@type": "Organization",
-      "name": "Baoding Junyang Import and Export Trade Co., Ltd."
-    },
     ...(priceBand
       ? {
           "offers": {
@@ -668,7 +664,7 @@ export default function ProductDetail() {
       <section id="product-rfq" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-10 scroll-mt-24">
         <div className="text-center mb-6">
           <span className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 border border-blue-200/60 px-2.5 py-0.5 rounded-full inline-block mb-2">
-            {lang === "es" ? "Cotización en 2h · Revisión Directa de Fábrica" : "Written Quote in 2h · Direct Factory Review"}
+            {lang === "es" ? "Cotización en 2h · Revisión Directa de Especificaciones" : "Written Quote in 2h · Direct Spec Review"}
           </span>
           <h3 className="text-xl sm:text-2xl font-black tracking-tight text-slate-900">
             {lang === "es" ? `Cotizar: ${hat.name}` : `Request a Quote for ${hat.name}`}

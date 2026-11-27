@@ -10,9 +10,9 @@ const CONTENT = {
       crumb: "Custom Corduroy Caps",
       badge: "⚡ Autumn/Winter Vintage Drops · 8W / 14W / 21W Wale Corduroy",
       title: "Custom",
-      accent: "Corduroy Caps Manufacturer",
+      accent: "Corduroy Caps",
       subtitle:
-        "Premium wide-wale, standard and baby-corduroy caps tailored for lifestyle streetwear, outdoor brands and private labels. Factory-direct MOQ 200 pcs with fast 7-day samples.",
+        "Premium wide-wale, standard and baby-corduroy caps tailored for lifestyle streetwear, outdoor brands and private labels. Direct MOQ 200 pcs with fast 7-day samples.",
       pills: [
         "MOQ 200 Pcs",
         "From $4.50 FOB",
@@ -22,9 +22,9 @@ const CONTENT = {
         "Custom Leather Straps",
       ],
     },
-    featuresTitle: "Why Brands Choose Our Factory for Custom Corduroy Caps",
+    featuresTitle: "Why Brands Choose BD Hats for Custom Corduroy Caps",
     featuresIntro:
-      "Corduroy requires specialized fabric stabilization and cutting techniques to prevent rib distortion and thread sinking. Here is how our factory engineers every corduroy order:",
+      "Corduroy requires specialized fabric stabilization and cutting techniques to prevent rib distortion and thread sinking. Here is how our team engineers every corduroy order:",
     features: [
       {
         title: "8-Wale, 14-Wale & 21-Wale Fabric Arsenal",
@@ -111,10 +111,10 @@ const CONTENT = {
     hero: {
       crumb: "Gorras de Pana",
       badge: "⚡ Colecciones de Invierno · Pana de 8, 14 y 21 Cordones",
-      title: "Fabricante de",
-      accent: "Gorras de Pana Personalizadas",
+      title: "Gorras de Pana",
+      accent: "Personalizadas",
       subtitle:
-        "Gorras de pana gruesa, clásica y micropana confeccionadas para marcas de moda urbana, streetwear y marcas privadas. Directo de fábrica, pedido mínimo 200 piezas y muestras en 7 días.",
+        "Gorras de pana gruesa, clásica y micropana confeccionadas para marcas de moda urbana, streetwear y marcas privadas. Sourcing directo, pedido mínimo 200 piezas y muestras en 7 días.",
       pills: [
         "MOQ 200 piezas",
         "Desde $4.50 FOB",
@@ -124,7 +124,7 @@ const CONTENT = {
         "Correas de cuero personalizadas",
       ],
     },
-    featuresTitle: "Por qué las Marcas Eligen Nuestra Fábrica para Gorras de Pana",
+    featuresTitle: "Por qué las Marcas Eligen BD Hats para Gorras de Pana",
     featuresIntro:
       "La pana requiere técnicas especiales de corte y estabilización para evitar la deformación de las nervaduras. Así fabricamos cada pedido en nuestra planta:",
     features: [

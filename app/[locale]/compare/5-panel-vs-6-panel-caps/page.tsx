@@ -139,7 +139,7 @@ const CONTENT = {
     cta: {
       title: "Send your artwork — we will tell you which construction fits it",
       text: "We assess your logo, recommend the construction and crown profile, then quote within 2 hours. MOQ 200 pcs, physical samples in 7 days.",
-      button: "Get Factory Quote",
+      button: "Get Quote",
     },
   },
   es: {

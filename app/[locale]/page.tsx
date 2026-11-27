@@ -67,8 +67,8 @@ const SOURCING_GUIDE = {
     badge: "B2B Sourcing Knowledge",
     title: "Custom Hat Manufacturing: Materials, Compliance & Ordering",
     intro:
-      "Most failed hat orders come from unclear specifications, not from bad factories. This section summarises how we manufacture, which materials we work with, how compliance is handled, and what a smooth order looks like from tech pack to container — so you can compare us against other suppliers on facts.",
-    materialsTitle: "Materials We Manufacture With",
+      "Most failed hat orders come from unclear specifications, not from bad factories. This section summarises how our production runs, which materials we work with, how compliance is handled, and what a smooth order looks like from tech pack to container — so you can compare us against other suppliers on facts.",
+    materialsTitle: "Materials We Work With",
     materials: [
       { name: "108*56 Heavy Cotton Twill", desc: "Our best-selling cap fabric: a dense diagonal weave that holds structure, keeps its crown shape after washing, and takes high-density 3D puff embroidery cleanly. The default choice for streetwear 5-panel and structured 6-panel programs." },
       { name: "Brushed Cotton", desc: "Softer hand-feel with a subtle matte surface; the popular choice for vintage dad hats and lifestyle caps. Pre-shrunk options are available for enzyme-washed and acid-washed finishes." },
@@ -157,7 +157,7 @@ const SOURCING_GUIDE = {
     badge: "Conocimiento de Sourcing B2B",
     title: "Fabricación de Gorras Personalizadas: Materiales, Cumplimiento y Pedidos",
     intro:
-      "La mayoría de los pedidos de gorras fallidos se deben a especificaciones poco claras, no a malas fábricas. Esta sección resume cómo fabricamos, con qué materiales trabajamos, cómo gestionamos el cumplimiento y cómo es un pedido fluido, del tech pack al contenedor: así puedes compararnos con otros proveedores con hechos.",
+      "La mayoría de los pedidos de gorras fallidos se deben a especificaciones poco claras, no a malas fábricas. Esta sección resume cómo organizamos la producción, con qué materiales trabajamos, cómo gestionamos el cumplimiento y cómo es un pedido fluido, del tech pack al contenedor: así puedes compararnos con otros proveedores con hechos.",
     materialsTitle: "Materiales con los que Fabricamos",
     materials: [
       { name: "Sarga de Algodón Pesada 108*56", desc: "Nuestra tela de gorras más vendida: un tejido sarga denso que mantiene la estructura, conserva la forma de la corona tras el lavado y acepta bordado 3D puff de alta densidad sin defectos. La opción predeterminada para programas streetwear de 5 paneles y 6 paneles estructurados." },
@@ -247,7 +247,7 @@ const SOURCING_GUIDE = {
     badge: "Conhecimento de Sourcing B2B",
     title: "Fabricação de Bonés Personalizados: Materiais, Conformidade e Pedidos",
     intro:
-      "A maioria dos pedidos de bonés que falham é culpa de especificações pouco claras, não de fábricas ruins. Esta seção resume como fabricamos, com quais materiais trabalhamos, como a conformidade é tratada e como funciona um pedido fluido, do tech pack ao contêiner — para você nos comparar a outros fornecedores com fatos.",
+      "A maioria dos pedidos de bonés que falham é culpa de especificações pouco claras, não de fábricas ruins. Esta seção resume como organizamos a produção, com quais materiais trabalhamos, como a conformidade é tratada e como funciona um pedido fluido, do tech pack ao contêiner — para você nos comparar a outros fornecedores com fatos.",
     materialsTitle: "Materiais com os quais Fabricamos",
     materials: [
       { name: "Sarja de Algodão Pesada 108*56", desc: "Nosso tecido de boné mais vendido: trama diagonal densa que mantém a estrutura, preserva a forma da coroa após a lavagem e aceita bordado 3D puff de alta densidade sem defeitos. A escolha padrão para programas streetwear de 5 painéis e 6 painéis estruturados." },

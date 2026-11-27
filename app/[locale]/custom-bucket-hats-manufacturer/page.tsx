@@ -11,7 +11,7 @@ const CONTENT = {
       title: "Custom",
       accent: "Bucket Hats",
       subtitle:
-        "Soft-brim bucket hats in cotton twill, corduroy, ripstop and reversible builds — decorated with embroidery, patches or print at the factory.",
+        "Soft-brim bucket hats in cotton twill, corduroy, ripstop and reversible builds — decorated with embroidery, patches or print at our partner lines.",
       pills: ["MOQ 200 Pcs", "From $3.50 FOB", "Reversible Options", "7-Day Samples"],
     },
     featuresTitle: "How We Build a Bucket Hat",
@@ -101,7 +101,7 @@ const CONTENT = {
       title: "Gorros",
       accent: "Bucket Personalizados",
       subtitle:
-        "Gorros bucket de ala suave en sarga de algodón, pana, ripstop y versiones reversibles, decorados con bordado, parches o impresión en fábrica.",
+        "Gorros bucket de ala suave en sarga de algodón, pana, ripstop y versiones reversibles, decorados con bordado, parches o impresión en nuestras líneas asociadas.",
       pills: ["MOQ 200 uds", "Desde $3.50 FOB", "Opción reversible", "Muestras en 7 días"],
     },
     featuresTitle: "Cómo fabricamos un gorro bucket",
@@ -193,9 +193,9 @@ export default function BucketHatsPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Custom Bucket Hats Manufacturer — Wholesale Fisherman Hats",
+    headline: "Custom Bucket Hats — Wholesale Fisherman Hats",
     description:
-      "Custom bucket hats direct from the factory: cotton twill, corduroy, ripstop and reversible builds with embroidery, patches or print. MOQ 200pcs, 7-day samples.",
+      "Custom bucket hats: cotton twill, corduroy, ripstop and reversible builds with embroidery, patches or print. MOQ 200pcs, 7-day samples.",
     author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",

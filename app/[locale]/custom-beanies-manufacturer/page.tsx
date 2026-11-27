@@ -11,9 +11,9 @@ const CONTENT = {
       crumb: "Custom Beanies",
       badge: "⚡ Q4 Urgent Winter Drops · Knitwear Program",
       title: "Custom",
-      accent: "Beanies Manufacturer",
+      accent: "Beanies",
       subtitle:
-        "Cuffed, fisherman, satin-lined and custom jacquard knit beanies — yarn gauge, stretch and rib depth built to your tech pack, with factory-direct wholesale pricing from $3.50.",
+        "Cuffed, fisherman, satin-lined and custom jacquard knit beanies — yarn gauge, stretch and rib depth built to your tech pack, with direct wholesale pricing from $3.50.",
       pills: ["MOQ 200 Pcs", "From $3.50 FOB", "7-Day Samples", "15-Day Fast Turnaround", "Wool, Acrylic & Satin Lined"],
     },
     silhouettesTitle: "Core Winter Knit Silhouettes for Brand Drops",
@@ -102,7 +102,7 @@ const CONTENT = {
     pricingNote:
       "Simple acrylic beanies sit at the $3.50 floor; merino blends with complex jacquard knitting or genuine leather patches sit around $5.00–$7.00. Stock yarn cards contain 60+ Pantone shades with zero dyeing delay.",
     productsTitle: "Our Beanie Range & Stock Styles",
-    productsNote: "MOQ 200 pcs · factory direct",
+    productsNote: "MOQ 200 pcs · direct sourcing",
     products: [
       {
         href: "/product/custom-embroidery-knitted-beanie",
@@ -179,10 +179,10 @@ const CONTENT = {
     hero: {
       crumb: "Gorros de Punto",
       badge: "⚡ Colecciones Urgentes T4 · Programas de Punto",
-      title: "Fabricante de",
-      accent: "Gorros de Punto",
+      title: "Gorros de Punto",
+      accent: "Personalizados",
       subtitle:
-        "Gorros con doblez, estilo pescador, con forro de satén y jacquard personalizado: galga de tejido, elasticidad y profundidad de doblez según ficha técnica, desde $3.50 FOB directo de fábrica.",
+        "Gorros con doblez, estilo pescador, con forro de satén y jacquard personalizado: galga de tejido, elasticidad y profundidad de doblez según ficha técnica, desde $3.50 FOB, sourcing directo.",
       pills: ["MOQ 200 uds", "Desde $3.50 FOB", "Muestras en 7 días", "Producción en 15 días", "Lana, acrílico y forro de satén"],
     },
     silhouettesTitle: "Siluetas Esenciales de Gorros para Colecciones de Invierno",
@@ -271,7 +271,7 @@ const CONTENT = {
     pricingNote:
       "Los gorros sencillos de acrílico arrancan en el piso de $3.50; las mezclas con lana merino, el tejido jacquard complejo o parches de cuero genuino rondan $5.00–$7.00. Disponemos de más de 60 colores Pantone en stock permanente sin esperas de tintura.",
     productsTitle: "Nuestra línea de gorros y estilos en stock",
-    productsNote: "MOQ 200 uds · directo de fábrica",
+    productsNote: "MOQ 200 uds · sourcing directo",
     products: [
       {
         href: "/product/custom-embroidery-knitted-beanie",
@@ -353,9 +353,9 @@ export default function BeaniesPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Custom Beanies Manufacturer — Wholesale Knit Hats China",
+    headline: "Custom Beanies — Wholesale Knit Hats China",
     description:
-      "Custom knit beanies direct from the factory: cuffed, pom-pom, jacquard and patch styles in wool blends or acrylic. MOQ 200pcs, 7-day samples.",
+      "Custom knit beanies: cuffed, pom-pom, jacquard and patch styles in wool blends or acrylic. MOQ 200pcs, 7-day samples.",
     author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",
@@ -523,7 +523,7 @@ export default function BeaniesPage() {
           <div>
             <div className="flex items-center gap-2 text-amber-400 text-xs font-black uppercase tracking-wider mb-2">
               <Sparkles size={16} />
-              <span>Q4 Direct Factory Fast Track</span>
+              <span>Q4 Direct Fast Track</span>
             </div>
             <h3 className="text-xl md:text-2xl font-black mb-2">
               {lang === "es" ? "¿Listo para lanzar tu colección de gorros de invierno?" : "Ready to Launch Your Autumn/Winter Beanie Line?"}

@@ -87,7 +87,7 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
       `• Primary Decoration: ${decoration}`,
       `• Required Delivery Timeline: ${timeline}`,
       `• Destination Market: ${destination}`,
-      `• NDA Status: ${ndaRequested ? "REQUESTED — Please send mutual NDA for signature before reviewing artwork/files" : "Standard Factory Review"}`,
+      `• NDA Status: ${ndaRequested ? "REQUESTED — Please send mutual NDA for signature before reviewing artwork/files" : "Standard Spec Review"}`,
       customNotes ? `\n[Client Artwork & Specification Notes]:\n${customNotes}` : "",
     ].filter(Boolean).join("\n");
 
@@ -146,7 +146,7 @@ export function InquiryForm({ productName, sku }: { productName?: string; sku?: 
           ...attrLines,
         ]
       : [
-          `New B2B Factory RFQ (${generatedId}) — BD Hats`,
+          `New B2B RFQ (${generatedId}) — BD Hats`,
           "----------------------------------",
           ...(productName ? [`Product: ${productName}${sku ? ` (SKU: ${sku})` : ""}`] : []),
           `Name: ${name}`,

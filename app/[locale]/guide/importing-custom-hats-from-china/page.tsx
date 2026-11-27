@@ -26,7 +26,7 @@ const WHATSAPP_NUMBER = "8615933930830";
 const CONTENT = {
   en: {
     hero: {
-      badge: "2026 Customs & Logistics Sourcing Intelligence · Direct Factory Export",
+      badge: "2026 Customs & Logistics Sourcing Intelligence · Direct Export",
       title: "Importing Custom Hats from China",
       accent: "& B2B Logistics Guide",
       subtitle:
@@ -112,8 +112,8 @@ const CONTENT = {
       },
       {
         term: "EXW (Ex Works)",
-        label: "Factory Floor Handover Only",
-        desc: "You take legal responsibility from our Baoding factory gate. Not recommended unless you have an established domestic consolidation agent in China coordinating mixed-category containers.",
+        label: "Ex-Works Handover Only",
+        desc: "You take legal responsibility from the ex-works point in Baoding, China. Not recommended unless you have an established domestic consolidation agent in China coordinating mixed-category containers.",
         recommended: false,
       },
     ],
@@ -138,7 +138,7 @@ const CONTENT = {
   },
   es: {
     hero: {
-      badge: "Inteligencia Aduanera y Logística 2026 · Exportación Directa de Fábrica",
+      badge: "Inteligencia Aduanera y Logística 2026 · Exportación Directa",
       title: "Cómo Importar Gorras de China",
       accent: "y Guía Logística B2B",
       subtitle:
@@ -225,7 +225,7 @@ const CONTENT = {
       {
         term: "EXW (Ex Works - En Fábrica)",
         label: "Entrega Directa en Planta",
-        desc: "Asumes la responsabilidad desde las puertas de nuestra fábrica en Baoding. Solo recomendable si consolidas contenedores mixtos en China con tu propio agente.",
+        desc: "Asumes la responsabilidad desde la puerta de nuestras líneas asociadas en Baoding. Solo recomendable si consolidas contenedores mixtos en China con tu propio agente.",
         recommended: false,
       },
     ],
@@ -351,7 +351,7 @@ export default function ImportingGuidePage() {
             </Link>
             <NavCompareMenu />
             <Link href={`/${lang}/about`} className="hover:text-black transition">
-              About Factory
+              About Us
             </Link>
           </nav>
           <div className="flex items-center gap-3">

@@ -1,7 +1,7 @@
 {
      "nav": {
           "advantages": "Vantaggi",
-          "factory": "La Nostra Fabbrica",
+          "factory": "Approvvigionamento e Qualità",
           "qualityControl": "Controllo Qualità",
           "products": "Cappelli",
           "inquiry": "Richiesta Preventivo",
@@ -281,7 +281,7 @@
                "Cina vs Vietnam vs Bangladesh"
           ],
           "freeBadge": "AI/PDF Gratis",
-          "factoryDirect": "Super Fabbrica Diretta · OEM/ODM",
+          "factoryDirect": "Partner di Sourcing Diretto · Programmi OEM/ODM",
           "exporting": "Esportazione verso USA, UE e AU dal 2014",
           "backToTop": "Torna su ↑",
           "assets": {
@@ -325,7 +325,7 @@
           "sortPriceAsc": "Prezzo: Crescente",
           "sortPriceDesc": "Prezzo: Decrescente",
           "moq": "MOQ: {count} Pz",
-          "factoryDirect": "Diretto di Fabbrica",
+          "factoryDirect": "Prezzo FOB",
           "viewDetails": "Vedi Dettagli",
           "quote": "Preventivo",
           "details": "Dettagli",

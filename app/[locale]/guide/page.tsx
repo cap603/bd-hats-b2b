@@ -182,7 +182,7 @@ export default function GuidePage() {
         "name": "What is the real factory MOQ for custom hats in China?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "At Baoding Junyang, our standard production MOQ is 200 pieces per style/colorway. This threshold allows automated computer embroidery lines to run cost-effectively while giving emerging streetwear and apparel brands accessible factory-direct FOB pricing."
+          "text": "At Baoding Junyang, our standard production MOQ is 200 pieces per style/colorway. This threshold allows automated computer embroidery lines to run cost-effectively while giving emerging streetwear and apparel brands accessible direct FOB pricing."
         }
       },
       {
@@ -231,7 +231,7 @@ export default function GuidePage() {
   const FAQS = [
     {
       q: "What is the real factory MOQ for custom hats in China?",
-      a: "Our standard production MOQ is 200 pieces per style/colorway. This threshold allows automated computer embroidery lines to run cost-effectively while giving emerging streetwear and apparel brands accessible factory-direct FOB pricing."
+      a: "Our standard production MOQ is 200 pieces per style/colorway. This threshold allows automated computer embroidery lines to run cost-effectively while giving emerging streetwear and apparel brands accessible direct FOB pricing."
     },
     {
       q: "How long does custom hat sampling and mass production take?",
@@ -348,7 +348,7 @@ export default function GuidePage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <span className="text-xs font-black uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-              {lang === "es" ? "Herramientas y Recursos de Ingeniería" : "Factory Engineering & Sourcing Hub"}
+              {lang === "es" ? "Herramientas y Recursos de Ingeniería" : "Engineering & Sourcing Hub"}
             </span>
             <h2 className="text-2xl md:text-3xl font-black text-gray-950 mt-4 tracking-tight">
               {lang === "es" ? "Recursos Directos para Diseñadores y Compradores B2B" : "Direct Production Tools for Headwear Buyers"}
@@ -517,7 +517,7 @@ export default function GuidePage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-xs font-black uppercase tracking-[0.2em] text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-              Factory Direct FAQs
+              Direct Sourcing FAQs
             </span>
             <h2 className="text-3xl md:text-4xl font-black text-gray-950 mt-4 tracking-tight">
               Frequently Asked Questions for B2B Cap Buyers

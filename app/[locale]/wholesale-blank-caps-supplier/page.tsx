@@ -14,12 +14,12 @@ const CONTENT = {
         "Plain, undecorated caps in 50+ stock colors — the lowest-cost way to start a hat line. Ship blank or let us decorate later.",
       pills: ["From $3.50 FOB", "MOQ 200 Pcs", "50+ Stock Colors", "7-Day Samples"],
     },
-    featuresTitle: "Why Buy Blank Caps From the Factory",
+    featuresTitle: "Why Buy Blank Caps From BD Hats",
     featuresIntro:
       "Dealers, decorators and private-label brands buy blanks for one reason: the shell is cheap, and the decoration happens on your side. Here is what we control for you.",
     features: [
       {
-        title: "No-Logo Pricing, Factory Direct",
+        title: "No-Logo Pricing, Direct Sourcing",
         desc: "Blank caps skip embroidery, patches and label costs — which is why they are the cheapest way into a cap program. You buy the shell from us and decorate locally, or we decorate for you later. Pricing starts at $3.50 per unit FOB.",
       },
       {
@@ -113,12 +113,12 @@ const CONTENT = {
         "Gorras lisas y sin decorar en más de 50 colores en stock: la forma más económica de arrancar una línea de gorras. Envíalas blank o deja que las decoremos después.",
       pills: ["Desde $3.50 FOB", "MOQ 200 pcs", "50+ colores en stock", "Muestras en 7 días"],
     },
-    featuresTitle: "Por qué comprar gorras blank directo de fábrica",
+    featuresTitle: "Por qué comprar gorras blank a precio de fábrica",
     featuresIntro:
       "Distribuidores, decoradores y marcas private label compran blank por una razón: la base es económica y la decoración corre por tu cuenta. Esto es lo que controlamos para ti.",
     features: [
       {
-        title: "Precio sin logo, directo de fábrica",
+        title: "Precio sin logo, sourcing directo",
         desc: "Las gorras blank se ahorran el bordado, los parches y las etiquetas, por eso son la vía más económica para iniciar un programa de gorras. Compras la base con nosotros y la decoras localmente, o la decoramos nosotros después. El precio comienza en $3.50 por unidad FOB.",
       },
       {
@@ -192,9 +192,9 @@ export default function BlankCapsPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Wholesale Blank Caps Supplier — Plain Hat Manufacturer China",
+    headline: "Wholesale Blank Caps Supplier — Plain Hats China",
     description:
-      "Bulk blank caps direct from the factory: 50+ stock colors, 100% cotton twill, no-logo pricing from $3.50 FOB, MOQ 200pcs, 7-day samples.",
+      "Bulk blank caps direct from BD Hats: 50+ stock colors, 100% cotton twill, no-logo pricing from $3.50 FOB, MOQ 200pcs, 7-day samples.",
     author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",

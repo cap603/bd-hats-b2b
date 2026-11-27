@@ -10,12 +10,12 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   return {
     title:
       locale === "es"
-        ? "Fabricante de Gorros de Punto | Beanies al por Mayor"
-        : "Custom Beanies Manufacturer | Wholesale Knit Hats China",
+        ? "Gorros de Punto Personalizados | Beanies al por Mayor"
+        : "Custom Beanies | Wholesale Knit Hats China",
     description:
       locale === "es"
-        ? "Gorros de punto personalizados directo de fábrica: cuff, con pompón, jacquard y parches. Lana y acrílico. MOQ 200uds, $3.50-$7.00 FOB, muestras rápidas en 7 días."
-        : "Custom knit beanies direct from factory: cuffed, pom-pom, jacquard & patch styles. Wool & acrylic blends, MOQ 200pcs, $3.50-$7.00 FOB, 7-day fast samples.",
+        ? "Gorros de punto personalizados, sourcing directo: cuff, con pompón, jacquard y parches. Lana y acrílico. MOQ 200uds, $3.50-$7.00 FOB, muestras rápidas en 7 días."
+        : "Custom knit beanies, direct sourcing: cuffed, pom-pom, jacquard & patch styles. Wool & acrylic blends, MOQ 200pcs, $3.50-$7.00 FOB, 7-day fast samples.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       title:
         locale === "es"
           ? "Gorros de Punto Personalizados al por Mayor | BD Hats"
-          : "Custom Beanies Wholesale — Factory Direct | BD Hats",
+          : "Custom Beanies Wholesale — Direct Sourcing | BD Hats",
       description:
         locale === "es"
           ? "Gorros de invierno con tu marca: jacquard, bordado y parches tejidos. MOQ 200uds, producción en 15-20 días."

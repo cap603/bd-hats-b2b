@@ -16,16 +16,16 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Gorras corporativas personalizadas directo de fábrica: bordado de logotipo, empaque individual, entregas por fases para eventos. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días."
-        : "Corporate custom hats direct from the factory: logo embroidery, individual packaging and phased deliveries for events. MOQ 200pcs, $3.50-$7.00 FOB, samples in 7 days.",
+        ? "Gorras corporativas personalizadas, sourcing directo: bordado de logotipo, empaque individual, entregas por fases para eventos. MOQ 200uds, $3.50-$7.00 FOB, muestras en 7 días."
+        : "Corporate custom hats, direct sourcing: logo embroidery, individual packaging and phased deliveries for events. MOQ 200pcs, $3.50-$7.00 FOB, samples in 7 days.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
       url: canonical,
       title:
         locale === "es"
-          ? "Gorras Corporativas Personalizadas — Directo de Fábrica | BD Hats"
-          : "Corporate Custom Hats — Factory Direct | BD Hats",
+          ? "Gorras Corporativas Personalizadas — Sourcing Directo | BD Hats"
+          : "Corporate Custom Hats — Direct Sourcing | BD Hats",
       description:
         locale === "es"
           ? "Gorras con logotipo para uniformes, eventos y regalos corporativos. Bordado o parche, empaque individual."

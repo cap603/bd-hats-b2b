@@ -99,7 +99,7 @@ const CONTENT = {
         heading: "1. The Sourcing Dilemma: Warmth vs Production Economics",
         paragraphs: [
           "When brand founders begin sourcing knit beanies, the immediate instinct is often to specify '100% natural wool.' However, in commercial wholesale production, 100% pure wool introduces significant retail friction: higher unit cost, stricter washing warnings that cause consumer returns if machine-washed, and sensitivity for wearers with sensitive foreheads.",
-          "High-grade acrylic, on the other hand, is the global workhorse of modern headwear. Our factory uses premium core-spun acrylic yarns that are specifically combed to remove rough burrs. The result is a handfeel nearly indistinguishable from cashmere at one-third the raw material cost, with total machine-wash convenience for end consumers.",
+          "High-grade acrylic, on the other hand, is the global workhorse of modern headwear. Our partner lines use premium core-spun acrylic yarns that are specifically combed to remove rough burrs. The result is a handfeel nearly indistinguishable from cashmere at one-third the raw material cost, with total machine-wash convenience for end consumers.",
         ],
       },
       {
@@ -135,7 +135,7 @@ const CONTENT = {
       },
       {
         q: "Does Merino wool itch on the forehead?",
-        a: "Standard coarse wool (28-35 microns) causes prickling and itchiness because the thick fiber ends do not bend. Our factory exclusively sources extra-fine Merino wool under 20.5 microns. The fibers bend effortlessly upon skin contact, making them comfortable for over 98% of wearers.",
+        a: "Standard coarse wool (28-35 microns) causes prickling and itchiness because the thick fiber ends do not bend. Our partner lines exclusively source extra-fine Merino wool under 20.5 microns. The fibers bend effortlessly upon skin contact, making them comfortable for over 98% of wearers.",
       },
       {
         q: "What is the minimum order quantity (MOQ) for custom dyed yarn?",
@@ -241,7 +241,7 @@ const CONTENT = {
         heading: "1. El Dilema del Comprador: Calidez vs Economía de Escala",
         paragraphs: [
           "Muchos directores de producto buscan instintivamente '100% lana natural'. No obstante, en la producción B2B a gran escala, la lana pura implica mayores costes, riesgo de quejas si el cliente final la lava en caliente y una textura que puede no agradar a usuarios con piel hipersensible.",
-          "El acrílico de alta densidad, en cambio, es el estándar de la moda actual. En nuestra fábrica utilizamos hilo acrílico peinado sin rebabas, logrando un tacto prácticamente idéntico al cachemir a un tercio del coste y con la comodidad de poder lavarse en lavadora.",
+          "El acrílico de alta densidad, en cambio, es el estándar de la moda actual. Nuestras líneas asociadas utilizan hilo acrílico peinado sin rebabas, logrando un tacto prácticamente idéntico al cachemir a un tercio del coste y con la comodidad de poder lavarse en lavadora.",
         ],
       },
       {
@@ -277,7 +277,7 @@ const CONTENT = {
       },
       {
         q: "¿La lana merino pica en la frente?",
-        a: "La lana tradicional gruesa pica porque las puntas rígidas no se doblan. Nuestra fábrica utiliza exclusivamente lana merino extrafina de menos de 20.5 micras, cuyas fibras se flexionan suavemente al tacto sin causar irritación en más del 98% de los usuarios.",
+        a: "La lana tradicional gruesa pica porque las puntas rígidas no se doblan. Nuestra red productiva utiliza exclusivamente lana merino extrafina de menos de 20.5 micras, cuyas fibras se flexionan suavemente al tacto sin causar irritación en más del 98% de los usuarios.",
       },
       {
         q: "¿Cuál es el pedido mínimo para teñir colores a medida?",
@@ -310,7 +310,7 @@ export default function MerinoVsAcrylicPage() {
       quickAnswer={c.hero.quickAnswer}
       ctaTitle={lang === "es" ? "¿Listo para Diseñar su Colección de Gorros?" : "Ready to Build Your Custom Beanie Collection?"}
       ctaText={lang === "es" ? "Desde acrílico suave de gran volumen hasta lana merino extrafina de alta gama. Cotización de fábrica en 2 horas." : "From high-volume soft acrylics to premium extrafine Merino wool. Get your direct factory quote in 2 hours."}
-      ctaButton={lang === "es" ? "Solicitar Cotización de Fábrica" : "Get Factory Quote"}
+      ctaButton={lang === "es" ? "Solicitar Cotización" : "Get Quote"}
     >
       <ComparisonTable
         caption={c.table.caption}
@@ -344,7 +344,7 @@ export default function MerinoVsAcrylicPage() {
       {/* Internal link bridge back to custom beanies landing page */}
       <div className="my-16 bg-slate-900 text-white rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto shadow-2xl">
         <span className="text-xs font-black uppercase tracking-widest text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-800">
-          {lang === "es" ? "Producción Directa de Fábrica" : "Direct Factory Production"}
+          {lang === "es" ? "Producción Directa" : "Direct Production"}
         </span>
         <h3 className="text-2xl sm:text-3xl font-black mt-4 mb-3">
           {lang === "es"

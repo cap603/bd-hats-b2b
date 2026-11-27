@@ -49,7 +49,7 @@ const CONTENT = {
         {
           label: "MOQ flexibility",
           values: [
-            "Our factory term is 200 pcs per style / colour, which keeps small trial runs viable",
+            "Our MOQ term is 200 pcs per style / colour, which keeps small trial runs viable",
             "Minimums are set by each factory — ask for the per-style and per-colour rules before you plan the range",
             "Volume-led factories usually expect larger programme sizes; confirm the minimum in writing",
           ],
@@ -57,7 +57,7 @@ const CONTENT = {
         {
           label: "Sampling speed",
           values: [
-            "Physical samples in 7 days at our factory, because fabric, embroidery and assembly are all local",
+            "Physical samples in 7 days, because fabric, embroidery and assembly are coordinated within one vetted production belt",
             "Depends on whether embroidery and trims are handled in-house; external sourcing adds rounds to the sample stage",
             "Depends on the factory sampling line and on component lead time",
           ],
@@ -65,7 +65,7 @@ const CONTENT = {
         {
           label: "Communication and response",
           values: [
-            "Direct contact with the factory; artwork feedback and quotes in English",
+            "Direct contact with our sourcing team; artwork feedback and quotes in English",
             "Responsive teams are common; the depth of technical feedback depends on the factory",
             "Established export documentation; expect the same correspondence style as with any volume exporter",
           ],
@@ -81,7 +81,7 @@ const CONTENT = {
         {
           label: "Logistics",
           values: [
-            "Inland factory (Baoding, Hebei): truck to port, then sea or air; we ship worldwide across North America, Europe, Asia Pacific and the Middle East",
+            "Inland production base (Baoding, Hebei): truck to port, then sea or air; we ship worldwide across North America, Europe, Asia Pacific and the Middle East",
             "Coastal manufacturing hubs with direct sea lanes to the US and EU",
             "Coastal manufacturing hubs with direct sea lanes to the EU and US",
           ],
@@ -119,7 +119,7 @@ const CONTENT = {
       title: "Does the sourcing country change your MOQ or price band?",
       body: [
         "Country is not the main price driver. Within headwear, unit cost is moved most by fabric, the number of decoration positions, the structure of the crown and the order quantity. Two factories in the same country can quote differently for the same cap, and two factories in different countries can land in a similar range when the brief is identical.",
-        "For transparency about our own position: Baoding Junyang is a Chinese manufacturer with an MOQ of 200 pcs per style and colour, a factory price band of $3.50–$7.00 FOB, physical samples in 7 days and bulk production in 15–20 days after sample approval. Those are our terms, not a claim about any other country.",
+        "For transparency about our own position: Baoding Junyang is a China-based sourcing partner with an MOQ of 200 pcs per style and colour, a factory price band of $3.50–$7.00 FOB, physical samples in 7 days and bulk production in 15–20 days after sample approval. Those are our terms, not a claim about any other country.",
         "What does change between suppliers is the shape of the minimum. A minimum counted per style and colour lets you build several colourways without multiplying the order; a minimum counted per order with a high volume requirement pushes you towards fewer, larger styles. That structure affects range planning far more than the headline unit price.",
         "The practical approach for a first order: send one brief — artwork, fabric, quantity, target market, delivery window — to each supplier you are considering, ask each of them for a physical sample, and compare the quote together with the sample. Request a quote and we will price the headwear part of your programme.",
       ],
@@ -174,7 +174,7 @@ const CONTENT = {
         },
         {
           q: "How long does production take from a Chinese hat factory?",
-          a: "At our factory: 7 days for a physical sample and 15–20 days for bulk production after the sample is approved. Total door-to-door time then depends on the shipping method and the destination lane, so ask for a transit option that matches your launch date.",
+          a: "With our partner lines: 7 days for a physical sample and 15–20 days for bulk production after the sample is approved. Total door-to-door time then depends on the shipping method and the destination lane, so ask for a transit option that matches your launch date.",
         },
         {
           q: "How do I compare quotes from different countries fairly?",
@@ -189,7 +189,7 @@ const CONTENT = {
     cta: {
       title: "Send your brief — we will quote the headwear part",
       text: "Send artwork, quantity, fabric and target market and we will come back with a quote, a sampling plan and the production calendar. MOQ 200 pcs, physical samples in 7 days.",
-      button: "Get Factory Quote",
+      button: "Get Quote",
     },
   },
   es: {
@@ -240,7 +240,7 @@ const CONTENT = {
         {
           label: "Velocidad de muestreo",
           values: [
-            "Muestra física en 7 días en nuestra fábrica, porque tela, bordado y ensamble son locales",
+            "Muestra física en 7 días, porque tela, bordado y ensamble se coordinan en una misma red de producción seleccionada",
             "Depende de si el bordado y los avíos son internos; el suministro externo añade rondas al muestreo",
             "Depende de la línea de muestras de la fábrica y del plazo de los componentes",
           ],
@@ -248,7 +248,7 @@ const CONTENT = {
         {
           label: "Comunicación y respuesta",
           values: [
-            "Contacto directo con la fábrica; comentarios de arte y cotizaciones en inglés",
+            "Contacto directo con nuestro equipo de sourcing; comentarios de arte y cotizaciones en inglés",
             "Es habitual encontrar equipos receptivos; la profundidad del feedback técnico depende de la fábrica",
             "Documentación de exportación consolidada; el estilo de comunicación es el de cualquier exportador de volumen",
           ],
@@ -264,7 +264,7 @@ const CONTENT = {
         {
           label: "Logística",
           values: [
-            "Fábrica en el interior (Baoding, Hebei): camión al puerto y luego mar o aire; enviamos a todo el mundo: Norteamérica, Europa, Asia-Pacífico y Oriente Medio",
+            "Base productiva en el interior (Baoding, Hebei): camión al puerto y luego mar o aire; enviamos a todo el mundo: Norteamérica, Europa, Asia-Pacífico y Oriente Medio",
             "Hubs costeros con rutas marítimas directas a EE. UU. y la UE",
             "Hubs costeros con rutas marítimas directas a la UE y EE. UU.",
           ],
@@ -302,7 +302,7 @@ const CONTENT = {
       title: "¿El país de origen cambia tu MOQ o tu banda de precio?",
       body: [
         "El país no es el principal factor de precio. En gorras, el costo unitario lo mueven sobre todo la tela, el número de posiciones de decoración, la estructura de la corona y la cantidad del pedido. Dos fábricas del mismo país pueden cotizar distinto la misma gorra, y dos fábricas de países distintos pueden caer en un rango parecido si el brief es idéntico.",
-        "Para ser transparentes con nuestra propia posición: Baoding Junyang es un fabricante chino con un MOQ de 200 uds por estilo y color, una banda de precio de fábrica de $3.50–$7.00 FOB, muestras físicas en 7 días y producción en masa de 15–20 días tras aprobar la muestra. Son nuestras condiciones, no una afirmación sobre ningún otro país.",
+        "Para ser transparentes con nuestra propia posición: Baoding Junyang es un socio de sourcing con base en China y un MOQ de 200 uds por estilo y color, una banda de precio de fábrica de $3.50–$7.00 FOB, muestras físicas en 7 días y producción en masa de 15–20 días tras aprobar la muestra. Son nuestras condiciones, no una afirmación sobre ningún otro país.",
         "Lo que sí cambia entre proveedores es la forma del mínimo. Un mínimo por estilo y color te permite construir varios colores sin multiplicar el pedido; un mínimo por pedido con volumen alto te empuja hacia menos estilos y más grandes. Esa estructura afecta la planificación de la colección mucho más que el precio unitario.",
         "El enfoque práctico para un primer pedido: envía un único brief — diseño, tela, cantidad, mercado objetivo y ventana de entrega — a cada proveedor que estés considerando, pide a cada uno una muestra física y compara la cotización junto con la muestra. Solicita una cotización y te cotizamos la parte de gorras de tu programa.",
       ],
@@ -357,7 +357,7 @@ const CONTENT = {
         },
         {
           q: "¿Cuánto tarda la producción en una fábrica china de gorras?",
-          a: "En nuestra fábrica: 7 días para una muestra física y 15–20 días de producción en masa tras aprobar la muestra. El tiempo total puerta a puerta depende después del método de envío y de la ruta, así que pide una opción de tránsito que cuadre con tu fecha de lanzamiento.",
+          a: "Con nuestras líneas asociadas: 7 días para una muestra física y 15–20 días de producción en masa tras aprobar la muestra. El tiempo total puerta a puerta depende después del método de envío y de la ruta, así que pide una opción de tránsito que cuadre con tu fecha de lanzamiento.",
         },
         {
           q: "¿Cómo comparo cotizaciones de distintos países de forma justa?",

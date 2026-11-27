@@ -7,11 +7,11 @@ const CONTENT = {
   en: {
     hero: {
       crumb: "Custom Dad Hats",
-      badge: "Unstructured Caps · Factory Direct",
+      badge: "Unstructured Caps · Direct Sourcing",
       title: "Custom",
       accent: "Dad Hats",
       subtitle:
-        "Soft unstructured crowns, washed finishes and clean branding — dad hats built for lifestyle and streetwear brands, straight from our factory.",
+        "Soft unstructured crowns, washed finishes and clean branding — dad hats built for lifestyle and streetwear brands, straight from our partner production lines.",
       pills: ["MOQ 200 Pcs", "From $3.50 FOB", "7-Day Samples", "50+ Stock Colors"],
     },
     featuresTitle: "What We Build Into Every Dad Hat",
@@ -86,11 +86,11 @@ const CONTENT = {
   es: {
     hero: {
       crumb: "Gorras Dad Personalizadas",
-      badge: "Gorras sin estructura · directo de fábrica",
+      badge: "Gorras sin estructura · sourcing directo",
       title: "Gorras Dad",
       accent: "Personalizadas",
       subtitle:
-        "Coronas suaves sin estructura, acabados lavados y branding limpio — gorras dad pensadas para marcas de lifestyle y streetwear, directo de nuestra fábrica.",
+        "Coronas suaves sin estructura, acabados lavados y branding limpio — gorras dad pensadas para marcas de lifestyle y streetwear, directo de nuestras líneas asociadas.",
       pills: ["MOQ 200 pcs", "Desde $3.50 FOB", "Muestras en 7 días", "50+ colores en stock"],
     },
     featuresTitle: "Lo que incorporamos en cada gorra dad",
@@ -171,9 +171,9 @@ export default function DadHatsPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Custom Dad Hats Manufacturer — Wholesale Unstructured Caps",
+    headline: "Custom Dad Hats — Wholesale Unstructured Caps",
     description:
-      "Factory-direct custom dad hats: unstructured 6-panel construction, acid wash and vintage finishes, leather patches. MOQ 200pcs, samples in 7 days.",
+      "Custom dad hats: unstructured 6-panel construction, acid wash and vintage finishes, leather patches. MOQ 200pcs, samples in 7 days.",
     author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     publisher: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },
     datePublished: "2026-09-10",

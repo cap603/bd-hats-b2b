@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     openGraph: {
       type: "article",
       url: canonical,
-      siteName: "BD Hats Factory",
+      siteName: "BD Hats",
       title:
         locale === "es"
-          ? "Snapback vs Strapback vs Hebilla — Comparativa de Fábrica"
-          : "Snapback vs Strapback vs Buckle — A Factory Comparison",
+          ? "Snapback vs Strapback vs Hebilla — Comparativa B2B"
+          : "Snapback vs Strapback vs Buckle — A B2B Comparison",
       description:
         locale === "es"
           ? "Ajuste, aspecto, durabilidad y riesgo de devoluciones de los tres cierres traseros estándar."

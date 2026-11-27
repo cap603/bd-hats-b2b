@@ -14,7 +14,7 @@ const CONTENT = {
     hero: {
       badge: "OEM · ODM · Private Label",
       h1Pre: "Your OEM ",
-      h1Highlight: "Hat Manufacturer",
+      h1Highlight: "Hat Sourcing Partner",
       h1Post: " in China",
       subtitle: "From sketch to shipped — a full-service sourcing partner behind 300+ brands in 50+ countries since 2014. Samples in 7 days, written quote in 2h.",
       pills: ["Scalable B2B Volume", "Multi-Head Embroidery", "OEM / ODM Service", "Est. 2014"]

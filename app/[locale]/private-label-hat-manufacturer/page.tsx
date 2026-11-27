@@ -16,7 +16,7 @@ const CONTENT = {
     },
     brandingTitle: "The Nine Branding Points We Control",
     brandingIntro:
-      "A private label cap is judged on details a customer only notices when they are missing. These are the elements we produce and apply at the factory.",
+      "A private label cap is judged on details a customer only notices when they are missing. These are the elements we produce and apply at our partner lines.",
     branding: [
       {
         title: "Woven & Printed Labels",
@@ -36,7 +36,7 @@ const CONTENT = {
       },
       {
         title: "Barcode & FNSKU Support",
-        desc: "We print and apply UPC, EAN or Amazon FNSKU labels at the factory, so your shipment arrives scan-ready for retail or FBA. Just send the label file and the mapping list.",
+        desc: "We print and apply UPC, EAN or Amazon FNSKU labels at our partner lines, so your shipment arrives scan-ready for retail or FBA. Just send the label file and the mapping list.",
       },
       {
         title: "Under-Visor & Inner Prints",
@@ -86,7 +86,7 @@ const CONTENT = {
     faqs: [
       {
         q: "How does private label differ from buying generic blanks?",
-        a: "Private label gives you a complete turnkey retail product: your custom woven damask labels sewn into the sweatband, branded interior seam tape, barcode hang tags, and custom poly bags. There is zero trace of our factory name.",
+        a: "Private label gives you a complete turnkey retail product: your custom woven damask labels sewn into the sweatband, branded interior seam tape, barcode hang tags, and custom poly bags. There is zero trace of our production partners' names.",
       },
       {
         q: "What is the minimum order quantity (MOQ) for full private label custom trims?",
@@ -135,7 +135,7 @@ const CONTENT = {
     },
     brandingTitle: "Los nueve puntos de branding que controlamos",
     brandingIntro:
-      "Una gorra private label se juzga por detalles que el cliente solo nota cuando faltan. Estos son los elementos que producimos y aplicamos en la fábrica.",
+      "Una gorra private label se juzga por detalles que el cliente solo nota cuando faltan. Estos son los elementos que producimos y aplicamos en nuestras líneas asociadas.",
     branding: [
       {
         title: "Etiquetas tejidas e impresas",
@@ -155,7 +155,7 @@ const CONTENT = {
       },
       {
         title: "Soporte de código de barras y FNSKU",
-        desc: "Imprimimos y aplicamos etiquetas UPC, EAN o FNSKU de Amazon en la fábrica, para que tu embarque llegue listo para escanear en retail o FBA. Solo envíanos el archivo de la etiqueta y la lista de asignación.",
+        desc: "Imprimimos y aplicamos etiquetas UPC, EAN o FNSKU de Amazon en nuestras líneas asociadas, para que tu embarque llegue listo para escanear en retail o FBA. Solo envíanos el archivo de la etiqueta y la lista de asignación.",
       },
       {
         title: "Impresiones bajo la visera y en el interior",
@@ -232,7 +232,7 @@ export default function PrivateLabelPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Private Label Hat Manufacturer — Custom Branded Caps China",
+    headline: "Private Label Hats — Custom Branded Caps China",
     description:
       "Private label hat manufacturing: woven labels, care labels, hang tags, retail packaging and barcode application. MOQ 200pcs, samples in 7 days, pre-shipment QC.",
     author: { "@type": "Organization", name: "Baoding Junyang Import and Export Trade Co., Ltd." },

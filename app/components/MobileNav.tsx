@@ -117,7 +117,7 @@ export function MobileNav() {
                 JUNYANG
               </span>
               <span className="text-[9px] font-bold uppercase tracking-wider text-slate-500">
-                Super Factory
+                Sourcing Partner
               </span>
             </div>
           </div>
@@ -220,7 +220,7 @@ export function MobileNav() {
               >
                 <span className="flex items-center gap-2.5">
                   <Factory size={14} className="text-slate-600" />
-                  <span>About Super Factory</span>
+                  <span>About Sourcing Partner</span>
                 </span>
                 <ChevronRight size={14} className="text-slate-300" />
               </Link>

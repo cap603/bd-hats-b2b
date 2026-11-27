@@ -191,7 +191,7 @@ export function HatCatalog() {
                 <Link href={`/${lang}/product/${hat.id}`} className="block w-full h-full">
                   <img
                     src={hat.img}
-                    alt={`${hat.name} Wholesale Manufacturer`}
+                    alt={`${hat.name} Wholesale`}
                     className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-500 mix-blend-multiply"
                     loading="lazy"
                     width="640"

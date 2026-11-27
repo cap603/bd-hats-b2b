@@ -34,7 +34,7 @@ export async function generateMetadata({
     openGraph: {
       type: "article",
       url: canonical,
-      siteName: "BD Hats Factory",
+      siteName: "BD Hats",
       title: `${article.title} | BD Hats`,
       description: article.metaDesc,
       publishedTime: article.published,

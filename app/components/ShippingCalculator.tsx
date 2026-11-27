@@ -135,7 +135,7 @@ const DICT: Record<string, {
     oceanFreight: "Seefracht LCL / FCL · 25-35 Tage (Günstigste Frachtkosten)",
     guaranteeBadge: "Risikofreie Beschaffung",
     guaranteeTitle: "100% Erstattbare Muster-Garantie",
-    guaranteeDesc: "Testen Sie unsere Fabrikqualität ohne Risiko. Ab einer Großauftragsmenge von 500 Stück (≥ 500 Stück) werden Ihre Musterkosten zu 100% auf die Gesamtrechnung angerechnet.",
+    guaranteeDesc: "Testen Sie unsere Qualität ohne Risiko. Ab einer Großauftragsmenge von 500 Stück (≥ 500 Stück) werden Ihre Musterkosten zu 100% auf die Gesamtrechnung angerechnet.",
     guaranteePoints: [
       "7 Tage Musterschnellfertigung & Versand via DHL/FedEx",
       "HD-Stickvideonachweis vor physischem Versand",

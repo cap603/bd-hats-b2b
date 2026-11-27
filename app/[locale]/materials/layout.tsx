@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       url: canonical,
       title:
         locale === "es"
-          ? "Guía de Materiales y Opciones de Personalización de Gorras | Fábrica BD Hats"
-          : "Hat Materials & Customization Options Guide | BD Hats Factory",
+          ? "Guía de Materiales y Opciones de Personalización de Gorras | BD Hats"
+          : "Hat Materials & Customization Options Guide | BD Hats",
       description:
         locale === "es"
           ? "Todo sobre tejidos, cierres, paneles y opciones personalizadas de gorras. Sarga de algodón, snapback, hebilla, ajuste fijo: elige lo correcto para tu marca."

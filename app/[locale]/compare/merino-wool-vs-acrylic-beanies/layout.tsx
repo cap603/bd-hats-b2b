@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Comparativa de gorros de lana merina vs acrílico: coste de hilo, calidez, lavado y MOQ. Guía de fábrica para marcas de streetwear y outdoor."
-        : "Merino wool vs acrylic beanies compared: yarn cost, warmth, washability, and MOQ. Factory guide for winter streetwear and outdoor knitwear drops.",
+        ? "Comparativa de gorros de lana merina vs acrílico: coste de hilo, calidez, lavado y MOQ. Guía para marcas de streetwear y outdoor."
+        : "Merino wool vs acrylic beanies compared: yarn cost, warmth, washability, and MOQ. Guide for winter streetwear and outdoor knitwear drops.",
     alternates: { canonical, languages },
     openGraph: {
       type: "article",

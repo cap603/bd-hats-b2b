@@ -43,7 +43,7 @@ export function MobileStickyBar({ pageName = "Homepage" }: MobileStickyBarProps)
           <div className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
             <span className="text-[11px] font-black text-slate-900 truncate tracking-tight">
-              {isEs ? "Fábrica Directa" : "Direct Factory"}
+              {isEs ? "Sourcing Directo" : "Direct Sourcing"}
             </span>
             <span className="text-[9px] font-black bg-slate-100 text-slate-700 px-1 py-0.2 rounded border border-slate-200">
               MOQ 200

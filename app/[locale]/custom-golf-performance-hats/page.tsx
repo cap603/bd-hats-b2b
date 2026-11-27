@@ -9,9 +9,9 @@ const CONTENT = {
       crumb: "Performance Golf Hats",
       badge: "⚡ Tour-Grade Tech Caps · Golf & Active Performance",
       title: "Custom",
-      accent: "Performance Golf Hats Manufacturer",
+      accent: "Performance Golf Hats",
       subtitle:
-        "Waterproof, featherlight, and laser-perforated performance caps engineered for golf clubs, athletic brands, and corporate tournament merchandise. Factory-direct MOQ 200 pcs.",
+        "Waterproof, featherlight, and laser-perforated performance caps engineered for golf clubs, athletic brands, and corporate tournament merchandise. Direct MOQ 200 pcs.",
       pills: [
         "MOQ 200 Pcs",
         "From $5.20 FOB",
@@ -23,7 +23,7 @@ const CONTENT = {
     },
     featuresTitle: "Engineered for 18 Holes in Any Weather",
     featuresIntro:
-      "Golf and performance headwear demands technical fabrics, water repellency, and precision breathability. Here is how our factory builds tour-grade active caps:",
+      "Golf and performance headwear demands technical fabrics, water repellency, and precision breathability. Here is how our team builds tour-grade active caps:",
     features: [
       {
         title: "DWR Hydrophobic Micro-Ripstop & 4-Way Stretch",
@@ -110,10 +110,10 @@ const CONTENT = {
     hero: {
       crumb: "Gorras de Golf de Rendimiento",
       badge: "⚡ Gorras Técnicas de Alto Rendimiento · Golf y Deportes",
-      title: "Fabricante de",
-      accent: "Gorras de Golf de Alto Rendimiento",
+      title: "Gorras de Golf",
+      accent: "de Alto Rendimiento",
       subtitle:
-        "Gorras impermeables, ultraligeras y con perforación láser diseñadas para clubes de golf, marcas deportivas y eventos corporativos. Venta directa de fábrica con pedido mínimo de 200 piezas.",
+        "Gorras impermeables, ultraligeras y con perforación láser diseñadas para clubes de golf, marcas deportivas y eventos corporativos. Sourcing directo con pedido mínimo de 200 piezas.",
       pills: [
         "MOQ 200 piezas",
         "Desde $5.20 FOB",

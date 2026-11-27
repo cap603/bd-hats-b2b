@@ -1,7 +1,7 @@
 {
   "nav": {
     "advantages": "Vorteile",
-    "factory": "Unsere Fabrik",
+    "factory": "Beschaffung & Qualität",
     "qualityControl": "Qualitätskontrolle",
     "products": "Kopfbedeckungen",
     "inquiry": "Anfrage",
@@ -54,7 +54,7 @@
       "sgs": "Qualitätskontrolle vor dem Versand"
     },
     "compliance": {
-      "title": "Sourcing Direkt ab Werk",
+      "title": "Sourcing Direkt",
       "certified": "MOQ 200+ Stk.",
       "markets": "Globale Märkte",
       "na": "NORDAMERIKA · EUROPA",
@@ -281,7 +281,7 @@
       "China vs Vietnam vs Bangladesh"
     ],
     "freeBadge": "Free AI/PDF",
-    "factoryDirect": "Direct Super Factory · OEM/ODM",
+    "factoryDirect": "Direkter Sourcing-Partner · OEM/ODM",
     "exporting": "Exporting to US, EU & AU since 2014",
     "backToTop": "Back to Top ↑",
     "assets": {
@@ -325,7 +325,7 @@
     "sortPriceAsc": "Preis: Aufsteigend",
     "sortPriceDesc": "Preis: Absteigend",
     "moq": "MOQ: {count} Stück",
-    "factoryDirect": "Direkt ab Werk",
+    "factoryDirect": "FOB-Preis",
     "viewDetails": "Details ansehen",
     "quote": "Angebot",
     "details": "Details",
@@ -393,7 +393,7 @@
     "intentTest": "Hallo Baoding Junyang! Ich möchte eine kleine Testbestellung aufgeben. Bitte senden Sie mir die Konditionen.",
     "intentTechpack": "Hallo Baoding Junyang! Bitte senden Sie mir die Blanko-Vektor-Tech-Packs (AI/PDF) und Nähmaßblätter für unser Designteam. Meine Marke/Firma ist: ",
     "intentMockup": "Hallo Baoding Junyang! Ich möchte eine kostenlose 3D-Vorschau und Stickbarkeitsprüfung für unser Logo anfordern. Gewünschtes Modell: ",
-    "submit": "Anfrage an Fabrik senden",
+    "submit": "Anfrage senden",
     "submitting": "Wird an Vertriebsteam übertragen...",
     "thanks": "Anfrage erfolgreich erhalten!",
     "thanksMsg": "Ihre Spezifikationen wurden sicher an unser Vertriebs- und Technikteam (admin@bdjunyang.com) übermittelt. Wir prüfen die Angaben und melden uns in Kürze per E-Mail.",
@@ -420,16 +420,16 @@
   },
   "breadcrumb": {
     "home": "Startseite",
-    "about": "Über unsere Fabrik",
+    "about": "Über uns",
     "guide": "B2B-Einkaufsführer",
     "materials": "Materialien & Stoffe",
     "pricing": "Preise & Versand",
     "products": "Produkte"
   },
   "meta": {
-    "homeTitle": "BD Hats | Premium Kappenhersteller & B2B-Großhandel Direkt ab Werk",
-    "homeDesc": "Hochwertige individuelle Kappen direkt ab Fabrik. OEM/ODM seit 2014. Individuelle Stickerei, MOQ 200 Stk., 7-Tage-Muster. Ihr Sourcing-Partner in Baoding, China.",
-    "aboutTitle": "Über BD Hats | 12 Jahre Kappenfabrik in Baoding, China",
+    "homeTitle": "BD Hats | Premium-Kappen & B2B-Großhandel · Sourcing Direkt",
+    "homeDesc": "Hochwertige individuelle Kappen — Direct Sourcing. OEM/ODM seit 2014. Individuelle Stickerei, MOQ 200 Stk., 7-Tage-Muster. Ihr Sourcing-Partner in Baoding, China.",
+    "aboutTitle": "Über BD Hats | 12 Jahre Hut-Sourcing in Baoding, China",
     "aboutDesc": "Von der 15-Personen-Werkstatt zum Sourcing-Partner für über 300 Marken weltweit. Erfahren Sie mehr über Baoding Junyang seit 2014.",
     "guideTitle": "B2B-Leitfaden Kappenherstellung | Großhandel Kappen aus China beschaffen",
     "guideDesc": "Kompletter B2B-Ratgeber: Auswahl der richtigen Kappenfabrik, Stickereiverfahren im Vergleich, MOQ-Verhandlungen, Qualitätskontrolle und Logistik.",
@@ -439,12 +439,12 @@
     "pricingDesc": "Transparente Kostenübersicht für Kappen: FOB vs. CIF, MOQ 200 Stk., Luft- und Seefrachtkosten, Mustergebühren und Staffelrabatte."
   },
   "popup": {
-    "badge": "Direkt ab Werk · Gegr. 2014",
+    "badge": "Sourcing-Partner · Gegr. 2014",
     "heading": "Individuelle Kappen für Ihre Marke gesucht?",
     "sub": "Erhalten Sie innerhalb von 2 Stunden ein unverbindliches Fabrikangebot — physische Muster in 7 Tagen.",
     "whatsappBtn": "Auf WhatsApp chatten",
     "formBtn": "Anfrage senden",
-    "note": "Direkt ab Werk · Mehrstufige Qualitätskontrolle · Prüfung vor Versand"
+    "note": "Direktes Sourcing · Mehrstufige Qualitätskontrolle · Prüfung vor Versand"
   },
   "chat": {
     "cta": "Mit uns chatten",

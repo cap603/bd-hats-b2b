@@ -16,16 +16,16 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     },
     description:
       locale === "es"
-        ? "Gorras lisas al por mayor directo de fábrica: más de 50 colores, algodón 100%, sin logo desde $3.50 FOB. MOQ 200uds, muestras en 7 días y cotización en 2h."
-        : "Bulk blank caps direct from factory: 50+ stock colors, 100% cotton twill, unbranded from $3.50 FOB. MOQ 200pcs, 7-day samples for embroidery & print brands.",
+        ? "Gorras lisas al por mayor, sourcing directo: más de 50 colores, algodón 100%, sin logo desde $3.50 FOB. MOQ 200uds, muestras en 7 días y cotización en 2h."
+        : "Bulk blank caps, direct sourcing: 50+ stock colors, 100% cotton twill, unbranded from $3.50 FOB. MOQ 200pcs, 7-day samples for embroidery & print brands.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
       url: canonical,
       title:
         locale === "es"
-          ? "Gorras Lisas al por Mayor — Directo de Fábrica | BD Hats"
-          : "Wholesale Blank Caps — Factory Direct | BD Hats",
+          ? "Gorras Lisas al por Mayor — Sourcing Directo | BD Hats"
+          : "Wholesale Blank Caps — Direct Sourcing | BD Hats",
       description:
         locale === "es"
           ? "Gorras lisas en sarga de algodón, más de 50 colores, listas para bordar o imprimir. MOQ 200uds."

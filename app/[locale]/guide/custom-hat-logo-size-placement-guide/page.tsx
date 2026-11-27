@@ -432,7 +432,7 @@ export default function LogoSizeGuidePage() {
             </Link>
             <NavCompareMenu />
             <Link href={`/${lang}/about`} className="hover:text-black transition">
-              About Factory
+              About Us
             </Link>
           </nav>
           <div className="flex items-center gap-3">
@@ -622,7 +622,7 @@ export default function LogoSizeGuidePage() {
             <div>
               <h3 className="text-lg md:text-xl font-bold text-white">Need a Vector Check for Your Logo?</h3>
               <p className="text-gray-400 text-xs md:text-sm mt-1 max-w-xl">
-                Send your vector logo (.AI, .EPS, or .PDF). Our Baoding factory digitizers will check stroke weights and confirm the maximum feasible scale within 2 hours.
+                Send your vector logo (.AI, .EPS, or .PDF). Our Baoding-based digitizers will check stroke weights and confirm the maximum feasible scale within 2 hours.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">

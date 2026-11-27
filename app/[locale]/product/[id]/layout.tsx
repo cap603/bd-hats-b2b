@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: { locale: string; i
   const path = `/product/${hat.id}`;
   const canonical = `https://bdjunyang.com/${locale}${path}`;
   const languages = getAlternateLanguages(path);
-  const description = `Custom wholesale ${hat.name}. High-density 3D embroidery, MOQ ${hat.moq}pcs, ${priceLabel(hat.price)}. 7-day samples & pre-shipment QC. Get factory quote.`;
+  const description = `Custom wholesale ${hat.name}. High-density 3D embroidery, MOQ ${hat.moq}pcs, ${priceLabel(hat.price)}. 7-day samples & pre-shipment QC. Get a quote.`;
 
   const shortName = hat.name.length > 36 ? hat.name.substring(0, 36).trim() : hat.name;
 
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: { params: { locale: string; i
     description,
     alternates: { canonical, languages },
     openGraph: {
-      title: `${hat.name} | BD Hats Factory`,
-      description: `Custom wholesale ${hat.name}. ${priceLabel(hat.price)} · MOQ ${hat.moq}pcs · Factory direct from Baoding Junyang.`,
+      title: `${hat.name} | BD Hats`,
+      description: `Custom wholesale ${hat.name}. ${priceLabel(hat.price)} · MOQ ${hat.moq}pcs · Direct sourcing by Baoding Junyang.`,
       images: [hat.img],
       type: "website",
       url: canonical,

@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     title: {
       absolute:
         locale === "es"
-          ? "Fabricante de Gorras en Grandes Volúmenes | BD Hats"
-          : "Bulk Custom Hats Manufacturer & Wholesale | BD Hats",
+          ? "Gorras al por Mayor en Grandes Volúmenes | BD Hats"
+          : "Bulk Custom Hats & Wholesale | BD Hats",
     },
     description:
       locale === "es"

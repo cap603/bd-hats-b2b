@@ -12,16 +12,16 @@ import { ShippingCalculator } from "../../components/ShippingCalculator";
 const CONTENT = {
   en: {
     hero: {
-      badge: "Wholesale Snapbacks · Factory Direct",
+      badge: "Wholesale Snapbacks · Direct Sourcing",
       h1Pre: "Wholesale ",
       h1Highlight: "Snapback Hats",
-      h1Post: " — Custom, From the Factory",
+      h1Post: " — Custom, Direct Sourcing",
       subtitle: "Flat brims, 3D puff embroidery, and buckram-structured fronts — snapbacks built for streetwear and sports brands, shipped direct from our partner factories.",
       pills: ["From $3.50 FOB", "MOQ 200 Pcs", "15-Day Production", "In-House QC"]
     },
     features: [
       {
-        title: "Snapback Styles We Manufacture",
+        title: "Snapback Styles in Our Programs",
         desc: "Flat-brim, curved-brim, high-profile, low-profile and mid-profile snapbacks — all in 6-panel or 5-panel construction. Our snapback range covers streetwear, sports, corporate and workwear programs, with over 30 stocked fabric colors and full Pantone color matching."
       },
       {
@@ -95,15 +95,15 @@ const CONTENT = {
     modelsTitle: "Our Snapback Range",
     ctaTitle: "Start Your Snapback Line Today",
     ctaDesc: "Send us your requirements — get a factory quote within 2 hours and a physical sample in 7 days.",
-    ctaPrimary: "Request Factory Quote",
+    ctaPrimary: "Request Quote",
     ctaSecondary: "Browse Full Catalog"
   },
   es: {
     hero: {
-      badge: "Snapbacks al por mayor · Directo de fábrica",
+      badge: "Snapbacks al por mayor · Sourcing directo",
       h1Pre: "",
       h1Highlight: "Snapbacks al por mayor",
-      h1Post: " — personalizados, directo de fábrica",
+      h1Post: " — personalizados, sourcing directo",
       subtitle: "Viseras planas, bordado 3D puff y frentes estructurados con buckram — snapbacks hechos para marcas de streetwear y deportivas, enviados directo de nuestras fábricas asociadas.",
       pills: ["Desde $3.50 FOB", "MOQ 200 pzs", "Producción en 15 días", "QC interno"]
     },
@@ -200,8 +200,8 @@ export default function SnapbacksPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Wholesale Snapback Hats from Factory — Custom Snapback Manufacturer",
-    "description": "Factory-direct wholesale snapbacks: styles, 3D puff embroidery, buckram structure, pricing and MOQ. Custom snapback manufacturer in China.",
+    "headline": "Wholesale Snapback Hats — Custom Snapbacks",
+    "description": "Wholesale snapbacks: styles, 3D puff embroidery, buckram structure, pricing and MOQ. Custom snapback programs in China.",
     "author": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "publisher": { "@type": "Organization", "name": "Baoding Junyang Import and Export Trade Co., Ltd." },
     "datePublished": "2026-08-25",

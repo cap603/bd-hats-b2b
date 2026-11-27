@@ -65,10 +65,10 @@ const TIERS = [
     basePrice: "$3.50 – $4.00",
     premiumPrice: "$4.00 – $4.80",
     leadTime: "25 – 30 Days",
-    badge: "Factory Direct Floor",
-    desc: "Direct-to-factory container load production for multinational brands and international procurement groups.",
+    badge: "Direct Floor Pricing",
+    desc: "Direct container-load production programs for multinational brands and international procurement groups.",
     features: [
-      "Direct factory floor price from $3.50/pc FOB",
+      "Direct floor price from $3.50/pc FOB",
       "Dedicated multi-head precision line allocation",
       "20GP (35,000+ pcs) & 40HQ (85,000+ pcs) container packing",
       "Letter of Credit (L/C) & milestone payment support",
@@ -217,7 +217,7 @@ export default function PricingPage() {
       <section className="py-20 px-4 bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-yellow-600 font-bold uppercase tracking-wider text-xs md:text-sm">Factory-Direct Wholesale Matrix</span>
+            <span className="text-yellow-600 font-bold uppercase tracking-wider text-xs md:text-sm">Direct Wholesale Matrix</span>
             <h2 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900 mt-2 mb-4">
               Tiered Volume Pricing (FOB China)
             </h2>
@@ -402,7 +402,7 @@ export default function PricingPage() {
           <p className="text-gray-600 text-lg mb-8">Send us your cap requirements. Our sales team will provide a detailed quotation with exact pricing and shipping costs.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href={`/${lang}/#inquiry`} className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition shadow-lg shadow-green-500/20">
-              Request Factory Quote <ArrowRight size={20} />
+              Request Quote <ArrowRight size={20} />
             </Link>
             <Link href={`/${lang}/#catalog`} className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-bold px-8 py-4 rounded-full text-lg transition border-2 border-gray-200">
               Browse Products
@@ -425,7 +425,7 @@ export default function PricingPage() {
                 <li><Link href={`/${lang}/compare/merino-wool-vs-acrylic-beanies`} className="hover:text-white">Merino vs Acrylic Beanies</Link></li>
                 <li><Link href={`/${lang}/guide`} className="hover:text-white">B2B Manufacturing Guide</Link></li>
                 <li><Link href={`/${lang}/materials`} className="hover:text-white">Materials & Fabrics Guide</Link></li>
-                <li><Link href={`/${lang}/about`} className="hover:text-white">About Our Factory</Link></li>
+                <li><Link href={`/${lang}/about`} className="hover:text-white">About Our Team</Link></li>
               </ul>
             </div>
             <div>

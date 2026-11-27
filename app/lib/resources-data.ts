@@ -461,7 +461,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       ],
       interlinks: [
         { href: "/compare/flat-embroidery-vs-3d-puff", label: "Flat vs 3D Puff Embroidery", desc: "Technical stitch density parameters and stroke width limits." },
-        { href: "/custom-trucker-hats", label: "Custom Trucker Hats Manufacturer", desc: "Explore 5-panel foam crowns and breathable mesh back options." },
+        { href: "/custom-trucker-hats", label: "Custom Trucker Hats", desc: "Explore 5-panel foam crowns and breathable mesh back options." },
          { href: "/guide/custom-hat-logo-size-placement-guide", label: "Hat Logo Size & Placement Guide", desc: "Front panel maximum height and width limits for trucker caps." }
        ]
      },
@@ -551,7 +551,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
        ],
        interlinks: [
          { href: "/tools/carton-calculator", label: "Export Carton & CBM Calculator", desc: "Run your own quantity, carton count and container recommendation." },
-         { href: "/custom-trucker-hats", label: "Custom Trucker Hats Manufacturer", desc: "Mesh-back 5-panel programmes and how their lower crown packs denser." },
+         { href: "/custom-trucker-hats", label: "Custom Trucker Hats", desc: "Mesh-back 5-panel programmes and how their lower crown packs denser." },
          { href: "/wholesale-snapbacks", label: "Wholesale Snapbacks", desc: "Structured 6-panel caps — the carton reference used in this loading plan." },
          { href: "/guide/importing-custom-hats-from-china", label: "Importing Custom Hats from China", desc: "Incoterms, HS 6505.00 classification and clearance documentation." }
        ]
@@ -989,7 +989,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
       ],
       interlinks: [
         { href: "/compare/flat-embroidery-vs-3d-puff", label: "Bordado Plano vs 3D Puff", desc: "Parámetros técnicos de densidad de puntada y límites de grosor." },
-        { href: "/custom-trucker-hats", label: "Fabricante de Gorras Trucker", desc: "Coronas de espuma de 5 paneles y opciones de malla transpirable." },
+        { href: "/custom-trucker-hats", label: "Gorras Trucker Personalizadas", desc: "Coronas de espuma de 5 paneles y opciones de malla transpirable." },
          { href: "/guide/custom-hat-logo-size-placement-guide", label: "Guía de Tamaño y Ubicación de Logo", desc: "Dimensiones máximas de altura y anchura en paneles frontales." }
        ]
      },
@@ -1079,7 +1079,7 @@ export const RESOURCES: Record<"en" | "es", Record<string, ResourceArticle>> = {
        ],
        interlinks: [
          { href: "/tools/carton-calculator", label: "Calculadora de Embalaje y CBM", desc: "Calcula tu cantidad, número de cajas y contenedor recomendado." },
-         { href: "/custom-trucker-hats", label: "Fabricante de Gorras Trucker", desc: "Programas de 5 paneles con malla y cómo su corona baja embala más denso." },
+         { href: "/custom-trucker-hats", label: "Gorras Trucker Personalizadas", desc: "Programas de 5 paneles con malla y cómo su corona baja embala más denso." },
          { href: "/wholesale-snapbacks", label: "Snapbacks al Por Mayor", desc: "Gorras estructuradas de 6 paneles: la referencia de caja de este plan." },
          { href: "/guide/importing-custom-hats-from-china", label: "Importar Gorras desde China", desc: "Incoterms, clasificación HS 6505.00 y documentación de despacho." }
        ]

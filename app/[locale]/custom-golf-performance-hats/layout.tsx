@@ -12,18 +12,18 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       absolute:
         locale === "es"
           ? "Gorras de Golf de Rendimiento al por Mayor | BD Hats"
-          : "Custom Performance Golf Hats Manufacturer | BD Hats",
+          : "Custom Performance Golf Hats | BD Hats",
     },
     description:
       locale === "es"
-        ? "Fabricante de gorras de golf personalizadas. Tejido DWR impermeable, perforación láser, logotipos de silicona y TPU, MOQ 200uds, FOB desde $5.20. Muestras rápidas."
-        : "Custom performance golf hats manufacturer. Waterproof DWR fabric, laser-cut ventilation, silicone & TPU logos, MOQ 200pcs, FOB from $5.20. 7-day fast samples.",
+        ? "Gorras de golf personalizadas. Tejido DWR impermeable, perforación láser, logotipos de silicona y TPU, MOQ 200uds, FOB desde $5.20. Muestras rápidas."
+        : "Custom performance golf hats. Waterproof DWR fabric, laser-cut ventilation, silicone & TPU logos, MOQ 200pcs, FOB from $5.20. 7-day fast samples.",
     alternates: { canonical, languages },
     openGraph: {
       type: "website",
       url: canonical,
-      title: "Custom Performance Golf Hats Manufacturer | BD Hats",
-      description: "Tour-grade laser-perforated waterproof performance golf hats factory direct. MOQ 200 pcs.",
+      title: "Custom Performance Golf Hats | BD Hats",
+      description: "Tour-grade laser-perforated waterproof performance golf hats direct sourcing. MOQ 200 pcs.",
     },
   };
 }

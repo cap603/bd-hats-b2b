@@ -29,7 +29,7 @@ const WHATSAPP_NUMBER = "8615933930830";
 const CONTENT = {
   en: {
     hero: {
-      badge: "Free B2B Design Asset · AI / PDF / EPS Vector Flats · Direct Factory Specs",
+      badge: "Free B2B Design Asset · AI / PDF / EPS Vector Flats · Direct Production Specs",
       title: "Custom Hat Tech Pack Template",
       accent: "& Factory Sourcing Guide",
       subtitle:
@@ -38,7 +38,7 @@ const CONTENT = {
         { label: "Vector Silhouettes", value: "4 Core Styles" },
         { label: "File Formats", value: "AI · PDF · EPS" },
         { label: "Crown & Visor Cotes", value: "Exact 1:1 Scale" },
-        { label: "Factory Review", value: "Free in 2 Hours" },
+        { label: "Spec Review", value: "Free in 2 Hours" },
       ],
     },
     anatomyTitle: "1. The 6 Essential Elements of a Production-Ready Cap Tech Pack",
@@ -149,7 +149,7 @@ const CONTENT = {
         desc: "Not clarifying whether you want a soft, floppy unstructured dad hat or a rigid, upright structured crown. We use premium fused buckram for structured caps and soft washed canvas for unstructured styles.",
       },
     ],
-    reviewTitle: "5. Free 2-Hour Factory Tech Pack Review Service",
+    reviewTitle: "5. Free 2-Hour Tech Pack Review Service",
     reviewSubtitle: "Don't have a finished tech pack? Send us your sketch, logo, or reference photos.",
     reviewSteps: [
       { step: "Step 1", title: "Submit Your Materials", desc: "Send your vector logo (.AI, .EPS, .PDF) or high-res PNG along with your target cap silhouette." },
@@ -166,8 +166,8 @@ const CONTENT = {
         a: "Yes! Over 60% of our streetwear and startup clients come to us with just a high-resolution logo and reference photos. Our in-house digitizing team will prepare the full production tech pack for you free of charge upon project confirmation.",
       },
       {
-        q: "What is your factory Minimum Order Quantity (MOQ) for custom hats?",
-        a: "Our strict factory-direct MOQ is 200 pieces per style/colorway. This guarantees optimal fabric yield from standard textile bolts and amortizes setup time on automated precision embroidery lines.",
+        q: "What is the Minimum Order Quantity (MOQ) for custom hats?",
+        a: "Our standard MOQ is 200 pieces per style/colorway. This guarantees optimal fabric yield from standard textile bolts and amortizes setup time on automated precision embroidery lines.",
       },
       {
         q: "How fast can you deliver physical pre-production samples from a tech pack?",
@@ -181,7 +181,7 @@ const CONTENT = {
   },
   es: {
     hero: {
-      badge: "Recurso B2B Gratuito · Archivos Vectoriales AI / PDF / EPS · Especificaciones Directas de Fábrica",
+      badge: "Recurso B2B Gratuito · Archivos Vectoriales AI / PDF / EPS · Especificaciones Directas de Producción",
       title: "Plantilla Tech Pack para Gorras",
       accent: "y Guía de Fabricación B2B",
       subtitle:
@@ -301,7 +301,7 @@ const CONTENT = {
         desc: "No aclarar si deseas una gorra dad hat suave y desestructurada o una corona rígida estructurada. Usamos entretela de alta calidad para gorras rígidas.",
       },
     ],
-    reviewTitle: "5. Servicio Gratuito de Revisión Técnica de Fábrica en 2 Horas",
+    reviewTitle: "5. Servicio Gratuito de Revisión Técnica en 2 Horas",
     reviewSubtitle: "¿Aún no tienes un tech pack completo? Envíanos tu logotipo, boceto o fotos de referencia.",
     reviewSteps: [
       { step: "Paso 1", title: "Envía tus Archivos", desc: "Envía tu logo vectorial (.AI, .EPS, .PDF) o PNG de alta resolución junto con la silueta de gorra deseada." },
@@ -319,7 +319,7 @@ const CONTENT = {
       },
       {
         q: "¿Cuál es la Cantidad Mínima de Pedido (MOQ) de fábrica?",
-        a: "Nuestro MOQ estricto directo de fábrica es de 200 unidades por modelo/color. Esto garantiza un aprovechamiento óptimo de la tela y amortiza los tiempos de preparación de las líneas de bordado de precisión.",
+        a: "Nuestro MOQ estándar es de 200 unidades por modelo/color. Esto garantiza un aprovechamiento óptimo de la tela y amortiza los tiempos de preparación de las líneas de bordado de precisión.",
       },
       {
         q: "¿Cuánto tardan en enviar muestras físicas basadas en el tech pack?",
@@ -432,7 +432,7 @@ export default function TechPackPage() {
             </Link>
             <NavCompareMenu />
             <Link href={`/${lang}/about`} className="hover:text-black transition">
-              About Factory
+              About Us
             </Link>
           </nav>
           <div className="flex items-center gap-3">
@@ -499,7 +499,7 @@ export default function TechPackPage() {
               className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm md:text-base py-3.5 px-8 rounded-full transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20"
             >
               <MessageCircle size={18} />
-              <span>Submit Design for 2-Hour Factory Review</span>
+              <span>Submit Design for 2-Hour Review</span>
             </a>
           </div>
 
@@ -540,7 +540,7 @@ export default function TechPackPage() {
                   <p className="text-xs md:text-sm text-gray-600 leading-relaxed mb-4">{el.desc}</p>
                 </div>
                 <div className="bg-white rounded-xl p-3 border border-gray-100 text-[11px] text-gray-500 leading-normal">
-                  <strong className="text-gray-900">Factory Requirement: </strong>
+                  <strong className="text-gray-900">Production Requirement: </strong>
                   {el.detail}
                 </div>
               </div>
@@ -688,7 +688,7 @@ export default function TechPackPage() {
                   <th className="py-3.5 px-4 md:px-6">Branding Technique</th>
                   <th className="py-3.5 px-4 md:px-6">Max Recommended Area</th>
                   <th className="py-3.5 px-4 md:px-6">Minimum Line Thickness</th>
-                  <th className="py-3.5 px-4 md:px-6">Factory Engineering Rule</th>
+                  <th className="py-3.5 px-4 md:px-6">Engineering Rule</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100 bg-white">
@@ -771,7 +771,7 @@ export default function TechPackPage() {
               className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-8 rounded-full text-base transition border border-white/20 flex items-center justify-center gap-2"
             >
               <FileText size={18} />
-              <span>Submit via Factory Form</span>
+              <span>Submit via Inquiry Form</span>
             </button>
           </div>
         </div>
@@ -831,7 +831,7 @@ export default function TechPackPage() {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-4">Factory Contact</h4>
+              <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-4">Direct Contact</h4>
               <ul className="space-y-2 text-xs">
                 <li>WhatsApp: +86 159 3393 0830</li>
                 <li>Email: admin@bdjunyang.com</li>
